@@ -58,8 +58,18 @@ for (year in years) {
       temp <- read_csv(filename)
       
       if (type == "Electric") {
+        # Convert KWh to KTBU and eliminate extra columns
+        temp <- temp %>%
+          mutate(TOTALKTBU = TOTALKWH * 3.41214) %>%
+          select(-TOTALKWH, -AVERAGEKWH, -COMBINED)
+        # bind to raw data
         pge_elec_raw <- rbind(pge_elec_raw, temp)
-      } else {
+      } else { # Otherwise type is Gas
+        # Convert therms to KTBU and delete extra columns 
+        temp <- temp %>%
+          mutate(TOTALKTBU = TOTALTHM * 99.9761) %>% 
+          select(-TOTALTHM, -AVERAGETHM, -COMBINED)
+        # bind to raw data
         pge_gas_raw <- rbind(pge_gas_raw, temp)
       }
     }
@@ -68,9 +78,22 @@ for (year in years) {
   saveRDS(pge_elec_raw, "pge_elec_raw.rds")
   saveRDS(pge_gas_raw, "pge_elec_raw.rds")
 }
+
+# Combine raw dataframes together
+pge_data_raw <- rbind(pge_elec_raw, pge_gas_raw)
+
 ```
 
-```{r mutate_data}
+```{r manipulate_data}
+pge_data <- pge_data_raw %>% 
+  filter(
+    CUSTOMERCLASS %in% c("Elec- Residential", "Elec- Commercial", 
+                         "Gas- Residential", "Gas- Commerical")) %>%
+  group_by(
+    MONTH, YEAR, CUSTOMERCLASS, TOTALKTBU) %>%
+  summarize(
+    
+  )
 
 
 ```
