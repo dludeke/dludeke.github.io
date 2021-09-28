@@ -1,5 +1,5 @@
 ---
-title: "DavidLudeke_A1"
+title: "Assignment 1"
 author: "David Ludeke"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output: html_document
@@ -21,7 +21,74 @@ library(censusapi)
 Sys.setenv(CENSUS_KEY="c8aa67e4086b4b5ce3a8717f59faa9a28f611dab")
 ```
 
-## R Markdown
+
+```{r save_point}
+# SAVE POINT
+save.image("progress1.rda")
+```
+
+
+```{r data_extraction} 
+years <- 2017:2021
+quarters <- 1:4
+types <- c("Electric", "Gas")
+
+pge_elec_raw <- NULL
+pge_gas_raw <- NULL
+
+# Loop through years
+for (year in years) {
+  # Loop through quarters
+  for (quarter in quarters) {
+    # Loop through gas & electric
+    for (type in types) {
+      filename <-
+        paste0("pge_data/PGE_",
+               year,
+               "_Q",
+               quarter,
+               "_",
+               type,
+               "UsageByZip.csv")
+      
+      # Skip if file doesn't exist
+      if (!file.exists(filename))
+        next
+      
+      temp <- read_csv(filename)
+      
+      if (type == "Electric") {
+        pge_elec_raw <- rbind(pge_elec_raw, temp)
+      } else {
+        pge_gas_raw <- rbind(pge_gas_raw, temp)
+      }
+    }
+  }
+  # Save after binding each year together
+  saveRDS(pge_elec_raw, "pge_elec_raw.rds")
+  saveRDS(pge_gas_raw, "pge_elec_raw.rds")
+}
+```
+
+```{r mutate_data}
+
+
+```
+
+
+## Residential Data
+```{r residential_plot}
+
+```
+
+## Commercial Data
+```{r commercial_plot}
+
+```
+
+
+
+
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
