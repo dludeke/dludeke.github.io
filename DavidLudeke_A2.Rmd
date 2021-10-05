@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = T, warning = F, message = F)
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
 ```
 
 ```{r}
@@ -175,4 +175,4 @@ Commented out remaining code so that the project could still knit despite the er
 #   )
 ```
 
-
+This data is from the 2010 and 2020 Census, and so one assumption I made in my analysis is that all the residents living in San Francisco filled out the Census. This analysis is also assuming that the political climate surrounding the 2020 Census didn't impact data collection, which isn't necessarily a safe assumption given the partisan interference and operational issues facing the 2020 Census. 
