@@ -1,0 +1,175 @@
+---
+title: "DavidLudeke_A2"
+author: "David Ludeke"
+date: "10/3/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+```{r}
+library(tidyverse)
+library(sf)
+library(tigris) 
+library(censusapi)
+library(mapview)
+library(leaflet)
+```
+
+```{r}
+# Using developer version of tigris so I can grab 2020 block shapefiles correctly. 
+library(devtools) 
+install_github('walkerke/tigris')
+library(tigris)
+```
+
+```{r}
+# Requested my own Census API key from the Census. 
+Sys.setenv(CENSUS_KEY="46c0518594422fc024772060dae78c2c2ffcc89d")
+```
+
+```{r}
+# Grab 2020 Census data
+dec_vars_2020 <-
+  listCensusMetadata(
+    name = "2020/dec/pl",
+    type = "variables")
+sfc_pop_2020 <-
+  getCensus(
+    name = "dec/pl",
+    vintage = 2020,
+    region = "block:*", 
+    regionin = "state:06+county:075", # State:06 = California, County:075 = San Francisco (my hometown!)
+    vars = "P1_001N") %>% # Variable code for TOTAL population
+  transmute(
+    GEOID20 = block,
+    pop_2020 = P1_001N # Variable code for TOTAL population
+  )
+
+# Prepare 2020 census blocks for my chosen county in California.
+blocks_2020 <- blocks("CA", "San Francisco", year = 2020, progress_bar = F)
+```
+
+```{r}
+# Grab 2010 Census data
+dec_vars_2010 <-
+  listCensusMetadata(
+    name = "2010/dec/pl/", 
+    type = "variables"
+  )
+sfc_pop_2010 <-
+  getCensus(
+    name = "dec/pl",
+    vintage = 2010,
+    region = "block:*", 
+    regionin = "state:06+county:075",
+    vars = "P001001") %>% # Variable code for TOTAL population in the 2010 census.
+  transmute(
+    GEOID10 = block,
+    pop_2010 = P001001
+  )
+
+# Prepare 2010 census blocks for my chosen county in California. 
+blocks_2010 <- blocks("CA", "San Francisco", year = 2010, progress_bar = F)
+```
+
+Create a map of the blocks for San Francisco County based on the geometries from the 2010 Census blocks. 
+
+```{r}
+# Download the Census Designated Place shapefile for San Franciscio
+sfc_boundary <- places("CA", progress_bar = F) %>% 
+  filter(NAME == "San Francisco")
+
+# Define set of SF County blocks from 2010 based on which have centroids within the boundary.
+sfc_blocks_2010 <- blocks_2010 %>% 
+  st_centroid() %>% 
+  .[sfc_boundary, ] %>% 
+  st_drop_geometry() %>% 
+  left_join(blocks_2010 %>% select(GEOID10)) %>% 
+  st_as_sf() %>% 
+  select(GEOID10) %>% 
+  left_join(sfc_pop_2010) # Add in population data for each block in 2010
+
+# Create map of boundary for San Francisco blocks 
+mapview(sfc_boundary) + mapview(sfc_blocks_2010, alpha.regions = 0, color = "orange", lwd = 2)
+```
+
+```{r}
+# Get all 2020 census blocks that intersect with the 2010 blocks.
+sfc_blocks_2020 <- blocks_2020 %>%
+  .[sfc_boundary, ] %>% 
+  select(GEOID20) %>% 
+  left_join(sfc_pop_2020)
+```
+
+```{r}
+# Spatial subsetting method shown in Chapter 2.4.
+sfc_blocks_2020_intersect <- sfc_blocks_2020 %>% 
+  st_transform(26910) %>% 
+  mutate(original_area = st_area(.)) %>% 
+  st_intersection( # "Cookie-cutter" procedure
+    sfc_blocks_2010 %>%
+      select(GEOID10) %>% 
+      st_transform(26910)
+  ) %>% 
+  mutate(
+    leftover_area = st_area(.),
+    perc_area = as.numeric(leftover_area / original_area),
+    pop_2020 = pop_2020 * perc_area
+  )
+```
+
+```{r}
+# Group and summzarize to get the 2020 population counts within the GEOID10 boundaries. 
+sfc_blocks_2020_reshaped <- sfc_blocks_2020_intersect %>%
+  st_drop_geometry() %>% 
+  group_by(GEOID10) %>% 
+  summarize(
+    pop_2020 = sum(pop_2020, na.rm=T) %>% round()
+  )
+```
+
+Lastly, I join this to `sfc_blocks_2010` and compute the absolute difference. To compute density in people per acre, I transform to a planar coordinate system with units in ft and do the appropriate math. Note that `st_area()` produces results in a "unit" class, which can be converted to regular numbers using `as.numeric()`.
+
+```{r}
+projection <- 26910
+sfc_pop_2010_2020 <- sfc_blocks_2010 %>% 
+  left_join(sfc_blocks_2020_reshaped) %>% 
+  mutate(
+    absolute_pop = (pop_2010 - pop_2020) / as.numeric(st_area(.)) * 43560
+  )
+```
+
+```{r}
+# Attempting to use the absolute value of the change in population data from the main dataframe
+max <- max(abs(sfc_pop_2010_2020 %>% select(absolute_pop)))
+absolute_pal <- colorNumeric(
+  palette = "PiYG",
+  domain = c(-max,max)
+)
+# Error in Math.data.frame(sfc_pop_2010_2020 %>% select(absolute_pop)) : non-numeric-alike variable(s) in data frame: geometry
+
+# Why is absolute_pop a geometry?? 
+```
+
+```{r}
+leaflet() %>% 
+  addProviderTiles(provider = providers$CartoDB.Positron) %>% 
+  addPolygons(
+    # fillColor = ~absolute_pal(___), # what goes here?
+    # label = ~round(___),
+    color = "white",
+    opacity = 0.5,
+    fillOpacity = 0.75,
+    weight = 1
+  ) %>% 
+  addLegend(
+    pal = absolute_pal,
+    value = max, # Keep scale equidistant to 0. 
+    title = "Total population change in SF County from 2010 to 2020"
+  )
+```
+
+

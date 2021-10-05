@@ -1,0 +1,82 @@
+---
+title: "R_Chapter2"
+author: "David Ludeke"
+date: "9/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+```{r}
+library(tidyverse)
+library(sf) # simple features -- common geospatial tool
+library(tigris) # helps find census data -- google "Tigris R" to see functions available to us. 
+library(censusapi)
+library(mapview)
+library(leaflet)
+```
+
+```{r}
+ca_counties <- counties("CA", cb = T, progress_bar = F) # geometries column has all geospatial data, otherwise ca_counties is just a normal dataframe
+```
+
+```{r}
+bay_county_names <-
+  c(
+    "Alameda",
+    "Contra Costa",
+    "Marin",
+    "Napa",
+    "San Francisco",
+    "San Mateo",
+    "Santa Clara",
+    "Solano",
+    "Sonoma"
+  )
+
+bay_counties <-
+  counties("CA", cb = T, progress_bar = F) %>%
+  filter(NAME %in% bay_county_names)
+
+```
+
+```{r}
+ggplot(bay_counties) + geom_sf()
+```
+```{r}
+ca_cities <- places("CA", cb = T, progress_bar = FALSE) # places fn from tigris package
+
+bay_cities <- ca_cities[bay_counties, ]
+
+mapview(bay_counties, alpha.regions = 0) + mapview(bay_cities)
+
+```
+
+```{r}
+bay_cities_within <-
+  ca_cities %>% 
+  st_centroid() %>% 
+  .[bay_counties, ] %>% 
+  st_set_geometry(NULL) %>% 
+  left_join(ca_cities %>% select(GEOID)) %>% 
+  st_as_sf()
+
+
+
+```
+
+
+```{r}
+mapview(bay_counties, alpha.regions = 0) + mapview(bay_cities_within, label = "NAME")
+```
+
+
+
+
+
+
+
+
+
