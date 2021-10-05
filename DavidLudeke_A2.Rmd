@@ -131,9 +131,8 @@ sfc_blocks_2020_reshaped <- sfc_blocks_2020_intersect %>%
   )
 ```
 
-Lastly, I join this to `sfc_blocks_2010` and compute the absolute difference. To compute density in people per acre, I transform to a planar coordinate system with units in ft and do the appropriate math. Note that `st_area()` produces results in a "unit" class, which can be converted to regular numbers using `as.numeric()`.
-
 ```{r}
+# Compute absolute difference in population by joining the reshaped 2020 blocks to the 2010 blocks 
 projection <- 26910
 sfc_pop_2010_2020 <- sfc_blocks_2010 %>% 
   left_join(sfc_blocks_2020_reshaped) %>% 
@@ -142,34 +141,38 @@ sfc_pop_2010_2020 <- sfc_blocks_2010 %>%
   )
 ```
 
+Commented out remaining code so that the project could still knit despite the errors. 
 ```{r}
+
 # Attempting to use the absolute value of the change in population data from the main dataframe
-max <- max(abs(sfc_pop_2010_2020 %>% select(absolute_pop)))
-absolute_pal <- colorNumeric(
-  palette = "PiYG",
-  domain = c(-max,max)
-)
+
+
+# max <- max(abs(sfc_pop_2010_2020 %>% select(absolute_pop)))
+# absolute_pal <- colorNumeric(
+#   palette = "PiYG",
+#   domain = c(-max,max)
+# )
 # Error in Math.data.frame(sfc_pop_2010_2020 %>% select(absolute_pop)) : non-numeric-alike variable(s) in data frame: geometry
 
 # Why is absolute_pop a geometry?? 
 ```
 
 ```{r}
-leaflet() %>% 
-  addProviderTiles(provider = providers$CartoDB.Positron) %>% 
-  addPolygons(
-    # fillColor = ~absolute_pal(___), # what goes here?
-    # label = ~round(___),
-    color = "white",
-    opacity = 0.5,
-    fillOpacity = 0.75,
-    weight = 1
-  ) %>% 
-  addLegend(
-    pal = absolute_pal,
-    value = max, # Keep scale equidistant to 0. 
-    title = "Total population change in SF County from 2010 to 2020"
-  )
+# leaflet() %>% 
+#   addProviderTiles(provider = providers$CartoDB.Positron) %>% 
+#   addPolygons(
+#     # fillColor = ~absolute_pal(___), # what goes here?
+#     # label = ~round(___),
+#     color = "white",
+#     opacity = 0.5,
+#     fillOpacity = 0.75,
+#     weight = 1
+#   ) %>% 
+#   addLegend(
+#     pal = absolute_pal,
+#     value = max, # Keep scale equidistant to 0. 
+#     title = "Total population change in SF County from 2010 to 2020"
+#   )
 ```
 
 
