@@ -142,7 +142,6 @@ sfc_pop_2010_2020 <- sfc_blocks_2010 %>%
   )
 ```
 
-Commented out remaining code so that the project could still knit despite the errors. 
 ```{r}
 
 # Attempting to use the absolute value of the change in population data from the main dataframe
@@ -151,7 +150,7 @@ Commented out remaining code so that the project could still knit despite the er
 max <- max(abs(sfc_pop_2010_2020$absolute_pop)) #
 absolute_pal <- colorNumeric(
   palette = "PiYG",
-  domain = c(-9440, 4300) # examined absolute_pop column of sfc_pop_2010_2020. 
+  domain = c(9440, -9440) # examined absolute_pop column of sfc_pop_2010_2020. 
 )
 
 # Error in Math.data.frame(sfc_pop_2010_2020 %>% select(absolute_pop)) : non-numeric-alike variable(s) in data frame: geometry
@@ -163,7 +162,7 @@ absolute_pal <- colorNumeric(
 leaflet(sfc_pop_2010_2020) %>% 
   addProviderTiles(provider = providers$CartoDB.Positron) %>% 
   addPolygons(
-    fillColor = ~absolute_pal(absolute_pop), # what goes here?
+    fillColor = ~absolute_pal(absolute_pop),
     label = ~paste0(round(absolute_pop)),
     color = "white",
     opacity = 0.5,
