@@ -44,7 +44,7 @@ sfc_pop_2020 <-
     regionin = "state:06+county:075", # State:06 = California, County:075 = San Francisco (my hometown!)
     vars = "P1_001N") %>% # Variable code for TOTAL population
   transmute(
-    GEOID20 = block,
+    GEOID20 = paste0(state,county,tract,block),
     pop_2020 = P1_001N # Variable code for TOTAL population
   )
 
@@ -67,7 +67,7 @@ sfc_pop_2010 <-
     regionin = "state:06+county:075",
     vars = "P001001") %>% # Variable code for TOTAL population in the 2010 census.
   transmute(
-    GEOID10 = block,
+    GEOID10 = paste0(state,county,tract,block),
     pop_2010 = P001001
   )
 
@@ -79,7 +79,7 @@ Create a map of the blocks for San Francisco County based on the geometries from
 
 ```{r}
 # Download the Census Designated Place shapefile for San Franciscio
-sfc_boundary <- places("CA", progress_bar = F) %>% 
+sfc_boundary <- places("CA", cb = T, progress_bar = F) %>% 
   filter(NAME == "San Francisco")
 
 # Define set of SF County blocks from 2010 based on which have centroids within the boundary.
@@ -94,6 +94,7 @@ sfc_blocks_2010 <- blocks_2010 %>%
 
 # Create map of boundary for San Francisco blocks 
 mapview(sfc_boundary) + mapview(sfc_blocks_2010, alpha.regions = 0, color = "orange", lwd = 2)
+
 ```
 
 ```{r}
@@ -133,11 +134,11 @@ sfc_blocks_2020_reshaped <- sfc_blocks_2020_intersect %>%
 
 ```{r}
 # Compute absolute difference in population by joining the reshaped 2020 blocks to the 2010 blocks 
-projection <- 26910
+projection <- "+proj=utm +zone=10 +ellps=GRS80 +datum=NAD83 +units=ft +no_defs" # from Ch. 2.1
 sfc_pop_2010_2020 <- sfc_blocks_2010 %>% 
   left_join(sfc_blocks_2020_reshaped) %>% 
   mutate(
-    absolute_pop = (pop_2010 - pop_2020) / as.numeric(st_area(.)) * 43560
+    absolute_pop = (pop_2020 - pop_2010) / as.numeric(st_area(.)) * 43560
   )
 ```
 
@@ -147,32 +148,33 @@ Commented out remaining code so that the project could still knit despite the er
 # Attempting to use the absolute value of the change in population data from the main dataframe
 
 
-# max <- max(abs(sfc_pop_2010_2020 %>% select(absolute_pop)))
-# absolute_pal <- colorNumeric(
-#   palette = "PiYG",
-#   domain = c(-max,max)
-# )
+max <- max(abs(sfc_pop_2010_2020$absolute_pop)) #
+absolute_pal <- colorNumeric(
+  palette = "PiYG",
+  domain = c(-9440, 4300) # examined absolute_pop column of sfc_pop_2010_2020. 
+)
+
 # Error in Math.data.frame(sfc_pop_2010_2020 %>% select(absolute_pop)) : non-numeric-alike variable(s) in data frame: geometry
 
 # Why is absolute_pop a geometry?? 
 ```
 
 ```{r}
-# leaflet() %>% 
-#   addProviderTiles(provider = providers$CartoDB.Positron) %>% 
-#   addPolygons(
-#     # fillColor = ~absolute_pal(___), # what goes here?
-#     # label = ~round(___),
-#     color = "white",
-#     opacity = 0.5,
-#     fillOpacity = 0.75,
-#     weight = 1
-#   ) %>% 
-#   addLegend(
-#     pal = absolute_pal,
-#     value = max, # Keep scale equidistant to 0. 
-#     title = "Total population change in SF County from 2010 to 2020"
-#   )
+leaflet(sfc_pop_2010_2020) %>% 
+  addProviderTiles(provider = providers$CartoDB.Positron) %>% 
+  addPolygons(
+    fillColor = ~absolute_pal(absolute_pop), # what goes here?
+    label = ~paste0(round(absolute_pop)),
+    color = "white",
+    opacity = 0.5,
+    fillOpacity = 0.75,
+    weight = 1
+  ) %>% 
+  addLegend(
+    pal = absolute_pal,
+    values = ~absolute_pop, # Keep scale equidistant to 0. 
+    title = "Total population change in SF County from 2010 to 2020"
+  )
 ```
 
 This data is from the 2010 and 2020 Census, and so one assumption I made in my analysis is that all the residents living in San Francisco filled out the Census. This analysis is also assuming that the political climate surrounding the 2020 Census didn't impact data collection, which isn't necessarily a safe assumption given the partisan interference and operational issues facing the 2020 Census. 
