@@ -1,0 +1,167 @@
+---
+title: "DavidLudeke_A3"
+author: "David Ludeke"
+date: "10/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+```{r}
+# Download necessary libraries
+library(censusapi)
+library(tidyverse)
+library(tigris)
+library(sf)
+library(leaflet)
+
+# Requested my own Census API key from the Census. 
+Sys.setenv(CENSUS_KEY="46c0518594422fc024772060dae78c2c2ffcc89d")
+```
+
+```{r}
+# Load data from PUMS
+temp <- tempfile()
+download.file("https://www2.census.gov/programs-surveys/acs/data/pums/2019/1-Year/csv_hca.zip",destfile = temp)
+
+pums_hca_2019_1yr <- read_csv(unzip(temp,"psam_h06.csv"))
+
+unlink(temp)
+```
+
+```{r}
+# Load data using getCensus function
+pums_2019_1yr <- getCensus(
+  name = "acs/acs1/pums",
+  vintage = 2019,
+  region = "public use microdata area:*", 
+  regionin = "state:06",
+  vars = c(
+    # Important meta-variables 
+    "SERIALNO", 
+    "SPORDER",
+    "PWGTP",
+    "WGTP",
+    # Variables of interest for populations at risk of extreme heat impacts 
+    "AGEP", # age - filter for older people
+    "DOUT", # independent living difficulty - filter for "yes"
+    "GCR", # grandparents responsible for grandchildren - filter for "yes"
+    "REFR" # refrigerator - filter for "no" 
+  )
+)
+
+```
+
+
+```{r}
+# grab unique “public use microdata area” geographies, which PUMS data provides
+ca_pumas <-
+  pumas("CA", cb = T, progress_bar = F)
+
+bay_county_names <-
+  c(
+    "Alameda",
+    "Contra Costa",
+    "Marin",
+    "Napa",
+    "San Francisco",
+    "San Mateo",
+    "Santa Clara",
+    "Solano",
+    "Sonoma"
+  )
+
+bay_counties <-
+  counties("CA", cb = T, progress_bar = F) %>%
+  filter(NAME %in% bay_county_names)
+
+bay_pumas <-
+  ca_pumas %>% 
+  st_centroid() %>% 
+  .[bay_counties, ] %>% 
+  st_drop_geometry() %>% 
+  left_join(ca_pumas %>% select(GEOID10)) %>% 
+  st_as_sf()
+
+bay_pums <-
+  pums_2019_1yr %>% 
+  mutate(
+    PUMA = str_pad(public_use_microdata_area,5,"left","0")
+  ) %>% 
+  filter(PUMA %in% bay_pumas$PUMACE10)
+```
+
+```{r}
+# filter for at-risk factors - older than 55, independent living difficulty, grandparents responsible for children, has no refrigerator 
+bay_pums_at_risk <-
+  bay_pums %>% 
+  filter(!duplicated(SERIALNO)) %>% 
+  mutate(
+    WGTP = as.numeric(WGTP),
+    at_risk_demographic = ifelse(
+      (AGEP > 50) & # Older than 50
+        (DOUT == 1) & # Difficulty living independently 
+        (REFR == 2), # Doesn't have refrigerator 
+       # (GCR == 1), # Grandparents responsible for children 
+      WGTP,
+      0
+    )
+  ) %>% 
+  group_by(PUMA) %>% 
+  summarize(
+    at_risk_demographic =
+      sum(at_risk_demographic, na.rm =T) # /sum(WGTP, na.rm = T)*100   # for percentage
+  ) %>% 
+  left_join(
+    bay_pumas %>% 
+      select(PUMACE10),
+    by = c("PUMA" = "PUMACE10")
+  ) %>% 
+  st_as_sf()
+```
+
+Below is a map of PUMAs in the Bay Area using the latest available PUMS data from 2019. Based on the interviews and survey conducted on the impact of heatwaves on Stanford students, I decided to limit my sub-population to people over the age of 50 who have difficulty living independently and don't have a refrigerator. 
+
+The survey results showed that, after "drink extra water" and "close windows," the most popular ways to cope with heat waves were "go to locations with AC" and "stay indoors." Since people who have difficulty living independently may not be able to close windows or go to locations with AC (outside of their homes), I included that as a factor. People who are older are in general at higher risk of illness, so I selected people over the age of 50. Lastly, one of Stanford's guidelines to graduate students during a heatwave was to "eat cold salad" — interestingly, 23% of respondents to the survey selected "eat cold food" as a coping strategy — and so I chose the final risk factor to be not having a refrigerator. 
+
+This map assumes that individuals over 50 are necessarily more at-risk than their younger counterparts during a heatwave. This somewhat arbitrary distinction may not align with the peer reviewed literature on vulnerability factors for heat-related illnesses. Furthermore, the map assumes that people without refrigerators don't have some other way to keep food/drinks cold, like an icebox or a subterranean pantry. The usefulness of this map is ultimately limited by the scale — only 2491 individuals in the entire Bay Area fit these three criteria. More broadly applicable characteristics could be selected in order to highlight larger sub-populations that may be at risk of extreme heat impacts.
+
+```{r}
+pums_pal <- colorNumeric(
+  palette = "Oranges",
+  domain = bay_pums_at_risk$at_risk_demographic
+)
+
+leaflet() %>%
+  addTiles() %>% 
+  addPolygons(
+    data = bay_pums_at_risk,
+    fillColor = ~pums_pal(at_risk_demographic),
+    color = "white",
+    opacity = 0.5,
+    fillOpacity = 0.5,
+    weight = 1,
+    label = ~paste0(
+      round(at_risk_demographic), 
+      " people over 50 with difficulty living independently and no refrigerator"
+    ),
+    highlightOptions = highlightOptions(
+      weight = 2,
+      opacity = 1
+    )
+  ) %>% 
+  addLegend(
+    data = bay_pums_at_risk,
+    pal = pums_pal,
+    values = ~at_risk_demographic,
+    title = "People over 50 years old<br>with difficulty living<br>independently<br>and no refrigerator"
+  )
+```
+
+```{r}
+# Find total population at risk
+sum(bay_pums_at_risk$at_risk_demographic)
+```
+
