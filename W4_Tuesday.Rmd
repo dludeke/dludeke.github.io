@@ -1,0 +1,36 @@
+---
+title: "W4Tuesday"
+author: "David Ludeke"
+date: "10/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F, warning = F)
+```
+
+```{r}
+library(tidyverse)
+library(tigris)
+library(censusapi)
+
+Sys.setenv(CENSUS_KEY="46c0518594422fc024772060dae78c2c2ffcc89d")
+```
+
+```{r} 
+bay_income_race_2019 <- getCensus( # variable name: geography_topic(s)_date
+  name = "acs/acs5", # could be acs1 for 1-year 
+  vintage = 2019,
+  region = "county:001,013,041,055,075,081,085,095,097",
+  regionin = "state:06",
+  vars = "group(B19001A)" # gets all variables under that table (income under 10,000, 11-15000, etc.)
+) %>% 
+  select(ends_with("E") & -c(state, NAME)) 
+
+```
+
+
+```{r}
+
+```
+
