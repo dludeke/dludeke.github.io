@@ -17,20 +17,104 @@ library(censusapi)
 Sys.setenv(CENSUS_KEY="46c0518594422fc024772060dae78c2c2ffcc89d")
 ```
 
+```{r}
+acs_vars_2019_5yr <- 
+  listCensusMetadata(
+    name = "2019/acs/acs5",
+    type = "variables"
+  )
+```
+
 ```{r} 
-bay_income_race_2019 <- getCensus( # variable name: geography_topic(s)_date
+bay_income_white_2019 <- getCensus( # variable name: geography_topic(s)_date
   name = "acs/acs5", # could be acs1 for 1-year 
   vintage = 2019,
   region = "county:001,013,041,055,075,081,085,095,097",
   regionin = "state:06",
-  vars = "group(B19001A)" # gets all variables under that table (income under 10,000, 11-15000, etc.)
+  vars = "group(B19001A)" # gets all variables under that table (subtiers of income... income under 10,000, 11-15000, etc.)
 ) %>% 
-  select(ends_with("E") & -c(state, NAME)) 
+  select(ends_with("E") & -c(state, NAME)) %>% # command shift M to pipe
+  summarize_all(sum) %>%  # flatten all 9 rows into one, keeping every column in the dataset 
+  pivot_longer(
+    everything(),
+    names_to = "name",
+    values_to = "estimate" # household counts in this case
+  ) %>%
+  left_join(
+    acs_vars_2019_5yr %>% 
+      select(name, label), # pipe within pipe to just get the name and label columns from acs_vars 
+    by = "name" # This happens automatically since we used "name" for both column labels
+    # by = c("names_to value", "name ")
+  ) %>% 
+  separate(
+    l
+  ) %>% 
+  select () %>% 
+  
 
 ```
 
 
 ```{r}
+
+full_dataset <- NULL
+
+# loop through for all races 
+for (x in 1:7) { # for first 7 letters of alphabet 
+  
+  # temp <- code from above
+  # LETTERS[x] 
+  
+  full_dataset <- 
+    rbind(full_dataset, temp)
+  
+}
+
+```
+
+```{r}
+
+race_categories <- c(
+  "White alone",
+  "Black alone",
+  # ... search names in census.gov
+)
+
+# TIDYVERSE METHOD VIA PIPELINES 
+bay_income_race_2019 <-
+  1:7 %>% 
+  map_dfr(function(x){
+    # my code from above here from white population 
+  getCensus( # variable name: geography_topic(s)_date
+  name = "acs/acs5", # could be acs1 for 1-year 
+  vintage = 2019,
+  region = "county:001,013,041,055,075,081,085,095,097",
+  regionin = "state:06",
+  vars = paste0("group(B19001", LETTERS[x], ")") # x 1:7 for each of the races 
+) %>% 
+  select(ends_with("E") & -c(state, NAME)) %>% # command shift M to pipe
+  summarize_all(sum) %>%  # flatten all 9 rows into one, keeping every column in the dataset 
+  pivot_longer(
+    everything(),
+    names_to = "name",
+    values_to = "estimate" # household counts in this case
+  ) %>%
+  left_join(
+    acs_vars_2019_5yr %>% 
+      select(name, label), # pipe within pipe to just get the name and label columns from acs_vars 
+    by = "name" # This happens automatically since we used "name" for both column labels
+    # by = c("names_to value", "name ")
+  ) %>% 
+  separate(
+    l
+  ) %>% 
+  select () %>% 
+      mutate(
+        race = race_categories[x]
+      )
+      
+      
+  })
 
 ```
 

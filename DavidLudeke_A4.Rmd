@@ -1,0 +1,163 @@
+---
+title: "Assignment 4: Equity Analysis of Educational Attainment by Race in San Francisco County"
+author: "David Ludeke"
+date: "10/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+```{r}
+# Load libraries and cencus key
+library(tidyverse)
+library(tigris)
+library(censusapi)
+
+Sys.setenv(CENSUS_KEY="46c0518594422fc024772060dae78c2c2ffcc89d")
+```
+
+```{r}
+# Download 2019 ACS 5-yr summary data 
+acs_vars_2019_5yr <- 
+  listCensusMetadata(
+    name = "2019/acs/acs5",
+    type = "variables"
+  )
+```
+
+```{r}
+# Save census race categories in vector 
+census_race_categories <- 
+  c(
+    "White Alone",
+    "Black or African American",
+    "American Indian and Alaska Native Alone",
+    "Asian Alone",
+    "Native Hawaiian and Other Pacific Islander Alone",
+    "Some Other Race Alone",
+    "Two or More Races"
+  )
+```
+
+
+```{r}
+# Get educational attainment for San Francisco County, binding all race categories together
+sfc_educ_attainment <-
+  1:7 %>% 
+  map_dfr(function(x){
+    getCensus(
+      name = "acs/acs5",
+      vintage = 2019,
+      region = "county:075",
+      regionin = "state:06",
+      vars = paste0("group(C15002",LETTERS[x],")")
+    ) %>%
+      select(!c(GEO_ID,state,NAME) & !ends_with(c("EA","MA","M"))) %>%
+      pivot_longer(
+        ends_with("E"),
+        names_to = "name",
+        values_to = "estimate"
+      ) %>%
+      left_join(
+        acs_vars_2019_5yr %>% 
+          select(name, label)
+      ) %>% 
+      select(-name) %>% 
+      separate(
+        label,
+        into = c(NA,NA,NA,"educ_attainment"),
+        sep = "!!"
+      ) %>% 
+      filter(!is.na(educ_attainment)) %>% 
+      mutate(race = census_race_categories[x])
+  })
+
+```
+
+```{r} 
+# Plot stacked bar chart from 4.1
+sfc_educ_attainment %>% 
+  group_by(educ_attainment, race) %>% 
+  summarize(estimate = sum(estimate)) %>% 
+  ggplot() +
+  geom_bar(
+    aes(
+      x = educ_attainment %>% factor(levels = rev(unique(sfc_educ_attainment$educ_attainment))),
+      y = estimate,
+      fill = race %>% factor(levels = rev(unique(sfc_educ_attainment$race)))
+    ),
+    stat = "identity",
+    position = "stack"
+  ) +
+  labs(
+    x = "Educational Attainment",
+    y = "Population 25 years or older",
+    title = "San Francisco County educational attainment by race",
+    fill = "Race"
+  ) +
+  coord_flip() + 
+  theme(
+    legend.position = "bottom",
+    legend.direction = "vertical"
+  )  +
+  guides(
+    fill = guide_legend(
+      reverse = T
+    )
+  )
+
+```
+Stacked bar graph displaying the population 25 years or older by race within each of the four educational attainment tiers.
+
+
+```{r}
+sfc_race_total <-
+  sfc_educ_attainment %>% 
+  group_by(race) %>% 
+  summarize(estimate = sum(estimate)) %>% 
+  mutate(educ_attainment = "Total")
+```
+
+```{r}
+# Plot filled bar chart from 4.1
+sfc_educ_attainment %>% 
+  group_by(educ_attainment, race) %>% 
+  summarize(estimate = sum(estimate)) %>% 
+  rbind(sfc_race_total) %>% 
+  ggplot() +
+  geom_bar(
+    aes(
+      x = educ_attainment %>% 
+        factor(levels = rev(c("Total",unique(sfc_educ_attainment$educ_attainment)))),
+      y = estimate,
+      fill = race %>% factor(levels = rev(unique(sfc_educ_attainment$race)))
+    ),
+    stat = "identity",
+    position = "fill"
+  ) +
+  labs(
+    x = "Educational attainment",
+    y = "Proportion of population 25 years or older",
+    title = "San Francisco County educational attainment by race",
+    fill = "Race"
+  ) +
+  coord_flip() +
+  theme(
+    legend.position = "bottom",
+    legend.direction = "vertical"
+  )  +
+  guides(
+    fill = guide_legend(
+      reverse = T
+    )
+  )
+
+```
+
+Filled bar graph displaying the proportions of the population 25 years or older by race within each of the four educational attainment tiers, compared against the total proportion of each race in the population of San Francisco County. 
+
+
+Based on the two bar graphs above, it is clear that San Francisco County faces extremely disproportionate educational attainment by race. Most glaringly, white households are underrepresented for lower educational attainment outcomes and overrepresented for the highest outcome, "Bachelor's degree or higher." By contrast Asian households are overrepresented in the lowest educational attainment outcome, "less than high school diploma." These data visualizations illustrate the need for San Francisco County to address its disproportionate educational attainment outcomes. However, it also raises important historical questions: how does the history of immigration in San Francisco contextualize some of these findings? What will this data look like in 25 years when the data is collected for young people now who are in the midst of attaining their education? 
+
