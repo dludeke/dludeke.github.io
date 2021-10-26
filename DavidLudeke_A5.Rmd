@@ -1,0 +1,119 @@
+---
+title: "DavidLudeke_A5"
+author: "David Ludeke"
+date: "10/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+
+```{r}
+library(tidyverse)
+library(censusapi)
+library(sf)
+library(tigris)
+library(mapview)
+
+library(readxl)
+```
+
+```{r}
+
+temp <- tempfile()
+download.file("https://oehha.ca.gov/media/downloads/calenviroscreen/document/calenviroscreen40resultsdatadictionaryf2021.zip",destfile = temp)
+
+unlink(temp)
+
+# for Mac Users, put the xlsx file in your working directory
+ces4 <- read_excel("calenviroscreen40resultsdatadictionary_F_2021.xlsx")
+```
+
+```{r}
+bay_county_names <-
+  c(
+    "Alameda",
+    "Contra Costa",
+    "Marin",
+    "Napa",
+    "San Francisco",
+    "San Mateo",
+    "Santa Clara",
+    "Solano",
+    "Sonoma"
+  )
+
+ca_tracts <- tracts("CA", cb = T, progress_bar = F)
+```
+
+```{r}
+ces4_clean <- ces4 %>% 
+  dplyr::select(!ends_with("Pctl")) %>% 
+  filter(`California County` %in% bay_county_names)
+
+sum(is.na(ces4_clean$Poverty))
+
+ces4_clean %>% 
+  # .$Poverty %>%
+  pull(Poverty) %>% 
+  is.na() %>% 
+  sum()
+
+ca_tracts <- tracts("CA")
+
+ces4_map <- ces4_clean %>% 
+  filter(`California County` %in% bay_county_names) %>% 
+  left_join(
+    ca_tracts %>% 
+      transmute(GEOID = GEOID %>% as.numeric()),
+    by = c("Census Tract" = "GEOID")
+  ) %>% 
+  st_as_sf()
+
+mapview(ces4_map, zcol = "Asthma")
+```
+
+```{r}
+# Repeat process with PM2.5
+mapview(ces4_map, zcol = "PM2.5")
+
+```
+
+```{r}
+# Create line of best fit between Asthma and PM2.5
+slope <- 0
+yintercept <- mean(ces4_clean$Asthma)
+
+best_fit_candidate <- slope * ces4_clean$PM2.5 + yintercept 
+```
+
+```{r}
+# Create scatterplot
+ggplot( 
+  data = ces4_clean,
+  aes(
+    x = PM2.5,
+    y = Asthma
+  )
+) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  geom_line(
+    aes(
+      x = ces4_clean$PM2.5,
+      y = best_fit_candidate 
+    )
+  )
+```
+
+The best fit line doesn't appear to accurately represent the data. Although there is a general positive correlation between Asthma and PM2.5, there is a huge spike in the data between 8 and 9 micrograms per meters cubed of PM2.5 that is cannot be reflected by a straight best fit line. 
+
+```{r}
+model <- lm(Asthma ~ PM2.5, ces4_clean)
+
+summary(model)
+```
+
+An increase of 1 microgram per meter cubed of PM2.5 is associated with an increase of 19.862 in Asthma per 10000 people; 9.6% of the variation in Asthma is explained by the variation in PM2.5.
