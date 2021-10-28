@@ -1,0 +1,66 @@
+---
+title: "W6_Tuesday"
+author: "David Ludeke"
+date: "10/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(censusapi)
+library(sf)
+library(mapview)
+library(tigris)
+library(plotly)
+
+Sys.setenv(CENSUS_KEY="c8aa67e4086b4b5ce3a8717f59faa9a28f611dab")
+```
+
+```{r}
+bay_multiple_tract <- 
+  getCensus(
+    name = "acs/acs5",
+    vintage = 2019,
+    region = "tract:*",
+    regionin = "state:06+county:001,013,041,055,075,081,085,095,097",
+    vars = c(
+      "B06009_001E",
+      "B06009_002E",
+      "B06009_003E",
+      "B19001_001E",
+      "B19001_014E",
+      "B19001_015E",
+      "B19001_016E",
+      "B19001_017E",
+      "B19001A_001E"
+    )
+  ) %>% 
+  transmute(
+    tract = paste0(state, county, tract),
+    perc_college = 1 - (B06009_002E + B06009_003E) / B06009_001E,
+    perc_over100k = (B19001_014E + B19001_015E + B19001_016E + B19001_017E) / B19001_001E,
+    perc_white = B19001A_001E / B19001_001E
+  ) %>% 
+  filter(
+    !is.na(perc_college), 
+    !is.na(perc_over100k),
+    !is.na(perc_white)
+  )
+
+```
+
+```{r}
+plot_ly(data = bay_multiple_tract, 
+        x=~perc_white, 
+        y=~perc_college, 
+        z=~perc_over100k, 
+        type="scatter3d", 
+        mode="markers", 
+        color = ~perc_over100k)
+
+```
+
