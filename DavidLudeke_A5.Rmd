@@ -60,7 +60,7 @@ ces4_clean %>%
   is.na() %>% 
   sum()
 
-ca_tracts <- tracts("CA")
+ca_tracts <- tracts("CA", progress_bar = F)
 
 ces4_map <- ces4_clean %>% 
   filter(`California County` %in% bay_county_names) %>% 
