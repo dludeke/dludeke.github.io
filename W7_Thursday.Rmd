@@ -1,0 +1,131 @@
+---
+title: "W7_Thursday"
+author: "David Ludeke"
+date: "11/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+```{r}
+library(tigris)
+library(sf)
+library(tidyverse)
+library(mapview)
+library(readxl)
+library(spdep)
+library(spatialreg)
+library(survey)
+
+sf_boundary <-
+  counties("CA", cb = T, progress_bar = F) %>%
+  filter(NAME == "San Francisco")
+
+ca_pumas <-
+  pumas("CA", cb = T, progress_bar = F)
+
+sf_pumas <-
+  ca_pumas %>% 
+  st_centroid() %>% 
+  .[sf_boundary, ] %>% 
+  st_set_geometry(NULL) %>% 
+  left_join(ca_pumas %>% select(GEOID10)) %>% 
+  st_as_sf()
+```
+
+```{r}
+pums_hca_2019_1yr <- a6_pums
+```
+
+```{r}
+data <- pums_hca_2019_1yr %>% 
+  filter(PUMA %in% sf_pumas$PUMACE10) %>% 
+  mutate(
+    HINCP = as.numeric(HINCP),
+    TEN = factor(TEN),
+    MV = factor(MV)
+  ) %>% 
+  select( # select only specific columns we need
+    HINCP,
+    TEN,
+    MV,
+    starts_with("WGTP")
+  ) %>%  # use filter to fill in any column
+  filter_all(all_vars(!is.na(.)))
+
+```
+
+```{r}
+design <- svrepdesign( # order of arguments is set unless you add names "data", "type", repweights, etc. 
+  data = data, 
+  type = "ACS",
+  repweights = data[ ,5:84], # [all rows, cols 5-84]
+  weights = ~WGTP
+)
+```
+
+```{r}
+model <- svyglm(
+  formula = HINCP ~ TEN + MV,
+  family = gaussian(),
+  design = design # right side refers to the object created above
+)
+
+summary(model) # see results of what we put together
+```
+
+```{r}
+# pipeline only works if the first argument is what you put in 
+weighted_model <- data %>% 
+  lm(
+    formula = HINCP ~ TEN + MV,
+    data = ., # period refers to the thing put in the pipeline
+    weights = WGTP
+  )
+
+summary(weighted_model)
+```
+
+```{r}
+replicates_model <-
+  1:80 %>% 
+  map_dfr(function(x) {
+    
+    data %>% 
+      rename(replicate = paste0("WGTP", x)) %>% 
+      lm(
+        formula = HINCP ~ TEN + MV,
+         data = .,
+        weights = replicate  # generate this information 80 times
+      ) %>% 
+      .$coefficients %>% 
+      as.data.frame() %>% 
+      rownames_to_column()
+    
+  })
+```
+
+```{r}
+weighted_model_summary <- replicates_model %>% 
+  rename(replicate = ".") %>% 
+  left_join(
+    weighted_model$coefficients %>% 
+      as.data.frame() %>% 
+      rownames_to_column() %>% 
+      rename(base = ".")
+  ) %>% 
+  group_by(rowname) %>% 
+  summarize(
+    # ACS PUMAS guide 
+    stderr = sqrt(4/80*sum((base-replicate)^2)),
+    base = first(base)
+  ) %>% 
+  select(
+    rowname,
+    base,
+    stderr
+  )
+```
+

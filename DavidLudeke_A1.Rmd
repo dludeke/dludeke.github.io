@@ -7,7 +7,6 @@ output: html_document
 
 ```{r setup, include = F}
 knitr::opts_chunk$set(echo = F, warning = F, message = F)
-library(tidyverse)
 ```
 
 ```{r library_load}
@@ -18,14 +17,13 @@ library(tigris)
 library(leaflet)
 library(censusapi)
 
-Sys.setenv(CENSUS_KEY="c8aa67e4086b4b5ce3a8717f59faa9a28f611dab")
+Sys.setenv(CENSUS_KEY="46c0518594422fc024772060dae78c2c2ffcc89d")
 ```
 
 ```{r save_point}
 # SAVE POINT
 save.image("progress1.rda")
 ```
-
 
 ```{r data_extraction} 
 years <- 2017:2021
@@ -87,24 +85,122 @@ pge_data_raw <- rbind(pge_elec_raw, pge_gas_raw)
 pge_data <- pge_data_raw %>% 
   filter(
     CUSTOMERCLASS %in% c("Elec- Residential", "Elec- Commercial", 
-                         "Gas- Residential", "Gas- Commerical")) %>%
+                         "Gas- Residential", "Gas- Commercial")) %>%
   group_by(
-    MONTH, YEAR, CUSTOMERCLASS, TOTALKTBU) %>%
+    MONTH, YEAR, CUSTOMERCLASS) %>%
   summarize(
-    
+    TOTALKTBU = sum(TOTALKTBU, na.rm = T)
+  ) %>% 
+  mutate(
+    DATE = paste(YEAR, MONTH, "01", sep="-") %>% 
+      as.Date()
   )
-
-
 ```
 
-
-## Residential Data
+## Fig 1. Residential Data:
 ```{r residential_plot}
-
+pge_data %>% 
+  filter(
+    CUSTOMERCLASS %in% c("Elec- Residential", "Gas- Residential")
+  ) %>% 
+  ggplot() +
+  geom_line(
+    aes(
+      x = DATE, 
+      y = TOTALKTBU,
+      color = CUSTOMERCLASS
+    ),
+    stat = "identity",
+    position = "stack"
+  ) + 
+  labs (
+    x = "Date",
+    y = "kTBU",
+    title = "Yearly PG&E Residential Electricity and Gas Usage from 2017 to 2021",
+    color = "Energy Type"
+  )
 ```
 
-## Commercial Data
+## Fig 2. Commercial Data:
 ```{r commercial_plot}
-
+pge_data %>% 
+  filter(
+    CUSTOMERCLASS %in% c("Elec- Commercial", "Gas- Commercial")
+  ) %>% 
+  ggplot() +
+  geom_line(
+    aes(
+      x = DATE, 
+      y = TOTALKTBU,
+      color = CUSTOMERCLASS
+    ),
+    stat = "identity",
+    position = "stack"
+  ) + 
+  labs (
+    x = "Date",
+    y = "kTBU",
+    title = "Yearly PG&E Commercial Electricity and Gas Usage from 2017 to 2021",
+    color = "Energy Type"
+  )
 ```
 
+## Additional plots to emphasize the change between 2019 and 2020:
+
+# Fig 3. Residential:
+```{r}
+pge_data %>% 
+  filter(
+    CUSTOMERCLASS %in% c("Elec- Residential", "Gas- Residential"),
+    YEAR %in% c(2019, 2020)
+  ) %>% 
+  ggplot() +
+  geom_line(
+    aes(
+      x = DATE, 
+      y = TOTALKTBU,
+      color = CUSTOMERCLASS
+    ),
+    stat = "identity",
+    position = "stack"
+  ) + 
+  labs (
+    x = "Date",
+    y = "kTBU",
+    title = "Yearly PG&E Residential Electricity and Gas Usage from 2019 to 2020",
+    color = "Energy Type"
+  )
+```
+
+# Fig 4. Commercial:
+```{r}
+pge_data %>% 
+  filter(
+    CUSTOMERCLASS %in% c("Elec- Commercial", "Gas- Commercial"),
+    YEAR %in% c(2019, 2020)
+  ) %>% 
+  ggplot() +
+  geom_line(
+    aes(
+      x = DATE, 
+      y = TOTALKTBU,
+      color = CUSTOMERCLASS
+    ),
+    stat = "identity",
+    position = "stack"
+  ) + 
+  labs (
+    x = "Date",
+    y = "kTBU",
+    title = "Yearly PG&E Commercial Electricity and Gas Usage from 2019 to 2020",
+    color = "Energy Type"
+  )
+```
+There is almost no discernible difference between residential gas and electricity consumption between 2019 and 2020 that could be attributed to the COVID-19 pandemic. In the commercial data, there is a slight difference between usage in 2019 and 2020——the peak kTBU usage for both electricity and gas is slightly higher in 2020 than the peaks in 2019. 
+
+In this analysis, one key assumption we make is that PG&E is representative of the total gas and electricity usage in the United States. However, in reality there can be other sources of both gas and electricity, from 3rd party providers to self-generation of electricity. For example, non-residential customers can purchase electricity from a 3rd party provider via Direct Access according to the Electric service alternatives page of the PG&E website. The analysis also assumes that PG&E's data collection processes are thorough and accurate.
+
+
+## The "Gorilla":
+
+When I originally created the line graphs, there was an inexplicable spike in the late 2017 data for commercial electricity usage (Fig 2). By examining the original data in the CSV, we see that quarter 4 in 2017 has month 9, 10, 11, and 12. This means that month 9 was erroneously included in quarter 4 when it should only have been in quarter 3. The extra data points caused Q4 to have artificially large kTBU values. Fig 2 was rerun with the correct Q4 data where month 9 is excluded, so the spike is no longer visible in the final graph. 
