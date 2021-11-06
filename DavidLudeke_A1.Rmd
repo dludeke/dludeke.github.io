@@ -196,6 +196,7 @@ pge_data %>%
     color = "Energy Type"
   )
 ```
+
 There is almost no discernible difference between residential gas and electricity consumption between 2019 and 2020 that could be attributed to the COVID-19 pandemic. In the commercial data, there is a slight difference between usage in 2019 and 2020——the peak kTBU usage for both electricity and gas is slightly higher in 2020 than the peaks in 2019. 
 
 In this analysis, one key assumption we make is that PG&E is representative of the total gas and electricity usage in the United States. However, in reality there can be other sources of both gas and electricity, from 3rd party providers to self-generation of electricity. For example, non-residential customers can purchase electricity from a 3rd party provider via Direct Access according to the Electric service alternatives page of the PG&E website. The analysis also assumes that PG&E's data collection processes are thorough and accurate.
