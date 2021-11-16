@@ -37,7 +37,9 @@ census_race_categories <-
     "Asian Alone",
     "Native Hawaiian and Other Pacific Islander Alone",
     "Some Other Race Alone",
-    "Two or More Races"
+    "Two or More Races",
+    "White_Not_Latinx", #ethnicity categories 8, 9
+    "Latinx"
   )
 ```
 
@@ -160,4 +162,114 @@ Filled bar graph displaying the proportions of the population 25 years or older 
 
 
 Based on the two bar graphs above, it is clear that San Francisco County faces extremely disproportionate educational attainment by race. Most glaringly, white households are underrepresented for lower educational attainment outcomes and overrepresented for the highest outcome, "Bachelor's degree or higher." By contrast Asian households are overrepresented in the lowest educational attainment outcome, "less than high school diploma." These data visualizations illustrate the need for San Francisco County to address its disproportionate educational attainment outcomes. However, it also raises important historical questions: how does the history of immigration in San Francisco contextualize some of these findings? What will this data look like in 25 years when the data is collected for young people now who are in the midst of attaining their education? 
+
+
+## Educational Attainmnent by Ethnicity:
+
+```{r}
+# Download 2019 ACS 1-yr summary data 
+acs_vars_2019_1yr <- 
+  listCensusMetadata(
+    name = "2019/acs/acs1",
+    type = "variables"
+  )
+```
+
+```{r}
+# Get educational attainment for San Francisco County
+sfc_educ_attainment_1yr <-
+    getCensus(
+      name = "acs/acs1",
+      vintage = 2019,
+      region = "county:075",
+      regionin = "state:06",
+      vars = "group(C15002)" # gets total instead of 
+    ) %>%
+      select(!c(GEO_ID,state,NAME) & !ends_with(c("EA","MA","M"))) %>%
+      pivot_longer(
+        ends_with("E"),
+        names_to = "name",
+        values_to = "estimate"
+      ) %>%
+      left_join(
+        acs_vars_2019_1yr %>% 
+          select(name, label)
+      ) %>% 
+      select(-name) %>% 
+      separate(
+        label,
+        into = c(NA,NA,NA,"educ_attainment"),
+        sep = "!!"
+      ) %>% 
+      filter(!is.na(educ_attainment)) %>% 
+      mutate(
+        educ_attainment =
+          case_when(
+            educ_attainment %in% c("Less than 9th grade","9th to 12th grade, no diploma") ~ "Less than high school diploma",
+             educ_attainment %in% c("Some college, no degree","Associate's degree") ~ "Some college or associate's degree",
+             educ_attainment %in% c("High school graduate (includes equivalency)") ~ "High school graduate (includes equivalency)",
+             educ_attainment %in% c("Bachelor's degree","Graduate or professional degree") ~ "Bachelor's degree or higher")) %>%
+      group_by(educ_attainment) %>% 
+      summarize(estimate = sum(estimate))
+```
+
+```{r}
+sfc_educ_attainment_1yr_latinx <-
+  8:9 %>% 
+  map_dfr(function(x){
+    getCensus(
+      name = "acs/acs1",
+      vintage = 2019,
+      region = "county:075",
+      regionin = "state:06",
+      vars = paste0("group(C15002",LETTERS[x],")")
+    ) %>%
+      select(!c(GEO_ID,state,NAME) & !ends_with(c("EA","MA","M"))) %>%
+      pivot_longer(
+        ends_with("E"),
+        names_to = "name",
+        values_to = "estimate"
+      ) %>%
+      left_join(
+        acs_vars_2019_1yr %>% 
+          select(name, label)
+      ) %>% 
+      select(-name) %>% 
+      separate(
+        label,
+        into = c(NA,NA,NA,"educ_attainment"),
+        sep = "!!"
+      ) %>% 
+      filter(!is.na(educ_attainment)) %>% 
+      mutate(
+        ethnicity = census_race_categories[x]
+      )
+  })
+```
+
+```{r}
+educ_attainment_by_ethnicity <- 
+  sfc_educ_attainment_1yr_latinx %>% 
+  group_by(educ_attainment, ethnicity) %>% 
+  summarize(estimate = sum(estimate)) %>% 
+  rbind(
+    sfc_educ_attainment_1yr %>% 
+      group_by(educ_attainment) %>% 
+      summarize(estimate = sum(estimate)) %>% 
+      mutate(
+        ethnicity = "Total"
+      ) %>% 
+      pivot_wider(
+         names_from = "ethnicity",
+         values_from = "estimate"
+      ) %>% 
+      mutate(Not_White_Not_Latinx = Total - Latinx - White_Not_Latinx) %>% 
+      pivot_longer(
+        ends_with("x"),
+        names_to = "ethnicity",
+        values_to = "estimate"
+      )
+  )
+
+```
 
