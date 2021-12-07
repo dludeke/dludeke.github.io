@@ -121,3 +121,82 @@ summary(model)
 ```
 
 An increase of 1 microgram per meter cubed of PM2.5 is associated with an increase of 19.862 in Asthma per 10000 people; 9.6% of the variation in Asthma is explained by the variation in PM2.5. This linear regression implies a correlation between Asthma and PM2.5. However, the relatively high residuals suggest the distribution might not be well-represented by the linear regression.  
+
+
+
+## 6.5 points:
+```{r}
+plot(density(residuals(model)))
+```
+The residual distribution is reveals that there is a high density of negative residuals, since the mean of the distribution is somewhere around -20. The distribution is very right skewed, suggesting we may need a non-linear regression model. 
+
+# Log transformation: 
+
+```{r} 
+# step 2 w/ log transformation scatter plot with logistic model
+ggplot( 
+  data = ces4_clean,
+  aes(
+    x = PM2.5,
+    y = log(Asthma)
+  )
+) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  geom_line(
+    aes(
+      x = ces4_clean$PM2.5,
+      y = best_fit_candidate
+    )
+  )
+```
+A log transformation of the y-axis allows for a closer best fit line for the data.
+
+```{r}
+# step 3 with log transformation
+log_model <- lm(log(Asthma) ~ PM2.5, ces4_clean)
+
+summary(log_model)
+```
+An increase of 1 microgram per meter cubed of PM2.5 is associated with an increase of 1.43 in Asthma per 10000 people; 10.0% of the variation in Asthma is explained by the variation in PM2.5. This log transformation regression implies a correlation between Asthma and PM2.5. The residual standard error is 0.66, indicating a relatively close best-fit line. 
+
+
+## 7 points:
+```{r}
+plot(density(residuals(log_model)))
+```
+This density plot for the log transformed data shows the residuals are much closer to 0. There is still a slight left skew, and there are two peaks on either side of 0, so while it isn't a perfect fit, it is closer than the un-transformed regression. 
+
+
+
+# Residuals map:
+```{r}
+residuals <- log_model %>% 
+  .$residuals %>% 
+  as.data.frame()
+
+ces4_res <-
+  ces4_clean %>% filter(
+    !is.na(PM2.5),
+    !is.na(Asthma)) %>% 
+  mutate(residuals = residuals(log_model))
+```
+
+```{r}
+ces4_res_map <- ces4_res %>% 
+  filter(`California County` %in% bay_county_names) %>% 
+  select(`Census Tract`, residuals) %>% 
+  left_join(
+    ca_tracts %>% 
+      transmute(GEOID = GEOID %>% as.numeric()),
+    by = c("Census Tract" = "GEOID")
+  ) %>% 
+  st_as_sf()
+```
+
+```{r}
+mapview(ces4_res_map, zcol = "residuals")
+```
+The two census tracts with the most negative residual are the ones for Stanford! In the context of Asthma estimation, a negative residual means that there is a over-estimation of Asthma rates based on the PM2.5 levels. This could be the case for this particular census tract because Stanford's population is composed of students from all of California, the country, and the world, and so they grew up in areas with different PM2.5 levels and thus are likely to have different Asthma rates.  
+
+
