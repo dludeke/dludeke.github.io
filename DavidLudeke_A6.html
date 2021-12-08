@@ -172,6 +172,8 @@ pre code {
 </div>
 
 
+<div id="logit-model" class="section level1">
+<h1>Logit Model:</h1>
 <pre><code>## 
 ## Call:
 ## glm(formula = leadrisk ~ BLD + TEN + MV + PUMA, family = quasibinomial(), 
@@ -218,9 +220,92 @@ pre code {
 ## AIC: NA
 ## 
 ## Number of Fisher Scoring iterations: 19</code></pre>
-<p>One-row sample prediction:</p>
-<pre><code>##           1 
-## 0.005499059</code></pre>
+<p>The summary reveals that the coefficients that impact lead risk with the statistical significance (p value &lt; 0.05) are tenure and PUMA location: TEN3 (tenure rented), PUMA07504 (South of Market &amp; Potrero), PUMA07506 (North Beach &amp; Chinatown) and PUMA07507 (Bayview &amp; Hunters Point) all predict varying increases in lead risk.</p>
+</div>
+<div id="one-row-sample-prediction" class="section level1">
+<h1>One-row sample prediction:</h1>
+<pre><code>##          1 
+## 0.01222323</code></pre>
+<p>This random row has a low likelihood of lead risk according to our prediction model.</p>
+<div id="points" class="section level2">
+<h2>6.5 points:</h2>
+</div>
+<div id="summary-matrix" class="section level2">
+<h2>Summary Matrix:</h2>
+<pre><code>##                    
+## .                   FALSE TRUE
+##   No (No lead risk)  2167   51
+##   Yes (Lead risk)      38    8</code></pre>
+<p>Our model performed well in identifying actual “lead risk” in the given households, correctly predicting 96% of cases one way or the other (2167 true negatives, 8 true positives). There were 51 false positives (Type I error), where the households didn’t have lead risk but our model predicted they would. And there were 38 false negatives (Type II error) where the households had lead risk but our model incorrectly predicted they wouldn’t.</p>
+<p>In general, the households that exceeded our threshold score had residents who had moved into their house 2 to 4 years ago and 5 to 9 years ago (MV-3,4); the majority of households were rented (TEN-3); and most households were one-family house detached, with the second most popular unit being one-family house attached (BLD-2,3).</p>
+<p>If the organization were to mail postcards to households of this type based on their threshold score, they would mail out around 60 postcards. Of those postcards, roughly 14% (8/(51+8)) will actually go to low-income households with children. Around 17% (8/(38+8)) of at risk children are likely to be reached. Assuming we don’t have direct access to information about incomes and the presence of children at the address level, one way we could improve our strategy might be to look at public school records to identify public schools that serve primarily low income familys who live in areas with older buildings. If the schools are able to give out information on their students’ addresses, that would allow us to target large swathes of at-risk populations. Many children who are not at risk will still receive postcards, but this strategy would likely increase the percentage of at risk children that are actually reached.</p>
+</div>
+<div id="points-1" class="section level2">
+<h2>7 points:</h2>
+</div>
+<div id="model-accounting-for-replicate-weights" class="section level2">
+<h2>Model (accounting for replicate weights):</h2>
+<pre><code>## 
+## Call:
+## svyglm(formula = leadrisk ~ BLD + TEN + MV + PUMA, family = quasibinomial(), 
+##     design = train_design, )
+## 
+## Survey design:
+## svrepdesign.default(data = sf_pums_clean, type = &quot;ACS&quot;, repweights = data, 
+##     weights = ~as.numeric(WGTP))
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) -24.17415    1.68332 -14.361  &lt; 2e-16 ***
+## BLD10         0.69096    0.89600   0.771 0.443909    
+## BLD2         17.21300    1.16001  14.839  &lt; 2e-16 ***
+## BLD3         16.51719    1.24385  13.279  &lt; 2e-16 ***
+## BLD4         16.26275    1.32234  12.298  &lt; 2e-16 ***
+## BLD5         17.03384    1.35063  12.612  &lt; 2e-16 ***
+## BLD6         16.57076    1.34409  12.329  &lt; 2e-16 ***
+## BLD7          0.02406    0.63244   0.038 0.969795    
+## BLD8          0.11726    0.72732   0.161 0.872511    
+## BLD9         16.66640    1.39555  11.943  &lt; 2e-16 ***
+## TEN2         -0.83380    0.68420  -1.219 0.228184    
+## TEN3          0.78438    0.42560   1.843 0.070720 .  
+## TEN4          0.25028    1.24112   0.202 0.840928    
+## MV2           0.52659    0.97055   0.543 0.589617    
+## MV3           1.17652    0.72567   1.621 0.110675    
+## MV4           1.27680    0.82289   1.552 0.126494    
+## MV5           0.50295    0.85831   0.586 0.560288    
+## MV6           0.20630    0.98816   0.209 0.835394    
+## MV7          -0.21677    1.00379  -0.216 0.829825    
+## PUMA07502     1.60291    1.15034   1.393 0.169097    
+## PUMA07503     1.79587    1.36018   1.320 0.192197    
+## PUMA07504     3.27458    0.99499   3.291 0.001746 ** 
+## PUMA07505     1.82275    1.27242   1.433 0.157659    
+## PUMA07506     3.62932    1.05117   3.453 0.001075 ** 
+## PUMA07507     4.08523    1.03814   3.935 0.000236 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for quasibinomial family taken to be 1796.527)
+## 
+## Number of Fisher Scoring iterations: 19</code></pre>
+<p>The summary reveals that the coefficients that impact lead risk with the statistical significance (p value &lt; 0.05) are units in the structure and PUMA location: BLD-2,3,4,5,6,9 (one-family house detached and attached, 2-9 apartments, and 50 or more appartments), PUMA07504 (South of Market &amp; Potrero), PUMA07506 (North Beach &amp; Chinatown) and PUMA07507 (Bayview &amp; Hunters Point) all predict varying increases in lead risk. Note that the PUMA locations that predict lead risk for this model are the same as those PUMAs identified in the previous model. However, the number of units in the structure became a more important indicator in this model, while the importance of tenure type/move in date were not.</p>
+</div>
+</div>
+<div id="one-row-sample-weighted" class="section level1">
+<h1>One row sample (weighted):</h1>
+<pre><code>##     response     SE
+## 78 0.0043512 0.0044</code></pre>
+<p>This one row sample has a low likelihood of lead risk, according to our model.</p>
+<div id="summary-matrix-weighted" class="section level2">
+<h2>Summary Matrix (weighted):</h2>
+<pre><code>##                    
+## .                   FALSE TRUE
+##   No (No lead risk)  2106  112
+##   Yes (Lead risk)      30   16</code></pre>
+<p>Our model performed well in identifying actual “lead risk” in the given households, correctly predicting 93.7% of cases one way or the other (2106 true negatives, 16 true positives). There were 112 false positives (Type I error), where the households didn’t have lead risk but our model predicted they would. And there were 30 false negatives (Type II error) where the households had lead risk but our model incorrectly predicted they wouldn’t. In comparison to the previous model, this one had more Type I errors but fewer Type II errors.</p>
+<p>In general, the households that exceeded our threshold score can be described similarly to those in the previous model: they had residents who had moved into their house 2 to 4 years ago and 5 to 9 years ago (MV-3,4); the majority of households were rented or owned with mortage or loan (TEN-3,1); and most households were one-family house detached (BLD-2).</p>
+<p>If the organization were to mail postcards to households of this type based on their threshold score, they would mail out around 130 postcards (much more than the previous model). Of those postcards, roughly 12.5% (16/(112+16)) will actually go to low-income households with children. Around 34.8% (16/(30+16)) of at risk children are likely to be reached – this is double the percentage that would have been reached based on our previous model. One strategy for potentially increasing the number of at risk children we reach is the same: use public school data and information about building age and income level in various neighborhoods in order to cast a wider net to reach more at risk children.</p>
+</div>
+</div>
 
 
 
