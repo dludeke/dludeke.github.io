@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japanese Kana Practice</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .practice-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+
+    .language-selector {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    .language-btn {
+      padding: 0.75rem 1.5rem;
+      background: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .language-btn.active {
+      background: #28a745;
+      color: white;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+
+    .tab {
+      padding: 0.75rem 1.5rem;
+      background: #f0f0f0;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .tab.active {
+      background: #007bff;
+      color: white;
+    }
+
+    .quiz-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .question {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+
+    .hint {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .answer-input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.5rem;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .answer-input.correct {
+      border-color: #28a745;
+      background-color: #d4edda;
+    }
+
+    .answer-input.incorrect {
+      border-color: #dc3545;
+      background-color: #f8d7da;
+    }
+
+    .feedback {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .correct-answer {
+      color: #28a745;
+      margin: 0.5rem 0;
+    }
+
+    .difficulty-buttons {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .difficulty-btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn-again { background: #dc3545; color: white; }
+    .btn-hard { background: #ffc107; color: black; }
+    .btn-good { background: #28a745; color: white; }
+    .btn-easy { background: #17a2b8; color: white; }
+
+    .stats {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .kana-keyboard {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      display: none;
+    }
+
+    .kana-keyboard.visible {
+      display: block;
+    }
+
+    .keyboard-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+
+    .keyboard-tab {
+      padding: 0.5rem 1rem;
+      background: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .keyboard-tab.active {
+      background: #007bff;
+      color: white;
+    }
+
+    .kana-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.5rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .kana-key {
+      padding: 1rem;
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.2s;
+    }
+
+    .kana-key:hover {
+      background: #e3f2fd;
+      border-color: #007bff;
+    }
+
+    .kana-key:active {
+      transform: scale(0.95);
+    }
+
+    .special-keys {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .special-key {
+      padding: 0.5rem 1rem;
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .special-key:hover {
+      background: #f57c00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Script Practice</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="practice.html">Practice Area</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="practice-container">
+        <div class="language-selector" style="text-align: center; margin-bottom: 1.5rem;">
+          <button class="language-btn active" data-language="japanese">Japanese</button>
+          <button class="language-btn" data-language="greek">Greek</button>
+        </div>
+
+        <div class="tabs">
+          <button class="tab active" data-mode="script-to-romaji"><span id="modeLabel1">From Kana</span></button>
+          <button class="tab" data-mode="romaji-to-script"><span id="modeLabel2">From Latin Letters</span></button>
+        </div>
+
+        <div class="quiz-card">
+          <div class="question" id="question"></div>
+          <div class="hint" id="hint"></div>
+          <input type="text" class="answer-input" id="answer" placeholder="Type your answer..." autocomplete="off" />
+          <div class="feedback" id="feedback"></div>
+          <div class="correct-answer" id="correctAnswer"></div>
+          <div class="difficulty-buttons" id="difficultyButtons" style="display: none;">
+            <button class="difficulty-btn btn-again" data-difficulty="again">Again</button>
+            <button class="difficulty-btn btn-hard" data-difficulty="hard">Hard</button>
+            <button class="difficulty-btn btn-good" data-difficulty="good">Good</button>
+            <button class="difficulty-btn btn-easy" data-difficulty="easy">Easy</button>
+          </div>
+        </div>
+
+        <div id="kanaKeyboard" class="kana-keyboard">
+          <div class="keyboard-tabs">
+            <button class="keyboard-tab active" data-script="hiragana">Hiragana</button>
+            <button class="keyboard-tab" data-script="katakana">Katakana</button>
+          </div>
+          <div id="kanaGrid" class="kana-grid"></div>
+          <div class="special-keys">
+            <button class="special-key" id="backspaceKey">Backspace</button>
+            <button class="special-key" id="clearKey">Clear</button>
+          </div>
+        </div>
+
+        <div class="stats">
+          <p>Cards in queue: <span id="queueCount">0</span></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Name</p>
+    </footer>
+  </div>
+
+  <script>
+    let wordList = [];
+    let scriptMapping = {};
+    let currentLanguage = 'japanese';
+    let currentMode = 'script-to-romaji';
+    let currentCard = null;
+    let reviewQueue = [];
+    let currentKeyboardScript = 'hiragana';
+
+    // Language-specific configurations
+    const languageConfig = {
+      japanese: {
+        scripts: ['hiragana', 'katakana'],
+        wordFile: 'word-list.json',
+        mappingFile: 'kana-mapping.json',
+        wordKey: 'kana',
+        modeLabels: ['From Kana', 'From Latin Letters']
+      },
+      greek: {
+        scripts: ['lowercase', 'uppercase'],
+        wordFile: 'greek-word-list.json',
+        mappingFile: 'greek-mapping.json',
+        wordKey: 'greek',
+        modeLabels: ['From Greek', 'From Latin Letters']
+      }
+    };
+
+    // Spaced repetition intervals (in number of cards)
+    const intervals = {
+      again: 1,
+      hard: 3,
+      good: 5,
+      easy: 10
+    };
+
+    async function loadData(language = currentLanguage) {
+      const config = languageConfig[language];
+      try {
+        const [wordsResponse, mappingResponse] = await Promise.all([
+          fetch(config.wordFile),
+          fetch(config.mappingFile)
+        ]);
+
+        const wordsData = await wordsResponse.json();
+        wordList = wordsData.words;
+        scriptMapping = await mappingResponse.json();
+
+        currentKeyboardScript = config.scripts[0];
+        updateModeLabels();
+        buildScriptKeyboard();
+        initializeQueue();
+        showNextCard();
+      } catch (error) {
+        console.error('Error loading data:', error);
+        // Fallback: embed data directly
+        wordList = [
+          { kana: "すし", romaji: "sushi", english: "sushi" },
+          { kana: "さけ", romaji: "sake", english: "sake" },
+          { kana: "おおさか", romaji: "oosaka", english: "Osaka" },
+          { kana: "とうきょう", romaji: "toukyou", english: "Tokyo" },
+          { kana: "きょうと", romaji: "kyouto", english: "Kyoto" },
+          { kana: "コーヒー", romaji: "koohii", english: "coffee" },
+          { kana: "ケーキ", romaji: "keeki", english: "cake" },
+          { kana: "ラーメン", romaji: "raamen", english: "ramen" },
+          { kana: "てんぷら", romaji: "tenpura", english: "tempura" },
+          { kana: "みそ", romaji: "miso", english: "miso" },
+          { kana: "とうふ", romaji: "toufu", english: "tofu" },
+          { kana: "そば", romaji: "soba", english: "soba" },
+          { kana: "うどん", romaji: "udon", english: "udon" },
+          { kana: "おちゃ", romaji: "ocha", english: "tea" },
+          { kana: "みず", romaji: "mizu", english: "water" },
+          { kana: "さかな", romaji: "sakana", english: "fish" },
+          { kana: "やさい", romaji: "yasai", english: "vegetables" },
+          { kana: "にく", romaji: "niku", english: "meat" },
+          { kana: "たまご", romaji: "tamago", english: "egg" },
+          { kana: "パン", romaji: "pan", english: "bread" },
+          { kana: "ごはん", romaji: "gohan", english: "rice" },
+          { kana: "アニメ", romaji: "anime", english: "anime" },
+          { kana: "マンガ", romaji: "manga", english: "manga" },
+          { kana: "カラオケ", romaji: "karaoke", english: "karaoke" },
+          { kana: "すもう", romaji: "sumou", english: "sumo" },
+          { kana: "からて", romaji: "karate", english: "karate" },
+          { kana: "ふじさん", romaji: "fujisan", english: "Mt. Fuji" },
+          { kana: "さくら", romaji: "sakura", english: "cherry blossom" },
+          { kana: "ひらがな", romaji: "hiragana", english: "hiragana" },
+          { kana: "カタカナ", romaji: "katakana", english: "katakana" }
+        ];
+
+        kanaMapping = {
+          hiragana: {
+            "あ": "a", "い": "i", "う": "u", "え": "e", "お": "o",
+            "か": "ka", "き": "ki", "く": "ku", "け": "ke", "こ": "ko",
+            "さ": "sa", "し": "shi", "す": "su", "せ": "se", "そ": "so",
+            "た": "ta", "ち": "chi", "つ": "tsu", "て": "te", "と": "to",
+            "な": "na", "に": "ni", "ぬ": "nu", "ね": "ne", "の": "no",
+            "は": "ha", "ひ": "hi", "ふ": "fu", "へ": "he", "ほ": "ho",
+            "ま": "ma", "み": "mi", "む": "mu", "め": "me", "も": "mo",
+            "や": "ya", "ゆ": "yu", "よ": "yo",
+            "ら": "ra", "り": "ri", "る": "ru", "れ": "re", "ろ": "ro",
+            "わ": "wa", "を": "wo", "ん": "n"
+          },
+          katakana: {
+            "ア": "a", "イ": "i", "ウ": "u", "エ": "e", "オ": "o",
+            "カ": "ka", "キ": "ki", "ク": "ku", "ケ": "ke", "コ": "ko",
+            "サ": "sa", "シ": "shi", "ス": "su", "セ": "se", "ソ": "so",
+            "タ": "ta", "チ": "chi", "ツ": "tsu", "テ": "te", "ト": "to",
+            "ナ": "na", "ニ": "ni", "ヌ": "nu", "ネ": "ne", "ノ": "no",
+            "ハ": "ha", "ヒ": "hi", "フ": "fu", "ヘ": "he", "ホ": "ho",
+            "マ": "ma", "ミ": "mi", "ム": "mu", "メ": "me", "モ": "mo",
+            "ヤ": "ya", "ユ": "yu", "ヨ": "yo",
+            "ラ": "ra", "リ": "ri", "ル": "ru", "レ": "re", "ロ": "ro",
+            "ワ": "wa", "ヲ": "wo", "ン": "n", "ー": "-"
+          }
+        };
+
+        if (currentLanguage === 'japanese') {
+          scriptMapping = { hiragana: kanaMapping.hiragana, katakana: kanaMapping.katakana };
+          currentKeyboardScript = 'hiragana';
+        } else {
+          // Greek fallback
+          wordList = [
+            { greek: "αλφα", romaji: "alpha", english: "alpha" },
+            { greek: "βητα", romaji: "beta", english: "beta" },
+            { greek: "γαμμα", romaji: "gamma", english: "gamma" }
+          ];
+          scriptMapping = {
+            lowercase: {
+              "α": "a", "β": "b", "γ": "g", "δ": "d", "ε": "e",
+              "ζ": "z", "η": "e", "θ": "th", "ι": "i", "κ": "k",
+              "λ": "l", "μ": "m", "ν": "n", "ξ": "x", "ο": "o",
+              "π": "p", "ρ": "r", "σ": "s", "ς": "s", "τ": "t",
+              "υ": "y", "φ": "ph", "χ": "ch", "ψ": "ps", "ω": "o"
+            },
+            uppercase: {
+              "Α": "A", "Β": "B", "Γ": "G", "Δ": "D", "Ε": "E",
+              "Ζ": "Z", "Η": "E", "Θ": "Th", "Ι": "I", "Κ": "K",
+              "Λ": "L", "Μ": "M", "Ν": "N", "Ξ": "X", "Ο": "O",
+              "Π": "P", "Ρ": "R", "Σ": "S", "Τ": "T", "Υ": "Y",
+              "Φ": "Ph", "Χ": "Ch", "Ψ": "Ps", "Ω": "O"
+            }
+          };
+          currentKeyboardScript = 'lowercase';
+        }
+
+        updateModeLabels();
+        buildScriptKeyboard();
+        initializeQueue();
+        showNextCard();
+      }
+    }
+
+    function updateModeLabels() {
+      const config = languageConfig[currentLanguage];
+      document.getElementById('modeLabel1').textContent = config.modeLabels[0];
+      document.getElementById('modeLabel2').textContent = config.modeLabels[1];
+    }
+
+    function initializeQueue() {
+      reviewQueue = wordList.map((word, index) => ({
+        ...word,
+        id: index,
+        nextReview: 0
+      }));
+      updateQueueCount();
+    }
+
+    function updateQueueCount() {
+      document.getElementById('queueCount').textContent = reviewQueue.length;
+    }
+
+    function showNextCard() {
+      if (reviewQueue.length === 0) {
+        initializeQueue();
+      }
+
+      // Sort by nextReview and get the first card
+      reviewQueue.sort((a, b) => a.nextReview - b.nextReview);
+      currentCard = reviewQueue[0];
+
+      const questionEl = document.getElementById('question');
+      const hintEl = document.getElementById('hint');
+      const answerEl = document.getElementById('answer');
+      const feedbackEl = document.getElementById('feedback');
+      const correctAnswerEl = document.getElementById('correctAnswer');
+
+      answerEl.value = '';
+      answerEl.className = 'answer-input';
+      feedbackEl.textContent = '';
+      correctAnswerEl.textContent = '';
+      hintEl.textContent = '';
+      document.getElementById('difficultyButtons').style.display = 'none';
+      answerEl.focus();
+
+      const config = languageConfig[currentLanguage];
+      const scriptKey = config.wordKey;
+
+      if (currentMode === 'script-to-romaji') {
+        questionEl.textContent = currentCard[scriptKey];
+        document.getElementById('kanaKeyboard').classList.remove('visible');
+      } else {
+        questionEl.textContent = currentCard.romaji;
+        document.getElementById('kanaKeyboard').classList.add('visible');
+      }
+
+      updateQueueCount();
+    }
+
+    function buildScriptKeyboard() {
+      const kanaGrid = document.getElementById('kanaGrid');
+      kanaGrid.innerHTML = '';
+
+      const scriptChars = scriptMapping[currentKeyboardScript];
+
+      if (scriptChars) {
+        for (const [char, romaji] of Object.entries(scriptChars)) {
+          const button = document.createElement('button');
+          button.className = 'kana-key';
+          button.textContent = char;
+          button.dataset.char = char;
+          button.addEventListener('click', () => {
+            const answerInput = document.getElementById('answer');
+            answerInput.value += char;
+            answerInput.focus();
+          });
+          kanaGrid.appendChild(button);
+        }
+      }
+
+      // Update keyboard tabs
+      const config = languageConfig[currentLanguage];
+      const keyboardTabs = document.querySelectorAll('.keyboard-tab');
+      keyboardTabs.forEach((tab, index) => {
+        if (index < config.scripts.length) {
+          tab.style.display = 'block';
+          tab.textContent = config.scripts[index].charAt(0).toUpperCase() + config.scripts[index].slice(1);
+          tab.dataset.script = config.scripts[index];
+        } else {
+          tab.style.display = 'none';
+        }
+      });
+    }
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
+      const answerEl = document.getElementById('answer');
+      const feedbackEl = document.getElementById('feedback');
+      const correctAnswerEl = document.getElementById('correctAnswer');
+      const hintEl = document.getElementById('hint');
+
+      const config = languageConfig[currentLanguage];
+      const scriptKey = config.wordKey;
+
+      let correctAnswer;
+      if (currentMode === 'script-to-romaji') {
+        correctAnswer = currentCard.romaji.toLowerCase();
+      } else {
+        correctAnswer = currentCard[scriptKey].toLowerCase();
+      }
+
+      const isCorrect = userAnswer === correctAnswer;
+
+      // Show the English meaning after submission
+      hintEl.textContent = `(${currentCard.english})`;
+
+      if (isCorrect) {
+        answerEl.className = 'answer-input correct';
+        feedbackEl.textContent = '✓ Correct!';
+        feedbackEl.style.color = '#28a745';
+      } else {
+        answerEl.className = 'answer-input incorrect';
+        feedbackEl.textContent = '✗ Incorrect';
+        feedbackEl.style.color = '#dc3545';
+        correctAnswerEl.textContent = `Correct answer: ${correctAnswer}`;
+      }
+
+      document.getElementById('difficultyButtons').style.display = 'flex';
+    }
+
+    function handleDifficulty(difficulty) {
+      const interval = intervals[difficulty];
+
+      // Remove current card from queue
+      reviewQueue.shift();
+
+      // Calculate when this card should appear again
+      currentCard.nextReview = interval;
+
+      // Decrement all nextReview counters
+      reviewQueue.forEach(card => {
+        if (card.nextReview > 0) card.nextReview--;
+      });
+
+      // Add card back to queue
+      reviewQueue.push(currentCard);
+
+      showNextCard();
+    }
+
+    // Event listeners
+    // Language selector
+    document.querySelectorAll('.language-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const button = e.currentTarget;
+        const newLanguage = button.dataset.language;
+
+        // Only reload if language actually changed
+        if (newLanguage !== currentLanguage) {
+          document.querySelectorAll('.language-btn').forEach(b => b.classList.remove('active'));
+          button.classList.add('active');
+          currentLanguage = newLanguage;
+          loadData(currentLanguage);
+        }
+      });
+    });
+
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        const button = e.currentTarget;
+        const newMode = button.dataset.mode;
+
+        // Only update if mode actually changed
+        if (newMode !== currentMode) {
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          button.classList.add('active');
+          currentMode = newMode;
+          showNextCard();
+        }
+      });
+    });
+
+    document.getElementById('answer').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        const diffButtons = document.getElementById('difficultyButtons');
+        if (diffButtons.style.display === 'none') {
+          checkAnswer();
+        } else {
+          handleDifficulty('good');
+        }
+      }
+    });
+
+    document.querySelectorAll('.difficulty-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        handleDifficulty(e.target.dataset.difficulty);
+      });
+    });
+
+    // Keyboard tab switching
+    document.querySelectorAll('.keyboard-tab').forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        document.querySelectorAll('.keyboard-tab').forEach(t => t.classList.remove('active'));
+        e.target.classList.add('active');
+        currentKeyboardScript = e.target.dataset.script;
+        buildScriptKeyboard();
+      });
+    });
+
+    // Special keyboard keys
+    document.getElementById('backspaceKey').addEventListener('click', () => {
+      const answerInput = document.getElementById('answer');
+      answerInput.value = answerInput.value.slice(0, -1);
+      answerInput.focus();
+    });
+
+    document.getElementById('clearKey').addEventListener('click', () => {
+      const answerInput = document.getElementById('answer');
+      answerInput.value = '';
+      answerInput.focus();
+    });
+
+    // Initialize
+    loadData();
+  </script>
+</body>
+</html>

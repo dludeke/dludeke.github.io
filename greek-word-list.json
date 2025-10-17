@@ -1,0 +1,304 @@
+{
+  "words": [
+    {
+      "greek": "αλφα",
+      "romaji": "alpha",
+      "english": "alpha"
+    },
+    {
+      "greek": "βητα",
+      "romaji": "beta",
+      "english": "beta"
+    },
+    {
+      "greek": "γαμμα",
+      "romaji": "gamma",
+      "english": "gamma"
+    },
+    {
+      "greek": "δελτα",
+      "romaji": "delta",
+      "english": "delta"
+    },
+    {
+      "greek": "επσιλον",
+      "romaji": "epsilon",
+      "english": "epsilon"
+    },
+    {
+      "greek": "ζητα",
+      "romaji": "zeta",
+      "english": "zeta"
+    },
+    {
+      "greek": "ητα",
+      "romaji": "eta",
+      "english": "eta"
+    },
+    {
+      "greek": "θητα",
+      "romaji": "theta",
+      "english": "theta"
+    },
+    {
+      "greek": "ιωτα",
+      "romaji": "iota",
+      "english": "iota"
+    },
+    {
+      "greek": "καππα",
+      "romaji": "kappa",
+      "english": "kappa"
+    },
+    {
+      "greek": "λαμβδα",
+      "romaji": "lambda",
+      "english": "lambda"
+    },
+    {
+      "greek": "μυ",
+      "romaji": "mu",
+      "english": "mu"
+    },
+    {
+      "greek": "νυ",
+      "romaji": "nu",
+      "english": "nu"
+    },
+    {
+      "greek": "ξι",
+      "romaji": "xi",
+      "english": "xi"
+    },
+    {
+      "greek": "ομικρον",
+      "romaji": "omicron",
+      "english": "omicron"
+    },
+    {
+      "greek": "πι",
+      "romaji": "pi",
+      "english": "pi"
+    },
+    {
+      "greek": "ρο",
+      "romaji": "rho",
+      "english": "rho"
+    },
+    {
+      "greek": "σιγμα",
+      "romaji": "sigma",
+      "english": "sigma"
+    },
+    {
+      "greek": "ταυ",
+      "romaji": "tau",
+      "english": "tau"
+    },
+    {
+      "greek": "υψιλον",
+      "romaji": "upsilon",
+      "english": "upsilon"
+    },
+    {
+      "greek": "φι",
+      "romaji": "phi",
+      "english": "phi"
+    },
+    {
+      "greek": "χι",
+      "romaji": "chi",
+      "english": "chi"
+    },
+    {
+      "greek": "ψι",
+      "romaji": "psi",
+      "english": "psi"
+    },
+    {
+      "greek": "ωμεγα",
+      "romaji": "omega",
+      "english": "omega"
+    },
+    {
+      "greek": "αθηνα",
+      "romaji": "athena",
+      "english": "Athens"
+    },
+    {
+      "greek": "σπαρτη",
+      "romaji": "sparta",
+      "english": "Sparta"
+    },
+    {
+      "greek": "θεσσαλονικη",
+      "romaji": "thessalonike",
+      "english": "Thessaloniki"
+    },
+    {
+      "greek": "κορινθος",
+      "romaji": "korinthos",
+      "english": "Corinth"
+    },
+    {
+      "greek": "δελφοι",
+      "romaji": "delphoi",
+      "english": "Delphi"
+    },
+    {
+      "greek": "ολυμπια",
+      "romaji": "olympia",
+      "english": "Olympia"
+    },
+    {
+      "greek": "κρητη",
+      "romaji": "krete",
+      "english": "Crete"
+    },
+    {
+      "greek": "ροδος",
+      "romaji": "rhodos",
+      "english": "Rhodes"
+    },
+    {
+      "greek": "μυκηναι",
+      "romaji": "mykenai",
+      "english": "Mycenae"
+    },
+    {
+      "greek": "ολυμπος",
+      "romaji": "olympos",
+      "english": "Olympus"
+    },
+    {
+      "greek": "μαραθων",
+      "romaji": "marathon",
+      "english": "Marathon"
+    },
+    {
+      "greek": "σωκρατης",
+      "romaji": "sokrates",
+      "english": "Socrates"
+    },
+    {
+      "greek": "πλατων",
+      "romaji": "platon",
+      "english": "Plato"
+    },
+    {
+      "greek": "αριστοτελης",
+      "romaji": "aristoteles",
+      "english": "Aristotle"
+    },
+    {
+      "greek": "αλεξανδρος",
+      "romaji": "alexandros",
+      "english": "Alexander"
+    },
+    {
+      "greek": "περικλης",
+      "romaji": "perikles",
+      "english": "Pericles"
+    },
+    {
+      "greek": "ομηρος",
+      "romaji": "homeros",
+      "english": "Homer"
+    },
+    {
+      "greek": "ηροδοτος",
+      "romaji": "herodotos",
+      "english": "Herodotus"
+    },
+    {
+      "greek": "πυθαγορας",
+      "romaji": "pythagoras",
+      "english": "Pythagoras"
+    },
+    {
+      "greek": "ευκλειδης",
+      "romaji": "eukleides",
+      "english": "Euclid"
+    },
+    {
+      "greek": "αρχιμηδης",
+      "romaji": "archimedes",
+      "english": "Archimedes"
+    },
+    {
+      "greek": "ιπποκρατης",
+      "romaji": "hippokrates",
+      "english": "Hippocrates"
+    },
+    {
+      "greek": "λεωνιδας",
+      "romaji": "leonidas",
+      "english": "Leonidas"
+    },
+    {
+      "greek": "μουσακας",
+      "romaji": "mousakas",
+      "english": "moussaka"
+    },
+    {
+      "greek": "σουβλακι",
+      "romaji": "souvlaki",
+      "english": "souvlaki"
+    },
+    {
+      "greek": "τζατζικι",
+      "romaji": "tzatziki",
+      "english": "tzatziki"
+    },
+    {
+      "greek": "ταραμοσαλατα",
+      "romaji": "taramosalata",
+      "english": "taramosalata"
+    },
+    {
+      "greek": "φετα",
+      "romaji": "pheta",
+      "english": "feta"
+    },
+    {
+      "greek": "γυρος",
+      "romaji": "gyros",
+      "english": "gyros"
+    },
+    {
+      "greek": "σπανακοπιτα",
+      "romaji": "spanakopita",
+      "english": "spanakopita"
+    },
+    {
+      "greek": "ντολμαδες",
+      "romaji": "dolmades",
+      "english": "dolmades"
+    },
+    {
+      "greek": "μπακλαβας",
+      "romaji": "baklavas",
+      "english": "baklava"
+    },
+    {
+      "greek": "ουζο",
+      "romaji": "ouzo",
+      "english": "ouzo"
+    },
+    {
+      "greek": "ελια",
+      "romaji": "elia",
+      "english": "olive"
+    },
+    {
+      "greek": "δημοκρατια",
+      "romaji": "demokratia",
+      "english": "democracy"
+    },
+    {
+      "greek": "φιλοσοφια",
+      "romaji": "philosophia",
+      "english": "philosophy"
+    }
+  ]
+}
