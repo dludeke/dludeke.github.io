@@ -262,10 +262,6 @@
           </div>
           <div id="kanaGrid" class="kana-grid"></div>
           <div class="special-keys">
-            <button class="special-key kana-small-key" data-char-hira="ゃ" data-char-kata="ャ">ゃ/ャ</button>
-            <button class="special-key kana-small-key" data-char-hira="ゅ" data-char-kata="ュ">ゅ/ュ</button>
-            <button class="special-key kana-small-key" data-char-hira="ょ" data-char-kata="ョ">ょ/ョ</button>
-            <button class="special-key kana-small-key" data-char-hira="っ" data-char-kata="ッ">っ/ッ</button>
             <button class="special-key" id="backspaceKey">Backspace</button>
             <button class="special-key" id="clearKey">Clear</button>
           </div>
@@ -640,15 +636,6 @@
     });
 
     // Special keyboard keys
-    document.querySelectorAll('.kana-small-key').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const answerInput = document.getElementById('answer');
-        const char = currentKeyboardScript === 'hiragana' ? btn.dataset.charHira : btn.dataset.charKata;
-        answerInput.value += char;
-        answerInput.focus();
-      });
-    });
-
     document.getElementById('backspaceKey').addEventListener('click', () => {
       const answerInput = document.getElementById('answer');
       answerInput.value = answerInput.value.slice(0, -1);
