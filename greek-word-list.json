@@ -3,302 +3,362 @@
     {
       "greek": "αλφα",
       "romaji": "alpha",
-      "english": "alpha"
+      "english": "alpha",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "βητα",
       "romaji": "beta",
-      "english": "beta"
+      "english": "beta",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "γαμμα",
       "romaji": "gamma",
-      "english": "gamma"
+      "english": "gamma",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "δελτα",
       "romaji": "delta",
-      "english": "delta"
+      "english": "delta",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "επσιλον",
       "romaji": "epsilon",
-      "english": "epsilon"
+      "english": "epsilon",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ζητα",
       "romaji": "zeta",
-      "english": "zeta"
+      "english": "zeta",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ητα",
       "romaji": "eta",
-      "english": "eta"
+      "english": "eta",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "θητα",
       "romaji": "theta",
-      "english": "theta"
+      "english": "theta",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ιωτα",
       "romaji": "iota",
-      "english": "iota"
+      "english": "iota",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "καππα",
       "romaji": "kappa",
-      "english": "kappa"
+      "english": "kappa",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "λαμβδα",
       "romaji": "lambda",
-      "english": "lambda"
+      "english": "lambda",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "μυ",
       "romaji": "mu",
-      "english": "mu"
+      "english": "mu",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "νυ",
       "romaji": "nu",
-      "english": "nu"
+      "english": "nu",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ξι",
       "romaji": "xi",
-      "english": "xi"
+      "english": "xi",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ομικρον",
       "romaji": "omicron",
-      "english": "omicron"
+      "english": "omicron",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "πι",
       "romaji": "pi",
-      "english": "pi"
+      "english": "pi",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ρο",
       "romaji": "rho",
-      "english": "rho"
+      "english": "rho",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "σιγμα",
       "romaji": "sigma",
-      "english": "sigma"
+      "english": "sigma",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ταυ",
       "romaji": "tau",
-      "english": "tau"
+      "english": "tau",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "υψιλον",
       "romaji": "upsilon",
-      "english": "upsilon"
+      "english": "upsilon",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "φι",
       "romaji": "phi",
-      "english": "phi"
+      "english": "phi",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "χι",
       "romaji": "chi",
-      "english": "chi"
+      "english": "chi",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ψι",
       "romaji": "psi",
-      "english": "psi"
+      "english": "psi",
+      "categories": ["Letter Names"]
     },
     {
       "greek": "ωμεγα",
       "romaji": "omega",
-      "english": "omega"
+      "english": "omega",
+      "categories": ["Letter Names"]
     },
     {
-      "greek": "αθηνα",
-      "romaji": "athena",
-      "english": "Athens"
+      "greek": "Αθηνα",
+      "romaji": "Athena",
+      "english": "Athens",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "σπαρτη",
-      "romaji": "sparta",
-      "english": "Sparta"
+      "greek": "Σπαρτη",
+      "romaji": "Sparta",
+      "english": "Sparta",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "θεσσαλονικη",
-      "romaji": "thessalonike",
-      "english": "Thessaloniki"
+      "greek": "Θεσσαλονικη",
+      "romaji": "Thessalonike",
+      "english": "Thessaloniki",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "κορινθος",
-      "romaji": "korinthos",
-      "english": "Corinth"
+      "greek": "Κορινθος",
+      "romaji": "Korinthos",
+      "english": "Corinth",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "δελφοι",
-      "romaji": "delphoi",
-      "english": "Delphi"
+      "greek": "Δελφοι",
+      "romaji": "Delphoi",
+      "english": "Delphi",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "ολυμπια",
-      "romaji": "olympia",
-      "english": "Olympia"
+      "greek": "Ολυμπια",
+      "romaji": "Olympia",
+      "english": "Olympia",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "κρητη",
-      "romaji": "krete",
-      "english": "Crete"
+      "greek": "Κρητη",
+      "romaji": "Krete",
+      "english": "Crete",
+      "categories": ["Geography"]
     },
     {
-      "greek": "ροδος",
-      "romaji": "rhodos",
-      "english": "Rhodes"
+      "greek": "Ροδος",
+      "romaji": "Rhodos",
+      "english": "Rhodes",
+      "categories": ["Geography"]
     },
     {
-      "greek": "μυκηναι",
-      "romaji": "mykenai",
-      "english": "Mycenae"
+      "greek": "Μυκηναι",
+      "romaji": "Mykenai",
+      "english": "Mycenae",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "ολυμπος",
-      "romaji": "olympos",
-      "english": "Olympus"
+      "greek": "Ολυμπος",
+      "romaji": "Olympos",
+      "english": "Olympus",
+      "categories": ["Geography"]
     },
     {
-      "greek": "μαραθων",
-      "romaji": "marathon",
-      "english": "Marathon"
+      "greek": "Μαραθων",
+      "romaji": "Marathon",
+      "english": "Marathon",
+      "categories": ["Geography", "Cities"]
     },
     {
-      "greek": "σωκρατης",
-      "romaji": "sokrates",
-      "english": "Socrates"
+      "greek": "Σωκρατης",
+      "romaji": "Sokrates",
+      "english": "Socrates",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "πλατων",
-      "romaji": "platon",
-      "english": "Plato"
+      "greek": "Πλατων",
+      "romaji": "Platon",
+      "english": "Plato",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "αριστοτελης",
-      "romaji": "aristoteles",
-      "english": "Aristotle"
+      "greek": "Αριστοτελης",
+      "romaji": "Aristoteles",
+      "english": "Aristotle",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "αλεξανδρος",
-      "romaji": "alexandros",
-      "english": "Alexander"
+      "greek": "Αλεξανδρος",
+      "romaji": "Alexandros",
+      "english": "Alexander",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "περικλης",
-      "romaji": "perikles",
-      "english": "Pericles"
+      "greek": "Περικλης",
+      "romaji": "Perikles",
+      "english": "Pericles",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "ομηρος",
-      "romaji": "homeros",
-      "english": "Homer"
+      "greek": "Ομηρος",
+      "romaji": "Homeros",
+      "english": "Homer",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "ηροδοτος",
-      "romaji": "herodotos",
-      "english": "Herodotus"
+      "greek": "Ηροδοτος",
+      "romaji": "Herodotos",
+      "english": "Herodotus",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "πυθαγορας",
-      "romaji": "pythagoras",
-      "english": "Pythagoras"
+      "greek": "Πυθαγορας",
+      "romaji": "Pythagoras",
+      "english": "Pythagoras",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "ευκλειδης",
-      "romaji": "eukleides",
-      "english": "Euclid"
+      "greek": "Ευκλειδης",
+      "romaji": "Eukleides",
+      "english": "Euclid",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "αρχιμηδης",
-      "romaji": "archimedes",
-      "english": "Archimedes"
+      "greek": "Αρχιμηδης",
+      "romaji": "Archimedes",
+      "english": "Archimedes",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "ιπποκρατης",
-      "romaji": "hippokrates",
-      "english": "Hippocrates"
+      "greek": "Ιπποκρατης",
+      "romaji": "Hippokrates",
+      "english": "Hippocrates",
+      "categories": ["Historical Figures"]
     },
     {
-      "greek": "λεωνιδας",
-      "romaji": "leonidas",
-      "english": "Leonidas"
+      "greek": "Λεωνιδας",
+      "romaji": "Leonidas",
+      "english": "Leonidas",
+      "categories": ["Historical Figures"]
     },
     {
       "greek": "μουσακας",
       "romaji": "mousakas",
-      "english": "moussaka"
+      "english": "moussaka",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "σουβλακι",
       "romaji": "souvlaki",
-      "english": "souvlaki"
+      "english": "souvlaki",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "τζατζικι",
       "romaji": "tzatziki",
-      "english": "tzatziki"
+      "english": "tzatziki",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "ταραμοσαλατα",
       "romaji": "taramosalata",
-      "english": "taramosalata"
+      "english": "taramosalata",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "φετα",
       "romaji": "pheta",
-      "english": "feta"
+      "english": "feta",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "γυρος",
       "romaji": "gyros",
-      "english": "gyros"
+      "english": "gyros",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "σπανακοπιτα",
       "romaji": "spanakopita",
-      "english": "spanakopita"
+      "english": "spanakopita",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "ντολμαδες",
       "romaji": "dolmades",
-      "english": "dolmades"
+      "english": "dolmades",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "μπακλαβας",
       "romaji": "baklavas",
-      "english": "baklava"
+      "english": "baklava",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "ουζο",
       "romaji": "ouzo",
-      "english": "ouzo"
+      "english": "ouzo",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "ελια",
       "romaji": "elia",
-      "english": "olive"
+      "english": "olive",
+      "categories": ["Food & Drinks"]
     },
     {
       "greek": "δημοκρατια",
       "romaji": "demokratia",
-      "english": "democracy"
+      "english": "democracy",
+      "categories": ["Culture", "Concepts"]
     },
     {
       "greek": "φιλοσοφια",
       "romaji": "philosophia",
-      "english": "philosophy"
+      "english": "philosophy",
+      "categories": ["Culture", "Concepts"]
     }
   ]
 }

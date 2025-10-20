@@ -6,10 +6,54 @@
   <title>Japanese Kana Practice</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    .practice-container {
-      max-width: 600px;
+    /* Override main styles for practice page */
+    main {
+      padding: 0 !important;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 2rem;
+      max-width: 1200px;
       margin: 2rem auto;
-      padding: 2rem;
+      padding: 0 2rem;
+    }
+
+    .category-sidebar {
+      min-width: 200px;
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      height: fit-content;
+      position: sticky;
+      top: 2rem;
+    }
+
+    .category-sidebar h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .category-filter {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .category-filter input[type="checkbox"] {
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+
+    .category-filter label {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .practice-container {
+      flex: 1;
+      max-width: 600px;
     }
 
     .language-selector {
@@ -230,21 +274,38 @@
     </header>
 
     <main>
-      <div class="practice-container">
-        <div class="language-selector" style="text-align: center; margin-bottom: 1.5rem;">
-          <button class="language-btn active" data-language="japanese">Japanese</button>
-          <button class="language-btn" data-language="greek">Greek</button>
+      <div class="main-content">
+        <div class="category-sidebar">
+          <h3>Categories</h3>
+          <div id="categoryFilters"></div>
         </div>
 
+        <div class="practice-container">
+          <div class="language-selector" style="text-align: center; margin-bottom: 1.5rem;">
+            <button class="language-btn active" data-language="japanese">Japanese</button>
+            <button class="language-btn" data-language="greek">Greek</button>
+          </div>
+
         <div class="tabs">
-          <button class="tab active" data-mode="script-to-romaji"><span id="modeLabel1">From Kana</span></button>
-          <button class="tab" data-mode="romaji-to-script"><span id="modeLabel2">From Latin Letters</span></button>
+          <button class="tab active" data-mode-index="0"><span id="modeLabel1">From Kana</span></button>
+          <button class="tab" data-mode-index="1"><span id="modeLabel2">From Latin Letters</span></button>
+          <button class="tab" data-mode-index="2"><span id="modeLabel3">JSL → Kana</span></button>
+          <button class="tab" data-mode-index="3"><span id="modeLabel4">Kana → JSL</span></button>
         </div>
 
         <div class="quiz-card">
           <div class="question" id="question"></div>
+          <div id="questionImage" style="display: none; text-align: center; margin: 1rem 0;">
+            <img id="questionImg" src="" alt="Handshape" style="max-width: 300px; height: auto;" />
+          </div>
+          <div id="answerImageContainer" style="display: none; text-align: center; margin: 1rem 0;">
+            <div id="answerImages" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;"></div>
+          </div>
           <div class="hint" id="hint"></div>
           <input type="text" class="answer-input" id="answer" placeholder="Type your answer..." autocomplete="off" />
+          <div style="text-align: center;">
+            <button id="revealButton" style="display: none; padding: 1rem 2rem; font-size: 1.2rem; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; margin: 1rem 0;">Reveal Answer</button>
+          </div>
           <div class="feedback" id="feedback"></div>
           <div class="correct-answer" id="correctAnswer"></div>
           <div class="difficulty-buttons" id="difficultyButtons" style="display: none;">
@@ -270,6 +331,7 @@
         <div class="stats">
           <p>Cards in queue: <span id="queueCount">0</span></p>
         </div>
+        </div>
       </div>
     </main>
 
@@ -280,28 +342,35 @@
 
   <script>
     let wordList = [];
+    let allWords = [];
     let scriptMapping = {};
+    let signLanguageMapping = {};
     let currentLanguage = 'japanese';
     let currentMode = 'script-to-romaji';
     let currentCard = null;
     let reviewQueue = [];
     let currentKeyboardScript = 'hiragana';
+    let selectedCategories = new Set();
 
     // Language-specific configurations
     const languageConfig = {
       japanese: {
         scripts: ['hiragana', 'katakana'],
-        wordFile: 'word-list.json',
+        wordFile: 'japanese-word-list.json',
         mappingFile: 'kana-mapping.json',
+        signLanguageFile: null, // TODO: Add JSL when ready
         wordKey: 'kana',
-        modeLabels: ['From Kana', 'From Latin Letters']
+        modeLabels: ['Kana → Latin', 'Latin → Kana', 'JSL → Kana', 'Kana → JSL'],
+        modes: ['script-to-romaji', 'romaji-to-script', 'sign-to-script', 'script-to-sign']
       },
       greek: {
         scripts: ['lowercase', 'uppercase'],
         wordFile: 'greek-word-list.json',
         mappingFile: 'greek-mapping.json',
+        signLanguageFile: 'gsl-handshapes-mapping.json',
         wordKey: 'greek',
-        modeLabels: ['From Greek', 'From Latin Letters']
+        modeLabels: ['Greek → Latin', 'Latin → Greek', 'GSL → Greek', 'Greek → GSL'],
+        modes: ['script-to-romaji', 'romaji-to-script', 'sign-to-script', 'script-to-sign']
       }
     };
 
@@ -316,123 +385,164 @@
     async function loadData(language = currentLanguage) {
       const config = languageConfig[language];
       try {
-        const [wordsResponse, mappingResponse] = await Promise.all([
+        const fetchPromises = [
           fetch(config.wordFile),
           fetch(config.mappingFile)
-        ]);
+        ];
+
+        // Add sign language fetch if available
+        if (config.signLanguageFile) {
+          fetchPromises.push(fetch(config.signLanguageFile));
+        }
+
+        const responses = await Promise.all(fetchPromises);
+        const [wordsResponse, mappingResponse, signLanguageResponse] = responses;
+
+        if (!wordsResponse.ok) {
+          throw new Error(`Failed to fetch ${config.wordFile}: ${wordsResponse.status}`);
+        }
+        if (!mappingResponse.ok) {
+          throw new Error(`Failed to fetch ${config.mappingFile}: ${mappingResponse.status}`);
+        }
 
         const wordsData = await wordsResponse.json();
-        wordList = wordsData.words;
+        allWords = wordsData.words;
         scriptMapping = await mappingResponse.json();
 
+        // Load sign language mapping if available
+        if (signLanguageResponse && signLanguageResponse.ok) {
+          signLanguageMapping = await signLanguageResponse.json();
+        } else {
+          signLanguageMapping = {};
+        }
+
         currentKeyboardScript = config.scripts[0];
+        buildCategoryFilters();
         updateModeLabels();
+        updateModeTabs();
         buildScriptKeyboard();
+        filterWordsByCategory();
         initializeQueue();
         showNextCard();
       } catch (error) {
         console.error('Error loading data:', error);
-        // Fallback: embed data directly
-        wordList = [
-          { kana: "すし", romaji: "sushi", english: "sushi" },
-          { kana: "さけ", romaji: "sake", english: "sake" },
-          { kana: "おおさか", romaji: "oosaka", english: "Osaka" },
-          { kana: "とうきょう", romaji: "toukyou", english: "Tokyo" },
-          { kana: "きょうと", romaji: "kyouto", english: "Kyoto" },
-          { kana: "コーヒー", romaji: "koohii", english: "coffee" },
-          { kana: "ケーキ", romaji: "keeki", english: "cake" },
-          { kana: "ラーメン", romaji: "raamen", english: "ramen" },
-          { kana: "てんぷら", romaji: "tenpura", english: "tempura" },
-          { kana: "みそ", romaji: "miso", english: "miso" },
-          { kana: "とうふ", romaji: "toufu", english: "tofu" },
-          { kana: "そば", romaji: "soba", english: "soba" },
-          { kana: "うどん", romaji: "udon", english: "udon" },
-          { kana: "おちゃ", romaji: "ocha", english: "tea" },
-          { kana: "みず", romaji: "mizu", english: "water" },
-          { kana: "さかな", romaji: "sakana", english: "fish" },
-          { kana: "やさい", romaji: "yasai", english: "vegetables" },
-          { kana: "にく", romaji: "niku", english: "meat" },
-          { kana: "たまご", romaji: "tamago", english: "egg" },
-          { kana: "パン", romaji: "pan", english: "bread" },
-          { kana: "ごはん", romaji: "gohan", english: "rice" },
-          { kana: "アニメ", romaji: "anime", english: "anime" },
-          { kana: "マンガ", romaji: "manga", english: "manga" },
-          { kana: "カラオケ", romaji: "karaoke", english: "karaoke" },
-          { kana: "すもう", romaji: "sumou", english: "sumo" },
-          { kana: "からて", romaji: "karate", english: "karate" },
-          { kana: "ふじさん", romaji: "fujisan", english: "Mt. Fuji" },
-          { kana: "さくら", romaji: "sakura", english: "cherry blossom" },
-          { kana: "ひらがな", romaji: "hiragana", english: "hiragana" },
-          { kana: "カタカナ", romaji: "katakana", english: "katakana" }
-        ];
-
-        kanaMapping = {
-          hiragana: {
-            "あ": "a", "い": "i", "う": "u", "え": "e", "お": "o",
-            "か": "ka", "き": "ki", "く": "ku", "け": "ke", "こ": "ko",
-            "さ": "sa", "し": "shi", "す": "su", "せ": "se", "そ": "so",
-            "た": "ta", "ち": "chi", "つ": "tsu", "て": "te", "と": "to",
-            "な": "na", "に": "ni", "ぬ": "nu", "ね": "ne", "の": "no",
-            "は": "ha", "ひ": "hi", "ふ": "fu", "へ": "he", "ほ": "ho",
-            "ま": "ma", "み": "mi", "む": "mu", "め": "me", "も": "mo",
-            "や": "ya", "ゆ": "yu", "よ": "yo",
-            "ら": "ra", "り": "ri", "る": "ru", "れ": "re", "ろ": "ro",
-            "わ": "wa", "を": "wo", "ん": "n"
-          },
-          katakana: {
-            "ア": "a", "イ": "i", "ウ": "u", "エ": "e", "オ": "o",
-            "カ": "ka", "キ": "ki", "ク": "ku", "ケ": "ke", "コ": "ko",
-            "サ": "sa", "シ": "shi", "ス": "su", "セ": "se", "ソ": "so",
-            "タ": "ta", "チ": "chi", "ツ": "tsu", "テ": "te", "ト": "to",
-            "ナ": "na", "ニ": "ni", "ヌ": "nu", "ネ": "ne", "ノ": "no",
-            "ハ": "ha", "ヒ": "hi", "フ": "fu", "ヘ": "he", "ホ": "ho",
-            "マ": "ma", "ミ": "mi", "ム": "mu", "メ": "me", "モ": "mo",
-            "ヤ": "ya", "ユ": "yu", "ヨ": "yo",
-            "ラ": "ra", "リ": "ri", "ル": "ru", "レ": "re", "ロ": "ro",
-            "ワ": "wa", "ヲ": "wo", "ン": "n", "ー": "-"
-          }
-        };
-
-        if (currentLanguage === 'japanese') {
-          scriptMapping = { hiragana: kanaMapping.hiragana, katakana: kanaMapping.katakana };
-          currentKeyboardScript = 'hiragana';
-        } else {
-          // Greek fallback
-          wordList = [
-            { greek: "αλφα", romaji: "alpha", english: "alpha" },
-            { greek: "βητα", romaji: "beta", english: "beta" },
-            { greek: "γαμμα", romaji: "gamma", english: "gamma" }
-          ];
-          scriptMapping = {
-            lowercase: {
-              "α": "a", "β": "b", "γ": "g", "δ": "d", "ε": "e",
-              "ζ": "z", "η": "e", "θ": "th", "ι": "i", "κ": "k",
-              "λ": "l", "μ": "m", "ν": "n", "ξ": "x", "ο": "o",
-              "π": "p", "ρ": "r", "σ": "s", "ς": "s", "τ": "t",
-              "υ": "y", "φ": "ph", "χ": "ch", "ψ": "ps", "ω": "o"
-            },
-            uppercase: {
-              "Α": "A", "Β": "B", "Γ": "G", "Δ": "D", "Ε": "E",
-              "Ζ": "Z", "Η": "E", "Θ": "Th", "Ι": "I", "Κ": "K",
-              "Λ": "L", "Μ": "M", "Ν": "N", "Ξ": "X", "Ο": "O",
-              "Π": "P", "Ρ": "R", "Σ": "S", "Τ": "T", "Υ": "Y",
-              "Φ": "Ph", "Χ": "Ch", "Ψ": "Ps", "Ω": "O"
-            }
-          };
-          currentKeyboardScript = 'lowercase';
-        }
-
-        updateModeLabels();
-        buildScriptKeyboard();
-        initializeQueue();
-        showNextCard();
+        const errorMsg = `Failed to load ${language} data files.\n\nError: ${error.message}\n\nNote: If you're opening this file directly (file:// protocol), you need to run a local web server. Try:\n  python3 -m http.server 8000\nThen open: http://localhost:8000/practice.html`;
+        alert(errorMsg);
       }
     }
 
     function updateModeLabels() {
       const config = languageConfig[currentLanguage];
-      document.getElementById('modeLabel1').textContent = config.modeLabels[0];
-      document.getElementById('modeLabel2').textContent = config.modeLabels[1];
+      for (let i = 0; i < 4; i++) {
+        const label = document.getElementById(`modeLabel${i + 1}`);
+        if (label) {
+          label.textContent = config.modeLabels[i] || '';
+        }
+      }
+    }
+
+    function updateModeTabs() {
+      const config = languageConfig[currentLanguage];
+      const tabs = document.querySelectorAll('.tab');
+
+      tabs.forEach((tab, index) => {
+        if (index < config.modes.length) {
+          tab.style.display = 'inline-block';
+          // Disable sign language modes if mapping not available
+          if ((config.modes[index] === 'sign-to-script' || config.modes[index] === 'script-to-sign') && !config.signLanguageFile) {
+            tab.style.opacity = '0.5';
+            tab.style.cursor = 'not-allowed';
+            tab.disabled = true;
+          } else {
+            tab.style.opacity = '1';
+            tab.style.cursor = 'pointer';
+            tab.disabled = false;
+          }
+        } else {
+          tab.style.display = 'none';
+        }
+      });
+    }
+
+    function buildCategoryFilters() {
+      // Extract all unique categories from words
+      const categoriesSet = new Set();
+      allWords.forEach(word => {
+        if (word.categories) {
+          word.categories.forEach(cat => categoriesSet.add(cat));
+        }
+      });
+
+      const categories = Array.from(categoriesSet).sort();
+
+      // Select all categories by default
+      selectedCategories = new Set(categories);
+
+      const filtersContainer = document.getElementById('categoryFilters');
+      if (!filtersContainer) {
+        console.error('categoryFilters element not found!');
+        return;
+      }
+
+      filtersContainer.innerHTML = '';
+
+      categories.forEach(category => {
+        const filterDiv = document.createElement('div');
+        filterDiv.className = 'category-filter';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `category-${category}`;
+        checkbox.value = category;
+        checkbox.checked = true;
+        checkbox.addEventListener('change', handleCategoryChange);
+
+        const label = document.createElement('label');
+        label.htmlFor = `category-${category}`;
+        label.textContent = category;
+
+        filterDiv.appendChild(checkbox);
+        filterDiv.appendChild(label);
+        filtersContainer.appendChild(filterDiv);
+      });
+    }
+
+    function handleCategoryChange(event) {
+      const category = event.target.value;
+      if (event.target.checked) {
+        selectedCategories.add(category);
+      } else {
+        selectedCategories.delete(category);
+      }
+      filterWordsByCategory();
+      initializeQueue();
+      showNextCard();
+    }
+
+    function filterWordsByCategory() {
+      if (selectedCategories.size === 0) {
+        wordList = [];
+        return;
+      }
+
+      wordList = allWords.filter(word => {
+        if (!word.categories || word.categories.length === 0) {
+          return false;
+        }
+        return word.categories.some(cat => selectedCategories.has(cat));
+      });
+
+      // Randomize the word list
+      wordList = shuffleArray([...wordList]);
+    }
+
+    function shuffleArray(array) {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
     }
 
     function initializeQueue() {
@@ -453,6 +563,13 @@
         initializeQueue();
       }
 
+      if (reviewQueue.length === 0) {
+        // No words available for selected categories
+        const questionEl = document.getElementById('question');
+        questionEl.textContent = 'No words available. Please select at least one category.';
+        return;
+      }
+
       // Sort by nextReview and get the first card
       reviewQueue.sort((a, b) => a.nextReview - b.nextReview);
       currentCard = reviewQueue[0];
@@ -462,27 +579,131 @@
       const answerEl = document.getElementById('answer');
       const feedbackEl = document.getElementById('feedback');
       const correctAnswerEl = document.getElementById('correctAnswer');
+      const questionImageDiv = document.getElementById('questionImage');
+      const questionImg = document.getElementById('questionImg');
+      const revealButton = document.getElementById('revealButton');
+      const answerImageContainer = document.getElementById('answerImageContainer');
+      const answerImages = document.getElementById('answerImages');
 
+      // Reset display
       answerEl.value = '';
       answerEl.className = 'answer-input';
       feedbackEl.textContent = '';
       correctAnswerEl.textContent = '';
       hintEl.textContent = '';
+      questionImageDiv.style.display = 'none';
+      questionImg.src = '';
+      answerImageContainer.style.display = 'none';
+      answerImages.innerHTML = '';
+      revealButton.style.display = 'none';
       document.getElementById('difficultyButtons').style.display = 'none';
-      answerEl.focus();
+      document.getElementById('kanaKeyboard').classList.remove('visible');
 
       const config = languageConfig[currentLanguage];
       const scriptKey = config.wordKey;
 
-      if (currentMode === 'script-to-romaji') {
-        questionEl.textContent = currentCard[scriptKey];
-        document.getElementById('kanaKeyboard').classList.remove('visible');
-      } else {
-        questionEl.textContent = currentCard.romaji;
-        document.getElementById('kanaKeyboard').classList.add('visible');
+      switch (currentMode) {
+        case 'script-to-romaji':
+          // Show script, answer with Latin letters
+          questionEl.textContent = currentCard[scriptKey];
+          questionEl.style.display = 'block';
+          answerEl.style.display = 'block';
+          answerEl.focus();
+          break;
+
+        case 'romaji-to-script':
+          // Show Latin letters, answer with script
+          questionEl.textContent = currentCard.romaji;
+          questionEl.style.display = 'block';
+          answerEl.style.display = 'block';
+          document.getElementById('kanaKeyboard').classList.add('visible');
+          answerEl.focus();
+          break;
+
+        case 'sign-to-script':
+          // Show handshapes for each letter in word, answer with script
+          if (signLanguageMapping.handshapes) {
+            questionEl.style.display = 'none';
+            const greekWord = currentCard[scriptKey];
+            const handshapeImgs = getHandshapesForWord(greekWord);
+
+            if (handshapeImgs.length > 0) {
+              // Create a container for multiple handshapes
+              answerImages.innerHTML = '';
+              handshapeImgs.forEach(imgSrc => {
+                const img = document.createElement('img');
+                img.src = imgSrc;
+                img.alt = 'Handshape';
+                img.style.maxWidth = '150px';
+                img.style.height = 'auto';
+                answerImages.appendChild(img);
+              });
+              answerImageContainer.style.display = 'block';
+              answerEl.style.display = 'block';
+              // Show keyboard for Greek language
+              if (currentLanguage === 'greek') {
+                document.getElementById('kanaKeyboard').classList.add('visible');
+              }
+              answerEl.focus();
+            }
+          }
+          break;
+
+        case 'script-to-sign':
+          // Show script, reveal handshapes
+          questionEl.textContent = currentCard[scriptKey];
+          questionEl.style.display = 'block';
+          answerEl.style.display = 'none';
+          revealButton.style.display = 'inline-block';
+          break;
       }
 
       updateQueueCount();
+    }
+
+    function findHandshapeForLetter(romaji) {
+      if (!signLanguageMapping.handshapes) return null;
+      const letterName = romaji.toLowerCase();
+      return signLanguageMapping.handshapes[letterName] || null;
+    }
+
+    function getHandshapesForWord(greekWord) {
+      // Convert Greek word to array of letter names and get handshape images
+      const handshapeImages = [];
+
+      for (let char of greekWord) {
+        // Map Greek letter to its romanized name
+        const letterName = greekLetterToRomanName(char);
+        if (letterName) {
+          const handshape = signLanguageMapping.handshapes[letterName];
+          if (handshape && handshape.image) {
+            handshapeImages.push(handshape.image);
+          }
+        }
+      }
+
+      return handshapeImages;
+    }
+
+    function greekLetterToRomanName(greekChar) {
+      // Map Greek letters (uppercase) to their romanized names
+      const greekToRoman = {
+        'Α': 'alpha', 'Β': 'beta', 'Γ': 'gamma', 'Δ': 'delta',
+        'Ε': 'epsilon', 'Ζ': 'zeta', 'Η': 'eta', 'Θ': 'theta',
+        'Ι': 'iota', 'Κ': 'kappa', 'Λ': 'lambda', 'Μ': 'mu',
+        'Ν': 'nu', 'Ξ': 'xi', 'Ο': 'omicron', 'Π': 'pi',
+        'Ρ': 'rho', 'Σ': 'sigma', 'Τ': 'tau', 'Υ': 'upsilon',
+        'Φ': 'phi', 'Χ': 'chi', 'Ψ': 'psi', 'Ω': 'omega',
+        // Lowercase versions
+        'α': 'alpha', 'β': 'beta', 'γ': 'gamma', 'δ': 'delta',
+        'ε': 'epsilon', 'ζ': 'zeta', 'η': 'eta', 'θ': 'theta',
+        'ι': 'iota', 'κ': 'kappa', 'λ': 'lambda', 'μ': 'mu',
+        'ν': 'nu', 'ξ': 'xi', 'ο': 'omicron', 'π': 'pi',
+        'ρ': 'rho', 'σ': 'sigma', 'ς': 'sigma', 'τ': 'tau',
+        'υ': 'upsilon', 'φ': 'phi', 'χ': 'chi', 'ψ': 'psi', 'ω': 'omega'
+      };
+
+      return greekToRoman[greekChar] || null;
     }
 
     function buildScriptKeyboard() {
@@ -497,10 +718,11 @@
           button.className = 'kana-key';
           button.textContent = char;
           button.dataset.char = char;
-          button.addEventListener('click', () => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
             const answerInput = document.getElementById('answer');
             answerInput.value += char;
-            answerInput.focus();
+            // Don't call focus() to prevent page from jumping
           });
           kanaGrid.appendChild(button);
         }
@@ -531,9 +753,12 @@
       const scriptKey = config.wordKey;
 
       let correctAnswer;
+      let correctAnswerDisplay;
       if (currentMode === 'script-to-romaji') {
+        correctAnswerDisplay = currentCard.romaji;
         correctAnswer = currentCard.romaji.toLowerCase();
       } else {
+        correctAnswerDisplay = currentCard[scriptKey];
         correctAnswer = currentCard[scriptKey].toLowerCase();
       }
 
@@ -550,7 +775,7 @@
         answerEl.className = 'answer-input incorrect';
         feedbackEl.textContent = '✗ Incorrect';
         feedbackEl.style.color = '#dc3545';
-        correctAnswerEl.textContent = `Correct answer: ${correctAnswer}`;
+        correctAnswerEl.textContent = `Correct answer: ${correctAnswerDisplay}`;
       }
 
       document.getElementById('difficultyButtons').style.display = 'flex';
@@ -596,7 +821,11 @@
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', (e) => {
         const button = e.currentTarget;
-        const newMode = button.dataset.mode;
+        if (button.disabled) return;
+
+        const modeIndex = parseInt(button.dataset.modeIndex);
+        const config = languageConfig[currentLanguage];
+        const newMode = config.modes[modeIndex];
 
         // Only update if mode actually changed
         if (newMode !== currentMode) {
@@ -636,16 +865,70 @@
     });
 
     // Special keyboard keys
-    document.getElementById('backspaceKey').addEventListener('click', () => {
+    document.getElementById('backspaceKey').addEventListener('click', (e) => {
+      e.preventDefault();
       const answerInput = document.getElementById('answer');
       answerInput.value = answerInput.value.slice(0, -1);
-      answerInput.focus();
+      // Don't call focus() to prevent page from jumping
     });
 
-    document.getElementById('clearKey').addEventListener('click', () => {
+    document.getElementById('clearKey').addEventListener('click', (e) => {
+      e.preventDefault();
       const answerInput = document.getElementById('answer');
       answerInput.value = '';
-      answerInput.focus();
+      // Don't call focus() to prevent page from jumping
+    });
+
+    // Reveal button for sign language mode
+    function revealHandshapes() {
+      if (currentMode === 'script-to-sign') {
+        const config = languageConfig[currentLanguage];
+        const scriptKey = config.wordKey;
+        const greekWord = currentCard[scriptKey];
+        const handshapeImgs = getHandshapesForWord(greekWord);
+
+        if (handshapeImgs.length > 0) {
+          const answerImages = document.getElementById('answerImages');
+          const answerImageContainer = document.getElementById('answerImageContainer');
+
+          answerImages.innerHTML = '';
+          handshapeImgs.forEach(imgSrc => {
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = 'Handshape';
+            img.style.maxWidth = '150px';
+            img.style.height = 'auto';
+            answerImages.appendChild(img);
+          });
+
+          answerImageContainer.style.display = 'block';
+          document.getElementById('revealButton').style.display = 'none';
+          document.getElementById('difficultyButtons').style.display = 'flex';
+        }
+      }
+    }
+
+    document.getElementById('revealButton').addEventListener('click', revealHandshapes);
+
+    // Global keyboard handler for Enter and Space in script-to-sign mode
+    document.addEventListener('keydown', (e) => {
+      if (currentMode === 'script-to-sign') {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault(); // Prevent space from scrolling the page
+
+          const revealButton = document.getElementById('revealButton');
+          const diffButtons = document.getElementById('difficultyButtons');
+
+          // If reveal button is visible, click it
+          if (revealButton.style.display !== 'none' && revealButton.style.display !== '') {
+            revealHandshapes();
+          }
+          // If difficulty buttons are visible, click "Good"
+          else if (diffButtons.style.display === 'flex') {
+            handleDifficulty('good');
+          }
+        }
+      }
     });
 
     // Initialize
