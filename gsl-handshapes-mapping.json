@@ -1,0 +1,124 @@
+{
+  "handshapes": {
+    "alpha": {
+      "image": "images/gsl_handshapes/alpha.png",
+      "greek": "Α",
+      "romaji": "Alpha"
+    },
+    "beta": {
+      "image": "images/gsl_handshapes/beta.png",
+      "greek": "Β",
+      "romaji": "Beta"
+    },
+    "gamma": {
+      "image": "images/gsl_handshapes/gamma.png",
+      "greek": "Γ",
+      "romaji": "Gamma"
+    },
+    "delta": {
+      "image": "images/gsl_handshapes/delta.png",
+      "greek": "Δ",
+      "romaji": "Delta"
+    },
+    "epsilon": {
+      "image": "images/gsl_handshapes/epsilon.png",
+      "greek": "Ε",
+      "romaji": "Epsilon"
+    },
+    "zeta": {
+      "image": "images/gsl_handshapes/zeta.png",
+      "greek": "Ζ",
+      "romaji": "Zeta"
+    },
+    "eta": {
+      "image": "images/gsl_handshapes/eta.png",
+      "greek": "Η",
+      "romaji": "Eta"
+    },
+    "theta": {
+      "image": "images/gsl_handshapes/theta.png",
+      "greek": "Θ",
+      "romaji": "Theta"
+    },
+    "iota": {
+      "image": "images/gsl_handshapes/iota.png",
+      "greek": "Ι",
+      "romaji": "Iota"
+    },
+    "kappa": {
+      "image": "images/gsl_handshapes/kappa.png",
+      "greek": "Κ",
+      "romaji": "Kappa"
+    },
+    "lambda": {
+      "image": "images/gsl_handshapes/lambda.png",
+      "greek": "Λ",
+      "romaji": "Lambda"
+    },
+    "mu": {
+      "image": "images/gsl_handshapes/mu.png",
+      "greek": "Μ",
+      "romaji": "Mu"
+    },
+    "nu": {
+      "image": "images/gsl_handshapes/nu.png",
+      "greek": "Ν",
+      "romaji": "Nu"
+    },
+    "xi": {
+      "image": "images/gsl_handshapes/xi.png",
+      "greek": "Ξ",
+      "romaji": "Xi"
+    },
+    "omicron": {
+      "image": "images/gsl_handshapes/omicron.png",
+      "greek": "Ο",
+      "romaji": "Omicron"
+    },
+    "pi": {
+      "image": "images/gsl_handshapes/pi.png",
+      "greek": "Π",
+      "romaji": "Pi"
+    },
+    "rho": {
+      "image": "images/gsl_handshapes/rho.png",
+      "greek": "Ρ",
+      "romaji": "Rho"
+    },
+    "sigma": {
+      "image": "images/gsl_handshapes/sigma.png",
+      "greek": "Σ",
+      "romaji": "Sigma"
+    },
+    "tau": {
+      "image": "images/gsl_handshapes/tau.png",
+      "greek": "Τ",
+      "romaji": "Tau"
+    },
+    "upsilon": {
+      "image": "images/gsl_handshapes/upsilon.png",
+      "greek": "Υ",
+      "romaji": "Upsilon"
+    },
+    "phi": {
+      "image": "images/gsl_handshapes/phi.png",
+      "greek": "Φ",
+      "romaji": "Phi"
+    },
+    "chi": {
+      "image": "images/gsl_handshapes/chi.png",
+      "greek": "Χ",
+      "romaji": "Chi"
+    },
+    "psi": {
+      "image": "images/gsl_handshapes/psi.png",
+      "greek": "Ψ",
+      "romaji": "Psi"
+    },
+    "omega": {
+      "image": "images/gsl_handshapes/omega.png",
+      "greek": "Ω",
+      "romaji": "Omega"
+    }
+  }
+}

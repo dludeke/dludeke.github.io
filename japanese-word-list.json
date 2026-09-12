@@ -1,0 +1,184 @@
+{
+  "words": [
+    {
+      "kana": "すし",
+      "romaji": "sushi",
+      "english": "sushi",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "さけ",
+      "romaji": "sake",
+      "english": "sake",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "おおさか",
+      "romaji": "oosaka",
+      "english": "Osaka",
+      "categories": ["Geography", "Cities"]
+    },
+    {
+      "kana": "とうきょう",
+      "romaji": "toukyou",
+      "english": "Tokyo",
+      "categories": ["Geography", "Cities"]
+    },
+    {
+      "kana": "きょうと",
+      "romaji": "kyouto",
+      "english": "Kyoto",
+      "categories": ["Geography", "Cities"]
+    },
+    {
+      "kana": "コーヒー",
+      "romaji": "koohii",
+      "english": "coffee",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "ケーキ",
+      "romaji": "keeki",
+      "english": "cake",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "ラーメン",
+      "romaji": "raamen",
+      "english": "ramen",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "てんぷら",
+      "romaji": "tenpura",
+      "english": "tempura",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "みそ",
+      "romaji": "miso",
+      "english": "miso",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "とうふ",
+      "romaji": "toufu",
+      "english": "tofu",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "そば",
+      "romaji": "soba",
+      "english": "soba",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "うどん",
+      "romaji": "udon",
+      "english": "udon",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "おちゃ",
+      "romaji": "ocha",
+      "english": "tea",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "みず",
+      "romaji": "mizu",
+      "english": "water",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "さかな",
+      "romaji": "sakana",
+      "english": "fish",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "やさい",
+      "romaji": "yasai",
+      "english": "vegetables",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "にく",
+      "romaji": "niku",
+      "english": "meat",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "たまご",
+      "romaji": "tamago",
+      "english": "egg",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "パン",
+      "romaji": "pan",
+      "english": "bread",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "ごはん",
+      "romaji": "gohan",
+      "english": "rice",
+      "categories": ["Food & Drinks"]
+    },
+    {
+      "kana": "アニメ",
+      "romaji": "anime",
+      "english": "anime",
+      "categories": ["Culture"]
+    },
+    {
+      "kana": "マンガ",
+      "romaji": "manga",
+      "english": "manga",
+      "categories": ["Culture"]
+    },
+    {
+      "kana": "カラオケ",
+      "romaji": "karaoke",
+      "english": "karaoke",
+      "categories": ["Culture"]
+    },
+    {
+      "kana": "すもう",
+      "romaji": "sumou",
+      "english": "sumo",
+      "categories": ["Culture"]
+    },
+    {
+      "kana": "からて",
+      "romaji": "karate",
+      "english": "karate",
+      "categories": ["Culture"]
+    },
+    {
+      "kana": "ふじさん",
+      "romaji": "fujisan",
+      "english": "Mt. Fuji",
+      "categories": ["Geography"]
+    },
+    {
+      "kana": "さくら",
+      "romaji": "sakura",
+      "english": "cherry blossom",
+      "categories": ["Culture", "Nature"]
+    },
+    {
+      "kana": "ひらがな",
+      "romaji": "hiragana",
+      "english": "hiragana",
+      "categories": ["Language"]
+    },
+    {
+      "kana": "カタカナ",
+      "romaji": "katakana",
+      "english": "katakana",
+      "categories": ["Language"]
+    }
+  ]
+}
