@@ -1,0 +1,1074 @@
+{
+  "continent": "Europe",
+  "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
+  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "countries": [
+    {
+      "m49": "008",
+      "latlng": [
+        41,
+        20
+      ],
+      "iso2": "al",
+      "name_en": "Albania",
+      "name_native": "Shqipëria",
+      "native_language": "Albanian",
+      "sign_languages": [
+        "Gjuha e Shenjave Shqipe"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "020",
+      "latlng": [
+        42.5,
+        1.5
+      ],
+      "iso2": "ad",
+      "name_en": "Andorra",
+      "name_native": "Andorra",
+      "native_language": "Catalan",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "040",
+      "latlng": [
+        47.33333333,
+        13.33333333
+      ],
+      "iso2": "at",
+      "name_en": "Austria",
+      "name_native": "Österreich",
+      "native_language": "Austro-Bavarian German",
+      "sign_languages": [
+        "Österreichische Gebärdensprache (ÖGS)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "112",
+      "latlng": [
+        53,
+        28
+      ],
+      "iso2": "by",
+      "name_en": "Belarus",
+      "name_native": "Белару́сь",
+      "native_language": "Belarusian",
+      "sign_languages": [
+        "Беларуская жэставая мова"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "056",
+      "latlng": [
+        50.83333333,
+        4
+      ],
+      "iso2": "be",
+      "name_en": "Belgium",
+      "name_native": "Belgien",
+      "native_language": "German",
+      "sign_languages": [
+        "Vlaamse Gebarentaal (VGT)",
+        "Langue des signes de Belgique francophone (LSFB)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "070",
+      "latlng": [
+        44,
+        18
+      ],
+      "iso2": "ba",
+      "name_en": "Bosnia and Herzegovina",
+      "name_native": "Bosna i Hercegovina",
+      "native_language": "Bosnian",
+      "sign_languages": [
+        "Bosanski znakovni jezik"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "100",
+      "latlng": [
+        43,
+        25
+      ],
+      "iso2": "bg",
+      "name_en": "Bulgaria",
+      "name_native": "България",
+      "native_language": "Bulgarian",
+      "sign_languages": [
+        "Български жестомимичен език (БЖЕ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "191",
+      "latlng": [
+        45.16666666,
+        15.5
+      ],
+      "iso2": "hr",
+      "name_en": "Croatia",
+      "name_native": "Hrvatska",
+      "native_language": "Croatian",
+      "sign_languages": [
+        "Hrvatski znakovni jezik (HZJ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "196",
+      "latlng": [
+        35,
+        33
+      ],
+      "iso2": "cy",
+      "name_en": "Cyprus",
+      "name_native": "Κύπρος",
+      "native_language": "Greek",
+      "sign_languages": [
+        "Cypriot Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "203",
+      "latlng": [
+        49.75,
+        15.5
+      ],
+      "iso2": "cz",
+      "name_en": "Czechia",
+      "name_native": "Česko",
+      "native_language": "Czech",
+      "sign_languages": [
+        "Český znakový jazyk (ČZJ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "208",
+      "latlng": [
+        56,
+        10
+      ],
+      "iso2": "dk",
+      "name_en": "Denmark",
+      "name_native": "Danmark",
+      "native_language": "Danish",
+      "sign_languages": [
+        "Dansk tegnsprog (DTS)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "233",
+      "latlng": [
+        59,
+        26
+      ],
+      "iso2": "ee",
+      "name_en": "Estonia",
+      "name_native": "Eesti",
+      "native_language": "Estonian",
+      "sign_languages": [
+        "Eesti viipekeel (EVK)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "246",
+      "latlng": [
+        64,
+        26
+      ],
+      "iso2": "fi",
+      "name_en": "Finland",
+      "name_native": "Suomi",
+      "native_language": "Finnish",
+      "sign_languages": [
+        "Suomalainen viittomakieli (FinSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "250",
+      "latlng": [
+        46,
+        2
+      ],
+      "iso2": "fr",
+      "name_en": "France",
+      "name_native": "France",
+      "native_language": "French",
+      "sign_languages": [
+        "Langue des signes française (LSF)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "276",
+      "latlng": [
+        51,
+        9
+      ],
+      "iso2": "de",
+      "name_en": "Germany",
+      "name_native": "Deutschland",
+      "native_language": "German",
+      "sign_languages": [
+        "Deutsche Gebärdensprache (DGS)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "300",
+      "latlng": [
+        39,
+        22
+      ],
+      "iso2": "gr",
+      "name_en": "Greece",
+      "name_native": "Ελλάδα",
+      "native_language": "Greek",
+      "sign_languages": [
+        "Ελληνική Νοηματική Γλώσσα (ΕΝΓ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "348",
+      "latlng": [
+        47,
+        20
+      ],
+      "iso2": "hu",
+      "name_en": "Hungary",
+      "name_native": "Magyarország",
+      "native_language": "Hungarian",
+      "sign_languages": [
+        "Magyar jelnyelv (MJNY)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "352",
+      "latlng": [
+        65,
+        -18
+      ],
+      "iso2": "is",
+      "name_en": "Iceland",
+      "name_native": "Ísland",
+      "native_language": "Icelandic",
+      "sign_languages": [
+        "Íslenskt táknmál (ÍTM)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "372",
+      "latlng": [
+        53,
+        -8
+      ],
+      "iso2": "ie",
+      "name_en": "Ireland",
+      "name_native": "Ireland",
+      "native_language": "English",
+      "sign_languages": [
+        "Irish Sign Language (ISL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "380",
+      "latlng": [
+        42.83333333,
+        12.83333333
+      ],
+      "iso2": "it",
+      "name_en": "Italy",
+      "name_native": "Italia",
+      "native_language": "Italian",
+      "sign_languages": [
+        "Lingua dei segni italiana (LIS)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "428",
+      "latlng": [
+        57,
+        25
+      ],
+      "iso2": "lv",
+      "name_en": "Latvia",
+      "name_native": "Latvija",
+      "native_language": "Latvian",
+      "sign_languages": [
+        "Latviešu zīmju valoda (LZV)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "438",
+      "latlng": [
+        47.26666666,
+        9.53333333
+      ],
+      "iso2": "li",
+      "name_en": "Liechtenstein",
+      "name_native": "Liechtenstein",
+      "native_language": "German",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "440",
+      "latlng": [
+        56,
+        24
+      ],
+      "iso2": "lt",
+      "name_en": "Lithuania",
+      "name_native": "Lietuva",
+      "native_language": "Lithuanian",
+      "sign_languages": [
+        "Lietuvių gestų kalba (LGK)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "442",
+      "latlng": [
+        49.75,
+        6.16666666
+      ],
+      "iso2": "lu",
+      "name_en": "Luxembourg",
+      "name_native": "Luxemburg",
+      "native_language": "German",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "470",
+      "latlng": [
+        35.83333333,
+        14.58333333
+      ],
+      "iso2": "mt",
+      "name_en": "Malta",
+      "name_native": "Malta",
+      "native_language": "English",
+      "sign_languages": [
+        "Lingwa tas-Sinjali Maltija (LSM)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "498",
+      "latlng": [
+        47,
+        29
+      ],
+      "iso2": "md",
+      "name_en": "Moldova",
+      "name_native": "Moldova",
+      "native_language": "Moldavian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "492",
+      "latlng": [
+        43.73333333,
+        7.4
+      ],
+      "iso2": "mc",
+      "name_en": "Monaco",
+      "name_native": "Monaco",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "499",
+      "latlng": [
+        42.5,
+        19.3
+      ],
+      "iso2": "me",
+      "name_en": "Montenegro",
+      "name_native": "Црна Гора",
+      "native_language": "Montenegrin",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "528",
+      "latlng": [
+        52.5,
+        5.75
+      ],
+      "iso2": "nl",
+      "name_en": "Netherlands",
+      "name_native": "Nederland",
+      "native_language": "Dutch",
+      "sign_languages": [
+        "Nederlandse Gebarentaal (NGT)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "807",
+      "latlng": [
+        41.83333333,
+        22
+      ],
+      "iso2": "mk",
+      "name_en": "North Macedonia",
+      "name_native": "Македонија",
+      "native_language": "Macedonian",
+      "sign_languages": [
+        "Македонски знаковен јазик"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "578",
+      "latlng": [
+        62,
+        10
+      ],
+      "iso2": "no",
+      "name_en": "Norway",
+      "name_native": "Noreg",
+      "native_language": "Norwegian Nynorsk",
+      "sign_languages": [
+        "Norsk tegnspråk (NTS)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "616",
+      "latlng": [
+        52,
+        20
+      ],
+      "iso2": "pl",
+      "name_en": "Poland",
+      "name_native": "Polska",
+      "native_language": "Polish",
+      "sign_languages": [
+        "Polski Język Migowy (PJM)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "620",
+      "latlng": [
+        39.5,
+        -8
+      ],
+      "iso2": "pt",
+      "name_en": "Portugal",
+      "name_native": "Portugal",
+      "native_language": "Portuguese",
+      "sign_languages": [
+        "Língua Gestual Portuguesa (LGP)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "642",
+      "latlng": [
+        46,
+        25
+      ],
+      "iso2": "ro",
+      "name_en": "Romania",
+      "name_native": "România",
+      "native_language": "Romanian",
+      "sign_languages": [
+        "Limbaj Mimico-Gestual Român (LMG)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "643",
+      "latlng": [
+        60,
+        100
+      ],
+      "iso2": "ru",
+      "name_en": "Russia",
+      "name_native": "Россия",
+      "native_language": "Russian",
+      "sign_languages": [
+        "Русский жестовый язык (РЖЯ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "674",
+      "latlng": [
+        43.76666666,
+        12.41666666
+      ],
+      "iso2": "sm",
+      "name_en": "San Marino",
+      "name_native": "San Marino",
+      "native_language": "Italian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "688",
+      "latlng": [
+        44,
+        21
+      ],
+      "iso2": "rs",
+      "name_en": "Serbia",
+      "name_native": "Србија",
+      "native_language": "Serbian",
+      "sign_languages": [
+        "Српски знаковни језик"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "703",
+      "latlng": [
+        48.66666666,
+        19.5
+      ],
+      "iso2": "sk",
+      "name_en": "Slovakia",
+      "name_native": "Slovensko",
+      "native_language": "Slovak",
+      "sign_languages": [
+        "Slovenský posunkový jazyk (SPJ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "705",
+      "latlng": [
+        46.11666666,
+        14.81666666
+      ],
+      "iso2": "si",
+      "name_en": "Slovenia",
+      "name_native": "Slovenija",
+      "native_language": "Slovene",
+      "sign_languages": [
+        "Slovenski znakovni jezik (SZJ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "724",
+      "latlng": [
+        40,
+        -4
+      ],
+      "iso2": "es",
+      "name_en": "Spain",
+      "name_native": "España",
+      "native_language": "Spanish",
+      "sign_languages": [
+        "Lengua de signos española (LSE)",
+        "Llengua de signes catalana (LSC)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "752",
+      "latlng": [
+        62,
+        15
+      ],
+      "iso2": "se",
+      "name_en": "Sweden",
+      "name_native": "Sverige",
+      "native_language": "Swedish",
+      "sign_languages": [
+        "Svenskt teckenspråk (STS)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "756",
+      "latlng": [
+        47,
+        8
+      ],
+      "iso2": "ch",
+      "name_en": "Switzerland",
+      "name_native": "Suisse",
+      "native_language": "French",
+      "sign_languages": [
+        "Deutschschweizer Gebärdensprache (DSGS)",
+        "Langue des signes suisse romande (LSF-SR)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "804",
+      "latlng": [
+        49,
+        32
+      ],
+      "iso2": "ua",
+      "name_en": "Ukraine",
+      "name_native": "Україна",
+      "native_language": "Ukrainian",
+      "sign_languages": [
+        "Українська жестова мова (УЖМ)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "826",
+      "latlng": [
+        54,
+        -2
+      ],
+      "iso2": "gb",
+      "name_en": "United Kingdom",
+      "name_native": "United Kingdom",
+      "native_language": "English",
+      "sign_languages": [
+        "British Sign Language (BSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "336",
+      "latlng": [
+        41.9,
+        12.45
+      ],
+      "iso2": "va",
+      "name_en": "Vatican City",
+      "name_native": "Vaticano",
+      "native_language": "Italian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    }
+  ]
+}

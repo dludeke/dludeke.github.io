@@ -1,0 +1,1245 @@
+{
+  "continent": "Africa",
+  "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
+  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "countries": [
+    {
+      "m49": "012",
+      "latlng": [
+        28,
+        3
+      ],
+      "iso2": "dz",
+      "name_en": "Algeria",
+      "name_native": "الجزائر",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة الجزائرية (Algerian Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "024",
+      "latlng": [
+        -12.5,
+        18.5
+      ],
+      "iso2": "ao",
+      "name_en": "Angola",
+      "name_native": "Angola",
+      "native_language": "Portuguese",
+      "sign_languages": [
+        "Língua Angolana de Sinais"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "204",
+      "latlng": [
+        9.5,
+        2.25
+      ],
+      "iso2": "bj",
+      "name_en": "Benin",
+      "name_native": "Bénin",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "072",
+      "latlng": [
+        -22,
+        24
+      ],
+      "iso2": "bw",
+      "name_en": "Botswana",
+      "name_native": "Botswana",
+      "native_language": "English",
+      "sign_languages": [
+        "Botswana Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "854",
+      "latlng": [
+        13,
+        -2
+      ],
+      "iso2": "bf",
+      "name_en": "Burkina Faso",
+      "name_native": "Burkina Faso",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "108",
+      "latlng": [
+        -3.5,
+        30
+      ],
+      "iso2": "bi",
+      "name_en": "Burundi",
+      "name_native": "Burundi",
+      "native_language": "French",
+      "sign_languages": [
+        "Burundian Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "120",
+      "latlng": [
+        6,
+        12
+      ],
+      "iso2": "cm",
+      "name_en": "Cameroon",
+      "name_native": "Cameroon",
+      "native_language": "English",
+      "sign_languages": [
+        "Cameroonian Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "132",
+      "latlng": [
+        16,
+        -24
+      ],
+      "iso2": "cv",
+      "name_en": "Cape Verde",
+      "name_native": "Cabo Verde",
+      "native_language": "Portuguese",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "140",
+      "latlng": [
+        7,
+        21
+      ],
+      "iso2": "cf",
+      "name_en": "Central African Republic",
+      "name_native": "République centrafricaine",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "148",
+      "latlng": [
+        15,
+        19
+      ],
+      "iso2": "td",
+      "name_en": "Chad",
+      "name_native": "تشاد",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "174",
+      "latlng": [
+        -12.16666666,
+        44.25
+      ],
+      "iso2": "km",
+      "name_en": "Comoros",
+      "name_native": "جزر القمر",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "178",
+      "latlng": [
+        -1,
+        15
+      ],
+      "iso2": "cg",
+      "name_en": "Congo",
+      "name_native": "République du Congo",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "180",
+      "latlng": [
+        0,
+        25
+      ],
+      "iso2": "cd",
+      "name_en": "DR Congo",
+      "name_native": "RD Congo",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "262",
+      "latlng": [
+        11.5,
+        43
+      ],
+      "iso2": "dj",
+      "name_en": "Djibouti",
+      "name_native": "جيبوتي",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "818",
+      "latlng": [
+        27,
+        30
+      ],
+      "iso2": "eg",
+      "name_en": "Egypt",
+      "name_native": "مصر",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة المصرية (Egyptian Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "226",
+      "latlng": [
+        2,
+        10
+      ],
+      "iso2": "gq",
+      "name_en": "Equatorial Guinea",
+      "name_native": "Guinée équatoriale",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "232",
+      "latlng": [
+        15,
+        39
+      ],
+      "iso2": "er",
+      "name_en": "Eritrea",
+      "name_native": "إريتريا",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "748",
+      "latlng": [
+        -26.5,
+        31.5
+      ],
+      "iso2": "sz",
+      "name_en": "Eswatini",
+      "name_native": "Eswatini",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "231",
+      "latlng": [
+        8,
+        38
+      ],
+      "iso2": "et",
+      "name_en": "Ethiopia",
+      "name_native": "ኢትዮጵያ",
+      "native_language": "Amharic",
+      "sign_languages": [
+        "Ethiopian Sign Language (EthSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "266",
+      "latlng": [
+        -1,
+        11.75
+      ],
+      "iso2": "ga",
+      "name_en": "Gabon",
+      "name_native": "Gabon",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "270",
+      "latlng": [
+        13.46666666,
+        -16.56666666
+      ],
+      "iso2": "gm",
+      "name_en": "Gambia",
+      "name_native": "Gambia",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "288",
+      "latlng": [
+        8,
+        -2
+      ],
+      "iso2": "gh",
+      "name_en": "Ghana",
+      "name_native": "Ghana",
+      "native_language": "English",
+      "sign_languages": [
+        "Ghanaian Sign Language (GhSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "324",
+      "latlng": [
+        11,
+        -10
+      ],
+      "iso2": "gn",
+      "name_en": "Guinea",
+      "name_native": "Guinée",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "624",
+      "latlng": [
+        12,
+        -15
+      ],
+      "iso2": "gw",
+      "name_en": "Guinea-Bissau",
+      "name_native": "Guiné-Bissau",
+      "native_language": "Portuguese",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "384",
+      "latlng": [
+        8,
+        -5
+      ],
+      "iso2": "ci",
+      "name_en": "Ivory Coast",
+      "name_native": "Côte d'Ivoire",
+      "native_language": "French",
+      "sign_languages": [
+        "Langue des signes ivoirienne"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "404",
+      "latlng": [
+        1,
+        38
+      ],
+      "iso2": "ke",
+      "name_en": "Kenya",
+      "name_native": "Kenya",
+      "native_language": "English",
+      "sign_languages": [
+        "Kenyan Sign Language (KSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "426",
+      "latlng": [
+        -29.5,
+        28.5
+      ],
+      "iso2": "ls",
+      "name_en": "Lesotho",
+      "name_native": "Lesotho",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "430",
+      "latlng": [
+        6.5,
+        -9.5
+      ],
+      "iso2": "lr",
+      "name_en": "Liberia",
+      "name_native": "Liberia",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "434",
+      "latlng": [
+        25,
+        17
+      ],
+      "iso2": "ly",
+      "name_en": "Libya",
+      "name_native": "ليبيا",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "450",
+      "latlng": [
+        -20,
+        47
+      ],
+      "iso2": "mg",
+      "name_en": "Madagascar",
+      "name_native": "Madagascar",
+      "native_language": "French",
+      "sign_languages": [
+        "Tenin'ny tanana malagasy"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "454",
+      "latlng": [
+        -13.5,
+        34
+      ],
+      "iso2": "mw",
+      "name_en": "Malawi",
+      "name_native": "Malawi",
+      "native_language": "English",
+      "sign_languages": [
+        "Malawian Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "466",
+      "latlng": [
+        17,
+        -4
+      ],
+      "iso2": "ml",
+      "name_en": "Mali",
+      "name_native": "Mali",
+      "native_language": "French",
+      "sign_languages": [
+        "Langue des signes malienne"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "478",
+      "latlng": [
+        20,
+        -12
+      ],
+      "iso2": "mr",
+      "name_en": "Mauritania",
+      "name_native": "موريتانيا",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "480",
+      "latlng": [
+        -20.28333333,
+        57.55
+      ],
+      "iso2": "mu",
+      "name_en": "Mauritius",
+      "name_native": "Mauritius",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "504",
+      "latlng": [
+        32,
+        -5
+      ],
+      "iso2": "ma",
+      "name_en": "Morocco",
+      "name_native": "المغرب",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة المغربية (Moroccan Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "508",
+      "latlng": [
+        -18.25,
+        35
+      ],
+      "iso2": "mz",
+      "name_en": "Mozambique",
+      "name_native": "Moçambique",
+      "native_language": "Portuguese",
+      "sign_languages": [
+        "Língua de Sinais Moçambicana"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "516",
+      "latlng": [
+        -22,
+        17
+      ],
+      "iso2": "na",
+      "name_en": "Namibia",
+      "name_native": "Namibië",
+      "native_language": "Afrikaans",
+      "sign_languages": [
+        "Namibian Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "562",
+      "latlng": [
+        16,
+        8
+      ],
+      "iso2": "ne",
+      "name_en": "Niger",
+      "name_native": "Niger",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "566",
+      "latlng": [
+        10,
+        8
+      ],
+      "iso2": "ng",
+      "name_en": "Nigeria",
+      "name_native": "Nigeria",
+      "native_language": "English",
+      "sign_languages": [
+        "Nigerian Sign Language (NSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "646",
+      "latlng": [
+        -2,
+        30
+      ],
+      "iso2": "rw",
+      "name_en": "Rwanda",
+      "name_native": "Rwanda",
+      "native_language": "English",
+      "sign_languages": [
+        "Rwandan Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "686",
+      "latlng": [
+        14,
+        -14
+      ],
+      "iso2": "sn",
+      "name_en": "Senegal",
+      "name_native": "Sénégal",
+      "native_language": "French",
+      "sign_languages": [
+        "Langue des signes sénégalaise"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "690",
+      "latlng": [
+        -4.58333333,
+        55.66666666
+      ],
+      "iso2": "sc",
+      "name_en": "Seychelles",
+      "name_native": "Sesel",
+      "native_language": "Seychellois Creole",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "694",
+      "latlng": [
+        8.5,
+        -11.5
+      ],
+      "iso2": "sl",
+      "name_en": "Sierra Leone",
+      "name_native": "Sierra Leone",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "706",
+      "latlng": [
+        10,
+        49
+      ],
+      "iso2": "so",
+      "name_en": "Somalia",
+      "name_native": "الصومال",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "710",
+      "latlng": [
+        -29,
+        24
+      ],
+      "iso2": "za",
+      "name_en": "South Africa",
+      "name_native": "South Africa",
+      "native_language": "Afrikaans",
+      "sign_languages": [
+        "South African Sign Language (SASL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "728",
+      "latlng": [
+        7,
+        30
+      ],
+      "iso2": "ss",
+      "name_en": "South Sudan",
+      "name_native": "South Sudan",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "729",
+      "latlng": [
+        15,
+        30
+      ],
+      "iso2": "sd",
+      "name_en": "Sudan",
+      "name_native": "السودان",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "678",
+      "latlng": [
+        1,
+        7
+      ],
+      "iso2": "st",
+      "name_en": "São Tomé and Príncipe",
+      "name_native": "São Tomé e Príncipe",
+      "native_language": "Portuguese",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "834",
+      "latlng": [
+        -6,
+        35
+      ],
+      "iso2": "tz",
+      "name_en": "Tanzania",
+      "name_native": "Tanzania",
+      "native_language": "English",
+      "sign_languages": [
+        "Lugha ya Alama ya Tanzania (LAT)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "768",
+      "latlng": [
+        8,
+        1.16666666
+      ],
+      "iso2": "tg",
+      "name_en": "Togo",
+      "name_native": "Togo",
+      "native_language": "French",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "788",
+      "latlng": [
+        34,
+        9
+      ],
+      "iso2": "tn",
+      "name_en": "Tunisia",
+      "name_native": "تونس",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة التونسية (Tunisian Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "800",
+      "latlng": [
+        1,
+        32
+      ],
+      "iso2": "ug",
+      "name_en": "Uganda",
+      "name_native": "Uganda",
+      "native_language": "English",
+      "sign_languages": [
+        "Ugandan Sign Language (USL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "894",
+      "latlng": [
+        -15,
+        30
+      ],
+      "iso2": "zm",
+      "name_en": "Zambia",
+      "name_native": "Zambia",
+      "native_language": "English",
+      "sign_languages": [
+        "Zambian Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "716",
+      "latlng": [
+        -20,
+        30
+      ],
+      "iso2": "zw",
+      "name_en": "Zimbabwe",
+      "name_native": "Zimbabwe",
+      "native_language": "Chibarwe",
+      "sign_languages": [
+        "Zimbabwe Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    }
+  ]
+}

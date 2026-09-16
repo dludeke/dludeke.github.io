@@ -1,0 +1,323 @@
+{
+  "continent": "Oceania",
+  "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
+  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "countries": [
+    {
+      "m49": "036",
+      "latlng": [
+        -27,
+        133
+      ],
+      "iso2": "au",
+      "name_en": "Australia",
+      "name_native": "Australia",
+      "native_language": "English",
+      "sign_languages": [
+        "Auslan (Australian Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "242",
+      "latlng": [
+        -18,
+        175
+      ],
+      "iso2": "fj",
+      "name_en": "Fiji",
+      "name_native": "Fiji",
+      "native_language": "English",
+      "sign_languages": [
+        "Fiji Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "296",
+      "latlng": [
+        1.41666666,
+        173
+      ],
+      "iso2": "ki",
+      "name_en": "Kiribati",
+      "name_native": "Kiribati",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "584",
+      "latlng": [
+        9,
+        168
+      ],
+      "iso2": "mh",
+      "name_en": "Marshall Islands",
+      "name_native": "Marshall Islands",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "583",
+      "latlng": [
+        6.91666666,
+        158.25
+      ],
+      "iso2": "fm",
+      "name_en": "Micronesia",
+      "name_native": "Micronesia",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "520",
+      "latlng": [
+        -0.53333333,
+        166.91666666
+      ],
+      "iso2": "nr",
+      "name_en": "Nauru",
+      "name_native": "Nauru",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "554",
+      "latlng": [
+        -41,
+        174
+      ],
+      "iso2": "nz",
+      "name_en": "New Zealand",
+      "name_native": "New Zealand",
+      "native_language": "English",
+      "sign_languages": [
+        "New Zealand Sign Language (NZSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "585",
+      "latlng": [
+        7.5,
+        134.5
+      ],
+      "iso2": "pw",
+      "name_en": "Palau",
+      "name_native": "Palau",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "598",
+      "latlng": [
+        -6,
+        147
+      ],
+      "iso2": "pg",
+      "name_en": "Papua New Guinea",
+      "name_native": "Papua New Guinea",
+      "native_language": "English",
+      "sign_languages": [
+        "Papua New Guinean Sign Language (PNGSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "882",
+      "latlng": [
+        -13.58333333,
+        -172.33333333
+      ],
+      "iso2": "ws",
+      "name_en": "Samoa",
+      "name_native": "Samoa",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "090",
+      "latlng": [
+        -8,
+        159
+      ],
+      "iso2": "sb",
+      "name_en": "Solomon Islands",
+      "name_native": "Solomon Islands",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "776",
+      "latlng": [
+        -20,
+        -175
+      ],
+      "iso2": "to",
+      "name_en": "Tonga",
+      "name_native": "Tonga",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "798",
+      "latlng": [
+        -8,
+        178
+      ],
+      "iso2": "tv",
+      "name_en": "Tuvalu",
+      "name_native": "Tuvalu",
+      "native_language": "English",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "548",
+      "latlng": [
+        -16,
+        167
+      ],
+      "iso2": "vu",
+      "name_en": "Vanuatu",
+      "name_native": "Vanuatu",
+      "native_language": "Bislama",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    }
+  ]
+}

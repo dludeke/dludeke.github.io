@@ -1,0 +1,4 @@
+.DS_Store
+.claude/
+# Cached upstream dataset re-downloaded by generate_country_signs.py
+countries-source.json

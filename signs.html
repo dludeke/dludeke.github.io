@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Country Name Signs</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    main {
+      padding: 0 !important;
+    }
+
+    .signs-content {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .continent-selector {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .continent-btn {
+      padding: 0.6rem 1.1rem;
+      background: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+
+    .continent-btn.active {
+      background: #28a745;
+      color: white;
+    }
+
+    .continent-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .game-layout {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .card-column {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .quiz-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .flag-wrap {
+      margin-bottom: 1.5rem;
+    }
+
+    .flag-wrap img {
+      width: 280px;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .prompt {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .hint-stack {
+      min-height: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hint-line {
+      margin: 0.5rem 0;
+      font-size: 1.05rem;
+    }
+
+    .hint-label {
+      color: #888;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .hint-native {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .hint-english {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .controls {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.7rem 1.3rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .btn-hint { background: #6c757d; }
+    .btn-reveal { background: #007bff; }
+    .btn-next { background: #28a745; }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .map-panel {
+      width: 380px;
+      flex-shrink: 0;
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .map-panel h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+    }
+
+    .map-panel svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .map-placeholder {
+      color: #999;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .country-base { fill: #dfe3e6; stroke: #fff; stroke-width: 0.4; }
+    .country-target { fill: #e8590c; stroke: #fff; stroke-width: 0.5; }
+    .target-ring { fill: none; stroke: #e8590c; stroke-width: 2; }
+
+    .reveal-panel {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+    }
+
+    .reveal-panel iframe,
+    .reveal-panel video,
+    .reveal-panel img.sign-media {
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 6px;
+      background: #000;
+    }
+
+    .sign-meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.75rem;
+    }
+
+    .missing-box {
+      background: #fff3cd;
+      border: 1px solid #ffe69c;
+      border-radius: 6px;
+      padding: 1.25rem;
+      color: #664d03;
+    }
+
+    .missing-box strong { display: block; margin-bottom: 0.4rem; }
+
+    .missing-box a { color: #664d03; }
+
+    .progress {
+      text-align: center;
+      color: #666;
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .coverage {
+      max-width: 1100px;
+      margin: 2rem auto 0;
+      padding: 1rem 2rem 0;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .coverage-bar {
+      display: flex;
+      height: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 0.5rem 0;
+      background: #eee;
+    }
+
+    .seg-verified { background: #28a745; }
+    .seg-review { background: #ffc107; }
+    .seg-missing { background: #dc3545; }
+
+    .coverage-legend {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 0.35rem;
+    }
+
+    @media (max-width: 860px) {
+      .game-layout { flex-direction: column; }
+      .map-panel { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Country Name Signs</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="practice.html">Practice Area</a></li>
+          <li><a href="signs.html">Country Signs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="signs-content">
+        <div class="continent-selector" id="continentSelector"></div>
+
+        <div class="game-layout">
+          <div class="card-column">
+            <div class="quiz-card">
+              <div class="flag-wrap">
+                <img id="flagImg" alt="Flag of the country to sign" />
+              </div>
+
+              <p class="prompt">Sign this country&rsquo;s name.</p>
+
+              <div class="hint-stack" id="hintStack"></div>
+
+              <div class="controls">
+                <button class="btn btn-hint" id="hintBtn">Hint</button>
+                <button class="btn btn-reveal" id="revealBtn">Reveal Sign</button>
+                <button class="btn btn-next" id="nextBtn">Next</button>
+              </div>
+
+              <div class="reveal-panel" id="revealPanel" hidden></div>
+            </div>
+
+            <div class="progress" id="progress"></div>
+          </div>
+
+          <aside class="map-panel">
+            <h3>Map</h3>
+            <div id="mapHost">
+              <div class="map-placeholder">Ask for a hint to see the country on the map.</div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="coverage" id="coverage"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 David Ludeke</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <script>
+    // Continents are added one data file at a time. `file: null` means the data
+    // file does not exist yet, so the button renders disabled.
+    const CONTINENTS = [
+      { key: 'north-america', label: 'North America', file: 'assets/data/country-signs-north-america.json' },
+      { key: 'south-america', label: 'South America', file: 'assets/data/country-signs-south-america.json' },
+      { key: 'europe', label: 'Europe', file: 'assets/data/country-signs-europe.json' },
+      { key: 'asia', label: 'Asia', file: 'assets/data/country-signs-asia.json' },
+      { key: 'africa', label: 'Africa', file: 'assets/data/country-signs-africa.json' },
+      { key: 'oceania', label: 'Oceania', file: 'assets/data/country-signs-oceania.json' }
+    ];
+
+    const HINT_MAP = 0, HINT_NATIVE = 1, HINT_ENGLISH = 2, HINT_DONE = 3;
+
+    let worldTopo = null;     // shared across continents, fetched once
+    let countryFeatures = []; // GeoJSON features keyed later by numeric id
+    let deck = [];
+    let deckIndex = 0;
+    let hintLevel = HINT_MAP;
+    let activeContinent = null;
+
+    const el = {
+      selector: document.getElementById('continentSelector'),
+      flag: document.getElementById('flagImg'),
+      hints: document.getElementById('hintStack'),
+      hintBtn: document.getElementById('hintBtn'),
+      revealBtn: document.getElementById('revealBtn'),
+      nextBtn: document.getElementById('nextBtn'),
+      revealPanel: document.getElementById('revealPanel'),
+      mapHost: document.getElementById('mapHost'),
+      progress: document.getElementById('progress'),
+      coverage: document.getElementById('coverage')
+    };
+
+    function shuffle(arr) {
+      const a = arr.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function current() {
+      return deck[deckIndex];
+    }
+
+    async function loadWorld() {
+      if (worldTopo) return;
+      const res = await fetch('assets/data/countries-50m.json');
+      worldTopo = await res.json();
+      countryFeatures = topojson.feature(worldTopo, worldTopo.objects.countries).features;
+    }
+
+    async function loadContinent(cfg) {
+      const res = await fetch(cfg.file);
+      const data = await res.json();
+      activeContinent = { cfg, data };
+      deck = shuffle(data.countries);
+      deckIndex = 0;
+      renderCoverage(data);
+      renderCard();
+    }
+
+    function renderSelector() {
+      el.selector.innerHTML = '';
+      CONTINENTS.forEach(c => {
+        const b = document.createElement('button');
+        b.className = 'continent-btn';
+        b.textContent = c.label;
+        if (!c.file) {
+          b.disabled = true;
+          b.title = 'Data not added yet';
+        } else {
+          b.addEventListener('click', () => {
+            document.querySelectorAll('.continent-btn').forEach(x => x.classList.remove('active'));
+            b.classList.add('active');
+            loadContinent(c);
+          });
+        }
+        if (activeContinent && activeContinent.cfg.key === c.key) b.classList.add('active');
+        el.selector.appendChild(b);
+      });
+    }
+
+    function renderCard() {
+      const c = current();
+      if (!c) return;
+      hintLevel = HINT_MAP;
+      el.flag.src = `https://flagcdn.com/w640/${c.iso2}.png`;
+      el.flag.alt = 'Flag of the country to sign';
+      el.hints.innerHTML = '';
+      el.revealPanel.hidden = true;
+      el.revealPanel.innerHTML = '';
+      el.hintBtn.disabled = false;
+      el.hintBtn.textContent = 'Hint: show on map';
+      el.mapHost.innerHTML = '<div class="map-placeholder">Ask for a hint to see the country on the map.</div>';
+      el.progress.textContent = `${deckIndex + 1} of ${deck.length} — ${activeContinent.data.continent}`;
+    }
+
+    function addHintLine(label, value, cls) {
+      const d = document.createElement('div');
+      d.className = 'hint-line';
+      d.innerHTML = `<span class="hint-label">${label}</span><span class="${cls}"></span>`;
+      d.querySelector('span:last-child').textContent = value;
+      el.hints.appendChild(d);
+    }
+
+    function nextHint() {
+      const c = current();
+      if (hintLevel === HINT_MAP) {
+        drawMap(c);
+        hintLevel = HINT_NATIVE;
+        // In much of the Americas the native name is identical to the English
+        // one, which makes that rung of the ladder a giveaway. Say so plainly
+        // rather than pretending it is a separate clue.
+        const same = c.name_native.toLowerCase() === c.name_en.toLowerCase();
+        el.hintBtn.textContent = same ? 'Hint: native name (same as English)' : 'Hint: native name';
+      } else if (hintLevel === HINT_NATIVE) {
+        addHintLine(`Native name · ${c.native_language}`, c.name_native, 'hint-native');
+        hintLevel = HINT_ENGLISH;
+        el.hintBtn.textContent = 'Hint: English name';
+      } else if (hintLevel === HINT_ENGLISH) {
+        addHintLine('English name', c.name_en, 'hint-english');
+        hintLevel = HINT_DONE;
+        el.hintBtn.disabled = true;
+        el.hintBtn.textContent = 'No more hints';
+      }
+    }
+
+    function drawMap(c) {
+      if (!countryFeatures.length) {
+        el.mapHost.innerHTML = '<div class="map-placeholder">Map data unavailable.</div>';
+        return;
+      }
+      const target = countryFeatures.find(f => f.id === c.m49);
+      const latlng = c.latlng && c.latlng.length === 2 ? c.latlng : null;
+      if (!target && !latlng) {
+        el.mapHost.innerHTML = '<div class="map-placeholder">No map shape for this country.</div>';
+        return;
+      }
+
+      const ids = new Set(activeContinent.data.countries.map(x => x.m49));
+      const regional = countryFeatures.filter(f => ids.has(f.id));
+      const collection = { type: 'FeatureCollection', features: regional };
+
+      const w = 348, h = 300;
+      // Oceania straddles the antimeridian, which an unrotated Mercator smears
+      // across the full world width. Recentring on the region's own centroid
+      // keeps every continent compact.
+      const center = d3.geoCentroid(collection);
+      const projection = d3.geoMercator()
+        .rotate([-center[0], 0])
+        .fitExtent([[6, 6], [w - 6, h - 6]], collection);
+      const path = d3.geoPath(projection);
+
+      const svg = d3.create('svg')
+        .attr('viewBox', `0 0 ${w} ${h}`)
+        .attr('role', 'img')
+        .attr('aria-label', 'Map with the target country highlighted');
+
+      svg.append('g').selectAll('path')
+        .data(regional.filter(f => f.id !== c.m49))
+        .join('path')
+        .attr('class', 'country-base')
+        .attr('d', path);
+
+      if (target) {
+        svg.append('path')
+          .datum(target)
+          .attr('class', 'country-target')
+          .attr('d', path);
+
+        // Small island states can project to a couple of pixels, which reads as
+        // nothing at all. Ring them so the highlight is actually findable.
+        const bounds = path.bounds(target);
+        const pxW = bounds[1][0] - bounds[0][0];
+        const pxH = bounds[1][1] - bounds[0][1];
+        if (Math.max(pxW, pxH) < 14) {
+          const centroid = path.centroid(target);
+          svg.append('circle')
+            .attr('class', 'target-ring')
+            .attr('cx', centroid[0])
+            .attr('cy', centroid[1])
+            .attr('r', 11);
+        }
+      } else {
+        // A few micro-states (Tuvalu) have no polygon at 50m resolution, so
+        // fall back to dropping a pin at the country's coordinates.
+        const [lat, lng] = latlng;
+        const pt = projection([lng, lat]);
+        if (pt) {
+          svg.append('circle')
+            .attr('class', 'country-target')
+            .attr('cx', pt[0]).attr('cy', pt[1]).attr('r', 3);
+          svg.append('circle')
+            .attr('class', 'target-ring')
+            .attr('cx', pt[0]).attr('cy', pt[1]).attr('r', 11);
+        }
+      }
+
+      el.mapHost.innerHTML = '';
+      el.mapHost.appendChild(svg.node());
+    }
+
+    function revealSign() {
+      const c = current();
+      const s = c.sign;
+      el.revealPanel.hidden = false;
+
+      if (s && s.video_url) {
+        let media;
+        if (s.video_type === 'youtube') {
+          media = `<iframe src="${s.video_url}" allowfullscreen title="Sign for ${c.name_en}"></iframe>`;
+        } else if (s.video_type === 'gif' || s.video_type === 'image') {
+          media = `<img class="sign-media" src="${s.video_url}" alt="Sign for ${c.name_en}" />`;
+        } else {
+          media = `<video src="${s.video_url}" controls autoplay loop muted playsinline></video>`;
+        }
+        const endonym = s.is_endonym === true ? 'native sign (endonym)'
+                      : s.is_endonym === false ? 'ASL/IS exonym'
+                      : 'origin unconfirmed';
+        const src = s.source_url
+          ? `<a href="${s.source_url}" target="_blank" rel="noopener">${s.source_name || 'source'}</a>`
+          : (s.source_name || 'source unrecorded');
+        el.revealPanel.innerHTML = `
+          ${media}
+          <div class="sign-meta">
+            ${s.sign_language || 'sign language unrecorded'} &middot; ${endonym} &middot; ${src}
+            ${s.status === 'needs_review' ? ' &middot; <strong>needs your review</strong>' : ''}
+          </div>`;
+      } else {
+        const langs = (c.sign_languages || []).join(', ') || 'unknown';
+        const q = encodeURIComponent(c.name_en);
+        el.revealPanel.innerHTML = `
+          <div class="missing-box">
+            <strong>No video sourced yet for ${c.name_en}.</strong>
+            Sign language(s) in use: ${langs}.
+            <p style="margin:0.6rem 0 0">
+              Look it up on
+              <a href="https://www.spreadthesign.com/en.us/search/?q=${q}" target="_blank" rel="noopener">Spreadthesign</a>
+              or
+              <a href="https://www.youtube.com/results?search_query=${q}+sign+language+country+name+sign" target="_blank" rel="noopener">YouTube</a>,
+              then add the URL to the country&rsquo;s <code>sign.video_url</code> field.
+            </p>
+          </div>`;
+      }
+    }
+
+    function renderCoverage(data) {
+      const total = data.countries.length;
+      const tally = { verified: 0, needs_review: 0, missing: 0 };
+      data.countries.forEach(c => {
+        const st = c.sign && c.sign.status;
+        if (st === 'verified') tally.verified++;
+        else if (st === 'needs_review') tally.needs_review++;
+        else tally.missing++;
+      });
+      const pct = n => (n / total * 100).toFixed(1) + '%';
+      const missingNames = data.countries
+        .filter(c => !c.sign || !c.sign.video_url)
+        .map(c => c.name_en);
+
+      el.coverage.innerHTML = `
+        <strong>${data.continent} data coverage</strong>
+        <div class="coverage-bar">
+          <div class="seg-verified" style="width:${pct(tally.verified)}"></div>
+          <div class="seg-review" style="width:${pct(tally.needs_review)}"></div>
+          <div class="seg-missing" style="width:${pct(tally.missing)}"></div>
+        </div>
+        <div class="coverage-legend">
+          <span><span class="dot seg-verified"></span>${tally.verified} verified</span>
+          <span><span class="dot seg-review"></span>${tally.needs_review} needs review</span>
+          <span><span class="dot seg-missing"></span>${tally.missing} no source yet</span>
+        </div>
+        ${missingNames.length ? `<p style="margin:0.75rem 0 0">Still needing a video: ${missingNames.join(', ')}.</p>` : ''}`;
+    }
+
+    el.hintBtn.addEventListener('click', nextHint);
+    el.revealBtn.addEventListener('click', revealSign);
+    el.nextBtn.addEventListener('click', () => {
+      deckIndex = (deckIndex + 1) % deck.length;
+      renderCard();
+    });
+
+    (async function init() {
+      renderSelector();
+      await loadWorld();
+      const first = CONTINENTS.find(c => c.file);
+      if (first) {
+        await loadContinent(first);
+        renderSelector();
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1069 @@
+{
+  "continent": "Asia",
+  "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
+  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "countries": [
+    {
+      "m49": "004",
+      "latlng": [
+        33,
+        65
+      ],
+      "iso2": "af",
+      "name_en": "Afghanistan",
+      "name_native": "افغانستان",
+      "native_language": "Dari",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "051",
+      "latlng": [
+        40,
+        45
+      ],
+      "iso2": "am",
+      "name_en": "Armenia",
+      "name_native": "Հայաստան",
+      "native_language": "Armenian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "031",
+      "latlng": [
+        40.5,
+        47.5
+      ],
+      "iso2": "az",
+      "name_en": "Azerbaijan",
+      "name_native": "Azərbaycan",
+      "native_language": "Azerbaijani",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "048",
+      "latlng": [
+        26,
+        50.55
+      ],
+      "iso2": "bh",
+      "name_en": "Bahrain",
+      "name_native": "البحرين",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "050",
+      "latlng": [
+        24,
+        90
+      ],
+      "iso2": "bd",
+      "name_en": "Bangladesh",
+      "name_native": "বাংলাদেশ",
+      "native_language": "Bengali",
+      "sign_languages": [
+        "Bangladeshi Sign Language (BdSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "064",
+      "latlng": [
+        27.5,
+        90.5
+      ],
+      "iso2": "bt",
+      "name_en": "Bhutan",
+      "name_native": "འབྲུག་ཡུལ་",
+      "native_language": "Dzongkha",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "096",
+      "latlng": [
+        4.5,
+        114.66666666
+      ],
+      "iso2": "bn",
+      "name_en": "Brunei",
+      "name_native": "Negara Brunei Darussalam",
+      "native_language": "Malay",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "116",
+      "latlng": [
+        13,
+        105
+      ],
+      "iso2": "kh",
+      "name_en": "Cambodia",
+      "name_native": "Kâmpŭchéa",
+      "native_language": "Khmer",
+      "sign_languages": [
+        "Cambodian Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "156",
+      "latlng": [
+        35,
+        105
+      ],
+      "iso2": "cn",
+      "name_en": "China",
+      "name_native": "中国",
+      "native_language": "Chinese",
+      "sign_languages": [
+        "中国手语 (Chinese Sign Language, CSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "268",
+      "latlng": [
+        42,
+        43.5
+      ],
+      "iso2": "ge",
+      "name_en": "Georgia",
+      "name_native": "საქართველო",
+      "native_language": "Georgian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "356",
+      "latlng": [
+        20,
+        77
+      ],
+      "iso2": "in",
+      "name_en": "India",
+      "name_native": "India",
+      "native_language": "English",
+      "sign_languages": [
+        "Indian Sign Language (ISL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "360",
+      "latlng": [
+        -5,
+        120
+      ],
+      "iso2": "id",
+      "name_en": "Indonesia",
+      "name_native": "Indonesia",
+      "native_language": "Indonesian",
+      "sign_languages": [
+        "Bahasa Isyarat Indonesia (BISINDO)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "364",
+      "latlng": [
+        32,
+        53
+      ],
+      "iso2": "ir",
+      "name_en": "Iran",
+      "name_native": "ایران",
+      "native_language": "Persian (Farsi)",
+      "sign_languages": [
+        "زبان اشاره ایرانی (Persian Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "368",
+      "latlng": [
+        33,
+        44
+      ],
+      "iso2": "iq",
+      "name_en": "Iraq",
+      "name_native": "العراق",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة العراقية (Iraqi Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "376",
+      "latlng": [
+        31.47,
+        35.13
+      ],
+      "iso2": "il",
+      "name_en": "Israel",
+      "name_native": "إسرائيل",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "שפת הסימנים הישראלית (Israeli Sign Language, ISL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "392",
+      "latlng": [
+        36,
+        138
+      ],
+      "iso2": "jp",
+      "name_en": "Japan",
+      "name_native": "日本",
+      "native_language": "Japanese",
+      "sign_languages": [
+        "日本手話 (Japanese Sign Language, JSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "400",
+      "latlng": [
+        31,
+        36
+      ],
+      "iso2": "jo",
+      "name_en": "Jordan",
+      "name_native": "الأردن",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة الأردنية (Jordanian Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "398",
+      "latlng": [
+        48,
+        68
+      ],
+      "iso2": "kz",
+      "name_en": "Kazakhstan",
+      "name_native": "Қазақстан",
+      "native_language": "Kazakh",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "414",
+      "latlng": [
+        29.5,
+        45.75
+      ],
+      "iso2": "kw",
+      "name_en": "Kuwait",
+      "name_native": "الكويت",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة الكويتية (Kuwaiti Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "417",
+      "latlng": [
+        41,
+        75
+      ],
+      "iso2": "kg",
+      "name_en": "Kyrgyzstan",
+      "name_native": "Кыргызстан",
+      "native_language": "Kyrgyz",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "418",
+      "latlng": [
+        18,
+        105
+      ],
+      "iso2": "la",
+      "name_en": "Laos",
+      "name_native": "ສປປລາວ",
+      "native_language": "Lao",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "422",
+      "latlng": [
+        33.83333333,
+        35.83333333
+      ],
+      "iso2": "lb",
+      "name_en": "Lebanon",
+      "name_native": "لبنان",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "458",
+      "latlng": [
+        2.5,
+        112.5
+      ],
+      "iso2": "my",
+      "name_en": "Malaysia",
+      "name_native": "Malaysia",
+      "native_language": "English",
+      "sign_languages": [
+        "Bahasa Isyarat Malaysia (BIM)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "462",
+      "latlng": [
+        3.25,
+        73
+      ],
+      "iso2": "mv",
+      "name_en": "Maldives",
+      "name_native": "ދިވެހިރާއްޖޭގެ",
+      "native_language": "Maldivian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "496",
+      "latlng": [
+        46,
+        105
+      ],
+      "iso2": "mn",
+      "name_en": "Mongolia",
+      "name_native": "Монгол улс",
+      "native_language": "Mongolian",
+      "sign_languages": [
+        "Mongolian Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "104",
+      "latlng": [
+        22,
+        98
+      ],
+      "iso2": "mm",
+      "name_en": "Myanmar",
+      "name_native": "မြန်မာ",
+      "native_language": "Burmese",
+      "sign_languages": [
+        "Myanmar Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "524",
+      "latlng": [
+        28,
+        84
+      ],
+      "iso2": "np",
+      "name_en": "Nepal",
+      "name_native": "नेपाल",
+      "native_language": "Nepali",
+      "sign_languages": [
+        "Nepali Sign Language (NSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "408",
+      "latlng": [
+        40,
+        127
+      ],
+      "iso2": "kp",
+      "name_en": "North Korea",
+      "name_native": "조선",
+      "native_language": "Korean",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "512",
+      "latlng": [
+        21,
+        57
+      ],
+      "iso2": "om",
+      "name_en": "Oman",
+      "name_native": "عمان",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "586",
+      "latlng": [
+        30,
+        70
+      ],
+      "iso2": "pk",
+      "name_en": "Pakistan",
+      "name_native": "Pakistan",
+      "native_language": "English",
+      "sign_languages": [
+        "Pakistan Sign Language (PSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "608",
+      "latlng": [
+        13,
+        122
+      ],
+      "iso2": "ph",
+      "name_en": "Philippines",
+      "name_native": "Philippines",
+      "native_language": "English",
+      "sign_languages": [
+        "Filipino Sign Language (FSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "634",
+      "latlng": [
+        25.5,
+        51.25
+      ],
+      "iso2": "qa",
+      "name_en": "Qatar",
+      "name_native": "قطر",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "682",
+      "latlng": [
+        25,
+        45
+      ],
+      "iso2": "sa",
+      "name_en": "Saudi Arabia",
+      "name_native": "السعودية",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة السعودية (Saudi Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "702",
+      "latlng": [
+        1.36666666,
+        103.8
+      ],
+      "iso2": "sg",
+      "name_en": "Singapore",
+      "name_native": "Singapore",
+      "native_language": "English",
+      "sign_languages": [
+        "Singapore Sign Language (SgSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "410",
+      "latlng": [
+        37,
+        127.5
+      ],
+      "iso2": "kr",
+      "name_en": "South Korea",
+      "name_native": "한국",
+      "native_language": "Korean",
+      "sign_languages": [
+        "한국 수어 (Korean Sign Language, KSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "144",
+      "latlng": [
+        7,
+        81
+      ],
+      "iso2": "lk",
+      "name_en": "Sri Lanka",
+      "name_native": "ශ්‍රී ලංකාව",
+      "native_language": "Sinhala",
+      "sign_languages": [
+        "Sri Lankan Sign Language"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "760",
+      "latlng": [
+        35,
+        38
+      ],
+      "iso2": "sy",
+      "name_en": "Syria",
+      "name_native": "سوريا",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "762",
+      "latlng": [
+        39,
+        71
+      ],
+      "iso2": "tj",
+      "name_en": "Tajikistan",
+      "name_native": "Таджикистан",
+      "native_language": "Russian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "764",
+      "latlng": [
+        15,
+        100
+      ],
+      "iso2": "th",
+      "name_en": "Thailand",
+      "name_native": "ประเทศไทย",
+      "native_language": "Thai",
+      "sign_languages": [
+        "ภาษามือไทย (Thai Sign Language, TSL)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "626",
+      "latlng": [
+        -8.83333333,
+        125.91666666
+      ],
+      "iso2": "tl",
+      "name_en": "Timor-Leste",
+      "name_native": "Timor-Leste",
+      "native_language": "Portuguese",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "795",
+      "latlng": [
+        40,
+        60
+      ],
+      "iso2": "tm",
+      "name_en": "Turkmenistan",
+      "name_native": "Туркмения",
+      "native_language": "Russian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "792",
+      "latlng": [
+        39,
+        35
+      ],
+      "iso2": "tr",
+      "name_en": "Türkiye",
+      "name_native": "Türkiye",
+      "native_language": "Turkish",
+      "sign_languages": [
+        "Türk İşaret Dili (TİD)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "784",
+      "latlng": [
+        24,
+        54
+      ],
+      "iso2": "ae",
+      "name_en": "United Arab Emirates",
+      "name_native": "الإمارات",
+      "native_language": "Arabic",
+      "sign_languages": [
+        "لغة الإشارة الإماراتية (Emirati Sign Language)"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "860",
+      "latlng": [
+        41,
+        64
+      ],
+      "iso2": "uz",
+      "name_en": "Uzbekistan",
+      "name_native": "Узбекистан",
+      "native_language": "Russian",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "704",
+      "latlng": [
+        16.16666666,
+        107.83333333
+      ],
+      "iso2": "vn",
+      "name_en": "Vietnam",
+      "name_native": "Việt Nam",
+      "native_language": "Vietnamese",
+      "sign_languages": [
+        "Ngôn ngữ ký hiệu Việt Nam"
+      ],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    },
+    {
+      "m49": "887",
+      "latlng": [
+        15,
+        48
+      ],
+      "iso2": "ye",
+      "name_en": "Yemen",
+      "name_native": "اليمن",
+      "native_language": "Arabic",
+      "sign_languages": [],
+      "sign": {
+        "video_url": null,
+        "video_type": null,
+        "source_name": null,
+        "source_url": null,
+        "sign_language": null,
+        "is_endonym": null,
+        "status": "no_source_found",
+        "notes": ""
+      }
+    }
+  ]
+}
