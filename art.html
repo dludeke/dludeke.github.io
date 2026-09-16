@@ -6,9 +6,33 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>Art Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .art-piece h3 {
+      margin: 0.75rem 0 0.25rem;
+      font-size: 1.05rem;
+    }
+
+    .art-piece p {
+      margin: 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .recovery-note {
+      background: #f8f9fa;
+      border-left: 3px solid #ccc;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      color: #555;
+      font-size: 0.92rem;
+      max-width: 720px;
+    }
+
+    .recovery-note p { margin: 0; }
+  </style>
 </head>
 <body>
-   <div class="container"> 
+   <div class="container">
     <header>
       <h1>Art Portfolio</h1>
       <nav>
@@ -21,30 +45,71 @@
         </ul>
       </nav>
     </header>
-  
+
     <main>
+      <!--
+        These seven pieces were recovered from Wayback Machine captures of the
+        old WordPress site at davidludeke.com. Titles are inferred from the
+        original filenames and are placeholders until corrected. Four are
+        WordPress-resized derivatives (ArchModel, VisualJournals, DTLamp,
+        Egret); the full-size masters were never crawled and would have to come
+        off the Bluehost account. No medium or year is asserted here because
+        neither was recoverable from the archive.
+      -->
+      <div class="recovery-note">
+        <p><strong>Recovered archive.</strong> These pieces were restored from
+        captures of the earlier site. Titles are drawn from the original
+        filenames and several images are reduced-resolution copies.</p>
+      </div>
+
       <section class="gallery">
         <div class="art-piece">
-          <img src="assets/images/art1.jpg" alt="Title of Art" />
-          <h3>Piece Title</h3>
-          <p>Medium: Watercolor on paper</p>
-          <p>Year: 2024</p>
+          <img src="images/art/8_WaterColorBridge-2.jpg" alt="Watercolor painting of a bridge" />
+          <h3>Watercolor Bridge</h3>
+          <p>1000 &times; 929</p>
         </div>
-  
+
         <div class="art-piece">
-          <img src="assets/images/art2.jpg" alt="Another Artwork" />
-          <h3>Another Title</h3>
-          <p>Medium: Digital</p>
-          <p>Year: 2025</p>
+          <img src="images/art/5_OilPaintingMonet-1.jpg" alt="Oil painting after Monet" />
+          <h3>Oil Painting, after Monet</h3>
+          <p>640 &times; 502</p>
         </div>
-  
-        <!-- Add more pieces as needed -->
+
+        <div class="art-piece">
+          <img src="images/art/Egret-1-1024x829.jpg" alt="Painting of an egret" />
+          <h3>Egret</h3>
+          <p>1024 &times; 829 &middot; reduced copy</p>
+        </div>
+
+        <div class="art-piece">
+          <img src="images/art/DTLamp-1-896x1024.jpg" alt="Lamp design" />
+          <h3>DT Lamp</h3>
+          <p>896 &times; 1024 &middot; reduced copy</p>
+        </div>
+
+        <div class="art-piece">
+          <img src="images/art/10_ArchModel-1024x791.jpg" alt="Architectural model" />
+          <h3>Architectural Model</h3>
+          <p>1024 &times; 791 &middot; reduced copy</p>
+        </div>
+
+        <div class="art-piece">
+          <img src="images/art/9_VisualJournals-1024x791.jpg" alt="Pages from visual journals" />
+          <h3>Visual Journals</h3>
+          <p>1024 &times; 791 &middot; reduced copy</p>
+        </div>
+
+        <div class="art-piece">
+          <img src="images/art/cambodian-genocide-1.jpg" alt="Work referencing the Cambodian genocide" />
+          <h3>Cambodian Genocide</h3>
+          <p>960 &times; 960</p>
+        </div>
       </section>
     </main>
-  
+
     <footer>
-      <p>&copy; 2025 David Ludeke</p>
+      <p>&copy; 2026 David Ludeke</p>
     </footer>
-  </div>  
+  </div>
 </body>
 </html>
