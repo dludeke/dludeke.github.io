@@ -561,8 +561,8 @@
         "source_url": "https://www.youtube.com/watch?v=FUPolNSpUCE",
         "sign_language": "Trinbagonian Sign Language",
         "is_endonym": true,
-        "start_seconds": null,
-        "end_seconds": null,
+        "start_seconds": 7.7,
+        "end_seconds": 9.6,
         "status": "needs_review",
         "notes": ""
       }
