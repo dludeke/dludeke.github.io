@@ -209,6 +209,9 @@
 
     .country-list button.active .tag { color: #dbeafe; }
 
+    .country-list .assumed { color: #c0c6cc; font-style: italic; }
+    .country-list button.active .assumed { color: #cfe3ff; }
+
     .country-list .no-video { color: #b02a37; }
     .country-list button.active .no-video { color: #ffd9dc; }
 
@@ -471,6 +474,12 @@
     // Signs are easier to read slowed down; every clip plays at this rate.
     const PLAYBACK_RATE = 0.75;
 
+    // Assumed window of the sign within a Sign Polyglot clip, used until a
+    // country is reviewed and given its own marks. Set both to null to turn
+    // the assumption off and play every unreviewed clip from the top.
+    const DEFAULT_START = 7;
+    const DEFAULT_END = 9;
+
     // Timestamps captured while reviewing are held here first. The JSON files
     // are static on GitHub Pages so the page cannot write them directly;
     // "Export" hands back a file to fold into the repo permanently.
@@ -513,10 +522,21 @@
     /** Effective timestamps: a locally captured value wins over the data file. */
     function marks(c) {
       const o = loadOverrides()[c.iso2] || {};
+      const s = c.sign || {};
       const pick = (a, b) => (Number.isFinite(a) ? a : (Number.isFinite(b) ? b : null));
+      const start = pick(o.start_seconds, s.start_seconds);
+      const end = pick(o.end_seconds, s.end_seconds);
+
+      // The Sign Polyglot's clips share a fixed intro, so the sign itself lands
+      // in the same window on nearly all of them. Applied only when neither
+      // mark has been set for this country: a half-set pair means someone is
+      // curating it, and defaulting the other half could put end before start.
+      const useDefault = start === null && end === null && !!s.video_url;
+
       return {
-        start: pick(o.start_seconds, c.sign && c.sign.start_seconds),
-        end: pick(o.end_seconds, c.sign && c.sign.end_seconds),
+        start: useDefault ? DEFAULT_START : start,
+        end: useDefault ? DEFAULT_END : end,
+        isDefault: useDefault,
         local: Number.isFinite(o.start_seconds) || Number.isFinite(o.end_seconds)
       };
     }
@@ -856,9 +876,12 @@
           if (!s.video_url) {
             tag.className = 'tag no-video';
             tag.textContent = 'no video';
-          } else if (Number.isFinite(marks(c).start)) {
-            tag.className = 'tag';
-            tag.textContent = fmt(marks(c).start);
+          } else {
+            const mk = marks(c);
+            if (Number.isFinite(mk.start)) {
+              tag.className = mk.isDefault ? 'tag assumed' : 'tag';
+              tag.textContent = mk.isDefault ? 'default' : fmt(mk.start);
+            }
           }
           b.appendChild(tag);
 
@@ -914,7 +937,8 @@
           ? '<span class="unset">no start</span>'
           : `start <span class="set">${fmt(cur.start)}</span>`);
         if (cur.end !== null) bits.push(`end <span class="set">${fmt(cur.end)}</span>`);
-        if (cur.local) bits.push('<span class="unset">(saved locally)</span>');
+        if (cur.isDefault) bits.push('<span class="unset">(assumed default \u2014 not reviewed)</span>');
+        else if (cur.local) bits.push('<span class="unset">(saved locally)</span>');
         document.getElementById('tsReadout').innerHTML = bits.join(' &middot; ');
       }
       readout();
