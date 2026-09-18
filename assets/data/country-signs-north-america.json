@@ -13,6 +13,7 @@
       "name_en": "Antigua and Barbuda",
       "name_native": "Antigua and Barbuda",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/dGJrZRC_uL8",
@@ -37,6 +38,7 @@
       "name_en": "Bahamas",
       "name_native": "Bahamas",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Bahamian Sign Language"
       ],
@@ -63,6 +65,7 @@
       "name_en": "Barbados",
       "name_native": "Barbados",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Barbadian Sign Language"
       ],
@@ -89,6 +92,7 @@
       "name_en": "Belize",
       "name_native": "Belize",
       "native_language": "Belizean Creole",
+      "subregion": "Central America",
       "sign_languages": [
         "Belizean Sign Language"
       ],
@@ -115,6 +119,7 @@
       "name_en": "Canada",
       "name_native": "Canada",
       "native_language": "English",
+      "subregion": "North America",
       "sign_languages": [
         "American Sign Language (ASL)",
         "Langue des signes québécoise (LSQ)"
@@ -142,6 +147,7 @@
       "name_en": "Costa Rica",
       "name_native": "Costa Rica",
       "native_language": "Spanish",
+      "subregion": "Central America",
       "sign_languages": [
         "Lengua de Señas Costarricense (LESCO)"
       ],
@@ -168,6 +174,7 @@
       "name_en": "Cuba",
       "name_native": "Cuba",
       "native_language": "Spanish",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Lengua de Señas Cubana (LSC)"
       ],
@@ -194,6 +201,7 @@
       "name_en": "Dominica",
       "name_native": "Dominica",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/0OxxqAsLCZM",
@@ -218,6 +226,7 @@
       "name_en": "Dominican Republic",
       "name_native": "República Dominicana",
       "native_language": "Spanish",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Lengua de Señas Dominicana (LSRD)"
       ],
@@ -244,6 +253,7 @@
       "name_en": "El Salvador",
       "name_native": "El Salvador",
       "native_language": "Spanish",
+      "subregion": "Central America",
       "sign_languages": [
         "Lengua de Señas Salvadoreña (LESSA)"
       ],
@@ -270,6 +280,7 @@
       "name_en": "Grenada",
       "name_native": "Grenada",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Grenadian Sign Language"
       ],
@@ -296,6 +307,7 @@
       "name_en": "Guatemala",
       "name_native": "Guatemala",
       "native_language": "Spanish",
+      "subregion": "Central America",
       "sign_languages": [
         "Lengua de Señas Guatemalteca (LENSEGUA)"
       ],
@@ -322,6 +334,7 @@
       "name_en": "Haiti",
       "name_native": "Haïti",
       "native_language": "French",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Haitian Sign Language (LSH)"
       ],
@@ -348,6 +361,7 @@
       "name_en": "Honduras",
       "name_native": "Honduras",
       "native_language": "Spanish",
+      "subregion": "Central America",
       "sign_languages": [
         "Lengua de Señas Hondureña (LESHO)"
       ],
@@ -374,6 +388,7 @@
       "name_en": "Jamaica",
       "name_native": "Jamaica",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Jamaican Sign Language (JSL)",
         "Konchri Sain"
@@ -401,6 +416,7 @@
       "name_en": "Mexico",
       "name_native": "México",
       "native_language": "Spanish",
+      "subregion": "North America",
       "sign_languages": [
         "Lengua de Señas Mexicana (LSM)"
       ],
@@ -427,6 +443,7 @@
       "name_en": "Nicaragua",
       "name_native": "Nicaragua",
       "native_language": "Spanish",
+      "subregion": "Central America",
       "sign_languages": [
         "Idioma de Señas Nicaragüense (ISN)"
       ],
@@ -453,6 +470,7 @@
       "name_en": "Panama",
       "name_native": "Panamá",
       "native_language": "Spanish",
+      "subregion": "Central America",
       "sign_languages": [
         "Lengua de Señas Panameñas (LSP)"
       ],
@@ -479,6 +497,7 @@
       "name_en": "Saint Kitts and Nevis",
       "name_native": "Saint Kitts and Nevis",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/d5kS9a4Ewrs",
@@ -503,6 +522,7 @@
       "name_en": "Saint Lucia",
       "name_native": "Saint Lucia",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/wXlWw4DPKTU",
@@ -527,6 +547,7 @@
       "name_en": "Saint Vincent and the Grenadines",
       "name_native": "Saint Vincent and the Grenadines",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/PxkEhLC4TWw",
@@ -551,6 +572,7 @@
       "name_en": "Trinidad and Tobago",
       "name_native": "Trinidad and Tobago",
       "native_language": "English",
+      "subregion": "Caribbean",
       "sign_languages": [
         "Trinidad and Tobago Sign Language (TTSL)"
       ],
@@ -577,6 +599,7 @@
       "name_en": "United States",
       "name_native": "United States",
       "native_language": "English",
+      "subregion": "North America",
       "sign_languages": [
         "American Sign Language (ASL)"
       ],

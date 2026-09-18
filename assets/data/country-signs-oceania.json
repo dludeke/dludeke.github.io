@@ -13,6 +13,7 @@
       "name_en": "Australia",
       "name_native": "Australia",
       "native_language": "English",
+      "subregion": "Australia and New Zealand",
       "sign_languages": [
         "Auslan (Australian Sign Language)"
       ],
@@ -39,6 +40,7 @@
       "name_en": "Fiji",
       "name_native": "Fiji",
       "native_language": "English",
+      "subregion": "Melanesia",
       "sign_languages": [
         "Fiji Sign Language"
       ],
@@ -65,6 +67,7 @@
       "name_en": "Kiribati",
       "name_native": "Kiribati",
       "native_language": "English",
+      "subregion": "Micronesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/KFSuN4PfF6c",
@@ -89,6 +92,7 @@
       "name_en": "Marshall Islands",
       "name_native": "Marshall Islands",
       "native_language": "English",
+      "subregion": "Micronesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/hDTpV5xtpHA",
@@ -113,6 +117,7 @@
       "name_en": "Micronesia",
       "name_native": "Micronesia",
       "native_language": "English",
+      "subregion": "Micronesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/xQvS-HUG43c",
@@ -137,6 +142,7 @@
       "name_en": "Nauru",
       "name_native": "Nauru",
       "native_language": "English",
+      "subregion": "Micronesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/XOtlqeSegdM",
@@ -161,6 +167,7 @@
       "name_en": "New Zealand",
       "name_native": "New Zealand",
       "native_language": "English",
+      "subregion": "Australia and New Zealand",
       "sign_languages": [
         "New Zealand Sign Language (NZSL)"
       ],
@@ -187,6 +194,7 @@
       "name_en": "Palau",
       "name_native": "Palau",
       "native_language": "English",
+      "subregion": "Micronesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/6TvRzoCoemY",
@@ -211,6 +219,7 @@
       "name_en": "Papua New Guinea",
       "name_native": "Papua New Guinea",
       "native_language": "English",
+      "subregion": "Melanesia",
       "sign_languages": [
         "Papua New Guinean Sign Language (PNGSL)"
       ],
@@ -237,6 +246,7 @@
       "name_en": "Samoa",
       "name_native": "Samoa",
       "native_language": "English",
+      "subregion": "Polynesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/PzW0t6dmyGk",
@@ -261,6 +271,7 @@
       "name_en": "Solomon Islands",
       "name_native": "Solomon Islands",
       "native_language": "English",
+      "subregion": "Melanesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/kyTZCAyxExY",
@@ -285,6 +296,7 @@
       "name_en": "Tonga",
       "name_native": "Tonga",
       "native_language": "English",
+      "subregion": "Polynesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/nhYDtDVUQSo",
@@ -309,6 +321,7 @@
       "name_en": "Tuvalu",
       "name_native": "Tuvalu",
       "native_language": "English",
+      "subregion": "Polynesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/yUW3c0HLaCE",
@@ -333,6 +346,7 @@
       "name_en": "Vanuatu",
       "name_native": "Vanuatu",
       "native_language": "Bislama",
+      "subregion": "Melanesia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/K6qI6vUbkoE",

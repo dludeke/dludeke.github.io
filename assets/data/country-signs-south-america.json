@@ -13,6 +13,7 @@
       "name_en": "Argentina",
       "name_native": "Argentina",
       "native_language": "Guaraní",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Argentina (LSA)"
       ],
@@ -39,6 +40,7 @@
       "name_en": "Bolivia",
       "name_native": "Wuliwya",
       "native_language": "Aymara",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Boliviana (LSB)"
       ],
@@ -65,6 +67,7 @@
       "name_en": "Brazil",
       "name_native": "Brasil",
       "native_language": "Portuguese",
+      "subregion": "South America",
       "sign_languages": [
         "Língua Brasileira de Sinais (Libras)"
       ],
@@ -91,6 +94,7 @@
       "name_en": "Chile",
       "name_native": "Chile",
       "native_language": "Spanish",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Chilena (LSCh)"
       ],
@@ -117,6 +121,7 @@
       "name_en": "Colombia",
       "name_native": "Colombia",
       "native_language": "Spanish",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Colombiana (LSC)"
       ],
@@ -143,6 +148,7 @@
       "name_en": "Ecuador",
       "name_native": "Ecuador",
       "native_language": "Spanish",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Ecuatoriana (LSEC)"
       ],
@@ -169,6 +175,7 @@
       "name_en": "Guyana",
       "name_native": "Guyana",
       "native_language": "English",
+      "subregion": "South America",
       "sign_languages": [
         "Guyanese Sign Language"
       ],
@@ -195,6 +202,7 @@
       "name_en": "Paraguay",
       "name_native": "Paraguái",
       "native_language": "Guaraní",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Paraguaya (LSPy)"
       ],
@@ -221,6 +229,7 @@
       "name_en": "Peru",
       "name_native": "Piruw",
       "native_language": "Aymara",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Peruana (LSP)"
       ],
@@ -247,6 +256,7 @@
       "name_en": "Suriname",
       "name_native": "Suriname",
       "native_language": "Dutch",
+      "subregion": "South America",
       "sign_languages": [
         "Surinamese Sign Language"
       ],
@@ -273,6 +283,7 @@
       "name_en": "Uruguay",
       "name_native": "Uruguay",
       "native_language": "Spanish",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Uruguaya (LSU)"
       ],
@@ -299,6 +310,7 @@
       "name_en": "Venezuela",
       "name_native": "Venezuela",
       "native_language": "Spanish",
+      "subregion": "South America",
       "sign_languages": [
         "Lengua de Señas Venezolana (LSV)"
       ],

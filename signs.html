@@ -135,17 +135,98 @@
     .btn-next { background: #28a745; }
     .btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
-    .map-panel {
+    .side-rail {
       width: 380px;
       flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .map-panel,
+    .list-panel {
       background: #f8f9fa;
       border-radius: 8px;
       padding: 1rem;
     }
 
-    .map-panel h3 {
+    .map-panel h3,
+    .list-panel h3 {
       margin: 0 0 0.5rem;
       font-size: 1rem;
+    }
+
+    .country-filter {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.4rem 0.6rem;
+      border: 1px solid #d8dde2;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      margin-bottom: 0.5rem;
+    }
+
+    .country-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    .country-list li { margin: 0; }
+
+    .country-list button {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font: inherit;
+      font-size: 0.9rem;
+      color: #234;
+      padding: 0.3rem 0.45rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .country-list button:hover { background: #e9eef3; }
+
+    .country-list button.active {
+      background: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+
+    .country-list .tag {
+      font-size: 0.72rem;
+      color: #999;
+      flex-shrink: 0;
+    }
+
+    .country-list button.active .tag { color: #dbeafe; }
+
+    .country-list .no-video { color: #b02a37; }
+    .country-list button.active .no-video { color: #ffd9dc; }
+
+    .country-list .list-group {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #8a939b;
+      font-weight: bold;
+      padding: 0.6rem 0.45rem 0.2rem;
+    }
+
+    .country-list .list-group:first-child { padding-top: 0; }
+
+    .list-empty {
+      font-size: 0.85rem;
+      color: #999;
+      padding: 0.4rem 0.45rem;
     }
 
     .map-panel svg {
@@ -298,7 +379,7 @@
 
     @media (max-width: 860px) {
       .game-layout { flex-direction: column; }
-      .map-panel { width: 100%; }
+      .side-rail { width: 100%; }
     }
   </style>
 </head>
@@ -344,10 +425,19 @@
             <div class="progress" id="progress"></div>
           </div>
 
-          <aside class="map-panel">
-            <h3>Map</h3>
-            <div id="mapHost">
-              <div class="map-placeholder">Ask for a hint to see the country on the map.</div>
+          <aside class="side-rail">
+            <div class="map-panel">
+              <h3>Map</h3>
+              <div id="mapHost">
+                <div class="map-placeholder">Ask for a hint to see the country on the map.</div>
+              </div>
+            </div>
+
+            <div class="list-panel">
+              <h3>Jump to a country</h3>
+              <input type="search" id="countryFilter" class="country-filter"
+                     placeholder="Filter&hellip;" autocomplete="off" />
+              <ul class="country-list" id="countryList"></ul>
             </div>
           </aside>
         </div>
@@ -478,6 +568,7 @@
       deckIndex = 0;
       renderCoverage(data);
       renderCard();
+      renderCountryList();
     }
 
     function renderSelector() {
@@ -704,6 +795,80 @@
       }
     }
 
+    /** Jump straight to a country with every hint already given and the sign shown. */
+    function jumpTo(iso2) {
+      const i = deck.findIndex(x => x.iso2 === iso2);
+      if (i < 0) return;
+      deckIndex = i;
+      renderCard();
+      nextHint();   // map
+      nextHint();   // native name
+      nextHint();   // English name
+      revealSign();
+      renderCountryList();
+    }
+
+    function renderCountryList() {
+      const host = document.getElementById('countryList');
+      if (!host || !activeContinent) return;
+      const filter = (document.getElementById('countryFilter').value || '')
+        .trim().toLowerCase();
+
+      // Group by UN subregion, each group alphabetical, groups alphabetical.
+      const groups = new Map();
+      activeContinent.data.countries
+        .filter(c => !filter
+          || c.name_en.toLowerCase().includes(filter)
+          || (c.name_native || '').toLowerCase().includes(filter))
+        .slice()
+        .sort((a, b) => a.name_en.localeCompare(b.name_en))
+        .forEach(c => {
+          const k = c.subregion || activeContinent.data.continent;
+          if (!groups.has(k)) groups.set(k, []);
+          groups.get(k).push(c);
+        });
+
+      if (!groups.size) {
+        host.innerHTML = '<li class="list-empty">No country matches that.</li>';
+        return;
+      }
+
+      const currentIso = deck[deckIndex] && deck[deckIndex].iso2;
+      host.innerHTML = '';
+      [...groups.keys()].sort().forEach(region => {
+        const head = document.createElement('li');
+        head.className = 'list-group';
+        head.textContent = region;
+        host.appendChild(head);
+
+        groups.get(region).forEach(c => {
+          const li = document.createElement('li');
+          const b = document.createElement('button');
+          b.type = 'button';
+          if (c.iso2 === currentIso) b.className = 'active';
+
+          const name = document.createElement('span');
+          name.textContent = c.name_en;
+          b.appendChild(name);
+
+          const tag = document.createElement('span');
+          const s = c.sign || {};
+          if (!s.video_url) {
+            tag.className = 'tag no-video';
+            tag.textContent = 'no video';
+          } else if (Number.isFinite(marks(c).start)) {
+            tag.className = 'tag';
+            tag.textContent = fmt(marks(c).start);
+          }
+          b.appendChild(tag);
+
+          b.addEventListener('click', () => jumpTo(c.iso2));
+          li.appendChild(b);
+          host.appendChild(li);
+        });
+      });
+    }
+
     function videoIdOf(sign) {
       const m = (sign.video_url || '').match(/([\w-]{11})(?:[?&]|$)/);
       return m ? m[1] : null;
@@ -864,6 +1029,7 @@
       renderExportRow();
     }
 
+    document.getElementById('countryFilter').addEventListener('input', renderCountryList);
     el.hintBtn.addEventListener('click', nextHint);
     el.revealBtn.addEventListener('click', revealSign);
     el.nextBtn.addEventListener('click', () => {

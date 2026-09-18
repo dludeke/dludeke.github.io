@@ -13,6 +13,7 @@
       "name_en": "Afghanistan",
       "name_native": "افغانستان",
       "native_language": "Dari",
+      "subregion": "Southern Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/VyDLUAMbZ3c",
@@ -37,6 +38,7 @@
       "name_en": "Armenia",
       "name_native": "Հայաստան",
       "native_language": "Armenian",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/xcAlfehzUkA",
@@ -61,6 +63,7 @@
       "name_en": "Azerbaijan",
       "name_native": "Azərbaycan",
       "native_language": "Azerbaijani",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/4kJZf-G4PMc",
@@ -85,6 +88,7 @@
       "name_en": "Bahrain",
       "name_native": "البحرين",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/UYnitSznLN0",
@@ -109,6 +113,7 @@
       "name_en": "Bangladesh",
       "name_native": "বাংলাদেশ",
       "native_language": "Bengali",
+      "subregion": "Southern Asia",
       "sign_languages": [
         "Bangladeshi Sign Language (BdSL)"
       ],
@@ -135,6 +140,7 @@
       "name_en": "Bhutan",
       "name_native": "འབྲུག་ཡུལ་",
       "native_language": "Dzongkha",
+      "subregion": "Southern Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/m9ssiKQG-wk",
@@ -159,6 +165,7 @@
       "name_en": "Brunei",
       "name_native": "Negara Brunei Darussalam",
       "native_language": "Malay",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/-Ece1EjnsD0",
@@ -183,6 +190,7 @@
       "name_en": "Cambodia",
       "name_native": "Kâmpŭchéa",
       "native_language": "Khmer",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "Cambodian Sign Language"
       ],
@@ -209,6 +217,7 @@
       "name_en": "China",
       "name_native": "中国",
       "native_language": "Chinese",
+      "subregion": "Eastern Asia",
       "sign_languages": [
         "中国手语 (Chinese Sign Language, CSL)"
       ],
@@ -235,6 +244,7 @@
       "name_en": "Georgia",
       "name_native": "საქართველო",
       "native_language": "Georgian",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/nXLIk-xHPWc",
@@ -259,6 +269,7 @@
       "name_en": "India",
       "name_native": "India",
       "native_language": "English",
+      "subregion": "Southern Asia",
       "sign_languages": [
         "Indian Sign Language (ISL)"
       ],
@@ -285,6 +296,7 @@
       "name_en": "Indonesia",
       "name_native": "Indonesia",
       "native_language": "Indonesian",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "Bahasa Isyarat Indonesia (BISINDO)"
       ],
@@ -311,6 +323,7 @@
       "name_en": "Iran",
       "name_native": "ایران",
       "native_language": "Persian (Farsi)",
+      "subregion": "Southern Asia",
       "sign_languages": [
         "زبان اشاره ایرانی (Persian Sign Language)"
       ],
@@ -337,6 +350,7 @@
       "name_en": "Iraq",
       "name_native": "العراق",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [
         "لغة الإشارة العراقية (Iraqi Sign Language)"
       ],
@@ -363,6 +377,7 @@
       "name_en": "Israel",
       "name_native": "إسرائيل",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [
         "שפת הסימנים הישראלית (Israeli Sign Language, ISL)"
       ],
@@ -389,6 +404,7 @@
       "name_en": "Japan",
       "name_native": "日本",
       "native_language": "Japanese",
+      "subregion": "Eastern Asia",
       "sign_languages": [
         "日本手話 (Japanese Sign Language, JSL)"
       ],
@@ -415,6 +431,7 @@
       "name_en": "Jordan",
       "name_native": "الأردن",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [
         "لغة الإشارة الأردنية (Jordanian Sign Language)"
       ],
@@ -441,6 +458,7 @@
       "name_en": "Kazakhstan",
       "name_native": "Қазақстан",
       "native_language": "Kazakh",
+      "subregion": "Central Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/UXIrV12XXxA",
@@ -465,6 +483,7 @@
       "name_en": "Kuwait",
       "name_native": "الكويت",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [
         "لغة الإشارة الكويتية (Kuwaiti Sign Language)"
       ],
@@ -491,6 +510,7 @@
       "name_en": "Kyrgyzstan",
       "name_native": "Кыргызстан",
       "native_language": "Kyrgyz",
+      "subregion": "Central Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/r7OqwK0dI8A",
@@ -515,6 +535,7 @@
       "name_en": "Laos",
       "name_native": "ສປປລາວ",
       "native_language": "Lao",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/Uc6Su1xf_oY",
@@ -539,6 +560,7 @@
       "name_en": "Lebanon",
       "name_native": "لبنان",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/xyNtcl4w6U4",
@@ -563,6 +585,7 @@
       "name_en": "Malaysia",
       "name_native": "Malaysia",
       "native_language": "English",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "Bahasa Isyarat Malaysia (BIM)"
       ],
@@ -589,6 +612,7 @@
       "name_en": "Maldives",
       "name_native": "ދިވެހިރާއްޖޭގެ",
       "native_language": "Maldivian",
+      "subregion": "Southern Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/9vLK4y1p43U",
@@ -613,6 +637,7 @@
       "name_en": "Mongolia",
       "name_native": "Монгол улс",
       "native_language": "Mongolian",
+      "subregion": "Eastern Asia",
       "sign_languages": [
         "Mongolian Sign Language"
       ],
@@ -639,6 +664,7 @@
       "name_en": "Myanmar",
       "name_native": "မြန်မာ",
       "native_language": "Burmese",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "Myanmar Sign Language"
       ],
@@ -665,6 +691,7 @@
       "name_en": "Nepal",
       "name_native": "नेपाल",
       "native_language": "Nepali",
+      "subregion": "Southern Asia",
       "sign_languages": [
         "Nepali Sign Language (NSL)"
       ],
@@ -691,6 +718,7 @@
       "name_en": "North Korea",
       "name_native": "조선",
       "native_language": "Korean",
+      "subregion": "Eastern Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/32EgrUF-6gg",
@@ -715,6 +743,7 @@
       "name_en": "Oman",
       "name_native": "عمان",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/tqZY7gMfdxw",
@@ -739,6 +768,7 @@
       "name_en": "Pakistan",
       "name_native": "Pakistan",
       "native_language": "English",
+      "subregion": "Southern Asia",
       "sign_languages": [
         "Pakistan Sign Language (PSL)"
       ],
@@ -765,6 +795,7 @@
       "name_en": "Philippines",
       "name_native": "Philippines",
       "native_language": "English",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "Filipino Sign Language (FSL)"
       ],
@@ -791,6 +822,7 @@
       "name_en": "Qatar",
       "name_native": "قطر",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/BhOJiY8gytM",
@@ -815,6 +847,7 @@
       "name_en": "Saudi Arabia",
       "name_native": "السعودية",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [
         "لغة الإشارة السعودية (Saudi Sign Language)"
       ],
@@ -841,6 +874,7 @@
       "name_en": "Singapore",
       "name_native": "Singapore",
       "native_language": "English",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "Singapore Sign Language (SgSL)"
       ],
@@ -867,6 +901,7 @@
       "name_en": "South Korea",
       "name_native": "한국",
       "native_language": "Korean",
+      "subregion": "Eastern Asia",
       "sign_languages": [
         "한국 수어 (Korean Sign Language, KSL)"
       ],
@@ -893,6 +928,7 @@
       "name_en": "Sri Lanka",
       "name_native": "ශ්‍රී ලංකාව",
       "native_language": "Sinhala",
+      "subregion": "Southern Asia",
       "sign_languages": [
         "Sri Lankan Sign Language"
       ],
@@ -919,6 +955,7 @@
       "name_en": "Syria",
       "name_native": "سوريا",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/4Pfw7ocgKP8",
@@ -943,6 +980,7 @@
       "name_en": "Tajikistan",
       "name_native": "Таджикистан",
       "native_language": "Russian",
+      "subregion": "Central Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/_Ibtr04ww30",
@@ -967,6 +1005,7 @@
       "name_en": "Thailand",
       "name_native": "ประเทศไทย",
       "native_language": "Thai",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "ภาษามือไทย (Thai Sign Language, TSL)"
       ],
@@ -993,6 +1032,7 @@
       "name_en": "Timor-Leste",
       "name_native": "Timor-Leste",
       "native_language": "Portuguese",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/Iw79-krF_yY",
@@ -1017,6 +1057,7 @@
       "name_en": "Turkmenistan",
       "name_native": "Туркмения",
       "native_language": "Russian",
+      "subregion": "Central Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/rdycmMyJ3Go",
@@ -1041,6 +1082,7 @@
       "name_en": "Türkiye",
       "name_native": "Türkiye",
       "native_language": "Turkish",
+      "subregion": "Western Asia",
       "sign_languages": [
         "Türk İşaret Dili (TİD)"
       ],
@@ -1067,6 +1109,7 @@
       "name_en": "United Arab Emirates",
       "name_native": "الإمارات",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [
         "لغة الإشارة الإماراتية (Emirati Sign Language)"
       ],
@@ -1093,6 +1136,7 @@
       "name_en": "Uzbekistan",
       "name_native": "Узбекистан",
       "native_language": "Russian",
+      "subregion": "Central Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/PWFA23CFOZ8",
@@ -1117,6 +1161,7 @@
       "name_en": "Vietnam",
       "name_native": "Việt Nam",
       "native_language": "Vietnamese",
+      "subregion": "South-Eastern Asia",
       "sign_languages": [
         "Ngôn ngữ ký hiệu Việt Nam"
       ],
@@ -1143,6 +1188,7 @@
       "name_en": "Yemen",
       "name_native": "اليمن",
       "native_language": "Arabic",
+      "subregion": "Western Asia",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/l7sE59G5rgM",

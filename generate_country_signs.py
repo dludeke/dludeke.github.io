@@ -509,6 +509,8 @@ def main():
                 "name_en": c["name"]["common"],
                 "name_native": nm,
                 "native_language": lang,
+                # UN subregion, used to group the jump list on the page.
+                "subregion": c.get("subregion") or label,
                 "sign_languages": SIGN_LANGUAGES.get(c["cca2"], []),
                 "sign": sign,
             })

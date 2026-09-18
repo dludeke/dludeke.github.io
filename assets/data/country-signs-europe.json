@@ -13,6 +13,7 @@
       "name_en": "Albania",
       "name_native": "Shqipëria",
       "native_language": "Albanian",
+      "subregion": "Southeast Europe",
       "sign_languages": [
         "Gjuha e Shenjave Shqipe"
       ],
@@ -39,6 +40,7 @@
       "name_en": "Andorra",
       "name_native": "Andorra",
       "native_language": "Catalan",
+      "subregion": "Southern Europe",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/q7_KYuT2_YE",
@@ -63,6 +65,7 @@
       "name_en": "Austria",
       "name_native": "Österreich",
       "native_language": "Austro-Bavarian German",
+      "subregion": "Central Europe",
       "sign_languages": [
         "Österreichische Gebärdensprache (ÖGS)"
       ],
@@ -89,6 +92,7 @@
       "name_en": "Belarus",
       "name_native": "Белару́сь",
       "native_language": "Belarusian",
+      "subregion": "Eastern Europe",
       "sign_languages": [
         "Беларуская жэставая мова"
       ],
@@ -115,6 +119,7 @@
       "name_en": "Belgium",
       "name_native": "Belgien",
       "native_language": "German",
+      "subregion": "Western Europe",
       "sign_languages": [
         "Vlaamse Gebarentaal (VGT)",
         "Langue des signes de Belgique francophone (LSFB)"
@@ -142,6 +147,7 @@
       "name_en": "Bosnia and Herzegovina",
       "name_native": "Bosna i Hercegovina",
       "native_language": "Bosnian",
+      "subregion": "Southeast Europe",
       "sign_languages": [
         "Bosanski znakovni jezik"
       ],
@@ -168,6 +174,7 @@
       "name_en": "Bulgaria",
       "name_native": "България",
       "native_language": "Bulgarian",
+      "subregion": "Southeast Europe",
       "sign_languages": [
         "Български жестомимичен език (БЖЕ)"
       ],
@@ -194,6 +201,7 @@
       "name_en": "Croatia",
       "name_native": "Hrvatska",
       "native_language": "Croatian",
+      "subregion": "Southeast Europe",
       "sign_languages": [
         "Hrvatski znakovni jezik (HZJ)"
       ],
@@ -220,6 +228,7 @@
       "name_en": "Cyprus",
       "name_native": "Κύπρος",
       "native_language": "Greek",
+      "subregion": "Southern Europe",
       "sign_languages": [
         "Cypriot Sign Language"
       ],
@@ -246,6 +255,7 @@
       "name_en": "Czechia",
       "name_native": "Česko",
       "native_language": "Czech",
+      "subregion": "Central Europe",
       "sign_languages": [
         "Český znakový jazyk (ČZJ)"
       ],
@@ -272,6 +282,7 @@
       "name_en": "Denmark",
       "name_native": "Danmark",
       "native_language": "Danish",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Dansk tegnsprog (DTS)"
       ],
@@ -298,6 +309,7 @@
       "name_en": "Estonia",
       "name_native": "Eesti",
       "native_language": "Estonian",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Eesti viipekeel (EVK)"
       ],
@@ -324,6 +336,7 @@
       "name_en": "Finland",
       "name_native": "Suomi",
       "native_language": "Finnish",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Suomalainen viittomakieli (FinSL)"
       ],
@@ -350,6 +363,7 @@
       "name_en": "France",
       "name_native": "France",
       "native_language": "French",
+      "subregion": "Western Europe",
       "sign_languages": [
         "Langue des signes française (LSF)"
       ],
@@ -376,6 +390,7 @@
       "name_en": "Germany",
       "name_native": "Deutschland",
       "native_language": "German",
+      "subregion": "Western Europe",
       "sign_languages": [
         "Deutsche Gebärdensprache (DGS)"
       ],
@@ -402,6 +417,7 @@
       "name_en": "Greece",
       "name_native": "Ελλάδα",
       "native_language": "Greek",
+      "subregion": "Southern Europe",
       "sign_languages": [
         "Ελληνική Νοηματική Γλώσσα (ΕΝΓ)"
       ],
@@ -428,6 +444,7 @@
       "name_en": "Hungary",
       "name_native": "Magyarország",
       "native_language": "Hungarian",
+      "subregion": "Central Europe",
       "sign_languages": [
         "Magyar jelnyelv (MJNY)"
       ],
@@ -454,6 +471,7 @@
       "name_en": "Iceland",
       "name_native": "Ísland",
       "native_language": "Icelandic",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Íslenskt táknmál (ÍTM)"
       ],
@@ -480,6 +498,7 @@
       "name_en": "Ireland",
       "name_native": "Ireland",
       "native_language": "English",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Irish Sign Language (ISL)"
       ],
@@ -506,6 +525,7 @@
       "name_en": "Italy",
       "name_native": "Italia",
       "native_language": "Italian",
+      "subregion": "Southern Europe",
       "sign_languages": [
         "Lingua dei segni italiana (LIS)"
       ],
@@ -532,6 +552,7 @@
       "name_en": "Latvia",
       "name_native": "Latvija",
       "native_language": "Latvian",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Latviešu zīmju valoda (LZV)"
       ],
@@ -558,6 +579,7 @@
       "name_en": "Liechtenstein",
       "name_native": "Liechtenstein",
       "native_language": "German",
+      "subregion": "Western Europe",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/Yar0foCzjZk",
@@ -582,6 +604,7 @@
       "name_en": "Lithuania",
       "name_native": "Lietuva",
       "native_language": "Lithuanian",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Lietuvių gestų kalba (LGK)"
       ],
@@ -608,6 +631,7 @@
       "name_en": "Luxembourg",
       "name_native": "Luxemburg",
       "native_language": "German",
+      "subregion": "Western Europe",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/MPamSswKPh8",
@@ -632,6 +656,7 @@
       "name_en": "Malta",
       "name_native": "Malta",
       "native_language": "English",
+      "subregion": "Southern Europe",
       "sign_languages": [
         "Lingwa tas-Sinjali Maltija (LSM)"
       ],
@@ -658,6 +683,7 @@
       "name_en": "Moldova",
       "name_native": "Moldova",
       "native_language": "Moldavian",
+      "subregion": "Eastern Europe",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/NhMZ5TF5j8s",
@@ -682,6 +708,7 @@
       "name_en": "Monaco",
       "name_native": "Monaco",
       "native_language": "French",
+      "subregion": "Western Europe",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/E_7i1U1lpv4",
@@ -706,6 +733,7 @@
       "name_en": "Montenegro",
       "name_native": "Црна Гора",
       "native_language": "Montenegrin",
+      "subregion": "Southeast Europe",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/1k72hfxWr1I",
@@ -730,6 +758,7 @@
       "name_en": "Netherlands",
       "name_native": "Nederland",
       "native_language": "Dutch",
+      "subregion": "Western Europe",
       "sign_languages": [
         "Nederlandse Gebarentaal (NGT)"
       ],
@@ -756,6 +785,7 @@
       "name_en": "North Macedonia",
       "name_native": "Македонија",
       "native_language": "Macedonian",
+      "subregion": "Southeast Europe",
       "sign_languages": [
         "Македонски знаковен јазик"
       ],
@@ -782,6 +812,7 @@
       "name_en": "Norway",
       "name_native": "Noreg",
       "native_language": "Norwegian Nynorsk",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Norsk tegnspråk (NTS)"
       ],
@@ -808,6 +839,7 @@
       "name_en": "Poland",
       "name_native": "Polska",
       "native_language": "Polish",
+      "subregion": "Central Europe",
       "sign_languages": [
         "Polski Język Migowy (PJM)"
       ],
@@ -834,6 +866,7 @@
       "name_en": "Portugal",
       "name_native": "Portugal",
       "native_language": "Portuguese",
+      "subregion": "Southern Europe",
       "sign_languages": [
         "Língua Gestual Portuguesa (LGP)"
       ],
@@ -860,6 +893,7 @@
       "name_en": "Romania",
       "name_native": "România",
       "native_language": "Romanian",
+      "subregion": "Southeast Europe",
       "sign_languages": [
         "Limbaj Mimico-Gestual Român (LMG)"
       ],
@@ -886,6 +920,7 @@
       "name_en": "Russia",
       "name_native": "Россия",
       "native_language": "Russian",
+      "subregion": "Eastern Europe",
       "sign_languages": [
         "Русский жестовый язык (РЖЯ)"
       ],
@@ -912,6 +947,7 @@
       "name_en": "San Marino",
       "name_native": "San Marino",
       "native_language": "Italian",
+      "subregion": "Southern Europe",
       "sign_languages": [],
       "sign": {
         "video_url": null,
@@ -936,6 +972,7 @@
       "name_en": "Serbia",
       "name_native": "Србија",
       "native_language": "Serbian",
+      "subregion": "Southeast Europe",
       "sign_languages": [
         "Српски знаковни језик"
       ],
@@ -962,6 +999,7 @@
       "name_en": "Slovakia",
       "name_native": "Slovensko",
       "native_language": "Slovak",
+      "subregion": "Central Europe",
       "sign_languages": [
         "Slovenský posunkový jazyk (SPJ)"
       ],
@@ -988,6 +1026,7 @@
       "name_en": "Slovenia",
       "name_native": "Slovenija",
       "native_language": "Slovene",
+      "subregion": "Central Europe",
       "sign_languages": [
         "Slovenski znakovni jezik (SZJ)"
       ],
@@ -1014,6 +1053,7 @@
       "name_en": "Spain",
       "name_native": "España",
       "native_language": "Spanish",
+      "subregion": "Southern Europe",
       "sign_languages": [
         "Lengua de signos española (LSE)",
         "Llengua de signes catalana (LSC)"
@@ -1041,6 +1081,7 @@
       "name_en": "Sweden",
       "name_native": "Sverige",
       "native_language": "Swedish",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "Svenskt teckenspråk (STS)"
       ],
@@ -1067,6 +1108,7 @@
       "name_en": "Switzerland",
       "name_native": "Suisse",
       "native_language": "French",
+      "subregion": "Western Europe",
       "sign_languages": [
         "Deutschschweizer Gebärdensprache (DSGS)",
         "Langue des signes suisse romande (LSF-SR)"
@@ -1094,6 +1136,7 @@
       "name_en": "Ukraine",
       "name_native": "Україна",
       "native_language": "Ukrainian",
+      "subregion": "Eastern Europe",
       "sign_languages": [
         "Українська жестова мова (УЖМ)"
       ],
@@ -1120,6 +1163,7 @@
       "name_en": "United Kingdom",
       "name_native": "United Kingdom",
       "native_language": "English",
+      "subregion": "Northern Europe",
       "sign_languages": [
         "British Sign Language (BSL)"
       ],
@@ -1146,6 +1190,7 @@
       "name_en": "Vatican City",
       "name_native": "Vaticano",
       "native_language": "Italian",
+      "subregion": "Southern Europe",
       "sign_languages": [],
       "sign": {
         "video_url": "https://www.youtube.com/embed/dpaw1AW_VyU",
