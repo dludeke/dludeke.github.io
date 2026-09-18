@@ -1,7 +1,7 @@
 {
   "continent": "Asia",
   "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
-  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "research_notes": "Sign videos come from The Sign Polyglot's public YouTube playlist '210 Countries: Native / Indigenous Name Signs' (plus that channel's International Sign playlist for a few gaps). They are embedded by video id, never downloaded or re-hosted, so attribution and view counts stay with the creator. Every entry is marked needs_review: the video id and the sign language named in its title are recorded automatically, but whether the clip shows the correct current sign needs a signer's eye. is_endonym is derived from the video title -- false where the title names International Sign, or ASL for a country other than the USA. Videos run about a minute and are embedded whole; no per-video timestamp for the exact moment of the sign was available without watching all of them.",
   "countries": [
     {
       "m49": "004",
@@ -15,13 +15,13 @@
       "native_language": "Dari",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/VyDLUAMbZ3c",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=VyDLUAMbZ3c",
+        "sign_language": "Afghan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -37,13 +37,13 @@
       "native_language": "Armenian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/xcAlfehzUkA",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=xcAlfehzUkA",
+        "sign_language": "Armenian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -59,13 +59,13 @@
       "native_language": "Azerbaijani",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/4kJZf-G4PMc",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=4kJZf-G4PMc",
+        "sign_language": "Azerbaijani Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -81,13 +81,13 @@
       "native_language": "Arabic",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/UYnitSznLN0",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=UYnitSznLN0",
+        "sign_language": "Bahraini Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -105,13 +105,13 @@
         "Bangladeshi Sign Language (BdSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/zRLX0x-Qwoo",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=zRLX0x-Qwoo",
+        "sign_language": "Bangladeshi Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -127,13 +127,13 @@
       "native_language": "Dzongkha",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/m9ssiKQG-wk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=m9ssiKQG-wk",
+        "sign_language": "Bhutanese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -149,13 +149,13 @@
       "native_language": "Malay",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/-Ece1EjnsD0",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=-Ece1EjnsD0",
+        "sign_language": "Bruneian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -173,13 +173,13 @@
         "Cambodian Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/xNXa0AP8fYw",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=xNXa0AP8fYw",
+        "sign_language": "Cambodian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -197,13 +197,13 @@
         "中国手语 (Chinese Sign Language, CSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/5USYePX6ZMI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=5USYePX6ZMI",
+        "sign_language": "Chinese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -219,13 +219,13 @@
       "native_language": "Georgian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/nXLIk-xHPWc",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=nXLIk-xHPWc",
+        "sign_language": "Georgian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -243,13 +243,13 @@
         "Indian Sign Language (ISL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Gq6OKFugRqY",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Gq6OKFugRqY",
+        "sign_language": "Indian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -267,13 +267,13 @@
         "Bahasa Isyarat Indonesia (BISINDO)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/KzKjHPqQGKM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=KzKjHPqQGKM",
+        "sign_language": "Indonesian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -291,13 +291,13 @@
         "زبان اشاره ایرانی (Persian Sign Language)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/-c4GXYQtuPQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=-c4GXYQtuPQ",
+        "sign_language": "Iranian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -315,13 +315,13 @@
         "لغة الإشارة العراقية (Iraqi Sign Language)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/KCZrBVek4dA",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=KCZrBVek4dA",
+        "sign_language": "Iraqi Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -339,13 +339,13 @@
         "שפת הסימנים הישראלית (Israeli Sign Language, ISL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/XNabx57X53E",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=XNabx57X53E",
+        "sign_language": "Israeli Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -363,13 +363,13 @@
         "日本手話 (Japanese Sign Language, JSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/QRXZMU9Ha54",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=QRXZMU9Ha54",
+        "sign_language": "Japanese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -387,13 +387,13 @@
         "لغة الإشارة الأردنية (Jordanian Sign Language)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/RKTS7JaW-AY",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=RKTS7JaW-AY",
+        "sign_language": "Jordanian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -409,13 +409,13 @@
       "native_language": "Kazakh",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/UXIrV12XXxA",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=UXIrV12XXxA",
+        "sign_language": "Kazakh Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -433,13 +433,13 @@
         "لغة الإشارة الكويتية (Kuwaiti Sign Language)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/p34CxFuT8es",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=p34CxFuT8es",
+        "sign_language": "Kuwaiti Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -455,13 +455,13 @@
       "native_language": "Kyrgyz",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/r7OqwK0dI8A",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=r7OqwK0dI8A",
+        "sign_language": "Kyrgyz Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -477,13 +477,13 @@
       "native_language": "Lao",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Uc6Su1xf_oY",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Uc6Su1xf_oY",
+        "sign_language": "Laotian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -499,13 +499,13 @@
       "native_language": "Arabic",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/xyNtcl4w6U4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=xyNtcl4w6U4",
+        "sign_language": "Lebanese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -523,13 +523,13 @@
         "Bahasa Isyarat Malaysia (BIM)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Asyk-iudxHY",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Asyk-iudxHY",
+        "sign_language": "Malaysian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -545,13 +545,13 @@
       "native_language": "Maldivian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/9vLK4y1p43U",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=9vLK4y1p43U",
+        "sign_language": "Maldivian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -569,13 +569,13 @@
         "Mongolian Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/sHg17BWcDag",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=sHg17BWcDag",
+        "sign_language": "Mongolian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -593,13 +593,13 @@
         "Myanmar Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/TFOXbO9mnWk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=TFOXbO9mnWk",
+        "sign_language": "Burmese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -617,13 +617,13 @@
         "Nepali Sign Language (NSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/MPLUWWr04b4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=MPLUWWr04b4",
+        "sign_language": "Nepali Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -639,13 +639,13 @@
       "native_language": "Korean",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/32EgrUF-6gg",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=32EgrUF-6gg",
+        "sign_language": "North Korean Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -661,13 +661,13 @@
       "native_language": "Arabic",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/tqZY7gMfdxw",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=tqZY7gMfdxw",
+        "sign_language": "Omani Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -685,13 +685,13 @@
         "Pakistan Sign Language (PSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/xbXbwUEuu54",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=xbXbwUEuu54",
+        "sign_language": "Pakistani Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -709,13 +709,13 @@
         "Filipino Sign Language (FSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Vg3KUIpVUh0",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Vg3KUIpVUh0",
+        "sign_language": "Filipino Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -731,13 +731,13 @@
       "native_language": "Arabic",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/BhOJiY8gytM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=BhOJiY8gytM",
+        "sign_language": "Qatari Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -755,13 +755,13 @@
         "لغة الإشارة السعودية (Saudi Sign Language)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/tcpjh45aYWU",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=tcpjh45aYWU",
+        "sign_language": "Saudi Arabian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -779,13 +779,13 @@
         "Singapore Sign Language (SgSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/WDGzviVDFl0",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=WDGzviVDFl0",
+        "sign_language": "Singapore Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -803,13 +803,13 @@
         "한국 수어 (Korean Sign Language, KSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/ZVaj84OJR_c",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=ZVaj84OJR_c",
+        "sign_language": "Korean Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -827,13 +827,13 @@
         "Sri Lankan Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/hyvZ4mjm5dk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=hyvZ4mjm5dk",
+        "sign_language": "Sri Lankan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -849,13 +849,13 @@
       "native_language": "Arabic",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/4Pfw7ocgKP8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=4Pfw7ocgKP8",
+        "sign_language": "Syrian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -871,13 +871,13 @@
       "native_language": "Russian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/_Ibtr04ww30",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=_Ibtr04ww30",
+        "sign_language": "Russian-Tajik Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -895,13 +895,13 @@
         "ภาษามือไทย (Thai Sign Language, TSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/iKmnd1pDSb8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=iKmnd1pDSb8",
+        "sign_language": "Thai Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -917,13 +917,13 @@
       "native_language": "Portuguese",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Iw79-krF_yY",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Iw79-krF_yY",
+        "sign_language": "Timorese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -939,13 +939,13 @@
       "native_language": "Russian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/rdycmMyJ3Go",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=rdycmMyJ3Go",
+        "sign_language": "Turkmen Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -963,13 +963,13 @@
         "Türk İşaret Dili (TİD)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/iQ9kEKs2n7I",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=iQ9kEKs2n7I",
+        "sign_language": "Turkish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -987,13 +987,13 @@
         "لغة الإشارة الإماراتية (Emirati Sign Language)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/FV3ya4NdDWM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=FV3ya4NdDWM",
+        "sign_language": "Emirati Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -1009,13 +1009,13 @@
       "native_language": "Russian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/PWFA23CFOZ8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=PWFA23CFOZ8",
+        "sign_language": "Uzbek Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -1033,13 +1033,13 @@
         "Ngôn ngữ ký hiệu Việt Nam"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/kjje7pr2_14",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=kjje7pr2_14",
+        "sign_language": "Vietnamese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -1055,13 +1055,13 @@
       "native_language": "Arabic",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/l7sE59G5rgM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=l7sE59G5rgM",
+        "sign_language": "Yemeni Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     }

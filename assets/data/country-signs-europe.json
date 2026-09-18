@@ -1,7 +1,7 @@
 {
   "continent": "Europe",
   "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
-  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "research_notes": "Sign videos come from The Sign Polyglot's public YouTube playlist '210 Countries: Native / Indigenous Name Signs' (plus that channel's International Sign playlist for a few gaps). They are embedded by video id, never downloaded or re-hosted, so attribution and view counts stay with the creator. Every entry is marked needs_review: the video id and the sign language named in its title are recorded automatically, but whether the clip shows the correct current sign needs a signer's eye. is_endonym is derived from the video title -- false where the title names International Sign, or ASL for a country other than the USA. Videos run about a minute and are embedded whole; no per-video timestamp for the exact moment of the sign was available without watching all of them.",
   "countries": [
     {
       "m49": "008",
@@ -17,13 +17,13 @@
         "Gjuha e Shenjave Shqipe"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/wMVRpCL6cNg",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=wMVRpCL6cNg",
+        "sign_language": "Albanian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -39,13 +39,13 @@
       "native_language": "Catalan",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/q7_KYuT2_YE",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=q7_KYuT2_YE",
+        "sign_language": "Andorran Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -63,13 +63,13 @@
         "Österreichische Gebärdensprache (ÖGS)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/ZiYsaoaqUHI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=ZiYsaoaqUHI",
+        "sign_language": "Austrian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -87,13 +87,13 @@
         "Беларуская жэставая мова"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/_06DVYGR4kQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=_06DVYGR4kQ",
+        "sign_language": "Belarusian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -112,13 +112,13 @@
         "Langue des signes de Belgique francophone (LSFB)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/_OupvK7LzNc",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=_OupvK7LzNc",
+        "sign_language": "Belgian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -136,13 +136,13 @@
         "Bosanski znakovni jezik"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/5Vo1Myemw40",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=5Vo1Myemw40",
+        "sign_language": "Bosnian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -160,13 +160,13 @@
         "Български жестомимичен език (БЖЕ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/377MQpdBOpc",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=377MQpdBOpc",
+        "sign_language": "Bulgarian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -184,13 +184,13 @@
         "Hrvatski znakovni jezik (HZJ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/OVNzrjb5i14",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=OVNzrjb5i14",
+        "sign_language": "Croatian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -208,13 +208,13 @@
         "Cypriot Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/uybxUdGx9RQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=uybxUdGx9RQ",
+        "sign_language": "Cypriot Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -232,13 +232,13 @@
         "Český znakový jazyk (ČZJ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/2HFoKFZeNsw",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=2HFoKFZeNsw",
+        "sign_language": "Czech Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -256,13 +256,13 @@
         "Dansk tegnsprog (DTS)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/tUnnZfgqHgg",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=tUnnZfgqHgg",
+        "sign_language": "Danish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -280,13 +280,13 @@
         "Eesti viipekeel (EVK)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/eQC2hdu1D-Y",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=eQC2hdu1D-Y",
+        "sign_language": "Estonian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -304,13 +304,13 @@
         "Suomalainen viittomakieli (FinSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/dvNFRCO9T9U",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=dvNFRCO9T9U",
+        "sign_language": "Finnish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -328,13 +328,13 @@
         "Langue des signes française (LSF)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Zrr-2lN_F80",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Zrr-2lN_F80",
+        "sign_language": "French Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -352,13 +352,13 @@
         "Deutsche Gebärdensprache (DGS)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/AYBmd47gaKw",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=AYBmd47gaKw",
+        "sign_language": "German Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -376,13 +376,13 @@
         "Ελληνική Νοηματική Γλώσσα (ΕΝΓ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/bVtsZc6dFUs",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=bVtsZc6dFUs",
+        "sign_language": "Greek Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -400,13 +400,13 @@
         "Magyar jelnyelv (MJNY)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/3wsG0PlgQUc",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=3wsG0PlgQUc",
+        "sign_language": "Hungarian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -424,13 +424,13 @@
         "Íslenskt táknmál (ÍTM)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/MPrNL0Q63-g",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=MPrNL0Q63-g",
+        "sign_language": "Icelandic Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -448,13 +448,13 @@
         "Irish Sign Language (ISL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/KNw5oBIGlCU",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=KNw5oBIGlCU",
+        "sign_language": "Irish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -472,13 +472,13 @@
         "Lingua dei segni italiana (LIS)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/3_vFwesfW9g",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=3_vFwesfW9g",
+        "sign_language": "Italian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -496,13 +496,13 @@
         "Latviešu zīmju valoda (LZV)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/IKEtWifXipk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=IKEtWifXipk",
+        "sign_language": "Latvian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -518,13 +518,13 @@
       "native_language": "German",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Yar0foCzjZk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Yar0foCzjZk",
+        "sign_language": "Liechtenstein Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -542,13 +542,13 @@
         "Lietuvių gestų kalba (LGK)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/GWnKAuZUX5M",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=GWnKAuZUX5M",
+        "sign_language": "Lithuanian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -564,13 +564,13 @@
       "native_language": "German",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/MPamSswKPh8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=MPamSswKPh8",
+        "sign_language": "Luxembourgish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -588,13 +588,13 @@
         "Lingwa tas-Sinjali Maltija (LSM)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/CyPGW7FgVxA",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=CyPGW7FgVxA",
+        "sign_language": "Maltese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -610,13 +610,13 @@
       "native_language": "Moldavian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/NhMZ5TF5j8s",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=NhMZ5TF5j8s",
+        "sign_language": "Moldovan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -632,13 +632,13 @@
       "native_language": "French",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/E_7i1U1lpv4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=E_7i1U1lpv4",
+        "sign_language": "Monégasque Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -654,13 +654,13 @@
       "native_language": "Montenegrin",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/1k72hfxWr1I",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=1k72hfxWr1I",
+        "sign_language": "Montenegrin Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -678,13 +678,13 @@
         "Nederlandse Gebarentaal (NGT)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/-iU8sevq8QQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=-iU8sevq8QQ",
+        "sign_language": "Dutch Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -702,13 +702,13 @@
         "Македонски знаковен јазик"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/_1H46S68KHQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=_1H46S68KHQ",
+        "sign_language": "Macedonian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -726,13 +726,13 @@
         "Norsk tegnspråk (NTS)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/OrcSc9k40bM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=OrcSc9k40bM",
+        "sign_language": "Norwegian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -750,13 +750,13 @@
         "Polski Język Migowy (PJM)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/nCXrDo-8VHU",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=nCXrDo-8VHU",
+        "sign_language": "Polish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -774,13 +774,13 @@
         "Língua Gestual Portuguesa (LGP)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Es2-BKdS82g",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Es2-BKdS82g",
+        "sign_language": "Portuguese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -798,13 +798,13 @@
         "Limbaj Mimico-Gestual Român (LMG)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/gg4NC2xedV8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=gg4NC2xedV8",
+        "sign_language": "Romanian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -822,13 +822,13 @@
         "Русский жестовый язык (РЖЯ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/wT3-m84EeCM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=wT3-m84EeCM",
+        "sign_language": "Russian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -868,13 +868,13 @@
         "Српски знаковни језик"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/DlePxQVMzSk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=DlePxQVMzSk",
+        "sign_language": "Serbian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -892,13 +892,13 @@
         "Slovenský posunkový jazyk (SPJ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/wivex68zKoI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=wivex68zKoI",
+        "sign_language": "Slovakian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -916,13 +916,13 @@
         "Slovenski znakovni jezik (SZJ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/_81Hk4gzrZ4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=_81Hk4gzrZ4",
+        "sign_language": "Slovenian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -941,13 +941,13 @@
         "Llengua de signes catalana (LSC)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/o8iUSyxfXgI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=o8iUSyxfXgI",
+        "sign_language": "Spanish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -965,13 +965,13 @@
         "Svenskt teckenspråk (STS)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/doQWLjx6ohQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=doQWLjx6ohQ",
+        "sign_language": "Swedish Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -990,13 +990,13 @@
         "Langue des signes suisse romande (LSF-SR)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/WqLmLJouqzI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=WqLmLJouqzI",
+        "sign_language": "Swiss Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -1014,13 +1014,13 @@
         "Українська жестова мова (УЖМ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/qo_OTdTqPO4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=qo_OTdTqPO4",
+        "sign_language": "Ukrainian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -1038,13 +1038,13 @@
         "British Sign Language (BSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/c9ZgiV2-OL4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=c9ZgiV2-OL4",
+        "sign_language": "British Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -1060,13 +1060,13 @@
       "native_language": "Italian",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/dpaw1AW_VyU",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=dpaw1AW_VyU",
+        "sign_language": "International Sign",
+        "is_endonym": false,
+        "status": "needs_review",
         "notes": ""
       }
     }

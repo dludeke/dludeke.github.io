@@ -1,7 +1,7 @@
 {
   "continent": "North America",
   "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
-  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "research_notes": "Sign videos come from The Sign Polyglot's public YouTube playlist '210 Countries: Native / Indigenous Name Signs' (plus that channel's International Sign playlist for a few gaps). They are embedded by video id, never downloaded or re-hosted, so attribution and view counts stay with the creator. Every entry is marked needs_review: the video id and the sign language named in its title are recorded automatically, but whether the clip shows the correct current sign needs a signer's eye. is_endonym is derived from the video title -- false where the title names International Sign, or ASL for a country other than the USA. Videos run about a minute and are embedded whole; no per-video timestamp for the exact moment of the sign was available without watching all of them.",
   "countries": [
     {
       "m49": "028",
@@ -15,13 +15,13 @@
       "native_language": "English",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/dGJrZRC_uL8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=dGJrZRC_uL8",
+        "sign_language": "Antiguan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -39,13 +39,13 @@
         "Bahamian Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Zf-OZU0ZcgA",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Zf-OZU0ZcgA",
+        "sign_language": "Bahamian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -63,13 +63,13 @@
         "Barbadian Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/_DYhXgDn-74",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=_DYhXgDn-74",
+        "sign_language": "Barbados Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -87,13 +87,13 @@
         "Belizean Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/eMdl4A91nKM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=eMdl4A91nKM",
+        "sign_language": "Belizean Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -112,13 +112,13 @@
         "Langue des signes québécoise (LSQ)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/DUI5Po99yOg",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=DUI5Po99yOg",
+        "sign_language": "Canadian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -136,13 +136,13 @@
         "Lengua de Señas Costarricense (LESCO)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/wzufJk1x3Ic",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=wzufJk1x3Ic",
+        "sign_language": "Costa Rican Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -160,13 +160,13 @@
         "Lengua de Señas Cubana (LSC)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/B7ub3b6eAzI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=B7ub3b6eAzI",
+        "sign_language": "Cuban Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -182,13 +182,13 @@
       "native_language": "English",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/0OxxqAsLCZM",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=0OxxqAsLCZM",
+        "sign_language": "Dominica Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -206,13 +206,13 @@
         "Lengua de Señas Dominicana (LSRD)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/mwOMIAzbnr4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=mwOMIAzbnr4",
+        "sign_language": "Dominican Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -230,13 +230,13 @@
         "Lengua de Señas Salvadoreña (LESSA)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/n2vwaxMFKXk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=n2vwaxMFKXk",
+        "sign_language": "Salvadorian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -254,13 +254,13 @@
         "Grenadian Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/If76RC6iPOY",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=If76RC6iPOY",
+        "sign_language": "Grenadian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -278,13 +278,13 @@
         "Lengua de Señas Guatemalteca (LENSEGUA)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Ymc1c3San_E",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Ymc1c3San_E",
+        "sign_language": "Guatemalan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -302,13 +302,13 @@
         "Haitian Sign Language (LSH)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/NdVqj1o1hbQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=NdVqj1o1hbQ",
+        "sign_language": "Haitian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -326,13 +326,13 @@
         "Lengua de Señas Hondureña (LESHO)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/xweB2Q1xGng",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=xweB2Q1xGng",
+        "sign_language": "Honduran Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -351,13 +351,13 @@
         "Konchri Sain"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/qWNIYMmYSnI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=qWNIYMmYSnI",
+        "sign_language": "Jamaican Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -375,13 +375,13 @@
         "Lengua de Señas Mexicana (LSM)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/FZtkNASsfM8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=FZtkNASsfM8",
+        "sign_language": "Mexican Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -399,13 +399,13 @@
         "Idioma de Señas Nicaragüense (ISN)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Ts_qX7o0nNQ",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Ts_qX7o0nNQ",
+        "sign_language": "Nicaraguan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -423,13 +423,13 @@
         "Lengua de Señas Panameñas (LSP)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/GB5_Pa2fEOo",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=GB5_Pa2fEOo",
+        "sign_language": "Panamanian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -445,13 +445,13 @@
       "native_language": "English",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/d5kS9a4Ewrs",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=d5kS9a4Ewrs",
+        "sign_language": "Kittitian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -467,13 +467,13 @@
       "native_language": "English",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/wXlWw4DPKTU",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=wXlWw4DPKTU",
+        "sign_language": "Saint Lucian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -489,13 +489,13 @@
       "native_language": "English",
       "sign_languages": [],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/PxkEhLC4TWw",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=PxkEhLC4TWw",
+        "sign_language": "Vincentian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -513,13 +513,13 @@
         "Trinidad and Tobago Sign Language (TTSL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/FUPolNSpUCE",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=FUPolNSpUCE",
+        "sign_language": "Trinbagonian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -537,13 +537,13 @@
         "American Sign Language (ASL)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Vy2bmKpLi8g",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Vy2bmKpLi8g",
+        "sign_language": "American Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     }

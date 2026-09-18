@@ -1,7 +1,7 @@
 {
   "continent": "South America",
   "schema_notes": "sign.status is one of: verified | needs_review | no_source_found. sign.is_endonym is true when the video shows the country's own sign for itself, false when it shows an ASL/IS exonym, null when unknown. Populate video_url with an embeddable URL (YouTube embed, mp4, or gif) and set video_type to youtube | mp4 | gif; leave null until a source is confirmed.",
-  "research_notes": "Video sourcing status: no embeddable, license-clean video source covering national country name signs was found during the initial research pass. Checked: Spreadthesign (comprehensive but copyrighted, link-out only); signasl.org (self-hosted video, copyright Daniel Mitchell); Handspeak and Signing Savvy (copyrighted); Global Signbank / Radboud (research-access, CC BY-NC-SA, covers NGT/BSL/FinSL/ASL rather than country name signs). The practical paths are YouTube embeds vetted individually, or self-recorded clips. Every country below therefore has video_url null and status no_source_found; the page links out to Spreadthesign and YouTube per country.",
+  "research_notes": "Sign videos come from The Sign Polyglot's public YouTube playlist '210 Countries: Native / Indigenous Name Signs' (plus that channel's International Sign playlist for a few gaps). They are embedded by video id, never downloaded or re-hosted, so attribution and view counts stay with the creator. Every entry is marked needs_review: the video id and the sign language named in its title are recorded automatically, but whether the clip shows the correct current sign needs a signer's eye. is_endonym is derived from the video title -- false where the title names International Sign, or ASL for a country other than the USA. Videos run about a minute and are embedded whole; no per-video timestamp for the exact moment of the sign was available without watching all of them.",
   "countries": [
     {
       "m49": "032",
@@ -17,13 +17,13 @@
         "Lengua de Señas Argentina (LSA)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/MX74p75wedA",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=MX74p75wedA",
+        "sign_language": "Argentine Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -41,13 +41,13 @@
         "Lengua de Señas Boliviana (LSB)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/ypxMIT77-So",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=ypxMIT77-So",
+        "sign_language": "Bolivian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -65,13 +65,13 @@
         "Língua Brasileira de Sinais (Libras)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/Ulr6DEDTTzI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=Ulr6DEDTTzI",
+        "sign_language": "Brazilian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -89,13 +89,13 @@
         "Lengua de Señas Chilena (LSCh)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/rLcBeVILzfI",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=rLcBeVILzfI",
+        "sign_language": "Chilean Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -113,13 +113,13 @@
         "Lengua de Señas Colombiana (LSC)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/58OVGclsMzk",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=58OVGclsMzk",
+        "sign_language": "Colombian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -137,13 +137,13 @@
         "Lengua de Señas Ecuatoriana (LSEC)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/eByZIOzkRuc",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=eByZIOzkRuc",
+        "sign_language": "Ecuadorian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -161,13 +161,13 @@
         "Guyanese Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/x1SgaNJcXA8",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=x1SgaNJcXA8",
+        "sign_language": "Guyanese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -185,13 +185,13 @@
         "Lengua de Señas Paraguaya (LSPy)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/m2el1vfOhwc",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=m2el1vfOhwc",
+        "sign_language": "Paraguayan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -209,13 +209,13 @@
         "Lengua de Señas Peruana (LSP)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/BmSr6z0FMDg",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=BmSr6z0FMDg",
+        "sign_language": "Peruvian Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -233,13 +233,13 @@
         "Surinamese Sign Language"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/qLW2Wdzbtm0",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=qLW2Wdzbtm0",
+        "sign_language": "Surinamese Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
@@ -257,13 +257,13 @@
         "Lengua de Señas Uruguaya (LSU)"
       ],
       "sign": {
-        "video_url": null,
-        "video_type": null,
-        "source_name": null,
-        "source_url": null,
-        "sign_language": null,
-        "is_endonym": null,
-        "status": "no_source_found",
+        "video_url": "https://www.youtube.com/embed/zFXXoPWbCt4",
+        "video_type": "youtube",
+        "source_name": "The Sign Polyglot",
+        "source_url": "https://www.youtube.com/watch?v=zFXXoPWbCt4",
+        "sign_language": "Uruguayan Sign Language",
+        "is_endonym": true,
+        "status": "needs_review",
         "notes": ""
       }
     },
