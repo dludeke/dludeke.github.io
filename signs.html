@@ -243,6 +243,59 @@
       margin-right: 0.35rem;
     }
 
+    .ts-controls {
+      margin-top: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ts-btn {
+      font-size: 0.85rem;
+      font-weight: bold;
+      border: 1px solid #cfe0f5;
+      background: #f4f8fd;
+      color: #0056b3;
+      border-radius: 4px;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+    }
+
+    .ts-btn:hover { background: #e7f0fb; }
+
+    .ts-btn.clear {
+      border-color: #f2d0d0;
+      background: #fdf5f5;
+      color: #a02020;
+    }
+
+    .ts-readout {
+      font-size: 0.85rem;
+      color: #555;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .ts-readout .set { color: #1a7f37; font-weight: bold; }
+    .ts-readout .unset { color: #999; }
+
+    .rate-note {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 0.4rem;
+    }
+
+    .export-row {
+      margin-top: 0.85rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .export-count { font-size: 0.85rem; color: #555; }
+
     @media (max-width: 860px) {
       .game-layout { flex-direction: column; }
       .map-panel { width: 100%; }
@@ -310,6 +363,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script>
     // Continents are added one data file at a time. `file: null` means the data
     // file does not exist yet, so the button renders disabled.
@@ -324,12 +378,64 @@
 
     const HINT_MAP = 0, HINT_NATIVE = 1, HINT_ENGLISH = 2, HINT_DONE = 3;
 
+    // Signs are easier to read slowed down; every clip plays at this rate.
+    const PLAYBACK_RATE = 0.75;
+
+    // Timestamps captured while reviewing are held here first. The JSON files
+    // are static on GitHub Pages so the page cannot write them directly;
+    // "Export" hands back a file to fold into the repo permanently.
+    const LS_KEY = 'countrySignTimestamps.v1';
+
     let worldTopo = null;     // shared across continents, fetched once
     let countryFeatures = []; // GeoJSON features keyed later by numeric id
     let deck = [];
     let deckIndex = 0;
     let hintLevel = HINT_MAP;
     let activeContinent = null;
+    let ytApiReady = false;
+    let ytPlayer = null;
+
+    window.onYouTubeIframeAPIReady = () => { ytApiReady = true; };
+
+    function loadOverrides() {
+      try {
+        return JSON.parse(localStorage.getItem(LS_KEY)) || {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveOverride(iso2, patch) {
+      const all = loadOverrides();
+      const entry = Object.assign({}, all[iso2], patch);
+      // Drop keys that were cleared so the export stays tidy.
+      Object.keys(entry).forEach(k => { if (entry[k] === null) delete entry[k]; });
+      if (Object.keys(entry).length) all[iso2] = entry;
+      else delete all[iso2];
+      try {
+        localStorage.setItem(LS_KEY, JSON.stringify(all));
+      } catch (e) {
+        /* private browsing or blocked storage: overrides just won't persist */
+      }
+      renderExportRow();
+    }
+
+    /** Effective timestamps: a locally captured value wins over the data file. */
+    function marks(c) {
+      const o = loadOverrides()[c.iso2] || {};
+      const pick = (a, b) => (Number.isFinite(a) ? a : (Number.isFinite(b) ? b : null));
+      return {
+        start: pick(o.start_seconds, c.sign && c.sign.start_seconds),
+        end: pick(o.end_seconds, c.sign && c.sign.end_seconds),
+        local: Number.isFinite(o.start_seconds) || Number.isFinite(o.end_seconds)
+      };
+    }
+
+    function fmt(s) {
+      if (!Number.isFinite(s)) return null;
+      const m = Math.floor(s / 60), r = Math.floor(s % 60);
+      return `${m}:${String(r).padStart(2, '0')}`;
+    }
 
     const el = {
       selector: document.getElementById('continentSelector'),
@@ -523,15 +629,8 @@
       if (s && s.video_url) {
         let media;
         if (s.video_type === 'youtube') {
-          // start_seconds / end_seconds are filled in by hand to trim the embed
-          // down to the moment of the sign. Either may be null.
-          const params = [];
-          if (Number.isFinite(s.start_seconds)) params.push('start=' + Math.max(0, Math.floor(s.start_seconds)));
-          if (Number.isFinite(s.end_seconds)) params.push('end=' + Math.ceil(s.end_seconds));
-          const src = params.length
-            ? s.video_url + (s.video_url.includes('?') ? '&' : '?') + params.join('&')
-            : s.video_url;
-          media = `<iframe src="${src}" allowfullscreen title="Sign for ${c.name_en}"></iframe>`;
+          renderYouTube(c, s);
+          return;
         } else if (s.video_type === 'gif' || s.video_type === 'image') {
           media = `<img class="sign-media" src="${s.video_url}" alt="Sign for ${c.name_en}" />`;
         } else {
@@ -567,6 +666,135 @@
       }
     }
 
+    function videoIdOf(sign) {
+      const m = (sign.video_url || '').match(/([\w-]{11})(?:[?&]|$)/);
+      return m ? m[1] : null;
+    }
+
+    function signMetaHtml(c, s) {
+      const endonym = s.is_endonym === true ? 'native sign (endonym)'
+                    : s.is_endonym === false ? 'ASL/IS exonym'
+                    : 'origin unconfirmed';
+      const src = s.source_url
+        ? `<a href="${s.source_url}" target="_blank" rel="noopener">${s.source_name || 'source'}</a>`
+        : (s.source_name || 'source unrecorded');
+      return `${s.sign_language || 'sign language unrecorded'} &middot; ${endonym} &middot; ${src}`;
+    }
+
+    /**
+     * Mounts the clip through the IFrame Player API rather than a bare iframe:
+     * only the API can force the playback rate and report the current position,
+     * which is what makes "set the timestamp from where I am" possible.
+     */
+    function renderYouTube(c, s) {
+      const vid = videoIdOf(s);
+      const m = marks(c);
+
+      el.revealPanel.innerHTML = `
+        <div id="ytHost"></div>
+        <div class="ts-controls">
+          <button class="ts-btn" id="setStart">Set start from here</button>
+          <button class="ts-btn" id="setEnd">Set end</button>
+          <button class="ts-btn clear" id="clearTs">Clear</button>
+          <span class="ts-readout" id="tsReadout"></span>
+        </div>
+        <div class="rate-note">Playing at ${PLAYBACK_RATE}&times; speed.</div>
+        <div class="sign-meta">
+          ${signMetaHtml(c, s)}
+          ${s.status === 'needs_review' ? ' &middot; <strong>needs your review</strong>' : ''}
+        </div>`;
+
+      function readout() {
+        const cur = marks(c);
+        const bits = [];
+        bits.push(cur.start === null
+          ? '<span class="unset">no start</span>'
+          : `start <span class="set">${fmt(cur.start)}</span>`);
+        if (cur.end !== null) bits.push(`end <span class="set">${fmt(cur.end)}</span>`);
+        if (cur.local) bits.push('<span class="unset">(saved locally)</span>');
+        document.getElementById('tsReadout').innerHTML = bits.join(' &middot; ');
+      }
+      readout();
+
+      if (ytApiReady && vid) {
+        if (ytPlayer && ytPlayer.destroy) { try { ytPlayer.destroy(); } catch (e) {} }
+        const vars = { rel: 0, modestbranding: 1 };
+        if (m.start !== null) vars.start = Math.max(0, Math.floor(m.start));
+        if (m.end !== null) vars.end = Math.ceil(m.end);
+        ytPlayer = new YT.Player('ytHost', {
+          videoId: vid,
+          playerVars: vars,
+          events: {
+            // The rate resets on load and again when playback begins, so set it
+            // in both places rather than trusting one.
+            onReady: e => { try { e.target.setPlaybackRate(PLAYBACK_RATE); } catch (err) {} },
+            onStateChange: e => {
+              if (e.data === YT.PlayerState.PLAYING) {
+                try { e.target.setPlaybackRate(PLAYBACK_RATE); } catch (err) {}
+              }
+            }
+          }
+        });
+      } else if (vid) {
+        // API blocked or still loading: fall back to a plain embed so the clip
+        // still plays, just without rate control or position capture.
+        const p = [];
+        if (m.start !== null) p.push('start=' + Math.floor(m.start));
+        if (m.end !== null) p.push('end=' + Math.ceil(m.end));
+        document.getElementById('ytHost').outerHTML =
+          `<iframe src="${s.video_url}${p.length ? '?' + p.join('&') : ''}" allowfullscreen title="Sign for ${c.name_en}"></iframe>`;
+      }
+
+      const now = () => {
+        if (!ytPlayer || !ytPlayer.getCurrentTime) return null;
+        const t = ytPlayer.getCurrentTime();
+        return Number.isFinite(t) ? Math.max(0, Math.round(t * 10) / 10) : null;
+      };
+
+      document.getElementById('setStart').addEventListener('click', () => {
+        const t = now();
+        if (t === null) return;
+        saveOverride(c.iso2, { start_seconds: t });
+        readout();
+      });
+      document.getElementById('setEnd').addEventListener('click', () => {
+        const t = now();
+        if (t === null) return;
+        saveOverride(c.iso2, { end_seconds: t });
+        readout();
+      });
+      document.getElementById('clearTs').addEventListener('click', () => {
+        saveOverride(c.iso2, { start_seconds: null, end_seconds: null });
+        readout();
+      });
+    }
+
+    function renderExportRow() {
+      const row = document.getElementById('exportRow');
+      if (!row) return;
+      const all = loadOverrides();
+      const n = Object.keys(all).length;
+      row.innerHTML = n
+        ? `<span class="export-count">${n} timestamp${n === 1 ? '' : 's'} saved in this browser.</span>
+           <button class="ts-btn" id="exportBtn">Export JSON</button>
+           <button class="ts-btn clear" id="wipeBtn">Discard all</button>`
+        : `<span class="export-count">No timestamps captured yet. Reveal a sign, scrub to where it starts, and press &ldquo;Set start from here&rdquo;.</span>`;
+      if (!n) return;
+      document.getElementById('exportBtn').addEventListener('click', () => {
+        const blob = new Blob([JSON.stringify(all, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'sign-timestamps.json';
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+      });
+      document.getElementById('wipeBtn').addEventListener('click', () => {
+        if (!confirm('Discard every timestamp saved in this browser?')) return;
+        try { localStorage.removeItem(LS_KEY); } catch (e) {}
+        renderExportRow();
+      });
+    }
+
     function renderCoverage(data) {
       const total = data.countries.length;
       const tally = { verified: 0, needs_review: 0, missing: 0 };
@@ -593,7 +821,9 @@
           <span><span class="dot seg-review"></span>${tally.needs_review} needs review</span>
           <span><span class="dot seg-missing"></span>${tally.missing} no source yet</span>
         </div>
-        ${missingNames.length ? `<p style="margin:0.75rem 0 0">Still needing a video: ${missingNames.join(', ')}.</p>` : ''}`;
+        ${missingNames.length ? `<p style="margin:0.75rem 0 0">Still needing a video: ${missingNames.join(', ')}.</p>` : ''}
+        <div class="export-row" id="exportRow"></div>`;
+      renderExportRow();
     }
 
     el.hintBtn.addEventListener('click', nextHint);
