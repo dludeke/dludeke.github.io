@@ -27,25 +27,42 @@
       margin: 0 0 0.35rem;
     }
 
+    .pub-authors {
+      margin: 0 0 0.3rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .me {
+      font-weight: bold;
+      color: #222;
+    }
+
     .pub-meta {
       color: #666;
       font-size: 0.92rem;
       margin: 0;
     }
 
-    .empty-state {
-      max-width: 720px;
-      background: #f8f9fa;
-      border: 1px dashed #ccc;
-      border-radius: 8px;
-      padding: 2rem;
-      color: #555;
+    .pub-links {
+      margin: 0.7rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
 
-    .empty-state p:first-child {
-      margin-top: 0;
-      font-weight: bold;
-      color: #333;
+    .pub-links a {
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: #0056b3;
+      border: 1px solid #cfe0f5;
+      background: #f4f8fd;
+      border-radius: 4px;
+      padding: 0.2rem 0.6rem;
+    }
+
+    .pub-links a:hover {
+      background: #e7f0fb;
     }
   </style>
 </head>
@@ -65,26 +82,29 @@
     </header>
 
     <main>
-      <!--
-        Nothing is listed here yet on purpose: this page existed in the nav of
-        every other page but had never been created, so each one 404'd. To add
-        an entry, copy the commented-out .pub-item block below into .pub-list
-        and fill in the real details.
-      -->
-      <div class="empty-state">
-        <p>No publications listed yet.</p>
-        <p>
-          This page exists so the &ldquo;Publications&rdquo; link in the site
-          navigation resolves instead of 404ing. Add entries in the markup and
-          this placeholder can come out.
-        </p>
-      </div>
-
       <ul class="pub-list">
-        <!--
         <li class="pub-item">
-          <p class="pub-title">Title of the piece</p>
-          <p class="pub-meta">Publication &middot; Year &middot; <a href="#">Read it</a></p>
+          <p class="pub-title">Improving extreme weather events detection with light-weight neural networks</p>
+          <p class="pub-authors">
+            Romain Lacombe, Hannah Grossman, Lucas Hendren, <span class="me">David L&uuml;deke</span>
+          </p>
+          <p class="pub-meta">
+            Workshop paper, &ldquo;Tackling Climate Change with Machine Learning&rdquo;, ICLR 2023
+          </p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2304.00176">arXiv:2304.00176</a>
+            <a href="https://arxiv.org/pdf/2304.00176">PDF</a>
+            <a href="https://www.climatechange.ai/papers/iclr2023/10">Climate Change AI</a>
+            <a href="https://www.researchgate.net/publication/369760352_Improving_extreme_weather_events_detection_with_light-weight_neural_networks">ResearchGate</a>
+          </p>
+        </li>
+
+        <!-- To add another, copy this block and fill it in:
+        <li class="pub-item">
+          <p class="pub-title">Title</p>
+          <p class="pub-authors">Authors, <span class="me">David L&uuml;deke</span></p>
+          <p class="pub-meta">Venue, Year</p>
+          <p class="pub-links"><a href="#">Link</a></p>
         </li>
         -->
       </ul>

@@ -414,6 +414,36 @@ def native_name(c):
     return c["name"]["common"], ", ".join(langs.values()) or "unknown"
 
 
+# Fields a human fills in by editing the generated JSON directly. They are read
+# back and re-applied on every run so regenerating cannot wipe them.
+HAND_EDITED = ("start_seconds", "end_seconds", "status", "notes")
+
+
+def load_hand_edits(path):
+    """Map iso2 -> hand-edited sign fields from an existing data file."""
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except (ValueError, OSError):
+        return {}
+    kept = {}
+    for c in doc.get("countries", []):
+        sign = c.get("sign") or {}
+        edits = {}
+        for field in HAND_EDITED:
+            val = sign.get(field)
+            # "status" is regenerated unless a human moved it off the default
+            if field == "status" and val in (None, "needs_review", "no_source_found"):
+                continue
+            if val not in (None, "", []):
+                edits[field] = val
+        if edits:
+            kept[c.get("iso2")] = edits
+    return kept
+
+
 def main():
     if not os.path.exists(CACHE):
         print(f"fetching {SOURCE_URL}")
@@ -431,8 +461,11 @@ def main():
                 by_key.setdefault(key, []).append(c)
                 break
 
-    summary, no_shape = [], []
+    summary, no_shape, kept_edits = [], [], 0
     for key, (label, _) in CONTINENTS.items():
+        # Hand-edited fields are read back off the existing file and carried
+        # forward, so regenerating never discards work done in the JSON.
+        preserved = load_hand_edits(os.path.join(DATA_DIR, f"country-signs-{key}.json"))
         group = sorted(by_key.get(key, []), key=lambda c: c["name"]["common"])
         out = []
         for c in group:
@@ -451,6 +484,10 @@ def main():
                     "source_url": f"https://www.youtube.com/watch?v={ytid}",
                     "sign_language": slname,
                     "is_endonym": endonym(c["cca2"], slname),
+                    # Seconds into the video where the sign itself starts and
+                    # ends. Fill these in by hand; null plays the whole clip.
+                    "start_seconds": None,
+                    "end_seconds": None,
                     "status": "needs_review",
                     "notes": "",
                 }
@@ -458,8 +495,13 @@ def main():
                 sign = {
                     "video_url": None, "video_type": None, "source_name": None,
                     "source_url": None, "sign_language": None, "is_endonym": None,
+                    "start_seconds": None, "end_seconds": None,
                     "status": "no_source_found", "notes": "",
                 }
+            edits = preserved.get(c["cca2"].lower())
+            if edits:
+                sign.update(edits)
+                kept_edits += 1
             out.append({
                 "m49": m49,
                 "latlng": latlng,
@@ -486,6 +528,7 @@ def main():
     for label, n, withsl, fn in summary:
         print(f"{label:<16} {n:>3} countries  {withsl:>3} with named sign language  -> {fn}")
     print(f"TOTAL {sum(s[1] for s in summary)} countries")
+    print(f"hand-edited sign entries preserved: {kept_edits}")
     if no_shape:
         print("\nNO MAP SHAPE (map hint will fail for these):")
         for label, nm, m49 in no_shape:

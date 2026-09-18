@@ -23,6 +23,8 @@
         "source_url": "https://www.youtube.com/watch?v=TF2Si3Ur7ck",
         "sign_language": "Algerian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -47,6 +49,8 @@
         "source_url": "https://www.youtube.com/watch?v=zBFpuJ7zuTo",
         "sign_language": "Angolan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -69,6 +73,8 @@
         "source_url": "https://www.youtube.com/watch?v=IlHrCXU5kDo",
         "sign_language": "Beninese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -93,6 +99,8 @@
         "source_url": "https://www.youtube.com/watch?v=uKBt_8x4a5Y",
         "sign_language": "Botswanan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -115,6 +123,8 @@
         "source_url": "https://www.youtube.com/watch?v=MLOig_BurRA",
         "sign_language": "Burkina Faso Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -139,6 +149,8 @@
         "source_url": "https://www.youtube.com/watch?v=Xs0JePMs-ts",
         "sign_language": "Burundian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -163,6 +175,8 @@
         "source_url": "https://www.youtube.com/watch?v=xoA7aBJBLL4",
         "sign_language": "Cameroon Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -185,6 +199,8 @@
         "source_url": "https://www.youtube.com/watch?v=T0LDLbsNJcs",
         "sign_language": "Cabo Verdean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -207,6 +223,8 @@
         "source_url": null,
         "sign_language": null,
         "is_endonym": null,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "no_source_found",
         "notes": ""
       }
@@ -229,6 +247,8 @@
         "source_url": "https://www.youtube.com/watch?v=ev1Fqto0TBk",
         "sign_language": "Chadian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -251,6 +271,8 @@
         "source_url": "https://www.youtube.com/watch?v=MU_CH13E-6E",
         "sign_language": "Comorian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -273,6 +295,8 @@
         "source_url": "https://www.youtube.com/watch?v=0Bwt9TodTbg",
         "sign_language": "International Sign",
         "is_endonym": false,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -295,6 +319,8 @@
         "source_url": "https://www.youtube.com/watch?v=rxjrSkVIALY",
         "sign_language": "Congolese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -317,6 +343,8 @@
         "source_url": "https://www.youtube.com/watch?v=yGzZV4yIE1Q",
         "sign_language": "Djiboutian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -341,6 +369,8 @@
         "source_url": "https://www.youtube.com/watch?v=dgY5eBsIe3E",
         "sign_language": "Egyptian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -363,6 +393,8 @@
         "source_url": "https://www.youtube.com/watch?v=-knTvVwGpzA",
         "sign_language": "Equatoguinean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -385,6 +417,8 @@
         "source_url": "https://www.youtube.com/watch?v=jfa0pevSJH4",
         "sign_language": "Eritrean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -407,6 +441,8 @@
         "source_url": "https://www.youtube.com/watch?v=teW0FaooS_M",
         "sign_language": "Swazi Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -431,6 +467,8 @@
         "source_url": "https://www.youtube.com/watch?v=WH8FvJUbfQo",
         "sign_language": "Ethiopian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -453,6 +491,8 @@
         "source_url": "https://www.youtube.com/watch?v=OLN5MqcTeyM",
         "sign_language": "Gabonese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -475,6 +515,8 @@
         "source_url": "https://www.youtube.com/watch?v=hwf2iyH6ONQ",
         "sign_language": "Gambian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -499,6 +541,8 @@
         "source_url": "https://www.youtube.com/watch?v=uP-4MG0dx1Y",
         "sign_language": "Ghanaian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -521,6 +565,8 @@
         "source_url": "https://www.youtube.com/watch?v=hcHyPylIPqI",
         "sign_language": "Guinean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -543,6 +589,8 @@
         "source_url": "https://www.youtube.com/watch?v=OPWp0txUIH0",
         "sign_language": "Bissau-Guinean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -567,6 +615,8 @@
         "source_url": "https://www.youtube.com/watch?v=sqylQ8bTnLI",
         "sign_language": "Ivoirian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -591,6 +641,8 @@
         "source_url": "https://www.youtube.com/watch?v=E3h2nzmOkwg",
         "sign_language": "Kenyan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -613,6 +665,8 @@
         "source_url": "https://www.youtube.com/watch?v=m1r9dtOePyk",
         "sign_language": "Lesotho Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -635,6 +689,8 @@
         "source_url": "https://www.youtube.com/watch?v=gstcvZquC3Y",
         "sign_language": "Liberian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -657,6 +713,8 @@
         "source_url": "https://www.youtube.com/watch?v=gR0RUNqTwtI",
         "sign_language": "Libyan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -681,6 +739,8 @@
         "source_url": "https://www.youtube.com/watch?v=W8s85hQkBlQ",
         "sign_language": "Malagasy Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -705,6 +765,8 @@
         "source_url": "https://www.youtube.com/watch?v=1Fu8MXlxICQ",
         "sign_language": "International Sign",
         "is_endonym": false,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -729,6 +791,8 @@
         "source_url": "https://www.youtube.com/watch?v=shhwAf0T7W0",
         "sign_language": "International Sign",
         "is_endonym": false,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -751,6 +815,8 @@
         "source_url": "https://www.youtube.com/watch?v=hm45uzcbqFs",
         "sign_language": "Mauritanian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -773,6 +839,8 @@
         "source_url": "https://www.youtube.com/watch?v=jS1b9Ybv154",
         "sign_language": "Mauritian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -797,6 +865,8 @@
         "source_url": "https://www.youtube.com/watch?v=TdvERnzmrCg",
         "sign_language": "Moroccan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -821,6 +891,8 @@
         "source_url": "https://www.youtube.com/watch?v=P1BaMv1ud5Q",
         "sign_language": "Mozambican Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -845,6 +917,8 @@
         "source_url": "https://www.youtube.com/watch?v=TWAbLNaJcR0",
         "sign_language": "Namibian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -867,6 +941,8 @@
         "source_url": "https://www.youtube.com/watch?v=S_4a0lNehDA",
         "sign_language": "Nigerien Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -891,6 +967,8 @@
         "source_url": "https://www.youtube.com/watch?v=J6v6GnHDcKg",
         "sign_language": "Nigerian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -915,6 +993,8 @@
         "source_url": "https://www.youtube.com/watch?v=RBtKLi4YyIk",
         "sign_language": "Rwandan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -939,6 +1019,8 @@
         "source_url": "https://www.youtube.com/watch?v=-OLv0iGGQHs",
         "sign_language": "Senegalese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -961,6 +1043,8 @@
         "source_url": null,
         "sign_language": null,
         "is_endonym": null,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "no_source_found",
         "notes": ""
       }
@@ -983,6 +1067,8 @@
         "source_url": "https://www.youtube.com/watch?v=oijCyd8nBdE",
         "sign_language": "Sierra Leonean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1005,6 +1091,8 @@
         "source_url": "https://www.youtube.com/watch?v=fCasiPYTRI0",
         "sign_language": "Somalian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1029,6 +1117,8 @@
         "source_url": "https://www.youtube.com/watch?v=qKZBl7ycsTU",
         "sign_language": "South African Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1051,6 +1141,8 @@
         "source_url": "https://www.youtube.com/watch?v=hC1qtD54FOg",
         "sign_language": "South Sudanese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1073,6 +1165,8 @@
         "source_url": "https://www.youtube.com/watch?v=X2A3K8JXvqA",
         "sign_language": "Sudanese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1095,6 +1189,8 @@
         "source_url": null,
         "sign_language": null,
         "is_endonym": null,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "no_source_found",
         "notes": ""
       }
@@ -1119,6 +1215,8 @@
         "source_url": "https://www.youtube.com/watch?v=CqAOGTMD59s",
         "sign_language": "Tanzanian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1141,6 +1239,8 @@
         "source_url": "https://www.youtube.com/watch?v=TOQRRq2z5TQ",
         "sign_language": "Togolese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1165,6 +1265,8 @@
         "source_url": "https://www.youtube.com/watch?v=MYIVYr09zxQ",
         "sign_language": "Tunisian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1189,6 +1291,8 @@
         "source_url": "https://www.youtube.com/watch?v=8vsQXGQppJo",
         "sign_language": "Ugandan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1213,6 +1317,8 @@
         "source_url": "https://www.youtube.com/watch?v=CbXNX00KRZs",
         "sign_language": "Zambian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -1237,6 +1343,8 @@
         "source_url": "https://www.youtube.com/watch?v=-aRfAvpwZj8",
         "sign_language": "Zimbabwean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }

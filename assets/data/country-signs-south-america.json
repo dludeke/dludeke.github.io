@@ -23,6 +23,8 @@
         "source_url": "https://www.youtube.com/watch?v=MX74p75wedA",
         "sign_language": "Argentine Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -47,6 +49,8 @@
         "source_url": "https://www.youtube.com/watch?v=ypxMIT77-So",
         "sign_language": "Bolivian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -71,6 +75,8 @@
         "source_url": "https://www.youtube.com/watch?v=Ulr6DEDTTzI",
         "sign_language": "Brazilian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -95,6 +101,8 @@
         "source_url": "https://www.youtube.com/watch?v=rLcBeVILzfI",
         "sign_language": "Chilean Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -119,6 +127,8 @@
         "source_url": "https://www.youtube.com/watch?v=58OVGclsMzk",
         "sign_language": "Colombian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -143,6 +153,8 @@
         "source_url": "https://www.youtube.com/watch?v=eByZIOzkRuc",
         "sign_language": "Ecuadorian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -167,6 +179,8 @@
         "source_url": "https://www.youtube.com/watch?v=x1SgaNJcXA8",
         "sign_language": "Guyanese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -191,6 +205,8 @@
         "source_url": "https://www.youtube.com/watch?v=m2el1vfOhwc",
         "sign_language": "Paraguayan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -215,6 +231,8 @@
         "source_url": "https://www.youtube.com/watch?v=BmSr6z0FMDg",
         "sign_language": "Peruvian Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -239,6 +257,8 @@
         "source_url": "https://www.youtube.com/watch?v=qLW2Wdzbtm0",
         "sign_language": "Surinamese Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -263,6 +283,8 @@
         "source_url": "https://www.youtube.com/watch?v=zFXXoPWbCt4",
         "sign_language": "Uruguayan Sign Language",
         "is_endonym": true,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "needs_review",
         "notes": ""
       }
@@ -287,6 +309,8 @@
         "source_url": null,
         "sign_language": null,
         "is_endonym": null,
+        "start_seconds": null,
+        "end_seconds": null,
         "status": "no_source_found",
         "notes": ""
       }

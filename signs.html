@@ -523,7 +523,15 @@
       if (s && s.video_url) {
         let media;
         if (s.video_type === 'youtube') {
-          media = `<iframe src="${s.video_url}" allowfullscreen title="Sign for ${c.name_en}"></iframe>`;
+          // start_seconds / end_seconds are filled in by hand to trim the embed
+          // down to the moment of the sign. Either may be null.
+          const params = [];
+          if (Number.isFinite(s.start_seconds)) params.push('start=' + Math.max(0, Math.floor(s.start_seconds)));
+          if (Number.isFinite(s.end_seconds)) params.push('end=' + Math.ceil(s.end_seconds));
+          const src = params.length
+            ? s.video_url + (s.video_url.includes('?') ? '&' : '?') + params.join('&')
+            : s.video_url;
+          media = `<iframe src="${src}" allowfullscreen title="Sign for ${c.name_en}"></iframe>`;
         } else if (s.video_type === 'gif' || s.video_type === 'image') {
           media = `<img class="sign-media" src="${s.video_url}" alt="Sign for ${c.name_en}" />`;
         } else {
