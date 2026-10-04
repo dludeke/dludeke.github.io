@@ -20,10 +20,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Apple",
+      "example_gloss": "apple",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🍎",
       "notes": ""
     },
     {
@@ -33,10 +33,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Ball",
+      "example_gloss": "ball",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "⚽",
       "notes": ""
     },
     {
@@ -46,10 +46,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Cat",
+      "example_gloss": "cat",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🐈",
       "notes": ""
     },
     {
@@ -59,10 +59,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Dog",
+      "example_gloss": "dog",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🐕",
       "notes": ""
     },
     {
@@ -72,10 +72,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Elephant",
+      "example_gloss": "elephant",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🐘",
       "notes": ""
     },
     {
@@ -85,10 +85,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Fish",
+      "example_gloss": "fish",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🐟",
       "notes": ""
     },
     {
@@ -98,10 +98,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Giraffe",
+      "example_gloss": "giraffe",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🦒",
       "notes": ""
     },
     {
@@ -111,10 +111,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "House",
+      "example_gloss": "house",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🏠",
       "notes": ""
     },
     {
@@ -124,10 +124,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Ice cream",
+      "example_gloss": "ice cream",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🍦",
       "notes": ""
     },
     {
@@ -137,10 +137,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Jug",
+      "example_gloss": "jug",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🫗",
       "notes": ""
     },
     {
@@ -150,10 +150,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Kite",
+      "example_gloss": "kite",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🪁",
       "notes": ""
     },
     {
@@ -163,10 +163,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Lion",
+      "example_gloss": "lion",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🦁",
       "notes": ""
     },
     {
@@ -176,10 +176,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Moon",
+      "example_gloss": "moon",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🌙",
       "notes": ""
     },
     {
@@ -189,10 +189,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Nest",
+      "example_gloss": "nest",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🪹",
       "notes": ""
     },
     {
@@ -202,10 +202,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Orange",
+      "example_gloss": "orange",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🍊",
       "notes": ""
     },
     {
@@ -215,10 +215,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Pencil",
+      "example_gloss": "pencil",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "✏️",
       "notes": ""
     },
     {
@@ -228,10 +228,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Queen",
+      "example_gloss": "queen",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "👸",
       "notes": ""
     },
     {
@@ -241,10 +241,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Rainbow",
+      "example_gloss": "rainbow",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🌈",
       "notes": ""
     },
     {
@@ -254,10 +254,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Sun",
+      "example_gloss": "sun",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "☀️",
       "notes": ""
     },
     {
@@ -267,10 +267,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Tree",
+      "example_gloss": "tree",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🌳",
       "notes": ""
     },
     {
@@ -280,10 +280,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Umbrella",
+      "example_gloss": "umbrella",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "☂️",
       "notes": ""
     },
     {
@@ -293,10 +293,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Violin",
+      "example_gloss": "violin",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🎻",
       "notes": ""
     },
     {
@@ -306,10 +306,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Whale",
+      "example_gloss": "whale",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🐋",
       "notes": ""
     },
     {
@@ -319,10 +319,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Xylophone",
+      "example_gloss": "xylophone",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🎹",
       "notes": ""
     },
     {
@@ -332,10 +332,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Yacht",
+      "example_gloss": "yacht",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "⛵",
       "notes": ""
     },
     {
@@ -345,10 +345,10 @@
       "romanization": null,
       "ipa": [],
       "handshape": null,
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "Zebra",
+      "example_gloss": "zebra",
       "example_image": null,
-      "example_emoji": null,
+      "example_emoji": "🦓",
       "notes": ""
     }
   ]

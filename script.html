@@ -135,6 +135,8 @@
       gap: 0.5rem;
     }
 
+    .emoji { font-size: 2.6rem; line-height: 1; }
+
     .example-word { font-size: 1rem; }
     .example-word b { color: #e8590c; }
 
@@ -214,13 +216,21 @@
         </div>`;
     }
 
-    /** Bolds the letter inside the example word when it appears there. */
+    /** Strips diacritics so \u03ae still matches \u03b7, \u0623 still matches \u0627. */
+    const bare = s => s.normalize('NFD').replace(/[\u0300-\u036f\u0653-\u0655\u0670]/g, '');
+
+    /** Bolds the letter inside the example word, ignoring accents. */
     function boldedWord(word, glyph, alt) {
       if (!word) return null;
+      const flat = bare(word);
       for (const g of [glyph, alt].filter(Boolean)) {
-        const i = word.indexOf(g);
-        if (i !== -1) {
-          return word.slice(0, i) + '<b>' + g + '</b>' + word.slice(i + g.length);
+        const gb = bare(g);
+        if (!gb) continue;
+        for (const hay of [word, flat]) {
+          const i = hay.indexOf(gb) !== -1 ? hay.indexOf(gb) : hay.toLowerCase().indexOf(gb.toLowerCase());
+          if (i !== -1 && flat.length === word.length) {
+            return word.slice(0, i) + '<b>' + word.slice(i, i + g.length) + '</b>' + word.slice(i + g.length);
+          }
         }
       }
       return word;
@@ -257,7 +267,9 @@
                 : 'handshape'}</div>
               <div class="slot">${L.example_image
                 ? `<img src="${L.example_image}" alt="${L.example_gloss || ''}" />`
-                : 'picture'}</div>
+                : (L.example_emoji
+                    ? `<span class="emoji" title="stand-in until a picture is added">${L.example_emoji}</span>`
+                    : 'picture')}</div>
             </div>
             <div class="example-word">${word || '<span class="v empty">example word</span>'}</div>
             ${L.example_gloss ? row('Means', L.example_gloss) : ''}

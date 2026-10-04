@@ -14,6 +14,9 @@ import json
 import os
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from script_content import WORDS
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
 
@@ -239,6 +242,11 @@ def main():
                 "example_emoji": None, # stand-in until a real picture exists
                 "notes": "",
             }
+            w = WORDS.get(slug, {}).get(glyph)
+            if w:
+                word, gloss, emoji = w
+                entry.update({"example_word": word, "example_gloss": gloss,
+                              "example_emoji": emoji})
             got = CONTENT.get(slug, {}).get(glyph)
             if got:
                 rom, ipa, word, gloss, emoji = got
