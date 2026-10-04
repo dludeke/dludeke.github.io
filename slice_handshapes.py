@@ -33,9 +33,76 @@ AR = "ابتثجحخدذرزسشصضطظعغفقكلمنهوي"
 CSL30 = [chr(65 + i) for i in range(26)] + ["ZH", "CH", "SH", "NG"]
 RU = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 
+
+GEEZ33 = "ሀለሐመሠረሰሸቀበተቸኀነኘአከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ"
+HANGUL24 = "ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ"
+
+# Hebrew: 4 per row read right to left. The chart also shows the five final
+# forms and a sin/shin variant, which are not separate letters here.
+HEB_CELLS = [
+    "א", "ב", "ג", "ד",
+    "ה", "ו", "ז", "ח",
+    "ט", "י", "כ", None,      # None = final kaf
+    "ל", "מ", None, "נ",      # final mem
+    None, "ס", "ע", "פ",      # final nun
+    None, "צ", None, "ק",     # final pe, final tsadi
+    "ר", "ש", None, "ת",      # sin variant
+]
+
+# Kana: two blocks of five gojuon columns side by side, read left to right.
+KANA_CELLS = [
+    "あ","い","う","え","お", "は","ひ","ふ","へ","ほ",
+    "か","き","く","け","こ", "ま","み","む","め","も",
+    "さ","し","す","せ","そ", "や",None,"ゆ",None,"よ",
+    "た","ち","つ","て","と", "ら","り","る","れ","ろ",
+    "な","に","ぬ","ね","の", "わ",None,"を",None,"ん",
+]
+
 CHARTS = {
     # slug of the script this chart belongs to, the chart file, the grid, and
     # the letters in reading order.
+    "geez": {
+        "file": "EthSL.PNG",
+        "crop": (88, 79, 616, 697),
+        "rows": 6, "cols": 6,
+        "rtl": False,
+        # the final row of three is centred, not left-aligned
+        "cells": list(GEEZ33)[:30] + [None] + list(GEEZ33)[30:] + [None, None],
+        "isolate": "trim",
+        "trim": (0.05, 0.05, 0.05, 0.22),   # label sits inside, bottom right
+        "field": "handshape",
+    },
+    "hangul": {
+        "file": "KSL_2.JPG",
+        "crop": (6, 6, 566, 536),
+        "rows": 5, "cols": 7,
+        "rtl": False,
+        # 31 numbered cells; 25-31 are extra vowels this reference does not list
+        "cells": list(HANGUL24) + [None] * 11,
+        "isolate": "trim",
+        "trim": (0.04, 0.04, 0.04, 0.30),   # white label strip along the bottom
+        "field": "handshape",
+    },
+    "hebrew": {
+        "file": "ISL.JPG",
+        "crop": (8, 95, 552, 788),
+        "rows": 7, "cols": 4,
+        "rtl": True,
+        "cells": HEB_CELLS,
+        "isolate": "trim",
+        "trim": (0.04, 0.04, 0.26, 0.04),   # label to the left of each hand (RTL)
+        "field": "handshape",
+    },
+    "kana": {
+        "file": "JSL_2.JPG",
+        "crop": (0, 0, 454, 340),
+        "rows": 5, "cols": 10,
+        "rtl": False,
+        "cells": KANA_CELLS,
+        "isolate": "trim",
+        "trim": (0.02, 0.02, 0.02, 0.30),   # kana label under each hand
+        "field": "handshape",
+    },
     "arabic": {
         "file": "ArSL_1.PNG",
         "crop": (28, 28, 706, 622),   # strip the white border

@@ -25,8 +25,26 @@ def main(argv):
     if len(argv) != 2:
         print(__doc__)
         return 2
-    with open(argv[1], encoding="utf-8") as fh:
-        crops = json.load(fh)
+
+    path = os.path.expanduser(argv[1])
+    if not os.path.exists(path):
+        print(f"No such file: {path}\n")
+        print("That file is produced by the cropping tool, so export it first:")
+        print("  1. open crop.html on the local server")
+        print("  2. adjust the crops you want")
+        print("  3. press 'Export JSON' (it saves to your Downloads)")
+        print("  4. run this command again")
+        return 1
+
+    try:
+        with open(path, encoding="utf-8") as fh:
+            crops = json.load(fh)
+    except ValueError as e:
+        print(f"{path} is not valid JSON: {e}")
+        return 1
+    if not isinstance(crops, dict) or not crops:
+        print(f"{path} has no crops in it. Adjust at least one letter, then export again.")
+        return 1
 
     applied, missing = 0, []
     for slug, letters in crops.items():

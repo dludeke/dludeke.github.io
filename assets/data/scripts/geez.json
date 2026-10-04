@@ -22,7 +22,7 @@
       "ipa": [
         "hä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1200.png",
       "example_word": "ሀገር",
       "example_gloss": "country",
       "example_image": null,
@@ -39,7 +39,7 @@
       "ipa": [
         "lä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ለውዝ",
       "example_gloss": "nut",
       "example_image": null,
@@ -56,7 +56,7 @@
       "ipa": [
         "hä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1210.png",
       "example_word": "ሐይቅ",
       "example_gloss": "lake",
       "example_image": null,
@@ -73,7 +73,7 @@
       "ipa": [
         "mä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1218.png",
       "example_word": "መኪና",
       "example_gloss": "car",
       "example_image": null,
@@ -90,7 +90,7 @@
       "ipa": [
         "sä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1220.png",
       "example_word": "ሠርግ",
       "example_gloss": "wedding",
       "example_image": null,
@@ -107,7 +107,7 @@
       "ipa": [
         "rä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ረሃብ",
       "example_gloss": "hunger",
       "example_image": null,
@@ -124,7 +124,7 @@
       "ipa": [
         "sä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ሰው",
       "example_gloss": "person",
       "example_image": null,
@@ -141,7 +141,7 @@
       "ipa": [
         "ʃä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሸማ",
       "example_gloss": "cloth",
       "example_image": null,
@@ -158,7 +158,7 @@
       "ipa": [
         "kʼä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቀን",
       "example_gloss": "day",
       "example_image": null,
@@ -175,7 +175,7 @@
       "ipa": [
         "bä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1260.png",
       "example_word": "በር",
       "example_gloss": "door",
       "example_image": null,
@@ -192,7 +192,7 @@
       "ipa": [
         "tä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ተራራ",
       "example_gloss": "mountain",
       "example_image": null,
@@ -209,7 +209,7 @@
       "ipa": [
         "t͡ʃä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1278.png",
       "example_word": "ቸኮሌት",
       "example_gloss": "chocolate",
       "example_image": null,
@@ -226,7 +226,7 @@
       "ipa": [
         "hä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1280.png",
       "example_word": "ኀይል",
       "example_gloss": "power",
       "example_image": null,
@@ -243,7 +243,7 @@
       "ipa": [
         "nä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ነብር",
       "example_gloss": "leopard",
       "example_image": null,
@@ -260,7 +260,7 @@
       "ipa": [
         "ɲä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1298.png",
       "example_word": "ኘ",
       "example_gloss": "rare letter",
       "example_image": null,
@@ -277,7 +277,7 @@
       "ipa": [
         "ʔä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a0.png",
       "example_word": "አንበሳ",
       "example_gloss": "lion",
       "example_image": null,
@@ -294,7 +294,7 @@
       "ipa": [
         "kä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ከተማ",
       "example_gloss": "city",
       "example_image": null,
@@ -311,7 +311,7 @@
       "ipa": [
         "xä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12b8.png",
       "example_word": "ኸ",
       "example_gloss": "rare letter",
       "example_image": null,
@@ -328,7 +328,7 @@
       "ipa": [
         "wä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ወተት",
       "example_gloss": "milk",
       "example_image": null,
@@ -345,7 +345,7 @@
       "ipa": [
         "ʔä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d0.png",
       "example_word": "ዐይን",
       "example_gloss": "eye",
       "example_image": null,
@@ -362,7 +362,7 @@
       "ipa": [
         "zä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዘይት",
       "example_gloss": "oil",
       "example_image": null,
@@ -379,7 +379,7 @@
       "ipa": [
         "ʒä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e0.png",
       "example_word": "ዠ",
       "example_gloss": "rare letter",
       "example_image": null,
@@ -396,7 +396,7 @@
       "ipa": [
         "jä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e8.png",
       "example_word": "የበግ",
       "example_gloss": "of sheep",
       "example_image": null,
@@ -413,7 +413,7 @@
       "ipa": [
         "dä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ደብተር",
       "example_gloss": "notebook",
       "example_image": null,
@@ -430,7 +430,7 @@
       "ipa": [
         "d͡ʒä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጀልባ",
       "example_gloss": "boat",
       "example_image": null,
@@ -447,7 +447,7 @@
       "ipa": [
         "ɡä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ገበያ",
       "example_gloss": "market",
       "example_image": null,
@@ -464,7 +464,7 @@
       "ipa": [
         "tʼä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጠረጴዛ",
       "example_gloss": "table",
       "example_image": null,
@@ -481,7 +481,7 @@
       "ipa": [
         "t͡ʃʼä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1328.png",
       "example_word": "ጨረቃ",
       "example_gloss": "moon",
       "example_image": null,
@@ -498,7 +498,7 @@
       "ipa": [
         "pʼä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1330.png",
       "example_word": "ጰ",
       "example_gloss": "rare letter",
       "example_image": null,
@@ -515,7 +515,7 @@
       "ipa": [
         "t͡sʼä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1338.png",
       "example_word": "ጸሐይ",
       "example_gloss": "sun",
       "example_image": null,
@@ -532,7 +532,7 @@
       "ipa": [
         "t͡sʼä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1340.png",
       "example_word": "ፀጉር",
       "example_gloss": "hair",
       "example_image": null,
@@ -549,7 +549,7 @@
       "ipa": [
         "fä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፈረስ",
       "example_gloss": "horse",
       "example_image": null,
@@ -566,7 +566,7 @@
       "ipa": [
         "pä"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1350.png",
       "example_word": "ፐርሙዝ",
       "example_gloss": "thermos",
       "example_image": null,

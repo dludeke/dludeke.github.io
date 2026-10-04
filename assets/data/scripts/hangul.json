@@ -22,7 +22,7 @@
         "ɡ",
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3131.png",
       "example_word": "가방",
       "example_gloss": "bag",
       "example_image": null,
@@ -39,7 +39,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3134.png",
       "example_word": "나무",
       "example_gloss": "tree",
       "example_image": null,
@@ -58,7 +58,7 @@
         "d",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3137.png",
       "example_word": "달",
       "example_gloss": "moon",
       "example_image": null,
@@ -76,7 +76,7 @@
         "ɾ",
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3139.png",
       "example_word": "라면",
       "example_gloss": "ramen",
       "example_image": null,
@@ -93,7 +93,7 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3141.png",
       "example_word": "물",
       "example_gloss": "water",
       "example_image": null,
@@ -112,7 +112,7 @@
         "b",
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3142.png",
       "example_word": "바다",
       "example_gloss": "sea",
       "example_image": null,
@@ -131,7 +131,7 @@
         "ɕ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3145.png",
       "example_word": "사과",
       "example_gloss": "apple",
       "example_image": null,
@@ -149,7 +149,7 @@
         "—",
         "ŋ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3147.png",
       "example_word": "아기",
       "example_gloss": "baby",
       "example_image": null,
@@ -168,7 +168,7 @@
         "d͡ʑ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3148.png",
       "example_word": "자동차",
       "example_gloss": "car",
       "example_image": null,
@@ -186,7 +186,7 @@
         "t͡ɕʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/314a.png",
       "example_word": "책",
       "example_gloss": "book",
       "example_image": null,
@@ -204,7 +204,7 @@
         "kʰ",
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/314b.png",
       "example_word": "코",
       "example_gloss": "nose",
       "example_image": null,
@@ -222,7 +222,7 @@
         "tʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/314c.png",
       "example_word": "토끼",
       "example_gloss": "rabbit",
       "example_image": null,
@@ -240,7 +240,7 @@
         "pʰ",
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/314d.png",
       "example_word": "포도",
       "example_gloss": "grapes",
       "example_image": null,
@@ -258,7 +258,7 @@
         "h",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/314e.png",
       "example_word": "해",
       "example_gloss": "sun",
       "example_image": null,
@@ -275,7 +275,7 @@
       "ipa": [
         "a"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/314f.png",
       "example_word": "사과",
       "example_gloss": "apple",
       "example_image": null,
@@ -292,7 +292,7 @@
       "ipa": [
         "ja"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3151.png",
       "example_word": "야구",
       "example_gloss": "baseball",
       "example_image": null,
@@ -309,7 +309,7 @@
       "ipa": [
         "ʌ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3153.png",
       "example_word": "어머니",
       "example_gloss": "mother",
       "example_image": null,
@@ -326,7 +326,7 @@
       "ipa": [
         "jʌ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3155.png",
       "example_word": "여우",
       "example_gloss": "fox",
       "example_image": null,
@@ -343,7 +343,7 @@
       "ipa": [
         "o"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3157.png",
       "example_word": "오리",
       "example_gloss": "duck",
       "example_image": null,
@@ -360,7 +360,7 @@
       "ipa": [
         "jo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/315b.png",
       "example_word": "요리",
       "example_gloss": "cooking",
       "example_image": null,
@@ -377,7 +377,7 @@
       "ipa": [
         "u"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/315c.png",
       "example_word": "우산",
       "example_gloss": "umbrella",
       "example_image": null,
@@ -394,7 +394,7 @@
       "ipa": [
         "ju"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3160.png",
       "example_word": "유리",
       "example_gloss": "glass",
       "example_image": null,
@@ -411,7 +411,7 @@
       "ipa": [
         "ɯ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3161.png",
       "example_word": "그림",
       "example_gloss": "picture",
       "example_image": null,
@@ -428,7 +428,7 @@
       "ipa": [
         "i"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3163.png",
       "example_word": "이",
       "example_gloss": "tooth",
       "example_image": null,

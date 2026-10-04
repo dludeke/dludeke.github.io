@@ -23,7 +23,7 @@
         "ʔ",
         "—"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d0.png",
       "example_word": "אריה",
       "example_gloss": "lion",
       "example_image": null,
@@ -41,7 +41,7 @@
         "b",
         "v"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d1.png",
       "example_word": "בית",
       "example_gloss": "house",
       "example_image": null,
@@ -58,7 +58,7 @@
       "ipa": [
         "ɡ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d2.png",
       "example_word": "גמל",
       "example_gloss": "camel",
       "example_image": null,
@@ -75,7 +75,7 @@
       "ipa": [
         "d"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d3.png",
       "example_word": "דג",
       "example_gloss": "fish",
       "example_image": null,
@@ -93,7 +93,7 @@
         "h",
         "—"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d4.png",
       "example_word": "הר",
       "example_gloss": "mountain",
       "example_image": null,
@@ -112,7 +112,7 @@
         "o",
         "u"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d5.png",
       "example_word": "ורד",
       "example_gloss": "rose",
       "example_image": null,
@@ -129,7 +129,7 @@
       "ipa": [
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d6.png",
       "example_word": "זברה",
       "example_gloss": "zebra",
       "example_image": null,
@@ -146,7 +146,7 @@
       "ipa": [
         "χ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d7.png",
       "example_word": "חתול",
       "example_gloss": "cat",
       "example_image": null,
@@ -163,7 +163,7 @@
       "ipa": [
         "t"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d8.png",
       "example_word": "טלפון",
       "example_gloss": "telephone",
       "example_image": null,
@@ -181,7 +181,7 @@
         "j",
         "i"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05d9.png",
       "example_word": "ילד",
       "example_gloss": "child",
       "example_image": null,
@@ -199,7 +199,7 @@
         "k",
         "χ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05db.png",
       "example_word": "כלב",
       "example_gloss": "dog",
       "example_image": null,
@@ -216,7 +216,7 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05dc.png",
       "example_word": "לימון",
       "example_gloss": "lemon",
       "example_image": null,
@@ -233,7 +233,7 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05de.png",
       "example_word": "מים",
       "example_gloss": "water",
       "example_image": null,
@@ -250,7 +250,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e0.png",
       "example_word": "נר",
       "example_gloss": "candle",
       "example_image": null,
@@ -267,7 +267,7 @@
       "ipa": [
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e1.png",
       "example_word": "סוס",
       "example_gloss": "horse",
       "example_image": null,
@@ -285,7 +285,7 @@
         "ʔ",
         "—"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e2.png",
       "example_word": "עץ",
       "example_gloss": "tree",
       "example_image": null,
@@ -303,7 +303,7 @@
         "p",
         "f"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e4.png",
       "example_word": "פרח",
       "example_gloss": "flower",
       "example_image": null,
@@ -320,7 +320,7 @@
       "ipa": [
         "ts"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e6.png",
       "example_word": "ציפור",
       "example_gloss": "bird",
       "example_image": null,
@@ -337,7 +337,7 @@
       "ipa": [
         "k"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e7.png",
       "example_word": "קוף",
       "example_gloss": "monkey",
       "example_image": null,
@@ -354,7 +354,7 @@
       "ipa": [
         "ʁ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e8.png",
       "example_word": "רכבת",
       "example_gloss": "train",
       "example_image": null,
@@ -372,7 +372,7 @@
         "ʃ",
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05e9.png",
       "example_word": "שמש",
       "example_gloss": "sun",
       "example_image": null,
@@ -389,7 +389,7 @@
       "ipa": [
         "t"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hebrew/05ea.png",
       "example_word": "תפוח",
       "example_gloss": "apple",
       "example_image": null,
