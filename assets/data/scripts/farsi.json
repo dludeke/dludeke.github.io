@@ -21,7 +21,7 @@
         "ɒː",
         "ʔ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0627.png",
       "example_word": "آب",
       "example_gloss": "water",
       "example_image": null,
@@ -38,7 +38,7 @@
       "ipa": [
         "b"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0628.png",
       "example_word": "بادام",
       "example_gloss": "almond",
       "example_image": null,
@@ -55,7 +55,7 @@
       "ipa": [
         "p"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/067e.png",
       "example_word": "پرنده",
       "example_gloss": "bird",
       "example_image": null,
@@ -72,7 +72,7 @@
       "ipa": [
         "t"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/062a.png",
       "example_word": "توپ",
       "example_gloss": "ball",
       "example_image": null,
@@ -89,7 +89,7 @@
       "ipa": [
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/062b.png",
       "example_word": "ثانیه",
       "example_gloss": "second (time)",
       "example_image": null,
@@ -106,7 +106,7 @@
       "ipa": [
         "d͡ʒ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/062c.png",
       "example_word": "جوجه",
       "example_gloss": "chick",
       "example_image": null,
@@ -123,7 +123,7 @@
       "ipa": [
         "t͡ʃ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0686.png",
       "example_word": "چتر",
       "example_gloss": "umbrella",
       "example_image": null,
@@ -140,7 +140,7 @@
       "ipa": [
         "h"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/062d.png",
       "example_word": "حلزون",
       "example_gloss": "snail",
       "example_image": null,
@@ -157,7 +157,7 @@
       "ipa": [
         "x"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/062e.png",
       "example_word": "خرس",
       "example_gloss": "bear",
       "example_image": null,
@@ -174,7 +174,7 @@
       "ipa": [
         "d"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/062f.png",
       "example_word": "درخت",
       "example_gloss": "tree",
       "example_image": null,
@@ -191,7 +191,7 @@
       "ipa": [
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0630.png",
       "example_word": "ذرت",
       "example_gloss": "corn",
       "example_image": null,
@@ -225,7 +225,7 @@
       "ipa": [
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0632.png",
       "example_word": "زنبور",
       "example_gloss": "bee",
       "example_image": null,
@@ -242,7 +242,7 @@
       "ipa": [
         "ʒ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0698.png",
       "example_word": "ژاله",
       "example_gloss": "hail",
       "example_image": null,
@@ -259,7 +259,7 @@
       "ipa": [
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0633.png",
       "example_word": "سیب",
       "example_gloss": "apple",
       "example_image": null,
@@ -276,7 +276,7 @@
       "ipa": [
         "ʃ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0634.png",
       "example_word": "شیر",
       "example_gloss": "lion",
       "example_image": null,
@@ -293,7 +293,7 @@
       "ipa": [
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0635.png",
       "example_word": "صدف",
       "example_gloss": "seashell",
       "example_image": null,
@@ -310,7 +310,7 @@
       "ipa": [
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0636.png",
       "example_word": "ضبط صوت",
       "example_gloss": "recorder",
       "example_image": null,
@@ -327,7 +327,7 @@
       "ipa": [
         "t"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0637.png",
       "example_word": "طناب",
       "example_gloss": "rope",
       "example_image": null,
@@ -344,7 +344,7 @@
       "ipa": [
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0638.png",
       "example_word": "ظرف",
       "example_gloss": "dish",
       "example_image": null,
@@ -361,7 +361,7 @@
       "ipa": [
         "ʔ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0639.png",
       "example_word": "عسل",
       "example_gloss": "honey",
       "example_image": null,
@@ -379,7 +379,7 @@
         "ɣ",
         "ɢ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/063a.png",
       "example_word": "غاز",
       "example_gloss": "goose",
       "example_image": null,
@@ -396,7 +396,7 @@
       "ipa": [
         "f"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0641.png",
       "example_word": "فیل",
       "example_gloss": "elephant",
       "example_image": null,
@@ -414,7 +414,7 @@
         "ɣ",
         "ɢ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0642.png",
       "example_word": "قاشق",
       "example_gloss": "spoon",
       "example_image": null,
@@ -431,7 +431,7 @@
       "ipa": [
         "k"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/06a9.png",
       "example_word": "کتاب",
       "example_gloss": "book",
       "example_image": null,
@@ -448,7 +448,7 @@
       "ipa": [
         "ɡ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/06af.png",
       "example_word": "گل",
       "example_gloss": "flower",
       "example_image": null,
@@ -465,7 +465,7 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0644.png",
       "example_word": "لیمو",
       "example_gloss": "lemon",
       "example_image": null,
@@ -482,7 +482,7 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0645.png",
       "example_word": "ماهی",
       "example_gloss": "fish",
       "example_image": null,
@@ -499,7 +499,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0646.png",
       "example_word": "نان",
       "example_gloss": "bread",
       "example_image": null,
@@ -518,7 +518,7 @@
         "uː",
         "o"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0648.png",
       "example_word": "وان",
       "example_gloss": "van",
       "example_image": null,
@@ -536,7 +536,7 @@
         "h",
         "e"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0647.png",
       "example_word": "هویج",
       "example_gloss": "carrot",
       "example_image": null,
@@ -554,7 +554,7 @@
         "j",
         "iː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/06cc.png",
       "example_word": "یخ",
       "example_gloss": "ice",
       "example_image": null,

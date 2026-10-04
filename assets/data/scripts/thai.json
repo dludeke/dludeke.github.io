@@ -21,7 +21,7 @@
         "k",
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e01.png",
       "example_word": "ไก่",
       "example_gloss": "chicken",
       "example_image": null,
@@ -39,7 +39,7 @@
         "kʰ",
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e02.png",
       "example_word": "ไข่",
       "example_gloss": "egg",
       "example_image": null,
@@ -75,7 +75,7 @@
         "kʰ",
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e04.png",
       "example_word": "ควาย",
       "example_gloss": "buffalo",
       "example_image": null,
@@ -111,7 +111,7 @@
         "kʰ",
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e06.png",
       "example_word": "ระฆัง",
       "example_gloss": "bell",
       "example_image": null,
@@ -128,7 +128,7 @@
       "ipa": [
         "ŋ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e07.png",
       "example_word": "งู",
       "example_gloss": "snake",
       "example_image": null,
@@ -146,7 +146,7 @@
         "t͡ɕ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e08.png",
       "example_word": "จาน",
       "example_gloss": "plate",
       "example_image": null,
@@ -163,7 +163,7 @@
       "ipa": [
         "t͡ɕʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e09.png",
       "example_word": "ฉิ่ง",
       "example_gloss": "cymbals",
       "example_image": null,
@@ -181,7 +181,7 @@
         "t͡ɕʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e0a.png",
       "example_word": "ช้าง",
       "example_gloss": "elephant",
       "example_image": null,
@@ -199,7 +199,7 @@
         "s",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e0b.png",
       "example_word": "โซ่",
       "example_gloss": "chain",
       "example_image": null,
@@ -216,7 +216,7 @@
       "ipa": [
         "t͡ɕʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e0c.png",
       "example_word": "เฌอ",
       "example_gloss": "tree",
       "example_image": null,
@@ -234,7 +234,7 @@
         "j",
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e0d.png",
       "example_word": "หญิง",
       "example_gloss": "woman",
       "example_image": null,
@@ -252,7 +252,7 @@
         "d",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e0e.png",
       "example_word": "ชฎา",
       "example_gloss": "headdress",
       "example_image": null,
@@ -270,7 +270,7 @@
         "t",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e0f.png",
       "example_word": "ปฏัก",
       "example_gloss": "goad",
       "example_image": null,
@@ -288,7 +288,7 @@
         "tʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e10.png",
       "example_word": "ฐาน",
       "example_gloss": "base",
       "example_image": null,
@@ -307,7 +307,7 @@
         "d",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e11.png",
       "example_word": "มณโฑ",
       "example_gloss": "Montho",
       "example_image": null,
@@ -325,7 +325,7 @@
         "tʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e12.png",
       "example_word": "ผู้เฒ่า",
       "example_gloss": "elder",
       "example_image": null,
@@ -342,7 +342,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e13.png",
       "example_word": "เณร",
       "example_gloss": "novice monk",
       "example_image": null,
@@ -360,7 +360,7 @@
         "d",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e14.png",
       "example_word": "เด็ก",
       "example_gloss": "child",
       "example_image": null,
@@ -378,7 +378,7 @@
         "t",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e15.png",
       "example_word": "เต่า",
       "example_gloss": "turtle",
       "example_image": null,
@@ -396,7 +396,7 @@
         "tʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e16.png",
       "example_word": "ถุง",
       "example_gloss": "bag",
       "example_image": null,
@@ -414,7 +414,7 @@
         "tʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e17.png",
       "example_word": "ทหาร",
       "example_gloss": "soldier",
       "example_image": null,
@@ -432,7 +432,7 @@
         "tʰ",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e18.png",
       "example_word": "ธง",
       "example_gloss": "flag",
       "example_image": null,
@@ -449,7 +449,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e19.png",
       "example_word": "หนู",
       "example_gloss": "mouse",
       "example_image": null,
@@ -467,7 +467,7 @@
         "b",
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e1a.png",
       "example_word": "ใบไม้",
       "example_gloss": "leaf",
       "example_image": null,
@@ -485,7 +485,7 @@
         "p",
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e1b.png",
       "example_word": "ปลา",
       "example_gloss": "fish",
       "example_image": null,
@@ -502,7 +502,7 @@
       "ipa": [
         "pʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e1c.png",
       "example_word": "ผึ้ง",
       "example_gloss": "bee",
       "example_image": null,
@@ -519,7 +519,7 @@
       "ipa": [
         "f"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e1d.png",
       "example_word": "ฝา",
       "example_gloss": "lid",
       "example_image": null,
@@ -537,7 +537,7 @@
         "pʰ",
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e1e.png",
       "example_word": "พาน",
       "example_gloss": "tray",
       "example_image": null,
@@ -555,7 +555,7 @@
         "f",
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e1f.png",
       "example_word": "ฟัน",
       "example_gloss": "teeth",
       "example_image": null,
@@ -573,7 +573,7 @@
         "pʰ",
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e20.png",
       "example_word": "สำเภา",
       "example_gloss": "junk ship",
       "example_image": null,
@@ -590,7 +590,7 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e21.png",
       "example_word": "ม้า",
       "example_gloss": "horse",
       "example_image": null,
@@ -607,7 +607,7 @@
       "ipa": [
         "j"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e22.png",
       "example_word": "ยักษ์",
       "example_gloss": "giant",
       "example_image": null,
@@ -625,7 +625,7 @@
         "r",
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e23.png",
       "example_word": "เรือ",
       "example_gloss": "boat",
       "example_image": null,
@@ -643,7 +643,7 @@
         "l",
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e25.png",
       "example_word": "ลิง",
       "example_gloss": "monkey",
       "example_image": null,
@@ -660,7 +660,7 @@
       "ipa": [
         "w"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e27.png",
       "example_word": "แหวน",
       "example_gloss": "ring",
       "example_image": null,
@@ -678,7 +678,7 @@
         "s",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e28.png",
       "example_word": "ศาลา",
       "example_gloss": "pavilion",
       "example_image": null,
@@ -696,7 +696,7 @@
         "s",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e29.png",
       "example_word": "ฤๅษี",
       "example_gloss": "hermit",
       "example_image": null,
@@ -714,7 +714,7 @@
         "s",
         "t̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e2a.png",
       "example_word": "เสือ",
       "example_gloss": "tiger",
       "example_image": null,
@@ -731,7 +731,7 @@
       "ipa": [
         "h"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e2b.png",
       "example_word": "หีบ",
       "example_gloss": "chest",
       "example_image": null,
@@ -749,7 +749,7 @@
         "l",
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e2c.png",
       "example_word": "จุฬา",
       "example_gloss": "kite",
       "example_image": null,
@@ -766,7 +766,7 @@
       "ipa": [
         "ʔ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e2d.png",
       "example_word": "อ่าง",
       "example_gloss": "basin",
       "example_image": null,
@@ -783,7 +783,7 @@
       "ipa": [
         "h"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/thai/0e2e.png",
       "example_word": "นกฮูก",
       "example_gloss": "owl",
       "example_image": null,

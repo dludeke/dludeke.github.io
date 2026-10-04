@@ -103,6 +103,50 @@ CHARTS = {
         "trim": (0.02, 0.02, 0.02, 0.30),   # kana label under each hand
         "field": "handshape",
     },
+    "farsi": {
+        "file": "ZEI_3.PNG",
+        "crop": (6, 6, 500, 566),
+        "rows": 7, "cols": 5,
+        "rtl": True,
+        # Top row holds vowel forms; only the first maps to a letter here.
+        # This chart omits ر entirely, so re has no image.
+        "cells": [
+            "ا", None, None, None, None,
+            "ب", "پ", "ت", "ث", "ج",
+            "چ", "ح", "خ", "د", "ذ",
+            "ز", "ژ", "س", "ش", "ص",
+            "ض", "ط", "ظ", "ع", "غ",
+            "ف", "ق", "ک", "گ", "ل",
+            "م", "ن", "و", "ه", "ی",
+        ],
+        "isolate": "trim",
+        "trim": (0.03, 0.03, 0.03, 0.30),   # label strip under each hand
+        "field": "handshape",
+    },
+    "thai": {
+        "file": "ThSL.PNG",
+        "crop": None,
+        "rows": 6, "cols": 7,
+        # measured borders; the columns are not equal widths
+        "colx": [0, 97, 216, 359, 508, 660, 786, 848],
+        "rowy": [0, 113, 215, 311, 404, 497, 580],
+        "rtl": False,
+        # This is a research figure keyed by phonetic code ("ก"=K, "ข"=K1), so
+        # the order is by sound, not by Thai alphabetical order. Several cells
+        # hold a motion sequence of two or three hands rather than one shape.
+        # The two obsolete letters ฃ and ฅ are absent from the chart.
+        "cells": [
+            "ก", "ข", "ค", "ฆ", "ล", "ฬ", "ร",
+            "ต", "ถ", "ฐ", "ฒ", "ท", "ฏ", "ม",
+            "ส", "ศ", "ษ", "ซ", "ห", "ฮ", "ว",
+            "พ", "ป", "ผ", "ภ", "ด", "ฎ", "บ",
+            "ฟ", "ฝ", "ย", "ญ", "ณ", "ง", "น",
+            "จ", "ฑ", "ธ", "ฌ", "ช", "ฉ", "อ",
+        ],
+        "isolate": "trim",
+        "trim": (0.03, 0.03, 0.03, 0.22),   # phonetic-code label under each cell
+        "field": "handshape",
+    },
     "arabic": {
         "file": "ArSL_1.PNG",
         "crop": (28, 28, 706, 622),   # strip the white border
@@ -173,6 +217,53 @@ def isolate(cell, cfg):
     return cell
 
 
+
+# Devanagari comes from a table rather than a grid of pictures: the sign images
+# sit in two of eight unequal columns, so the columns are given explicitly.
+NSL_BLOCKS = [
+    # file, (x0, x1) of each image column, y0, y1, rows, letters down each column
+    ("NSL_part1.jpg", [(296, 392), (660, 756)], 78, 600, 7,
+     [["अ", "आ", "इ", "ई", "उ", "ऊ", "ऋ"],
+      ["ए", "ऐ", "ओ", "औ", None, None, None]]),       # last two are अं and अः
+    ("NSL_part2.jpg", [(300, 421), (689, 790)], 123, 1035, 12,
+     [["क", "ख", "ग", "घ", "ङ", "च", "छ", "ज", "झ", "ञ", "ट", "ठ"],
+      ["ड", "ढ", "ण", "त", "थ", "द", "ध", "न", "प", "फ", "ब", "भ"]]),
+    ("NSL_part2.jpg", [(300, 421), (689, 790)], 1077, 1545, 6,
+     [["म", "य", "र", "ल", "व", "श"],
+      ["ष", "स", "ह", None, None, None]]),            # last three are conjuncts
+]
+
+
+def slice_nsl(verbose=True):
+    mapping = {}
+    out_dir = os.path.join(OUT_ROOT, "devanagari")
+    raw_dir = os.path.join(out_dir, "raw")
+    os.makedirs(raw_dir, exist_ok=True)
+    for fname, xcols, y0, y1, nrows, columns in NSL_BLOCKS:
+        path = os.path.join(SRC, fname)
+        if not os.path.exists(path):
+            print(f"  devanagari: missing {fname}")
+            continue
+        im = Image.open(path).convert("RGB")
+        rh = (y1 - y0) / nrows
+        for (cx0, cx1), letters in zip(xcols, columns):
+            for r, letter in enumerate(letters):
+                if letter is None:
+                    continue
+                box = (cx0, round(y0 + r * rh), cx1, round(y0 + (r + 1) * rh))
+                raw = im.crop(box)
+                name = f"{ord(letter):04x}"
+                raw.save(os.path.join(raw_dir, f"{name}.png"))
+                rel = f"images/handshapes/devanagari/{name}.png"
+                # trim the caption printed under each little sign picture
+                w, h = raw.size
+                raw.crop((2, 2, w - 2, round(h * 0.88))).save(os.path.join(HERE, rel))
+                mapping[letter] = rel
+    if verbose:
+        print(f"  devanagari: {len(mapping)} cells from NSL tables")
+    return mapping
+
+
 def slice_chart(slug, cfg, verbose=True):
     path = os.path.join(SRC, cfg["file"])
     if not os.path.exists(path):
@@ -184,7 +275,10 @@ def slice_chart(slug, cfg, verbose=True):
         im = im.crop(cfg["crop"])
     W, H = im.size
     rows, cols = cfg["rows"], cfg["cols"]
-    cw, ch = W / cols, H / rows
+    # Some charts have unequal columns (Thai widens the cells that hold a
+    # motion sequence), so explicit boundaries can be given instead.
+    xs = cfg.get("colx") or [round(i * W / cols) for i in range(cols + 1)]
+    ys = cfg.get("rowy") or [round(i * H / rows) for i in range(rows + 1)]
 
     out_dir = os.path.join(OUT_ROOT, slug)
     os.makedirs(out_dir, exist_ok=True)
@@ -199,7 +293,7 @@ def slice_chart(slug, cfg, verbose=True):
             i += 1
             if letter is None:
                 continue
-            box = (round(c * cw), round(r * ch), round((c + 1) * cw), round((r + 1) * ch))
+            box = (xs[c], ys[r], xs[c + 1], ys[r + 1])
             raw = im.crop(box)
             name = "-".join(f"{ord(ch_):04x}" for ch_ in letter)
 
@@ -240,8 +334,14 @@ def apply_to_data(slug, cfg, mapping):
 
 
 def main(argv):
-    wanted = argv[1:] or list(CHARTS)
+    wanted = argv[1:] or (list(CHARTS) + ["devanagari"])
     total = 0
+    if "devanagari" in wanted:
+        m = slice_nsl()
+        if m:
+            total += apply_to_data("devanagari", {"field": "handshape"}, m)
+            print(f"    wrote paths into devanagari.json (handshape)")
+        wanted = [w for w in wanted if w != "devanagari"]
     for slug in wanted:
         cfg = CHARTS.get(slug)
         if not cfg:

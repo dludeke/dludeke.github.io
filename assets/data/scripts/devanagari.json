@@ -22,7 +22,7 @@
       "ipa": [
         "ə"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0905.png",
       "example_word": "अनार",
       "example_gloss": "pomegranate",
       "example_image": null,
@@ -39,7 +39,7 @@
       "ipa": [
         "aː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0906.png",
       "example_word": "आम",
       "example_gloss": "mango",
       "example_image": null,
@@ -56,7 +56,7 @@
       "ipa": [
         "ɪ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0907.png",
       "example_word": "इमली",
       "example_gloss": "tamarind",
       "example_image": null,
@@ -73,7 +73,7 @@
       "ipa": [
         "iː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0908.png",
       "example_word": "ईख",
       "example_gloss": "sugarcane",
       "example_image": null,
@@ -90,7 +90,7 @@
       "ipa": [
         "ʊ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0909.png",
       "example_word": "उल्लू",
       "example_gloss": "owl",
       "example_image": null,
@@ -107,7 +107,7 @@
       "ipa": [
         "uː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/090a.png",
       "example_word": "ऊन",
       "example_gloss": "wool",
       "example_image": null,
@@ -124,7 +124,7 @@
       "ipa": [
         "ɾɪ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/090b.png",
       "example_word": "ऋषि",
       "example_gloss": "sage",
       "example_image": null,
@@ -141,7 +141,7 @@
       "ipa": [
         "eː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/090f.png",
       "example_word": "एडी",
       "example_gloss": "heel",
       "example_image": null,
@@ -158,7 +158,7 @@
       "ipa": [
         "ɛː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0910.png",
       "example_word": "ऐनक",
       "example_gloss": "spectacles",
       "example_image": null,
@@ -175,7 +175,7 @@
       "ipa": [
         "oː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0913.png",
       "example_word": "ओखली",
       "example_gloss": "mortar",
       "example_image": null,
@@ -192,7 +192,7 @@
       "ipa": [
         "ɔː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0914.png",
       "example_word": "औज़ार",
       "example_gloss": "tool",
       "example_image": null,
@@ -209,7 +209,7 @@
       "ipa": [
         "k"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0915.png",
       "example_word": "कमल",
       "example_gloss": "lotus",
       "example_image": null,
@@ -226,7 +226,7 @@
       "ipa": [
         "kʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0916.png",
       "example_word": "खरगोश",
       "example_gloss": "rabbit",
       "example_image": null,
@@ -243,7 +243,7 @@
       "ipa": [
         "ɡ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0917.png",
       "example_word": "गाय",
       "example_gloss": "cow",
       "example_image": null,
@@ -260,7 +260,7 @@
       "ipa": [
         "ɡʱ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0918.png",
       "example_word": "घड़ी",
       "example_gloss": "clock",
       "example_image": null,
@@ -277,7 +277,7 @@
       "ipa": [
         "ŋ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0919.png",
       "example_word": "ङ",
       "example_gloss": "nasal (no initial word)",
       "example_image": null,
@@ -294,7 +294,7 @@
       "ipa": [
         "t͡ʃ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/091a.png",
       "example_word": "चम्मच",
       "example_gloss": "spoon",
       "example_image": null,
@@ -311,7 +311,7 @@
       "ipa": [
         "t͡ʃʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/091b.png",
       "example_word": "छतरी",
       "example_gloss": "umbrella",
       "example_image": null,
@@ -328,7 +328,7 @@
       "ipa": [
         "d͡ʒ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/091c.png",
       "example_word": "जहाज",
       "example_gloss": "ship",
       "example_image": null,
@@ -345,7 +345,7 @@
       "ipa": [
         "d͡ʒʱ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/091d.png",
       "example_word": "झंडा",
       "example_gloss": "flag",
       "example_image": null,
@@ -362,7 +362,7 @@
       "ipa": [
         "ɲ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/091e.png",
       "example_word": "ञ",
       "example_gloss": "nasal (no initial word)",
       "example_image": null,
@@ -379,7 +379,7 @@
       "ipa": [
         "ʈ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/091f.png",
       "example_word": "टमाटर",
       "example_gloss": "tomato",
       "example_image": null,
@@ -396,7 +396,7 @@
       "ipa": [
         "ʈʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0920.png",
       "example_word": "ठठेरा",
       "example_gloss": "tinsmith",
       "example_image": null,
@@ -413,7 +413,7 @@
       "ipa": [
         "ɖ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0921.png",
       "example_word": "डमरू",
       "example_gloss": "drum",
       "example_image": null,
@@ -430,7 +430,7 @@
       "ipa": [
         "ɖʱ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0922.png",
       "example_word": "ढक्कन",
       "example_gloss": "lid",
       "example_image": null,
@@ -447,7 +447,7 @@
       "ipa": [
         "ɳ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0923.png",
       "example_word": "ण",
       "example_gloss": "retroflex nasal (no initial word)",
       "example_image": null,
@@ -464,7 +464,7 @@
       "ipa": [
         "t̪"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0924.png",
       "example_word": "तरबूज",
       "example_gloss": "watermelon",
       "example_image": null,
@@ -481,7 +481,7 @@
       "ipa": [
         "t̪ʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0925.png",
       "example_word": "थरमस",
       "example_gloss": "thermos",
       "example_image": null,
@@ -498,7 +498,7 @@
       "ipa": [
         "d̪"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0926.png",
       "example_word": "दवाई",
       "example_gloss": "medicine",
       "example_image": null,
@@ -515,7 +515,7 @@
       "ipa": [
         "d̪ʱ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0927.png",
       "example_word": "धनुष",
       "example_gloss": "bow",
       "example_image": null,
@@ -532,7 +532,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0928.png",
       "example_word": "नल",
       "example_gloss": "tap",
       "example_image": null,
@@ -549,7 +549,7 @@
       "ipa": [
         "p"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/092a.png",
       "example_word": "पतंग",
       "example_gloss": "kite",
       "example_image": null,
@@ -567,7 +567,7 @@
         "pʰ",
         "f"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/092b.png",
       "example_word": "फल",
       "example_gloss": "fruit",
       "example_image": null,
@@ -584,7 +584,7 @@
       "ipa": [
         "b"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/092c.png",
       "example_word": "बकरी",
       "example_gloss": "goat",
       "example_image": null,
@@ -601,7 +601,7 @@
       "ipa": [
         "bʱ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/092d.png",
       "example_word": "भालू",
       "example_gloss": "bear",
       "example_image": null,
@@ -618,7 +618,7 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/092e.png",
       "example_word": "मछली",
       "example_gloss": "fish",
       "example_image": null,
@@ -635,7 +635,7 @@
       "ipa": [
         "j"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/092f.png",
       "example_word": "यज्ञ",
       "example_gloss": "fire ritual",
       "example_image": null,
@@ -652,7 +652,7 @@
       "ipa": [
         "ɾ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0930.png",
       "example_word": "रथ",
       "example_gloss": "chariot",
       "example_image": null,
@@ -669,7 +669,7 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0932.png",
       "example_word": "लट्टू",
       "example_gloss": "spinning top",
       "example_image": null,
@@ -686,7 +686,7 @@
       "ipa": [
         "ʋ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0935.png",
       "example_word": "वन",
       "example_gloss": "forest",
       "example_image": null,
@@ -703,7 +703,7 @@
       "ipa": [
         "ʃ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0936.png",
       "example_word": "शेर",
       "example_gloss": "lion",
       "example_image": null,
@@ -721,7 +721,7 @@
         "ʂ",
         "ʃ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0937.png",
       "example_word": "षटकोण",
       "example_gloss": "hexagon",
       "example_image": null,
@@ -738,7 +738,7 @@
       "ipa": [
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0938.png",
       "example_word": "सेब",
       "example_gloss": "apple",
       "example_image": null,
@@ -755,7 +755,7 @@
       "ipa": [
         "ɦ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0939.png",
       "example_word": "हाथी",
       "example_gloss": "elephant",
       "example_image": null,
