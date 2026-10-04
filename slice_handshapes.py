@@ -155,6 +155,9 @@ CHARTS = {
         # 28 letters, 7 per row, right to left
         "cells": list(AR),
         "isolate": "panel",   # hand sits on a grey panel, label below on white
+        # The panel detector swallows ق's label because it prints hard against
+        # the panel edge; drop the band it leaves behind.
+        "overrides": {"ق": (0.0, 0.0, 0.0, 0.34)},
         "field": "handshape",
     },
     "pinyin": {
@@ -264,6 +267,16 @@ def slice_nsl(verbose=True):
     return mapping
 
 
+def apply_override(cell, cfg, letter):
+    """Per-letter correction for cells the chart-wide rule gets wrong."""
+    o = (cfg.get("overrides") or {}).get(letter)
+    if not o:
+        return cell
+    l, t, r, b = o
+    w, h = cell.size
+    return cell.crop((round(w * l), round(h * t), round(w * (1 - r)), round(h * (1 - b))))
+
+
 def slice_chart(slug, cfg, verbose=True):
     path = os.path.join(SRC, cfg["file"])
     if not os.path.exists(path):
@@ -304,7 +317,7 @@ def slice_chart(slug, cfg, verbose=True):
             raw.save(os.path.join(raw_dir, f"{name}.png"))
 
             rel = f"images/handshapes/{slug}/{name}.png"
-            isolate(raw, cfg).save(os.path.join(HERE, rel))
+            apply_override(isolate(raw, cfg), cfg, letter).save(os.path.join(HERE, rel))
             mapping[letter] = rel
 
     if verbose:
