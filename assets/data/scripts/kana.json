@@ -17,7 +17,9 @@
       "alt": "ア",
       "name": "a",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "a"
+      ],
       "handshape": null,
       "example_word": "あり",
       "example_gloss": "ant",
@@ -30,7 +32,9 @@
       "alt": "イ",
       "name": "i",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "i"
+      ],
       "handshape": null,
       "example_word": "いぬ",
       "example_gloss": "dog",
@@ -43,7 +47,9 @@
       "alt": "ウ",
       "name": "u",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɯ"
+      ],
       "handshape": null,
       "example_word": "うま",
       "example_gloss": "horse",
@@ -56,7 +62,9 @@
       "alt": "エ",
       "name": "e",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "e"
+      ],
       "handshape": null,
       "example_word": "えんぴつ",
       "example_gloss": "pencil",
@@ -69,7 +77,9 @@
       "alt": "オ",
       "name": "o",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "o"
+      ],
       "handshape": null,
       "example_word": "おに",
       "example_gloss": "ogre",
@@ -82,7 +92,9 @@
       "alt": "カ",
       "name": "ka",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ka"
+      ],
       "handshape": null,
       "example_word": "かさ",
       "example_gloss": "umbrella",
@@ -95,7 +107,9 @@
       "alt": "キ",
       "name": "ki",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ki"
+      ],
       "handshape": null,
       "example_word": "きつね",
       "example_gloss": "fox",
@@ -108,7 +122,9 @@
       "alt": "ク",
       "name": "ku",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kɯ"
+      ],
       "handshape": null,
       "example_word": "くま",
       "example_gloss": "bear",
@@ -121,7 +137,9 @@
       "alt": "ケ",
       "name": "ke",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ke"
+      ],
       "handshape": null,
       "example_word": "けむし",
       "example_gloss": "caterpillar",
@@ -134,7 +152,9 @@
       "alt": "コ",
       "name": "ko",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ko"
+      ],
       "handshape": null,
       "example_word": "こま",
       "example_gloss": "spinning top",
@@ -147,7 +167,9 @@
       "alt": "サ",
       "name": "sa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "sa"
+      ],
       "handshape": null,
       "example_word": "さかな",
       "example_gloss": "fish",
@@ -160,7 +182,9 @@
       "alt": "シ",
       "name": "shi",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɕi"
+      ],
       "handshape": null,
       "example_word": "しか",
       "example_gloss": "deer",
@@ -173,7 +197,9 @@
       "alt": "ス",
       "name": "su",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "sɯ"
+      ],
       "handshape": null,
       "example_word": "すいか",
       "example_gloss": "watermelon",
@@ -186,7 +212,9 @@
       "alt": "セ",
       "name": "se",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "se"
+      ],
       "handshape": null,
       "example_word": "せみ",
       "example_gloss": "cicada",
@@ -199,7 +227,9 @@
       "alt": "ソ",
       "name": "so",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "so"
+      ],
       "handshape": null,
       "example_word": "そら",
       "example_gloss": "sky",
@@ -212,7 +242,9 @@
       "alt": "タ",
       "name": "ta",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ta"
+      ],
       "handshape": null,
       "example_word": "たこ",
       "example_gloss": "octopus",
@@ -225,7 +257,9 @@
       "alt": "チ",
       "name": "chi",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕi"
+      ],
       "handshape": null,
       "example_word": "ちず",
       "example_gloss": "map",
@@ -238,7 +272,9 @@
       "alt": "ツ",
       "name": "tsu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡sɯ"
+      ],
       "handshape": null,
       "example_word": "つき",
       "example_gloss": "moon",
@@ -251,7 +287,9 @@
       "alt": "テ",
       "name": "te",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "te"
+      ],
       "handshape": null,
       "example_word": "て",
       "example_gloss": "hand",
@@ -264,7 +302,9 @@
       "alt": "ト",
       "name": "to",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "to"
+      ],
       "handshape": null,
       "example_word": "とり",
       "example_gloss": "bird",
@@ -277,7 +317,9 @@
       "alt": "ナ",
       "name": "na",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "na"
+      ],
       "handshape": null,
       "example_word": "なす",
       "example_gloss": "aubergine",
@@ -290,7 +332,9 @@
       "alt": "ニ",
       "name": "ni",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɲi"
+      ],
       "handshape": null,
       "example_word": "にわとり",
       "example_gloss": "chicken",
@@ -303,7 +347,9 @@
       "alt": "ヌ",
       "name": "nu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "nɯ"
+      ],
       "handshape": null,
       "example_word": "ぬいぐるみ",
       "example_gloss": "stuffed toy",
@@ -316,7 +362,9 @@
       "alt": "ネ",
       "name": "ne",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ne"
+      ],
       "handshape": null,
       "example_word": "ねこ",
       "example_gloss": "cat",
@@ -329,7 +377,9 @@
       "alt": "ノ",
       "name": "no",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "no"
+      ],
       "handshape": null,
       "example_word": "のり",
       "example_gloss": "seaweed",
@@ -342,7 +392,10 @@
       "alt": "ハ",
       "name": "ha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ha",
+        "wa"
+      ],
       "handshape": null,
       "example_word": "はな",
       "example_gloss": "flower",
@@ -355,7 +408,9 @@
       "alt": "ヒ",
       "name": "hi",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "çi"
+      ],
       "handshape": null,
       "example_word": "ひこうき",
       "example_gloss": "aeroplane",
@@ -368,7 +423,9 @@
       "alt": "フ",
       "name": "fu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɸɯ"
+      ],
       "handshape": null,
       "example_word": "ふね",
       "example_gloss": "boat",
@@ -381,7 +438,10 @@
       "alt": "ヘ",
       "name": "he",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "he",
+        "e"
+      ],
       "handshape": null,
       "example_word": "へび",
       "example_gloss": "snake",
@@ -394,7 +454,9 @@
       "alt": "ホ",
       "name": "ho",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ho"
+      ],
       "handshape": null,
       "example_word": "ほし",
       "example_gloss": "star",
@@ -407,7 +469,9 @@
       "alt": "マ",
       "name": "ma",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ma"
+      ],
       "handshape": null,
       "example_word": "まど",
       "example_gloss": "window",
@@ -420,7 +484,9 @@
       "alt": "ミ",
       "name": "mi",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "mi"
+      ],
       "handshape": null,
       "example_word": "みず",
       "example_gloss": "water",
@@ -433,7 +499,9 @@
       "alt": "ム",
       "name": "mu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "mɯ"
+      ],
       "handshape": null,
       "example_word": "むし",
       "example_gloss": "insect",
@@ -446,7 +514,9 @@
       "alt": "メ",
       "name": "me",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "me"
+      ],
       "handshape": null,
       "example_word": "め",
       "example_gloss": "eye",
@@ -459,7 +529,9 @@
       "alt": "モ",
       "name": "mo",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "mo"
+      ],
       "handshape": null,
       "example_word": "もも",
       "example_gloss": "peach",
@@ -472,7 +544,9 @@
       "alt": "ヤ",
       "name": "ya",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ja"
+      ],
       "handshape": null,
       "example_word": "やま",
       "example_gloss": "mountain",
@@ -485,7 +559,9 @@
       "alt": "ユ",
       "name": "yu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "jɯ"
+      ],
       "handshape": null,
       "example_word": "ゆき",
       "example_gloss": "snow",
@@ -498,7 +574,9 @@
       "alt": "ヨ",
       "name": "yo",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "jo"
+      ],
       "handshape": null,
       "example_word": "よる",
       "example_gloss": "night",
@@ -511,7 +589,9 @@
       "alt": "ラ",
       "name": "ra",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾa"
+      ],
       "handshape": null,
       "example_word": "らくだ",
       "example_gloss": "camel",
@@ -524,7 +604,9 @@
       "alt": "リ",
       "name": "ri",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾi"
+      ],
       "handshape": null,
       "example_word": "りんご",
       "example_gloss": "apple",
@@ -537,7 +619,9 @@
       "alt": "ル",
       "name": "ru",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾɯ"
+      ],
       "handshape": null,
       "example_word": "るすばん",
       "example_gloss": "house-sitting",
@@ -550,7 +634,9 @@
       "alt": "レ",
       "name": "re",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾe"
+      ],
       "handshape": null,
       "example_word": "れいぞうこ",
       "example_gloss": "refrigerator",
@@ -563,7 +649,9 @@
       "alt": "ロ",
       "name": "ro",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾo"
+      ],
       "handshape": null,
       "example_word": "ろうそく",
       "example_gloss": "candle",
@@ -576,7 +664,9 @@
       "alt": "ワ",
       "name": "wa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "wa"
+      ],
       "handshape": null,
       "example_word": "わに",
       "example_gloss": "crocodile",
@@ -589,7 +679,9 @@
       "alt": "ヲ",
       "name": "wo",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "o"
+      ],
       "handshape": null,
       "example_word": "を",
       "example_gloss": "object particle, never starts a word",
@@ -602,7 +694,12 @@
       "alt": "ン",
       "name": "n",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n",
+        "m",
+        "ŋ",
+        "ɴ"
+      ],
       "handshape": null,
       "example_word": "みかん",
       "example_gloss": "mandarin — ん never starts a word",

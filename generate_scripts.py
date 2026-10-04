@@ -15,7 +15,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from script_content import WORDS
+from script_content import WORDS, IPA as IPA_TABLE
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -49,7 +49,7 @@ SCRIPTS = [
     ("hangul", "Hangul", "ㄱ", "KSL", "한국수어",
      ["Korean"], "Featural alphabet: 14 basic consonants and 10 basic vowels, composed into syllable blocks."),
     ("pinyin", "Pinyin", "ā", "CSL", "中国手语",
-     ["Mandarin Chinese"], "Romanisation rather than a script: Latin letters plus tone marks. CSL fingerspelling is built on these."),
+     ["Mandarin Chinese"], "Romanisation rather than a script. The CSL fingerspelling scheme of 1963 has 30 handshapes: the 26 Latin letters plus the digraphs ZH, CH, SH and NG."),
 ]
 
 # letters: (glyph, lowercase_or_alt, name)  -- alt is "" when there is no pair
@@ -144,7 +144,9 @@ LETTERS = {
  ("ㅏ","","a"),("ㅑ","","ya"),("ㅓ","","eo"),("ㅕ","","yeo"),("ㅗ","","o"),
  ("ㅛ","","yo"),("ㅜ","","u"),("ㅠ","","yu"),("ㅡ","","eu"),("ㅣ","","i")],
 
-"pinyin": [(chr(65+i), chr(97+i), chr(65+i)) for i in range(26) if chr(65+i) != 'V'],
+"pinyin": [(chr(65+i), chr(97+i), chr(65+i)) for i in range(26)]
+          + [("ZH", "zh", "ZH"), ("CH", "ch", "CH"),
+             ("SH", "sh", "SH"), ("NG", "ng", "NG")],
 }
 
 
@@ -242,6 +244,9 @@ def main():
                 "example_emoji": None, # stand-in until a real picture exists
                 "notes": "",
             }
+            ipa_vals = IPA_TABLE.get(slug, {}).get(glyph)
+            if ipa_vals:
+                entry["ipa"] = list(ipa_vals)
             w = WORDS.get(slug, {}).get(glyph)
             if w:
                 word, gloss, emoji = w
@@ -255,8 +260,22 @@ def main():
                               "example_emoji": emoji})
             if shapes.get(glyph):
                 entry["handshape"] = shapes[glyph]
-            entry.update(preserved.get(glyph, {}))
-            if preserved.get(glyph):
+            # Preserve only what the tables do not supply. Without this the
+            # values just written would be read back as "hand edits" on the
+            # next run and win over the tables, so editing script_content.py
+            # would silently do nothing.
+            from_tables = set()
+            if ipa_vals:
+                from_tables.add("ipa")
+            if w:
+                from_tables.update(("example_word", "example_gloss", "example_emoji"))
+            if got:
+                from_tables.update(("romanization", "ipa", "example_word",
+                                    "example_gloss", "example_emoji"))
+            keep = {k: v for k, v in preserved.get(glyph, {}).items()
+                    if k not in from_tables}
+            if keep:
+                entry.update(keep)
                 preserved_total += 1
             letters.append(entry)
 

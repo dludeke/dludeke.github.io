@@ -19,7 +19,9 @@
       "alt": "",
       "name": "hä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "hä"
+      ],
       "handshape": null,
       "example_word": "ሀገር",
       "example_gloss": "country",
@@ -32,7 +34,9 @@
       "alt": "",
       "name": "lä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "lä"
+      ],
       "handshape": null,
       "example_word": "ለውዝ",
       "example_gloss": "nut",
@@ -45,7 +49,9 @@
       "alt": "",
       "name": "ḥä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "hä"
+      ],
       "handshape": null,
       "example_word": "ሐይቅ",
       "example_gloss": "lake",
@@ -58,7 +64,9 @@
       "alt": "",
       "name": "mä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "mä"
+      ],
       "handshape": null,
       "example_word": "መኪና",
       "example_gloss": "car",
@@ -71,7 +79,9 @@
       "alt": "",
       "name": "śä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "sä"
+      ],
       "handshape": null,
       "example_word": "ሠርግ",
       "example_gloss": "wedding",
@@ -84,7 +94,9 @@
       "alt": "",
       "name": "rä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "rä"
+      ],
       "handshape": null,
       "example_word": "ረሃብ",
       "example_gloss": "hunger",
@@ -97,7 +109,9 @@
       "alt": "",
       "name": "sä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "sä"
+      ],
       "handshape": null,
       "example_word": "ሰው",
       "example_gloss": "person",
@@ -110,7 +124,9 @@
       "alt": "",
       "name": "šä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʃä"
+      ],
       "handshape": null,
       "example_word": "ሸማ",
       "example_gloss": "cloth",
@@ -123,7 +139,9 @@
       "alt": "",
       "name": "qä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʼä"
+      ],
       "handshape": null,
       "example_word": "ቀን",
       "example_gloss": "day",
@@ -136,7 +154,9 @@
       "alt": "",
       "name": "bä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "bä"
+      ],
       "handshape": null,
       "example_word": "በር",
       "example_gloss": "door",
@@ -149,7 +169,9 @@
       "alt": "",
       "name": "tä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tä"
+      ],
       "handshape": null,
       "example_word": "ተራራ",
       "example_gloss": "mountain",
@@ -162,7 +184,9 @@
       "alt": "",
       "name": "čä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ʃä"
+      ],
       "handshape": null,
       "example_word": "ቸኮሌት",
       "example_gloss": "chocolate",
@@ -175,7 +199,9 @@
       "alt": "",
       "name": "ḫä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "hä"
+      ],
       "handshape": null,
       "example_word": "ኀይል",
       "example_gloss": "power",
@@ -188,7 +214,9 @@
       "alt": "",
       "name": "nä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "nä"
+      ],
       "handshape": null,
       "example_word": "ነብር",
       "example_gloss": "leopard",
@@ -201,7 +229,9 @@
       "alt": "",
       "name": "ñä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɲä"
+      ],
       "handshape": null,
       "example_word": "ኘ",
       "example_gloss": "rare letter",
@@ -214,7 +244,9 @@
       "alt": "",
       "name": "'ä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʔä"
+      ],
       "handshape": null,
       "example_word": "አንበሳ",
       "example_gloss": "lion",
@@ -227,7 +259,9 @@
       "alt": "",
       "name": "kä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kä"
+      ],
       "handshape": null,
       "example_word": "ከተማ",
       "example_gloss": "city",
@@ -240,7 +274,9 @@
       "alt": "",
       "name": "ḵä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "xä"
+      ],
       "handshape": null,
       "example_word": "ኸ",
       "example_gloss": "rare letter",
@@ -253,7 +289,9 @@
       "alt": "",
       "name": "wä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "wä"
+      ],
       "handshape": null,
       "example_word": "ወተት",
       "example_gloss": "milk",
@@ -266,7 +304,9 @@
       "alt": "",
       "name": "ʿä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʔä"
+      ],
       "handshape": null,
       "example_word": "ዐይን",
       "example_gloss": "eye",
@@ -279,7 +319,9 @@
       "alt": "",
       "name": "zä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "zä"
+      ],
       "handshape": null,
       "example_word": "ዘይት",
       "example_gloss": "oil",
@@ -292,7 +334,9 @@
       "alt": "",
       "name": "žä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʒä"
+      ],
       "handshape": null,
       "example_word": "ዠ",
       "example_gloss": "rare letter",
@@ -305,7 +349,9 @@
       "alt": "",
       "name": "yä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "jä"
+      ],
       "handshape": null,
       "example_word": "የበግ",
       "example_gloss": "of sheep",
@@ -318,7 +364,9 @@
       "alt": "",
       "name": "dä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "dä"
+      ],
       "handshape": null,
       "example_word": "ደብተር",
       "example_gloss": "notebook",
@@ -331,7 +379,9 @@
       "alt": "",
       "name": "ǵä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d͡ʒä"
+      ],
       "handshape": null,
       "example_word": "ጀልባ",
       "example_gloss": "boat",
@@ -344,7 +394,9 @@
       "alt": "",
       "name": "gä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɡä"
+      ],
       "handshape": null,
       "example_word": "ገበያ",
       "example_gloss": "market",
@@ -357,7 +409,9 @@
       "alt": "",
       "name": "ṭä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʼä"
+      ],
       "handshape": null,
       "example_word": "ጠረጴዛ",
       "example_gloss": "table",
@@ -370,7 +424,9 @@
       "alt": "",
       "name": "čʼä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ʃʼä"
+      ],
       "handshape": null,
       "example_word": "ጨረቃ",
       "example_gloss": "moon",
@@ -383,7 +439,9 @@
       "alt": "",
       "name": "ṗä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pʼä"
+      ],
       "handshape": null,
       "example_word": "ጰ",
       "example_gloss": "rare letter",
@@ -396,7 +454,9 @@
       "alt": "",
       "name": "ṣä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡sʼä"
+      ],
       "handshape": null,
       "example_word": "ጸሐይ",
       "example_gloss": "sun",
@@ -409,7 +469,9 @@
       "alt": "",
       "name": "ḍä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡sʼä"
+      ],
       "handshape": null,
       "example_word": "ፀጉር",
       "example_gloss": "hair",
@@ -422,7 +484,9 @@
       "alt": "",
       "name": "fä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "fä"
+      ],
       "handshape": null,
       "example_word": "ፈረስ",
       "example_gloss": "horse",
@@ -435,7 +499,9 @@
       "alt": "",
       "name": "pä",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pä"
+      ],
       "handshape": null,
       "example_word": "ፐርሙዝ",
       "example_gloss": "thermos",

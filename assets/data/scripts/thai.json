@@ -17,7 +17,10 @@
       "alt": "",
       "name": "ko kai",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "ไก่",
       "example_gloss": "chicken",
@@ -30,7 +33,10 @@
       "alt": "",
       "name": "kho khai",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "ไข่",
       "example_gloss": "egg",
@@ -43,7 +49,10 @@
       "alt": "",
       "name": "kho khuat",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "ขวด",
       "example_gloss": "bottle (obsolete letter)",
@@ -56,7 +65,10 @@
       "alt": "",
       "name": "kho khwai",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "ควาย",
       "example_gloss": "buffalo",
@@ -69,7 +81,10 @@
       "alt": "",
       "name": "kho khon",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "คน",
       "example_gloss": "person (obsolete letter)",
@@ -82,7 +97,10 @@
       "alt": "",
       "name": "kho rakhang",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "ระฆัง",
       "example_gloss": "bell",
@@ -95,7 +113,9 @@
       "alt": "",
       "name": "ngo ngu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ŋ"
+      ],
       "handshape": null,
       "example_word": "งู",
       "example_gloss": "snake",
@@ -108,7 +128,10 @@
       "alt": "",
       "name": "cho chan",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "จาน",
       "example_gloss": "plate",
@@ -121,7 +144,9 @@
       "alt": "",
       "name": "cho ching",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕʰ"
+      ],
       "handshape": null,
       "example_word": "ฉิ่ง",
       "example_gloss": "cymbals",
@@ -134,7 +159,10 @@
       "alt": "",
       "name": "cho chang",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ช้าง",
       "example_gloss": "elephant",
@@ -147,7 +175,10 @@
       "alt": "",
       "name": "so so",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "โซ่",
       "example_gloss": "chain",
@@ -160,7 +191,9 @@
       "alt": "",
       "name": "cho choe",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕʰ"
+      ],
       "handshape": null,
       "example_word": "เฌอ",
       "example_gloss": "tree",
@@ -173,7 +206,10 @@
       "alt": "",
       "name": "yo ying",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "j",
+        "n"
+      ],
       "handshape": null,
       "example_word": "หญิง",
       "example_gloss": "woman",
@@ -186,7 +222,10 @@
       "alt": "",
       "name": "do chada",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ชฎา",
       "example_gloss": "headdress",
@@ -199,7 +238,10 @@
       "alt": "",
       "name": "to patak",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ปฏัก",
       "example_gloss": "goad",
@@ -212,12 +254,15 @@
       "alt": "",
       "name": "tho than",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ฐาน",
       "example_gloss": "base",
       "example_image": null,
-      "example_emoji": "🗿",
+      "example_emoji": "🧱",
       "notes": ""
     },
     {
@@ -225,7 +270,11 @@
       "alt": "",
       "name": "tho nangmontho",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ",
+        "d",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "มณโฑ",
       "example_gloss": "Montho",
@@ -238,7 +287,10 @@
       "alt": "",
       "name": "tho phuthao",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ผู้เฒ่า",
       "example_gloss": "elder",
@@ -251,7 +303,9 @@
       "alt": "",
       "name": "no nen",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n"
+      ],
       "handshape": null,
       "example_word": "เณร",
       "example_gloss": "novice monk",
@@ -264,7 +318,10 @@
       "alt": "",
       "name": "do dek",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "เด็ก",
       "example_gloss": "child",
@@ -277,7 +334,10 @@
       "alt": "",
       "name": "to tao",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "เต่า",
       "example_gloss": "turtle",
@@ -290,7 +350,10 @@
       "alt": "",
       "name": "tho thung",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ถุง",
       "example_gloss": "bag",
@@ -303,7 +366,10 @@
       "alt": "",
       "name": "tho thahan",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ทหาร",
       "example_gloss": "soldier",
@@ -316,7 +382,10 @@
       "alt": "",
       "name": "tho thong",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ธง",
       "example_gloss": "flag",
@@ -329,7 +398,9 @@
       "alt": "",
       "name": "no nu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n"
+      ],
       "handshape": null,
       "example_word": "หนู",
       "example_gloss": "mouse",
@@ -342,7 +413,10 @@
       "alt": "",
       "name": "bo baimai",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "b",
+        "p̚"
+      ],
       "handshape": null,
       "example_word": "ใบไม้",
       "example_gloss": "leaf",
@@ -355,7 +429,10 @@
       "alt": "",
       "name": "po pla",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p",
+        "p̚"
+      ],
       "handshape": null,
       "example_word": "ปลา",
       "example_gloss": "fish",
@@ -368,7 +445,9 @@
       "alt": "",
       "name": "pho phueng",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pʰ"
+      ],
       "handshape": null,
       "example_word": "ผึ้ง",
       "example_gloss": "bee",
@@ -381,7 +460,9 @@
       "alt": "",
       "name": "fo fa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "f"
+      ],
       "handshape": null,
       "example_word": "ฝา",
       "example_gloss": "lid",
@@ -394,7 +475,10 @@
       "alt": "",
       "name": "pho phan",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pʰ",
+        "p̚"
+      ],
       "handshape": null,
       "example_word": "พาน",
       "example_gloss": "tray",
@@ -407,7 +491,10 @@
       "alt": "",
       "name": "fo fan",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "f",
+        "p̚"
+      ],
       "handshape": null,
       "example_word": "ฟัน",
       "example_gloss": "teeth",
@@ -420,7 +507,10 @@
       "alt": "",
       "name": "pho samphao",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pʰ",
+        "p̚"
+      ],
       "handshape": null,
       "example_word": "สำเภา",
       "example_gloss": "junk ship",
@@ -433,7 +523,9 @@
       "alt": "",
       "name": "mo ma",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "m"
+      ],
       "handshape": null,
       "example_word": "ม้า",
       "example_gloss": "horse",
@@ -446,7 +538,9 @@
       "alt": "",
       "name": "yo yak",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "j"
+      ],
       "handshape": null,
       "example_word": "ยักษ์",
       "example_gloss": "giant",
@@ -459,7 +553,10 @@
       "alt": "",
       "name": "ro ruea",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "r",
+        "n"
+      ],
       "handshape": null,
       "example_word": "เรือ",
       "example_gloss": "boat",
@@ -472,7 +569,10 @@
       "alt": "",
       "name": "lo ling",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "l",
+        "n"
+      ],
       "handshape": null,
       "example_word": "ลิง",
       "example_gloss": "monkey",
@@ -485,7 +585,9 @@
       "alt": "",
       "name": "wo waen",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "w"
+      ],
       "handshape": null,
       "example_word": "แหวน",
       "example_gloss": "ring",
@@ -498,7 +600,10 @@
       "alt": "",
       "name": "so sala",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ศาลา",
       "example_gloss": "pavilion",
@@ -511,7 +616,10 @@
       "alt": "",
       "name": "so ruesi",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "ฤๅษี",
       "example_gloss": "hermit",
@@ -524,7 +632,10 @@
       "alt": "",
       "name": "so suea",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "เสือ",
       "example_gloss": "tiger",
@@ -537,7 +648,9 @@
       "alt": "",
       "name": "ho hip",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "h"
+      ],
       "handshape": null,
       "example_word": "หีบ",
       "example_gloss": "chest",
@@ -550,7 +663,10 @@
       "alt": "",
       "name": "lo chula",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "l",
+        "n"
+      ],
       "handshape": null,
       "example_word": "จุฬา",
       "example_gloss": "kite",
@@ -563,7 +679,9 @@
       "alt": "",
       "name": "o ang",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʔ"
+      ],
       "handshape": null,
       "example_word": "อ่าง",
       "example_gloss": "basin",
@@ -576,7 +694,9 @@
       "alt": "",
       "name": "ho nokhuk",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "h"
+      ],
       "handshape": null,
       "example_word": "นกฮูก",
       "example_gloss": "owl",

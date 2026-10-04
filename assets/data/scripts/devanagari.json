@@ -19,12 +19,14 @@
       "alt": "",
       "name": "a",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ə"
+      ],
       "handshape": null,
       "example_word": "अनार",
       "example_gloss": "pomegranate",
       "example_image": null,
-      "example_emoji": "🛑",
+      "example_emoji": null,
       "notes": ""
     },
     {
@@ -32,7 +34,9 @@
       "alt": "",
       "name": "ā",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "aː"
+      ],
       "handshape": null,
       "example_word": "आम",
       "example_gloss": "mango",
@@ -45,7 +49,9 @@
       "alt": "",
       "name": "i",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɪ"
+      ],
       "handshape": null,
       "example_word": "इमली",
       "example_gloss": "tamarind",
@@ -58,7 +64,9 @@
       "alt": "",
       "name": "ī",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "iː"
+      ],
       "handshape": null,
       "example_word": "ईख",
       "example_gloss": "sugarcane",
@@ -71,7 +79,9 @@
       "alt": "",
       "name": "u",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʊ"
+      ],
       "handshape": null,
       "example_word": "उल्लू",
       "example_gloss": "owl",
@@ -84,7 +94,9 @@
       "alt": "",
       "name": "ū",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "uː"
+      ],
       "handshape": null,
       "example_word": "ऊन",
       "example_gloss": "wool",
@@ -97,7 +109,9 @@
       "alt": "",
       "name": "ṛ",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾɪ"
+      ],
       "handshape": null,
       "example_word": "ऋषि",
       "example_gloss": "sage",
@@ -110,7 +124,9 @@
       "alt": "",
       "name": "e",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "eː"
+      ],
       "handshape": null,
       "example_word": "एडी",
       "example_gloss": "heel",
@@ -123,7 +139,9 @@
       "alt": "",
       "name": "ai",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɛː"
+      ],
       "handshape": null,
       "example_word": "ऐनक",
       "example_gloss": "spectacles",
@@ -136,7 +154,9 @@
       "alt": "",
       "name": "o",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "oː"
+      ],
       "handshape": null,
       "example_word": "ओखली",
       "example_gloss": "mortar",
@@ -149,7 +169,9 @@
       "alt": "",
       "name": "au",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɔː"
+      ],
       "handshape": null,
       "example_word": "औज़ार",
       "example_gloss": "tool",
@@ -162,7 +184,9 @@
       "alt": "",
       "name": "ka",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k"
+      ],
       "handshape": null,
       "example_word": "कमल",
       "example_gloss": "lotus",
@@ -175,7 +199,9 @@
       "alt": "",
       "name": "kha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ"
+      ],
       "handshape": null,
       "example_word": "खरगोश",
       "example_gloss": "rabbit",
@@ -188,7 +214,9 @@
       "alt": "",
       "name": "ga",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɡ"
+      ],
       "handshape": null,
       "example_word": "गाय",
       "example_gloss": "cow",
@@ -201,7 +229,9 @@
       "alt": "",
       "name": "gha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɡʱ"
+      ],
       "handshape": null,
       "example_word": "घड़ी",
       "example_gloss": "clock",
@@ -214,7 +244,9 @@
       "alt": "",
       "name": "ṅa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ŋ"
+      ],
       "handshape": null,
       "example_word": "ङ",
       "example_gloss": "nasal (no initial word)",
@@ -227,7 +259,9 @@
       "alt": "",
       "name": "ca",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ʃ"
+      ],
       "handshape": null,
       "example_word": "चम्मच",
       "example_gloss": "spoon",
@@ -240,7 +274,9 @@
       "alt": "",
       "name": "cha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ʃʰ"
+      ],
       "handshape": null,
       "example_word": "छतरी",
       "example_gloss": "umbrella",
@@ -253,7 +289,9 @@
       "alt": "",
       "name": "ja",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d͡ʒ"
+      ],
       "handshape": null,
       "example_word": "जहाज",
       "example_gloss": "ship",
@@ -266,7 +304,9 @@
       "alt": "",
       "name": "jha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d͡ʒʱ"
+      ],
       "handshape": null,
       "example_word": "झंडा",
       "example_gloss": "flag",
@@ -279,7 +319,9 @@
       "alt": "",
       "name": "ña",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɲ"
+      ],
       "handshape": null,
       "example_word": "ञ",
       "example_gloss": "nasal (no initial word)",
@@ -292,7 +334,9 @@
       "alt": "",
       "name": "ṭa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʈ"
+      ],
       "handshape": null,
       "example_word": "टमाटर",
       "example_gloss": "tomato",
@@ -305,7 +349,9 @@
       "alt": "",
       "name": "ṭha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʈʰ"
+      ],
       "handshape": null,
       "example_word": "ठठेरा",
       "example_gloss": "tinsmith",
@@ -318,7 +364,9 @@
       "alt": "",
       "name": "ḍa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɖ"
+      ],
       "handshape": null,
       "example_word": "डमरू",
       "example_gloss": "drum",
@@ -331,7 +379,9 @@
       "alt": "",
       "name": "ḍha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɖʱ"
+      ],
       "handshape": null,
       "example_word": "ढक्कन",
       "example_gloss": "lid",
@@ -344,7 +394,9 @@
       "alt": "",
       "name": "ṇa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɳ"
+      ],
       "handshape": null,
       "example_word": "ण",
       "example_gloss": "retroflex nasal (no initial word)",
@@ -357,7 +409,9 @@
       "alt": "",
       "name": "ta",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t̪"
+      ],
       "handshape": null,
       "example_word": "तरबूज",
       "example_gloss": "watermelon",
@@ -370,7 +424,9 @@
       "alt": "",
       "name": "tha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t̪ʰ"
+      ],
       "handshape": null,
       "example_word": "थरमस",
       "example_gloss": "thermos",
@@ -383,7 +439,9 @@
       "alt": "",
       "name": "da",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d̪"
+      ],
       "handshape": null,
       "example_word": "दवाई",
       "example_gloss": "medicine",
@@ -396,7 +454,9 @@
       "alt": "",
       "name": "dha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d̪ʱ"
+      ],
       "handshape": null,
       "example_word": "धनुष",
       "example_gloss": "bow",
@@ -409,7 +469,9 @@
       "alt": "",
       "name": "na",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n"
+      ],
       "handshape": null,
       "example_word": "नल",
       "example_gloss": "tap",
@@ -422,7 +484,9 @@
       "alt": "",
       "name": "pa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p"
+      ],
       "handshape": null,
       "example_word": "पतंग",
       "example_gloss": "kite",
@@ -435,7 +499,10 @@
       "alt": "",
       "name": "pha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pʰ",
+        "f"
+      ],
       "handshape": null,
       "example_word": "फल",
       "example_gloss": "fruit",
@@ -448,7 +515,9 @@
       "alt": "",
       "name": "ba",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "b"
+      ],
       "handshape": null,
       "example_word": "बकरी",
       "example_gloss": "goat",
@@ -461,7 +530,9 @@
       "alt": "",
       "name": "bha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "bʱ"
+      ],
       "handshape": null,
       "example_word": "भालू",
       "example_gloss": "bear",
@@ -474,7 +545,9 @@
       "alt": "",
       "name": "ma",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "m"
+      ],
       "handshape": null,
       "example_word": "मछली",
       "example_gloss": "fish",
@@ -487,7 +560,9 @@
       "alt": "",
       "name": "ya",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "j"
+      ],
       "handshape": null,
       "example_word": "यज्ञ",
       "example_gloss": "fire ritual",
@@ -500,7 +575,9 @@
       "alt": "",
       "name": "ra",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾ"
+      ],
       "handshape": null,
       "example_word": "रथ",
       "example_gloss": "chariot",
@@ -513,7 +590,9 @@
       "alt": "",
       "name": "la",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "l"
+      ],
       "handshape": null,
       "example_word": "लट्टू",
       "example_gloss": "spinning top",
@@ -526,7 +605,9 @@
       "alt": "",
       "name": "va",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʋ"
+      ],
       "handshape": null,
       "example_word": "वन",
       "example_gloss": "forest",
@@ -539,7 +620,9 @@
       "alt": "",
       "name": "śa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʃ"
+      ],
       "handshape": null,
       "example_word": "शेर",
       "example_gloss": "lion",
@@ -552,7 +635,10 @@
       "alt": "",
       "name": "ṣa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʂ",
+        "ʃ"
+      ],
       "handshape": null,
       "example_word": "षटकोण",
       "example_gloss": "hexagon",
@@ -565,7 +651,9 @@
       "alt": "",
       "name": "sa",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s"
+      ],
       "handshape": null,
       "example_word": "सेब",
       "example_gloss": "apple",
@@ -578,7 +666,9 @@
       "alt": "",
       "name": "ha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɦ"
+      ],
       "handshape": null,
       "example_word": "हाथी",
       "example_gloss": "elephant",

@@ -9,7 +9,7 @@
   "languages": [
     "Mandarin Chinese"
   ],
-  "note": "Romanisation rather than a script: Latin letters plus tone marks. CSL fingerspelling is built on these.",
+  "note": "Romanisation rather than a script. The CSL fingerspelling scheme of 1963 has 30 handshapes: the 26 Latin letters plus the digraphs ZH, CH, SH and NG.",
   "status": "skeleton",
   "letters": [
     {
@@ -17,7 +17,9 @@
       "alt": "a",
       "name": "A",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "a"
+      ],
       "handshape": null,
       "example_word": "爱 (ài)",
       "example_gloss": "love",
@@ -30,7 +32,9 @@
       "alt": "b",
       "name": "B",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p"
+      ],
       "handshape": null,
       "example_word": "包 (bāo)",
       "example_gloss": "bag",
@@ -43,7 +47,9 @@
       "alt": "c",
       "name": "C",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡sʰ"
+      ],
       "handshape": null,
       "example_word": "草 (cǎo)",
       "example_gloss": "grass",
@@ -56,7 +62,9 @@
       "alt": "d",
       "name": "D",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t"
+      ],
       "handshape": null,
       "example_word": "灯 (dēng)",
       "example_gloss": "lamp",
@@ -69,7 +77,10 @@
       "alt": "e",
       "name": "E",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɤ",
+        "ə"
+      ],
       "handshape": null,
       "example_word": "鹅 (é)",
       "example_gloss": "goose",
@@ -82,7 +93,9 @@
       "alt": "f",
       "name": "F",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "f"
+      ],
       "handshape": null,
       "example_word": "飞机 (fēijī)",
       "example_gloss": "aeroplane",
@@ -95,7 +108,9 @@
       "alt": "g",
       "name": "G",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k"
+      ],
       "handshape": null,
       "example_word": "狗 (gǒu)",
       "example_gloss": "dog",
@@ -108,7 +123,9 @@
       "alt": "h",
       "name": "H",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "x"
+      ],
       "handshape": null,
       "example_word": "花 (huā)",
       "example_gloss": "flower",
@@ -121,7 +138,10 @@
       "alt": "i",
       "name": "I",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "i",
+        "ɹ̩"
+      ],
       "handshape": null,
       "example_word": "衣 (yī)",
       "example_gloss": "clothes — i never begins a syllable",
@@ -134,7 +154,9 @@
       "alt": "j",
       "name": "J",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕ"
+      ],
       "handshape": null,
       "example_word": "鸡 (jī)",
       "example_gloss": "chicken",
@@ -147,7 +169,9 @@
       "alt": "k",
       "name": "K",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ"
+      ],
       "handshape": null,
       "example_word": "咖啡 (kāfēi)",
       "example_gloss": "coffee",
@@ -160,7 +184,9 @@
       "alt": "l",
       "name": "L",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "l"
+      ],
       "handshape": null,
       "example_word": "龙 (lóng)",
       "example_gloss": "dragon",
@@ -173,7 +199,9 @@
       "alt": "m",
       "name": "M",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "m"
+      ],
       "handshape": null,
       "example_word": "猫 (māo)",
       "example_gloss": "cat",
@@ -186,7 +214,10 @@
       "alt": "n",
       "name": "N",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n",
+        "ŋ"
+      ],
       "handshape": null,
       "example_word": "牛 (niú)",
       "example_gloss": "cow",
@@ -199,7 +230,10 @@
       "alt": "o",
       "name": "O",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "o",
+        "u̯o"
+      ],
       "handshape": null,
       "example_word": "藕 (ǒu)",
       "example_gloss": "lotus root",
@@ -212,7 +246,9 @@
       "alt": "p",
       "name": "P",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pʰ"
+      ],
       "handshape": null,
       "example_word": "苹果 (píngguǒ)",
       "example_gloss": "apple",
@@ -225,12 +261,14 @@
       "alt": "q",
       "name": "Q",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕʰ"
+      ],
       "handshape": null,
-      "example_word": "汽车 (qìchē)",
-      "example_gloss": "car",
+      "example_word": "球 (qiú)",
+      "example_gloss": "ball",
       "example_image": null,
-      "example_emoji": "🚗",
+      "example_emoji": "⚽",
       "notes": ""
     },
     {
@@ -238,7 +276,10 @@
       "alt": "r",
       "name": "R",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʐ",
+        "ɻ"
+      ],
       "handshape": null,
       "example_word": "人 (rén)",
       "example_gloss": "person",
@@ -251,12 +292,14 @@
       "alt": "s",
       "name": "S",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s"
+      ],
       "handshape": null,
-      "example_word": "书 (shū)",
-      "example_gloss": "book",
+      "example_word": "伞 (sǎn)",
+      "example_gloss": "umbrella",
       "example_image": null,
-      "example_emoji": "📖",
+      "example_emoji": "☂️",
       "notes": ""
     },
     {
@@ -264,7 +307,9 @@
       "alt": "t",
       "name": "T",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ"
+      ],
       "handshape": null,
       "example_word": "兔子 (tùzi)",
       "example_gloss": "rabbit",
@@ -277,7 +322,9 @@
       "alt": "u",
       "name": "U",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "u"
+      ],
       "handshape": null,
       "example_word": "屋 (wū)",
       "example_gloss": "house — u never begins a syllable",
@@ -286,11 +333,28 @@
       "notes": ""
     },
     {
+      "glyph": "V",
+      "alt": "v",
+      "name": "V",
+      "romanization": null,
+      "ipa": [
+        "y"
+      ],
+      "handshape": null,
+      "example_word": "绿 (lǜ)",
+      "example_gloss": "green — v stands for ü, no native v sound",
+      "example_image": null,
+      "example_emoji": "💚",
+      "notes": ""
+    },
+    {
       "glyph": "W",
       "alt": "w",
       "name": "W",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "w"
+      ],
       "handshape": null,
       "example_word": "碗 (wǎn)",
       "example_gloss": "bowl",
@@ -303,7 +367,9 @@
       "alt": "x",
       "name": "X",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɕ"
+      ],
       "handshape": null,
       "example_word": "熊猫 (xióngmāo)",
       "example_gloss": "panda",
@@ -316,7 +382,9 @@
       "alt": "y",
       "name": "Y",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "j"
+      ],
       "handshape": null,
       "example_word": "鱼 (yú)",
       "example_gloss": "fish",
@@ -329,12 +397,74 @@
       "alt": "z",
       "name": "Z",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡s"
+      ],
+      "handshape": null,
+      "example_word": "字 (zì)",
+      "example_gloss": "character",
+      "example_image": null,
+      "example_emoji": "🔤",
+      "notes": ""
+    },
+    {
+      "glyph": "ZH",
+      "alt": "zh",
+      "name": "ZH",
+      "romanization": null,
+      "ipa": [
+        "ʈ͡ʂ"
+      ],
       "handshape": null,
       "example_word": "猪 (zhū)",
       "example_gloss": "pig",
       "example_image": null,
       "example_emoji": "🐷",
+      "notes": ""
+    },
+    {
+      "glyph": "CH",
+      "alt": "ch",
+      "name": "CH",
+      "romanization": null,
+      "ipa": [
+        "ʈ͡ʂʰ"
+      ],
+      "handshape": null,
+      "example_word": "车 (chē)",
+      "example_gloss": "car",
+      "example_image": null,
+      "example_emoji": "🚗",
+      "notes": ""
+    },
+    {
+      "glyph": "SH",
+      "alt": "sh",
+      "name": "SH",
+      "romanization": null,
+      "ipa": [
+        "ʂ"
+      ],
+      "handshape": null,
+      "example_word": "书 (shū)",
+      "example_gloss": "book",
+      "example_image": null,
+      "example_emoji": "📖",
+      "notes": ""
+    },
+    {
+      "glyph": "NG",
+      "alt": "ng",
+      "name": "NG",
+      "romanization": null,
+      "ipa": [
+        "ŋ"
+      ],
+      "handshape": null,
+      "example_word": "羊 (yáng)",
+      "example_gloss": "sheep — ng never begins a syllable",
+      "example_image": null,
+      "example_emoji": "🐑",
       "notes": ""
     }
   ]

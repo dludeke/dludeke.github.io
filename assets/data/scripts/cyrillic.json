@@ -20,7 +20,10 @@
       "alt": "а",
       "name": "A",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "a",
+        "ɐ"
+      ],
       "handshape": null,
       "example_word": "арбуз",
       "example_gloss": "watermelon",
@@ -33,7 +36,10 @@
       "alt": "б",
       "name": "Be",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "b",
+        "bʲ"
+      ],
       "handshape": null,
       "example_word": "барабан",
       "example_gloss": "drum",
@@ -46,7 +52,10 @@
       "alt": "в",
       "name": "Ve",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "v",
+        "vʲ"
+      ],
       "handshape": null,
       "example_word": "волк",
       "example_gloss": "wolf",
@@ -59,7 +68,10 @@
       "alt": "г",
       "name": "Ge",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɡ",
+        "ɡʲ"
+      ],
       "handshape": null,
       "example_word": "груша",
       "example_gloss": "pear",
@@ -72,7 +84,10 @@
       "alt": "д",
       "name": "De",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d",
+        "dʲ"
+      ],
       "handshape": null,
       "example_word": "дерево",
       "example_gloss": "tree",
@@ -85,7 +100,10 @@
       "alt": "е",
       "name": "Ye",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "je",
+        "ʲe"
+      ],
       "handshape": null,
       "example_word": "ель",
       "example_gloss": "spruce",
@@ -98,7 +116,10 @@
       "alt": "ё",
       "name": "Yo",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "jo",
+        "ʲo"
+      ],
       "handshape": null,
       "example_word": "ёж",
       "example_gloss": "hedgehog",
@@ -111,7 +132,9 @@
       "alt": "ж",
       "name": "Zhe",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʐ"
+      ],
       "handshape": null,
       "example_word": "жираф",
       "example_gloss": "giraffe",
@@ -124,7 +147,10 @@
       "alt": "з",
       "name": "Ze",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "z",
+        "zʲ"
+      ],
       "handshape": null,
       "example_word": "зонт",
       "example_gloss": "umbrella",
@@ -137,7 +163,9 @@
       "alt": "и",
       "name": "I",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "i"
+      ],
       "handshape": null,
       "example_word": "иголка",
       "example_gloss": "needle",
@@ -150,12 +178,14 @@
       "alt": "й",
       "name": "Short I",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "j"
+      ],
       "handshape": null,
       "example_word": "йогурт",
       "example_gloss": "yoghurt",
       "example_image": null,
-      "example_emoji": "🥨",
+      "example_emoji": "🥛",
       "notes": ""
     },
     {
@@ -163,7 +193,10 @@
       "alt": "к",
       "name": "Ka",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k",
+        "kʲ"
+      ],
       "handshape": null,
       "example_word": "карандаш",
       "example_gloss": "pencil",
@@ -176,7 +209,10 @@
       "alt": "л",
       "name": "El",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɫ",
+        "lʲ"
+      ],
       "handshape": null,
       "example_word": "лошадь",
       "example_gloss": "horse",
@@ -189,7 +225,10 @@
       "alt": "м",
       "name": "Em",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "m",
+        "mʲ"
+      ],
       "handshape": null,
       "example_word": "мышь",
       "example_gloss": "mouse",
@@ -202,7 +241,10 @@
       "alt": "н",
       "name": "En",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n",
+        "nʲ"
+      ],
       "handshape": null,
       "example_word": "ножницы",
       "example_gloss": "scissors",
@@ -215,7 +257,10 @@
       "alt": "о",
       "name": "O",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "o",
+        "ɐ"
+      ],
       "handshape": null,
       "example_word": "обезьяна",
       "example_gloss": "monkey",
@@ -228,7 +273,10 @@
       "alt": "п",
       "name": "Pe",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p",
+        "pʲ"
+      ],
       "handshape": null,
       "example_word": "помидор",
       "example_gloss": "tomato",
@@ -241,7 +289,10 @@
       "alt": "р",
       "name": "Er",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "r",
+        "rʲ"
+      ],
       "handshape": null,
       "example_word": "рыба",
       "example_gloss": "fish",
@@ -254,7 +305,10 @@
       "alt": "с",
       "name": "Es",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s",
+        "sʲ"
+      ],
       "handshape": null,
       "example_word": "слон",
       "example_gloss": "elephant",
@@ -267,7 +321,10 @@
       "alt": "т",
       "name": "Te",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t",
+        "tʲ"
+      ],
       "handshape": null,
       "example_word": "телефон",
       "example_gloss": "telephone",
@@ -280,7 +337,9 @@
       "alt": "у",
       "name": "U",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "u"
+      ],
       "handshape": null,
       "example_word": "улитка",
       "example_gloss": "snail",
@@ -293,7 +352,10 @@
       "alt": "ф",
       "name": "Ef",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "f",
+        "fʲ"
+      ],
       "handshape": null,
       "example_word": "фонарь",
       "example_gloss": "lantern",
@@ -306,7 +368,9 @@
       "alt": "х",
       "name": "Kha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "x"
+      ],
       "handshape": null,
       "example_word": "хлеб",
       "example_gloss": "bread",
@@ -319,7 +383,9 @@
       "alt": "ц",
       "name": "Tse",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡s"
+      ],
       "handshape": null,
       "example_word": "цветок",
       "example_gloss": "flower",
@@ -332,7 +398,9 @@
       "alt": "ч",
       "name": "Che",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕ"
+      ],
       "handshape": null,
       "example_word": "чайник",
       "example_gloss": "kettle",
@@ -345,7 +413,9 @@
       "alt": "ш",
       "name": "Sha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʂ"
+      ],
       "handshape": null,
       "example_word": "шарф",
       "example_gloss": "scarf",
@@ -358,7 +428,9 @@
       "alt": "щ",
       "name": "Shcha",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɕː"
+      ],
       "handshape": null,
       "example_word": "щётка",
       "example_gloss": "brush",
@@ -371,7 +443,9 @@
       "alt": "ъ",
       "name": "Hard sign",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "подъезд",
       "example_gloss": "entrance (letter never starts a word)",
@@ -384,7 +458,9 @@
       "alt": "ы",
       "name": "Yery",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɨ"
+      ],
       "handshape": null,
       "example_word": "сыр",
       "example_gloss": "cheese (letter never starts a word)",
@@ -397,7 +473,9 @@
       "alt": "ь",
       "name": "Soft sign",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʲ"
+      ],
       "handshape": null,
       "example_word": "соль",
       "example_gloss": "salt (letter never starts a word)",
@@ -410,7 +488,9 @@
       "alt": "э",
       "name": "E",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "e"
+      ],
       "handshape": null,
       "example_word": "экскаватор",
       "example_gloss": "excavator",
@@ -423,7 +503,10 @@
       "alt": "ю",
       "name": "Yu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ju",
+        "ʲu"
+      ],
       "handshape": null,
       "example_word": "юла",
       "example_gloss": "spinning top",
@@ -436,7 +519,10 @@
       "alt": "я",
       "name": "Ya",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ja",
+        "ʲa"
+      ],
       "handshape": null,
       "example_word": "яблоко",
       "example_gloss": "apple",

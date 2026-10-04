@@ -18,7 +18,11 @@
       "alt": "a",
       "name": "A",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "æ",
+        "eɪ",
+        "ɑː"
+      ],
       "handshape": null,
       "example_word": "Apple",
       "example_gloss": "apple",
@@ -31,7 +35,9 @@
       "alt": "b",
       "name": "B",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "b"
+      ],
       "handshape": null,
       "example_word": "Ball",
       "example_gloss": "ball",
@@ -44,7 +50,10 @@
       "alt": "c",
       "name": "C",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k",
+        "s"
+      ],
       "handshape": null,
       "example_word": "Cat",
       "example_gloss": "cat",
@@ -57,7 +66,9 @@
       "alt": "d",
       "name": "D",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d"
+      ],
       "handshape": null,
       "example_word": "Dog",
       "example_gloss": "dog",
@@ -70,7 +81,11 @@
       "alt": "e",
       "name": "E",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɛ",
+        "iː",
+        "ə"
+      ],
       "handshape": null,
       "example_word": "Elephant",
       "example_gloss": "elephant",
@@ -83,7 +98,9 @@
       "alt": "f",
       "name": "F",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "f"
+      ],
       "handshape": null,
       "example_word": "Fish",
       "example_gloss": "fish",
@@ -96,7 +113,10 @@
       "alt": "g",
       "name": "G",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɡ",
+        "dʒ"
+      ],
       "handshape": null,
       "example_word": "Giraffe",
       "example_gloss": "giraffe",
@@ -109,7 +129,9 @@
       "alt": "h",
       "name": "H",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "h"
+      ],
       "handshape": null,
       "example_word": "House",
       "example_gloss": "house",
@@ -122,7 +144,10 @@
       "alt": "i",
       "name": "I",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɪ",
+        "aɪ"
+      ],
       "handshape": null,
       "example_word": "Ice cream",
       "example_gloss": "ice cream",
@@ -135,7 +160,9 @@
       "alt": "j",
       "name": "J",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "dʒ"
+      ],
       "handshape": null,
       "example_word": "Jug",
       "example_gloss": "jug",
@@ -148,7 +175,9 @@
       "alt": "k",
       "name": "K",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k"
+      ],
       "handshape": null,
       "example_word": "Kite",
       "example_gloss": "kite",
@@ -161,7 +190,9 @@
       "alt": "l",
       "name": "L",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "l"
+      ],
       "handshape": null,
       "example_word": "Lion",
       "example_gloss": "lion",
@@ -174,7 +205,9 @@
       "alt": "m",
       "name": "M",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "m"
+      ],
       "handshape": null,
       "example_word": "Moon",
       "example_gloss": "moon",
@@ -187,7 +220,10 @@
       "alt": "n",
       "name": "N",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n",
+        "ŋ"
+      ],
       "handshape": null,
       "example_word": "Nest",
       "example_gloss": "nest",
@@ -200,7 +236,10 @@
       "alt": "o",
       "name": "O",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɒ",
+        "oʊ"
+      ],
       "handshape": null,
       "example_word": "Orange",
       "example_gloss": "orange",
@@ -213,7 +252,9 @@
       "alt": "p",
       "name": "P",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p"
+      ],
       "handshape": null,
       "example_word": "Pencil",
       "example_gloss": "pencil",
@@ -226,7 +267,9 @@
       "alt": "q",
       "name": "Q",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k"
+      ],
       "handshape": null,
       "example_word": "Queen",
       "example_gloss": "queen",
@@ -239,7 +282,9 @@
       "alt": "r",
       "name": "R",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɹ"
+      ],
       "handshape": null,
       "example_word": "Rainbow",
       "example_gloss": "rainbow",
@@ -252,7 +297,10 @@
       "alt": "s",
       "name": "S",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s",
+        "z"
+      ],
       "handshape": null,
       "example_word": "Sun",
       "example_gloss": "sun",
@@ -265,7 +313,9 @@
       "alt": "t",
       "name": "T",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t"
+      ],
       "handshape": null,
       "example_word": "Tree",
       "example_gloss": "tree",
@@ -278,7 +328,11 @@
       "alt": "u",
       "name": "U",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʌ",
+        "juː",
+        "ʊ"
+      ],
       "handshape": null,
       "example_word": "Umbrella",
       "example_gloss": "umbrella",
@@ -291,7 +345,9 @@
       "alt": "v",
       "name": "V",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "v"
+      ],
       "handshape": null,
       "example_word": "Violin",
       "example_gloss": "violin",
@@ -304,7 +360,9 @@
       "alt": "w",
       "name": "W",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "w"
+      ],
       "handshape": null,
       "example_word": "Whale",
       "example_gloss": "whale",
@@ -317,7 +375,10 @@
       "alt": "x",
       "name": "X",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ks",
+        "z"
+      ],
       "handshape": null,
       "example_word": "Xylophone",
       "example_gloss": "xylophone",
@@ -330,7 +391,11 @@
       "alt": "y",
       "name": "Y",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "j",
+        "aɪ",
+        "i"
+      ],
       "handshape": null,
       "example_word": "Yacht",
       "example_gloss": "yacht",
@@ -343,7 +408,9 @@
       "alt": "z",
       "name": "Z",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "z"
+      ],
       "handshape": null,
       "example_word": "Zebra",
       "example_gloss": "zebra",

@@ -6,6 +6,12 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>Script</title>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <!-- Charis SIL is an SIL font built for phonetic notation: the system fonts
+       drop affricate tie bars (t͡ɕ rendered as tofu), which this page needs. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap" />
   <style>
     .script-head {
       display: flex;
@@ -108,7 +114,11 @@
     .row .v { color: #333; }
     .row .v.empty { color: #c3c9cf; font-style: italic; }
 
-    .ipa { font-family: "Gentium Plus", "Doulos SIL", Georgia, serif; }
+    .ipa {
+      font-family: "Charis SIL", "Doulos SIL", "Gentium Plus",
+                   "Lucida Sans Unicode", "Arial Unicode MS", serif;
+      font-size: 0.95rem;
+    }
 
     .slot {
       border: 1px dashed #d8dde2;

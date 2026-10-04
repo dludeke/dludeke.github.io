@@ -17,7 +17,11 @@
       "alt": "",
       "name": "giyeok",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k",
+        "ɡ",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "가방",
       "example_gloss": "bag",
@@ -30,7 +34,9 @@
       "alt": "",
       "name": "nieun",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n"
+      ],
       "handshape": null,
       "example_word": "나무",
       "example_gloss": "tree",
@@ -43,7 +49,11 @@
       "alt": "",
       "name": "digeut",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t",
+        "d",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "달",
       "example_gloss": "moon",
@@ -56,7 +66,10 @@
       "alt": "",
       "name": "rieul",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɾ",
+        "l"
+      ],
       "handshape": null,
       "example_word": "라면",
       "example_gloss": "ramen",
@@ -69,7 +82,9 @@
       "alt": "",
       "name": "mieum",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "m"
+      ],
       "handshape": null,
       "example_word": "물",
       "example_gloss": "water",
@@ -82,7 +97,11 @@
       "alt": "",
       "name": "bieup",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p",
+        "b",
+        "p̚"
+      ],
       "handshape": null,
       "example_word": "바다",
       "example_gloss": "sea",
@@ -95,7 +114,11 @@
       "alt": "",
       "name": "siot",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s",
+        "ɕ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "사과",
       "example_gloss": "apple",
@@ -108,7 +131,10 @@
       "alt": "",
       "name": "ieung",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—",
+        "ŋ"
+      ],
       "handshape": null,
       "example_word": "아기",
       "example_gloss": "baby",
@@ -121,7 +147,11 @@
       "alt": "",
       "name": "jieut",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕ",
+        "d͡ʑ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "자동차",
       "example_gloss": "car",
@@ -134,7 +164,10 @@
       "alt": "",
       "name": "chieut",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t͡ɕʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "책",
       "example_gloss": "book",
@@ -147,7 +180,10 @@
       "alt": "",
       "name": "kieuk",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "kʰ",
+        "k̚"
+      ],
       "handshape": null,
       "example_word": "코",
       "example_gloss": "nose",
@@ -160,7 +196,10 @@
       "alt": "",
       "name": "tieut",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "tʰ",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "토끼",
       "example_gloss": "rabbit",
@@ -173,7 +212,10 @@
       "alt": "",
       "name": "pieup",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "pʰ",
+        "p̚"
+      ],
       "handshape": null,
       "example_word": "포도",
       "example_gloss": "grapes",
@@ -186,7 +228,10 @@
       "alt": "",
       "name": "hieut",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "h",
+        "t̚"
+      ],
       "handshape": null,
       "example_word": "해",
       "example_gloss": "sun",
@@ -199,7 +244,9 @@
       "alt": "",
       "name": "a",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "a"
+      ],
       "handshape": null,
       "example_word": "사과",
       "example_gloss": "apple",
@@ -212,7 +259,9 @@
       "alt": "",
       "name": "ya",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ja"
+      ],
       "handshape": null,
       "example_word": "야구",
       "example_gloss": "baseball",
@@ -225,7 +274,9 @@
       "alt": "",
       "name": "eo",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʌ"
+      ],
       "handshape": null,
       "example_word": "어머니",
       "example_gloss": "mother",
@@ -238,7 +289,9 @@
       "alt": "",
       "name": "yeo",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "jʌ"
+      ],
       "handshape": null,
       "example_word": "여우",
       "example_gloss": "fox",
@@ -251,7 +304,9 @@
       "alt": "",
       "name": "o",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "o"
+      ],
       "handshape": null,
       "example_word": "오리",
       "example_gloss": "duck",
@@ -264,7 +319,9 @@
       "alt": "",
       "name": "yo",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "jo"
+      ],
       "handshape": null,
       "example_word": "요리",
       "example_gloss": "cooking",
@@ -277,7 +334,9 @@
       "alt": "",
       "name": "u",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "u"
+      ],
       "handshape": null,
       "example_word": "우산",
       "example_gloss": "umbrella",
@@ -290,7 +349,9 @@
       "alt": "",
       "name": "yu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ju"
+      ],
       "handshape": null,
       "example_word": "유리",
       "example_gloss": "glass",
@@ -303,7 +364,9 @@
       "alt": "",
       "name": "eu",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɯ"
+      ],
       "handshape": null,
       "example_word": "그림",
       "example_gloss": "picture",
@@ -316,7 +379,9 @@
       "alt": "",
       "name": "i",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "i"
+      ],
       "handshape": null,
       "example_word": "이",
       "example_gloss": "tooth",

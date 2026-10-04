@@ -19,7 +19,10 @@
       "alt": "",
       "name": "Alef",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʔ",
+        "—"
+      ],
       "handshape": null,
       "example_word": "אריה",
       "example_gloss": "lion",
@@ -32,7 +35,10 @@
       "alt": "",
       "name": "Bet",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "b",
+        "v"
+      ],
       "handshape": null,
       "example_word": "בית",
       "example_gloss": "house",
@@ -45,7 +51,9 @@
       "alt": "",
       "name": "Gimel",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ɡ"
+      ],
       "handshape": null,
       "example_word": "גמל",
       "example_gloss": "camel",
@@ -58,7 +66,9 @@
       "alt": "",
       "name": "Dalet",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "d"
+      ],
       "handshape": null,
       "example_word": "דג",
       "example_gloss": "fish",
@@ -71,7 +81,10 @@
       "alt": "",
       "name": "He",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "h",
+        "—"
+      ],
       "handshape": null,
       "example_word": "הר",
       "example_gloss": "mountain",
@@ -84,7 +97,11 @@
       "alt": "",
       "name": "Vav",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "v",
+        "o",
+        "u"
+      ],
       "handshape": null,
       "example_word": "ורד",
       "example_gloss": "rose",
@@ -97,7 +114,9 @@
       "alt": "",
       "name": "Zayin",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "z"
+      ],
       "handshape": null,
       "example_word": "זברה",
       "example_gloss": "zebra",
@@ -110,7 +129,9 @@
       "alt": "",
       "name": "Het",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "χ"
+      ],
       "handshape": null,
       "example_word": "חתול",
       "example_gloss": "cat",
@@ -123,7 +144,9 @@
       "alt": "",
       "name": "Tet",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t"
+      ],
       "handshape": null,
       "example_word": "טלפון",
       "example_gloss": "telephone",
@@ -136,7 +159,10 @@
       "alt": "",
       "name": "Yod",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "j",
+        "i"
+      ],
       "handshape": null,
       "example_word": "ילד",
       "example_gloss": "child",
@@ -149,7 +175,10 @@
       "alt": "ך",
       "name": "Kaf",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k",
+        "χ"
+      ],
       "handshape": null,
       "example_word": "כלב",
       "example_gloss": "dog",
@@ -162,7 +191,9 @@
       "alt": "",
       "name": "Lamed",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "l"
+      ],
       "handshape": null,
       "example_word": "לימון",
       "example_gloss": "lemon",
@@ -175,7 +206,9 @@
       "alt": "ם",
       "name": "Mem",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "m"
+      ],
       "handshape": null,
       "example_word": "מים",
       "example_gloss": "water",
@@ -188,7 +221,9 @@
       "alt": "ן",
       "name": "Nun",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "n"
+      ],
       "handshape": null,
       "example_word": "נר",
       "example_gloss": "candle",
@@ -201,7 +236,9 @@
       "alt": "",
       "name": "Samekh",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "s"
+      ],
       "handshape": null,
       "example_word": "סוס",
       "example_gloss": "horse",
@@ -214,7 +251,10 @@
       "alt": "",
       "name": "Ayin",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʔ",
+        "—"
+      ],
       "handshape": null,
       "example_word": "עץ",
       "example_gloss": "tree",
@@ -227,7 +267,10 @@
       "alt": "ף",
       "name": "Pe",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p",
+        "f"
+      ],
       "handshape": null,
       "example_word": "פרח",
       "example_gloss": "flower",
@@ -240,7 +283,9 @@
       "alt": "ץ",
       "name": "Tsadi",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ts"
+      ],
       "handshape": null,
       "example_word": "ציפור",
       "example_gloss": "bird",
@@ -253,7 +298,9 @@
       "alt": "",
       "name": "Qof",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "k"
+      ],
       "handshape": null,
       "example_word": "קוף",
       "example_gloss": "monkey",
@@ -266,7 +313,9 @@
       "alt": "",
       "name": "Resh",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʁ"
+      ],
       "handshape": null,
       "example_word": "רכבת",
       "example_gloss": "train",
@@ -279,7 +328,10 @@
       "alt": "",
       "name": "Shin",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "ʃ",
+        "s"
+      ],
       "handshape": null,
       "example_word": "שמש",
       "example_gloss": "sun",
@@ -292,7 +344,9 @@
       "alt": "",
       "name": "Tav",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "t"
+      ],
       "handshape": null,
       "example_word": "תפוח",
       "example_gloss": "apple",
