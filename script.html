@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Script</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .script-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .script-head .big {
+      font-size: 3.5rem;
+      line-height: 1;
+      color: #1a2b3c;
+    }
+
+    .script-head h2 {
+      margin: 0 0 0.3rem;
+      font-size: 1.5rem;
+    }
+
+    .meta-line {
+      color: #666;
+      font-size: 0.92rem;
+      margin: 0.1rem 0;
+    }
+
+    .note {
+      max-width: 680px;
+      color: #555;
+      background: #f8f9fa;
+      border-left: 3px solid #ccc;
+      padding: 0.8rem 1rem;
+      margin: 1rem 0 2rem;
+      font-size: 0.92rem;
+    }
+
+    .crumb {
+      font-size: 0.88rem;
+      margin-bottom: 1rem;
+    }
+
+    .crumb a { color: #0056b3; }
+
+    .letter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1rem;
+    }
+
+    .letter-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .letter-top {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    .letter-glyphs {
+      font-size: 2.2rem;
+      line-height: 1;
+      color: #1a2b3c;
+    }
+
+    .letter-alt {
+      font-size: 1.4rem;
+      color: #7b848c;
+    }
+
+    .letter-name {
+      font-size: 0.9rem;
+      color: #555;
+      margin-left: auto;
+      text-align: right;
+    }
+
+    .row {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      align-items: baseline;
+    }
+
+    .row .k {
+      color: #9aa3ab;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      min-width: 74px;
+      flex-shrink: 0;
+    }
+
+    .row .v { color: #333; }
+    .row .v.empty { color: #c3c9cf; font-style: italic; }
+
+    .ipa { font-family: "Gentium Plus", "Doulos SIL", Georgia, serif; }
+
+    .slot {
+      border: 1px dashed #d8dde2;
+      border-radius: 6px;
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c3c9cf;
+      font-size: 0.78rem;
+      text-align: center;
+      padding: 0.4rem;
+    }
+
+    .slot img {
+      max-width: 100%;
+      max-height: 110px;
+      border-radius: 4px;
+    }
+
+    .slot-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .example-word { font-size: 1rem; }
+    .example-word b { color: #e8590c; }
+
+    .fill-state {
+      font-size: 0.85rem;
+      color: #777;
+      margin: 0 0 1.5rem;
+    }
+
+    .col-stat {
+      display: inline-block;
+      margin-right: 1.1rem;
+      white-space: nowrap;
+    }
+
+    .fill-bar {
+      display: inline-block;
+      width: 70px;
+      height: 8px;
+      border-radius: 4px;
+      background: #eee;
+      overflow: hidden;
+      vertical-align: middle;
+      margin: 0 0.4rem;
+    }
+
+    .fill-bar span {
+      display: block;
+      height: 100%;
+      background: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="pageTitle">Script</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="has-sub">
+            <a href="lugha.html">Lugha</a>
+            <ul class="subnav">
+              <li><a href="practice.html">Practice Area</a></li>
+              <li><a href="signs.html">Country Signs</a></li>
+              <li><a href="reference.html" aria-current="page">Reference</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p class="crumb"><a href="reference.html">&larr; All scripts</a></p>
+      <div id="body"><p>Loading&hellip;</p></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 David Ludeke</p>
+    </footer>
+  </div>
+
+  <script>
+    const slug = new URLSearchParams(location.search).get('s');
+
+    function row(label, value, cls) {
+      const filled = value !== null && value !== undefined && value !== ''
+        && !(Array.isArray(value) && !value.length);
+      const text = filled
+        ? (Array.isArray(value) ? value.join(', ') : value)
+        : '—';
+      return `<div class="row">
+          <span class="k">${label}</span>
+          <span class="v ${filled ? (cls || '') : 'empty'}">${text}</span>
+        </div>`;
+    }
+
+    /** Bolds the letter inside the example word when it appears there. */
+    function boldedWord(word, glyph, alt) {
+      if (!word) return null;
+      for (const g of [glyph, alt].filter(Boolean)) {
+        const i = word.indexOf(g);
+        if (i !== -1) {
+          return word.slice(0, i) + '<b>' + g + '</b>' + word.slice(i + g.length);
+        }
+      }
+      return word;
+    }
+
+    function render(d) {
+      document.title = d.name + ' — Script Reference';
+      document.getElementById('pageTitle').textContent = d.name;
+
+      // Counted per column, not "has anything": with the handshapes wired in,
+      // an any-field measure would read 100% while IPA and examples are empty.
+      const n = d.letters.length;
+      const cols = [
+        ['handshapes', d.letters.filter(L => L.handshape).length],
+        ['IPA', d.letters.filter(L => (L.ipa || []).length).length],
+        ['words', d.letters.filter(L => L.example_word).length],
+        ['pictures', d.letters.filter(L => L.example_image).length]
+      ];
+
+      const cards = d.letters.map(L => {
+        const word = boldedWord(L.example_word, L.glyph, L.alt);
+        return `
+          <div class="letter-card">
+            <div class="letter-top">
+              <span class="letter-glyphs">${L.glyph}</span>
+              ${L.alt ? `<span class="letter-alt">${L.alt}</span>` : ''}
+              <span class="letter-name">${L.name || ''}</span>
+            </div>
+            ${row('Romanisation', L.romanization)}
+            ${row('IPA', (L.ipa || []).map(v => '/' + v + '/'), 'ipa')}
+            <div class="slot-pair">
+              <div class="slot">${L.handshape
+                ? `<img src="${L.handshape}" alt="Handshape for ${L.name}" />`
+                : 'handshape'}</div>
+              <div class="slot">${L.example_image
+                ? `<img src="${L.example_image}" alt="${L.example_gloss || ''}" />`
+                : 'picture'}</div>
+            </div>
+            <div class="example-word">${word || '<span class="v empty">example word</span>'}</div>
+            ${L.example_gloss ? row('Means', L.example_gloss) : ''}
+          </div>`;
+      }).join('');
+
+      document.getElementById('body').innerHTML = `
+        <div class="script-head">
+          <div class="big">${d.representative}</div>
+          <div>
+            <h2>${d.name}</h2>
+            <p class="meta-line">${d.sign_language.abbr} &middot; ${d.sign_language.name}</p>
+            <p class="meta-line">${d.languages.join(', ')}</p>
+          </div>
+        </div>
+        <p class="note">${d.note}</p>
+        <p class="fill-state">
+          ${n} letters &middot;
+          ${cols.map(([label, got]) => `
+            <span class="col-stat">${label} ${got}/${n}
+              <span class="fill-bar"><span style="width:${Math.round(got / n * 100)}%"></span></span>
+            </span>`).join('')}
+        </p>
+        <div class="letter-grid">${cards}</div>`;
+    }
+
+    if (!slug) {
+      document.getElementById('body').innerHTML =
+        '<p>No script chosen. <a href="reference.html">Pick one.</a></p>';
+    } else {
+      fetch(`assets/data/scripts/${slug}.json`)
+        .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
+        .then(render)
+        .catch(() => {
+          document.getElementById('body').innerHTML =
+            '<p>Could not load that script. <a href="reference.html">Back to all scripts.</a></p>';
+        });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+{
+  "scripts": [
+    {
+      "slug": "greek",
+      "name": "Greek",
+      "representative": "α",
+      "sign_language": "GSL",
+      "languages": [
+        "Greek"
+      ],
+      "letter_count": 24
+    },
+    {
+      "slug": "latin",
+      "name": "Latin",
+      "representative": "A",
+      "sign_language": "ASL, BSL",
+      "languages": [
+        "English",
+        "and most of Europe"
+      ],
+      "letter_count": 26
+    },
+    {
+      "slug": "hebrew",
+      "name": "Hebrew",
+      "representative": "א",
+      "sign_language": "ISL",
+      "languages": [
+        "Hebrew",
+        "Ladino",
+        "Yiddish"
+      ],
+      "letter_count": 22
+    },
+    {
+      "slug": "geez",
+      "name": "Ge'ez",
+      "representative": "ሀ",
+      "sign_language": "EthSL",
+      "languages": [
+        "Amharic",
+        "Tigrinya",
+        "Ge'ez"
+      ],
+      "letter_count": 33
+    },
+    {
+      "slug": "arabic",
+      "name": "Arabic",
+      "representative": "ا",
+      "sign_language": "ArSL",
+      "languages": [
+        "Arabic"
+      ],
+      "letter_count": 28
+    },
+    {
+      "slug": "devanagari",
+      "name": "Devanagari",
+      "representative": "अ",
+      "sign_language": "NSL",
+      "languages": [
+        "Hindi",
+        "Sanskrit",
+        "Nepali"
+      ],
+      "letter_count": 44
+    },
+    {
+      "slug": "farsi",
+      "name": "Farsi",
+      "representative": "پ",
+      "sign_language": "ZEI",
+      "languages": [
+        "Persian / Farsi"
+      ],
+      "letter_count": 32
+    },
+    {
+      "slug": "kana",
+      "name": "Kana",
+      "representative": "あ",
+      "sign_language": "JSL",
+      "languages": [
+        "Japanese"
+      ],
+      "letter_count": 46
+    },
+    {
+      "slug": "cyrillic",
+      "name": "Cyrillic",
+      "representative": "Б",
+      "sign_language": "RSL",
+      "languages": [
+        "Russian",
+        "Bulgarian",
+        "Serbian",
+        "and others"
+      ],
+      "letter_count": 33
+    },
+    {
+      "slug": "thai",
+      "name": "Thai",
+      "representative": "ก",
+      "sign_language": "ThSL",
+      "languages": [
+        "Thai"
+      ],
+      "letter_count": 44
+    },
+    {
+      "slug": "hangul",
+      "name": "Hangul",
+      "representative": "ㄱ",
+      "sign_language": "KSL",
+      "languages": [
+        "Korean"
+      ],
+      "letter_count": 24
+    },
+    {
+      "slug": "pinyin",
+      "name": "Pinyin",
+      "representative": "ā",
+      "sign_language": "CSL",
+      "languages": [
+        "Mandarin Chinese"
+      ],
+      "letter_count": 25
+    }
+  ]
+}

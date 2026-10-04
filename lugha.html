@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Lugha</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .lede {
+      max-width: 640px;
+      color: #555;
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .hub-card {
+      display: block;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      border-top: 4px solid #007bff;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .hub-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+    }
+
+    .hub-card.signs { border-top-color: #28a745; }
+    .hub-card.reference { border-top-color: #e8590c; }
+
+    .hub-card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .hub-card p {
+      margin: 0;
+      color: #666;
+      font-size: 0.93rem;
+      line-height: 1.5;
+    }
+
+    .hub-glyphs {
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.15em;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Lugha</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="has-sub">
+            <a href="lugha.html" aria-current="page">Lugha</a>
+            <ul class="subnav">
+              <li><a href="practice.html">Practice Area</a></li>
+              <li><a href="signs.html">Country Signs</a></li>
+              <li><a href="reference.html">Reference</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p class="lede">
+        Everything language here: scripts and the manual alphabets that go with
+        them, drills for reading them, and the signs countries use for
+        themselves.
+      </p>
+
+      <div class="hub-grid">
+        <a class="hub-card practice" href="practice.html">
+          <div class="hub-glyphs">&#x3B1; &#x3042;</div>
+          <h2>Practice Area</h2>
+          <p>
+            Transliteration drills between Latin and Greek or Japanese kana,
+            plus the Greek and Japanese manual alphabets.
+          </p>
+        </a>
+
+        <a class="hub-card signs" href="signs.html">
+          <div class="hub-glyphs">&#x1F30D;</div>
+          <h2>Country Signs</h2>
+          <p>
+            A flag-and-map game for the name sign each country uses for itself,
+            covering all 194 UN member states.
+          </p>
+        </a>
+
+        <a class="hub-card reference" href="reference.html">
+          <div class="hub-glyphs">&#x05D0; &#x0915; &#x0E01;</div>
+          <h2>Reference</h2>
+          <p>
+            Twelve scripts laid out in full &mdash; every letter with its
+            handshape, IPA values and a word that uses it. Not flashcards, just
+            the information.
+          </p>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 David Ludeke</p>
+    </footer>
+  </div>
+</body>
+</html>

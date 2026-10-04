@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Script Reference</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .lede {
+      max-width: 660px;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .script-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .script-tile {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1 / 1;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: inherit;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .script-tile:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tile-glyph {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 0.6rem;
+      color: #1a2b3c;
+    }
+
+    .tile-name {
+      font-weight: bold;
+      font-size: 1.05rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .tile-sl {
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .tile-count {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.75rem;
+      font-size: 0.72rem;
+      color: #b4bcc4;
+    }
+
+    .loading {
+      color: #999;
+      padding: 2rem 0;
+    }
+
+    @media (max-width: 760px) {
+      .script-grid { grid-template-columns: repeat(2, 1fr); }
+      .tile-glyph { font-size: 3rem; }
+    }
+
+    @media (max-width: 460px) {
+      .script-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Script Reference</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="has-sub">
+            <a href="lugha.html">Lugha</a>
+            <ul class="subnav">
+              <li><a href="practice.html">Practice Area</a></li>
+              <li><a href="signs.html">Country Signs</a></li>
+              <li><a href="reference.html" aria-current="page">Reference</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p class="lede">
+        Twelve scripts, each shown by its first or most representative letter.
+        Open one for the full inventory: every letter with its handshape in the
+        matching sign language, its IPA values, and a word that uses it.
+      </p>
+
+      <div class="script-grid" id="grid">
+        <p class="loading">Loading scripts&hellip;</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 David Ludeke</p>
+    </footer>
+  </div>
+
+  <script>
+    fetch('assets/data/scripts/index.json')
+      .then(r => r.json())
+      .then(data => {
+        const grid = document.getElementById('grid');
+        grid.innerHTML = '';
+        data.scripts.forEach(s => {
+          const a = document.createElement('a');
+          a.className = 'script-tile';
+          a.href = `script.html?s=${encodeURIComponent(s.slug)}`;
+
+          const count = document.createElement('span');
+          count.className = 'tile-count';
+          count.textContent = s.letter_count;
+
+          const glyph = document.createElement('div');
+          glyph.className = 'tile-glyph';
+          glyph.textContent = s.representative;
+
+          const name = document.createElement('div');
+          name.className = 'tile-name';
+          name.textContent = s.name;
+
+          const sl = document.createElement('div');
+          sl.className = 'tile-sl';
+          sl.textContent = s.sign_language;
+
+          a.append(count, glyph, name, sl);
+          grid.appendChild(a);
+        });
+      })
+      .catch(() => {
+        document.getElementById('grid').innerHTML =
+          '<p class="loading">Could not load the script index.</p>';
+      });
+  </script>
+</body>
+</html>

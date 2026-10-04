@@ -1,0 +1,245 @@
+#!/usr/bin/env python3
+"""Generate the per-script reference data files for reference.html / script.html.
+
+Each script gets assets/data/scripts/<slug>.json holding its letters. Letters
+are enumerated here because that part is fixed and known; the per-letter
+content to be filled in later (IPA values, handshape image, example noun and
+its picture) is emitted empty.
+
+Hand-edited fields are read back off any existing file and carried forward, so
+re-running this never discards work. Same contract as
+generate_country_signs.py.
+"""
+import json
+import os
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
+
+# Per-letter fields a human fills in; preserved across regeneration.
+HAND_EDITED = ("ipa", "handshape", "example_word", "example_gloss",
+               "example_image", "notes", "romanization")
+
+# slug, display name, representative letter, sign language, languages, note
+SCRIPTS = [
+    ("greek", "Greek", "α", "GSL", "Ελληνική νοηματική γλώσσα",
+     ["Greek"], "Alphabet: 24 letters, each with an upper and lower case."),
+    ("latin", "Latin", "A", "ASL, BSL", "American / British Sign Language",
+     ["English", "and most of Europe"], "Alphabet: 26 letters. ASL and BSL differ; BSL fingerspelling is two-handed."),
+    ("hebrew", "Hebrew", "א", "ISL", "שפת סימנים ישראלית",
+     ["Hebrew", "Ladino", "Yiddish"], "Abjad: 22 consonants, written right to left. Five have final forms."),
+    ("geez", "Ge'ez", "ሀ", "EthSL", "የኢትዮጵያ ምልክት ቅይቅ",
+     ["Amharic", "Tigrinya", "Ge'ez"], "Abugida: 26 base consonants, each inflected through seven vowel orders. Only the first order is listed here."),
+    ("arabic", "Arabic", "ا", "ArSL", "لغة الإشارة العربية",
+     ["Arabic"], "Abjad: 28 letters, written right to left, each with initial, medial, final and isolated forms."),
+    ("devanagari", "Devanagari", "अ", "NSL", "नेपाली सांकेतिक भाषा",
+     ["Hindi", "Sanskrit", "Nepali"], "Abugida: vowels, then consonants carrying an inherent 'a'."),
+    ("farsi", "Farsi", "پ", "ZEI", "زبان اشاره ایرانی",
+     ["Persian / Farsi"], "Perso-Arabic: the 28 Arabic letters plus four Persian additions. Shown by پ (pe), one of those four, since ا is shared with Arabic."),
+    ("kana", "Kana", "あ", "JSL", "日本手話",
+     ["Japanese"], "Syllabary: 46 basic hiragana, each with a katakana counterpart."),
+    ("cyrillic", "Cyrillic", "Б", "RSL", "Русский жестовый язык",
+     ["Russian", "Bulgarian", "Serbian", "and others"], "Alphabet: 33 letters in the Russian inventory; other languages add or drop a few."),
+    ("thai", "Thai", "ก", "ThSL", "ภาษามือไทย",
+     ["Thai"], "Abugida: 44 consonants, listed here with their acrophonic names."),
+    ("hangul", "Hangul", "ㄱ", "KSL", "한국수어",
+     ["Korean"], "Featural alphabet: 14 basic consonants and 10 basic vowels, composed into syllable blocks."),
+    ("pinyin", "Pinyin", "ā", "CSL", "中国手语",
+     ["Mandarin Chinese"], "Romanisation rather than a script: Latin letters plus tone marks. CSL fingerspelling is built on these."),
+]
+
+# letters: (glyph, lowercase_or_alt, name)  -- alt is "" when there is no pair
+LETTERS = {
+"greek": [("Α","α","Alpha"),("Β","β","Beta"),("Γ","γ","Gamma"),("Δ","δ","Delta"),
+ ("Ε","ε","Epsilon"),("Ζ","ζ","Zeta"),("Η","η","Eta"),("Θ","θ","Theta"),
+ ("Ι","ι","Iota"),("Κ","κ","Kappa"),("Λ","λ","Lambda"),("Μ","μ","Mu"),
+ ("Ν","ν","Nu"),("Ξ","ξ","Xi"),("Ο","ο","Omicron"),("Π","π","Pi"),
+ ("Ρ","ρ","Rho"),("Σ","σ","Sigma"),("Τ","τ","Tau"),("Υ","υ","Upsilon"),
+ ("Φ","φ","Phi"),("Χ","χ","Chi"),("Ψ","ψ","Psi"),("Ω","ω","Omega")],
+
+"latin": [(chr(65+i), chr(97+i), chr(65+i)) for i in range(26)],
+
+"hebrew": [("א","","Alef"),("ב","","Bet"),("ג","","Gimel"),("ד","","Dalet"),("ה","","He"),
+ ("ו","","Vav"),("ז","","Zayin"),("ח","","Het"),("ט","","Tet"),("י","","Yod"),
+ ("כ","ך","Kaf"),("ל","","Lamed"),("מ","ם","Mem"),("נ","ן","Nun"),
+ ("ס","","Samekh"),("ע","","Ayin"),("פ","ף","Pe"),("צ","ץ","Tsadi"),
+ ("ק","","Qof"),("ר","","Resh"),("ש","","Shin"),("ת","","Tav")],
+
+"geez": [("ሀ","","hä"),("ለ","","lä"),("ሐ","","ḥä"),("መ","","mä"),
+ ("ሠ","","śä"),("ረ","","rä"),("ሰ","","sä"),("ሸ","","šä"),
+ ("ቀ","","qä"),("በ","","bä"),("ተ","","tä"),("ቸ","","čä"),
+ ("ኀ","","ḫä"),("ነ","","nä"),("ኘ","","ñä"),
+ ("አ","","'ä"),("ከ","","kä"),("ኸ","","ḵä"),("ወ","","wä"),
+ ("ዐ","","ʿä"),("ዘ","","zä"),("ዠ","","žä"),("የ","","yä"),
+ ("ደ","","dä"),("ጀ","","ǵä"),("ገ","","gä"),("ጠ","","ṭä"),
+ ("ጨ","","čʼä"),("ጰ","","ṗä"),("ጸ","","ṣä"),
+ ("ፀ","","ḍä"),("ፈ","","fä"),("ፐ","","pä")],
+
+"arabic": [("ا","","Alif"),("ب","","Ba"),("ت","","Ta"),("ث","","Tha"),("ج","","Jim"),
+ ("ح","","Ha"),("خ","","Kha"),("د","","Dal"),("ذ","","Dhal"),("ر","","Ra"),
+ ("ز","","Zay"),("س","","Sin"),("ش","","Shin"),("ص","","Sad"),("ض","","Dad"),
+ ("ط","","Ta (emphatic)"),("ظ","","Za (emphatic)"),("ع","","Ayn"),("غ","","Ghayn"),
+ ("ف","","Fa"),("ق","","Qaf"),("ك","","Kaf"),("ل","","Lam"),("م","","Mim"),
+ ("ن","","Nun"),("ه","","Ha"),("و","","Waw"),("ي","","Ya")],
+
+"farsi": [("ا","","Alef"),("ب","","Be"),("پ","","Pe"),("ت","","Te"),("ث","","Se"),
+ ("ج","","Jim"),("چ","","Che"),("ح","","He"),("خ","","Khe"),("د","","Dal"),
+ ("ذ","","Zal"),("ر","","Re"),("ز","","Ze"),("ژ","","Zhe"),("س","","Sin"),
+ ("ش","","Shin"),("ص","","Sad"),("ض","","Zad"),("ط","","Ta"),("ظ","","Za"),
+ ("ع","","Eyn"),("غ","","Gheyn"),("ف","","Fe"),("ق","","Ghaf"),("ک","","Kaf"),
+ ("گ","","Gaf"),("ل","","Lam"),("م","","Mim"),("ن","","Nun"),("و","","Vav"),
+ ("ه","","He"),("ی","","Ye")],
+
+"devanagari": [("अ","","a"),("आ","","ā"),("इ","","i"),("ई","","ī"),("उ","","u"),
+ ("ऊ","","ū"),("ऋ","","ṛ"),("ए","","e"),("ऐ","","ai"),("ओ","","o"),("औ","","au"),
+ ("क","","ka"),("ख","","kha"),("ग","","ga"),("घ","","gha"),("ङ","","ṅa"),
+ ("च","","ca"),("छ","","cha"),("ज","","ja"),("झ","","jha"),("ञ","","ña"),
+ ("ट","","ṭa"),("ठ","","ṭha"),("ड","","ḍa"),("ढ","","ḍha"),("ण","","ṇa"),
+ ("त","","ta"),("थ","","tha"),("द","","da"),("ध","","dha"),("न","","na"),
+ ("प","","pa"),("फ","","pha"),("ब","","ba"),("भ","","bha"),("म","","ma"),
+ ("य","","ya"),("र","","ra"),("ल","","la"),("व","","va"),
+ ("श","","śa"),("ष","","ṣa"),("स","","sa"),("ह","","ha")],
+
+"kana": [("あ","ア","a"),("い","イ","i"),("う","ウ","u"),("え","エ","e"),("お","オ","o"),
+ ("か","カ","ka"),("き","キ","ki"),("く","ク","ku"),("け","ケ","ke"),("こ","コ","ko"),
+ ("さ","サ","sa"),("し","シ","shi"),("す","ス","su"),("せ","セ","se"),("そ","ソ","so"),
+ ("た","タ","ta"),("ち","チ","chi"),("つ","ツ","tsu"),("て","テ","te"),("と","ト","to"),
+ ("な","ナ","na"),("に","ニ","ni"),("ぬ","ヌ","nu"),("ね","ネ","ne"),("の","ノ","no"),
+ ("は","ハ","ha"),("ひ","ヒ","hi"),("ふ","フ","fu"),("へ","ヘ","he"),("ほ","ホ","ho"),
+ ("ま","マ","ma"),("み","ミ","mi"),("む","ム","mu"),("め","メ","me"),("も","モ","mo"),
+ ("や","ヤ","ya"),("ゆ","ユ","yu"),("よ","ヨ","yo"),
+ ("ら","ラ","ra"),("り","リ","ri"),("る","ル","ru"),("れ","レ","re"),("ろ","ロ","ro"),
+ ("わ","ワ","wa"),("を","ヲ","wo"),("ん","ン","n")],
+
+"cyrillic": [("А","а","A"),("Б","б","Be"),("В","в","Ve"),("Г","г","Ge"),
+ ("Д","д","De"),("Е","е","Ye"),("Ё","ё","Yo"),("Ж","ж","Zhe"),
+ ("З","з","Ze"),("И","и","I"),("Й","й","Short I"),("К","к","Ka"),
+ ("Л","л","El"),("М","м","Em"),("Н","н","En"),("О","о","O"),
+ ("П","п","Pe"),("Р","р","Er"),("С","с","Es"),("Т","т","Te"),
+ ("У","у","U"),("Ф","ф","Ef"),("Х","х","Kha"),("Ц","ц","Tse"),
+ ("Ч","ч","Che"),("Ш","ш","Sha"),("Щ","щ","Shcha"),("Ъ","ъ","Hard sign"),
+ ("Ы","ы","Yery"),("Ь","ь","Soft sign"),("Э","э","E"),("Ю","ю","Yu"),
+ ("Я","я","Ya")],
+
+"thai": [("ก","","ko kai"),("ข","","kho khai"),("ฃ","","kho khuat"),("ค","","kho khwai"),
+ ("ฅ","","kho khon"),("ฆ","","kho rakhang"),("ง","","ngo ngu"),("จ","","cho chan"),
+ ("ฉ","","cho ching"),("ช","","cho chang"),("ซ","","so so"),("ฌ","","cho choe"),
+ ("ญ","","yo ying"),("ฎ","","do chada"),("ฏ","","to patak"),("ฐ","","tho than"),
+ ("ฑ","","tho nangmontho"),("ฒ","","tho phuthao"),("ณ","","no nen"),("ด","","do dek"),
+ ("ต","","to tao"),("ถ","","tho thung"),("ท","","tho thahan"),("ธ","","tho thong"),
+ ("น","","no nu"),("บ","","bo baimai"),("ป","","po pla"),("ผ","","pho phueng"),
+ ("ฝ","","fo fa"),("พ","","pho phan"),("ฟ","","fo fan"),("ภ","","pho samphao"),
+ ("ม","","mo ma"),("ย","","yo yak"),("ร","","ro ruea"),("ล","","lo ling"),
+ ("ว","","wo waen"),("ศ","","so sala"),("ษ","","so ruesi"),("ส","","so suea"),
+ ("ห","","ho hip"),("ฬ","","lo chula"),("อ","","o ang"),("ฮ","","ho nokhuk")],
+
+"hangul": [("ㄱ","","giyeok"),("ㄴ","","nieun"),("ㄷ","","digeut"),("ㄹ","","rieul"),
+ ("ㅁ","","mieum"),("ㅂ","","bieup"),("ㅅ","","siot"),("ㅇ","","ieung"),
+ ("ㅈ","","jieut"),("ㅊ","","chieut"),("ㅋ","","kieuk"),("ㅌ","","tieut"),
+ ("ㅍ","","pieup"),("ㅎ","","hieut"),
+ ("ㅏ","","a"),("ㅑ","","ya"),("ㅓ","","eo"),("ㅕ","","yeo"),("ㅗ","","o"),
+ ("ㅛ","","yo"),("ㅜ","","u"),("ㅠ","","yu"),("ㅡ","","eu"),("ㅣ","","i")],
+
+"pinyin": [(chr(65+i), chr(97+i), chr(65+i)) for i in range(26) if chr(65+i) != 'V'],
+}
+
+
+def load_hand_edits(path):
+    """Map letter glyph -> hand-edited fields from an existing file."""
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except (ValueError, OSError):
+        return {}
+    kept = {}
+    for L in doc.get("letters", []):
+        edits = {k: L[k] for k in HAND_EDITED if L.get(k) not in (None, "", [])}
+        if edits:
+            kept[L.get("glyph")] = edits
+    return kept
+
+
+def existing_handshapes(slug):
+    """Reuse manual-alphabet images the repo already holds.
+
+    The practice area sliced the Greek Sign Language chart into one image per
+    letter, so Greek starts with its handshape column already filled in.
+    """
+    if slug != "greek":
+        return {}
+    path = os.path.join(HERE, "gsl-handshapes-mapping.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as fh:
+        data = json.load(fh)
+    out = {}
+    for v in (data.get("handshapes") or {}).values():
+        if isinstance(v, dict) and v.get("image") and v.get("greek"):
+            out[v["greek"]] = v["image"]
+    return out
+
+
+def main():
+    os.makedirs(OUT_DIR, exist_ok=True)
+    index, preserved_total = [], 0
+
+    for slug, name, rep, sl_abbr, sl_name, languages, note in SCRIPTS:
+        path = os.path.join(OUT_DIR, f"{slug}.json")
+        preserved = load_hand_edits(path)
+        shapes = existing_handshapes(slug)
+
+        letters = []
+        for glyph, alt, label in LETTERS[slug]:
+            entry = {
+                "glyph": glyph,
+                "alt": alt,            # lowercase, katakana, or final form
+                "name": label,
+                "romanization": None,
+                "ipa": [],             # possible IPA values, filled in later
+                "handshape": None,     # path to the manual-alphabet image
+                "example_word": None,  # noun in the language using this letter
+                "example_gloss": None, # its meaning in English
+                "example_image": None, # picture of that noun
+                "notes": "",
+            }
+            if shapes.get(glyph):
+                entry["handshape"] = shapes[glyph]
+            entry.update(preserved.get(glyph, {}))
+            if preserved.get(glyph):
+                preserved_total += 1
+            letters.append(entry)
+
+        doc = {
+            "slug": slug,
+            "name": name,
+            "representative": rep,
+            "sign_language": {"abbr": sl_abbr, "name": sl_name},
+            "languages": languages,
+            "note": note,
+            "status": "skeleton",
+            "letters": letters,
+        }
+        with open(path, "w", encoding="utf-8") as fh:
+            json.dump(doc, fh, ensure_ascii=False, indent=2)
+            fh.write("\n")
+
+        index.append({
+            "slug": slug, "name": name, "representative": rep,
+            "sign_language": sl_abbr, "languages": languages,
+            "letter_count": len(letters),
+        })
+        print(f"{name:<12} {len(letters):>3} letters -> {slug}.json")
+
+    with open(os.path.join(OUT_DIR, "index.json"), "w", encoding="utf-8") as fh:
+        json.dump({"scripts": index}, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+
+    print(f"\n{len(index)} scripts, {sum(s['letter_count'] for s in index)} letters total")
+    print(f"hand-edited letters preserved: {preserved_total}")
+
+
+if __name__ == "__main__":
+    sys.exit(main())
