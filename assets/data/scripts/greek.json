@@ -16,288 +16,366 @@
       "glyph": "Α",
       "alt": "α",
       "name": "Alpha",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "a",
+      "ipa": [
+        "a"
+      ],
       "handshape": "images/gsl_handshapes/alpha.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "αστέρι",
+      "example_gloss": "star",
       "example_image": null,
+      "example_emoji": "⭐",
       "notes": ""
     },
     {
       "glyph": "Β",
       "alt": "β",
       "name": "Beta",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "v",
+      "ipa": [
+        "v"
+      ],
       "handshape": "images/gsl_handshapes/beta.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "βιβλίο",
+      "example_gloss": "book",
       "example_image": null,
+      "example_emoji": "📖",
       "notes": ""
     },
     {
       "glyph": "Γ",
       "alt": "γ",
       "name": "Gamma",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "g",
+      "ipa": [
+        "ɣ",
+        "ʝ"
+      ],
       "handshape": "images/gsl_handshapes/gamma.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "γάτα",
+      "example_gloss": "cat",
       "example_image": null,
+      "example_emoji": "🐈",
       "notes": ""
     },
     {
       "glyph": "Δ",
       "alt": "δ",
       "name": "Delta",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "d",
+      "ipa": [
+        "ð"
+      ],
       "handshape": "images/gsl_handshapes/delta.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "δέντρο",
+      "example_gloss": "tree",
       "example_image": null,
+      "example_emoji": "🌳",
       "notes": ""
     },
     {
       "glyph": "Ε",
       "alt": "ε",
       "name": "Epsilon",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "e",
+      "ipa": [
+        "e"
+      ],
       "handshape": "images/gsl_handshapes/epsilon.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ελέφαντας",
+      "example_gloss": "elephant",
       "example_image": null,
+      "example_emoji": "🐘",
       "notes": ""
     },
     {
       "glyph": "Ζ",
       "alt": "ζ",
       "name": "Zeta",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "z",
+      "ipa": [
+        "z"
+      ],
       "handshape": "images/gsl_handshapes/zeta.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ζέβρα",
+      "example_gloss": "zebra",
       "example_image": null,
+      "example_emoji": "🦓",
       "notes": ""
     },
     {
       "glyph": "Η",
       "alt": "η",
       "name": "Eta",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "i",
+      "ipa": [
+        "i"
+      ],
       "handshape": "images/gsl_handshapes/eta.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ήλιος",
+      "example_gloss": "sun",
       "example_image": null,
+      "example_emoji": "☀️",
       "notes": ""
     },
     {
       "glyph": "Θ",
       "alt": "θ",
       "name": "Theta",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "th",
+      "ipa": [
+        "θ"
+      ],
       "handshape": "images/gsl_handshapes/theta.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "θέατρο",
+      "example_gloss": "theatre",
       "example_image": null,
+      "example_emoji": "🎭",
       "notes": ""
     },
     {
       "glyph": "Ι",
       "alt": "ι",
       "name": "Iota",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "i",
+      "ipa": [
+        "i"
+      ],
       "handshape": "images/gsl_handshapes/iota.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ιπποπόταμος",
+      "example_gloss": "hippopotamus",
       "example_image": null,
+      "example_emoji": "🦛",
       "notes": ""
     },
     {
       "glyph": "Κ",
       "alt": "κ",
       "name": "Kappa",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "k",
+      "ipa": [
+        "k",
+        "c"
+      ],
       "handshape": "images/gsl_handshapes/kappa.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "καρδιά",
+      "example_gloss": "heart",
       "example_image": null,
+      "example_emoji": "❤️",
       "notes": ""
     },
     {
       "glyph": "Λ",
       "alt": "λ",
       "name": "Lambda",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "l",
+      "ipa": [
+        "l",
+        "ʎ"
+      ],
       "handshape": "images/gsl_handshapes/lambda.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "λουλούδι",
+      "example_gloss": "flower",
       "example_image": null,
+      "example_emoji": "🌼",
       "notes": ""
     },
     {
       "glyph": "Μ",
       "alt": "μ",
       "name": "Mu",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "m",
+      "ipa": [
+        "m"
+      ],
       "handshape": "images/gsl_handshapes/mu.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "μήλο",
+      "example_gloss": "apple",
       "example_image": null,
+      "example_emoji": "🍎",
       "notes": ""
     },
     {
       "glyph": "Ν",
       "alt": "ν",
       "name": "Nu",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "n",
+      "ipa": [
+        "n",
+        "ɲ"
+      ],
       "handshape": "images/gsl_handshapes/nu.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "νερό",
+      "example_gloss": "water",
       "example_image": null,
+      "example_emoji": "💧",
       "notes": ""
     },
     {
       "glyph": "Ξ",
       "alt": "ξ",
       "name": "Xi",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "x",
+      "ipa": [
+        "ks"
+      ],
       "handshape": "images/gsl_handshapes/xi.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ξύλο",
+      "example_gloss": "wood",
       "example_image": null,
+      "example_emoji": "🪵",
       "notes": ""
     },
     {
       "glyph": "Ο",
       "alt": "ο",
       "name": "Omicron",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "o",
+      "ipa": [
+        "o"
+      ],
       "handshape": "images/gsl_handshapes/omicron.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ουρανός",
+      "example_gloss": "sky",
       "example_image": null,
+      "example_emoji": "🌤️",
       "notes": ""
     },
     {
       "glyph": "Π",
       "alt": "π",
       "name": "Pi",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "p",
+      "ipa": [
+        "p"
+      ],
       "handshape": "images/gsl_handshapes/pi.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "πουλί",
+      "example_gloss": "bird",
       "example_image": null,
+      "example_emoji": "🐦",
       "notes": ""
     },
     {
       "glyph": "Ρ",
       "alt": "ρ",
       "name": "Rho",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "r",
+      "ipa": [
+        "r"
+      ],
       "handshape": "images/gsl_handshapes/rho.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ρολόι",
+      "example_gloss": "clock",
       "example_image": null,
+      "example_emoji": "🕰️",
       "notes": ""
     },
     {
       "glyph": "Σ",
       "alt": "σ",
       "name": "Sigma",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "s",
+      "ipa": [
+        "s",
+        "z"
+      ],
       "handshape": "images/gsl_handshapes/sigma.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "σπίτι",
+      "example_gloss": "house",
       "example_image": null,
+      "example_emoji": "🏠",
       "notes": ""
     },
     {
       "glyph": "Τ",
       "alt": "τ",
       "name": "Tau",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "t",
+      "ipa": [
+        "t"
+      ],
       "handshape": "images/gsl_handshapes/tau.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "τρένο",
+      "example_gloss": "train",
       "example_image": null,
+      "example_emoji": "🚆",
       "notes": ""
     },
     {
       "glyph": "Υ",
       "alt": "υ",
       "name": "Upsilon",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "y",
+      "ipa": [
+        "i"
+      ],
       "handshape": "images/gsl_handshapes/upsilon.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "υπολογιστής",
+      "example_gloss": "computer",
       "example_image": null,
+      "example_emoji": "💻",
       "notes": ""
     },
     {
       "glyph": "Φ",
       "alt": "φ",
       "name": "Phi",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "f",
+      "ipa": [
+        "f"
+      ],
       "handshape": "images/gsl_handshapes/phi.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "φεγγάρι",
+      "example_gloss": "moon",
       "example_image": null,
+      "example_emoji": "🌙",
       "notes": ""
     },
     {
       "glyph": "Χ",
       "alt": "χ",
       "name": "Chi",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "ch",
+      "ipa": [
+        "x",
+        "ç"
+      ],
       "handshape": "images/gsl_handshapes/chi.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "χέρι",
+      "example_gloss": "hand",
       "example_image": null,
+      "example_emoji": "✋",
       "notes": ""
     },
     {
       "glyph": "Ψ",
       "alt": "ψ",
       "name": "Psi",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "ps",
+      "ipa": [
+        "ps"
+      ],
       "handshape": "images/gsl_handshapes/psi.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ψάρι",
+      "example_gloss": "fish",
       "example_image": null,
+      "example_emoji": "🐟",
       "notes": ""
     },
     {
       "glyph": "Ω",
       "alt": "ω",
       "name": "Omega",
-      "romanization": null,
-      "ipa": [],
+      "romanization": "o",
+      "ipa": [
+        "o"
+      ],
       "handshape": "images/gsl_handshapes/omega.png",
-      "example_word": null,
-      "example_gloss": null,
+      "example_word": "ωκεανός",
+      "example_gloss": "ocean",
       "example_image": null,
+      "example_emoji": "🌊",
       "notes": ""
     }
   ]

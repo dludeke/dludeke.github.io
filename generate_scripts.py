@@ -19,7 +19,7 @@ OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
 
 # Per-letter fields a human fills in; preserved across regeneration.
 HAND_EDITED = ("ipa", "handshape", "example_word", "example_gloss",
-               "example_image", "notes", "romanization")
+               "example_image", "example_emoji", "notes", "romanization")
 
 # slug, display name, representative letter, sign language, languages, note
 SCRIPTS = [
@@ -145,6 +145,39 @@ LETTERS = {
 }
 
 
+# Per-letter content, filled in script by script. IPA values are Modern Greek;
+# where a letter's value shifts before front vowels both allophones are listed.
+# example_emoji stands in until a real picture is dropped into example_image.
+CONTENT = {
+"greek": {
+ "\u0391": ("a", ["a"], "\u03b1\u03c3\u03c4\u03ad\u03c1\u03b9", "star", "\u2b50"),
+ "\u0392": ("v", ["v"], "\u03b2\u03b9\u03b2\u03bb\u03af\u03bf", "book", "\U0001f4d6"),
+ "\u0393": ("g", ["\u0263", "\u029d"], "\u03b3\u03ac\u03c4\u03b1", "cat", "\U0001f408"),
+ "\u0394": ("d", ["\u00f0"], "\u03b4\u03ad\u03bd\u03c4\u03c1\u03bf", "tree", "\U0001f333"),
+ "\u0395": ("e", ["e"], "\u03b5\u03bb\u03ad\u03c6\u03b1\u03bd\u03c4\u03b1\u03c2", "elephant", "\U0001f418"),
+ "\u0396": ("z", ["z"], "\u03b6\u03ad\u03b2\u03c1\u03b1", "zebra", "\U0001f993"),
+ "\u0397": ("i", ["i"], "\u03ae\u03bb\u03b9\u03bf\u03c2", "sun", "\u2600\ufe0f"),
+ "\u0398": ("th", ["\u03b8"], "\u03b8\u03ad\u03b1\u03c4\u03c1\u03bf", "theatre", "\U0001f3ad"),
+ "\u0399": ("i", ["i"], "\u03b9\u03c0\u03c0\u03bf\u03c0\u03cc\u03c4\u03b1\u03bc\u03bf\u03c2", "hippopotamus", "\U0001f99b"),
+ "\u039a": ("k", ["k", "c"], "\u03ba\u03b1\u03c1\u03b4\u03b9\u03ac", "heart", "\u2764\ufe0f"),
+ "\u039b": ("l", ["l", "\u028e"], "\u03bb\u03bf\u03c5\u03bb\u03bf\u03cd\u03b4\u03b9", "flower", "\U0001f33c"),
+ "\u039c": ("m", ["m"], "\u03bc\u03ae\u03bb\u03bf", "apple", "\U0001f34e"),
+ "\u039d": ("n", ["n", "\u0272"], "\u03bd\u03b5\u03c1\u03cc", "water", "\U0001f4a7"),
+ "\u039e": ("x", ["ks"], "\u03be\u03cd\u03bb\u03bf", "wood", "\U0001fab5"),
+ "\u039f": ("o", ["o"], "\u03bf\u03c5\u03c1\u03b1\u03bd\u03cc\u03c2", "sky", "\U0001f324\ufe0f"),
+ "\u03a0": ("p", ["p"], "\u03c0\u03bf\u03c5\u03bb\u03af", "bird", "\U0001f426"),
+ "\u03a1": ("r", ["r"], "\u03c1\u03bf\u03bb\u03cc\u03b9", "clock", "\U0001f570\ufe0f"),
+ "\u03a3": ("s", ["s", "z"], "\u03c3\u03c0\u03af\u03c4\u03b9", "house", "\U0001f3e0"),
+ "\u03a4": ("t", ["t"], "\u03c4\u03c1\u03ad\u03bd\u03bf", "train", "\U0001f686"),
+ "\u03a5": ("y", ["i"], "\u03c5\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03c4\u03ae\u03c2", "computer", "\U0001f4bb"),
+ "\u03a6": ("f", ["f"], "\u03c6\u03b5\u03b3\u03b3\u03ac\u03c1\u03b9", "moon", "\U0001f319"),
+ "\u03a7": ("ch", ["x", "\u00e7"], "\u03c7\u03ad\u03c1\u03b9", "hand", "\u270b"),
+ "\u03a8": ("ps", ["ps"], "\u03c8\u03ac\u03c1\u03b9", "fish", "\U0001f41f"),
+ "\u03a9": ("o", ["o"], "\u03c9\u03ba\u03b5\u03b1\u03bd\u03cc\u03c2", "ocean", "\U0001f30a"),
+},
+}
+
+
 def load_hand_edits(path):
     """Map letter glyph -> hand-edited fields from an existing file."""
     if not os.path.exists(path):
@@ -203,8 +236,15 @@ def main():
                 "example_word": None,  # noun in the language using this letter
                 "example_gloss": None, # its meaning in English
                 "example_image": None, # picture of that noun
+                "example_emoji": None, # stand-in until a real picture exists
                 "notes": "",
             }
+            got = CONTENT.get(slug, {}).get(glyph)
+            if got:
+                rom, ipa, word, gloss, emoji = got
+                entry.update({"romanization": rom, "ipa": list(ipa),
+                              "example_word": word, "example_gloss": gloss,
+                              "example_emoji": emoji})
             if shapes.get(glyph):
                 entry["handshape"] = shapes[glyph]
             entry.update(preserved.get(glyph, {}))
