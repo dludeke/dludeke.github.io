@@ -21,11 +21,13 @@
         "aː",
         "ʔ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0627.png",
       "example_word": "أرنب",
       "example_gloss": "rabbit",
       "example_image": null,
       "example_emoji": "🐇",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -36,11 +38,13 @@
       "ipa": [
         "b"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0628.png",
       "example_word": "بطة",
       "example_gloss": "duck",
       "example_image": null,
       "example_emoji": "🦆",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -51,11 +55,13 @@
       "ipa": [
         "t"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/062a.png",
       "example_word": "تفاحة",
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -66,11 +72,13 @@
       "ipa": [
         "θ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/062b.png",
       "example_word": "ثعلب",
       "example_gloss": "fox",
       "example_image": null,
       "example_emoji": "🦊",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -83,11 +91,13 @@
         "ʒ",
         "ɡ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/062c.png",
       "example_word": "جمل",
       "example_gloss": "camel",
       "example_image": null,
       "example_emoji": "🐫",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -98,11 +108,13 @@
       "ipa": [
         "ħ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/062d.png",
       "example_word": "حصان",
       "example_gloss": "horse",
       "example_image": null,
       "example_emoji": "🐎",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -113,11 +125,13 @@
       "ipa": [
         "x"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/062e.png",
       "example_word": "خبز",
       "example_gloss": "bread",
       "example_image": null,
       "example_emoji": "🍞",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -128,11 +142,13 @@
       "ipa": [
         "d"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/062f.png",
       "example_word": "دجاجة",
       "example_gloss": "chicken",
       "example_image": null,
       "example_emoji": "🐔",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -143,11 +159,13 @@
       "ipa": [
         "ð"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0630.png",
       "example_word": "ذئب",
       "example_gloss": "wolf",
       "example_image": null,
       "example_emoji": "🐺",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -158,11 +176,13 @@
       "ipa": [
         "r"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0631.png",
       "example_word": "رمان",
       "example_gloss": "pomegranate",
       "example_image": null,
       "example_emoji": null,
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -173,11 +193,13 @@
       "ipa": [
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0632.png",
       "example_word": "زرافة",
       "example_gloss": "giraffe",
       "example_image": null,
       "example_emoji": "🦒",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -188,11 +210,13 @@
       "ipa": [
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0633.png",
       "example_word": "سمكة",
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -203,11 +227,13 @@
       "ipa": [
         "ʃ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0634.png",
       "example_word": "شمس",
       "example_gloss": "sun",
       "example_image": null,
       "example_emoji": "☀️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -218,11 +244,13 @@
       "ipa": [
         "sˤ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0635.png",
       "example_word": "صقر",
       "example_gloss": "falcon",
       "example_image": null,
       "example_emoji": "🦅",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -233,11 +261,13 @@
       "ipa": [
         "dˤ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0636.png",
       "example_word": "ضفدع",
       "example_gloss": "frog",
       "example_image": null,
       "example_emoji": "🐸",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -248,11 +278,13 @@
       "ipa": [
         "tˤ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0637.png",
       "example_word": "طائرة",
       "example_gloss": "aeroplane",
       "example_image": null,
       "example_emoji": "✈️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -263,11 +295,13 @@
       "ipa": [
         "ðˤ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0638.png",
       "example_word": "ظرف",
       "example_gloss": "envelope",
       "example_image": null,
       "example_emoji": "✉️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -278,11 +312,13 @@
       "ipa": [
         "ʕ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0639.png",
       "example_word": "عنب",
       "example_gloss": "grapes",
       "example_image": null,
       "example_emoji": "🍇",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -293,11 +329,13 @@
       "ipa": [
         "ɣ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/063a.png",
       "example_word": "غزال",
       "example_gloss": "gazelle",
       "example_image": null,
       "example_emoji": "🦌",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -308,11 +346,13 @@
       "ipa": [
         "f"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0641.png",
       "example_word": "فيل",
       "example_gloss": "elephant",
       "example_image": null,
       "example_emoji": "🐘",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -323,11 +363,13 @@
       "ipa": [
         "q"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0642.png",
       "example_word": "قمر",
       "example_gloss": "moon",
       "example_image": null,
       "example_emoji": "🌙",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -338,11 +380,13 @@
       "ipa": [
         "k"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0643.png",
       "example_word": "كتاب",
       "example_gloss": "book",
       "example_image": null,
       "example_emoji": "📖",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -353,11 +397,13 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0644.png",
       "example_word": "لبن",
       "example_gloss": "milk",
       "example_image": null,
       "example_emoji": "🥛",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -368,11 +414,13 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0645.png",
       "example_word": "موز",
       "example_gloss": "banana",
       "example_image": null,
       "example_emoji": "🍌",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -383,11 +431,13 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0646.png",
       "example_word": "نمر",
       "example_gloss": "tiger",
       "example_image": null,
       "example_emoji": "🐅",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -398,11 +448,13 @@
       "ipa": [
         "h"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0647.png",
       "example_word": "هدهد",
       "example_gloss": "hoopoe",
       "example_image": null,
       "example_emoji": "🐦",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -414,11 +466,13 @@
         "w",
         "uː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/0648.png",
       "example_word": "وردة",
       "example_gloss": "rose",
       "example_image": null,
       "example_emoji": "🌹",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -430,11 +484,13 @@
         "j",
         "iː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/arabic/064a.png",
       "example_word": "يد",
       "example_gloss": "hand",
       "example_image": null,
       "example_emoji": "✋",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     }
   ]

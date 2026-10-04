@@ -20,11 +20,13 @@
       "ipa": [
         "a"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0041.png",
       "example_word": "爱 (ài)",
       "example_gloss": "love",
       "example_image": null,
       "example_emoji": "❤️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -35,11 +37,13 @@
       "ipa": [
         "p"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0042.png",
       "example_word": "包 (bāo)",
       "example_gloss": "bag",
       "example_image": null,
       "example_emoji": "🎒",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -50,11 +54,13 @@
       "ipa": [
         "t͡sʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0043.png",
       "example_word": "草 (cǎo)",
       "example_gloss": "grass",
       "example_image": null,
       "example_emoji": "🌿",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -65,11 +71,13 @@
       "ipa": [
         "t"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0044.png",
       "example_word": "灯 (dēng)",
       "example_gloss": "lamp",
       "example_image": null,
       "example_emoji": "💡",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -81,11 +89,13 @@
         "ɤ",
         "ə"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0045.png",
       "example_word": "鹅 (é)",
       "example_gloss": "goose",
       "example_image": null,
       "example_emoji": "🪿",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -96,11 +106,13 @@
       "ipa": [
         "f"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0046.png",
       "example_word": "飞机 (fēijī)",
       "example_gloss": "aeroplane",
       "example_image": null,
       "example_emoji": "✈️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -111,11 +123,13 @@
       "ipa": [
         "k"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0047.png",
       "example_word": "狗 (gǒu)",
       "example_gloss": "dog",
       "example_image": null,
       "example_emoji": "🐕",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -126,11 +140,13 @@
       "ipa": [
         "x"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0048.png",
       "example_word": "花 (huā)",
       "example_gloss": "flower",
       "example_image": null,
       "example_emoji": "🌸",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -142,11 +158,13 @@
         "i",
         "ɹ̩"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0049.png",
       "example_word": "衣 (yī)",
       "example_gloss": "clothes — i never begins a syllable",
       "example_image": null,
       "example_emoji": "👕",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -157,11 +175,13 @@
       "ipa": [
         "t͡ɕ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/004a.png",
       "example_word": "鸡 (jī)",
       "example_gloss": "chicken",
       "example_image": null,
       "example_emoji": "🐔",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -172,11 +192,13 @@
       "ipa": [
         "kʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/004b.png",
       "example_word": "咖啡 (kāfēi)",
       "example_gloss": "coffee",
       "example_image": null,
       "example_emoji": "☕",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -187,11 +209,13 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/004c.png",
       "example_word": "龙 (lóng)",
       "example_gloss": "dragon",
       "example_image": null,
       "example_emoji": "🐉",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -202,11 +226,13 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/004d.png",
       "example_word": "猫 (māo)",
       "example_gloss": "cat",
       "example_image": null,
       "example_emoji": "🐈",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -218,11 +244,13 @@
         "n",
         "ŋ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/004e.png",
       "example_word": "牛 (niú)",
       "example_gloss": "cow",
       "example_image": null,
       "example_emoji": "🐄",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -234,11 +262,13 @@
         "o",
         "u̯o"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/004f.png",
       "example_word": "藕 (ǒu)",
       "example_gloss": "lotus root",
       "example_image": null,
       "example_emoji": "🪷",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -249,11 +279,13 @@
       "ipa": [
         "pʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0050.png",
       "example_word": "苹果 (píngguǒ)",
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -264,11 +296,13 @@
       "ipa": [
         "t͡ɕʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0051.png",
       "example_word": "球 (qiú)",
       "example_gloss": "ball",
       "example_image": null,
       "example_emoji": "⚽",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -280,11 +314,13 @@
         "ʐ",
         "ɻ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0052.png",
       "example_word": "人 (rén)",
       "example_gloss": "person",
       "example_image": null,
       "example_emoji": "🧍",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -295,11 +331,13 @@
       "ipa": [
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0053.png",
       "example_word": "伞 (sǎn)",
       "example_gloss": "umbrella",
       "example_image": null,
       "example_emoji": "☂️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -310,11 +348,13 @@
       "ipa": [
         "tʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0054.png",
       "example_word": "兔子 (tùzi)",
       "example_gloss": "rabbit",
       "example_image": null,
       "example_emoji": "🐰",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -325,11 +365,13 @@
       "ipa": [
         "u"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0055.png",
       "example_word": "屋 (wū)",
       "example_gloss": "house — u never begins a syllable",
       "example_image": null,
       "example_emoji": "🏠",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -340,11 +382,13 @@
       "ipa": [
         "y"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0056.png",
       "example_word": "绿 (lǜ)",
       "example_gloss": "green — v stands for ü, no native v sound",
       "example_image": null,
       "example_emoji": "💚",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -355,11 +399,13 @@
       "ipa": [
         "w"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0057.png",
       "example_word": "碗 (wǎn)",
       "example_gloss": "bowl",
       "example_image": null,
       "example_emoji": "🥣",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -370,11 +416,13 @@
       "ipa": [
         "ɕ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0058.png",
       "example_word": "熊猫 (xióngmāo)",
       "example_gloss": "panda",
       "example_image": null,
       "example_emoji": "🐼",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -385,11 +433,13 @@
       "ipa": [
         "j"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0059.png",
       "example_word": "鱼 (yú)",
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -400,11 +450,13 @@
       "ipa": [
         "t͡s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/005a.png",
       "example_word": "字 (zì)",
       "example_gloss": "character",
       "example_image": null,
       "example_emoji": "🔤",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -415,11 +467,13 @@
       "ipa": [
         "ʈ͡ʂ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/005a-0048.png",
       "example_word": "猪 (zhū)",
       "example_gloss": "pig",
       "example_image": null,
       "example_emoji": "🐷",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -430,11 +484,13 @@
       "ipa": [
         "ʈ͡ʂʰ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0043-0048.png",
       "example_word": "车 (chē)",
       "example_gloss": "car",
       "example_image": null,
       "example_emoji": "🚗",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -445,11 +501,13 @@
       "ipa": [
         "ʂ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/0053-0048.png",
       "example_word": "书 (shū)",
       "example_gloss": "book",
       "example_image": null,
       "example_emoji": "📖",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -460,11 +518,13 @@
       "ipa": [
         "ŋ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/pinyin/004e-0047.png",
       "example_word": "羊 (yáng)",
       "example_gloss": "sheep — ng never begins a syllable",
       "example_image": null,
       "example_emoji": "🐑",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     }
   ]

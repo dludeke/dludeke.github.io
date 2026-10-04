@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Handshape Cropper</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <style>
+    .bar {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .bar select, .bar button {
+      font: inherit;
+      font-size: 0.9rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 4px;
+      border: 1px solid #cfd6dd;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .bar button.primary { background: #007bff; color: #fff; border-color: #007bff; }
+    .bar button.danger { background: #fdf5f5; color: #a02020; border-color: #f2d0d0; }
+    .count { font-size: 0.85rem; color: #666; margin-left: auto; }
+
+    .thumbs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+      gap: 0.6rem;
+    }
+
+    .thumb {
+      border: 2px solid transparent;
+      border-radius: 6px;
+      background: #fff;
+      padding: 0.3rem;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .thumb.sel { border-color: #007bff; }
+    .thumb.edited { background: #eafaef; }
+    .thumb img { width: 100%; height: 72px; object-fit: contain; display: block; }
+    .thumb .lab { font-size: 0.85rem; color: #444; margin-top: 0.2rem; }
+
+    .editor {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .stage {
+      position: relative;
+      display: inline-block;
+      background: #f3f5f7;
+      border-radius: 6px;
+      user-select: none;
+      touch-action: none;
+    }
+
+    .stage img { display: block; max-width: 460px; max-height: 460px; }
+
+    .shade {
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 30, 40, 0.45);
+      pointer-events: none;
+    }
+
+    .window {
+      position: absolute;
+      border: 2px solid #ffd43b;
+      box-shadow: 0 0 0 9999px rgba(20, 30, 40, 0.45);
+      cursor: move;
+    }
+
+    .handle {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #ffd43b;
+      border-radius: 2px;
+    }
+
+    .handle.nw { left: -7px; top: -7px; cursor: nwse-resize; }
+    .handle.ne { right: -7px; top: -7px; cursor: nesw-resize; }
+    .handle.sw { left: -7px; bottom: -7px; cursor: nesw-resize; }
+    .handle.se { right: -7px; bottom: -7px; cursor: nwse-resize; }
+
+    .side { min-width: 230px; }
+    .side h3 { margin: 0 0 0.5rem; font-size: 1rem; }
+    .side p { font-size: 0.85rem; color: #666; margin: 0.3rem 0; }
+    .preview {
+      border: 1px dashed #cfd6dd;
+      border-radius: 6px;
+      padding: 0.5rem;
+      text-align: center;
+      background: #fff;
+    }
+    .preview canvas { max-width: 200px; max-height: 200px; }
+    kbd {
+      background: #eef1f4; border-radius: 3px; padding: 0 0.3rem;
+      font-size: 0.8rem; border: 1px solid #dde2e7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Handshape Cropper</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="has-sub">
+            <a href="lugha.html">Lugha</a>
+            <ul class="subnav">
+              <li><a href="practice.html">Practice Area</a></li>
+              <li><a href="signs.html">Country Signs</a></li>
+              <li><a href="reference.html">Reference</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p style="color:#555;max-width:680px">
+        Adjust the crop on any handshape. Edits are made against the uncropped
+        slice, so you can always widen a crop again. They save in this browser;
+        export the JSON and run <code>apply_crops.py</code> to write them out.
+      </p>
+
+      <div class="bar">
+        <label>Script
+          <select id="scriptSel"></select>
+        </label>
+        <label>Field
+          <select id="fieldSel">
+            <option value="handshape">handshape</option>
+            <option value="signwriting_image">signwriting_image</option>
+          </select>
+        </label>
+        <button id="autoBtn">Auto-trim whitespace</button>
+        <button class="primary" id="exportBtn">Export JSON</button>
+        <button class="danger" id="resetBtn">Reset this letter</button>
+        <span class="count" id="count"></span>
+      </div>
+
+      <div class="editor" id="editor" hidden>
+        <div class="stage" id="stage">
+          <img id="stageImg" alt="" />
+          <div class="window" id="win">
+            <div class="handle nw" data-h="nw"></div>
+            <div class="handle ne" data-h="ne"></div>
+            <div class="handle sw" data-h="sw"></div>
+            <div class="handle se" data-h="se"></div>
+          </div>
+        </div>
+        <div class="side">
+          <h3 id="editTitle"></h3>
+          <div class="preview"><canvas id="prev"></canvas></div>
+          <p>Drag inside to move, corners to resize.</p>
+          <p><kbd>&larr;</kbd> <kbd>&rarr;</kbd> previous / next letter</p>
+          <p id="rectOut" style="font-family:monospace"></p>
+        </div>
+      </div>
+
+      <div class="thumbs" id="thumbs"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 David Ludeke</p>
+    </footer>
+  </div>
+
+  <script>
+    const LS = 'handshapeCrops.v1';
+    const SCRIPTS = ['arabic','cyrillic','devanagari','farsi','geez','greek',
+                     'hangul','hebrew','kana','latin','pinyin','thai'];
+
+    let data = null, slug = 'arabic', field = 'handshape', items = [], idx = -1;
+    let rect = { x: 0, y: 0, w: 1, h: 1 };   // fractions of the raw image
+
+    const el = id => document.getElementById(id);
+
+    const load = () => { try { return JSON.parse(localStorage.getItem(LS)) || {}; } catch (e) { return {}; } };
+    const save = o => { try { localStorage.setItem(LS, JSON.stringify(o)); } catch (e) {} };
+
+    function rawPath(glyph) {
+      const name = [...glyph].map(c => c.codePointAt(0).toString(16).padStart(4, '0')).join('-');
+      return `images/handshapes/${slug}/raw/${name}.png`;
+    }
+
+    function storedRect(glyph) {
+      const all = load();
+      return (all[slug] || {})[glyph] || null;
+    }
+
+    async function loadScript() {
+      const res = await fetch(`assets/data/scripts/${slug}.json`);
+      data = await res.json();
+      items = data.letters.filter(L => L[field]);
+      idx = -1;
+      el('editor').hidden = true;
+      renderThumbs();
+    }
+
+    function renderThumbs() {
+      const host = el('thumbs');
+      host.innerHTML = '';
+      const all = load()[slug] || {};
+      items.forEach((L, i) => {
+        const d = document.createElement('div');
+        d.className = 'thumb' + (i === idx ? ' sel' : '') + (all[L.glyph] ? ' edited' : '');
+        const img = document.createElement('img');
+        img.src = L[field] + '?t=' + Date.now();
+        const lab = document.createElement('div');
+        lab.className = 'lab';
+        lab.textContent = L.glyph;
+        d.append(img, lab);
+        d.addEventListener('click', () => open(i));
+        host.appendChild(d);
+      });
+      const n = Object.keys(all).length;
+      el('count').textContent = `${items.length} letters · ${n} edited`;
+    }
+
+    function open(i) {
+      idx = i;
+      const L = items[i];
+      el('editor').hidden = false;
+      el('editTitle').textContent = `${L.glyph}  ${L.name || ''}`;
+      const img = el('stageImg');
+      img.onload = () => {
+        rect = storedRect(L.glyph) || { x: 0, y: 0, w: 1, h: 1 };
+        drawWindow();
+      };
+      img.src = rawPath(L.glyph) + '?t=' + Date.now();
+      renderThumbs();
+    }
+
+    function drawWindow() {
+      const img = el('stageImg');
+      const W = img.clientWidth, H = img.clientHeight;
+      const w = el('win');
+      w.style.left = (rect.x * W) + 'px';
+      w.style.top = (rect.y * H) + 'px';
+      w.style.width = (rect.w * W) + 'px';
+      w.style.height = (rect.h * H) + 'px';
+      el('rectOut').textContent =
+        `[${rect.x.toFixed(3)}, ${rect.y.toFixed(3)}, ${rect.w.toFixed(3)}, ${rect.h.toFixed(3)}]`;
+      preview();
+      const all = load();
+      all[slug] = all[slug] || {};
+      all[slug][items[idx].glyph] = { x: +rect.x.toFixed(4), y: +rect.y.toFixed(4),
+                                      w: +rect.w.toFixed(4), h: +rect.h.toFixed(4) };
+      save(all);
+    }
+
+    function preview() {
+      const img = el('stageImg');
+      const c = el('prev'), ctx = c.getContext('2d');
+      const nw = img.naturalWidth, nh = img.naturalHeight;
+      const sx = rect.x * nw, sy = rect.y * nh, sw = rect.w * nw, sh = rect.h * nh;
+      c.width = Math.max(1, Math.round(sw));
+      c.height = Math.max(1, Math.round(sh));
+      ctx.drawImage(img, sx, sy, sw, sh, 0, 0, c.width, c.height);
+    }
+
+    // dragging ------------------------------------------------------------
+    let drag = null;
+    el('stage').addEventListener('pointerdown', e => {
+      if (idx < 0) return;
+      const h = e.target.dataset.h;
+      const img = el('stageImg');
+      drag = { mode: h || 'move', x0: e.clientX, y0: e.clientY,
+               r0: { ...rect }, W: img.clientWidth, H: img.clientHeight };
+      el('stage').setPointerCapture(e.pointerId);
+    });
+    el('stage').addEventListener('pointermove', e => {
+      if (!drag) return;
+      const dx = (e.clientX - drag.x0) / drag.W;
+      const dy = (e.clientY - drag.y0) / drag.H;
+      const r = { ...drag.r0 };
+      const clamp = v => Math.max(0, Math.min(1, v));
+      if (drag.mode === 'move') {
+        r.x = clamp(r.x + dx); r.y = clamp(r.y + dy);
+        r.x = Math.min(r.x, 1 - r.w); r.y = Math.min(r.y, 1 - r.h);
+      } else {
+        if (drag.mode.includes('w')) { const nx = clamp(r.x + dx); r.w = r.w + (r.x - nx); r.x = nx; }
+        if (drag.mode.includes('e')) { r.w = clamp(r.w + dx); }
+        if (drag.mode.includes('n')) { const ny = clamp(r.y + dy); r.h = r.h + (r.y - ny); r.y = ny; }
+        if (drag.mode.includes('s')) { r.h = clamp(r.h + dy); }
+        r.w = Math.max(0.03, Math.min(r.w, 1 - r.x));
+        r.h = Math.max(0.03, Math.min(r.h, 1 - r.y));
+      }
+      rect = r;
+      drawWindow();
+    });
+    el('stage').addEventListener('pointerup', () => { drag = null; renderThumbs(); });
+
+    // auto-trim ------------------------------------------------------------
+    el('autoBtn').addEventListener('click', () => {
+      if (idx < 0) return;
+      const img = el('stageImg');
+      const c = document.createElement('canvas');
+      c.width = img.naturalWidth; c.height = img.naturalHeight;
+      const ctx = c.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      const d = ctx.getImageData(0, 0, c.width, c.height).data;
+      let x0 = c.width, y0 = c.height, x1 = 0, y1 = 0, found = false;
+      for (let y = 0; y < c.height; y++) {
+        for (let x = 0; x < c.width; x++) {
+          const i = (y * c.width + x) * 4;
+          // anything clearly darker than paper counts as content
+          if (d[i] < 215 || d[i + 1] < 215 || d[i + 2] < 215) {
+            found = true;
+            if (x < x0) x0 = x; if (x > x1) x1 = x;
+            if (y < y0) y0 = y; if (y > y1) y1 = y;
+          }
+        }
+      }
+      if (!found) return;
+      const pad = 3;
+      rect = {
+        x: Math.max(0, (x0 - pad) / c.width),
+        y: Math.max(0, (y0 - pad) / c.height),
+        w: Math.min(1, (x1 - x0 + 2 * pad) / c.width),
+        h: Math.min(1, (y1 - y0 + 2 * pad) / c.height)
+      };
+      drawWindow();
+      renderThumbs();
+    });
+
+    el('resetBtn').addEventListener('click', () => {
+      if (idx < 0) return;
+      const all = load();
+      if (all[slug]) delete all[slug][items[idx].glyph];
+      save(all);
+      rect = { x: 0, y: 0, w: 1, h: 1 };
+      drawWindow();
+      renderThumbs();
+    });
+
+    el('exportBtn').addEventListener('click', () => {
+      const all = load();
+      const blob = new Blob([JSON.stringify(all, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'handshape-crops.json';
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    });
+
+    document.addEventListener('keydown', e => {
+      if (idx < 0) return;
+      if (e.key === 'ArrowRight' && idx < items.length - 1) open(idx + 1);
+      if (e.key === 'ArrowLeft' && idx > 0) open(idx - 1);
+    });
+
+    const sel = el('scriptSel');
+    SCRIPTS.forEach(s => {
+      const o = document.createElement('option');
+      o.value = s; o.textContent = s;
+      sel.appendChild(o);
+    });
+    sel.addEventListener('change', () => { slug = sel.value; loadScript(); });
+    el('fieldSel').addEventListener('change', () => { field = el('fieldSel').value; loadScript(); });
+
+    loadScript();
+  </script>
+</body>
+</html>

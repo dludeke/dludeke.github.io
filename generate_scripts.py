@@ -22,7 +22,8 @@ OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
 
 # Per-letter fields a human fills in; preserved across regeneration.
 HAND_EDITED = ("ipa", "handshape", "example_word", "example_gloss",
-               "example_image", "example_emoji", "notes", "romanization")
+               "example_image", "example_emoji", "notes", "romanization",
+               "signwriting", "signwriting_image")
 
 # slug, display name, representative letter, sign language, languages, note
 SCRIPTS = [
@@ -242,6 +243,12 @@ def main():
                 "example_gloss": None, # its meaning in English
                 "example_image": None, # picture of that noun
                 "example_emoji": None, # stand-in until a real picture exists
+                # Sutton SignWriting transcription of the handshape, as a
+                # Formal SignWriting (FSW) string e.g. "S1f720". Rendered from
+                # the Unicode block U+1D800-1DAAF.
+                "signwriting": None,
+                # Sliced SignWriting glyph, where a chart provides one.
+                "signwriting_image": None,
                 "notes": "",
             }
             ipa_vals = IPA_TABLE.get(slug, {}).get(glyph)

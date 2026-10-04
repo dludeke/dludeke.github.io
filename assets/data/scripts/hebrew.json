@@ -28,6 +28,8 @@
       "example_gloss": "lion",
       "example_image": null,
       "example_emoji": "🦁",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -44,6 +46,8 @@
       "example_gloss": "house",
       "example_image": null,
       "example_emoji": "🏠",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -59,6 +63,8 @@
       "example_gloss": "camel",
       "example_image": null,
       "example_emoji": "🐫",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -74,6 +80,8 @@
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -90,6 +98,8 @@
       "example_gloss": "mountain",
       "example_image": null,
       "example_emoji": "⛰️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -107,6 +117,8 @@
       "example_gloss": "rose",
       "example_image": null,
       "example_emoji": "🌹",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -122,6 +134,8 @@
       "example_gloss": "zebra",
       "example_image": null,
       "example_emoji": "🦓",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -137,6 +151,8 @@
       "example_gloss": "cat",
       "example_image": null,
       "example_emoji": "🐈",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -152,6 +168,8 @@
       "example_gloss": "telephone",
       "example_image": null,
       "example_emoji": "☎️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -168,6 +186,8 @@
       "example_gloss": "child",
       "example_image": null,
       "example_emoji": "🧒",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -184,6 +204,8 @@
       "example_gloss": "dog",
       "example_image": null,
       "example_emoji": "🐕",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -199,6 +221,8 @@
       "example_gloss": "lemon",
       "example_image": null,
       "example_emoji": "🍋",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -214,6 +238,8 @@
       "example_gloss": "water",
       "example_image": null,
       "example_emoji": "💧",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -229,6 +255,8 @@
       "example_gloss": "candle",
       "example_image": null,
       "example_emoji": "🕯️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -244,6 +272,8 @@
       "example_gloss": "horse",
       "example_image": null,
       "example_emoji": "🐎",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -260,6 +290,8 @@
       "example_gloss": "tree",
       "example_image": null,
       "example_emoji": "🌳",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -276,6 +308,8 @@
       "example_gloss": "flower",
       "example_image": null,
       "example_emoji": "🌺",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -291,6 +325,8 @@
       "example_gloss": "bird",
       "example_image": null,
       "example_emoji": "🐦",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -306,6 +342,8 @@
       "example_gloss": "monkey",
       "example_image": null,
       "example_emoji": "🐒",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -321,6 +359,8 @@
       "example_gloss": "train",
       "example_image": null,
       "example_emoji": "🚆",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -337,6 +377,8 @@
       "example_gloss": "sun",
       "example_image": null,
       "example_emoji": "☀️",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     },
     {
@@ -352,6 +394,8 @@
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
+      "signwriting": null,
+      "signwriting_image": null,
       "notes": ""
     }
   ]
