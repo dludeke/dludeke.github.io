@@ -209,6 +209,12 @@
 
     .sw-img { max-height: 46px; width: auto; }
 
+    .sw-key {
+      font-size: 0.72rem;
+      color: #aab2b9;
+      letter-spacing: 0.03em;
+    }
+
     .sw-text {
       font-family: "SuttonSignWritingOneD", monospace;
       font-size: 1.6rem;
@@ -329,6 +335,17 @@
         if (!variantNames.includes(variant)) variant = variantNames[0];
       }
       const shapeOf = L => (variant && (L.handshape_variants || {})[variant]) || L.handshape;
+      // the toggle switches the SignWriting transcription too
+      const fswOf = L => (variant && (L.signwriting_variants || {})[variant]) || L.signwriting;
+      const handKey = fsw => {
+        const m = (fsw || '').match(/S([0-9a-f]{3})([0-9a-f])([0-9a-f])/g) || [];
+        return m.find(k => { const b = parseInt(k.slice(1, 4), 16); return b >= 0x100 && b <= 0x204; }) || null;
+      };
+      const swImageOf = L => {
+        const k = handKey(fswOf(L));
+        return k ? `images/signwriting/${k}.png`.replace('/images/', '/images/') &&
+                   `images/signwriting/${d.slug}/${k}.png` : L.signwriting_image;
+      };
 
       // Counted per column, not "has anything": with the handshapes wired in,
       // an any-field measure would read 100% while IPA and examples are empty.
@@ -338,7 +355,7 @@
         ['IPA', d.letters.filter(L => (L.ipa || []).length).length],
         ['words', d.letters.filter(L => L.example_word).length],
         ['pictures', d.letters.filter(L => L.example_image).length],
-        ['signwriting', d.letters.filter(L => L.signwriting || L.signwriting_image).length]
+        ['signwriting', d.letters.filter(L => swImageOf(L)).length]
       ];
 
       const cards = d.letters.map(L => {
@@ -364,11 +381,10 @@
             </div>
             <div class="sw-row">
               <span class="k">SignWriting</span>
-              ${L.signwriting_image
-                ? `<img class="sw-img" src="${L.signwriting_image}" alt="SignWriting for ${L.name}" />`
-                : (L.signwriting
-                    ? `<span class="sw-text">${L.signwriting}</span>`
-                    : '<span class="v empty">\u2014</span>')}
+              ${swImageOf(L)
+                ? `<img class="sw-img" src="${swImageOf(L)}" alt="SignWriting for ${L.name}" title="${handKey(fswOf(L)) || ''}" />`
+                : '<span class="v empty">\u2014</span>'}
+              ${handKey(fswOf(L)) ? `<code class="sw-key">${handKey(fswOf(L))}</code>` : ''}
             </div>
             <div class="example-word">${word || '<span class="v empty">example word</span>'}</div>
             ${L.example_gloss ? row('Means', L.example_gloss) : ''}

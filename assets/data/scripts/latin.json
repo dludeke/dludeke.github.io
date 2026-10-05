@@ -44,12 +44,16 @@
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S1f720487x492",
+      "signwriting_image": "images/signwriting/latin/S1f720.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0041.png",
         "ASL": "images/handshapes/latin/asl/0041.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S1f720487x492",
+        "BSL": "M514x517S14c09488x490S20500486x483"
       }
     },
     {
@@ -65,12 +69,16 @@
       "example_gloss": "ball",
       "example_image": null,
       "example_emoji": "⚽",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S14720493x485",
+      "signwriting_image": "images/signwriting/latin/S14720.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0042.png",
         "ASL": "images/handshapes/latin/asl/0042.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S14720493x485",
+        "BSL": "M522x515S1ce10500x485S1ce18477x485"
       }
     },
     {
@@ -87,12 +95,16 @@
       "example_gloss": "cat",
       "example_image": null,
       "example_emoji": "🐈",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M508x507S16d20491x487",
+      "signwriting_image": "images/signwriting/latin/S16d20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0043.png",
         "ASL": "images/handshapes/latin/asl/0043.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M508x507S16d20491x487",
+        "BSL": "M511x509S1ec10488x490"
       }
     },
     {
@@ -108,12 +120,16 @@
       "example_gloss": "dog",
       "example_image": null,
       "example_emoji": "🐕",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M508x507S10120492x477",
+      "signwriting_image": "images/signwriting/latin/S10120.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0044.png",
         "ASL": "images/handshapes/latin/asl/0044.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M508x507S10120492x477",
+        "BSL": "M514x519S10018486x489S1ec10491x481"
       }
     },
     {
@@ -131,12 +147,16 @@
       "example_gloss": "elephant",
       "example_image": null,
       "example_emoji": "🐘",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S14a20492x492",
+      "signwriting_image": "images/signwriting/latin/S14a20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0045.png",
         "ASL": "images/handshapes/latin/asl/0045.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S14a20492x492",
+        "BSL": "M513x520S14c09487x493S20500498x479"
       }
     },
     {
@@ -152,12 +172,16 @@
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M513x507S1ce20491x477",
+      "signwriting_image": "images/signwriting/latin/S1ce20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0046.png",
         "ASL": "images/handshapes/latin/asl/0046.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M513x507S1ce20491x477",
+        "BSL": "M516x517S1155a484x484S11550501x487"
       }
     },
     {
@@ -174,12 +198,16 @@
       "example_gloss": "giraffe",
       "example_image": null,
       "example_emoji": "🦒",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S1f000478x492",
+      "signwriting_image": "images/signwriting/latin/S1f000.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0047.png",
         "ASL": "images/handshapes/latin/asl/0047.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S1f000478x492",
+        "BSL": "M507x516S20302492x484S2030a492x501"
       }
     },
     {
@@ -195,12 +223,16 @@
       "example_gloss": "house",
       "example_image": null,
       "example_emoji": "🏠",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S11502477x492",
+      "signwriting_image": "images/signwriting/latin/S11502.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0048.png",
         "ASL": "images/handshapes/latin/asl/0048.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S11502477x492",
+        "BSL": "M525x520S15a39474x494S15a51477x497S20e00501x493S26507512x479"
       }
     },
     {
@@ -217,12 +249,16 @@
       "example_gloss": "ice cream",
       "example_image": null,
       "example_emoji": "🍦",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M513x507S19220492x488",
+      "signwriting_image": "images/signwriting/latin/S19220.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0049.png",
         "ASL": "images/handshapes/latin/asl/0049.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M513x507S19220492x488",
+        "BSL": "M517x517S14c07482x491S20500507x482"
       }
     },
     {
@@ -238,12 +274,16 @@
       "example_gloss": "jug",
       "example_image": null,
       "example_emoji": "🫗",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M513x507S19220492x488S2a20c476x472",
+      "signwriting_image": "images/signwriting/latin/S19220.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/004a.png",
         "ASL": "images/handshapes/latin/asl/004a.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M513x507S19220492x488S2a20c476x472",
+        "BSL": "M522x521S14c08478x482S10012492x479S23803502x498"
       }
     },
     {
@@ -259,12 +299,16 @@
       "example_gloss": "kite",
       "example_image": null,
       "example_emoji": "🪁",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S14220478x477",
+      "signwriting_image": "images/signwriting/latin/S14220.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/004b.png",
         "ASL": "images/handshapes/latin/asl/004b.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S14220478x477",
+        "BSL": "M515x521S10018484x491S10613487x478"
       }
     },
     {
@@ -280,12 +324,16 @@
       "example_gloss": "lion",
       "example_image": null,
       "example_emoji": "🦁",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M508x507S1dc20484x477",
+      "signwriting_image": "images/signwriting/latin/S1dc20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/004c.png",
         "ASL": "images/handshapes/latin/asl/004c.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M508x507S1dc20484x477",
+        "BSL": "M519x518S15a39480x483S10051489x497"
       }
     },
     {
@@ -301,12 +349,16 @@
       "example_gloss": "moon",
       "example_image": null,
       "example_emoji": "🌙",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S18d20487x482",
+      "signwriting_image": "images/signwriting/latin/S18d20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/004d.png",
         "ASL": "images/handshapes/latin/asl/004d.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S18d20487x482",
+        "BSL": "M519x519S15a37481x481S18c51493x493"
       }
     },
     {
@@ -323,12 +375,16 @@
       "example_gloss": "nest",
       "example_image": null,
       "example_emoji": "🪹",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S11920486x481",
+      "signwriting_image": "images/signwriting/latin/S11920.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/004e.png",
         "ASL": "images/handshapes/latin/asl/004e.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S11920486x481",
+        "BSL": "M519x516S15a39481x483S11551492x491"
       }
     },
     {
@@ -345,12 +401,16 @@
       "example_gloss": "orange",
       "example_image": null,
       "example_emoji": "🍊",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M508x507S17620492x491",
+      "signwriting_image": "images/signwriting/latin/S17620.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/004f.png",
         "ASL": "images/handshapes/latin/asl/004f.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M508x507S17620492x491",
+        "BSL": "M519x514S14c09482x487S20500509x490"
       }
     },
     {
@@ -366,12 +426,16 @@
       "example_gloss": "pencil",
       "example_image": null,
       "example_emoji": "✏️",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M510x509S14251479x485",
+      "signwriting_image": "images/signwriting/latin/S14251.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0050.png",
         "ASL": "images/handshapes/latin/asl/0050.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M510x509S14251479x485",
+        "BSL": "M513x524S10018487x494S1ce10491x475"
       }
     },
     {
@@ -387,12 +451,16 @@
       "example_gloss": "queen",
       "example_image": null,
       "example_emoji": "👸",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M511x509S1f051481x486",
+      "signwriting_image": "images/signwriting/latin/S1f051.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0051.png",
         "ASL": "images/handshapes/latin/asl/0051.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M511x509S1f051481x486",
+        "BSL": "M523x528S1ce18477x472S10620496x502S20a00505x484"
       }
     },
     {
@@ -408,12 +476,16 @@
       "example_gloss": "rainbow",
       "example_image": null,
       "example_emoji": "🌈",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S11a20492x477",
+      "signwriting_image": "images/signwriting/latin/S11a20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0052.png",
         "ASL": "images/handshapes/latin/asl/0052.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S11a20492x477",
+        "BSL": "M517x517S15a39483x483S10641494x489"
       }
     },
     {
@@ -430,12 +502,16 @@
       "example_gloss": "sun",
       "example_image": null,
       "example_emoji": "☀️",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S20320492x492",
+      "signwriting_image": "images/signwriting/latin/S20320.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0053.png",
         "ASL": "images/handshapes/latin/asl/0053.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S20320492x492",
+        "BSL": "M520x519S19809480x480S19821500x492S20800510x482"
       }
     },
     {
@@ -451,12 +527,16 @@
       "example_gloss": "tree",
       "example_image": null,
       "example_emoji": "🌳",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M508x507S1fb20493x488",
+      "signwriting_image": "images/signwriting/latin/S1fb20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0054.png",
         "ASL": "images/handshapes/latin/asl/0054.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M508x507S1fb20493x488",
+        "BSL": "M522x515S15a49478x484S10051492x494"
       }
     },
     {
@@ -474,12 +554,16 @@
       "example_gloss": "umbrella",
       "example_image": null,
       "example_emoji": "☂️",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M507x507S11520492x477",
+      "signwriting_image": "images/signwriting/latin/S11520.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0055.png",
         "ASL": "images/handshapes/latin/asl/0055.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M507x507S11520492x477",
+        "BSL": "M517x514S14c09482x487S20500507x500"
       }
     },
     {
@@ -495,12 +579,16 @@
       "example_gloss": "violin",
       "example_image": null,
       "example_emoji": "🎻",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M508x507S10f20493x477",
+      "signwriting_image": "images/signwriting/latin/S10f20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0056.png",
         "ASL": "images/handshapes/latin/asl/0056.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M508x507S10f20493x477",
+        "BSL": "M518x516S15a39482x483S10e51488x491"
       }
     },
     {
@@ -516,12 +604,16 @@
       "example_gloss": "whale",
       "example_image": null,
       "example_emoji": "🐋",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M509x507S18720491x478",
+      "signwriting_image": "images/signwriting/latin/S18720.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0057.png",
         "ASL": "images/handshapes/latin/asl/0057.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M509x507S18720491x478",
+        "BSL": "M527x522S14c11501x495S14c19473x495S20700491x478"
       }
     },
     {
@@ -538,12 +630,16 @@
       "example_gloss": "xylophone",
       "example_image": null,
       "example_emoji": "🎹",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M508x507S10620487x481",
+      "signwriting_image": "images/signwriting/latin/S10620.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0058.png",
         "ASL": "images/handshapes/latin/asl/0058.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M508x507S10620487x481",
+        "BSL": "M517x515S10019483x485S10011496x485"
       }
     },
     {
@@ -561,12 +657,16 @@
       "example_gloss": "yacht",
       "example_image": null,
       "example_emoji": "⛵",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M514x507S19a20486x487",
+      "signwriting_image": "images/signwriting/latin/S19a20.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/0059.png",
         "ASL": "images/handshapes/latin/asl/0059.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M514x507S19a20486x487",
+        "BSL": "M514x527S15d28485x473S10020499x497"
       }
     },
     {
@@ -582,12 +682,16 @@
       "example_gloss": "zebra",
       "example_image": null,
       "example_emoji": "🦓",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M528x507S10020492x477S2450a497x473",
+      "signwriting_image": "images/signwriting/latin/S10020.png",
       "notes": "",
       "handshape_variants": {
         "BSL": "images/handshapes/latin/bsl/005a.png",
         "ASL": "images/handshapes/latin/asl/005a.png"
+      },
+      "signwriting_variants": {
+        "ASL": "M528x507S10020492x477S2450a497x473",
+        "BSL": "M518x516S15a18482x484S18210495x501"
       }
     }
   ]
