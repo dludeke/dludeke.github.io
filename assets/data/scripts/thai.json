@@ -27,6 +27,7 @@
       "example_gloss": "chicken",
       "example_image": null,
       "example_emoji": "🐔",
+      "example_ipa": "kàj",
       "signwriting": "M510x507S1f720490x492",
       "signwriting_image": "images/signwriting/thai/S1f720.png",
       "notes": ""
@@ -45,6 +46,7 @@
       "example_gloss": "egg",
       "example_image": null,
       "example_emoji": "🥚",
+      "example_ipa": "kʰàj",
       "signwriting": "M515x532S14020486x469S10020500x502",
       "signwriting_image": "images/signwriting/thai/S14020.png",
       "notes": ""
@@ -63,6 +65,7 @@
       "example_gloss": "bottle (obsolete letter)",
       "example_image": null,
       "example_emoji": "🍶",
+      "example_ipa": "kʰùat",
       "signwriting": null,
       "signwriting_image": null,
       "notes": ""
@@ -81,6 +84,7 @@
       "example_gloss": "buffalo",
       "example_image": null,
       "example_emoji": "🐃",
+      "example_ipa": "kʰwaːj",
       "signwriting": "M515x532S14020486x469S10e20500x502",
       "signwriting_image": "images/signwriting/thai/S14020.png",
       "notes": ""
@@ -99,6 +103,7 @@
       "example_gloss": "person (obsolete letter)",
       "example_image": null,
       "example_emoji": "🧍",
+      "example_ipa": "kʰon",
       "signwriting": null,
       "signwriting_image": null,
       "notes": ""
@@ -117,6 +122,7 @@
       "example_gloss": "bell",
       "example_image": null,
       "example_emoji": "🔔",
+      "example_ipa": "rákʰaŋ",
       "signwriting": "M515x532S14020486x469S11e20492x502",
       "signwriting_image": "images/signwriting/thai/S14020.png",
       "notes": ""
@@ -134,6 +140,7 @@
       "example_gloss": "snake",
       "example_image": null,
       "example_emoji": "🐍",
+      "example_ipa": "ŋuː",
       "signwriting": "M515x519S1f000486x504S1fc20500x481",
       "signwriting_image": "images/signwriting/thai/S1f000.png",
       "notes": ""
@@ -152,6 +159,7 @@
       "example_gloss": "plate",
       "example_image": null,
       "example_emoji": "🍽️",
+      "example_ipa": "tɕaːn",
       "signwriting": "M519x518S19220498x499S2a20c482x483",
       "signwriting_image": "images/signwriting/thai/S19220.png",
       "notes": ""
@@ -169,6 +177,7 @@
       "example_gloss": "cymbals",
       "example_image": null,
       "example_emoji": "🎵",
+      "example_ipa": "tɕʰìŋ",
       "signwriting": "M515x519S16d10498x481S11502485x504",
       "signwriting_image": "images/signwriting/thai/S16d10.png",
       "notes": ""
@@ -187,6 +196,7 @@
       "example_gloss": "elephant",
       "example_image": null,
       "example_emoji": "🐘",
+      "example_ipa": "tɕʰáːŋ",
       "signwriting": "M515x536S16d10498x465S11502485x488S10020500x506",
       "signwriting_image": "images/signwriting/thai/S16d10.png",
       "notes": ""
@@ -205,6 +215,7 @@
       "example_gloss": "chain",
       "example_image": null,
       "example_emoji": "⛓️",
+      "example_ipa": "soː",
       "signwriting": "M509x522S20320494x478S10b50492x496",
       "signwriting_image": "images/signwriting/thai/S20320.png",
       "notes": ""
@@ -222,6 +233,7 @@
       "example_gloss": "tree",
       "example_image": null,
       "example_emoji": "🌳",
+      "example_ipa": "tɕʰɤː",
       "signwriting": "M515x536S16d10498x464S11502485x487S10e20500x506",
       "signwriting_image": "images/signwriting/thai/S16d10.png",
       "notes": ""
@@ -240,6 +252,7 @@
       "example_gloss": "woman",
       "example_image": null,
       "example_emoji": "👩",
+      "example_ipa": "jǐŋ",
       "signwriting": "M514x527S19a20486x474S10020492x497",
       "signwriting_image": "images/signwriting/thai/S19a20.png",
       "notes": ""
@@ -258,6 +271,7 @@
       "example_gloss": "headdress",
       "example_image": null,
       "example_emoji": "👑",
+      "example_ipa": "tɕʰadaː",
       "signwriting": "M508x532S10120492x468S10020492x502",
       "signwriting_image": "images/signwriting/thai/S10120.png",
       "notes": ""
@@ -276,6 +290,7 @@
       "example_gloss": "goad",
       "example_image": null,
       "example_emoji": "🪝",
+      "example_ipa": "patàk",
       "signwriting": "M512x527S1fb20493x474S14c20489x496",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -294,6 +309,7 @@
       "example_gloss": "base",
       "example_image": null,
       "example_emoji": "🧱",
+      "example_ipa": "tʰǎːn",
       "signwriting": "M508x527S1fb20493x474S10e20493x497",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -313,6 +329,7 @@
       "example_gloss": "Montho",
       "example_image": null,
       "example_emoji": "👸",
+      "example_ipa": "montʰoː",
       "signwriting": "M511x527S1fb20491x474S14420489x496",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -331,6 +348,7 @@
       "example_gloss": "elder",
       "example_image": null,
       "example_emoji": "🧓",
+      "example_ipa": "pʰûːtʰâw",
       "signwriting": "M512x526S1fb20497x474S11e20489x496",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -348,6 +366,7 @@
       "example_gloss": "novice monk",
       "example_image": null,
       "example_emoji": "🧘",
+      "example_ipa": "neːn",
       "signwriting": "M508x527S1fc20493x474S10020493x497",
       "signwriting_image": "images/signwriting/thai/S1fc20.png",
       "notes": ""
@@ -366,6 +385,7 @@
       "example_gloss": "child",
       "example_image": null,
       "example_emoji": "🧒",
+      "example_ipa": "dèk",
       "signwriting": "M508x515S10120492x485",
       "signwriting_image": "images/signwriting/thai/S10120.png",
       "notes": ""
@@ -384,6 +404,7 @@
       "example_gloss": "turtle",
       "example_image": null,
       "example_emoji": "🐢",
+      "example_ipa": "tàw",
       "signwriting": "M508x510S1fb20493x491",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -402,6 +423,7 @@
       "example_gloss": "bag",
       "example_image": null,
       "example_emoji": "🛍️",
+      "example_ipa": "tʰǔŋ",
       "signwriting": "M508x526S1fb20493x474S10020493x496",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -420,6 +442,7 @@
       "example_gloss": "soldier",
       "example_image": null,
       "example_emoji": "🪖",
+      "example_ipa": "tʰahǎːn",
       "signwriting": "M515x519S1fb20500x482S11502485x504",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -438,6 +461,7 @@
       "example_gloss": "flag",
       "example_image": null,
       "example_emoji": "🚩",
+      "example_ipa": "tʰoŋ",
       "signwriting": "M515x535S1fb20500x465S11502485x487S10020500x505",
       "signwriting_image": "images/signwriting/thai/S1fb20.png",
       "notes": ""
@@ -455,6 +479,7 @@
       "example_gloss": "mouse",
       "example_image": null,
       "example_emoji": "🐁",
+      "example_ipa": "nǔː",
       "signwriting": "M508x510S1fc20493x491",
       "signwriting_image": "images/signwriting/thai/S1fc20.png",
       "notes": ""
@@ -473,6 +498,7 @@
       "example_gloss": "leaf",
       "example_image": null,
       "example_emoji": "🍃",
+      "example_ipa": "bajmáj",
       "signwriting": "M507x511S14720493x489",
       "signwriting_image": "images/signwriting/thai/S14720.png",
       "notes": ""
@@ -491,6 +517,7 @@
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
+      "example_ipa": "plaː",
       "signwriting": "M516x528S14051485x472S10020498x498",
       "signwriting_image": "images/signwriting/thai/S14051.png",
       "notes": ""
@@ -508,6 +535,7 @@
       "example_gloss": "bee",
       "example_image": null,
       "example_emoji": "🐝",
+      "example_ipa": "pʰɯ̂ŋ",
       "signwriting": "M516x528S14051485x472S10e20498x498",
       "signwriting_image": "images/signwriting/thai/S14051.png",
       "notes": ""
@@ -525,6 +553,7 @@
       "example_gloss": "lid",
       "example_image": null,
       "example_emoji": "🫙",
+      "example_ipa": "fǎː",
       "signwriting": "M511x532S1ce20489x468S10020489x502",
       "signwriting_image": "images/signwriting/thai/S1ce20.png",
       "notes": ""
@@ -543,6 +572,7 @@
       "example_gloss": "tray",
       "example_image": null,
       "example_emoji": "🏺",
+      "example_ipa": "pʰaːn",
       "signwriting": "M516x512S14051485x488",
       "signwriting_image": "images/signwriting/thai/S14051.png",
       "notes": ""
@@ -561,6 +591,7 @@
       "example_gloss": "teeth",
       "example_image": null,
       "example_emoji": "🦷",
+      "example_ipa": "fan",
       "signwriting": "M511x515S1ce20489x485",
       "signwriting_image": "images/signwriting/thai/S1ce20.png",
       "notes": ""
@@ -579,6 +610,7 @@
       "example_gloss": "junk ship",
       "example_image": null,
       "example_emoji": "⛵",
+      "example_ipa": "sǎmpʰaw",
       "signwriting": "M516x528S14051485x472S11e20490x498",
       "signwriting_image": "images/signwriting/thai/S14051.png",
       "notes": ""
@@ -596,6 +628,7 @@
       "example_gloss": "horse",
       "example_image": null,
       "example_emoji": "🐎",
+      "example_ipa": "máː",
       "signwriting": "M508x510S1fd20493x491",
       "signwriting_image": "images/signwriting/thai/S1fd20.png",
       "notes": ""
@@ -613,6 +646,7 @@
       "example_gloss": "giant",
       "example_image": null,
       "example_emoji": "👹",
+      "example_ipa": "ják",
       "signwriting": "M514x510S19a20486x490",
       "signwriting_image": "images/signwriting/thai/S19a20.png",
       "notes": ""
@@ -631,6 +665,7 @@
       "example_gloss": "boat",
       "example_image": null,
       "example_emoji": "🚣",
+      "example_ipa": "rɯa",
       "signwriting": "M508x515S11a20493x485",
       "signwriting_image": "images/signwriting/thai/S11a20.png",
       "notes": ""
@@ -649,6 +684,7 @@
       "example_gloss": "monkey",
       "example_image": null,
       "example_emoji": "🐒",
+      "example_ipa": "liŋ",
       "signwriting": "M512x515S1dc20488x485",
       "signwriting_image": "images/signwriting/thai/S1dc20.png",
       "notes": ""
@@ -666,6 +702,7 @@
       "example_gloss": "ring",
       "example_image": null,
       "example_emoji": "💍",
+      "example_ipa": "wɛ̌ːn",
       "signwriting": "M509x515S18620491x485",
       "signwriting_image": "images/signwriting/thai/S18620.png",
       "notes": ""
@@ -684,6 +721,7 @@
       "example_gloss": "pavilion",
       "example_image": null,
       "example_emoji": "⛩️",
+      "example_ipa": "sǎːlaː",
       "signwriting": "M508x525S20320493x476S10020493x495",
       "signwriting_image": "images/signwriting/thai/S20320.png",
       "notes": ""
@@ -702,6 +740,7 @@
       "example_gloss": "hermit",
       "example_image": null,
       "example_emoji": "🧙",
+      "example_ipa": "rɯːsǐː",
       "signwriting": "M508x524S20320493x476S10e20493x494",
       "signwriting_image": "images/signwriting/thai/S20320.png",
       "notes": ""
@@ -720,6 +759,7 @@
       "example_gloss": "tiger",
       "example_image": null,
       "example_emoji": "🐅",
+      "example_ipa": "sɯ̌a",
       "signwriting": "M508x508S20320493x493",
       "signwriting_image": "images/signwriting/thai/S20320.png",
       "notes": ""
@@ -737,6 +777,7 @@
       "example_gloss": "chest",
       "example_image": null,
       "example_emoji": "🧰",
+      "example_ipa": "hìːp",
       "signwriting": "M515x508S11502485x493",
       "signwriting_image": "images/signwriting/thai/S11502.png",
       "notes": ""
@@ -755,6 +796,7 @@
       "example_gloss": "kite",
       "example_image": null,
       "example_emoji": "🪁",
+      "example_ipa": "tɕulaː",
       "signwriting": "M512x532S1dc20488x468S10020497x502",
       "signwriting_image": "images/signwriting/thai/S1dc20.png",
       "notes": ""
@@ -772,6 +814,7 @@
       "example_gloss": "basin",
       "example_image": null,
       "example_emoji": "🛁",
+      "example_ipa": "àːŋ",
       "signwriting": "M512x511S1ea10489x490",
       "signwriting_image": "images/signwriting/thai/S1ea10.png",
       "notes": ""
@@ -789,6 +832,7 @@
       "example_gloss": "owl",
       "example_image": null,
       "example_emoji": "🦉",
+      "example_ipa": "nók hûːk",
       "signwriting": "M515x524S11502485x476S10020500x494",
       "signwriting_image": "images/signwriting/thai/S11502.png",
       "notes": ""

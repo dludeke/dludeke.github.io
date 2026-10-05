@@ -30,6 +30,7 @@
       "example_gloss": "watermelon",
       "example_image": null,
       "example_emoji": "🍉",
+      "example_ipa": "ɐrˈbus",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0410.png",
       "notes": ""
@@ -48,6 +49,7 @@
       "example_gloss": "drum",
       "example_image": null,
       "example_emoji": "🪘",
+      "example_ipa": "bərɐˈban",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0411.png",
       "notes": ""
@@ -66,6 +68,7 @@
       "example_gloss": "wolf",
       "example_image": null,
       "example_emoji": "🐺",
+      "example_ipa": "volk",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0412.png",
       "notes": ""
@@ -84,6 +87,7 @@
       "example_gloss": "pear",
       "example_image": null,
       "example_emoji": "🍐",
+      "example_ipa": "ˈɡruʂə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0413.png",
       "notes": ""
@@ -102,6 +106,7 @@
       "example_gloss": "tree",
       "example_image": null,
       "example_emoji": "🌳",
+      "example_ipa": "ˈdʲerʲɪvə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0414.png",
       "notes": ""
@@ -120,6 +125,7 @@
       "example_gloss": "spruce",
       "example_image": null,
       "example_emoji": "🌲",
+      "example_ipa": "jelʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0415.png",
       "notes": ""
@@ -138,6 +144,7 @@
       "example_gloss": "hedgehog",
       "example_image": null,
       "example_emoji": "🦔",
+      "example_ipa": "joʂ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0401.png",
       "notes": ""
@@ -155,6 +162,7 @@
       "example_gloss": "giraffe",
       "example_image": null,
       "example_emoji": "🦒",
+      "example_ipa": "ʐɨˈraf",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0416.png",
       "notes": ""
@@ -173,6 +181,7 @@
       "example_gloss": "umbrella",
       "example_image": null,
       "example_emoji": "☂️",
+      "example_ipa": "zont",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0417.png",
       "notes": ""
@@ -190,6 +199,7 @@
       "example_gloss": "needle",
       "example_image": null,
       "example_emoji": "🪡",
+      "example_ipa": "ɪˈɡolkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0418.png",
       "notes": ""
@@ -207,6 +217,7 @@
       "example_gloss": "yoghurt",
       "example_image": null,
       "example_emoji": "🥛",
+      "example_ipa": "ˈjoɡurt",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0419.png",
       "notes": ""
@@ -225,6 +236,7 @@
       "example_gloss": "pencil",
       "example_image": null,
       "example_emoji": "✏️",
+      "example_ipa": "kərɐnˈdaʂ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041a.png",
       "notes": ""
@@ -243,6 +255,7 @@
       "example_gloss": "horse",
       "example_image": null,
       "example_emoji": "🐎",
+      "example_ipa": "ˈloʂətʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041b.png",
       "notes": ""
@@ -261,6 +274,7 @@
       "example_gloss": "mouse",
       "example_image": null,
       "example_emoji": "🐁",
+      "example_ipa": "mɨʂ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041c.png",
       "notes": ""
@@ -279,6 +293,7 @@
       "example_gloss": "scissors",
       "example_image": null,
       "example_emoji": "✂️",
+      "example_ipa": "ˈnoʐnʲɪtsɨ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041d.png",
       "notes": ""
@@ -297,6 +312,7 @@
       "example_gloss": "monkey",
       "example_image": null,
       "example_emoji": "🐒",
+      "example_ipa": "ɐbʲɪˈzʲjanə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041e.png",
       "notes": ""
@@ -315,6 +331,7 @@
       "example_gloss": "tomato",
       "example_image": null,
       "example_emoji": "🍅",
+      "example_ipa": "pəmʲɪˈdor",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041f.png",
       "notes": ""
@@ -333,6 +350,7 @@
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
+      "example_ipa": "ˈrɨbə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0420.png",
       "notes": ""
@@ -351,6 +369,7 @@
       "example_gloss": "elephant",
       "example_image": null,
       "example_emoji": "🐘",
+      "example_ipa": "slon",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0421.png",
       "notes": ""
@@ -369,6 +388,7 @@
       "example_gloss": "telephone",
       "example_image": null,
       "example_emoji": "☎️",
+      "example_ipa": "tʲɪlʲɪˈfon",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0422.png",
       "notes": ""
@@ -386,6 +406,7 @@
       "example_gloss": "snail",
       "example_image": null,
       "example_emoji": "🐌",
+      "example_ipa": "ʊˈlʲitkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0423.png",
       "notes": ""
@@ -404,6 +425,7 @@
       "example_gloss": "lantern",
       "example_image": null,
       "example_emoji": "🔦",
+      "example_ipa": "fɐˈnarʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0424.png",
       "notes": ""
@@ -421,6 +443,7 @@
       "example_gloss": "bread",
       "example_image": null,
       "example_emoji": "🍞",
+      "example_ipa": "xlʲep",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0425.png",
       "notes": ""
@@ -438,6 +461,7 @@
       "example_gloss": "flower",
       "example_image": null,
       "example_emoji": "🌼",
+      "example_ipa": "tsvʲɪˈtok",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0426.png",
       "notes": ""
@@ -455,6 +479,7 @@
       "example_gloss": "kettle",
       "example_image": null,
       "example_emoji": "🫖",
+      "example_ipa": "ˈtɕajnʲɪk",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0427.png",
       "notes": ""
@@ -472,6 +497,7 @@
       "example_gloss": "scarf",
       "example_image": null,
       "example_emoji": "🧣",
+      "example_ipa": "ʂarf",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0428.png",
       "notes": ""
@@ -489,6 +515,7 @@
       "example_gloss": "brush",
       "example_image": null,
       "example_emoji": "🪥",
+      "example_ipa": "ˈɕːɵtkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0429.png",
       "notes": ""
@@ -506,6 +533,7 @@
       "example_gloss": "entrance (letter never starts a word)",
       "example_image": null,
       "example_emoji": "🚪",
+      "example_ipa": "pɐdˈjest",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042a.png",
       "notes": ""
@@ -523,6 +551,7 @@
       "example_gloss": "cheese (letter never starts a word)",
       "example_image": null,
       "example_emoji": "🧀",
+      "example_ipa": "sɨr",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042b.png",
       "notes": ""
@@ -540,6 +569,7 @@
       "example_gloss": "salt (letter never starts a word)",
       "example_image": null,
       "example_emoji": "🧂",
+      "example_ipa": "solʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042c.png",
       "notes": ""
@@ -557,6 +587,7 @@
       "example_gloss": "excavator",
       "example_image": null,
       "example_emoji": "🚧",
+      "example_ipa": "ɛkskɐˈvatər",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042d.png",
       "notes": ""
@@ -575,6 +606,7 @@
       "example_gloss": "spinning top",
       "example_image": null,
       "example_emoji": "🪀",
+      "example_ipa": "jʊˈla",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042e.png",
       "notes": ""
@@ -593,6 +625,7 @@
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
+      "example_ipa": "ˈjablələkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042f.png",
       "notes": ""

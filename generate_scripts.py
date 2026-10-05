@@ -15,15 +15,16 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from script_content import WORDS, IPA as IPA_TABLE
+from script_content import WORDS, IPA as IPA_TABLE, WORD_IPA
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
 
 # Per-letter fields a human fills in; preserved across regeneration.
 HAND_EDITED = ("ipa", "handshape", "example_word", "example_gloss",
-               "example_image", "example_emoji", "notes", "romanization",
-               "signwriting", "signwriting_image")
+               "example_image", "example_emoji", "example_ipa", "notes",
+               "romanization", "signwriting", "signwriting_image",
+               "signwriting_variants", "handshape_variants")
 
 # slug, display name, representative letter, sign language, languages, note
 SCRIPTS = [
@@ -262,6 +263,9 @@ def main():
                 "example_gloss": None, # its meaning in English
                 "example_image": None, # picture of that noun
                 "example_emoji": None, # stand-in until a real picture exists
+                # How the example word is pronounced, so it can be read
+                # before its letters are known.
+                "example_ipa": None,
                 # Sutton SignWriting transcription of the handshape, as a
                 # Formal SignWriting (FSW) string e.g. "S1f720". Rendered from
                 # the Unicode block U+1D800-1DAAF.
@@ -273,6 +277,9 @@ def main():
             ipa_vals = IPA_TABLE.get(slug, {}).get(glyph)
             if ipa_vals:
                 entry["ipa"] = list(ipa_vals)
+            wi = WORD_IPA.get(slug, {}).get(glyph)
+            if wi:
+                entry["example_ipa"] = wi
             w = WORDS.get(slug, {}).get(glyph)
             if w:
                 word, gloss, emoji = w
@@ -295,6 +302,8 @@ def main():
                 from_tables.add("ipa")
             if w:
                 from_tables.update(("example_word", "example_gloss", "example_emoji"))
+            if wi:
+                from_tables.add("example_ipa")
             if got:
                 from_tables.update(("romanization", "ipa", "example_word",
                                     "example_gloss", "example_emoji"))

@@ -26,6 +26,7 @@
       "example_gloss": "ant",
       "example_image": null,
       "example_emoji": "🐜",
+      "example_ipa": "aɾi",
       "signwriting": "M510x508S1f720490x493",
       "signwriting_image": "images/signwriting/kana/S1f720.png",
       "notes": ""
@@ -43,6 +44,7 @@
       "example_gloss": "dog",
       "example_image": null,
       "example_emoji": "🐕",
+      "example_ipa": "inɯ",
       "signwriting": "M511x510S19220490x491",
       "signwriting_image": "images/signwriting/kana/S19220.png",
       "notes": ""
@@ -60,6 +62,7 @@
       "example_gloss": "horse",
       "example_image": null,
       "example_emoji": "🐎",
+      "example_ipa": "ɯma",
       "signwriting": "M508x515S11520493x485",
       "signwriting_image": "images/signwriting/kana/S11520.png",
       "notes": ""
@@ -77,6 +80,7 @@
       "example_gloss": "pencil",
       "example_image": null,
       "example_emoji": "✏️",
+      "example_ipa": "empitsɯ",
       "signwriting": "M507x509S16620492x491",
       "signwriting_image": "images/signwriting/kana/S16620.png",
       "notes": ""
@@ -94,6 +98,7 @@
       "example_gloss": "ogre",
       "example_image": null,
       "example_emoji": "👹",
+      "example_ipa": "oni",
       "signwriting": "M508x508S17610492x492",
       "signwriting_image": "images/signwriting/kana/S17610.png",
       "notes": ""
@@ -111,6 +116,7 @@
       "example_gloss": "umbrella",
       "example_image": null,
       "example_emoji": "☂️",
+      "example_ipa": "kasa",
       "signwriting": "M515x515S14020486x485",
       "signwriting_image": "images/signwriting/kana/S14020.png",
       "notes": ""
@@ -128,6 +134,7 @@
       "example_gloss": "fox",
       "example_image": null,
       "example_emoji": "🦊",
+      "example_ipa": "kitsɯne",
       "signwriting": "M514x515S1a320487x486",
       "signwriting_image": "images/signwriting/kana/S1a320.png",
       "notes": ""
@@ -145,6 +152,7 @@
       "example_gloss": "bear",
       "example_image": null,
       "example_emoji": "🐻",
+      "example_ipa": "kɯma",
       "signwriting": "M513x509S15d02486x490",
       "signwriting_image": "images/signwriting/kana/S15d02.png",
       "notes": ""
@@ -162,6 +170,7 @@
       "example_gloss": "caterpillar",
       "example_image": null,
       "example_emoji": "🐛",
+      "example_ipa": "kemɯʃi",
       "signwriting": "M507x511S14720493x489",
       "signwriting_image": "images/signwriting/kana/S14720.png",
       "notes": ""
@@ -179,6 +188,7 @@
       "example_gloss": "spinning top",
       "example_image": null,
       "example_emoji": "🪀",
+      "example_ipa": "koma",
       "signwriting": "M515x508S18010485x493",
       "signwriting_image": "images/signwriting/kana/S18010.png",
       "notes": ""
@@ -196,6 +206,7 @@
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
+      "example_ipa": "sakana",
       "signwriting": "M508x508S20320493x493",
       "signwriting_image": "images/signwriting/kana/S20320.png",
       "notes": ""
@@ -213,6 +224,7 @@
       "example_gloss": "deer",
       "example_image": null,
       "example_emoji": "🦌",
+      "example_ipa": "ʃika",
       "signwriting": "M515x512S11e02485x489",
       "signwriting_image": "images/signwriting/kana/S11e02.png",
       "notes": ""
@@ -230,6 +242,7 @@
       "example_gloss": "watermelon",
       "example_image": null,
       "example_emoji": "🍉",
+      "example_ipa": "sɯika",
       "signwriting": "M512x515S11e04489x485",
       "signwriting_image": "images/signwriting/kana/S11e04.png",
       "notes": ""
@@ -247,6 +260,7 @@
       "example_gloss": "cicada",
       "example_image": null,
       "example_emoji": "🦗",
+      "example_ipa": "semi",
       "signwriting": "M508x515S1c620493x485",
       "signwriting_image": "images/signwriting/kana/S1c620.png",
       "notes": ""
@@ -264,6 +278,7 @@
       "example_gloss": "sky",
       "example_image": null,
       "example_emoji": "🌤️",
+      "example_ipa": "soɾa",
       "signwriting": "M508x515S10040493x485",
       "signwriting_image": "images/signwriting/kana/S10040.png",
       "notes": ""
@@ -281,6 +296,7 @@
       "example_gloss": "octopus",
       "example_image": null,
       "example_emoji": "🐙",
+      "example_ipa": "tako",
       "signwriting": "M510x508S1f740490x493",
       "signwriting_image": "images/signwriting/kana/S1f740.png",
       "notes": ""
@@ -298,6 +314,7 @@
       "example_gloss": "map",
       "example_image": null,
       "example_emoji": "🗺️",
+      "example_ipa": "tɕizɯ",
       "signwriting": "M514x511S19620486x490",
       "signwriting_image": "images/signwriting/kana/S19620.png",
       "notes": ""
@@ -315,6 +332,7 @@
       "example_gloss": "moon",
       "example_image": null,
       "example_emoji": "🌙",
+      "example_ipa": "tsɯki",
       "signwriting": "M514x513S1b320486x487",
       "signwriting_image": "images/signwriting/kana/S1b320.png",
       "notes": ""
@@ -332,6 +350,7 @@
       "example_gloss": "hand",
       "example_image": null,
       "example_emoji": "✋",
+      "example_ipa": "te",
       "signwriting": "M512x516S14c20489x485",
       "signwriting_image": "images/signwriting/kana/S14c20.png",
       "notes": ""
@@ -349,6 +368,7 @@
       "example_gloss": "bird",
       "example_image": null,
       "example_emoji": "🐦",
+      "example_ipa": "toɾi",
       "signwriting": "M508x515S11500493x485",
       "signwriting_image": "images/signwriting/kana/S11500.png",
       "notes": ""
@@ -366,6 +386,7 @@
       "example_gloss": "aubergine",
       "example_image": null,
       "example_emoji": "🍆",
+      "example_ipa": "nasɯ",
       "signwriting": "M508x515S10e04493x485",
       "signwriting_image": "images/signwriting/kana/S10e04.png",
       "notes": ""
@@ -383,6 +404,7 @@
       "example_gloss": "chicken",
       "example_image": null,
       "example_emoji": "🐔",
+      "example_ipa": "niwatoɾi",
       "signwriting": "M515x508S10e02485x493",
       "signwriting_image": "images/signwriting/kana/S10e02.png",
       "notes": ""
@@ -400,6 +422,7 @@
       "example_gloss": "stuffed toy",
       "example_image": null,
       "example_emoji": "🧸",
+      "example_ipa": "nɯiɡɯɾɯmi",
       "signwriting": "M508x513S10610493x487",
       "signwriting_image": "images/signwriting/kana/S10610.png",
       "notes": ""
@@ -417,6 +440,7 @@
       "example_gloss": "cat",
       "example_image": null,
       "example_emoji": "🐈",
+      "example_ipa": "neko",
       "signwriting": "M512x516S14c04489x485",
       "signwriting_image": "images/signwriting/kana/S14c04.png",
       "notes": ""
@@ -434,6 +458,7 @@
       "example_gloss": "seaweed",
       "example_image": null,
       "example_emoji": "🍙",
+      "example_ipa": "noɾi",
       "signwriting": "M521x519S10020506x489S2a20c480x481",
       "signwriting_image": "images/signwriting/kana/S10020.png",
       "notes": ""
@@ -452,6 +477,7 @@
       "example_gloss": "flower",
       "example_image": null,
       "example_emoji": "🌸",
+      "example_ipa": "hana",
       "signwriting": "M508x515S11540493x485",
       "signwriting_image": "images/signwriting/kana/S11540.png",
       "notes": ""
@@ -469,6 +495,7 @@
       "example_gloss": "aeroplane",
       "example_image": null,
       "example_emoji": "✈️",
+      "example_ipa": "çikoːki",
       "signwriting": "M508x515S10020493x485",
       "signwriting_image": "images/signwriting/kana/S10020.png",
       "notes": ""
@@ -486,6 +513,7 @@
       "example_gloss": "boat",
       "example_image": null,
       "example_emoji": "⛵",
+      "example_ipa": "ɸɯne",
       "signwriting": "M512x515S1dc04488x485",
       "signwriting_image": "images/signwriting/kana/S1dc04.png",
       "notes": ""
@@ -504,6 +532,7 @@
       "example_gloss": "snake",
       "example_image": null,
       "example_emoji": "🐍",
+      "example_ipa": "hebi",
       "signwriting": "M514x510S19a04486x490",
       "signwriting_image": "images/signwriting/kana/S19a04.png",
       "notes": ""
@@ -521,6 +550,7 @@
       "example_gloss": "star",
       "example_image": null,
       "example_emoji": "⭐",
+      "example_ipa": "hoʃi",
       "signwriting": "M506x515S18100494x486",
       "signwriting_image": "images/signwriting/kana/S18100.png",
       "notes": ""
@@ -538,6 +568,7 @@
       "example_gloss": "window",
       "example_image": null,
       "example_emoji": "🪟",
+      "example_ipa": "mado",
       "signwriting": "M510x513S18d50490x488",
       "signwriting_image": "images/signwriting/kana/S18d50.png",
       "notes": ""
@@ -555,6 +586,7 @@
       "example_gloss": "water",
       "example_image": null,
       "example_emoji": "💧",
+      "example_ipa": "mizɯ",
       "signwriting": "M515x508S18c02485x493",
       "signwriting_image": "images/signwriting/kana/S18c02.png",
       "notes": ""
@@ -572,6 +604,7 @@
       "example_gloss": "insect",
       "example_image": null,
       "example_emoji": "🐛",
+      "example_ipa": "mɯʃi",
       "signwriting": "M515x512S1dc02485x488",
       "signwriting_image": "images/signwriting/kana/S1dc02.png",
       "notes": ""
@@ -589,6 +622,7 @@
       "example_gloss": "eye",
       "example_image": null,
       "example_emoji": "👁️",
+      "example_ipa": "me",
       "signwriting": "M511x515S1ce10489x485",
       "signwriting_image": "images/signwriting/kana/S1ce10.png",
       "notes": ""
@@ -606,6 +640,7 @@
       "example_gloss": "peach",
       "example_image": null,
       "example_emoji": "🍑",
+      "example_ipa": "momo",
       "signwriting": "M508x524S1f436493x495S22a04492x487S21b00494x477",
       "signwriting_image": "images/signwriting/kana/S1f436.png",
       "notes": ""
@@ -623,6 +658,7 @@
       "example_gloss": "mountain",
       "example_image": null,
       "example_emoji": "⛰️",
+      "example_ipa": "jama",
       "signwriting": "M514x510S19a20486x490",
       "signwriting_image": "images/signwriting/kana/S19a20.png",
       "notes": ""
@@ -640,6 +676,7 @@
       "example_gloss": "snow",
       "example_image": null,
       "example_emoji": "❄️",
+      "example_ipa": "jɯki",
       "signwriting": "M508x515S18c00493x485",
       "signwriting_image": "images/signwriting/kana/S18c00.png",
       "notes": ""
@@ -657,6 +694,7 @@
       "example_gloss": "night",
       "example_image": null,
       "example_emoji": "🌃",
+      "example_ipa": "joɾɯ",
       "signwriting": "M516x511S14402485x489",
       "signwriting_image": "images/signwriting/kana/S14402.png",
       "notes": ""
@@ -674,6 +712,7 @@
       "example_gloss": "camel",
       "example_image": null,
       "example_emoji": "🐫",
+      "example_ipa": "ɾakɯda",
       "signwriting": "M508x515S11a20493x485",
       "signwriting_image": "images/signwriting/kana/S11a20.png",
       "notes": ""
@@ -691,6 +730,7 @@
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
+      "example_ipa": "ɾiŋɡo",
       "signwriting": "M521x519S10e20506x489S2a20c480x481",
       "signwriting_image": "images/signwriting/kana/S10e20.png",
       "notes": ""
@@ -708,6 +748,7 @@
       "example_gloss": "house-sitting",
       "example_image": null,
       "example_emoji": "🏠",
+      "example_ipa": "ɾɯsɯban",
       "signwriting": null,
       "signwriting_image": null,
       "notes": ""
@@ -725,6 +766,7 @@
       "example_gloss": "refrigerator",
       "example_image": null,
       "example_emoji": "🧊",
+      "example_ipa": "ɾeːzoːko",
       "signwriting": "M512x515S1dc20488x485",
       "signwriting_image": "images/signwriting/kana/S1dc20.png",
       "notes": ""
@@ -742,6 +784,7 @@
       "example_gloss": "candle",
       "example_image": null,
       "example_emoji": "🕯️",
+      "example_ipa": "ɾoːsokɯ",
       "signwriting": "M508x514S11010493x487",
       "signwriting_image": "images/signwriting/kana/S11010.png",
       "notes": ""
@@ -759,6 +802,7 @@
       "example_gloss": "crocodile",
       "example_image": null,
       "example_emoji": "🐊",
+      "example_ipa": "wani",
       "signwriting": "M509x515S18620491x485",
       "signwriting_image": "images/signwriting/kana/S18620.png",
       "notes": ""
@@ -776,6 +820,7 @@
       "example_gloss": "object particle, never starts a word",
       "example_image": null,
       "example_emoji": "💬",
+      "example_ipa": "o",
       "signwriting": "M508x517S17610492x501S26504493x483",
       "signwriting_image": "images/signwriting/kana/S17610.png",
       "notes": ""
@@ -796,6 +841,7 @@
       "example_gloss": "mandarin — ん never starts a word",
       "example_image": null,
       "example_emoji": "🍊",
+      "example_ipa": "mikaɴ",
       "signwriting": "M521x519S10040480x489S2a204498x481",
       "signwriting_image": "images/signwriting/kana/S10040.png",
       "notes": ""

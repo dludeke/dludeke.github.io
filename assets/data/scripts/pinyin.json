@@ -26,6 +26,7 @@
       "example_gloss": "love",
       "example_image": null,
       "example_emoji": "❤️",
+      "example_ipa": "aɪ̯˥˩",
       "signwriting": "M510x508S1f740490x493",
       "signwriting_image": "images/signwriting/pinyin/S1f740.png",
       "notes": ""
@@ -43,6 +44,7 @@
       "example_gloss": "bag",
       "example_image": null,
       "example_emoji": "🎒",
+      "example_ipa": "paʊ̯˥",
       "signwriting": "M507x511S14720493x489",
       "signwriting_image": "images/signwriting/pinyin/S14720.png",
       "notes": ""
@@ -60,6 +62,7 @@
       "example_gloss": "grass",
       "example_image": null,
       "example_emoji": "🌿",
+      "example_ipa": "tsʰaʊ̯˨˩˦",
       "signwriting": "M509x510S16d10492x490",
       "signwriting_image": "images/signwriting/pinyin/S16d10.png",
       "notes": ""
@@ -77,6 +80,7 @@
       "example_gloss": "lamp",
       "example_image": null,
       "example_emoji": "💡",
+      "example_ipa": "tɤŋ˥",
       "signwriting": "M508x508S20320493x493",
       "signwriting_image": "images/signwriting/pinyin/S20320.png",
       "notes": ""
@@ -95,6 +99,7 @@
       "example_gloss": "goose",
       "example_image": null,
       "example_emoji": "🪿",
+      "example_ipa": "ɤ˧˥",
       "signwriting": "M515x511S1ce02485x489",
       "signwriting_image": "images/signwriting/pinyin/S1ce02.png",
       "notes": ""
@@ -112,6 +117,7 @@
       "example_gloss": "aeroplane",
       "example_image": null,
       "example_emoji": "✈️",
+      "example_ipa": "feɪ̯˥ tɕi˥",
       "signwriting": "M515x508S11502485x493",
       "signwriting_image": "images/signwriting/pinyin/S11502.png",
       "notes": ""
@@ -129,6 +135,7 @@
       "example_gloss": "dog",
       "example_image": null,
       "example_emoji": "🐕",
+      "example_ipa": "koʊ̯˨˩˦",
       "signwriting": "M515x508S10002485x493",
       "signwriting_image": "images/signwriting/pinyin/S10002.png",
       "notes": ""
@@ -146,6 +153,7 @@
       "example_gloss": "flower",
       "example_image": null,
       "example_emoji": "🌸",
+      "example_ipa": "xwa˥",
       "signwriting": "M508x515S11520493x485",
       "signwriting_image": "images/signwriting/pinyin/S11520.png",
       "notes": ""
@@ -164,6 +172,7 @@
       "example_gloss": "clothes — i never begins a syllable",
       "example_image": null,
       "example_emoji": "👕",
+      "example_ipa": "i˥",
       "signwriting": "M508x515S10020493x485",
       "signwriting_image": "images/signwriting/pinyin/S10020.png",
       "notes": ""
@@ -181,6 +190,7 @@
       "example_gloss": "chicken",
       "example_image": null,
       "example_emoji": "🐔",
+      "example_ipa": "tɕi˥",
       "signwriting": "M508x513S10610493x487",
       "signwriting_image": "images/signwriting/pinyin/S10610.png",
       "notes": ""
@@ -198,6 +208,7 @@
       "example_gloss": "coffee",
       "example_image": null,
       "example_emoji": "☕",
+      "example_ipa": "kʰa˥ feɪ̯˥",
       "signwriting": "M515x515S14010486x485",
       "signwriting_image": "images/signwriting/pinyin/S14010.png",
       "notes": ""
@@ -215,6 +226,7 @@
       "example_gloss": "dragon",
       "example_image": null,
       "example_emoji": "🐉",
+      "example_ipa": "lʊŋ˧˥",
       "signwriting": "M512x515S1dc20488x485",
       "signwriting_image": "images/signwriting/pinyin/S1dc20.png",
       "notes": ""
@@ -232,6 +244,7 @@
       "example_gloss": "cat",
       "example_image": null,
       "example_emoji": "🐈",
+      "example_ipa": "maʊ̯˥",
       "signwriting": "M508x510S1fd20493x491",
       "signwriting_image": "images/signwriting/pinyin/S1fd20.png",
       "notes": ""
@@ -250,6 +263,7 @@
       "example_gloss": "cow",
       "example_image": null,
       "example_emoji": "🐄",
+      "example_ipa": "njoʊ̯˧˥",
       "signwriting": "M508x510S1fc20493x491",
       "signwriting_image": "images/signwriting/pinyin/S1fc20.png",
       "notes": ""
@@ -268,6 +282,7 @@
       "example_gloss": "lotus root",
       "example_image": null,
       "example_emoji": "🪷",
+      "example_ipa": "oʊ̯˨˩˦",
       "signwriting": "M508x508S17610492x492",
       "signwriting_image": "images/signwriting/pinyin/S17610.png",
       "notes": ""
@@ -285,6 +300,7 @@
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
+      "example_ipa": "pʰiŋ˧˥ kwo˨˩˦",
       "signwriting": "M508x515S1da1c492x486",
       "signwriting_image": "images/signwriting/pinyin/S1da1c.png",
       "notes": ""
@@ -302,6 +318,7 @@
       "example_gloss": "ball",
       "example_image": null,
       "example_emoji": "⚽",
+      "example_ipa": "tɕʰjoʊ̯˧˥",
       "signwriting": "M515x508S1f410486x493",
       "signwriting_image": "images/signwriting/pinyin/S1f410.png",
       "notes": ""
@@ -320,6 +337,7 @@
       "example_gloss": "person",
       "example_image": null,
       "example_emoji": "🧍",
+      "example_ipa": "ʐən˧˥",
       "signwriting": "M515x512S1dc02485x488",
       "signwriting_image": "images/signwriting/pinyin/S1dc02.png",
       "notes": ""
@@ -337,6 +355,7 @@
       "example_gloss": "umbrella",
       "example_image": null,
       "example_emoji": "☂️",
+      "example_ipa": "san˨˩˦",
       "signwriting": "M512x508S18210489x493",
       "signwriting_image": "images/signwriting/pinyin/S18210.png",
       "notes": ""
@@ -354,6 +373,7 @@
       "example_gloss": "rabbit",
       "example_image": null,
       "example_emoji": "🐰",
+      "example_ipa": "tʰu˥˩ t͡sɨ",
       "signwriting": "M511x515S1a120490x486",
       "signwriting_image": "images/signwriting/pinyin/S1a120.png",
       "notes": ""
@@ -371,6 +391,7 @@
       "example_gloss": "house — u never begins a syllable",
       "example_image": null,
       "example_emoji": "🏠",
+      "example_ipa": "u˥",
       "signwriting": "M510x514S15d20491x487",
       "signwriting_image": "images/signwriting/pinyin/S15d20.png",
       "notes": ""
@@ -388,6 +409,7 @@
       "example_gloss": "green — v stands for ü, no native v sound",
       "example_image": null,
       "example_emoji": "💚",
+      "example_ipa": "ly˥˩",
       "signwriting": "M508x515S10e20493x485",
       "signwriting_image": "images/signwriting/pinyin/S10e20.png",
       "notes": ""
@@ -405,6 +427,7 @@
       "example_gloss": "bowl",
       "example_image": null,
       "example_emoji": "🥣",
+      "example_ipa": "wan˨˩˦",
       "signwriting": "M509x515S18620491x485",
       "signwriting_image": "images/signwriting/pinyin/S18620.png",
       "notes": ""
@@ -422,6 +445,7 @@
       "example_gloss": "panda",
       "example_image": null,
       "example_emoji": "🐼",
+      "example_ipa": "ɕjʊŋ˧˥ maʊ̯˥",
       "signwriting": "M508x515S11a20493x485",
       "signwriting_image": "images/signwriting/pinyin/S11a20.png",
       "notes": ""
@@ -439,6 +463,7 @@
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
+      "example_ipa": "y˧˥",
       "signwriting": "M514x510S19a20486x490",
       "signwriting_image": "images/signwriting/pinyin/S19a20.png",
       "notes": ""
@@ -456,6 +481,7 @@
       "example_gloss": "character",
       "example_image": null,
       "example_emoji": "🔤",
+      "example_ipa": "t͡sɨ˥˩",
       "signwriting": "M515x510S1a002486x490",
       "signwriting_image": "images/signwriting/pinyin/S1a002.png",
       "notes": ""
@@ -473,6 +499,7 @@
       "example_gloss": "pig",
       "example_image": null,
       "example_emoji": "🐷",
+      "example_ipa": "ʈʂu˥",
       "signwriting": "M515x510S1a402485x490",
       "signwriting_image": "images/signwriting/pinyin/S1a402.png",
       "notes": ""
@@ -490,6 +517,7 @@
       "example_gloss": "car",
       "example_image": null,
       "example_emoji": "🚗",
+      "example_ipa": "ʈʂʰɤ˥",
       "signwriting": "M512x508S17e10489x493",
       "signwriting_image": "images/signwriting/pinyin/S17e10.png",
       "notes": ""
@@ -507,6 +535,7 @@
       "example_gloss": "book",
       "example_image": null,
       "example_emoji": "📖",
+      "example_ipa": "ʂu˥",
       "signwriting": "M512x513S13210488x488",
       "signwriting_image": "images/signwriting/pinyin/S13210.png",
       "notes": ""
@@ -524,6 +553,7 @@
       "example_gloss": "sheep — ng never begins a syllable",
       "example_image": null,
       "example_emoji": "🐑",
+      "example_ipa": "jaŋ˧˥",
       "signwriting": "M510x511S19202491x490",
       "signwriting_image": "images/signwriting/pinyin/S19202.png",
       "notes": ""

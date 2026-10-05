@@ -221,7 +221,35 @@
       line-height: 1;
     }
 
-    .example-word { font-size: 1rem; }
+    .example-word {
+      font-size: 1rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    /* Deliberately quiet: a hint you can reach for, not a label competing
+       with the word itself. */
+    .say {
+      font: inherit;
+      font-size: 0.66rem;
+      letter-spacing: 0.04em;
+      color: #b9c0c6;
+      background: none;
+      border: none;
+      padding: 0 0.1rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .say:hover, .say:focus-visible { color: #007bff; }
+    .say.open { color: #cdd3d8; }
+
+    .say-ipa {
+      font-size: 0.86rem;
+      color: #6b747c;
+    }
     .example-word b { color: #e8590c; }
 
     .fill-state {
@@ -386,7 +414,14 @@
                 : '<span class="v empty">\u2014</span>'}
               ${handKey(fswOf(L)) ? `<code class="sw-key">${handKey(fswOf(L))}</code>` : ''}
             </div>
-            <div class="example-word">${word || '<span class="v empty">example word</span>'}</div>
+            <div class="example-word">
+              ${word || '<span class="v empty">example word</span>'}
+              ${L.example_ipa
+                ? `<button class="say" type="button" aria-expanded="false"
+                           aria-label="Show pronunciation of ${L.example_word}">\u00b7say\u00b7</button>
+                   <span class="say-ipa ipa" hidden>/${L.example_ipa}/</span>`
+                : ''}
+            </div>
             ${L.example_gloss ? row('Means', L.example_gloss) : ''}
           </div>`;
       }).join('');
@@ -421,6 +456,15 @@
              ${a.licence}. ${a.note || ''}</p>`).join('')}
         </div>` : ''}`;
       document.getElementById('body').innerHTML = html;
+      document.querySelectorAll('.say').forEach(b => {
+        b.addEventListener('click', () => {
+          const out = b.nextElementSibling;
+          const show = out.hidden;
+          out.hidden = !show;
+          b.setAttribute('aria-expanded', String(show));
+          b.classList.toggle('open', show);
+        });
+      });
       document.querySelectorAll('.variant-btn').forEach(b => {
         b.addEventListener('click', () => {
           try { localStorage.setItem('handshapeVariant.' + d.slug, b.dataset.v); } catch (e) {}
