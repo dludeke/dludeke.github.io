@@ -7,6 +7,23 @@
   <title>SignWriting Transcriber</title>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
   <style>
+    /* The authoring tool loads the full SignWriting font so every fill and
+       rotation renders live. The public pages never do: they show small
+       pre-rendered PNGs, because this file is nearly 8MB. Served locally if
+       present, otherwise from the CDN. */
+    @font-face {
+      font-family: "SuttonSignWritingOneD";
+      src: url("SuttonSignWritingOneD.ttf") format("truetype"),
+           url("https://cdn.jsdelivr.net/npm/@sutton-signwriting/font-ttf/font/SuttonSignWritingOneD.ttf") format("truetype");
+      font-display: block;
+    }
+
+    .glyph {
+      font-family: "SuttonSignWritingOneD";
+      color: #c81010;
+      line-height: 1;
+      display: inline-block;
+    }
     .bar { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
     .bar input[type="search"] {
       font: inherit; font-size: 0.85rem; padding: 0.35rem 0.6rem;
@@ -35,7 +52,7 @@
     .letter-row.sel { background: #007bff; color: #fff; }
     .letter-row img { height: 30px; width: 36px; object-fit: contain; }
     .letter-row .g { font-size: 1rem; min-width: 2.2rem; }
-    .letter-row .sw { height: 26px; margin-left: auto; }
+    .letter-row .sw { margin-left: auto; line-height: 1; }
     .letter-row.done .g::after { content: " ✓"; color: #1a7f37; }
     .letter-row.sel.done .g::after { color: #cfe3ff; }
 
@@ -141,6 +158,19 @@
     const save = o => { try { localStorage.setItem(LS, JSON.stringify(o)); } catch (e) {} };
     const keyOf = () => base === null ? null : `S${base}${fill.toString(16)}${rot.toString(16)}`;
 
+    /** FSW key -> SWU codepoint: 0x40001 + (base-0x100)*96 + fill*16 + rotation */
+    function swuChar(key) {
+      if (!key || key.length !== 6) return '';
+      const b = parseInt(key.slice(1, 4), 16);
+      const f = parseInt(key[4], 16);
+      const r = parseInt(key[5], 16);
+      if (isNaN(b) || isNaN(f) || isNaN(r)) return '';
+      return String.fromCodePoint(0x40001 + (b - 0x100) * 96 + f * 16 + r);
+    }
+
+    const glyphHtml = (key, px) =>
+      `<span class="glyph" style="font-size:${px}px">${swuChar(key)}</span>`;
+
     /** Hand symbol key already recorded in the data file, if any. */
     function imported(glyph) {
       const L = (items || []).find(x => x.glyph === glyph);
@@ -239,7 +269,12 @@
         const shape = L.handshape || (L.handshape_variants && Object.values(L.handshape_variants)[0]);
         if (shape) { const im = document.createElement('img'); im.src = shape; b.appendChild(im); }
         const k = stored(L.glyph);
-        if (k) { const sw = document.createElement('img'); sw.className = 'sw'; sw.src = symbolSrc(k); b.appendChild(sw); }
+        if (k) {
+        const sw = document.createElement('span');
+        sw.className = 'sw';
+        sw.innerHTML = glyphHtml(k, 22);
+        b.appendChild(sw);
+      }
         b.addEventListener('click', () => open(i));
         host.appendChild(b);
       });
@@ -266,7 +301,7 @@
       host.innerHTML = `
         ${shape ? `<img class="hand" src="${shape}" alt="${L.glyph}" />`
                 : '<span class="meta">no handshape image</span>'}
-        <div class="chosen">${key ? `<img src="${symbolSrc(key)}" alt="${key}" />` : '<span class="meta">pick a symbol</span>'}</div>
+        <div class="chosen">${key ? glyphHtml(key, 104) : '<span class="meta">pick a symbol</span>'}</div>
         <div>
           <div style="font-size:1.4rem">${L.glyph} <span class="meta">${L.name || ''}</span></div>
           <div class="meta">${key && (usage[key.slice(1,4)] || []).length
@@ -285,8 +320,8 @@
           </div>
         </div>`;
       const r = el('rot'), f = el('fill');
-      if (r) r.addEventListener('input', () => { rot = +r.value; commit(); });
-      if (f) f.addEventListener('input', () => { fill = +f.value; commit(); });
+      if (r) r.addEventListener('input', () => { rot = +r.value; commit(); renderPalette(); markPalette(); });
+      if (f) f.addEventListener('input', () => { fill = +f.value; commit(); renderPalette(); markPalette(); });
     }
 
     function commit() {
@@ -307,9 +342,7 @@
         const who = usage[h.base] || [];
         b.title = who.length ? `S${h.base} — used by ${who.slice(0, 8).join(', ')}` : `S${h.base}`;
         if (who.length) b.classList.add('known');
-        const im = document.createElement('img');
-        im.src = h.image; im.loading = 'lazy';
-        b.appendChild(im);
+        b.innerHTML = glyphHtml(`S${h.base}${fill.toString(16)}${rot.toString(16)}`, 38);
         b.addEventListener('click', () => {
           if (idx < 0) return;
           base = h.base; commit(); markPalette();
