@@ -685,3 +685,72 @@ NOTES["pinyin"] = {
 NOTES["geez"] = {
  "ሀ": "Listed in first order, carrying the vowel ä. Each consonant has seven orders, one per vowel, written as changes to the same base shape.",
 }
+
+# ---------------------------------------------------------------------------
+# Wikipedia pointers. Two kinds: a few per script, and a glossary of the
+# technical terms used in the notes, linked on first mention so the notes can
+# stay short without being opaque.
+# ---------------------------------------------------------------------------
+
+W = "https://en.wikipedia.org/wiki/"
+
+LINKS = {
+ "greek": [("Greek alphabet", W+"Greek_alphabet"),
+           ("Greek Sign Language", W+"Greek_Sign_Language"),
+           ("Modern Greek phonology", W+"Modern_Greek_phonology")],
+ "latin": [("Latin alphabet", W+"Latin_alphabet"),
+           ("American Sign Language", W+"American_Sign_Language"),
+           ("British Sign Language", W+"British_Sign_Language"),
+           ("Fingerspelling", W+"Fingerspelling")],
+ "hebrew": [("Hebrew alphabet", W+"Hebrew_alphabet"),
+            ("Israeli Sign Language", W+"Israeli_Sign_Language"),
+            ("Abjad", W+"Abjad")],
+ "arabic": [("Arabic alphabet", W+"Arabic_alphabet"),
+            ("Arabic sign languages", W+"Arab_sign-language_family"),
+            ("Arabic phonology", W+"Arabic_phonology")],
+ "farsi": [("Persian alphabet", W+"Persian_alphabet"),
+           ("Iranian Sign Language", W+"Iranian_Sign_Language"),
+           ("Persian phonology", W+"Persian_phonology")],
+ "devanagari": [("Devanagari", W+"Devanagari"),
+                ("Nepalese Sign Language", W+"Nepalese_Sign_Language"),
+                ("Abugida", W+"Abugida")],
+ "cyrillic": [("Cyrillic script", W+"Cyrillic_script"),
+              ("Russian Sign Language", W+"Russian_Sign_Language"),
+              ("Russian phonology", W+"Russian_phonology")],
+ "kana": [("Kana", W+"Kana"), ("Japanese Sign Language", W+"Japanese_Sign_Language"),
+          ("Gojūon", W+"Goj%C5%ABon")],
+ "hangul": [("Hangul", W+"Hangul"), ("Korean Sign Language", W+"Korean_Sign_Language"),
+            ("Korean phonology", W+"Korean_phonology")],
+ "thai": [("Thai script", W+"Thai_script"), ("Thai Sign Language", W+"Thai_Sign_Language"),
+          ("Thai phonology", W+"Thai_phonology")],
+ "geez": [("Ge'ez script", W+"Ge%CA%BDez_script"),
+          ("Ethiopian Sign Language", W+"Ethiopian_Sign_Language"),
+          ("Amharic", W+"Amharic")],
+ "pinyin": [("Pinyin", W+"Pinyin"), ("Chinese Sign Language", W+"Chinese_Sign_Language"),
+            ("Standard Chinese phonology", W+"Standard_Chinese_phonology")],
+}
+
+# Term -> article. Matched case-insensitively on whole words, first hit only.
+GLOSSARY = {
+ "palatal": W+"Palatalization_(phonetics)",
+ "palatalises": W+"Palatalization_(phonetics)",
+ "palatalised": W+"Palatalization_(phonetics)",
+ "palatalisation": W+"Palatalization_(phonetics)",
+ "devoices": W+"Final-obstruent_devoicing",
+ "reduces": W+"Vowel_reduction",
+ "dagesh": W+"Dagesh",
+ "sun letter": W+"Sun_and_moon_letters",
+ "glottal stop": W+"Glottal_stop",
+ "pharyngeal": W+"Pharyngeal_consonant",
+ "retroflex": W+"Retroflex_consonant",
+ "dental": W+"Dental_consonant",
+ "aspirated": W+"Aspirated_consonant",
+ "unaspirated": W+"Aspirated_consonant",
+ "unreleased": W+"Unreleased_stop",
+ "flap": W+"Flap_consonant",
+ "tone class": W+"Thai_script#Consonants",
+ "hamza": W+"Hamza",
+ "jamo": W+"Hangul#Letters",
+ "schwa": W+"Schwa_deletion_in_Indo-Aryan_languages",
+ "topic": W+"Topic_marker",
+}

@@ -9,10 +9,47 @@
   "languages": [
     "Korean"
   ],
-  "note": null,
+  "note": "Featural alphabet: 14 basic consonants and 10 basic vowels, composed into syllable blocks.",
   "status": "skeleton",
   "attribution": null,
   "layout": null,
+  "links": [
+    {
+      "label": "Hangul",
+      "url": "https://en.wikipedia.org/wiki/Hangul"
+    },
+    {
+      "label": "Korean Sign Language",
+      "url": "https://en.wikipedia.org/wiki/Korean_Sign_Language"
+    },
+    {
+      "label": "Korean phonology",
+      "url": "https://en.wikipedia.org/wiki/Korean_phonology"
+    }
+  ],
+  "glossary": {
+    "palatal": "https://en.wikipedia.org/wiki/Palatalization_(phonetics)",
+    "palatalises": "https://en.wikipedia.org/wiki/Palatalization_(phonetics)",
+    "palatalised": "https://en.wikipedia.org/wiki/Palatalization_(phonetics)",
+    "palatalisation": "https://en.wikipedia.org/wiki/Palatalization_(phonetics)",
+    "devoices": "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
+    "reduces": "https://en.wikipedia.org/wiki/Vowel_reduction",
+    "dagesh": "https://en.wikipedia.org/wiki/Dagesh",
+    "sun letter": "https://en.wikipedia.org/wiki/Sun_and_moon_letters",
+    "glottal stop": "https://en.wikipedia.org/wiki/Glottal_stop",
+    "pharyngeal": "https://en.wikipedia.org/wiki/Pharyngeal_consonant",
+    "retroflex": "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "dental": "https://en.wikipedia.org/wiki/Dental_consonant",
+    "aspirated": "https://en.wikipedia.org/wiki/Aspirated_consonant",
+    "unaspirated": "https://en.wikipedia.org/wiki/Aspirated_consonant",
+    "unreleased": "https://en.wikipedia.org/wiki/Unreleased_stop",
+    "flap": "https://en.wikipedia.org/wiki/Flap_consonant",
+    "tone class": "https://en.wikipedia.org/wiki/Thai_script#Consonants",
+    "hamza": "https://en.wikipedia.org/wiki/Hamza",
+    "jamo": "https://en.wikipedia.org/wiki/Hangul#Letters",
+    "schwa": "https://en.wikipedia.org/wiki/Schwa_deletion_in_Indo-Aryan_languages",
+    "topic": "https://en.wikipedia.org/wiki/Topic_marker"
+  },
   "letters": [
     {
       "glyph": "ㄱ",

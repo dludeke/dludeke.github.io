@@ -212,6 +212,30 @@
     .credits p { margin: 0.35rem 0; }
     .credits a { color: #5b6b7a; }
 
+    .refs {
+      margin: -1rem 0 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    .refs a {
+      font-size: 0.78rem;
+      color: #8c959d;
+      text-decoration: none;
+      border-bottom: 1px dotted #ccd3d9;
+    }
+
+    .refs a:hover { color: #007bff; border-bottom-color: #007bff; }
+
+    .letter-note a.term {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted #c3cad1;
+    }
+
+    .letter-note a.term:hover { color: #007bff; border-bottom-color: #007bff; }
+
     .letter-note {
       margin: 0.6rem 0 0;
       padding-top: 0.5rem;
@@ -456,9 +480,27 @@
                 : ''}
             </div>
             ${L.example_gloss ? row('Means', L.example_gloss) : ''}
-            ${L.notes ? `<p class="letter-note">${L.notes}</p>` : ''}
+            ${L.notes ? `<p class="letter-note">${linkNote(L.notes)}</p>` : ''}
           </div>`;
       };
+
+      // Link the first mention of each technical term in a note, so the notes
+      // can stay one line and still lead somewhere.
+      const terms = Object.keys(d.glossary || {}).sort((a, b) => b.length - a.length);
+      const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      function linkNote(text) {
+        if (!text) return text;
+        const used = new Set();
+        for (const t of terms) {
+          if (used.has(t)) continue;
+          const re = new RegExp(`\\b(${esc(t)})\\b`, 'i');
+          if (re.test(text)) {
+            text = text.replace(re, `<a class="term" target="_blank" rel="noopener" href="${d.glossary[t]}">$1</a>`);
+            used.add(t);
+          }
+        }
+        return text;
+      }
 
       const byGlyph = Object.fromEntries(d.letters.map(L => [L.glyph, L]));
       // A script with a layout keeps its table shape: blanks stay blank so
@@ -484,6 +526,8 @@
           ${variantNames.map(v => `<button class="variant-btn${v === variant ? ' active' : ''}" data-v="${v}">${v}</button>`).join('')}
         </div>` : ''}
         <p class="note">${d.note}</p>
+        ${(d.links || []).length ? `<p class="refs">${d.links.map(l =>
+            `<a href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`).join('')}</p>` : ''}
         <p class="fill-state">
           ${n} letters &middot;
           ${cols.map(([label, got]) => `

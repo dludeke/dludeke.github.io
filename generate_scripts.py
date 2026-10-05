@@ -15,7 +15,8 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from script_content import WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES
+from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
+                            LINKS, GLOSSARY)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -312,9 +313,11 @@ def main():
             ipa_vals = IPA_TABLE.get(slug, {}).get(glyph)
             if ipa_vals:
                 entry["ipa"] = list(ipa_vals)
-            note = NOTES.get(slug, {}).get(glyph)
-            if note:
-                entry["notes"] = note
+            # named letter_note, not note: the script's own note comes from
+            # the loop header and was being clobbered by this
+            letter_note = NOTES.get(slug, {}).get(glyph)
+            if letter_note:
+                entry["notes"] = letter_note
             wi = WORD_IPA.get(slug, {}).get(glyph)
             if wi:
                 entry["example_ipa"] = wi
@@ -342,7 +345,7 @@ def main():
                 from_tables.update(("example_word", "example_gloss", "example_emoji"))
             if wi:
                 from_tables.add("example_ipa")
-            if note:
+            if letter_note:
                 from_tables.add("notes")
             if got:
                 from_tables.update(("romanization", "ipa", "example_word",
@@ -364,6 +367,8 @@ def main():
             "status": "skeleton",
             "attribution": ATTRIBUTION.get(slug),
             "layout": LAYOUTS.get(slug),
+            "links": [{"label": l, "url": u} for l, u in LINKS.get(slug, [])],
+            "glossary": GLOSSARY,
             "letters": letters,
         }
         with open(path, "w", encoding="utf-8") as fh:
