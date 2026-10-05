@@ -250,6 +250,7 @@
       font-size: 0.86rem;
       color: #6b747c;
     }
+    .example-word .w { white-space: nowrap; }
     .example-word b { color: #e8590c; }
 
     .fill-state {
@@ -415,7 +416,7 @@
               ${handKey(fswOf(L)) ? `<code class="sw-key">${handKey(fswOf(L))}</code>` : ''}
             </div>
             <div class="example-word">
-              ${word || '<span class="v empty">example word</span>'}
+              <span class="w">${word || '<span class="v empty">example word</span>'}</span>
               ${L.example_ipa
                 ? `<button class="say" type="button" aria-expanded="false"
                            aria-label="Show pronunciation of ${L.example_word}">\u00b7say\u00b7</button>

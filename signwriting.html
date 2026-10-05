@@ -103,8 +103,9 @@
 
       <div class="bar">
         <label>Script <select id="scriptSel"></select></label>
+        <select id="variantSel" hidden></select>
         <button class="primary" id="exportBtn">Export JSON</button>
-        <button class="danger" id="clearBtn">Clear this letter</button>
+        <button class="danger" id="clearBtn">Revert this letter</button>
         <span class="count" id="count"></span>
       </div>
 
@@ -126,6 +127,7 @@
     const SCRIPTS = ['arabic','cyrillic','devanagari','farsi','geez','greek',
                      'hangul','hebrew','kana','latin','pinyin','thai'];
     let slug = 'latin', data = null, items = [], idx = -1, hands = [];
+    let variantPick = null;   // for scripts with more than one manual alphabet
     let base = null, fill = 0, rot = 0;
 
     const el = id => document.getElementById(id);
@@ -133,7 +135,22 @@
     const save = o => { try { localStorage.setItem(LS, JSON.stringify(o)); } catch (e) {} };
     const keyOf = () => base === null ? null : `S${base}${fill.toString(16)}${rot.toString(16)}`;
 
-    function stored(glyph) { return (load()[slug] || {})[glyph] || null; }
+    /** Hand symbol key already recorded in the data file, if any. */
+    function imported(glyph) {
+      const L = (items || []).find(x => x.glyph === glyph);
+      if (!L) return null;
+      const fsw = (variantPick && (L.signwriting_variants || {})[variantPick]) || L.signwriting;
+      const all = (fsw || '').match(/S([0-9a-f]{3})([0-9a-f])([0-9a-f])/g) || [];
+      return all.find(k => { const b = parseInt(k.slice(1, 4), 16); return b >= 0x100 && b <= 0x204; }) || null;
+    }
+
+    /** Local edit wins; otherwise fall back to what was imported. */
+    function stored(glyph) {
+      const local = (load()[slug] || {})[glyph];
+      return local || imported(glyph) || null;
+    }
+
+    function isEdited(glyph) { return !!(load()[slug] || {})[glyph]; }
 
     function setStored(glyph, key) {
       const all = load();
@@ -162,8 +179,14 @@
     }
 
     async function loadScript() {
-      data = await (await fetch(`assets/data/scripts/${slug}.json`)).json();
+      data = await (await fetch(`assets/data/scripts/${slug}.json`, { cache: 'no-cache' })).json();
       items = data.letters;
+      const vs = [...new Set(items.flatMap(L => Object.keys(L.signwriting_variants || {})))];
+      variantPick = vs.length ? vs[0] : null;
+      const vsel = el('variantSel');
+      vsel.innerHTML = '';
+      vsel.hidden = vs.length < 2;
+      vs.forEach(v => { const o = document.createElement('option'); o.value = v; o.textContent = v; vsel.appendChild(o); });
       idx = -1;
       renderLetters();
       renderTarget();
@@ -174,7 +197,8 @@
       host.innerHTML = '';
       items.forEach((L, i) => {
         const b = document.createElement('button');
-        b.className = 'letter-row' + (i === idx ? ' sel' : '') + (stored(L.glyph) ? ' done' : '');
+        b.className = 'letter-row' + (i === idx ? ' sel' : '')
+          + (stored(L.glyph) ? ' done' : '') + (isEdited(L.glyph) ? ' edited' : '');
         const g = document.createElement('span');
         g.className = 'g'; g.textContent = L.glyph;
         b.appendChild(g);
@@ -185,8 +209,10 @@
         b.addEventListener('click', () => open(i));
         host.appendChild(b);
       });
-      const n = Object.keys(load()[slug] || {}).length;
-      el('count').textContent = `${items.length} letters · ${n} transcribed`;
+      const edits = Object.keys(load()[slug] || {}).length;
+      const have = items.filter(L => stored(L.glyph)).length;
+      el('count').textContent =
+        `${have}/${items.length} have a symbol · ${edits} corrected by you`;
     }
 
     function open(i) {
@@ -209,7 +235,11 @@
         <div class="chosen">${key ? `<img src="${symbolSrc(key)}" alt="${key}" />` : '<span class="meta">pick a symbol</span>'}</div>
         <div>
           <div style="font-size:1.4rem">${L.glyph} <span class="meta">${L.name || ''}</span></div>
-          <div class="meta">key <code>${key || '—'}</code></div>
+          <div class="meta">key <code>${key || '—'}</code>
+            ${key ? (isEdited(L.glyph)
+                ? '<span class="prov edit">your correction</span>'
+                : '<span class="prov imp">imported</span>') : ''}
+          </div>
           <div class="tweaks">
             <label>rotation <input type="range" id="rot" min="0" max="15" value="${rot}" /></label>
             <span class="meta" id="rotv">${rot}</span>
@@ -253,9 +283,16 @@
 
     el('clearBtn').addEventListener('click', () => {
       if (idx < 0) return;
-      setStored(items[idx].glyph, null);
-      base = null; fill = 0; rot = 0;
+      setStored(items[idx].glyph, null);          // drop the local edit only
+      const back = stored(items[idx].glyph);      // may still be the imported one
+      if (back) { base = back.slice(1, 4); fill = parseInt(back[4], 16); rot = parseInt(back[5], 16); }
+      else { base = null; fill = 0; rot = 0; }
       renderTarget(); renderLetters(); markPalette();
+    });
+
+    el('variantSel').addEventListener('change', () => {
+      variantPick = el('variantSel').value;
+      renderLetters(); renderTarget(); markPalette();
     });
 
     el('exportBtn').addEventListener('click', () => {
