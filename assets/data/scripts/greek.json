@@ -82,8 +82,8 @@
       "example_image": null,
       "example_emoji": "🌳",
       "example_ipa": "ˈðendro",
-      "signwriting": "M511x515S10510489x485",
-      "signwriting_image": "images/signwriting/greek/S10510.png",
+      "signwriting": "M511x515S10120489x485",
+      "signwriting_image": "images/signwriting/greek/S10120.png",
       "notes": ""
     },
     {
@@ -118,8 +118,8 @@
       "example_image": null,
       "example_emoji": "🦓",
       "example_ipa": "ˈzevra",
-      "signwriting": "M529x517S10120513x487S24602470x483",
-      "signwriting_image": "images/signwriting/greek/S10120.png",
+      "signwriting": "M529x517S1a002513x487S24602470x483",
+      "signwriting_image": "images/signwriting/greek/S1a002.png",
       "notes": ""
     },
     {
@@ -154,8 +154,8 @@
       "example_image": null,
       "example_emoji": "🎭",
       "example_ipa": "ˈθeatro",
-      "signwriting": "M509x525S11510492x476S20700491x510",
-      "signwriting_image": "images/signwriting/greek/S11510.png",
+      "signwriting": "M509x525S11502492x476S20700491x510",
+      "signwriting_image": "images/signwriting/greek/S11502.png",
       "notes": ""
     },
     {
@@ -191,8 +191,8 @@
       "example_image": null,
       "example_emoji": "❤️",
       "example_ipa": "karˈðʝa",
-      "signwriting": "M511x515S11e20488x485",
-      "signwriting_image": "images/signwriting/greek/S11e20.png",
+      "signwriting": "M511x515S14220488x485",
+      "signwriting_image": "images/signwriting/greek/S14220.png",
       "notes": ""
     },
     {
@@ -228,8 +228,8 @@
       "example_image": null,
       "example_emoji": "🍎",
       "example_ipa": "ˈmilo",
-      "signwriting": "M507x511S14704493x489",
-      "signwriting_image": "images/signwriting/greek/S14704.png",
+      "signwriting": "M507x511S18d20493x489",
+      "signwriting_image": "images/signwriting/greek/S18d20.png",
       "notes": ""
     },
     {
@@ -247,8 +247,8 @@
       "example_image": null,
       "example_emoji": "💧",
       "example_ipa": "neˈro",
-      "signwriting": "M508x515S11504493x485",
-      "signwriting_image": "images/signwriting/greek/S11504.png",
+      "signwriting": "M508x515S11920493x485",
+      "signwriting_image": "images/signwriting/greek/S11920.png",
       "notes": ""
     },
     {
@@ -283,8 +283,8 @@
       "example_image": null,
       "example_emoji": "🌤️",
       "example_ipa": "uraˈnos",
-      "signwriting": "M510x507S17710490x492",
-      "signwriting_image": "images/signwriting/greek/S17710.png",
+      "signwriting": "M510x507S17610490x492",
+      "signwriting_image": "images/signwriting/greek/S17610.png",
       "notes": ""
     },
     {
@@ -319,8 +319,8 @@
       "example_image": null,
       "example_emoji": "🕰️",
       "example_ipa": "roˈloi",
-      "signwriting": "M508x515S11d20492x485",
-      "signwriting_image": "images/signwriting/greek/S11d20.png",
+      "signwriting": "M508x515S11a20492x485",
+      "signwriting_image": "images/signwriting/greek/S11a20.png",
       "notes": ""
     },
     {
@@ -338,8 +338,8 @@
       "example_image": null,
       "example_emoji": "🏠",
       "example_ipa": "ˈspiti",
-      "signwriting": "M517x523S10020502x493S2920c483x477",
-      "signwriting_image": "images/signwriting/greek/S10020.png",
+      "signwriting": "M517x523S20320502x493S2920c483x477",
+      "signwriting_image": "images/signwriting/greek/S20320.png",
       "notes": ""
     },
     {
@@ -356,8 +356,8 @@
       "example_image": null,
       "example_emoji": "🚆",
       "example_ipa": "ˈtreno",
-      "signwriting": "M515x507S10002485x492",
-      "signwriting_image": "images/signwriting/greek/S10002.png",
+      "signwriting": "M515x507S1005c485x492",
+      "signwriting_image": "images/signwriting/greek/S1005c.png",
       "notes": ""
     },
     {
@@ -411,8 +411,8 @@
       "example_image": null,
       "example_emoji": "✋",
       "example_ipa": "ˈçeri",
-      "signwriting": "M515x507S11502485x492",
-      "signwriting_image": "images/signwriting/greek/S11502.png",
+      "signwriting": "M515x507S11020485x492",
+      "signwriting_image": "images/signwriting/greek/S11020.png",
       "notes": ""
     },
     {
@@ -429,8 +429,8 @@
       "example_image": null,
       "example_emoji": "🐟",
       "example_ipa": "ˈpsari",
-      "signwriting": "M511x513S1e540488x487",
-      "signwriting_image": "images/signwriting/greek/S1e540.png",
+      "signwriting": "M511x513S18720488x487",
+      "signwriting_image": "images/signwriting/greek/S18720.png",
       "notes": ""
     },
     {
@@ -447,8 +447,8 @@
       "example_image": null,
       "example_emoji": "🌊",
       "example_ipa": "okeaˈnos",
-      "signwriting": "M507x510S17736492x490",
-      "signwriting_image": "images/signwriting/greek/S17736.png",
+      "signwriting": "M507x510S1851e492x490",
+      "signwriting_image": "images/signwriting/greek/S1851e.png",
       "notes": ""
     }
   ]
