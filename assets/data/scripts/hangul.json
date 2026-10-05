@@ -9,7 +9,7 @@
   "languages": [
     "Korean"
   ],
-  "note": "Featural alphabet: 14 basic consonants and 10 basic vowels, composed into syllable blocks.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -33,7 +33,7 @@
       "signwriting": "M538x538S1dc04484x462",
       "signwriting_image": "images/signwriting/hangul/S1dc04.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/k/ at the start, /ɡ/ between vowels, and an unreleased /k̚/ at the end of a syllable."
     },
     {
       "glyph": "ㄴ",
@@ -73,7 +73,7 @@
       "signwriting": "M538x538S11502477x462",
       "signwriting_image": "images/signwriting/hangul/S11502.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/t/ initially, /d/ between vowels, unreleased /t̚/ finally."
     },
     {
       "glyph": "ㄹ",
@@ -93,7 +93,7 @@
       "signwriting": "M538x538S18c02477x462",
       "signwriting_image": "images/signwriting/hangul/S18c02.png",
       "aliases": [],
-      "notes": ""
+      "notes": "A flap /ɾ/ between vowels, closer to /l/ at the end of a syllable."
     },
     {
       "glyph": "ㅁ",
@@ -133,7 +133,7 @@
       "signwriting": "M538x538S14420492x462",
       "signwriting_image": "images/signwriting/hangul/S14420.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/p/ initially, /b/ between vowels, unreleased /p̚/ finally."
     },
     {
       "glyph": "ㅅ",
@@ -154,7 +154,7 @@
       "signwriting": "M538x538S10e04492x462",
       "signwriting_image": "images/signwriting/hangul/S10e04.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/ɕ/ before i and y sounds, /s/ otherwise, and unreleased /t̚/ finally."
     },
     {
       "glyph": "ㅇ",
@@ -174,7 +174,7 @@
       "signwriting": "M538x538S1ce10492x462",
       "signwriting_image": "images/signwriting/hangul/S1ce10.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Silent at the start of a syllable, where it is only a placeholder; /ŋ/ at the end."
     },
     {
       "glyph": "ㅈ",
@@ -195,7 +195,7 @@
       "signwriting": "M538x538S12d04485x462",
       "signwriting_image": "images/signwriting/hangul/S12d04.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/t͡ɕ/ initially, /d͡ʑ/ between vowels, unreleased finally."
     },
     {
       "glyph": "ㅊ",

@@ -9,7 +9,7 @@
   "languages": [
     "Greek"
   ],
-  "note": "Alphabet: 24 letters, each with an upper and lower case.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -70,7 +70,7 @@
       "signwriting": "M512x515S1dc04488x485",
       "signwriting_image": "images/signwriting/greek/S1dc04.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Palatal /ʝ/ before the ε and ι sounds (ε αι ι η υ ει οι), velar /ɣ/ before α ο ω ου and consonants."
     },
     {
       "glyph": "Δ",
@@ -204,7 +204,7 @@
       "signwriting": "M511x515S14220488x485",
       "signwriting_image": "images/signwriting/greek/S14220.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Palatal /c/ before the ε and ι sounds, plain /k/ elsewhere."
     },
     {
       "glyph": "Λ",
@@ -224,7 +224,7 @@
       "signwriting": "M508x515S10e04493x485",
       "signwriting_image": "images/signwriting/greek/S10e04.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Palatal /ʎ/ before ι, plain /l/ elsewhere."
     },
     {
       "glyph": "Μ",
@@ -263,7 +263,7 @@
       "signwriting": "M508x515S11920493x485",
       "signwriting_image": "images/signwriting/greek/S11920.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Palatal /ɲ/ before ι, plain /n/ elsewhere."
     },
     {
       "glyph": "Ξ",
@@ -361,7 +361,7 @@
       "aliases": [
         "ς"
       ],
-      "notes": ""
+      "notes": "Voices to /z/ before a voiced consonant: κόσμος /ˈkozmos/. Written ς at the end of a word."
     },
     {
       "glyph": "Τ",
@@ -438,7 +438,7 @@
       "signwriting": "M515x507S11020485x492",
       "signwriting_image": "images/signwriting/greek/S11020.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Palatal /ç/ before the ε and ι sounds — χέρι /ˈçeri/ — and velar /x/ before α ο ω ου or a consonant, as in χαρά /xaˈra/."
     },
     {
       "glyph": "Ψ",

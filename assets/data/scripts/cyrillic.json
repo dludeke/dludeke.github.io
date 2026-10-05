@@ -12,7 +12,7 @@
     "Serbian",
     "and others"
   ],
-  "note": "Alphabet: 33 letters in the Russian inventory; other languages add or drop a few.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -35,7 +35,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0410.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Reduces to /ɐ/ when unstressed."
     },
     {
       "glyph": "Б",
@@ -55,7 +55,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0411.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Devoices to /p/ at the end of a word; palatalised before е ё и ю я ь."
     },
     {
       "glyph": "В",
@@ -75,7 +75,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0412.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Devoices to /f/ at the end of a word."
     },
     {
       "glyph": "Г",
@@ -95,7 +95,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0413.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Devoices to /k/ at the end of a word."
     },
     {
       "glyph": "Д",
@@ -115,7 +115,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0414.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Devoices to /t/ at the end of a word."
     },
     {
       "glyph": "Е",
@@ -135,7 +135,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0415.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Softens the consonant before it, and reduces towards /ɪ/ when unstressed."
     },
     {
       "glyph": "Ё",
@@ -174,7 +174,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0416.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Always hard, never palatalised, and devoices to /ʂ/ finally."
     },
     {
       "glyph": "З",
@@ -194,7 +194,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0417.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Devoices to /s/ at the end of a word."
     },
     {
       "glyph": "И",
@@ -332,7 +332,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041e.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Reduces to /ɐ/ when unstressed, so молоко is /məlɐˈko/ — only the stressed о is a clear /o/."
     },
     {
       "glyph": "П",
@@ -565,7 +565,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042a.png",
       "aliases": [],
-      "notes": ""
+      "notes": "No sound of its own: it blocks palatalisation across a prefix boundary."
     },
     {
       "glyph": "Ы",
@@ -603,7 +603,7 @@
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042c.png",
       "aliases": [],
-      "notes": ""
+      "notes": "No sound of its own: it palatalises the consonant before it."
     },
     {
       "glyph": "Э",

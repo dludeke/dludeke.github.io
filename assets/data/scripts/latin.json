@@ -10,7 +10,7 @@
     "English",
     "and most of Europe"
   ],
-  "note": "Alphabet: 26 letters. ASL and BSL are different manual alphabets, not variants of one: ASL fingerspells with one hand, BSL with two. Use the toggle to switch.",
+  "note": null,
   "status": "skeleton",
   "attribution": [
     {
@@ -49,7 +49,7 @@
       "signwriting": "M507x507S1f720487x492",
       "signwriting_image": "images/signwriting/latin/S1f720.png",
       "aliases": [],
-      "notes": "",
+      "notes": "Long /eɪ/ before a silent e (cake), short /æ/ otherwise (cat).",
       "signwriting_variants": {
         "ASL": "M507x507S1f720487x492",
         "BSL": "M514x517S14c09488x490S20500486x483"
@@ -104,7 +104,7 @@
       "signwriting": "M508x507S16d20491x487",
       "signwriting_image": "images/signwriting/latin/S16d20.png",
       "aliases": [],
-      "notes": "",
+      "notes": "Soft /s/ before e, i or y (city); hard /k/ elsewhere (cat).",
       "signwriting_variants": {
         "ASL": "M508x507S16d20491x487",
         "BSL": "M511x509S1ec10488x490"
@@ -215,7 +215,7 @@
       "signwriting": "M507x507S1f000478x492",
       "signwriting_image": "images/signwriting/latin/S1f000.png",
       "aliases": [],
-      "notes": "",
+      "notes": "Often soft /dʒ/ before e, i or y (gem); hard /ɡ/ elsewhere (go). Less reliable than c.",
       "signwriting_variants": {
         "ASL": "M507x507S1f000478x492",
         "BSL": "M507x516S20302492x484S2030a492x501"
@@ -543,7 +543,7 @@
       "signwriting": "M507x507S20320492x492",
       "signwriting_image": "images/signwriting/latin/S20320.png",
       "aliases": [],
-      "notes": "",
+      "notes": "/z/ between vowels and in most plurals (rose, dogs); /s/ otherwise.",
       "signwriting_variants": {
         "ASL": "M507x507S20320492x492",
         "BSL": "M520x519S19809480x480S19821500x492S20800510x482"
@@ -681,7 +681,7 @@
       "signwriting": "M508x507S10620487x481",
       "signwriting_image": "images/signwriting/latin/S10620.png",
       "aliases": [],
-      "notes": "",
+      "notes": "/ks/ normally (box), /z/ word-initially (xylophone).",
       "signwriting_variants": {
         "ASL": "M508x507S10620487x481",
         "BSL": "M517x515S10019483x485S10011496x485"

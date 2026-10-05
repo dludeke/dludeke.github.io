@@ -11,7 +11,7 @@
     "Ladino",
     "Yiddish"
   ],
-  "note": "Abjad: 22 consonants, written right to left. Five have final forms.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -34,7 +34,7 @@
       "signwriting": "M510x508S1f720490x493",
       "signwriting_image": "images/signwriting/hebrew/S1f720.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Usually silent in modern speech; historically a glottal stop."
     },
     {
       "glyph": "ב",
@@ -54,7 +54,7 @@
       "signwriting": "M507x511S14720493x489",
       "signwriting_image": "images/signwriting/hebrew/S14720.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Stop /b/ at the start of a word or with a dagesh; fricative /v/ otherwise."
     },
     {
       "glyph": "ג",
@@ -133,7 +133,7 @@
       "signwriting": "M508x515S10020493x485",
       "signwriting_image": "images/signwriting/hebrew/S10020.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Consonant /v/, or a vowel marker for /o/ and /u/."
     },
     {
       "glyph": "ז",
@@ -230,7 +230,7 @@
       "signwriting": "M509x510S16d10492x490",
       "signwriting_image": "images/signwriting/hebrew/S16d10.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Stop /k/ with a dagesh, fricative /χ/ otherwise. Written ך at the end of a word."
     },
     {
       "glyph": "ל",
@@ -326,7 +326,7 @@
       "signwriting": "M510x514S11020491x487",
       "signwriting_image": "images/signwriting/hebrew/S11020.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Silent for most modern speakers; a pharyngeal in Mizrahi pronunciation."
     },
     {
       "glyph": "פ",
@@ -346,7 +346,7 @@
       "signwriting": "M516x512S14051485x488",
       "signwriting_image": "images/signwriting/hebrew/S14051.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Stop /p/ with a dagesh, fricative /f/ otherwise. Written ף at the end of a word."
     },
     {
       "glyph": "צ",
@@ -423,7 +423,7 @@
       "signwriting": "M509x507S18720491x478",
       "signwriting_image": "images/signwriting/hebrew/S18720.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/ʃ/ with the dot on the right, /s/ with it on the left."
     },
     {
       "glyph": "ת",

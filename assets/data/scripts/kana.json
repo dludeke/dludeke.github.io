@@ -9,7 +9,7 @@
   "languages": [
     "Japanese"
   ],
-  "note": "Syllabary: 46 basic hiragana, each with a katakana counterpart.",
+  "note": "Takes its place from what follows: /m/ before p b m, /ŋ/ before k g, /n/ elsewhere.",
   "status": "skeleton",
   "attribution": null,
   "layout": {
@@ -328,7 +328,7 @@
       "signwriting": "M515x512S11e02485x489",
       "signwriting_image": "images/signwriting/kana/S11e02.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/ɕi/, not /si/ — the s row is irregular here."
     },
     {
       "glyph": "す",
@@ -423,7 +423,7 @@
       "signwriting": "M514x511S19620486x490",
       "signwriting_image": "images/signwriting/kana/S19620.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/tɕi/, not /ti/."
     },
     {
       "glyph": "つ",
@@ -442,7 +442,7 @@
       "signwriting": "M514x513S1b320486x487",
       "signwriting_image": "images/signwriting/kana/S1b320.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/tsɯ/, not /tu/."
     },
     {
       "glyph": "て",
@@ -595,7 +595,7 @@
       "signwriting": "M508x515S11540493x485",
       "signwriting_image": "images/signwriting/kana/S11540.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Said /wa/ when it marks the topic of a sentence, /ha/ otherwise."
     },
     {
       "glyph": "ひ",
@@ -633,7 +633,7 @@
       "signwriting": "M512x515S1dc04488x485",
       "signwriting_image": "images/signwriting/kana/S1dc04.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/ɸɯ/, closer to a soft blown f than an English h or f."
     },
     {
       "glyph": "へ",
@@ -653,7 +653,7 @@
       "signwriting": "M514x510S19a04486x490",
       "signwriting_image": "images/signwriting/kana/S19a04.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Said /e/ when it marks direction, /he/ otherwise."
     },
     {
       "glyph": "ほ",
@@ -957,7 +957,7 @@
       "signwriting": "M508x517S17610492x501S26504493x483",
       "signwriting_image": "images/signwriting/kana/S17610.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Only used to mark the object, and pronounced the same as お."
     },
     {
       "glyph": "ん",
@@ -979,7 +979,7 @@
       "signwriting": "M521x519S10040480x489S2a204498x481",
       "signwriting_image": "images/signwriting/kana/S10040.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Takes its place from what follows: /m/ before p b m, /ŋ/ before k g, /n/ elsewhere."
     }
   ]
 }

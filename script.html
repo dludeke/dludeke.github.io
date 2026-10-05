@@ -212,6 +212,15 @@
     .credits p { margin: 0.35rem 0; }
     .credits a { color: #5b6b7a; }
 
+    .letter-note {
+      margin: 0.6rem 0 0;
+      padding-top: 0.5rem;
+      border-top: 1px solid #f0f2f4;
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #77808a;
+    }
+
     .emoji { font-size: 2.6rem; line-height: 1; }
 
     .sw-row {
@@ -447,6 +456,7 @@
                 : ''}
             </div>
             ${L.example_gloss ? row('Means', L.example_gloss) : ''}
+            ${L.notes ? `<p class="letter-note">${L.notes}</p>` : ''}
           </div>`;
       };
 

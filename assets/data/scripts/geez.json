@@ -11,7 +11,7 @@
     "Tigrinya",
     "Ge'ez"
   ],
-  "note": "Abugida: 26 base consonants, each inflected through seven vowel orders. Only the first order is listed here.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -33,7 +33,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Listed in first order, carrying the vowel ä. Each consonant has seven orders, one per vowel, written as changes to the same base shape."
     },
     {
       "glyph": "ለ",

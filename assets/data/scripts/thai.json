@@ -9,7 +9,7 @@
   "languages": [
     "Thai"
   ],
-  "note": "Abugida: 44 consonants, listed here with their acrophonic names.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -32,7 +32,7 @@
       "signwriting": "M510x507S1f720490x492",
       "signwriting_image": "images/signwriting/thai/S1f720.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Finals are unreleased: the sound is stopped without a release of breath."
     },
     {
       "glyph": "ข",
@@ -72,7 +72,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Obsolete, replaced by ข. Kept in the alphabet for completeness."
     },
     {
       "glyph": "ค",
@@ -112,7 +112,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Obsolete, replaced by ค."
     },
     {
       "glyph": "ฆ",
@@ -704,7 +704,7 @@
       "signwriting": "M508x515S11a20493x485",
       "signwriting_image": "images/signwriting/thai/S11a20.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Becomes /n/ when it closes a syllable."
     },
     {
       "glyph": "ล",
@@ -724,7 +724,7 @@
       "signwriting": "M512x515S1dc20488x485",
       "signwriting_image": "images/signwriting/thai/S1dc20.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Also becomes /n/ when it closes a syllable."
     },
     {
       "glyph": "ว",
@@ -822,7 +822,7 @@
       "signwriting": "M515x508S11502485x493",
       "signwriting_image": "images/signwriting/thai/S11502.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Written before a low-class consonant to raise its tone class rather than to be pronounced."
     },
     {
       "glyph": "ฬ",
@@ -861,7 +861,7 @@
       "signwriting": "M512x511S1ea10489x490",
       "signwriting_image": "images/signwriting/thai/S1ea10.png",
       "aliases": [],
-      "notes": ""
+      "notes": "A silent carrier at the start of a vowel-initial syllable, not a consonant of its own."
     },
     {
       "glyph": "ฮ",

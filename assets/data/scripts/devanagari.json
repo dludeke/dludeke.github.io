@@ -11,7 +11,7 @@
     "Sanskrit",
     "Nepali"
   ],
-  "note": "Abugida: vowels, then consonants carrying an inherent 'a'.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -33,7 +33,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Every consonant carries this vowel unless marked otherwise. In Hindi the final one is dropped: कमल is kamal, not kamala."
     },
     {
       "glyph": "आ",
@@ -242,7 +242,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Unaspirated: hold the breath back. ख is the aspirated pair."
     },
     {
       "glyph": "ख",
@@ -470,7 +470,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Retroflex — tongue curled back, not the dental द."
     },
     {
       "glyph": "ढ",
@@ -527,7 +527,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Dental: tongue on the teeth, not the ridge behind them as in English t."
     },
     {
       "glyph": "थ",
@@ -642,7 +642,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "/pʰ/ in native words, but /f/ in loans such as फोन."
     },
     {
       "glyph": "ब",

@@ -9,7 +9,7 @@
   "languages": [
     "Mandarin Chinese"
   ],
-  "note": "Romanisation rather than a script. The CSL fingerspelling scheme of 1963 has 30 handshapes: the 26 Latin letters plus the digraphs ZH, CH, SH and NG.",
+  "note": "Only ever closes a syllable, never begins one.",
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -108,7 +108,7 @@
       "signwriting": "M515x511S1ce02485x489",
       "signwriting_image": "images/signwriting/pinyin/S1ce02.png",
       "aliases": [],
-      "notes": ""
+      "notes": "/ɤ/ alone, but /e/ in the combinations ie and üe."
     },
     {
       "glyph": "F",
@@ -185,7 +185,7 @@
       "signwriting": "M508x515S10020493x485",
       "signwriting_image": "images/signwriting/pinyin/S10020.png",
       "aliases": [],
-      "notes": ""
+      "notes": "After zh ch sh r z c s this is not /i/ but a buzzed continuation of the consonant, /ɹ̩/."
     },
     {
       "glyph": "J",
@@ -416,7 +416,7 @@
       "signwriting": "M510x514S15d20491x487",
       "signwriting_image": "images/signwriting/pinyin/S15d20.png",
       "aliases": [],
-      "notes": ""
+      "notes": "After j q x y it is /y/, the ü sound, since those consonants never take a plain u."
     },
     {
       "glyph": "V",
@@ -435,7 +435,7 @@
       "signwriting": "M508x515S10e20493x485",
       "signwriting_image": "images/signwriting/pinyin/S10e20.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Not a Chinese sound. Typed for ü, and kept in the fingerspelling scheme."
     },
     {
       "glyph": "W",
@@ -587,7 +587,7 @@
       "signwriting": "M510x511S19202491x490",
       "signwriting_image": "images/signwriting/pinyin/S19202.png",
       "aliases": [],
-      "notes": ""
+      "notes": "Only ever closes a syllable, never begins one."
     }
   ]
 }

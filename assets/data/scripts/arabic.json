@@ -9,7 +9,7 @@
   "languages": [
     "Arabic"
   ],
-  "note": "Abjad: 28 letters, written right to left, each with initial, medial, final and isolated forms.",
+  "note": "Consonant /j/, or a long /iː/.",
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -32,7 +32,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Carries a long /aː/, or supports a hamza for the glottal stop."
     },
     {
       "glyph": "ب",
@@ -110,7 +110,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "/dʒ/ in Modern Standard, but /ʒ/ in the Levant and /ɡ/ in Cairo."
     },
     {
       "glyph": "ح",
@@ -414,7 +414,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "/q/ in Modern Standard; often /ʔ/ in city speech and /ɡ/ in Bedouin and Gulf speech."
     },
     {
       "glyph": "ك",
@@ -452,7 +452,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "In the article الـ, the l assimilates to a following sun letter: الشمس is ash-shams, not al-shams."
     },
     {
       "glyph": "م",
@@ -529,7 +529,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Consonant /w/, or a long /uː/."
     },
     {
       "glyph": "ي",
@@ -549,7 +549,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Consonant /j/, or a long /iː/."
     }
   ]
 }

@@ -9,7 +9,7 @@
   "languages": [
     "Persian / Farsi"
   ],
-  "note": "Perso-Arabic: the 28 Arabic letters plus four Persian additions. Shown by پ (pe), one of those four, since ا is shared with Arabic.",
+  "note": null,
   "status": "skeleton",
   "attribution": null,
   "layout": null,
@@ -108,7 +108,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "One of three letters written differently but all said /s/: ث س ص."
     },
     {
       "glyph": "ج",
@@ -222,7 +222,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "One of four letters all said /z/: ذ ز ض ظ. The spellings are inherited from Arabic."
     },
     {
       "glyph": "ر",
@@ -374,7 +374,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Said /t/, the same as ت, despite the different letter."
     },
     {
       "glyph": "ظ",
@@ -471,7 +471,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Merged with غ for most speakers, as /ɣ/ between vowels and /ɢ/ elsewhere."
     },
     {
       "glyph": "ک",
@@ -587,7 +587,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "Consonant /v/, or a long /uː/, or /o/ in a few common words."
     },
     {
       "glyph": "ه",
@@ -607,7 +607,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "/h/ as a consonant; word-final it usually marks /e/ instead."
     },
     {
       "glyph": "ی",

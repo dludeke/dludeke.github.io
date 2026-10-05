@@ -568,3 +568,120 @@ WORD_IPA["pinyin"] = {
  "X": "ɕjʊŋ˧˥ maʊ̯˥", "Y": "y˧˥", "Z": "t͡sɨ˥˩", "ZH": "ʈʂu˥",
  "CH": "ʈʂʰɤ˥", "SH": "ʂu˥", "NG": "jaŋ˧˥",
 }
+
+# ---------------------------------------------------------------------------
+# Why a letter has more than one value. Only where a rule is worth knowing:
+# these are the common cases a learner meets early, not a full phonology.
+# ---------------------------------------------------------------------------
+
+NOTES = {}
+
+NOTES["greek"] = {
+ "Γ": "Palatal /ʝ/ before the ε and ι sounds (ε αι ι η υ ει οι), velar /ɣ/ before α ο ω ου and consonants.",
+ "Κ": "Palatal /c/ before the ε and ι sounds, plain /k/ elsewhere.",
+ "Λ": "Palatal /ʎ/ before ι, plain /l/ elsewhere.",
+ "Ν": "Palatal /ɲ/ before ι, plain /n/ elsewhere.",
+ "Χ": "Palatal /ç/ before the ε and ι sounds — χέρι /ˈçeri/ — and velar /x/ before α ο ω ου or a consonant, as in χαρά /xaˈra/.",
+ "Σ": "Voices to /z/ before a voiced consonant: κόσμος /ˈkozmos/. Written ς at the end of a word.",
+}
+
+NOTES["latin"] = {
+ "C": "Soft /s/ before e, i or y (city); hard /k/ elsewhere (cat).",
+ "G": "Often soft /dʒ/ before e, i or y (gem); hard /ɡ/ elsewhere (go). Less reliable than c.",
+ "S": "/z/ between vowels and in most plurals (rose, dogs); /s/ otherwise.",
+ "X": "/ks/ normally (box), /z/ word-initially (xylophone).",
+ "A": "Long /eɪ/ before a silent e (cake), short /æ/ otherwise (cat).",
+}
+
+NOTES["cyrillic"] = {
+ "А": "Reduces to /ɐ/ when unstressed.",
+ "О": "Reduces to /ɐ/ when unstressed, so молоко is /məlɐˈko/ — only the stressed о is a clear /o/.",
+ "Е": "Softens the consonant before it, and reduces towards /ɪ/ when unstressed.",
+ "Б": "Devoices to /p/ at the end of a word; palatalised before е ё и ю я ь.",
+ "В": "Devoices to /f/ at the end of a word.",
+ "Г": "Devoices to /k/ at the end of a word.",
+ "Д": "Devoices to /t/ at the end of a word.",
+ "Ж": "Always hard, never palatalised, and devoices to /ʂ/ finally.",
+ "З": "Devoices to /s/ at the end of a word.",
+ "Ь": "No sound of its own: it palatalises the consonant before it.",
+ "Ъ": "No sound of its own: it blocks palatalisation across a prefix boundary.",
+}
+
+NOTES["hebrew"] = {
+ "ב": "Stop /b/ at the start of a word or with a dagesh; fricative /v/ otherwise.",
+ "כ": "Stop /k/ with a dagesh, fricative /χ/ otherwise. Written ך at the end of a word.",
+ "פ": "Stop /p/ with a dagesh, fricative /f/ otherwise. Written ף at the end of a word.",
+ "ו": "Consonant /v/, or a vowel marker for /o/ and /u/.",
+ "א": "Usually silent in modern speech; historically a glottal stop.",
+ "ע": "Silent for most modern speakers; a pharyngeal in Mizrahi pronunciation.",
+ "ש": "/ʃ/ with the dot on the right, /s/ with it on the left.",
+}
+
+NOTES["arabic"] = {
+ "ا": "Carries a long /aː/, or supports a hamza for the glottal stop.",
+ "و": "Consonant /w/, or a long /uː/.",
+ "ي": "Consonant /j/, or a long /iː/.",
+ "ل": "In the article الـ, the l assimilates to a following sun letter: الشمس is ash-shams, not al-shams.",
+ "ج": "/dʒ/ in Modern Standard, but /ʒ/ in the Levant and /ɡ/ in Cairo.",
+ "ق": "/q/ in Modern Standard; often /ʔ/ in city speech and /ɡ/ in Bedouin and Gulf speech.",
+}
+
+NOTES["farsi"] = {
+ "ث": "One of three letters written differently but all said /s/: ث س ص.",
+ "ذ": "One of four letters all said /z/: ذ ز ض ظ. The spellings are inherited from Arabic.",
+ "ط": "Said /t/, the same as ت, despite the different letter.",
+ "ق": "Merged with غ for most speakers, as /ɣ/ between vowels and /ɢ/ elsewhere.",
+ "و": "Consonant /v/, or a long /uː/, or /o/ in a few common words.",
+ "ه": "/h/ as a consonant; word-final it usually marks /e/ instead.",
+}
+
+NOTES["devanagari"] = {
+ "अ": "Every consonant carries this vowel unless marked otherwise. In Hindi the final one is dropped: कमल is kamal, not kamala.",
+ "क": "Unaspirated: hold the breath back. ख is the aspirated pair.",
+ "फ": "/pʰ/ in native words, but /f/ in loans such as फोन.",
+ "ड": "Retroflex — tongue curled back, not the dental द.",
+ "त": "Dental: tongue on the teeth, not the ridge behind them as in English t.",
+}
+
+NOTES["kana"] = {
+ "は": "Said /wa/ when it marks the topic of a sentence, /ha/ otherwise.",
+ "へ": "Said /e/ when it marks direction, /he/ otherwise.",
+ "を": "Only used to mark the object, and pronounced the same as お.",
+ "ん": "Takes its place from what follows: /m/ before p b m, /ŋ/ before k g, /n/ elsewhere.",
+ "し": "/ɕi/, not /si/ — the s row is irregular here.",
+ "ち": "/tɕi/, not /ti/.",
+ "つ": "/tsɯ/, not /tu/.",
+ "ふ": "/ɸɯ/, closer to a soft blown f than an English h or f.",
+}
+
+NOTES["hangul"] = {
+ "ㄱ": "/k/ at the start, /ɡ/ between vowels, and an unreleased /k̚/ at the end of a syllable.",
+ "ㄷ": "/t/ initially, /d/ between vowels, unreleased /t̚/ finally.",
+ "ㅂ": "/p/ initially, /b/ between vowels, unreleased /p̚/ finally.",
+ "ㅈ": "/t͡ɕ/ initially, /d͡ʑ/ between vowels, unreleased finally.",
+ "ㅇ": "Silent at the start of a syllable, where it is only a placeholder; /ŋ/ at the end.",
+ "ㄹ": "A flap /ɾ/ between vowels, closer to /l/ at the end of a syllable.",
+ "ㅅ": "/ɕ/ before i and y sounds, /s/ otherwise, and unreleased /t̚/ finally.",
+}
+
+NOTES["thai"] = {
+ "ก": "Finals are unreleased: the sound is stopped without a release of breath.",
+ "ร": "Becomes /n/ when it closes a syllable.",
+ "ล": "Also becomes /n/ when it closes a syllable.",
+ "ฃ": "Obsolete, replaced by ข. Kept in the alphabet for completeness.",
+ "ฅ": "Obsolete, replaced by ค.",
+ "อ": "A silent carrier at the start of a vowel-initial syllable, not a consonant of its own.",
+ "ห": "Written before a low-class consonant to raise its tone class rather than to be pronounced.",
+}
+
+NOTES["pinyin"] = {
+ "I": "After zh ch sh r z c s this is not /i/ but a buzzed continuation of the consonant, /ɹ̩/.",
+ "U": "After j q x y it is /y/, the ü sound, since those consonants never take a plain u.",
+ "V": "Not a Chinese sound. Typed for ü, and kept in the fingerspelling scheme.",
+ "E": "/ɤ/ alone, but /e/ in the combinations ie and üe.",
+ "NG": "Only ever closes a syllable, never begins one.",
+}
+
+NOTES["geez"] = {
+ "ሀ": "Listed in first order, carrying the vowel ä. Each consonant has seven orders, one per vowel, written as changes to the same base shape.",
+}
