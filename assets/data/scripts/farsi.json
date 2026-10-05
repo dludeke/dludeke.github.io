@@ -11,6 +11,7 @@
   ],
   "note": "Perso-Arabic: the 28 Arabic letters plus four Persian additions. Shown by پ (pe), one of those four, since ا is shared with Arabic.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "ا",

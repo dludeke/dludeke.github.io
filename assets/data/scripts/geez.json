@@ -13,6 +13,7 @@
   ],
   "note": "Abugida: 26 base consonants, each inflected through seven vowel orders. Only the first order is listed here.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "ሀ",

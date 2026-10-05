@@ -13,6 +13,7 @@
   ],
   "note": "Abugida: vowels, then consonants carrying an inherent 'a'.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "अ",

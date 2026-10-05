@@ -14,6 +14,7 @@
   ],
   "note": "Alphabet: 33 letters in the Russian inventory; other languages add or drop a few.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "А",

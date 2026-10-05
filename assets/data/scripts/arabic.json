@@ -11,6 +11,7 @@
   ],
   "note": "Abjad: 28 letters, written right to left, each with initial, medial, final and isolated forms.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "ا",

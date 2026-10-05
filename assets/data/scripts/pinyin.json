@@ -11,6 +11,7 @@
   ],
   "note": "Romanisation rather than a script. The CSL fingerspelling scheme of 1963 has 30 handshapes: the 26 Latin letters plus the digraphs ZH, CH, SH and NG.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "A",

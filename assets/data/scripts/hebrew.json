@@ -13,6 +13,7 @@
   ],
   "note": "Abjad: 22 consonants, written right to left. Five have final forms.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "א",

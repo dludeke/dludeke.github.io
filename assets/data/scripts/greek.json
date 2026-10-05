@@ -11,6 +11,7 @@
   ],
   "note": "Alphabet: 24 letters, each with an upper and lower case.",
   "status": "skeleton",
+  "attribution": null,
   "letters": [
     {
       "glyph": "Α",

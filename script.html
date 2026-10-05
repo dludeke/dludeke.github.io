@@ -145,6 +145,51 @@
       gap: 0.5rem;
     }
 
+    .variant-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 0 0 1rem;
+    }
+
+    .variant-bar .k {
+      color: #9aa3ab;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      margin-right: 0.3rem;
+    }
+
+    .variant-btn {
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: bold;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid #cfd6dd;
+      background: #fff;
+      color: #456;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .variant-btn.active {
+      background: #007bff;
+      border-color: #007bff;
+      color: #fff;
+    }
+
+    .credits {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+      font-size: 0.82rem;
+      color: #7b848c;
+      max-width: 760px;
+    }
+
+    .credits p { margin: 0.35rem 0; }
+    .credits a { color: #5b6b7a; }
+
     .emoji { font-size: 2.6rem; line-height: 1; }
 
     .sw-row {
@@ -273,11 +318,23 @@
       document.title = d.name + ' — Script Reference';
       document.getElementById('pageTitle').textContent = d.name;
 
+      // Some scripts have more than one manual alphabet worth showing. Latin
+      // has both BSL (two-handed) and ASL (one-handed); the choice is
+      // remembered per script.
+      const variantNames = [...new Set(
+        d.letters.flatMap(L => Object.keys(L.handshape_variants || {})))];
+      let variant = null;
+      if (variantNames.length > 1) {
+        try { variant = localStorage.getItem('handshapeVariant.' + d.slug); } catch (e) {}
+        if (!variantNames.includes(variant)) variant = variantNames[0];
+      }
+      const shapeOf = L => (variant && (L.handshape_variants || {})[variant]) || L.handshape;
+
       // Counted per column, not "has anything": with the handshapes wired in,
       // an any-field measure would read 100% while IPA and examples are empty.
       const n = d.letters.length;
       const cols = [
-        ['handshapes', d.letters.filter(L => L.handshape).length],
+        ['handshapes', d.letters.filter(L => shapeOf(L)).length],
         ['IPA', d.letters.filter(L => (L.ipa || []).length).length],
         ['words', d.letters.filter(L => L.example_word).length],
         ['pictures', d.letters.filter(L => L.example_image).length],
@@ -296,8 +353,8 @@
             ${row('Romanisation', L.romanization)}
             ${row('IPA', (L.ipa || []).map(v => '/' + v + '/'), 'ipa')}
             <div class="slot-pair">
-              <div class="slot">${L.handshape
-                ? `<img src="${L.handshape}" alt="Handshape for ${L.name}" />`
+              <div class="slot">${shapeOf(L)
+                ? `<img src="${shapeOf(L)}" alt="Handshape for ${L.name}" />`
                 : 'handshape'}</div>
               <div class="slot">${L.example_image
                 ? `<img src="${L.example_image}" alt="${L.example_gloss || ''}" />`
@@ -318,7 +375,7 @@
           </div>`;
       }).join('');
 
-      document.getElementById('body').innerHTML = `
+      const html = `
         <div class="script-head">
           <div class="big">${d.representative}</div>
           <div>
@@ -327,6 +384,11 @@
             <p class="meta-line">${d.languages.join(', ')}</p>
           </div>
         </div>
+        ${variantNames.length > 1 ? `
+        <div class="variant-bar">
+          <span class="k">Manual alphabet</span>
+          ${variantNames.map(v => `<button class="variant-btn${v === variant ? ' active' : ''}" data-v="${v}">${v}</button>`).join('')}
+        </div>` : ''}
         <p class="note">${d.note}</p>
         <p class="fill-state">
           ${n} letters &middot;
@@ -335,7 +397,20 @@
               <span class="fill-bar"><span style="width:${Math.round(got / n * 100)}%"></span></span>
             </span>`).join('')}
         </p>
-        <div class="letter-grid">${cards}</div>`;
+        <div class="letter-grid">${cards}</div>
+        ${(d.attribution || []).length ? `
+        <div class="credits">
+          ${d.attribution.map(a => `<p><strong>${a.what}</strong> &mdash;
+             <a href="${a.url}" target="_blank" rel="noopener">${a.credit}</a>,
+             ${a.licence}. ${a.note || ''}</p>`).join('')}
+        </div>` : ''}`;
+      document.getElementById('body').innerHTML = html;
+      document.querySelectorAll('.variant-btn').forEach(b => {
+        b.addEventListener('click', () => {
+          try { localStorage.setItem('handshapeVariant.' + d.slug, b.dataset.v); } catch (e) {}
+          render(d);
+        });
+      });
     }
 
     if (!slug) {

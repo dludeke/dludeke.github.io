@@ -30,7 +30,7 @@ SCRIPTS = [
     ("greek", "Greek", "α", "GSL", "Ελληνική νοηματική γλώσσα",
      ["Greek"], "Alphabet: 24 letters, each with an upper and lower case."),
     ("latin", "Latin", "A", "ASL, BSL", "American / British Sign Language",
-     ["English", "and most of Europe"], "Alphabet: 26 letters. ASL and BSL differ; BSL fingerspelling is two-handed."),
+     ["English", "and most of Europe"], "Alphabet: 26 letters. ASL and BSL are different manual alphabets, not variants of one: ASL fingerspells with one hand, BSL with two. Use the toggle to switch."),
     ("hebrew", "Hebrew", "א", "ISL", "שפת סימנים ישראלית",
      ["Hebrew", "Ladino", "Yiddish"], "Abjad: 22 consonants, written right to left. Five have final forms."),
     ("geez", "Ge'ez", "ሀ", "EthSL", "የኢትዮጵያ ምልክት ቅይቅ",
@@ -184,6 +184,25 @@ CONTENT = {
 }
 
 
+# Source credits for charts that require them. The BSL chart is share-alike,
+# so the per-letter crops derived from it carry the same licence.
+ATTRIBUTION = {
+    "latin": [
+        {"what": "BSL handshapes",
+         "credit": "User:Cowplopmorris, Wikimedia Commons",
+         "licence": "CC BY-SA 3.0",
+         "url": "https://commons.wikimedia.org/wiki/File:British_Sign_Language_chart.png",
+         "note": "Cropped into one image per letter; as a derivative of a "
+                 "share-alike work these crops carry the same licence."},
+        {"what": "ASL handshapes",
+         "credit": "User:Ds13, Wikimedia Commons (Gallaudet font)",
+         "licence": "Public domain",
+         "url": "https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.svg",
+         "note": "Cropped into one image per letter."},
+    ],
+}
+
+
 def load_hand_edits(path):
     """Map letter glyph -> hand-edited fields from an existing file."""
     if not os.path.exists(path):
@@ -294,6 +313,7 @@ def main():
             "languages": languages,
             "note": note,
             "status": "skeleton",
+            "attribution": ATTRIBUTION.get(slug),
             "letters": letters,
         }
         with open(path, "w", encoding="utf-8") as fh:

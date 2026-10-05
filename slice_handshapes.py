@@ -328,6 +328,107 @@ def apply_override(cell, cfg, letter):
     return cell.crop((round(w * l), round(h * t), round(w * (1 - r)), round(h * (1 - b))))
 
 
+
+# Latin is the one script with two manual alphabets worth showing side by side:
+# BSL is two-handed, ASL one-handed. Both are sliced and the page toggles.
+#
+# BSL chart: CC BY-SA 3.0, User:Cowplopmorris via Wikimedia Commons.
+# ASL chart: public domain, User:Ds13 (Gallaudet font) via Wikimedia Commons.
+LATIN_VARIANTS = {
+    "BSL": {
+        # Measured bands: each drawing row alternates with a row of big letters.
+        "file": "BSL_wikimedia.png",
+        "bands": [
+            (19, 94, [(22, 107), (145, 246), (282, 345), (380, 458), (495, 589), (627, 716)], "ABCDEF"),
+            (271, 342, [(22, 104), (142, 215), (252, 352), (390, 478), (518, 588), (628, 710)], "GHIJKL"),
+            (520, 597, [(22, 92), (131, 203), (244, 323), (361, 431), (470, 549), (589, 661)], "MNOPQR"),
+            (770, 847, [(22, 97), (135, 214), (252, 349), (389, 460), (500, 592), (632, 713)], "STUVWX"),
+            (1021, 1093, [(23, 90), (128, 202)], "YZ"),
+        ],
+    },
+    "ASL": {
+        # Rows hold 7, 6, 6 and 7 cells and do not share a column grid, so each
+        # row is given as a y band with its own measured cell boundaries.
+        "file": "ASL_gallaudet.png",
+        "bands": [
+            (31, 179, [(129, 194), (277, 333), (418, 525), (600, 661), (744, 806), (884, 954), (1005, 1130)], "ABCDEFG"),
+            (400, 542, [(135, 273), (353, 426), (508, 617), (695, 755), (838, 946), (1024, 1104)], "HIJKLM"),
+            (768, 906, [(133, 220), (300, 385), (468, 624), (705, 809), (888, 946), (1025, 1091)], "NOPQRS"),
+            (1090, 1269, [(131, 194), (274, 334), (415, 476), (553, 623), (704, 785), (868, 991), (1030, 1143)], "TUVWXYZ"),
+        ],
+    },
+}
+
+
+def slice_latin(verbose=True):
+    """Slice both Latin manual alphabets into variant folders."""
+    import json as _json
+    out = {}
+    for name, cfg in LATIN_VARIANTS.items():
+        path = os.path.join(SRC, cfg["file"])
+        if not os.path.exists(path):
+            print(f"  latin/{name}: missing {cfg['file']}")
+            continue
+        im = Image.open(path).convert("RGB")
+        folder = os.path.join(OUT_ROOT, "latin", name.lower())
+        raw_dir = os.path.join(folder, "raw")
+        os.makedirs(raw_dir, exist_ok=True)
+        got = {}
+
+        def store(letter, cell):
+            nm = f"{ord(letter):04x}"
+            cell.save(os.path.join(raw_dir, f"{nm}.png"))
+            rel = f"images/handshapes/latin/{name.lower()}/{nm}.png"
+            tighten(cell, {"tighten": "ink", "pad": 5}).save(os.path.join(HERE, rel))
+            got[letter] = rel
+
+        if "bands" in cfg:
+            for y0, y1, xs, letters in cfg["bands"]:
+                for (x0, x1), letter in zip(xs, letters):
+                    pad = 6
+                    store(letter, im.crop((max(0, x0 - pad), y0 - pad, x1 + pad, y1 + pad)))
+        else:
+            im = im.crop(cfg["crop"])
+            cols, rows = cfg["grid"]
+            W, H = im.size
+            cw, ch = W / cols, H / rows
+            l, t, r, b = cfg["trim_px"]
+            i = 0
+            for rr in range(rows):
+                for cc in range(cols):
+                    if i >= len(cfg["cells"]):
+                        break
+                    letter = cfg["cells"][i]; i += 1
+                    if letter is None:
+                        continue
+                    box = (round(cc * cw) + l, round(rr * ch) + t,
+                           round((cc + 1) * cw) - r, round((rr + 1) * ch) - b)
+                    store(letter, im.crop(box))
+        out[name] = got
+        if verbose:
+            print(f"  latin/{name}: {len(got)} cells from {cfg['file']}")
+    return out
+
+
+def apply_latin(variants):
+    path = os.path.join(DATA_DIR, "latin.json")
+    with open(path, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    n = 0
+    for L in doc["letters"]:
+        v = {k: m[L["glyph"]] for k, m in variants.items() if L["glyph"] in m}
+        if not v:
+            continue
+        L["handshape_variants"] = v
+        # default shown when the page has no preference stored
+        L["handshape"] = v.get("BSL") or next(iter(v.values()))
+        n += 1
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+    return n
+
+
 def slice_chart(slug, cfg, verbose=True):
     path = os.path.join(SRC, cfg["file"])
     if not os.path.exists(path):
@@ -399,8 +500,13 @@ def apply_to_data(slug, cfg, mapping):
 
 
 def main(argv):
-    wanted = argv[1:] or (list(CHARTS) + ["devanagari"])
+    wanted = argv[1:] or (list(CHARTS) + ["devanagari", "latin"])
     total = 0
+    if "latin" in wanted:
+        v = slice_latin()
+        if v:
+            print(f"    wrote {apply_latin(v)} letters into latin.json (handshape_variants)")
+        wanted = [w for w in wanted if w != "latin"]
     if "devanagari" in wanted:
         m = slice_nsl()
         if m:

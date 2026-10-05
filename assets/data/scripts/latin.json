@@ -10,8 +10,24 @@
     "English",
     "and most of Europe"
   ],
-  "note": "Alphabet: 26 letters. ASL and BSL differ; BSL fingerspelling is two-handed.",
+  "note": "Alphabet: 26 letters. ASL and BSL are different manual alphabets, not variants of one: ASL fingerspells with one hand, BSL with two. Use the toggle to switch.",
   "status": "skeleton",
+  "attribution": [
+    {
+      "what": "BSL handshapes",
+      "credit": "User:Cowplopmorris, Wikimedia Commons",
+      "licence": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:British_Sign_Language_chart.png",
+      "note": "Cropped into one image per letter; as a derivative of a share-alike work these crops carry the same licence."
+    },
+    {
+      "what": "ASL handshapes",
+      "credit": "User:Ds13, Wikimedia Commons (Gallaudet font)",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.svg",
+      "note": "Cropped into one image per letter."
+    }
+  ],
   "letters": [
     {
       "glyph": "A",
@@ -23,14 +39,18 @@
         "eɪ",
         "ɑː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0041.png",
       "example_word": "Apple",
       "example_gloss": "apple",
       "example_image": null,
       "example_emoji": "🍎",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0041.png",
+        "ASL": "images/handshapes/latin/asl/0041.png"
+      }
     },
     {
       "glyph": "B",
@@ -40,14 +60,18 @@
       "ipa": [
         "b"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0042.png",
       "example_word": "Ball",
       "example_gloss": "ball",
       "example_image": null,
       "example_emoji": "⚽",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0042.png",
+        "ASL": "images/handshapes/latin/asl/0042.png"
+      }
     },
     {
       "glyph": "C",
@@ -58,14 +82,18 @@
         "k",
         "s"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0043.png",
       "example_word": "Cat",
       "example_gloss": "cat",
       "example_image": null,
       "example_emoji": "🐈",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0043.png",
+        "ASL": "images/handshapes/latin/asl/0043.png"
+      }
     },
     {
       "glyph": "D",
@@ -75,14 +103,18 @@
       "ipa": [
         "d"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0044.png",
       "example_word": "Dog",
       "example_gloss": "dog",
       "example_image": null,
       "example_emoji": "🐕",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0044.png",
+        "ASL": "images/handshapes/latin/asl/0044.png"
+      }
     },
     {
       "glyph": "E",
@@ -94,14 +126,18 @@
         "iː",
         "ə"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0045.png",
       "example_word": "Elephant",
       "example_gloss": "elephant",
       "example_image": null,
       "example_emoji": "🐘",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0045.png",
+        "ASL": "images/handshapes/latin/asl/0045.png"
+      }
     },
     {
       "glyph": "F",
@@ -111,14 +147,18 @@
       "ipa": [
         "f"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0046.png",
       "example_word": "Fish",
       "example_gloss": "fish",
       "example_image": null,
       "example_emoji": "🐟",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0046.png",
+        "ASL": "images/handshapes/latin/asl/0046.png"
+      }
     },
     {
       "glyph": "G",
@@ -129,14 +169,18 @@
         "ɡ",
         "dʒ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0047.png",
       "example_word": "Giraffe",
       "example_gloss": "giraffe",
       "example_image": null,
       "example_emoji": "🦒",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0047.png",
+        "ASL": "images/handshapes/latin/asl/0047.png"
+      }
     },
     {
       "glyph": "H",
@@ -146,14 +190,18 @@
       "ipa": [
         "h"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0048.png",
       "example_word": "House",
       "example_gloss": "house",
       "example_image": null,
       "example_emoji": "🏠",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0048.png",
+        "ASL": "images/handshapes/latin/asl/0048.png"
+      }
     },
     {
       "glyph": "I",
@@ -164,14 +212,18 @@
         "ɪ",
         "aɪ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0049.png",
       "example_word": "Ice cream",
       "example_gloss": "ice cream",
       "example_image": null,
       "example_emoji": "🍦",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0049.png",
+        "ASL": "images/handshapes/latin/asl/0049.png"
+      }
     },
     {
       "glyph": "J",
@@ -181,14 +233,18 @@
       "ipa": [
         "dʒ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/004a.png",
       "example_word": "Jug",
       "example_gloss": "jug",
       "example_image": null,
       "example_emoji": "🫗",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/004a.png",
+        "ASL": "images/handshapes/latin/asl/004a.png"
+      }
     },
     {
       "glyph": "K",
@@ -198,14 +254,18 @@
       "ipa": [
         "k"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/004b.png",
       "example_word": "Kite",
       "example_gloss": "kite",
       "example_image": null,
       "example_emoji": "🪁",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/004b.png",
+        "ASL": "images/handshapes/latin/asl/004b.png"
+      }
     },
     {
       "glyph": "L",
@@ -215,14 +275,18 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/004c.png",
       "example_word": "Lion",
       "example_gloss": "lion",
       "example_image": null,
       "example_emoji": "🦁",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/004c.png",
+        "ASL": "images/handshapes/latin/asl/004c.png"
+      }
     },
     {
       "glyph": "M",
@@ -232,14 +296,18 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/004d.png",
       "example_word": "Moon",
       "example_gloss": "moon",
       "example_image": null,
       "example_emoji": "🌙",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/004d.png",
+        "ASL": "images/handshapes/latin/asl/004d.png"
+      }
     },
     {
       "glyph": "N",
@@ -250,14 +318,18 @@
         "n",
         "ŋ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/004e.png",
       "example_word": "Nest",
       "example_gloss": "nest",
       "example_image": null,
       "example_emoji": "🪹",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/004e.png",
+        "ASL": "images/handshapes/latin/asl/004e.png"
+      }
     },
     {
       "glyph": "O",
@@ -268,14 +340,18 @@
         "ɒ",
         "oʊ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/004f.png",
       "example_word": "Orange",
       "example_gloss": "orange",
       "example_image": null,
       "example_emoji": "🍊",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/004f.png",
+        "ASL": "images/handshapes/latin/asl/004f.png"
+      }
     },
     {
       "glyph": "P",
@@ -285,14 +361,18 @@
       "ipa": [
         "p"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0050.png",
       "example_word": "Pencil",
       "example_gloss": "pencil",
       "example_image": null,
       "example_emoji": "✏️",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0050.png",
+        "ASL": "images/handshapes/latin/asl/0050.png"
+      }
     },
     {
       "glyph": "Q",
@@ -302,14 +382,18 @@
       "ipa": [
         "k"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0051.png",
       "example_word": "Queen",
       "example_gloss": "queen",
       "example_image": null,
       "example_emoji": "👸",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0051.png",
+        "ASL": "images/handshapes/latin/asl/0051.png"
+      }
     },
     {
       "glyph": "R",
@@ -319,14 +403,18 @@
       "ipa": [
         "ɹ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0052.png",
       "example_word": "Rainbow",
       "example_gloss": "rainbow",
       "example_image": null,
       "example_emoji": "🌈",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0052.png",
+        "ASL": "images/handshapes/latin/asl/0052.png"
+      }
     },
     {
       "glyph": "S",
@@ -337,14 +425,18 @@
         "s",
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0053.png",
       "example_word": "Sun",
       "example_gloss": "sun",
       "example_image": null,
       "example_emoji": "☀️",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0053.png",
+        "ASL": "images/handshapes/latin/asl/0053.png"
+      }
     },
     {
       "glyph": "T",
@@ -354,14 +446,18 @@
       "ipa": [
         "t"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0054.png",
       "example_word": "Tree",
       "example_gloss": "tree",
       "example_image": null,
       "example_emoji": "🌳",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0054.png",
+        "ASL": "images/handshapes/latin/asl/0054.png"
+      }
     },
     {
       "glyph": "U",
@@ -373,14 +469,18 @@
         "juː",
         "ʊ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0055.png",
       "example_word": "Umbrella",
       "example_gloss": "umbrella",
       "example_image": null,
       "example_emoji": "☂️",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0055.png",
+        "ASL": "images/handshapes/latin/asl/0055.png"
+      }
     },
     {
       "glyph": "V",
@@ -390,14 +490,18 @@
       "ipa": [
         "v"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0056.png",
       "example_word": "Violin",
       "example_gloss": "violin",
       "example_image": null,
       "example_emoji": "🎻",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0056.png",
+        "ASL": "images/handshapes/latin/asl/0056.png"
+      }
     },
     {
       "glyph": "W",
@@ -407,14 +511,18 @@
       "ipa": [
         "w"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0057.png",
       "example_word": "Whale",
       "example_gloss": "whale",
       "example_image": null,
       "example_emoji": "🐋",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0057.png",
+        "ASL": "images/handshapes/latin/asl/0057.png"
+      }
     },
     {
       "glyph": "X",
@@ -425,14 +533,18 @@
         "ks",
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0058.png",
       "example_word": "Xylophone",
       "example_gloss": "xylophone",
       "example_image": null,
       "example_emoji": "🎹",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0058.png",
+        "ASL": "images/handshapes/latin/asl/0058.png"
+      }
     },
     {
       "glyph": "Y",
@@ -444,14 +556,18 @@
         "aɪ",
         "i"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/0059.png",
       "example_word": "Yacht",
       "example_gloss": "yacht",
       "example_image": null,
       "example_emoji": "⛵",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/0059.png",
+        "ASL": "images/handshapes/latin/asl/0059.png"
+      }
     },
     {
       "glyph": "Z",
@@ -461,14 +577,18 @@
       "ipa": [
         "z"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/latin/bsl/005a.png",
       "example_word": "Zebra",
       "example_gloss": "zebra",
       "example_image": null,
       "example_emoji": "🦓",
       "signwriting": null,
       "signwriting_image": null,
-      "notes": ""
+      "notes": "",
+      "handshape_variants": {
+        "BSL": "images/handshapes/latin/bsl/005a.png",
+        "ASL": "images/handshapes/latin/asl/005a.png"
+      }
     }
   ]
 }
