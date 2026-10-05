@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>SignWriting Transcriber</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <style>
+    .bar { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+    .bar select, .bar button {
+      font: inherit; font-size: 0.9rem; padding: 0.35rem 0.7rem;
+      border-radius: 4px; border: 1px solid #cfd6dd; background: #fff; cursor: pointer;
+    }
+    .bar button.primary { background: #007bff; color: #fff; border-color: #007bff; }
+    .bar button.danger { background: #fdf5f5; color: #a02020; border-color: #f2d0d0; }
+    .count { font-size: 0.85rem; color: #666; margin-left: auto; }
+
+    .work { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+
+    .letters {
+      width: 230px; flex-shrink: 0; max-height: 540px; overflow-y: auto;
+      background: #f8f9fa; border-radius: 8px; padding: 0.5rem;
+    }
+    .letter-row {
+      display: flex; align-items: center; gap: 0.5rem; width: 100%;
+      background: none; border: none; font: inherit; text-align: left;
+      padding: 0.25rem 0.4rem; border-radius: 4px; cursor: pointer;
+    }
+    .letter-row:hover { background: #e9eef3; }
+    .letter-row.sel { background: #007bff; color: #fff; }
+    .letter-row img { height: 30px; width: 36px; object-fit: contain; }
+    .letter-row .g { font-size: 1rem; min-width: 2.2rem; }
+    .letter-row .sw { height: 26px; margin-left: auto; }
+    .letter-row.done .g::after { content: " ✓"; color: #1a7f37; }
+    .letter-row.sel.done .g::after { color: #cfe3ff; }
+
+    .middle { flex: 1; min-width: 300px; }
+    .target {
+      background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.1);
+      padding: 1rem; display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;
+    }
+    .target img.hand { max-height: 130px; max-width: 170px; }
+    .target .chosen {
+      border: 1px dashed #cfd6dd; border-radius: 6px; padding: 0.5rem;
+      min-width: 92px; min-height: 92px; display: flex;
+      align-items: center; justify-content: center;
+    }
+    .target .chosen img { max-height: 80px; }
+    .target .meta { font-size: 0.85rem; color: #666; }
+    .target .meta code { font-size: 0.95rem; color: #222; }
+
+    .tweaks { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-top: 0.5rem; }
+    .tweaks label { font-size: 0.78rem; color: #888; }
+    .tweaks input { width: 150px; }
+
+    .palette {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
+      gap: 4px; max-height: 420px; overflow-y: auto;
+      background: #f8f9fa; border-radius: 8px; padding: 0.5rem;
+    }
+    .palette button {
+      background: #fff; border: 1px solid #e3e8ec; border-radius: 4px;
+      padding: 2px; cursor: pointer; height: 54px;
+    }
+    .palette button:hover { border-color: #007bff; }
+    .palette button.sel { border-color: #007bff; box-shadow: 0 0 0 2px #cfe3ff; }
+    .palette img { max-width: 100%; max-height: 46px; }
+
+    .hint { font-size: 0.85rem; color: #666; max-width: 700px; margin-bottom: 1rem; }
+    kbd { background: #eef1f4; border: 1px solid #dde2e7; border-radius: 3px; padding: 0 .3rem; font-size: .8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SignWriting Transcriber</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="has-sub">
+            <a href="lugha.html">Lugha</a>
+            <ul class="subnav">
+              <li><a href="practice.html">Practice Area</a></li>
+              <li><a href="signs.html">Country Signs</a></li>
+              <li><a href="reference.html">Reference</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p class="hint">
+        Pick a letter on the left, then click the ISWA hand symbol that matches
+        its handshape. Rotation and fill refine it. Choices save in this browser;
+        export the JSON and run <code>apply_signwriting.py</code> to write them
+        into the data and render the symbols.
+        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> move between letters.
+      </p>
+
+      <div class="bar">
+        <label>Script <select id="scriptSel"></select></label>
+        <button class="primary" id="exportBtn">Export JSON</button>
+        <button class="danger" id="clearBtn">Clear this letter</button>
+        <span class="count" id="count"></span>
+      </div>
+
+      <div class="work">
+        <div class="letters" id="letters"></div>
+
+        <div class="middle">
+          <div class="target" id="target"></div>
+          <div class="palette" id="palette"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer><p>&copy; 2026 David Ludeke</p></footer>
+  </div>
+
+  <script>
+    const LS = 'signwritingKeys.v1';
+    const SCRIPTS = ['arabic','cyrillic','devanagari','farsi','geez','greek',
+                     'hangul','hebrew','kana','latin','pinyin','thai'];
+    let slug = 'latin', data = null, items = [], idx = -1, hands = [];
+    let base = null, fill = 0, rot = 0;
+
+    const el = id => document.getElementById(id);
+    const load = () => { try { return JSON.parse(localStorage.getItem(LS)) || {}; } catch (e) { return {}; } };
+    const save = o => { try { localStorage.setItem(LS, JSON.stringify(o)); } catch (e) {} };
+    const keyOf = () => base === null ? null : `S${base}${fill.toString(16)}${rot.toString(16)}`;
+
+    function stored(glyph) { return (load()[slug] || {})[glyph] || null; }
+
+    function setStored(glyph, key) {
+      const all = load();
+      all[slug] = all[slug] || {};
+      if (key) all[slug][glyph] = key; else delete all[slug][glyph];
+      if (!Object.keys(all[slug]).length) delete all[slug];
+      save(all);
+    }
+
+    /** Symbol image URL for a key, falling back to the base image we rendered. */
+    function symbolSrc(key) {
+      const b = key.slice(1, 4);
+      return `images/signwriting/base/S${b}00.png`;
+    }
+
+    async function init() {
+      hands = (await (await fetch('assets/data/signwriting-hands.json')).json()).symbols;
+      SCRIPTS.forEach(s => {
+        const o = document.createElement('option');
+        o.value = s; o.textContent = s; el('scriptSel').appendChild(o);
+      });
+      el('scriptSel').value = slug;
+      el('scriptSel').addEventListener('change', () => { slug = el('scriptSel').value; loadScript(); });
+      renderPalette();
+      loadScript();
+    }
+
+    async function loadScript() {
+      data = await (await fetch(`assets/data/scripts/${slug}.json`)).json();
+      items = data.letters;
+      idx = -1;
+      renderLetters();
+      renderTarget();
+    }
+
+    function renderLetters() {
+      const host = el('letters');
+      host.innerHTML = '';
+      items.forEach((L, i) => {
+        const b = document.createElement('button');
+        b.className = 'letter-row' + (i === idx ? ' sel' : '') + (stored(L.glyph) ? ' done' : '');
+        const g = document.createElement('span');
+        g.className = 'g'; g.textContent = L.glyph;
+        b.appendChild(g);
+        const shape = L.handshape || (L.handshape_variants && Object.values(L.handshape_variants)[0]);
+        if (shape) { const im = document.createElement('img'); im.src = shape; b.appendChild(im); }
+        const k = stored(L.glyph);
+        if (k) { const sw = document.createElement('img'); sw.className = 'sw'; sw.src = symbolSrc(k); b.appendChild(sw); }
+        b.addEventListener('click', () => open(i));
+        host.appendChild(b);
+      });
+      const n = Object.keys(load()[slug] || {}).length;
+      el('count').textContent = `${items.length} letters · ${n} transcribed`;
+    }
+
+    function open(i) {
+      idx = i;
+      const k = stored(items[i].glyph);
+      if (k) { base = k.slice(1, 4); fill = parseInt(k[4], 16); rot = parseInt(k[5], 16); }
+      else { base = null; fill = 0; rot = 0; }
+      renderLetters(); renderTarget(); markPalette();
+    }
+
+    function renderTarget() {
+      const host = el('target');
+      if (idx < 0) { host.innerHTML = '<span class="meta">Pick a letter.</span>'; return; }
+      const L = items[idx];
+      const shape = L.handshape || (L.handshape_variants && Object.values(L.handshape_variants)[0]);
+      const key = keyOf();
+      host.innerHTML = `
+        ${shape ? `<img class="hand" src="${shape}" alt="${L.glyph}" />`
+                : '<span class="meta">no handshape image</span>'}
+        <div class="chosen">${key ? `<img src="${symbolSrc(key)}" alt="${key}" />` : '<span class="meta">pick a symbol</span>'}</div>
+        <div>
+          <div style="font-size:1.4rem">${L.glyph} <span class="meta">${L.name || ''}</span></div>
+          <div class="meta">key <code>${key || '—'}</code></div>
+          <div class="tweaks">
+            <label>rotation <input type="range" id="rot" min="0" max="15" value="${rot}" /></label>
+            <span class="meta" id="rotv">${rot}</span>
+            <label>fill <input type="range" id="fill" min="0" max="5" value="${fill}" /></label>
+            <span class="meta" id="fillv">${fill}</span>
+          </div>
+        </div>`;
+      const r = el('rot'), f = el('fill');
+      if (r) r.addEventListener('input', () => { rot = +r.value; commit(); });
+      if (f) f.addEventListener('input', () => { fill = +f.value; commit(); });
+    }
+
+    function commit() {
+      if (idx < 0 || base === null) return;
+      setStored(items[idx].glyph, keyOf());
+      renderTarget(); renderLetters();
+    }
+
+    function renderPalette() {
+      const host = el('palette');
+      host.innerHTML = '';
+      hands.forEach(h => {
+        const b = document.createElement('button');
+        b.dataset.base = h.base;
+        b.title = `S${h.base}`;
+        const im = document.createElement('img');
+        im.src = h.image; im.loading = 'lazy';
+        b.appendChild(im);
+        b.addEventListener('click', () => {
+          if (idx < 0) return;
+          base = h.base; commit(); markPalette();
+        });
+        host.appendChild(b);
+      });
+    }
+
+    function markPalette() {
+      document.querySelectorAll('.palette button').forEach(b =>
+        b.classList.toggle('sel', b.dataset.base === base));
+    }
+
+    el('clearBtn').addEventListener('click', () => {
+      if (idx < 0) return;
+      setStored(items[idx].glyph, null);
+      base = null; fill = 0; rot = 0;
+      renderTarget(); renderLetters(); markPalette();
+    });
+
+    el('exportBtn').addEventListener('click', () => {
+      const all = load();
+      const blob = new Blob([JSON.stringify(all, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'signwriting-keys.json';
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    });
+
+    document.addEventListener('keydown', e => {
+      if (idx < 0) return;
+      if (e.key === 'ArrowRight' && idx < items.length - 1) open(idx + 1);
+      if (e.key === 'ArrowLeft' && idx > 0) open(idx - 1);
+    });
+
+    init();
+  </script>
+</body>
+</html>

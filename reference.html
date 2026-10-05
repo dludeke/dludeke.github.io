@@ -121,7 +121,7 @@
   </div>
 
   <script>
-    fetch('assets/data/scripts/index.json')
+    fetch('assets/data/scripts/index.json', { cache: 'no-cache' })
       .then(r => r.json())
       .then(data => {
         const grid = document.getElementById('grid');

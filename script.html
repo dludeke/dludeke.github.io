@@ -417,7 +417,7 @@
       document.getElementById('body').innerHTML =
         '<p>No script chosen. <a href="reference.html">Pick one.</a></p>';
     } else {
-      fetch(`assets/data/scripts/${slug}.json`)
+      fetch(`assets/data/scripts/${slug}.json`, { cache: 'no-cache' })
         .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
         .then(render)
         .catch(() => {

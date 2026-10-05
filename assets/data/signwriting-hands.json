@@ -1,0 +1,1275 @@
+{
+  "note": "ISWA 2010 hand symbols, base S100-S204, shown at fill 0 rotation 0",
+  "symbols": [
+    {
+      "key": "S10000",
+      "base": "100",
+      "image": "images/signwriting/base/S10000.png"
+    },
+    {
+      "key": "S10100",
+      "base": "101",
+      "image": "images/signwriting/base/S10100.png"
+    },
+    {
+      "key": "S10200",
+      "base": "102",
+      "image": "images/signwriting/base/S10200.png"
+    },
+    {
+      "key": "S10300",
+      "base": "103",
+      "image": "images/signwriting/base/S10300.png"
+    },
+    {
+      "key": "S10400",
+      "base": "104",
+      "image": "images/signwriting/base/S10400.png"
+    },
+    {
+      "key": "S10500",
+      "base": "105",
+      "image": "images/signwriting/base/S10500.png"
+    },
+    {
+      "key": "S10600",
+      "base": "106",
+      "image": "images/signwriting/base/S10600.png"
+    },
+    {
+      "key": "S10700",
+      "base": "107",
+      "image": "images/signwriting/base/S10700.png"
+    },
+    {
+      "key": "S10800",
+      "base": "108",
+      "image": "images/signwriting/base/S10800.png"
+    },
+    {
+      "key": "S10900",
+      "base": "109",
+      "image": "images/signwriting/base/S10900.png"
+    },
+    {
+      "key": "S10a00",
+      "base": "10a",
+      "image": "images/signwriting/base/S10a00.png"
+    },
+    {
+      "key": "S10b00",
+      "base": "10b",
+      "image": "images/signwriting/base/S10b00.png"
+    },
+    {
+      "key": "S10c00",
+      "base": "10c",
+      "image": "images/signwriting/base/S10c00.png"
+    },
+    {
+      "key": "S10d00",
+      "base": "10d",
+      "image": "images/signwriting/base/S10d00.png"
+    },
+    {
+      "key": "S10e00",
+      "base": "10e",
+      "image": "images/signwriting/base/S10e00.png"
+    },
+    {
+      "key": "S10f00",
+      "base": "10f",
+      "image": "images/signwriting/base/S10f00.png"
+    },
+    {
+      "key": "S11000",
+      "base": "110",
+      "image": "images/signwriting/base/S11000.png"
+    },
+    {
+      "key": "S11100",
+      "base": "111",
+      "image": "images/signwriting/base/S11100.png"
+    },
+    {
+      "key": "S11200",
+      "base": "112",
+      "image": "images/signwriting/base/S11200.png"
+    },
+    {
+      "key": "S11300",
+      "base": "113",
+      "image": "images/signwriting/base/S11300.png"
+    },
+    {
+      "key": "S11400",
+      "base": "114",
+      "image": "images/signwriting/base/S11400.png"
+    },
+    {
+      "key": "S11500",
+      "base": "115",
+      "image": "images/signwriting/base/S11500.png"
+    },
+    {
+      "key": "S11600",
+      "base": "116",
+      "image": "images/signwriting/base/S11600.png"
+    },
+    {
+      "key": "S11700",
+      "base": "117",
+      "image": "images/signwriting/base/S11700.png"
+    },
+    {
+      "key": "S11800",
+      "base": "118",
+      "image": "images/signwriting/base/S11800.png"
+    },
+    {
+      "key": "S11900",
+      "base": "119",
+      "image": "images/signwriting/base/S11900.png"
+    },
+    {
+      "key": "S11a00",
+      "base": "11a",
+      "image": "images/signwriting/base/S11a00.png"
+    },
+    {
+      "key": "S11b00",
+      "base": "11b",
+      "image": "images/signwriting/base/S11b00.png"
+    },
+    {
+      "key": "S11c00",
+      "base": "11c",
+      "image": "images/signwriting/base/S11c00.png"
+    },
+    {
+      "key": "S11d00",
+      "base": "11d",
+      "image": "images/signwriting/base/S11d00.png"
+    },
+    {
+      "key": "S11e00",
+      "base": "11e",
+      "image": "images/signwriting/base/S11e00.png"
+    },
+    {
+      "key": "S11f00",
+      "base": "11f",
+      "image": "images/signwriting/base/S11f00.png"
+    },
+    {
+      "key": "S12000",
+      "base": "120",
+      "image": "images/signwriting/base/S12000.png"
+    },
+    {
+      "key": "S12100",
+      "base": "121",
+      "image": "images/signwriting/base/S12100.png"
+    },
+    {
+      "key": "S12200",
+      "base": "122",
+      "image": "images/signwriting/base/S12200.png"
+    },
+    {
+      "key": "S12300",
+      "base": "123",
+      "image": "images/signwriting/base/S12300.png"
+    },
+    {
+      "key": "S12400",
+      "base": "124",
+      "image": "images/signwriting/base/S12400.png"
+    },
+    {
+      "key": "S12500",
+      "base": "125",
+      "image": "images/signwriting/base/S12500.png"
+    },
+    {
+      "key": "S12600",
+      "base": "126",
+      "image": "images/signwriting/base/S12600.png"
+    },
+    {
+      "key": "S12700",
+      "base": "127",
+      "image": "images/signwriting/base/S12700.png"
+    },
+    {
+      "key": "S12800",
+      "base": "128",
+      "image": "images/signwriting/base/S12800.png"
+    },
+    {
+      "key": "S12900",
+      "base": "129",
+      "image": "images/signwriting/base/S12900.png"
+    },
+    {
+      "key": "S12a00",
+      "base": "12a",
+      "image": "images/signwriting/base/S12a00.png"
+    },
+    {
+      "key": "S12b00",
+      "base": "12b",
+      "image": "images/signwriting/base/S12b00.png"
+    },
+    {
+      "key": "S12c00",
+      "base": "12c",
+      "image": "images/signwriting/base/S12c00.png"
+    },
+    {
+      "key": "S12d00",
+      "base": "12d",
+      "image": "images/signwriting/base/S12d00.png"
+    },
+    {
+      "key": "S12e00",
+      "base": "12e",
+      "image": "images/signwriting/base/S12e00.png"
+    },
+    {
+      "key": "S12f00",
+      "base": "12f",
+      "image": "images/signwriting/base/S12f00.png"
+    },
+    {
+      "key": "S13000",
+      "base": "130",
+      "image": "images/signwriting/base/S13000.png"
+    },
+    {
+      "key": "S13100",
+      "base": "131",
+      "image": "images/signwriting/base/S13100.png"
+    },
+    {
+      "key": "S13200",
+      "base": "132",
+      "image": "images/signwriting/base/S13200.png"
+    },
+    {
+      "key": "S13300",
+      "base": "133",
+      "image": "images/signwriting/base/S13300.png"
+    },
+    {
+      "key": "S13400",
+      "base": "134",
+      "image": "images/signwriting/base/S13400.png"
+    },
+    {
+      "key": "S13500",
+      "base": "135",
+      "image": "images/signwriting/base/S13500.png"
+    },
+    {
+      "key": "S13600",
+      "base": "136",
+      "image": "images/signwriting/base/S13600.png"
+    },
+    {
+      "key": "S13700",
+      "base": "137",
+      "image": "images/signwriting/base/S13700.png"
+    },
+    {
+      "key": "S13800",
+      "base": "138",
+      "image": "images/signwriting/base/S13800.png"
+    },
+    {
+      "key": "S13900",
+      "base": "139",
+      "image": "images/signwriting/base/S13900.png"
+    },
+    {
+      "key": "S13a00",
+      "base": "13a",
+      "image": "images/signwriting/base/S13a00.png"
+    },
+    {
+      "key": "S13b00",
+      "base": "13b",
+      "image": "images/signwriting/base/S13b00.png"
+    },
+    {
+      "key": "S13c00",
+      "base": "13c",
+      "image": "images/signwriting/base/S13c00.png"
+    },
+    {
+      "key": "S13d00",
+      "base": "13d",
+      "image": "images/signwriting/base/S13d00.png"
+    },
+    {
+      "key": "S13e00",
+      "base": "13e",
+      "image": "images/signwriting/base/S13e00.png"
+    },
+    {
+      "key": "S13f00",
+      "base": "13f",
+      "image": "images/signwriting/base/S13f00.png"
+    },
+    {
+      "key": "S14000",
+      "base": "140",
+      "image": "images/signwriting/base/S14000.png"
+    },
+    {
+      "key": "S14100",
+      "base": "141",
+      "image": "images/signwriting/base/S14100.png"
+    },
+    {
+      "key": "S14200",
+      "base": "142",
+      "image": "images/signwriting/base/S14200.png"
+    },
+    {
+      "key": "S14300",
+      "base": "143",
+      "image": "images/signwriting/base/S14300.png"
+    },
+    {
+      "key": "S14400",
+      "base": "144",
+      "image": "images/signwriting/base/S14400.png"
+    },
+    {
+      "key": "S14500",
+      "base": "145",
+      "image": "images/signwriting/base/S14500.png"
+    },
+    {
+      "key": "S14600",
+      "base": "146",
+      "image": "images/signwriting/base/S14600.png"
+    },
+    {
+      "key": "S14700",
+      "base": "147",
+      "image": "images/signwriting/base/S14700.png"
+    },
+    {
+      "key": "S14800",
+      "base": "148",
+      "image": "images/signwriting/base/S14800.png"
+    },
+    {
+      "key": "S14900",
+      "base": "149",
+      "image": "images/signwriting/base/S14900.png"
+    },
+    {
+      "key": "S14a00",
+      "base": "14a",
+      "image": "images/signwriting/base/S14a00.png"
+    },
+    {
+      "key": "S14b00",
+      "base": "14b",
+      "image": "images/signwriting/base/S14b00.png"
+    },
+    {
+      "key": "S14c00",
+      "base": "14c",
+      "image": "images/signwriting/base/S14c00.png"
+    },
+    {
+      "key": "S14e00",
+      "base": "14e",
+      "image": "images/signwriting/base/S14e00.png"
+    },
+    {
+      "key": "S15000",
+      "base": "150",
+      "image": "images/signwriting/base/S15000.png"
+    },
+    {
+      "key": "S15200",
+      "base": "152",
+      "image": "images/signwriting/base/S15200.png"
+    },
+    {
+      "key": "S15300",
+      "base": "153",
+      "image": "images/signwriting/base/S15300.png"
+    },
+    {
+      "key": "S15400",
+      "base": "154",
+      "image": "images/signwriting/base/S15400.png"
+    },
+    {
+      "key": "S15500",
+      "base": "155",
+      "image": "images/signwriting/base/S15500.png"
+    },
+    {
+      "key": "S15600",
+      "base": "156",
+      "image": "images/signwriting/base/S15600.png"
+    },
+    {
+      "key": "S15700",
+      "base": "157",
+      "image": "images/signwriting/base/S15700.png"
+    },
+    {
+      "key": "S15800",
+      "base": "158",
+      "image": "images/signwriting/base/S15800.png"
+    },
+    {
+      "key": "S15900",
+      "base": "159",
+      "image": "images/signwriting/base/S15900.png"
+    },
+    {
+      "key": "S15a00",
+      "base": "15a",
+      "image": "images/signwriting/base/S15a00.png"
+    },
+    {
+      "key": "S15b00",
+      "base": "15b",
+      "image": "images/signwriting/base/S15b00.png"
+    },
+    {
+      "key": "S15d00",
+      "base": "15d",
+      "image": "images/signwriting/base/S15d00.png"
+    },
+    {
+      "key": "S15f00",
+      "base": "15f",
+      "image": "images/signwriting/base/S15f00.png"
+    },
+    {
+      "key": "S16000",
+      "base": "160",
+      "image": "images/signwriting/base/S16000.png"
+    },
+    {
+      "key": "S16100",
+      "base": "161",
+      "image": "images/signwriting/base/S16100.png"
+    },
+    {
+      "key": "S16200",
+      "base": "162",
+      "image": "images/signwriting/base/S16200.png"
+    },
+    {
+      "key": "S16300",
+      "base": "163",
+      "image": "images/signwriting/base/S16300.png"
+    },
+    {
+      "key": "S16400",
+      "base": "164",
+      "image": "images/signwriting/base/S16400.png"
+    },
+    {
+      "key": "S16500",
+      "base": "165",
+      "image": "images/signwriting/base/S16500.png"
+    },
+    {
+      "key": "S16600",
+      "base": "166",
+      "image": "images/signwriting/base/S16600.png"
+    },
+    {
+      "key": "S16700",
+      "base": "167",
+      "image": "images/signwriting/base/S16700.png"
+    },
+    {
+      "key": "S16800",
+      "base": "168",
+      "image": "images/signwriting/base/S16800.png"
+    },
+    {
+      "key": "S16900",
+      "base": "169",
+      "image": "images/signwriting/base/S16900.png"
+    },
+    {
+      "key": "S16a00",
+      "base": "16a",
+      "image": "images/signwriting/base/S16a00.png"
+    },
+    {
+      "key": "S16b00",
+      "base": "16b",
+      "image": "images/signwriting/base/S16b00.png"
+    },
+    {
+      "key": "S16c00",
+      "base": "16c",
+      "image": "images/signwriting/base/S16c00.png"
+    },
+    {
+      "key": "S16d00",
+      "base": "16d",
+      "image": "images/signwriting/base/S16d00.png"
+    },
+    {
+      "key": "S16e00",
+      "base": "16e",
+      "image": "images/signwriting/base/S16e00.png"
+    },
+    {
+      "key": "S16f00",
+      "base": "16f",
+      "image": "images/signwriting/base/S16f00.png"
+    },
+    {
+      "key": "S17000",
+      "base": "170",
+      "image": "images/signwriting/base/S17000.png"
+    },
+    {
+      "key": "S17100",
+      "base": "171",
+      "image": "images/signwriting/base/S17100.png"
+    },
+    {
+      "key": "S17200",
+      "base": "172",
+      "image": "images/signwriting/base/S17200.png"
+    },
+    {
+      "key": "S17300",
+      "base": "173",
+      "image": "images/signwriting/base/S17300.png"
+    },
+    {
+      "key": "S17400",
+      "base": "174",
+      "image": "images/signwriting/base/S17400.png"
+    },
+    {
+      "key": "S17500",
+      "base": "175",
+      "image": "images/signwriting/base/S17500.png"
+    },
+    {
+      "key": "S17600",
+      "base": "176",
+      "image": "images/signwriting/base/S17600.png"
+    },
+    {
+      "key": "S17700",
+      "base": "177",
+      "image": "images/signwriting/base/S17700.png"
+    },
+    {
+      "key": "S17800",
+      "base": "178",
+      "image": "images/signwriting/base/S17800.png"
+    },
+    {
+      "key": "S17900",
+      "base": "179",
+      "image": "images/signwriting/base/S17900.png"
+    },
+    {
+      "key": "S17a00",
+      "base": "17a",
+      "image": "images/signwriting/base/S17a00.png"
+    },
+    {
+      "key": "S17b00",
+      "base": "17b",
+      "image": "images/signwriting/base/S17b00.png"
+    },
+    {
+      "key": "S17c00",
+      "base": "17c",
+      "image": "images/signwriting/base/S17c00.png"
+    },
+    {
+      "key": "S17d00",
+      "base": "17d",
+      "image": "images/signwriting/base/S17d00.png"
+    },
+    {
+      "key": "S17e00",
+      "base": "17e",
+      "image": "images/signwriting/base/S17e00.png"
+    },
+    {
+      "key": "S17f00",
+      "base": "17f",
+      "image": "images/signwriting/base/S17f00.png"
+    },
+    {
+      "key": "S18000",
+      "base": "180",
+      "image": "images/signwriting/base/S18000.png"
+    },
+    {
+      "key": "S18100",
+      "base": "181",
+      "image": "images/signwriting/base/S18100.png"
+    },
+    {
+      "key": "S18200",
+      "base": "182",
+      "image": "images/signwriting/base/S18200.png"
+    },
+    {
+      "key": "S18300",
+      "base": "183",
+      "image": "images/signwriting/base/S18300.png"
+    },
+    {
+      "key": "S18400",
+      "base": "184",
+      "image": "images/signwriting/base/S18400.png"
+    },
+    {
+      "key": "S18500",
+      "base": "185",
+      "image": "images/signwriting/base/S18500.png"
+    },
+    {
+      "key": "S18600",
+      "base": "186",
+      "image": "images/signwriting/base/S18600.png"
+    },
+    {
+      "key": "S18700",
+      "base": "187",
+      "image": "images/signwriting/base/S18700.png"
+    },
+    {
+      "key": "S18800",
+      "base": "188",
+      "image": "images/signwriting/base/S18800.png"
+    },
+    {
+      "key": "S18900",
+      "base": "189",
+      "image": "images/signwriting/base/S18900.png"
+    },
+    {
+      "key": "S18a00",
+      "base": "18a",
+      "image": "images/signwriting/base/S18a00.png"
+    },
+    {
+      "key": "S18b00",
+      "base": "18b",
+      "image": "images/signwriting/base/S18b00.png"
+    },
+    {
+      "key": "S18c00",
+      "base": "18c",
+      "image": "images/signwriting/base/S18c00.png"
+    },
+    {
+      "key": "S18d00",
+      "base": "18d",
+      "image": "images/signwriting/base/S18d00.png"
+    },
+    {
+      "key": "S18e00",
+      "base": "18e",
+      "image": "images/signwriting/base/S18e00.png"
+    },
+    {
+      "key": "S18f00",
+      "base": "18f",
+      "image": "images/signwriting/base/S18f00.png"
+    },
+    {
+      "key": "S19000",
+      "base": "190",
+      "image": "images/signwriting/base/S19000.png"
+    },
+    {
+      "key": "S19100",
+      "base": "191",
+      "image": "images/signwriting/base/S19100.png"
+    },
+    {
+      "key": "S19200",
+      "base": "192",
+      "image": "images/signwriting/base/S19200.png"
+    },
+    {
+      "key": "S19300",
+      "base": "193",
+      "image": "images/signwriting/base/S19300.png"
+    },
+    {
+      "key": "S19400",
+      "base": "194",
+      "image": "images/signwriting/base/S19400.png"
+    },
+    {
+      "key": "S19500",
+      "base": "195",
+      "image": "images/signwriting/base/S19500.png"
+    },
+    {
+      "key": "S19600",
+      "base": "196",
+      "image": "images/signwriting/base/S19600.png"
+    },
+    {
+      "key": "S19700",
+      "base": "197",
+      "image": "images/signwriting/base/S19700.png"
+    },
+    {
+      "key": "S19800",
+      "base": "198",
+      "image": "images/signwriting/base/S19800.png"
+    },
+    {
+      "key": "S19900",
+      "base": "199",
+      "image": "images/signwriting/base/S19900.png"
+    },
+    {
+      "key": "S19a00",
+      "base": "19a",
+      "image": "images/signwriting/base/S19a00.png"
+    },
+    {
+      "key": "S19b00",
+      "base": "19b",
+      "image": "images/signwriting/base/S19b00.png"
+    },
+    {
+      "key": "S19c00",
+      "base": "19c",
+      "image": "images/signwriting/base/S19c00.png"
+    },
+    {
+      "key": "S19d00",
+      "base": "19d",
+      "image": "images/signwriting/base/S19d00.png"
+    },
+    {
+      "key": "S19e00",
+      "base": "19e",
+      "image": "images/signwriting/base/S19e00.png"
+    },
+    {
+      "key": "S19f00",
+      "base": "19f",
+      "image": "images/signwriting/base/S19f00.png"
+    },
+    {
+      "key": "S1a000",
+      "base": "1a0",
+      "image": "images/signwriting/base/S1a000.png"
+    },
+    {
+      "key": "S1a100",
+      "base": "1a1",
+      "image": "images/signwriting/base/S1a100.png"
+    },
+    {
+      "key": "S1a200",
+      "base": "1a2",
+      "image": "images/signwriting/base/S1a200.png"
+    },
+    {
+      "key": "S1a300",
+      "base": "1a3",
+      "image": "images/signwriting/base/S1a300.png"
+    },
+    {
+      "key": "S1a400",
+      "base": "1a4",
+      "image": "images/signwriting/base/S1a400.png"
+    },
+    {
+      "key": "S1a500",
+      "base": "1a5",
+      "image": "images/signwriting/base/S1a500.png"
+    },
+    {
+      "key": "S1a600",
+      "base": "1a6",
+      "image": "images/signwriting/base/S1a600.png"
+    },
+    {
+      "key": "S1a700",
+      "base": "1a7",
+      "image": "images/signwriting/base/S1a700.png"
+    },
+    {
+      "key": "S1a800",
+      "base": "1a8",
+      "image": "images/signwriting/base/S1a800.png"
+    },
+    {
+      "key": "S1a900",
+      "base": "1a9",
+      "image": "images/signwriting/base/S1a900.png"
+    },
+    {
+      "key": "S1aa00",
+      "base": "1aa",
+      "image": "images/signwriting/base/S1aa00.png"
+    },
+    {
+      "key": "S1ab00",
+      "base": "1ab",
+      "image": "images/signwriting/base/S1ab00.png"
+    },
+    {
+      "key": "S1ac00",
+      "base": "1ac",
+      "image": "images/signwriting/base/S1ac00.png"
+    },
+    {
+      "key": "S1ad00",
+      "base": "1ad",
+      "image": "images/signwriting/base/S1ad00.png"
+    },
+    {
+      "key": "S1ae00",
+      "base": "1ae",
+      "image": "images/signwriting/base/S1ae00.png"
+    },
+    {
+      "key": "S1af00",
+      "base": "1af",
+      "image": "images/signwriting/base/S1af00.png"
+    },
+    {
+      "key": "S1b000",
+      "base": "1b0",
+      "image": "images/signwriting/base/S1b000.png"
+    },
+    {
+      "key": "S1b100",
+      "base": "1b1",
+      "image": "images/signwriting/base/S1b100.png"
+    },
+    {
+      "key": "S1b200",
+      "base": "1b2",
+      "image": "images/signwriting/base/S1b200.png"
+    },
+    {
+      "key": "S1b300",
+      "base": "1b3",
+      "image": "images/signwriting/base/S1b300.png"
+    },
+    {
+      "key": "S1b400",
+      "base": "1b4",
+      "image": "images/signwriting/base/S1b400.png"
+    },
+    {
+      "key": "S1b500",
+      "base": "1b5",
+      "image": "images/signwriting/base/S1b500.png"
+    },
+    {
+      "key": "S1b600",
+      "base": "1b6",
+      "image": "images/signwriting/base/S1b600.png"
+    },
+    {
+      "key": "S1b700",
+      "base": "1b7",
+      "image": "images/signwriting/base/S1b700.png"
+    },
+    {
+      "key": "S1b800",
+      "base": "1b8",
+      "image": "images/signwriting/base/S1b800.png"
+    },
+    {
+      "key": "S1b900",
+      "base": "1b9",
+      "image": "images/signwriting/base/S1b900.png"
+    },
+    {
+      "key": "S1ba00",
+      "base": "1ba",
+      "image": "images/signwriting/base/S1ba00.png"
+    },
+    {
+      "key": "S1bb00",
+      "base": "1bb",
+      "image": "images/signwriting/base/S1bb00.png"
+    },
+    {
+      "key": "S1bc00",
+      "base": "1bc",
+      "image": "images/signwriting/base/S1bc00.png"
+    },
+    {
+      "key": "S1bd00",
+      "base": "1bd",
+      "image": "images/signwriting/base/S1bd00.png"
+    },
+    {
+      "key": "S1be00",
+      "base": "1be",
+      "image": "images/signwriting/base/S1be00.png"
+    },
+    {
+      "key": "S1bf00",
+      "base": "1bf",
+      "image": "images/signwriting/base/S1bf00.png"
+    },
+    {
+      "key": "S1c000",
+      "base": "1c0",
+      "image": "images/signwriting/base/S1c000.png"
+    },
+    {
+      "key": "S1c100",
+      "base": "1c1",
+      "image": "images/signwriting/base/S1c100.png"
+    },
+    {
+      "key": "S1c200",
+      "base": "1c2",
+      "image": "images/signwriting/base/S1c200.png"
+    },
+    {
+      "key": "S1c300",
+      "base": "1c3",
+      "image": "images/signwriting/base/S1c300.png"
+    },
+    {
+      "key": "S1c400",
+      "base": "1c4",
+      "image": "images/signwriting/base/S1c400.png"
+    },
+    {
+      "key": "S1c500",
+      "base": "1c5",
+      "image": "images/signwriting/base/S1c500.png"
+    },
+    {
+      "key": "S1c600",
+      "base": "1c6",
+      "image": "images/signwriting/base/S1c600.png"
+    },
+    {
+      "key": "S1c700",
+      "base": "1c7",
+      "image": "images/signwriting/base/S1c700.png"
+    },
+    {
+      "key": "S1c800",
+      "base": "1c8",
+      "image": "images/signwriting/base/S1c800.png"
+    },
+    {
+      "key": "S1c900",
+      "base": "1c9",
+      "image": "images/signwriting/base/S1c900.png"
+    },
+    {
+      "key": "S1ca00",
+      "base": "1ca",
+      "image": "images/signwriting/base/S1ca00.png"
+    },
+    {
+      "key": "S1cb00",
+      "base": "1cb",
+      "image": "images/signwriting/base/S1cb00.png"
+    },
+    {
+      "key": "S1cc00",
+      "base": "1cc",
+      "image": "images/signwriting/base/S1cc00.png"
+    },
+    {
+      "key": "S1cd00",
+      "base": "1cd",
+      "image": "images/signwriting/base/S1cd00.png"
+    },
+    {
+      "key": "S1ce00",
+      "base": "1ce",
+      "image": "images/signwriting/base/S1ce00.png"
+    },
+    {
+      "key": "S1cf00",
+      "base": "1cf",
+      "image": "images/signwriting/base/S1cf00.png"
+    },
+    {
+      "key": "S1d000",
+      "base": "1d0",
+      "image": "images/signwriting/base/S1d000.png"
+    },
+    {
+      "key": "S1d100",
+      "base": "1d1",
+      "image": "images/signwriting/base/S1d100.png"
+    },
+    {
+      "key": "S1d200",
+      "base": "1d2",
+      "image": "images/signwriting/base/S1d200.png"
+    },
+    {
+      "key": "S1d300",
+      "base": "1d3",
+      "image": "images/signwriting/base/S1d300.png"
+    },
+    {
+      "key": "S1d400",
+      "base": "1d4",
+      "image": "images/signwriting/base/S1d400.png"
+    },
+    {
+      "key": "S1d500",
+      "base": "1d5",
+      "image": "images/signwriting/base/S1d500.png"
+    },
+    {
+      "key": "S1d600",
+      "base": "1d6",
+      "image": "images/signwriting/base/S1d600.png"
+    },
+    {
+      "key": "S1d700",
+      "base": "1d7",
+      "image": "images/signwriting/base/S1d700.png"
+    },
+    {
+      "key": "S1d800",
+      "base": "1d8",
+      "image": "images/signwriting/base/S1d800.png"
+    },
+    {
+      "key": "S1d900",
+      "base": "1d9",
+      "image": "images/signwriting/base/S1d900.png"
+    },
+    {
+      "key": "S1da00",
+      "base": "1da",
+      "image": "images/signwriting/base/S1da00.png"
+    },
+    {
+      "key": "S1db00",
+      "base": "1db",
+      "image": "images/signwriting/base/S1db00.png"
+    },
+    {
+      "key": "S1dc00",
+      "base": "1dc",
+      "image": "images/signwriting/base/S1dc00.png"
+    },
+    {
+      "key": "S1dd00",
+      "base": "1dd",
+      "image": "images/signwriting/base/S1dd00.png"
+    },
+    {
+      "key": "S1de00",
+      "base": "1de",
+      "image": "images/signwriting/base/S1de00.png"
+    },
+    {
+      "key": "S1df00",
+      "base": "1df",
+      "image": "images/signwriting/base/S1df00.png"
+    },
+    {
+      "key": "S1e000",
+      "base": "1e0",
+      "image": "images/signwriting/base/S1e000.png"
+    },
+    {
+      "key": "S1e100",
+      "base": "1e1",
+      "image": "images/signwriting/base/S1e100.png"
+    },
+    {
+      "key": "S1e200",
+      "base": "1e2",
+      "image": "images/signwriting/base/S1e200.png"
+    },
+    {
+      "key": "S1e300",
+      "base": "1e3",
+      "image": "images/signwriting/base/S1e300.png"
+    },
+    {
+      "key": "S1e400",
+      "base": "1e4",
+      "image": "images/signwriting/base/S1e400.png"
+    },
+    {
+      "key": "S1e500",
+      "base": "1e5",
+      "image": "images/signwriting/base/S1e500.png"
+    },
+    {
+      "key": "S1e600",
+      "base": "1e6",
+      "image": "images/signwriting/base/S1e600.png"
+    },
+    {
+      "key": "S1e700",
+      "base": "1e7",
+      "image": "images/signwriting/base/S1e700.png"
+    },
+    {
+      "key": "S1e800",
+      "base": "1e8",
+      "image": "images/signwriting/base/S1e800.png"
+    },
+    {
+      "key": "S1e900",
+      "base": "1e9",
+      "image": "images/signwriting/base/S1e900.png"
+    },
+    {
+      "key": "S1ea00",
+      "base": "1ea",
+      "image": "images/signwriting/base/S1ea00.png"
+    },
+    {
+      "key": "S1eb00",
+      "base": "1eb",
+      "image": "images/signwriting/base/S1eb00.png"
+    },
+    {
+      "key": "S1ec00",
+      "base": "1ec",
+      "image": "images/signwriting/base/S1ec00.png"
+    },
+    {
+      "key": "S1ed00",
+      "base": "1ed",
+      "image": "images/signwriting/base/S1ed00.png"
+    },
+    {
+      "key": "S1ee00",
+      "base": "1ee",
+      "image": "images/signwriting/base/S1ee00.png"
+    },
+    {
+      "key": "S1ef00",
+      "base": "1ef",
+      "image": "images/signwriting/base/S1ef00.png"
+    },
+    {
+      "key": "S1f000",
+      "base": "1f0",
+      "image": "images/signwriting/base/S1f000.png"
+    },
+    {
+      "key": "S1f100",
+      "base": "1f1",
+      "image": "images/signwriting/base/S1f100.png"
+    },
+    {
+      "key": "S1f200",
+      "base": "1f2",
+      "image": "images/signwriting/base/S1f200.png"
+    },
+    {
+      "key": "S1f300",
+      "base": "1f3",
+      "image": "images/signwriting/base/S1f300.png"
+    },
+    {
+      "key": "S1f400",
+      "base": "1f4",
+      "image": "images/signwriting/base/S1f400.png"
+    },
+    {
+      "key": "S1f500",
+      "base": "1f5",
+      "image": "images/signwriting/base/S1f500.png"
+    },
+    {
+      "key": "S1f700",
+      "base": "1f7",
+      "image": "images/signwriting/base/S1f700.png"
+    },
+    {
+      "key": "S1f800",
+      "base": "1f8",
+      "image": "images/signwriting/base/S1f800.png"
+    },
+    {
+      "key": "S1f900",
+      "base": "1f9",
+      "image": "images/signwriting/base/S1f900.png"
+    },
+    {
+      "key": "S1fa00",
+      "base": "1fa",
+      "image": "images/signwriting/base/S1fa00.png"
+    },
+    {
+      "key": "S1fb00",
+      "base": "1fb",
+      "image": "images/signwriting/base/S1fb00.png"
+    },
+    {
+      "key": "S1fc00",
+      "base": "1fc",
+      "image": "images/signwriting/base/S1fc00.png"
+    },
+    {
+      "key": "S1fd00",
+      "base": "1fd",
+      "image": "images/signwriting/base/S1fd00.png"
+    },
+    {
+      "key": "S1fe00",
+      "base": "1fe",
+      "image": "images/signwriting/base/S1fe00.png"
+    },
+    {
+      "key": "S1ff00",
+      "base": "1ff",
+      "image": "images/signwriting/base/S1ff00.png"
+    },
+    {
+      "key": "S20000",
+      "base": "200",
+      "image": "images/signwriting/base/S20000.png"
+    },
+    {
+      "key": "S20100",
+      "base": "201",
+      "image": "images/signwriting/base/S20100.png"
+    },
+    {
+      "key": "S20200",
+      "base": "202",
+      "image": "images/signwriting/base/S20200.png"
+    },
+    {
+      "key": "S20300",
+      "base": "203",
+      "image": "images/signwriting/base/S20300.png"
+    }
+  ]
+}
