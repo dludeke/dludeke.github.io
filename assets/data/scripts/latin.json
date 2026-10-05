@@ -28,6 +28,7 @@
       "note": "Cropped into one image per letter."
     }
   ],
+  "layout": null,
   "letters": [
     {
       "glyph": "A",
@@ -47,6 +48,7 @@
       "example_ipa": "ˈæpəl",
       "signwriting": "M507x507S1f720487x492",
       "signwriting_image": "images/signwriting/latin/S1f720.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S1f720487x492",
@@ -73,6 +75,7 @@
       "example_ipa": "bɔːl",
       "signwriting": "M507x507S14720493x485",
       "signwriting_image": "images/signwriting/latin/S14720.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S14720493x485",
@@ -100,6 +103,7 @@
       "example_ipa": "kæt",
       "signwriting": "M508x507S16d20491x487",
       "signwriting_image": "images/signwriting/latin/S16d20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M508x507S16d20491x487",
@@ -126,6 +130,7 @@
       "example_ipa": "dɒɡ",
       "signwriting": "M508x507S10120492x477",
       "signwriting_image": "images/signwriting/latin/S10120.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M508x507S10120492x477",
@@ -154,6 +159,7 @@
       "example_ipa": "ˈɛlɪfənt",
       "signwriting": "M507x507S14a20492x492",
       "signwriting_image": "images/signwriting/latin/S14a20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S14a20492x492",
@@ -180,6 +186,7 @@
       "example_ipa": "fɪʃ",
       "signwriting": "M513x507S1ce20491x477",
       "signwriting_image": "images/signwriting/latin/S1ce20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M513x507S1ce20491x477",
@@ -207,6 +214,7 @@
       "example_ipa": "dʒɪˈrɑːf",
       "signwriting": "M507x507S1f000478x492",
       "signwriting_image": "images/signwriting/latin/S1f000.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S1f000478x492",
@@ -233,6 +241,7 @@
       "example_ipa": "haʊs",
       "signwriting": "M507x507S11502477x492",
       "signwriting_image": "images/signwriting/latin/S11502.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S11502477x492",
@@ -260,6 +269,7 @@
       "example_ipa": "ˈaɪs kriːm",
       "signwriting": "M513x507S19220492x488",
       "signwriting_image": "images/signwriting/latin/S19220.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M513x507S19220492x488",
@@ -286,6 +296,7 @@
       "example_ipa": "dʒʌɡ",
       "signwriting": "M513x507S19220492x488S2a20c476x472",
       "signwriting_image": "images/signwriting/latin/S19220.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M513x507S19220492x488S2a20c476x472",
@@ -312,6 +323,7 @@
       "example_ipa": "kaɪt",
       "signwriting": "M507x507S14220478x477",
       "signwriting_image": "images/signwriting/latin/S14220.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S14220478x477",
@@ -338,6 +350,7 @@
       "example_ipa": "ˈlaɪən",
       "signwriting": "M508x507S1dc50484x477",
       "signwriting_image": "images/signwriting/latin/S1dc50.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M508x507S1dc20484x477",
@@ -364,6 +377,7 @@
       "example_ipa": "muːn",
       "signwriting": "M507x507S18d20487x482",
       "signwriting_image": "images/signwriting/latin/S18d20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S18d20487x482",
@@ -391,6 +405,7 @@
       "example_ipa": "nɛst",
       "signwriting": "M507x507S11920486x481",
       "signwriting_image": "images/signwriting/latin/S11920.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S11920486x481",
@@ -418,6 +433,7 @@
       "example_ipa": "ˈɒrɪndʒ",
       "signwriting": "M508x507S17620492x491",
       "signwriting_image": "images/signwriting/latin/S17620.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M508x507S17620492x491",
@@ -444,6 +460,7 @@
       "example_ipa": "ˈpɛnsəl",
       "signwriting": "M510x509S14251479x485",
       "signwriting_image": "images/signwriting/latin/S14251.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M510x509S14251479x485",
@@ -470,6 +487,7 @@
       "example_ipa": "kwiːn",
       "signwriting": "M511x509S1f051481x486",
       "signwriting_image": "images/signwriting/latin/S1f051.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M511x509S1f051481x486",
@@ -496,6 +514,7 @@
       "example_ipa": "ˈreɪnbəʊ",
       "signwriting": "M507x507S11a20492x477",
       "signwriting_image": "images/signwriting/latin/S11a20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S11a20492x477",
@@ -523,6 +542,7 @@
       "example_ipa": "sʌn",
       "signwriting": "M507x507S20320492x492",
       "signwriting_image": "images/signwriting/latin/S20320.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S20320492x492",
@@ -549,6 +569,7 @@
       "example_ipa": "triː",
       "signwriting": "M508x507S1fb20493x488",
       "signwriting_image": "images/signwriting/latin/S1fb20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M508x507S1fb20493x488",
@@ -577,6 +598,7 @@
       "example_ipa": "ʌmˈbrɛlə",
       "signwriting": "M507x507S11520492x477",
       "signwriting_image": "images/signwriting/latin/S11520.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M507x507S11520492x477",
@@ -603,6 +625,7 @@
       "example_ipa": "ˌvaɪəˈlɪn",
       "signwriting": "M508x507S10f20493x477",
       "signwriting_image": "images/signwriting/latin/S10f20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M508x507S10f20493x477",
@@ -629,6 +652,7 @@
       "example_ipa": "weɪl",
       "signwriting": "M509x507S18720491x478",
       "signwriting_image": "images/signwriting/latin/S18720.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M509x507S18720491x478",
@@ -656,6 +680,7 @@
       "example_ipa": "ˈzaɪləfəʊn",
       "signwriting": "M508x507S10620487x481",
       "signwriting_image": "images/signwriting/latin/S10620.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M508x507S10620487x481",
@@ -684,6 +709,7 @@
       "example_ipa": "jɒt",
       "signwriting": "M514x507S19a20486x487",
       "signwriting_image": "images/signwriting/latin/S19a20.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M514x507S19a20486x487",
@@ -710,6 +736,7 @@
       "example_ipa": "ˈzɛbrə",
       "signwriting": "M528x507S10020492x477S2450a497x473",
       "signwriting_image": "images/signwriting/latin/S10020.png",
+      "aliases": [],
       "notes": "",
       "signwriting_variants": {
         "ASL": "M528x507S10020492x477S2450a497x473",

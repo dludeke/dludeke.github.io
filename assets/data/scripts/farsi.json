@@ -12,6 +12,7 @@
   "note": "Perso-Arabic: the 28 Arabic letters plus four Persian additions. Shown by پ (pe), one of those four, since ا is shared with Arabic.",
   "status": "skeleton",
   "attribution": null,
+  "layout": null,
   "letters": [
     {
       "glyph": "ا",
@@ -30,6 +31,7 @@
       "example_ipa": "ɒːb",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -48,6 +50,7 @@
       "example_ipa": "bɒːˈdɒːm",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -66,6 +69,7 @@
       "example_ipa": "parandeˈje",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -84,6 +88,7 @@
       "example_ipa": "tuːp",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -102,6 +107,7 @@
       "example_ipa": "sɒːniˈje",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -120,6 +126,7 @@
       "example_ipa": "dʒuːˈdʒe",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -138,6 +145,7 @@
       "example_ipa": "tʃætɾ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -156,6 +164,7 @@
       "example_ipa": "hælæˈzuːn",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -174,6 +183,7 @@
       "example_ipa": "xeɾs",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -192,6 +202,7 @@
       "example_ipa": "deˈɾæxt",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -210,6 +221,7 @@
       "example_ipa": "zoˈɾæt",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -228,6 +240,7 @@
       "example_ipa": "ɾuːˈbɒːh",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -246,6 +259,7 @@
       "example_ipa": "zænˈbuːɾ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -264,6 +278,7 @@
       "example_ipa": "ʒɒːˈle",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -282,6 +297,7 @@
       "example_ipa": "siːb",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -300,6 +316,7 @@
       "example_ipa": "ʃiːɾ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -318,6 +335,7 @@
       "example_ipa": "sæˈdæf",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -336,6 +354,7 @@
       "example_ipa": "ˈzæbte sowt",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -354,6 +373,7 @@
       "example_ipa": "tæˈnɒːb",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -372,6 +392,7 @@
       "example_ipa": "zæɾf",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -390,6 +411,7 @@
       "example_ipa": "æˈsæl",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -409,6 +431,7 @@
       "example_ipa": "ɣɒːz",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -427,6 +450,7 @@
       "example_ipa": "fiːl",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -446,6 +470,7 @@
       "example_ipa": "ɢɒːˈʃoɢ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -464,6 +489,7 @@
       "example_ipa": "keˈtɒːb",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -482,6 +508,7 @@
       "example_ipa": "ɡol",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -500,6 +527,7 @@
       "example_ipa": "liːˈmuː",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -518,6 +546,7 @@
       "example_ipa": "mɒːˈhiː",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -536,6 +565,7 @@
       "example_ipa": "nɒːn",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -556,6 +586,7 @@
       "example_ipa": "vɒːn",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -575,6 +606,7 @@
       "example_ipa": "hæˈviːdʒ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -594,6 +626,7 @@
       "example_ipa": "jæx",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     }
   ]

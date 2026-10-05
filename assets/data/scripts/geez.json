@@ -14,6 +14,7 @@
   "note": "Abugida: 26 base consonants, each inflected through seven vowel orders. Only the first order is listed here.",
   "status": "skeleton",
   "attribution": null,
+  "layout": null,
   "letters": [
     {
       "glyph": "ሀ",
@@ -31,6 +32,7 @@
       "example_ipa": "hаɡər",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -49,6 +51,7 @@
       "example_ipa": "lewz",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -67,6 +70,7 @@
       "example_ipa": "hajk",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -85,6 +89,7 @@
       "example_ipa": "mekina",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -103,6 +108,7 @@
       "example_ipa": "sərɡ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -121,6 +127,7 @@
       "example_ipa": "rehab",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -139,6 +146,7 @@
       "example_ipa": "səw",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -157,6 +165,7 @@
       "example_ipa": "ʃema",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -175,6 +184,7 @@
       "example_ipa": "kʼen",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -193,6 +203,7 @@
       "example_ipa": "ber",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -211,6 +222,7 @@
       "example_ipa": "terara",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -229,6 +241,7 @@
       "example_ipa": "tʃokolet",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -247,6 +260,7 @@
       "example_ipa": "hajl",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -265,6 +279,7 @@
       "example_ipa": "nebr",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -283,6 +298,7 @@
       "example_ipa": "ɲä",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -301,6 +317,7 @@
       "example_ipa": "anbesa",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -319,6 +336,7 @@
       "example_ipa": "ketema",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -337,6 +355,7 @@
       "example_ipa": "xä",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -355,6 +374,7 @@
       "example_ipa": "wetet",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -373,6 +393,7 @@
       "example_ipa": "ajn",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -391,6 +412,7 @@
       "example_ipa": "zejt",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -409,6 +431,7 @@
       "example_ipa": "ʒä",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -427,6 +450,7 @@
       "example_ipa": "jebeɡ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -445,6 +469,7 @@
       "example_ipa": "debter",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -463,6 +488,7 @@
       "example_ipa": "dʒelba",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -481,6 +507,7 @@
       "example_ipa": "ɡebeja",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -499,6 +526,7 @@
       "example_ipa": "tʼerepʼeza",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -517,6 +545,7 @@
       "example_ipa": "tʃʼereka",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -535,6 +564,7 @@
       "example_ipa": "pʼä",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -553,6 +583,7 @@
       "example_ipa": "tsʼehaj",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -571,6 +602,7 @@
       "example_ipa": "tsʼeɡur",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -589,6 +621,7 @@
       "example_ipa": "feres",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -607,6 +640,7 @@
       "example_ipa": "permuz",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     }
   ]

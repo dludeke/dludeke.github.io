@@ -12,6 +12,7 @@
   "note": "Romanisation rather than a script. The CSL fingerspelling scheme of 1963 has 30 handshapes: the 26 Latin letters plus the digraphs ZH, CH, SH and NG.",
   "status": "skeleton",
   "attribution": null,
+  "layout": null,
   "letters": [
     {
       "glyph": "A",
@@ -29,6 +30,7 @@
       "example_ipa": "aɪ̯˥˩",
       "signwriting": "M510x508S1f740490x493",
       "signwriting_image": "images/signwriting/pinyin/S1f740.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -47,6 +49,7 @@
       "example_ipa": "paʊ̯˥",
       "signwriting": "M507x511S14720493x489",
       "signwriting_image": "images/signwriting/pinyin/S14720.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -65,6 +68,7 @@
       "example_ipa": "tsʰaʊ̯˨˩˦",
       "signwriting": "M509x510S16d10492x490",
       "signwriting_image": "images/signwriting/pinyin/S16d10.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -83,6 +87,7 @@
       "example_ipa": "tɤŋ˥",
       "signwriting": "M508x508S20320493x493",
       "signwriting_image": "images/signwriting/pinyin/S20320.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -102,6 +107,7 @@
       "example_ipa": "ɤ˧˥",
       "signwriting": "M515x511S1ce02485x489",
       "signwriting_image": "images/signwriting/pinyin/S1ce02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -120,6 +126,7 @@
       "example_ipa": "feɪ̯˥ tɕi˥",
       "signwriting": "M515x508S11502485x493",
       "signwriting_image": "images/signwriting/pinyin/S11502.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -138,6 +145,7 @@
       "example_ipa": "koʊ̯˨˩˦",
       "signwriting": "M515x508S10002485x493",
       "signwriting_image": "images/signwriting/pinyin/S10002.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -156,6 +164,7 @@
       "example_ipa": "xwa˥",
       "signwriting": "M508x515S11520493x485",
       "signwriting_image": "images/signwriting/pinyin/S11520.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -175,6 +184,7 @@
       "example_ipa": "i˥",
       "signwriting": "M508x515S10020493x485",
       "signwriting_image": "images/signwriting/pinyin/S10020.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -193,6 +203,7 @@
       "example_ipa": "tɕi˥",
       "signwriting": "M508x513S10610493x487",
       "signwriting_image": "images/signwriting/pinyin/S10610.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -211,6 +222,7 @@
       "example_ipa": "kʰa˥ feɪ̯˥",
       "signwriting": "M515x515S14010486x485",
       "signwriting_image": "images/signwriting/pinyin/S14010.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -229,6 +241,7 @@
       "example_ipa": "lʊŋ˧˥",
       "signwriting": "M512x515S1dc20488x485",
       "signwriting_image": "images/signwriting/pinyin/S1dc20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -247,6 +260,7 @@
       "example_ipa": "maʊ̯˥",
       "signwriting": "M508x510S1fd20493x491",
       "signwriting_image": "images/signwriting/pinyin/S1fd20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -266,6 +280,7 @@
       "example_ipa": "njoʊ̯˧˥",
       "signwriting": "M508x510S1fc20493x491",
       "signwriting_image": "images/signwriting/pinyin/S1fc20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -285,6 +300,7 @@
       "example_ipa": "oʊ̯˨˩˦",
       "signwriting": "M508x508S17610492x492",
       "signwriting_image": "images/signwriting/pinyin/S17610.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -303,6 +319,7 @@
       "example_ipa": "pʰiŋ˧˥ kwo˨˩˦",
       "signwriting": "M508x515S1da1c492x486",
       "signwriting_image": "images/signwriting/pinyin/S1da1c.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -321,6 +338,7 @@
       "example_ipa": "tɕʰjoʊ̯˧˥",
       "signwriting": "M515x508S1f410486x493",
       "signwriting_image": "images/signwriting/pinyin/S1f410.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -340,6 +358,7 @@
       "example_ipa": "ʐən˧˥",
       "signwriting": "M515x512S1dc02485x488",
       "signwriting_image": "images/signwriting/pinyin/S1dc02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -358,6 +377,7 @@
       "example_ipa": "san˨˩˦",
       "signwriting": "M512x508S18210489x493",
       "signwriting_image": "images/signwriting/pinyin/S18210.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -376,6 +396,7 @@
       "example_ipa": "tʰu˥˩ t͡sɨ",
       "signwriting": "M511x515S1a120490x486",
       "signwriting_image": "images/signwriting/pinyin/S1a120.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -394,6 +415,7 @@
       "example_ipa": "u˥",
       "signwriting": "M510x514S15d20491x487",
       "signwriting_image": "images/signwriting/pinyin/S15d20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -412,6 +434,7 @@
       "example_ipa": "ly˥˩",
       "signwriting": "M508x515S10e20493x485",
       "signwriting_image": "images/signwriting/pinyin/S10e20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -430,6 +453,7 @@
       "example_ipa": "wan˨˩˦",
       "signwriting": "M509x515S18620491x485",
       "signwriting_image": "images/signwriting/pinyin/S18620.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -448,6 +472,7 @@
       "example_ipa": "ɕjʊŋ˧˥ maʊ̯˥",
       "signwriting": "M508x515S11a20493x485",
       "signwriting_image": "images/signwriting/pinyin/S11a20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -466,6 +491,7 @@
       "example_ipa": "y˧˥",
       "signwriting": "M514x510S19a20486x490",
       "signwriting_image": "images/signwriting/pinyin/S19a20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -484,6 +510,7 @@
       "example_ipa": "t͡sɨ˥˩",
       "signwriting": "M515x510S1a002486x490",
       "signwriting_image": "images/signwriting/pinyin/S1a002.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -502,6 +529,7 @@
       "example_ipa": "ʈʂu˥",
       "signwriting": "M515x510S1a402485x490",
       "signwriting_image": "images/signwriting/pinyin/S1a402.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -520,6 +548,7 @@
       "example_ipa": "ʈʂʰɤ˥",
       "signwriting": "M512x508S17e10489x493",
       "signwriting_image": "images/signwriting/pinyin/S17e10.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -538,6 +567,7 @@
       "example_ipa": "ʂu˥",
       "signwriting": "M512x513S13210488x488",
       "signwriting_image": "images/signwriting/pinyin/S13210.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -556,6 +586,7 @@
       "example_ipa": "jaŋ˧˥",
       "signwriting": "M510x511S19202491x490",
       "signwriting_image": "images/signwriting/pinyin/S19202.png",
+      "aliases": [],
       "notes": ""
     }
   ]

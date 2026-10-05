@@ -61,6 +61,28 @@
       gap: 1rem;
     }
 
+    .letter-blank { visibility: hidden; }
+
+    .col-heads {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 0.3rem;
+      padding: 0 0.3rem;
+    }
+
+    .col-heads span {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9aa3ab;
+    }
+
+    @media (max-width: 900px) {
+      .letter-grid.fixed { grid-template-columns: repeat(2, 1fr) !important; }
+      .col-heads { display: none; }
+      .letter-blank { display: none; }
+    }
+
     .letter-card {
       background: #fff;
       border-radius: 8px;
@@ -297,6 +319,7 @@
             <ul class="subnav">
               <li><a href="practice.html">Practice Area</a></li>
               <li><a href="signs.html">Country Signs</a></li>
+              <li><a href="study.html">Study</a></li>
               <li><a href="reference.html" aria-current="page">Reference</a></li>
             </ul>
           </li>
@@ -387,7 +410,7 @@
         ['signwriting', d.letters.filter(L => swImageOf(L)).length]
       ];
 
-      const cards = d.letters.map(L => {
+      const cardFor = L => {
         const word = boldedWord(L.example_word, L.glyph, L.alt);
         return `
           <div class="letter-card">
@@ -425,7 +448,16 @@
             </div>
             ${L.example_gloss ? row('Means', L.example_gloss) : ''}
           </div>`;
-      }).join('');
+      };
+
+      const byGlyph = Object.fromEntries(d.letters.map(L => [L.glyph, L]));
+      // A script with a layout keeps its table shape: blanks stay blank so
+      // every column means the same thing all the way down.
+      const cards = d.layout
+        ? d.layout.rows.map(row => row.map(g =>
+            g && byGlyph[g] ? cardFor(byGlyph[g]) : '<div class="letter-blank"></div>'
+          ).join('')).join('')
+        : d.letters.map(cardFor).join('');
 
       const html = `
         <div class="script-head">
@@ -449,7 +481,11 @@
               <span class="fill-bar"><span style="width:${Math.round(got / n * 100)}%"></span></span>
             </span>`).join('')}
         </p>
-        <div class="letter-grid">${cards}</div>
+        ${d.layout ? `<div class="col-heads" style="grid-template-columns: repeat(${d.layout.cols}, 1fr)">
+             ${(d.layout.col_labels || []).map(c => `<span>${c}</span>`).join('')}
+           </div>` : ''}
+        <div class="letter-grid${d.layout ? ' fixed' : ''}"
+             ${d.layout ? `style="grid-template-columns: repeat(${d.layout.cols}, 1fr)"` : ''}>${cards}</div>
         ${(d.attribution || []).length ? `
         <div class="credits">
           ${d.attribution.map(a => `<p><strong>${a.what}</strong> &mdash;

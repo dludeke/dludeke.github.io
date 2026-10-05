@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Study</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap" />
+  <style>
+    .bar {
+      display: flex; gap: 0.6rem; align-items: center;
+      flex-wrap: wrap; margin-bottom: 1.5rem;
+    }
+    .bar select, .bar button {
+      font: inherit; font-size: 0.9rem; padding: 0.35rem 0.7rem;
+      border-radius: 4px; border: 1px solid #cfd6dd; background: #fff; cursor: pointer;
+    }
+    .bar .spacer { margin-left: auto; font-size: 0.85rem; color: #777; }
+
+    .stage {
+      background: #fff; border-radius: 10px;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.09);
+      padding: 2.5rem 2rem; text-align: center; min-height: 340px;
+    }
+
+    .word {
+      font-size: 3.2rem; line-height: 1.15; margin-bottom: 0.4rem;
+      word-break: break-word;
+    }
+    .gloss { color: #8a939b; font-size: 1rem; margin-bottom: 0.5rem; }
+    .word-ipa {
+      font-family: "Charis SIL", "Doulos SIL", serif;
+      color: #5b6b7a; font-size: 1.1rem; min-height: 1.4rem;
+    }
+
+    .letters {
+      display: flex; justify-content: center; align-items: flex-start;
+      gap: 0.6rem; flex-wrap: wrap; margin-top: 1.8rem;
+    }
+
+    .lt {
+      min-width: 76px; padding: 0.6rem 0.4rem; border-radius: 8px;
+      background: #f8f9fa;
+    }
+    .lt.unknown { background: #fff; border: 1px dashed #e3e8ec; }
+    .lt .ch { font-size: 2rem; line-height: 1.1; }
+    .lt .nm { font-size: 0.68rem; color: #9aa3ab; margin-top: 0.1rem; }
+    .lt .ip {
+      font-family: "Charis SIL", "Doulos SIL", serif;
+      font-size: 0.9rem; color: #46525e; margin-top: 0.35rem; min-height: 1.1rem;
+    }
+    .lt .pics {
+      display: flex; gap: 0.25rem; justify-content: center;
+      align-items: center; margin-top: 0.45rem; min-height: 54px;
+    }
+    .lt .pics img { max-height: 52px; max-width: 46px; }
+    .lt .pics .sw { max-height: 34px; }
+
+    .hint {
+      margin-top: 1.5rem; font-size: 0.85rem; color: #98a1a9;
+    }
+    kbd {
+      background: #eef1f4; border: 1px solid #dde2e7; border-radius: 3px;
+      padding: 0 0.35rem; font-size: 0.8rem;
+    }
+
+    .steps { display: flex; gap: 0.3rem; justify-content: center; margin-top: 1rem; }
+    .steps i {
+      width: 26px; height: 3px; border-radius: 2px; background: #e3e8ec;
+      display: block;
+    }
+    .steps i.on { background: #007bff; }
+
+    .empty { color: #98a1a9; padding: 3rem 1rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Study</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art.html">Art Portfolio</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="has-sub">
+            <a href="lugha.html">Lugha</a>
+            <ul class="subnav">
+              <li><a href="practice.html">Practice Area</a></li>
+              <li><a href="signs.html">Country Signs</a></li>
+              <li><a href="study.html">Study</a></li>
+              <li><a href="reference.html">Reference</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="bar">
+        <label>Script <select id="scriptSel"></select></label>
+        <button id="nextBtn">Next word</button>
+        <button id="shuffleBtn">Reshuffle</button>
+        <span class="spacer" id="progress"></span>
+      </div>
+
+      <div class="stage" id="stage"><p class="empty">Loading&hellip;</p></div>
+
+      <p class="hint">
+        <kbd>space</kbd> reveal the next layer &middot;
+        <kbd>&rarr;</kbd> next word &middot;
+        <kbd>&larr;</kbd> previous &middot;
+        <kbd>r</kbd> start this word again
+      </p>
+    </main>
+
+    <footer><p>&copy; 2026 David Ludeke</p></footer>
+  </div>
+
+  <script>
+    const SCRIPTS = ['greek','latin','hebrew','arabic','farsi','cyrillic',
+                     'devanagari','kana','hangul','thai','geez','pinyin'];
+    // 0 word · 1 letters · 2 letter IPA · 3 handshapes and SignWriting
+    const LAST_STEP = 3;
+
+    let slug = 'greek', data = null, deck = [], at = 0, step = 0;
+    const el = id => document.getElementById(id);
+
+    /** Accent-insensitive key, so Greek έ finds ε and Arabic أ finds ا. */
+    const bare = s => s.normalize('NFD')
+      .replace(/[̀-ͯٓ-ٰٕ]/g, '');
+
+    // Hangul is written in syllable blocks, so 자 has to be taken apart into
+    // its jamo before any of them can be looked up. NFD yields conjoining
+    // jamo, a different set of codepoints from the standalone ones the
+    // alphabet is listed in, hence the two tables.
+    const CHO = [...'\u1100\u1101\u1102\u1103\u1104\u1105\u1106\u1107\u1108\u1109\u110a\u110b\u110c\u110d\u110e\u110f\u1110\u1111\u1112'];
+    const CHO_C = [...'\u3131\u3132\u3134\u3137\u3138\u3139\u3141\u3142\u3143\u3145\u3146\u3147\u3148\u3149\u314a\u314b\u314c\u314d\u314e'];
+    const JUNG = [...'\u1161\u1162\u1163\u1164\u1165\u1166\u1167\u1168\u1169\u116a\u116b\u116c\u116d\u116e\u116f\u1170\u1171\u1172\u1173\u1174\u1175'];
+    const JUNG_C = [...'\u314f\u3150\u3151\u3152\u3153\u3154\u3155\u3156\u3157\u3158\u3159\u315a\u315b\u315c\u315d\u315e\u315f\u3160\u3161\u3162\u3163'];
+    const JONG = [...'\u11a8\u11a9\u11ab\u11ae\u11af\u11b7\u11b8\u11ba\u11bb\u11bc\u11bd\u11be\u11bf\u11c0\u11c1\u11c2'];
+    const JONG_C = [...'\u3131\u3132\u3134\u3137\u3139\u3141\u3142\u3145\u3146\u3147\u3148\u314a\u314b\u314c\u314d\u314e'];
+
+    function jamoOf(ch) {
+      // Only Hangul syllable blocks. Any accented letter decomposes under NFD
+      // too, and splitting Greek έ into epsilon plus an accent would turn one
+      // letter into two tiles.
+      const cp = ch.codePointAt(0);
+      if (cp < 0xac00 || cp > 0xd7a3) return null;
+      const parts = ch.normalize('NFD');
+      if (parts === ch) return null;
+      const out = [];
+      for (const c of parts) {
+        let i = CHO.indexOf(c);
+        if (i >= 0) { out.push(CHO_C[i]); continue; }
+        i = JUNG.indexOf(c);
+        if (i >= 0) { out.push(JUNG_C[i]); continue; }
+        i = JONG.indexOf(c);
+        if (i >= 0) { out.push(JONG_C[i]); continue; }
+        out.push(c);
+      }
+      return out.length ? out : null;
+    }
+
+    // A Ge'ez syllable is a consonant in one of seven vowel orders, laid out
+    // in blocks of eight. The alphabet lists first order, so round down.
+    function geezBase(ch) {
+      const cp = ch.codePointAt(0);
+      if (cp < 0x1200 || cp > 0x137f) return null;
+      return String.fromCodePoint(0x1200 + Math.floor((cp - 0x1200) / 8) * 8);
+    }
+
+    // Devanagari vowel signs are the dependent form of an independent vowel.
+    const MATRA = { '\u093e': '\u0906', '\u093f': '\u0907', '\u0940': '\u0908',
+                    '\u0941': '\u0909', '\u0942': '\u090a', '\u0943': '\u090b',
+                    '\u0947': '\u090f', '\u0948': '\u0910', '\u094b': '\u0913',
+                    '\u094c': '\u0914' };
+
+    function shuffle(a) {
+      a = a.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    async function loadScript() {
+      data = await (await fetch(`assets/data/scripts/${slug}.json`, { cache: 'no-cache' })).json();
+      // index letters by glyph, by its pair, and by accent-stripped forms
+      data.index = {};
+      data.letters.forEach(L => {
+        [L.glyph, L.alt, ...(L.aliases || [])].filter(Boolean).forEach(k => {
+          data.index[k] = data.index[k] || L;
+          data.index[bare(k)] = data.index[bare(k)] || L;
+          data.index[k.toLowerCase()] = data.index[k.toLowerCase()] || L;
+          data.index[bare(k).toLowerCase()] = data.index[bare(k).toLowerCase()] || L;
+        });
+      });
+      deck = shuffle(data.letters.filter(L => L.example_word));
+      at = 0; step = 0;
+      render();
+    }
+
+    function lookup(ch) {
+      const tries = [ch, bare(ch), ch.toLowerCase(), bare(ch).toLowerCase(),
+                     MATRA[ch], geezBase(ch)];
+      for (const t of tries) if (t && data.index[t]) return data.index[t];
+      return null;
+    }
+
+    function render() {
+      const host = el('stage');
+      if (!deck.length) { host.innerHTML = '<p class="empty">No example words here yet.</p>'; return; }
+      const L = deck[at];
+      // Pinyin entries read "爱 (ài)": the spellable form is the romanisation.
+      const raw = L.example_word || '';
+      const rom = slug === 'pinyin' ? (raw.match(/\(([^)]+)\)/) || [])[1] : null;
+      const word = raw;
+      const chars = [...(rom || raw)].filter(c => !/\s/.test(c))
+        .flatMap(c => jamoOf(c) || [c]);
+
+      const letters = chars.map(ch => {
+        const m = lookup(ch);
+        const sw = m && m.signwriting_image;
+        const hand = m && (m.handshape || (m.handshape_variants && Object.values(m.handshape_variants)[0]));
+        return `
+          <div class="lt${m ? '' : ' unknown'}">
+            <div class="ch">${ch}</div>
+            <div class="nm">${m ? (m.name || '') : ''}</div>
+            <div class="ip">${step >= 2 && m && (m.ipa || []).length ? '/' + m.ipa.join(', ') + '/' : ''}</div>
+            <div class="pics">
+              ${step >= 3 && hand ? `<img src="${hand}" alt="handshape" />` : ''}
+              ${step >= 3 && sw ? `<img class="sw" src="${sw}" alt="SignWriting" />` : ''}
+            </div>
+          </div>`;
+      }).join('');
+
+      host.innerHTML = `
+        <div class="word">${word}</div>
+        ${rom && step >= 1 ? `<div class="gloss">${rom}</div>` : ''}
+        <div class="gloss">${step >= 1 ? (L.example_gloss || '') : '&nbsp;'}</div>
+        <div class="word-ipa">${step >= 1 && L.example_ipa ? '/' + L.example_ipa + '/' : '&nbsp;'}</div>
+        ${step >= 1 ? `<div class="letters">${letters}</div>` : ''}
+        <div class="steps">${[0,1,2,3].map(i => `<i class="${i <= step ? 'on' : ''}"></i>`).join('')}</div>`;
+
+      el('progress').textContent =
+        `${at + 1} of ${deck.length} · ${data.name}`;
+    }
+
+    function advance() { if (step < LAST_STEP) { step++; render(); } }
+    function nextWord(d = 1) {
+      at = (at + d + deck.length) % deck.length;
+      step = 0; render();
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.target.tagName === 'SELECT') return;
+      if (e.code === 'Space') { e.preventDefault(); advance(); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); nextWord(1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); nextWord(-1); }
+      else if (e.key === 'r' || e.key === 'R') { step = 0; render(); }
+    });
+    el('stage').addEventListener('click', advance);
+    el('nextBtn').addEventListener('click', () => nextWord(1));
+    el('shuffleBtn').addEventListener('click', () => { deck = shuffle(deck); at = 0; step = 0; render(); });
+
+    SCRIPTS.forEach(s => {
+      const o = document.createElement('option');
+      o.value = s; o.textContent = s;
+      el('scriptSel').appendChild(o);
+    });
+    el('scriptSel').value = slug;
+    el('scriptSel').addEventListener('change', () => { slug = el('scriptSel').value; loadScript(); });
+
+    loadScript();
+  </script>
+</body>
+</html>

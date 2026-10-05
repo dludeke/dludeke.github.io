@@ -12,6 +12,95 @@
   "note": "Syllabary: 46 basic hiragana, each with a katakana counterpart.",
   "status": "skeleton",
   "attribution": null,
+  "layout": {
+    "cols": 5,
+    "col_labels": [
+      "a",
+      "i",
+      "u",
+      "e",
+      "o"
+    ],
+    "rows": [
+      [
+        "あ",
+        "い",
+        "う",
+        "え",
+        "お"
+      ],
+      [
+        "か",
+        "き",
+        "く",
+        "け",
+        "こ"
+      ],
+      [
+        "さ",
+        "し",
+        "す",
+        "せ",
+        "そ"
+      ],
+      [
+        "た",
+        "ち",
+        "つ",
+        "て",
+        "と"
+      ],
+      [
+        "な",
+        "に",
+        "ぬ",
+        "ね",
+        "の"
+      ],
+      [
+        "は",
+        "ひ",
+        "ふ",
+        "へ",
+        "ほ"
+      ],
+      [
+        "ま",
+        "み",
+        "む",
+        "め",
+        "も"
+      ],
+      [
+        "や",
+        null,
+        "ゆ",
+        null,
+        "よ"
+      ],
+      [
+        "ら",
+        "り",
+        "る",
+        "れ",
+        "ろ"
+      ],
+      [
+        "わ",
+        null,
+        null,
+        null,
+        "を"
+      ],
+      [
+        "ん",
+        null,
+        null,
+        null,
+        null
+      ]
+    ]
+  },
   "letters": [
     {
       "glyph": "あ",
@@ -29,6 +118,7 @@
       "example_ipa": "aɾi",
       "signwriting": "M510x508S1f750490x493",
       "signwriting_image": "images/signwriting/kana/S1f750.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -47,6 +137,7 @@
       "example_ipa": "inɯ",
       "signwriting": "M511x510S19220490x491",
       "signwriting_image": "images/signwriting/kana/S19220.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -65,6 +156,7 @@
       "example_ipa": "ɯma",
       "signwriting": "M508x515S11520493x485",
       "signwriting_image": "images/signwriting/kana/S11520.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -83,6 +175,7 @@
       "example_ipa": "empitsɯ",
       "signwriting": "M507x509S16620492x491",
       "signwriting_image": "images/signwriting/kana/S16620.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -101,6 +194,7 @@
       "example_ipa": "oni",
       "signwriting": "M508x508S17610492x492",
       "signwriting_image": "images/signwriting/kana/S17610.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -119,6 +213,7 @@
       "example_ipa": "kasa",
       "signwriting": "M515x515S14020486x485",
       "signwriting_image": "images/signwriting/kana/S14020.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -137,6 +232,7 @@
       "example_ipa": "kitsɯne",
       "signwriting": "M514x515S1a320487x486",
       "signwriting_image": "images/signwriting/kana/S1a320.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -155,6 +251,7 @@
       "example_ipa": "kɯma",
       "signwriting": "M513x509S15d02486x490",
       "signwriting_image": "images/signwriting/kana/S15d02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -173,6 +270,7 @@
       "example_ipa": "kemɯʃi",
       "signwriting": "M507x511S14720493x489",
       "signwriting_image": "images/signwriting/kana/S14720.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -191,6 +289,7 @@
       "example_ipa": "koma",
       "signwriting": "M515x508S18010485x493",
       "signwriting_image": "images/signwriting/kana/S18010.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -209,6 +308,7 @@
       "example_ipa": "sakana",
       "signwriting": "M508x508S20320493x493",
       "signwriting_image": "images/signwriting/kana/S20320.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -227,6 +327,7 @@
       "example_ipa": "ʃika",
       "signwriting": "M515x512S11e02485x489",
       "signwriting_image": "images/signwriting/kana/S11e02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -245,6 +346,7 @@
       "example_ipa": "sɯika",
       "signwriting": "M512x515S11e04489x485",
       "signwriting_image": "images/signwriting/kana/S11e04.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -263,6 +365,7 @@
       "example_ipa": "semi",
       "signwriting": "M508x515S1c620493x485",
       "signwriting_image": "images/signwriting/kana/S1c620.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -281,6 +384,7 @@
       "example_ipa": "soɾa",
       "signwriting": "M508x515S10040493x485",
       "signwriting_image": "images/signwriting/kana/S10040.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -299,6 +403,7 @@
       "example_ipa": "tako",
       "signwriting": "M510x508S1f740490x493",
       "signwriting_image": "images/signwriting/kana/S1f740.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -317,6 +422,7 @@
       "example_ipa": "tɕizɯ",
       "signwriting": "M514x511S19620486x490",
       "signwriting_image": "images/signwriting/kana/S19620.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -335,6 +441,7 @@
       "example_ipa": "tsɯki",
       "signwriting": "M514x513S1b320486x487",
       "signwriting_image": "images/signwriting/kana/S1b320.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -353,6 +460,7 @@
       "example_ipa": "te",
       "signwriting": "M512x516S14c20489x485",
       "signwriting_image": "images/signwriting/kana/S14c20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -371,6 +479,7 @@
       "example_ipa": "toɾi",
       "signwriting": "M508x515S11500493x485",
       "signwriting_image": "images/signwriting/kana/S11500.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -389,6 +498,7 @@
       "example_ipa": "nasɯ",
       "signwriting": "M508x515S10e04493x485",
       "signwriting_image": "images/signwriting/kana/S10e04.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -407,6 +517,7 @@
       "example_ipa": "niwatoɾi",
       "signwriting": "M515x508S10e02485x493",
       "signwriting_image": "images/signwriting/kana/S10e02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -425,6 +536,7 @@
       "example_ipa": "nɯiɡɯɾɯmi",
       "signwriting": "M508x513S10610493x487",
       "signwriting_image": "images/signwriting/kana/S10610.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -443,6 +555,7 @@
       "example_ipa": "neko",
       "signwriting": "M512x516S14c04489x485",
       "signwriting_image": "images/signwriting/kana/S14c04.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -461,6 +574,7 @@
       "example_ipa": "noɾi",
       "signwriting": "M521x519S10020506x489S2a20c480x481",
       "signwriting_image": "images/signwriting/kana/S10020.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -480,6 +594,7 @@
       "example_ipa": "hana",
       "signwriting": "M508x515S11540493x485",
       "signwriting_image": "images/signwriting/kana/S11540.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -498,6 +613,7 @@
       "example_ipa": "çikoːki",
       "signwriting": "M508x515S10020493x485",
       "signwriting_image": "images/signwriting/kana/S10020.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -516,6 +632,7 @@
       "example_ipa": "ɸɯne",
       "signwriting": "M512x515S1dc04488x485",
       "signwriting_image": "images/signwriting/kana/S1dc04.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -535,6 +652,7 @@
       "example_ipa": "hebi",
       "signwriting": "M514x510S19a04486x490",
       "signwriting_image": "images/signwriting/kana/S19a04.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -553,6 +671,7 @@
       "example_ipa": "hoʃi",
       "signwriting": "M506x515S18100494x486",
       "signwriting_image": "images/signwriting/kana/S18100.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -571,6 +690,7 @@
       "example_ipa": "mado",
       "signwriting": "M510x513S18d50490x488",
       "signwriting_image": "images/signwriting/kana/S18d50.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -589,6 +709,7 @@
       "example_ipa": "mizɯ",
       "signwriting": "M515x508S18c02485x493",
       "signwriting_image": "images/signwriting/kana/S18c02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -607,6 +728,7 @@
       "example_ipa": "mɯʃi",
       "signwriting": "M515x512S1dc02485x488",
       "signwriting_image": "images/signwriting/kana/S1dc02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -625,6 +747,7 @@
       "example_ipa": "me",
       "signwriting": "M511x515S1ce10489x485",
       "signwriting_image": "images/signwriting/kana/S1ce10.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -643,6 +766,7 @@
       "example_ipa": "momo",
       "signwriting": "M508x524S1f436493x495S22a04492x487S21b00494x477",
       "signwriting_image": "images/signwriting/kana/S1f436.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -661,6 +785,7 @@
       "example_ipa": "jama",
       "signwriting": "M514x510S19a20486x490",
       "signwriting_image": "images/signwriting/kana/S19a20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -679,6 +804,7 @@
       "example_ipa": "jɯki",
       "signwriting": "M508x515S18c00493x485",
       "signwriting_image": "images/signwriting/kana/S18c00.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -697,6 +823,7 @@
       "example_ipa": "joɾɯ",
       "signwriting": "M516x511S14402485x489",
       "signwriting_image": "images/signwriting/kana/S14402.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -715,6 +842,7 @@
       "example_ipa": "ɾakɯda",
       "signwriting": "M508x515S11a20493x485",
       "signwriting_image": "images/signwriting/kana/S11a20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -733,6 +861,7 @@
       "example_ipa": "ɾiŋɡo",
       "signwriting": "M521x519S10e20506x489S2a20c480x481",
       "signwriting_image": "images/signwriting/kana/S10e20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -751,6 +880,7 @@
       "example_ipa": "ɾɯsɯban",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -769,6 +899,7 @@
       "example_ipa": "ɾeːzoːko",
       "signwriting": "M512x515S1dc20488x485",
       "signwriting_image": "images/signwriting/kana/S1dc20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -787,6 +918,7 @@
       "example_ipa": "ɾoːsokɯ",
       "signwriting": "M508x514S11010493x487",
       "signwriting_image": "images/signwriting/kana/S11010.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -805,6 +937,7 @@
       "example_ipa": "wani",
       "signwriting": "M509x515S18620491x485",
       "signwriting_image": "images/signwriting/kana/S18620.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -823,6 +956,7 @@
       "example_ipa": "o",
       "signwriting": "M508x517S17610492x501S26504493x483",
       "signwriting_image": "images/signwriting/kana/S17610.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -844,6 +978,7 @@
       "example_ipa": "mikaɴ",
       "signwriting": "M521x519S10040480x489S2a204498x481",
       "signwriting_image": "images/signwriting/kana/S10040.png",
+      "aliases": [],
       "notes": ""
     }
   ]

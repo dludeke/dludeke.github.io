@@ -187,6 +187,40 @@ CONTENT = {
 
 # Source credits for charts that require them. The BSL chart is share-alike,
 # so the per-letter crops derived from it carry the same licence.
+# Scripts whose letters have a real two-dimensional shape are laid out as a
+# grid rather than reflowed. Kana is the gojuon table: five vowel columns, one
+# consonant row each, with gaps where a syllable does not exist (yi, ye, wi,
+# we). A null is a gap and renders as empty space, keeping the columns aligned
+# so each column stays one vowel.
+# Contextual forms that are the same letter: Greek writes a different sigma at
+# the end of a word, and Hebrew has five final forms. The alt field already
+# carries the Hebrew ones, so only the extras go here.
+ALIASES = {
+    "greek": {"Σ": ["ς"]},
+}
+
+
+LAYOUTS = {
+    "kana": {
+        "cols": 5,
+        "col_labels": ["a", "i", "u", "e", "o"],
+        "rows": [
+            ["あ", "い", "う", "え", "お"],
+            ["か", "き", "く", "け", "こ"],
+            ["さ", "し", "す", "せ", "そ"],
+            ["た", "ち", "つ", "て", "と"],
+            ["な", "に", "ぬ", "ね", "の"],
+            ["は", "ひ", "ふ", "へ", "ほ"],
+            ["ま", "み", "む", "め", "も"],
+            ["や", None, "ゆ", None, "よ"],
+            ["ら", "り", "る", "れ", "ろ"],
+            ["わ", None, None, None, "を"],
+            ["ん", None, None, None, None],
+        ],
+    },
+}
+
+
 ATTRIBUTION = {
     "latin": [
         {"what": "BSL handshapes",
@@ -272,6 +306,7 @@ def main():
                 "signwriting": None,
                 # Sliced SignWriting glyph, where a chart provides one.
                 "signwriting_image": None,
+                "aliases": ALIASES.get(slug, {}).get(glyph, []),
                 "notes": "",
             }
             ipa_vals = IPA_TABLE.get(slug, {}).get(glyph)
@@ -323,6 +358,7 @@ def main():
             "note": note,
             "status": "skeleton",
             "attribution": ATTRIBUTION.get(slug),
+            "layout": LAYOUTS.get(slug),
             "letters": letters,
         }
         with open(path, "w", encoding="utf-8") as fh:

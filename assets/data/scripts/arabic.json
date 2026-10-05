@@ -12,6 +12,7 @@
   "note": "Abjad: 28 letters, written right to left, each with initial, medial, final and isolated forms.",
   "status": "skeleton",
   "attribution": null,
+  "layout": null,
   "letters": [
     {
       "glyph": "ا",
@@ -30,6 +31,7 @@
       "example_ipa": "ˈʔarnab",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -48,6 +50,7 @@
       "example_ipa": "ˈbatˤtˤa",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -66,6 +69,7 @@
       "example_ipa": "tufˈfaːħa",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -84,6 +88,7 @@
       "example_ipa": "ˈθaʕlab",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -104,6 +109,7 @@
       "example_ipa": "ˈdʒamal",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -122,6 +128,7 @@
       "example_ipa": "ħiˈsˤaːn",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -140,6 +147,7 @@
       "example_ipa": "xubz",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -158,6 +166,7 @@
       "example_ipa": "daˈdʒaːdʒa",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -176,6 +185,7 @@
       "example_ipa": "ðiʔb",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -194,6 +204,7 @@
       "example_ipa": "rumˈmaːn",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -212,6 +223,7 @@
       "example_ipa": "zaˈraːfa",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -230,6 +242,7 @@
       "example_ipa": "ˈsamaka",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -248,6 +261,7 @@
       "example_ipa": "ʃams",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -266,6 +280,7 @@
       "example_ipa": "sˤaqr",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -284,6 +299,7 @@
       "example_ipa": "ˈdˤifdaʕ",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -302,6 +318,7 @@
       "example_ipa": "tˤaːʔiˈra",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -320,6 +337,7 @@
       "example_ipa": "ðˤarf",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -338,6 +356,7 @@
       "example_ipa": "ˈʕinab",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -356,6 +375,7 @@
       "example_ipa": "ɣaˈzaːl",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -374,6 +394,7 @@
       "example_ipa": "fiːl",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -392,6 +413,7 @@
       "example_ipa": "ˈqamar",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -410,6 +432,7 @@
       "example_ipa": "kiˈtaːb",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -428,6 +451,7 @@
       "example_ipa": "ˈlaban",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -446,6 +470,7 @@
       "example_ipa": "mawz",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -464,6 +489,7 @@
       "example_ipa": "ˈnamir",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -482,6 +508,7 @@
       "example_ipa": "ˈhudhud",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -501,6 +528,7 @@
       "example_ipa": "ˈwarda",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     },
     {
@@ -520,6 +548,7 @@
       "example_ipa": "jad",
       "signwriting": null,
       "signwriting_image": null,
+      "aliases": [],
       "notes": ""
     }
   ]

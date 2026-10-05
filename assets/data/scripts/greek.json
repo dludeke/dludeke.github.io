@@ -12,6 +12,7 @@
   "note": "Alphabet: 24 letters, each with an upper and lower case.",
   "status": "skeleton",
   "attribution": null,
+  "layout": null,
   "letters": [
     {
       "glyph": "Α",
@@ -29,6 +30,7 @@
       "example_ipa": "aˈsteri",
       "signwriting": "M510x507S1f720490x492",
       "signwriting_image": "images/signwriting/greek/S1f720.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -47,6 +49,7 @@
       "example_ipa": "viˈvlio",
       "signwriting": "M507x511S14720493x489",
       "signwriting_image": "images/signwriting/greek/S14720.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -66,6 +69,7 @@
       "example_ipa": "ˈɣata",
       "signwriting": "M512x515S1dc04488x485",
       "signwriting_image": "images/signwriting/greek/S1dc04.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -84,6 +88,7 @@
       "example_ipa": "ˈðendro",
       "signwriting": "M511x515S10120489x485",
       "signwriting_image": "images/signwriting/greek/S10120.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -102,6 +107,7 @@
       "example_ipa": "eˈlefandas",
       "signwriting": "M508x507S14a20493x492",
       "signwriting_image": "images/signwriting/greek/S14a20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -120,6 +126,7 @@
       "example_ipa": "ˈzevra",
       "signwriting": "M529x517S1a002513x487S24602470x483",
       "signwriting_image": "images/signwriting/greek/S1a002.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -138,6 +145,7 @@
       "example_ipa": "ˈilios",
       "signwriting": "M510x514S1a020490x485",
       "signwriting_image": "images/signwriting/greek/S1a020.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -156,6 +164,7 @@
       "example_ipa": "ˈθeatro",
       "signwriting": "M509x525S11502492x476S20700491x510",
       "signwriting_image": "images/signwriting/greek/S11502.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -174,6 +183,7 @@
       "example_ipa": "ipoˈpotamos",
       "signwriting": "M510x509S19220489x490",
       "signwriting_image": "images/signwriting/greek/S19220.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -193,6 +203,7 @@
       "example_ipa": "karˈðʝa",
       "signwriting": "M511x515S14220488x485",
       "signwriting_image": "images/signwriting/greek/S14220.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -212,6 +223,7 @@
       "example_ipa": "luˈluði",
       "signwriting": "M508x515S10e04493x485",
       "signwriting_image": "images/signwriting/greek/S10e04.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -230,6 +242,7 @@
       "example_ipa": "ˈmilo",
       "signwriting": "M507x511S18d20493x489",
       "signwriting_image": "images/signwriting/greek/S18d20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -249,6 +262,7 @@
       "example_ipa": "neˈro",
       "signwriting": "M508x515S11920493x485",
       "signwriting_image": "images/signwriting/greek/S11920.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -267,6 +281,7 @@
       "example_ipa": "ˈksilo",
       "signwriting": "M515x507S18c02485x492",
       "signwriting_image": "images/signwriting/greek/S18c02.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -285,6 +300,7 @@
       "example_ipa": "uraˈnos",
       "signwriting": "M510x507S17610490x492",
       "signwriting_image": "images/signwriting/greek/S17610.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -303,6 +319,7 @@
       "example_ipa": "puˈli",
       "signwriting": "M510x514S1a004490x485",
       "signwriting_image": "images/signwriting/greek/S1a004.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -321,6 +338,7 @@
       "example_ipa": "roˈloi",
       "signwriting": "M508x515S11a20492x485",
       "signwriting_image": "images/signwriting/greek/S11a20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -340,6 +358,9 @@
       "example_ipa": "ˈspiti",
       "signwriting": "M517x523S20320502x493S2920c483x477",
       "signwriting_image": "images/signwriting/greek/S20320.png",
+      "aliases": [
+        "ς"
+      ],
       "notes": ""
     },
     {
@@ -358,6 +379,7 @@
       "example_ipa": "ˈtreno",
       "signwriting": "M515x507S1005c485x492",
       "signwriting_image": "images/signwriting/greek/S1005c.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -376,6 +398,7 @@
       "example_ipa": "ipoloʝiˈstis",
       "signwriting": "M514x510S19a20486x490",
       "signwriting_image": "images/signwriting/greek/S19a20.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -394,6 +417,7 @@
       "example_ipa": "feˈɡari",
       "signwriting": "M508x514S1d820491x485",
       "signwriting_image": "images/signwriting/greek/S1d820.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -413,6 +437,7 @@
       "example_ipa": "ˈçeri",
       "signwriting": "M515x507S11020485x492",
       "signwriting_image": "images/signwriting/greek/S11020.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -431,6 +456,7 @@
       "example_ipa": "ˈpsari",
       "signwriting": "M511x513S18720488x487",
       "signwriting_image": "images/signwriting/greek/S18720.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -449,6 +475,7 @@
       "example_ipa": "okeaˈnos",
       "signwriting": "M507x510S1851e492x490",
       "signwriting_image": "images/signwriting/greek/S1851e.png",
+      "aliases": [],
       "notes": ""
     }
   ]

@@ -15,6 +15,7 @@
   "note": "Alphabet: 33 letters in the Russian inventory; other languages add or drop a few.",
   "status": "skeleton",
   "attribution": null,
+  "layout": null,
   "letters": [
     {
       "glyph": "А",
@@ -33,6 +34,7 @@
       "example_ipa": "ɐrˈbus",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0410.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -52,6 +54,7 @@
       "example_ipa": "bərɐˈban",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0411.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -71,6 +74,7 @@
       "example_ipa": "volk",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0412.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -90,6 +94,7 @@
       "example_ipa": "ˈɡruʂə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0413.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -109,6 +114,7 @@
       "example_ipa": "ˈdʲerʲɪvə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0414.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -128,6 +134,7 @@
       "example_ipa": "jelʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0415.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -147,6 +154,7 @@
       "example_ipa": "joʂ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0401.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -165,6 +173,7 @@
       "example_ipa": "ʐɨˈraf",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0416.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -184,6 +193,7 @@
       "example_ipa": "zont",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0417.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -202,6 +212,7 @@
       "example_ipa": "ɪˈɡolkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0418.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -220,6 +231,7 @@
       "example_ipa": "ˈjoɡurt",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0419.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -239,6 +251,7 @@
       "example_ipa": "kərɐnˈdaʂ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041a.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -258,6 +271,7 @@
       "example_ipa": "ˈloʂətʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041b.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -277,6 +291,7 @@
       "example_ipa": "mɨʂ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041c.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -296,6 +311,7 @@
       "example_ipa": "ˈnoʐnʲɪtsɨ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041d.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -315,6 +331,7 @@
       "example_ipa": "ɐbʲɪˈzʲjanə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041e.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -334,6 +351,7 @@
       "example_ipa": "pəmʲɪˈdor",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/041f.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -353,6 +371,7 @@
       "example_ipa": "ˈrɨbə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0420.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -372,6 +391,7 @@
       "example_ipa": "slon",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0421.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -391,6 +411,7 @@
       "example_ipa": "tʲɪlʲɪˈfon",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0422.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -409,6 +430,7 @@
       "example_ipa": "ʊˈlʲitkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0423.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -428,6 +450,7 @@
       "example_ipa": "fɐˈnarʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0424.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -446,6 +469,7 @@
       "example_ipa": "xlʲep",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0425.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -464,6 +488,7 @@
       "example_ipa": "tsvʲɪˈtok",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0426.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -482,6 +507,7 @@
       "example_ipa": "ˈtɕajnʲɪk",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0427.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -500,6 +526,7 @@
       "example_ipa": "ʂarf",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0428.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -518,6 +545,7 @@
       "example_ipa": "ˈɕːɵtkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/0429.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -536,6 +564,7 @@
       "example_ipa": "pɐdˈjest",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042a.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -554,6 +583,7 @@
       "example_ipa": "sɨr",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042b.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -572,6 +602,7 @@
       "example_ipa": "solʲ",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042c.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -590,6 +621,7 @@
       "example_ipa": "ɛkskɐˈvatər",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042d.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -609,6 +641,7 @@
       "example_ipa": "jʊˈla",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042e.png",
+      "aliases": [],
       "notes": ""
     },
     {
@@ -628,6 +661,7 @@
       "example_ipa": "ˈjablələkə",
       "signwriting": null,
       "signwriting_image": "images/handshapes/cyrillic/042f.png",
+      "aliases": [],
       "notes": ""
     }
   ]
