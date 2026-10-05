@@ -63,48 +63,50 @@ CHARTS = {
     # the letters in reading order.
     "geez": {
         "file": "EthSL.PNG",
+        "clean": "ink",
+        "trim_px": (5, 5, 9, 22), "tighten": "ink",
         "crop": (88, 79, 616, 697),
         "rows": 6, "cols": 6,
         "rtl": False,
         # the final row of three is centred, not left-aligned
         "cells": list(GEEZ33)[:30] + [None] + list(GEEZ33)[30:] + [None, None],
         "isolate": "trim",
-        "trim": (0.05, 0.05, 0.05, 0.22),   # label sits inside, bottom right
         "field": "handshape",
     },
     "hangul": {
         "file": "KSL_2.JPG",
+        "trim_px": (4, 13, 4, 36), 
         "crop": (6, 6, 566, 536),
         "rows": 5, "cols": 7,
         "rtl": False,
         # 31 numbered cells; 25-31 are extra vowels this reference does not list
         "cells": list(HANGUL24) + [None] * 11,
         "isolate": "trim",
-        "trim": (0.04, 0.04, 0.04, 0.30),   # white label strip along the bottom
         "field": "handshape",
     },
     "hebrew": {
         "file": "ISL.JPG",
+        "trim_px": (4, 4, 40, 4), 
         "crop": (8, 95, 552, 788),
         "rows": 7, "cols": 4,
         "rtl": True,
         "cells": HEB_CELLS,
         "isolate": "trim",
-        "trim": (0.04, 0.04, 0.26, 0.04),   # label to the left of each hand (RTL)
         "field": "handshape",
     },
     "kana": {
         "file": "JSL_2.JPG",
+        "trim_px": (1, 1, 1, 15), "tighten": "ink",
         "crop": (0, 0, 454, 340),
         "rows": 5, "cols": 10,
         "rtl": False,
         "cells": KANA_CELLS,
         "isolate": "trim",
-        "trim": (0.02, 0.02, 0.02, 0.30),   # kana label under each hand
         "field": "handshape",
     },
     "farsi": {
         "file": "ZEI_3.PNG",
+        "trim_px": (4, 4, 4, 26), 
         "crop": (6, 6, 500, 566),
         "rows": 7, "cols": 5,
         "rtl": True,
@@ -120,11 +122,12 @@ CHARTS = {
             "م", "ن", "و", "ه", "ی",
         ],
         "isolate": "trim",
-        "trim": (0.03, 0.03, 0.03, 0.30),   # label strip under each hand
         "field": "handshape",
     },
     "thai": {
         "file": "ThSL.PNG",
+        "clean": "ink",
+        "trim_px": (4, 4, 4, 26), "tighten": "ink",
         "crop": None,
         "rows": 6, "cols": 7,
         # measured borders; the columns are not equal widths
@@ -144,7 +147,6 @@ CHARTS = {
             "จ", "ฑ", "ธ", "ฌ", "ช", "ฉ", "อ",
         ],
         "isolate": "trim",
-        "trim": (0.03, 0.03, 0.03, 0.22),   # phonetic-code label under each cell
         "field": "handshape",
     },
     "arabic": {
@@ -161,13 +163,16 @@ CHARTS = {
         "field": "handshape",
     },
     "pinyin": {
-        "file": "CSL_1.JPG",
-        "crop": (72, 229, 1597, 2405),   # grid bounds from border detection
-        "isolate": "trim",               # label sits inside the box, bottom-left
-        "trim": (0.06, 0.03, 0.04, 0.20),  # l, t, r, b as fractions
+        # CSL_2 is a quarter the resolution of CSL_1 but printed clean; CSL_1 is
+        # a photo of a book page whose reverse side shows through behind every
+        # hand, which no amount of levels work removes.
+        "file": "CSL_2.jpg",
+        "clean": "ink",
+        "crop": (3, 3, 327, 426),
         "rows": 6, "cols": 5,
         "rtl": False,
         "cells": CSL30,
+        "trim_px": (6, 4, 7, 22), "tighten": "ink",
         "field": "handshape",
     },
     "cyrillic": {
@@ -260,11 +265,57 @@ def slice_nsl(verbose=True):
                 rel = f"images/handshapes/devanagari/{name}.png"
                 # trim the caption printed under each little sign picture
                 w, h = raw.size
-                raw.crop((2, 2, w - 2, round(h * 0.88))).save(os.path.join(HERE, rel))
+                raw.crop((3, 2, w - 9, round(h * 0.86))).save(os.path.join(HERE, rel))
                 mapping[letter] = rel
     if verbose:
         print(f"  devanagari: {len(mapping)} cells from NSL tables")
     return mapping
+
+
+def tighten(cell, cfg):
+    """Trim the printed label, then shrink to the drawing itself.
+
+    The label band is a constant pixel height on these charts while the cells
+    are not all the same size, so a fractional trim under-cuts the tall rows
+    and over-cuts the short ones. trim_px is given in pixels for that reason.
+    The content box is then found against whichever background the chart uses.
+    """
+    import numpy as np
+    l, t, r, b = cfg.get("trim_px", (0, 0, 0, 0))
+    w, h = cell.size
+    cell = cell.crop((l, t, max(l + 1, w - r), max(t + 1, h - b)))
+
+    if cfg.get("clean") == "ink":
+        # These are photocopies: text printed on the reverse of the page shows
+        # through as pale grey. Pull anything lighter than the paper up to
+        # white, which removes the bleed without touching the drawn lines.
+        import numpy as np
+        g = np.asarray(cell.convert("L"), dtype=np.float32)
+        lo, hi = float(np.percentile(g, 2)), float(np.percentile(g, 72))
+        if hi > lo + 8:
+            g = np.clip((g - lo) * (255.0 / (hi - lo)), 0, 255)
+            cell = Image.fromarray(g.astype("uint8"), "L").convert("RGB")
+
+    if not cfg.get("tighten"):
+        return cell
+
+    a = np.asarray(cell.convert("L"), dtype=np.int16)
+    mode = cfg["tighten"]
+    if mode == "ink":                  # dark drawing on pale paper
+        mask = a < (int(np.median(a)) - 28)
+    elif mode == "light_on_dark":       # pale hand on a dark panel
+        mask = a > (int(np.median(a)) + 28)
+    else:
+        return cell
+
+    rows = np.where(mask.sum(axis=1) > max(1, mask.shape[1] * 0.012))[0]
+    cols = np.where(mask.sum(axis=0) > max(1, mask.shape[0] * 0.012))[0]
+    if not len(rows) or not len(cols):
+        return cell
+    pad = cfg.get("pad", 4)
+    H, W = a.shape
+    return cell.crop((max(0, int(cols[0]) - pad), max(0, int(rows[0]) - pad),
+                      min(W, int(cols[-1]) + 1 + pad), min(H, int(rows[-1]) + 1 + pad)))
 
 
 def apply_override(cell, cfg, letter):
@@ -317,7 +368,8 @@ def slice_chart(slug, cfg, verbose=True):
             raw.save(os.path.join(raw_dir, f"{name}.png"))
 
             rel = f"images/handshapes/{slug}/{name}.png"
-            apply_override(isolate(raw, cfg), cfg, letter).save(os.path.join(HERE, rel))
+            cell = apply_override(isolate(raw, cfg), cfg, letter)
+            tighten(cell, cfg).save(os.path.join(HERE, rel))
             mapping[letter] = rel
 
     if verbose:
