@@ -571,6 +571,13 @@
            </div>`
         : '';
       const head = (name, n) => `<h3 class="section-head">${name} <span>${n}</span></h3>`;
+      // a section whose cells form a table of their own, like the five
+      // orders of the Ge'ez labiovelars
+      const secGrid = name => {
+        const c = (d.section_cols || {})[name];
+        return c ? `<div class="letter-grid fixed" style="grid-template-columns: repeat(${c}, minmax(0, 1fr))">`
+                 : '<div class="letter-grid">';
+      };
       // everything the sections do not claim belongs to the first one
       const inSection = sec => d.letters.filter(L =>
         (L.section || (d.sections || [])[0]) === sec);
@@ -587,7 +594,7 @@
                 rest.map(sec => {
                   const m = inSection(sec);
                   return m.length ? head(sec, m.length) +
-                    `<div class="letter-grid">${m.map(cardFor).join('')}</div>` : '';
+                    secGrid(sec) + m.map(cardFor).join('') + '</div>' : '';
                 }).join('');
       } else if ((d.sections || []).length > 1) {
         // Thai keeps its vowel signs and tone marks apart from the 44
@@ -595,7 +602,7 @@
         // alphabet is conventionally counted without them.
         cards = d.sections.map(sec => {
           const m = inSection(sec);
-          return m.length ? head(sec, m.length) + gridOpen + m.map(cardFor).join('') + '</div>' : '';
+          return m.length ? head(sec, m.length) + secGrid(sec) + m.map(cardFor).join('') + '</div>' : '';
         }).join('');
       } else {
         cards = gridOpen + d.letters.map(cardFor).join('') + '</div>';

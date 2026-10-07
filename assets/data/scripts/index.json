@@ -52,7 +52,7 @@
         "Tigrinya",
         "Ge'ez"
       ],
-      "letter_count": 231
+      "letter_count": 268
     },
     {
       "slug": "arabic",
@@ -123,7 +123,7 @@
       "languages": [
         "Thai"
       ],
-      "letter_count": 65
+      "letter_count": 67
     },
     {
       "slug": "hangul",

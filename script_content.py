@@ -374,7 +374,7 @@ IPA["cyrillic"] = {
  "М": ["m", "mʲ"], "Н": ["n", "nʲ"], "О": ["o", "ɐ"], "П": ["p", "pʲ"],
  "Р": ["r", "rʲ"], "С": ["s", "sʲ"], "Т": ["t", "tʲ"], "У": ["u"],
  "Ф": ["f", "fʲ"], "Х": ["x"], "Ц": ["t͡s"], "Ч": ["t͡ɕ"], "Ш": ["ʂ"],
- "Щ": ["ɕː"], "Ъ": ["—"], "Ы": ["ɯ"], "Ь": ["ʲ"], "Э": ["e"],
+ "Щ": ["ɕː"], "Ъ": ["—"], "Ы": ["ɨ"], "Ь": ["ʲ"], "Э": ["e"],
  "Ю": ["ju", "ʲu"], "Я": ["ja", "ʲa"],
 }
 
@@ -495,12 +495,12 @@ WORD_IPA["farsi"] = {
 
 WORD_IPA["cyrillic"] = {
  "А": "ɐrˈbus", "Б": "bərɐˈban", "В": "volk", "Г": "ˈɡruʂə", "Д": "ˈdʲerʲɪvə",
- "Е": "jelʲ", "Ё": "joʂ", "Ж": "ʐɯˈraf", "З": "zont", "И": "ɪˈɡolkə",
- "Й": "ˈjoɡurt", "К": "kərɐnˈdaʂ", "Л": "ˈloʂətʲ", "М": "mɯʂ",
- "Н": "ˈnoʐnʲɪtsɯ", "О": "ɐbʲɪˈzʲjanə", "П": "pəmʲɪˈdor", "Р": "ˈrɯbə",
+ "Е": "jelʲ", "Ё": "joʂ", "Ж": "ʐɨˈraf", "З": "zont", "И": "ɪˈɡolkə",
+ "Й": "ˈjoɡurt", "К": "kərɐnˈdaʂ", "Л": "ˈloʂətʲ", "М": "mɨʂ",
+ "Н": "ˈnoʐnʲɪtsɨ", "О": "ɐbʲɪˈzʲjanə", "П": "pəmʲɪˈdor", "Р": "ˈrɨbə",
  "С": "slon", "Т": "tʲɪlʲɪˈfon", "У": "ʊˈlʲitkə", "Ф": "fɐˈnarʲ", "Х": "xlʲep",
  "Ц": "tsvʲɪˈtok", "Ч": "ˈtɕajnʲɪk", "Ш": "ʂarf", "Щ": "ˈɕːɵtkə",
- "Ъ": "pɐdˈjest", "Ы": "sɯr", "Ь": "solʲ", "Э": "ɛkskɐˈvatər", "Ю": "jʊˈla",
+ "Ъ": "pɐdˈjest", "Ы": "sɨr", "Ь": "solʲ", "Э": "ɛkskɐˈvatər", "Ю": "jʊˈla",
  "Я": "ˈjablələkə",
 }
 
@@ -564,8 +564,8 @@ WORD_IPA["pinyin"] = {
  "F": "feɪ̯˥ tɕi˥", "G": "koʊ̯˨˩˦", "H": "xwa˥", "I": "i˥", "J": "tɕi˥",
  "K": "kʰa˥ feɪ̯˥", "L": "lʊŋ˧˥", "M": "maʊ̯˥", "N": "njoʊ̯˧˥", "O": "oʊ̯˨˩˦",
  "P": "pʰiŋ˧˥ kwo˨˩˦", "Q": "tɕʰjoʊ̯˧˥", "R": "ʐən˧˥", "S": "san˨˩˦",
- "T": "tʰu˥˩ t͡sɯ", "U": "u˥", "V": "ly˥˩", "W": "wan˨˩˦",
- "X": "ɕjʊŋ˧˥ maʊ̯˥", "Y": "y˧˥", "Z": "t͡sɯ˥˩", "ZH": "ʈʂu˥",
+ "T": "tʰu˥˩ t͡sɨ", "U": "u˥", "V": "ly˥˩", "W": "wan˨˩˦",
+ "X": "ɕjʊŋ˧˥ maʊ̯˥", "Y": "y˧˥", "Z": "t͡sɨ˥˩", "ZH": "ʈʂu˥",
  "CH": "ʈʂʰɤ˥", "SH": "ʂu˥", "NG": "jaŋ˧˥",
 }
 
@@ -833,7 +833,7 @@ IPA_LINKS = {
  "ʌ": W+"Open-mid_back_unrounded_vowel", "ɒ": W+"Open_back_rounded_vowel",
  "ɑ": W+"Open_back_unrounded_vowel", "ɪ": W+"Near-close_front_unrounded_vowel",
  "ʊ": W+"Near-close_back_rounded_vowel", "ɤ": W+"Close-mid_back_unrounded_vowel",
- "ɯ": W+"Close_back_unrounded_vowel", "ɯ": W+"Close_central_unrounded_vowel",
+ "ɯ": W+"Close_back_unrounded_vowel", "ɨ": W+"Close_central_unrounded_vowel",
  "ɐ": W+"Near-open_central_vowel", "ä": W+"Open_central_unrounded_vowel",
  "—": None,
 }
@@ -851,7 +851,7 @@ GEEZ_ORDERS = [
     ("i", "i"),             # 3rd
     ("a", "a"),             # 4th
     ("e", "e"),             # 5th
-    ("ə", "ɯ"),   # 6th  often silent
+    ("ə", "ɨ"),   # 6th  often silent
     ("o", "o"),             # 7th
 ]
 
@@ -860,7 +860,7 @@ GEEZ_CONSONANTS = [
     ("ሀ", "h", "h"),   ("ለ", "l", "l"),   ("ሐ", "ḥ", "h"),
     ("መ", "m", "m"),   ("ሠ", "ś", "s"), ("ረ", "r", "r"),
     ("ሰ", "s", "s"),   ("ሸ", "š", "ʃ"), ("ቀ", "q", "kʼ"),
-    ("በ", "b", "b"),   ("ተ", "t", "t"),   ("ቸ", "č", "t͡ʃ"),
+    ("በ", "b", "b"),   ("ቨ", "v", "v"),   ("ተ", "t", "t"),   ("ቸ", "č", "t͡ʃ"),
     ("ኀ", "ḫ", "h"), ("ነ", "n", "n"), ("ኘ", "ñ", "ɲ"),
     ("አ", "ʾ", "ʔ"), ("ከ", "k", "k"), ("ኸ", "ḵ", "x"),
     ("ወ", "w", "w"),   ("ዐ", "ʿ", "ʔ"), ("ዘ", "z", "z"),
@@ -1202,3 +1202,82 @@ def display_for(slug, glyph):
     return "\u25cc" + glyph
 
 IPA_LINKS.update({"ˀ": W + "Glottalization"})
+
+
+# --- Ge'ez labiovelars -------------------------------------------------
+# A velar said with rounded lips. They take only five of the seven orders,
+# since a rounded u or o would be no different from plain u or o, and they
+# sit outside the 231-cell syllabary for that reason. Derived from the
+# Unicode names rather than typed out, so the codepoints cannot drift.
+# name prefix -> (consonant romanisation, consonant IPA, note)
+GEEZ_LABIOVELAR_SERIES = [
+    ("Q",  "q",  "kʼ", None),
+    ("QH", "qh", "q",   "Tigrinya; Amharic does not use this series."),
+    ("X",  "ḫ", "h",   None),
+    ("K",  "k",  "k",       None),
+    ("KX", "ḵ", "x",   None),
+    ("G",  "g",  "ɡ",  None),
+]
+# suffix -> (vowel romanisation, vowel IPA, order)
+GEEZ_LABIOVELAR_ORDERS = [("A", "ä", "ə", 0), ("I", "i", "i", 2),
+                          ("AA", "a", "a", 3), ("EE", "e", "e", 4),
+                          ("E", "ə", "ɨ", 5)]
+
+GEEZ_LABIOVELAR_WORDS = {
+ "ቋ": ("\u124b\u1295\u124b", "language", "\U0001f5e3️"),      # ቋንቋ
+ "ኳ": ("ኳስ", "ball", "⚽"),                          # ኳስ
+ "ጓ": ("ጓሮ", "backyard", "\U0001f3e1"),                  # ጓሮ
+ "ኋ": ("ኋላ", "later", "⏳"),                         # ኋላ
+ "ቍ": ("\u124d\u1325\u122d", "number", "\U0001f522"),              # ቍጥር
+}
+GEEZ_LABIOVELAR_WORD_IPA = {
+ "ቋ": "kʼʷan.kʼʷa", "ኳ": "kʷas",
+ "ጓ": "ɡʷa.ro", "ኋ": "hʷa.la", "ቍ": "kʼʷɨ.tʼɨr",
+}
+GEEZ_LABIOVELAR_NOTES = {
+ "ቍ": "A historical spelling; modern Amharic writes ቁጥር.",
+ "ቈ": "A velar said with rounded lips. These take five of the seven "
+           "orders, since a rounded u or o would be no different from plain "
+           "u or o, which is why they sit outside the 231-cell syllabary. "
+           "Modern Amharic writes most of them with the plain letter "
+           "instead, so few cells have a common word.",
+}
+
+
+def geez_labiovelars():
+    """(glyph, alt, romanisation, [ipa], word, word_ipa, note) per syllable."""
+    import unicodedata
+    out = []
+    for prefix, c_rom, c_ipa, series_note in GEEZ_LABIOVELAR_SERIES:
+        for suffix, v_rom, v_ipa, _order in GEEZ_LABIOVELAR_ORDERS:
+            name = "ETHIOPIC SYLLABLE %sW%s" % (prefix, suffix)
+            try:
+                g = unicodedata.lookup(name)
+            except KeyError:
+                continue
+            note = GEEZ_LABIOVELAR_NOTES.get(g)
+            if suffix == "A" and series_note:
+                note = series_note
+            out.append((g, "", c_rom + "ʷ" + v_rom,
+                        [c_ipa + "ʷ" + v_ipa],
+                        GEEZ_LABIOVELAR_WORDS.get(g),
+                        GEEZ_LABIOVELAR_WORD_IPA.get(g), note))
+    return out
+
+# The v series carries only loanwords, like the merged rows above it.
+GEEZ_RARE_ROWS["ቨ"] = ("Only in words taken from other languages, which is "
+                            "why most of the row has no everyday example.")
+GEEZ_EXTRA_WORDS.update({
+ "ቪ": ("ቪዛ", "visa", "\U0001f6c2"),          # ቪዛ
+ "ቫ": ("ቫይረስ", "virus", "\U0001f9a0"),  # ቫይረስ
+ "ቮ": ("ቮልት", "volt", "⚡"),        # ቮልት
+})
+
+# Two Thai vowel letters inherited from Sanskrit. ฤ appears in ordinary
+# words; ๅ only ever follows it.
+THAI_VOWELS += [
+ ("ฤ", "ru", ["rɯ"], ("ฤดู", "season", "\U0001f342"), "rɯ́.duː",
+  "A vowel written as a letter, taken from Sanskrit. Read ru, ri or roe depending on the word."),
+ ("ๅ", "lakkhangyao", [], ("ฤๅษี", "hermit", "\U0001f9d8"), "ruː.siː",
+  "Lengthens ฤ or ฦ and never appears anywhere else."),
+]

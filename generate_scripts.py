@@ -18,12 +18,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             LINKS, GLOSSARY, IPA_LINKS,
                             GEEZ_ORDERS, GEEZ_CONSONANTS, GEEZ_EXTRA_WORDS,
-                            GEEZ_RARE_ROWS, THAI_VOWELS, THAI_TONES,
+                            GEEZ_RARE_ROWS, GEEZ_LABIOVELAR_ORDERS,
+                            THAI_VOWELS, THAI_TONES,
                             THAI_MODIFIERS, display_for,
                             DEVANAGARI_MATRAS, DEVANAGARI_MARKS,
                             KANA_SMALL, KANA_MARKS,
                             ARABIC_FORMS, ARABIC_HARAKAT,
-                            HANGUL_DOUBLE, HANGUL_COMPOUND)
+                            HANGUL_DOUBLE, HANGUL_COMPOUND,
+                            geez_labiovelars)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -76,6 +78,7 @@ EXTRA = {
                ("Vowel marks", ARABIC_HARAKAT)],
     "hangul": [("Double consonants", HANGUL_DOUBLE),
                ("Compound vowels", HANGUL_COMPOUND)],
+    "geez": [("Labiovelars", geez_labiovelars())],
 }
 # Thai's rows carry no alt column; normalise them to the six-field shape.
 EXTRA["thai"] = [(n, [(g, "", nm, i, w, wi, no) for g, nm, i, w, wi, no in rows])
@@ -83,7 +86,10 @@ EXTRA["thai"] = [(n, [(g, "", nm, i, w, wi, no) for g, nm, i, w, wi, no in rows]
 
 # what the letters already in the list are collectively called
 BASE_SECTION = {"thai": "Consonants", "devanagari": "Letters", "kana": "Goj\u016bon",
-                "arabic": "Letters", "hangul": "Basic jamo"}
+                "arabic": "Letters", "hangul": "Basic jamo",
+                "geez": "Syllabary"}
+# a section whose cells form a table of their own
+SECTION_COLS = {"geez": {"Labiovelars": len(GEEZ_LABIOVELAR_ORDERS)}}
 
 SECTIONS, SECTION_OF, SECTION_ORDER = {}, {}, {}
 for _slug, _groups in EXTRA.items():
@@ -411,6 +417,11 @@ def main():
                     cons_ipa, oi = found
                     entry["ipa"] = [cons_ipa + GEEZ_ORDERS[oi][1]]
                     entry["romanization"] = label
+                elif glyph in SECTION_OF.get("geez", {}):
+                    # a labiovelar: it is outside the 231-cell block, so the
+                    # lookup above cannot reach it and its own table supplies
+                    # both the reading and the romanisation
+                    entry["romanization"] = label
                 w = GEEZ_EXTRA_WORDS.get(glyph) or WORDS.get(slug, {}).get(glyph)
                 if w:
                     word, gloss, emoji = w
@@ -418,7 +429,9 @@ def main():
                                   "example_emoji": emoji})
             # geez derives its own IPA per syllable; the old per-consonant
             # table wrote the transliteration ä where the vowel is really /ə/.
-            ipa_vals = None if slug == "geez" else IPA_TABLE.get(slug, {}).get(glyph)
+            # The labiovelars are not derived that way, so they do read the table.
+            ipa_vals = (None if slug == "geez" and glyph not in SECTION_OF.get("geez", {})
+                        else IPA_TABLE.get(slug, {}).get(glyph))
             if ipa_vals:
                 entry["ipa"] = list(ipa_vals)
             # named letter_note, not note: the script's own note comes from
@@ -488,6 +501,7 @@ def main():
             "attribution": ATTRIBUTION.get(slug),
             "layout": LAYOUTS.get(slug),
             "sections": SECTION_ORDER.get(slug),
+            "section_cols": SECTION_COLS.get(slug),
             "links": [{"label": l, "url": u} for l, u in LINKS.get(slug, [])],
             "glossary": GLOSSARY,
             "ipa_links": {k: v for k, v in IPA_LINKS.items() if v},
