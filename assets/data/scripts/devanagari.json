@@ -18,7 +18,8 @@
   "sections": [
     "Letters",
     "Vowel signs (matras)",
-    "Marks"
+    "Marks",
+    "Loanword vowels"
   ],
   "section_cols": null,
   "links": [
@@ -1443,6 +1444,109 @@
       "signwriting_image": null,
       "aliases": [],
       "notes": "Adapts a letter to a sound borrowed from Persian, Arabic or English."
+    },
+    {
+      "glyph": "ॉ",
+      "alt": "",
+      "name": "candra o matra",
+      "display_glyph": "◌ॉ",
+      "section": "Loanword vowels",
+      "romanization": null,
+      "ipa": [
+        "ɒ"
+      ],
+      "handshape": null,
+      "example_word": "डॉक्टर",
+      "example_gloss": "doctor",
+      "example_image": null,
+      "example_emoji": "👨‍⚕️",
+      "example_ipa": "ɖɒkʈəɾ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Added to write the English o of doctor and college, a sound Hindi otherwise has no letter for."
+    },
+    {
+      "glyph": "ऑ",
+      "alt": "",
+      "name": "candra O",
+      "display_glyph": null,
+      "section": "Loanword vowels",
+      "romanization": null,
+      "ipa": [
+        "ɒ"
+      ],
+      "handshape": null,
+      "example_word": "ऑफ़िस",
+      "example_gloss": "office",
+      "example_image": null,
+      "example_emoji": "🏢",
+      "example_ipa": "ɒfis",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ॅ",
+      "alt": "",
+      "name": "candra e matra",
+      "display_glyph": "◌ॅ",
+      "section": "Loanword vowels",
+      "romanization": null,
+      "ipa": [
+        "æ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Chiefly Marathi; Hindi usually writes the English a of bank with ै."
+    },
+    {
+      "glyph": "ऍ",
+      "alt": "",
+      "name": "candra E",
+      "display_glyph": null,
+      "section": "Loanword vowels",
+      "romanization": null,
+      "ipa": [
+        "æ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ऽ",
+      "alt": "",
+      "name": "avagraha",
+      "display_glyph": null,
+      "section": "Loanword vowels",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Marks an a that has dropped out, almost only in Sanskrit."
     }
   ]
 }

@@ -26,6 +26,9 @@ from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             ARABIC_FORMS, ARABIC_HARAKAT,
                             HANGUL_DOUBLE, HANGUL_COMPOUND,
                             geez_labiovelars)
+from script_signs import (HANGUL_FINALS, HEBREW_NIQQUD, FARSI_FORMS,
+                          FARSI_HARAKAT, DEVANAGARI_CANDRA, THAI_SIGNS,
+                          PINYIN_TONES, ARABIC_CLASSICAL, geez_labialised)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -75,19 +78,30 @@ EXTRA = {
                    ("Marks", DEVANAGARI_MARKS)],
     "kana": [("Small kana", KANA_SMALL), ("Marks", KANA_MARKS)],
     "arabic": [("Hamza and variant forms", ARABIC_FORMS),
-               ("Vowel marks", ARABIC_HARAKAT)],
+               ("Vowel marks", ARABIC_HARAKAT),
+               ("Classical marks", ARABIC_CLASSICAL)],
     "hangul": [("Double consonants", HANGUL_DOUBLE),
-               ("Compound vowels", HANGUL_COMPOUND)],
-    "geez": [("Labiovelars", geez_labiovelars())],
+               ("Compound vowels", HANGUL_COMPOUND),
+               ("Final clusters", HANGUL_FINALS)],
+    "geez": [("Labiovelars", geez_labiovelars()),
+             ("Labialised consonants", geez_labialised())],
+    "hebrew": [("Vowel points", HEBREW_NIQQUD)],
+    "farsi": [("Hamza and variant forms", FARSI_FORMS),
+              ("Vowel marks", FARSI_HARAKAT)],
+    "pinyin": [("Tones and \u00fc", PINYIN_TONES)],
 }
+EXTRA["devanagari"].append(("Loanword vowels", DEVANAGARI_CANDRA))
 # Thai's rows carry no alt column; normalise them to the six-field shape.
 EXTRA["thai"] = [(n, [(g, "", nm, i, w, wi, no) for g, nm, i, w, wi, no in rows])
                  for n, rows in EXTRA["thai"]]
+# appended after that, since it already carries the alt column
+EXTRA["thai"].append(("Other signs", THAI_SIGNS))
 
 # what the letters already in the list are collectively called
 BASE_SECTION = {"thai": "Consonants", "devanagari": "Letters", "kana": "Goj\u016bon",
                 "arabic": "Letters", "hangul": "Basic jamo",
-                "geez": "Syllabary"}
+                "geez": "Syllabary", "hebrew": "Letters",
+                "farsi": "Letters", "pinyin": "Letters"}
 # a section whose cells form a table of their own
 SECTION_COLS = {"geez": {"Labiovelars": len(GEEZ_LABIOVELAR_ORDERS)}}
 
@@ -259,6 +273,8 @@ CONTENT = {
 # carries the Hebrew ones, so only the extras go here.
 ALIASES = {
     "greek": {"Σ": ["ς"]},
+    "pinyin": {"ü": ["ǖ", "ǘ", "ǚ", "ǜ",
+                          "Ǖ", "Ǘ", "Ǚ", "Ǜ"]},
 }
 
 

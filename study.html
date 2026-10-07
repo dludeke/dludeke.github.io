@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" />
+        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&family=Noto+Sans+Hebrew:wght@400;700&display=swap" />
   <style>
     .bar {
       display: flex; gap: 0.6rem; align-items: center;
@@ -28,7 +28,7 @@
     }
 
     .word {
-      font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic", "Noto Sans", system-ui, -apple-system, sans-serif;
+      font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic", "Noto Sans Hebrew", "Noto Sans", system-ui, -apple-system, sans-serif;
       font-size: 3.2rem; line-height: 1.15; margin-bottom: 0.4rem;
       word-break: break-word;
     }
@@ -48,7 +48,7 @@
       background: #f8f9fa;
     }
     .lt.unknown { background: #fff; border: 1px dashed #e3e8ec; }
-    .lt .ch { font-size: 2rem; line-height: 1.1; font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic", "Noto Sans", system-ui, -apple-system, sans-serif; }
+    .lt .ch { font-size: 2rem; line-height: 1.1; font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic", "Noto Sans Hebrew", "Noto Sans", system-ui, -apple-system, sans-serif; }
     .lt .nm { font-size: 0.68rem; color: #9aa3ab; margin-top: 0.1rem; }
     .lt .ip {
       font-family: "Charis SIL", "Doulos SIL", serif;
@@ -457,8 +457,10 @@
     const CHO_C = [...'\u3131\u3132\u3134\u3137\u3138\u3139\u3141\u3142\u3143\u3145\u3146\u3147\u3148\u3149\u314a\u314b\u314c\u314d\u314e'];
     const JUNG = [...'\u1161\u1162\u1163\u1164\u1165\u1166\u1167\u1168\u1169\u116a\u116b\u116c\u116d\u116e\u116f\u1170\u1171\u1172\u1173\u1174\u1175'];
     const JUNG_C = [...'\u314f\u3150\u3151\u3152\u3153\u3154\u3155\u3156\u3157\u3158\u3159\u315a\u315b\u315c\u315d\u315e\u315f\u3160\u3161\u3162\u3163'];
-    const JONG = [...'\u11a8\u11a9\u11ab\u11ae\u11af\u11b7\u11b8\u11ba\u11bb\u11bc\u11bd\u11be\u11bf\u11c0\u11c1\u11c2'];
-    const JONG_C = [...'\u3131\u3132\u3134\u3137\u3139\u3141\u3142\u3145\u3146\u3147\u3148\u314a\u314b\u314c\u314d\u314e'];
+    // all 27 jongseong, the eleven clusters included: without them 값
+    // and 읽다 came apart into a jamo the alphabet could not name.
+    const JONG = [...'\u11a8\u11a9\u11aa\u11ab\u11ac\u11ad\u11ae\u11af\u11b0\u11b1\u11b2\u11b3\u11b4\u11b5\u11b6\u11b7\u11b8\u11b9\u11ba\u11bb\u11bc\u11bd\u11be\u11bf\u11c0\u11c1\u11c2'];
+    const JONG_C = [...'\u3131\u3132\u3133\u3134\u3135\u3136\u3137\u3139\u313a\u313b\u313c\u313d\u313e\u313f\u3140\u3141\u3142\u3144\u3145\u3146\u3147\u3148\u314a\u314b\u314c\u314d\u314e'];
 
     function jamoOf(ch) {
       // Only Hangul syllable blocks. Any accented letter decomposes under NFD
@@ -486,6 +488,11 @@
     function geezBase(ch) {
       const cp = ch.codePointAt(0);
       if (cp < 0x1200 || cp > 0x137f) return null;
+      // Blocks are eight wide but a consonant has only seven orders. The
+      // eighth slot is a labialised syllable of its own, so rounding down
+      // from it would hand back the neighbouring consonant and the tile
+      // would confidently show the wrong letter.
+      if ((cp - 0x1200) % 8 === 7) return null;
       return String.fromCodePoint(0x1200 + Math.floor((cp - 0x1200) / 8) * 8);
     }
 

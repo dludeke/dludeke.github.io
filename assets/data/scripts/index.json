@@ -39,7 +39,7 @@
         "Ladino",
         "Yiddish"
       ],
-      "letter_count": 22
+      "letter_count": 36
     },
     {
       "slug": "geez",
@@ -52,7 +52,7 @@
         "Tigrinya",
         "Ge'ez"
       ],
-      "letter_count": 268
+      "letter_count": 293
     },
     {
       "slug": "arabic",
@@ -63,7 +63,7 @@
       "languages": [
         "Arabic"
       ],
-      "letter_count": 44
+      "letter_count": 46
     },
     {
       "slug": "devanagari",
@@ -76,7 +76,7 @@
         "Sanskrit",
         "Nepali"
       ],
-      "letter_count": 59
+      "letter_count": 64
     },
     {
       "slug": "farsi",
@@ -87,7 +87,7 @@
       "languages": [
         "Persian / Farsi"
       ],
-      "letter_count": 32
+      "letter_count": 46
     },
     {
       "slug": "kana",
@@ -123,7 +123,7 @@
       "languages": [
         "Thai"
       ],
-      "letter_count": 67
+      "letter_count": 72
     },
     {
       "slug": "hangul",
@@ -134,7 +134,7 @@
       "languages": [
         "Korean"
       ],
-      "letter_count": 40
+      "letter_count": 51
     },
     {
       "slug": "pinyin",
@@ -145,7 +145,7 @@
       "languages": [
         "Mandarin Chinese"
       ],
-      "letter_count": 30
+      "letter_count": 35
     }
   ]
 }

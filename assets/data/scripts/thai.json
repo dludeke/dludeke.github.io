@@ -17,7 +17,8 @@
     "Consonants",
     "Vowel signs",
     "Tone marks",
-    "Modifiers"
+    "Modifiers",
+    "Other signs"
   ],
   "section_cols": null,
   "links": [
@@ -1638,6 +1639,105 @@
       "signwriting_image": null,
       "aliases": [],
       "notes": "Silences the letter beneath it, usually in a word borrowed from Sanskrit or English."
+    },
+    {
+      "glyph": "ๆ",
+      "alt": "",
+      "name": "mai yamok",
+      "display_glyph": null,
+      "section": "Other signs",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "เด็กๆ",
+      "example_gloss": "children",
+      "example_image": null,
+      "example_emoji": "🧒",
+      "example_ipa": "dèk.dèk",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Repeat the word before it. Very common in ordinary writing."
+    },
+    {
+      "glyph": "ฯ",
+      "alt": "",
+      "name": "paiyannoi",
+      "display_glyph": null,
+      "section": "Other signs",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "กรุงเทพฯ",
+      "example_gloss": "Bangkok",
+      "example_image": null,
+      "example_emoji": "🏙️",
+      "example_ipa": "kruŋ.tʰeːp",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Shortens a long name, the way a full stop does in an abbreviation."
+    },
+    {
+      "glyph": "ํ",
+      "alt": "",
+      "name": "nikhahit",
+      "display_glyph": "◌ํ",
+      "section": "Other signs",
+      "romanization": null,
+      "ipa": [
+        "ŋ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A nasal, in Pali and Sanskrit. ํ over a consonant with า after it is what ำ is built from."
+    },
+    {
+      "glyph": "ฺ",
+      "alt": "",
+      "name": "phinthu",
+      "display_glyph": "◌ฺ",
+      "section": "Other signs",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Silences the consonant beneath it, when Pali is written in Thai letters."
+    },
+    {
+      "glyph": "ฦ",
+      "alt": "",
+      "name": "lu",
+      "display_glyph": null,
+      "section": "Other signs",
+      "romanization": null,
+      "ipa": [
+        "lɯ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "The l to ฤ's r, taken from Sanskrit. Obsolete; it no longer appears in modern Thai."
     }
   ]
 }

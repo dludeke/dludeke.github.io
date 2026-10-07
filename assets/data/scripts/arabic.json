@@ -16,7 +16,8 @@
   "sections": [
     "Letters",
     "Hamza and variant forms",
-    "Vowel marks"
+    "Vowel marks",
+    "Classical marks"
   ],
   "section_cols": null,
   "links": [
@@ -1130,6 +1131,48 @@
       "signwriting_image": null,
       "aliases": [],
       "notes": "Doubles the consonant it sits on."
+    },
+    {
+      "glyph": "ٰ",
+      "alt": "",
+      "name": "dagger alef",
+      "display_glyph": "ـٰ",
+      "section": "Classical marks",
+      "romanization": null,
+      "ipa": [
+        "aː"
+      ],
+      "handshape": null,
+      "example_word": "هٰذا",
+      "example_gloss": "this",
+      "example_image": null,
+      "example_emoji": "👉",
+      "example_ipa": "haː.ðaː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A long a written as a stroke rather than a letter, kept in a handful of very old spellings such as هٰذا and الله."
+    },
+    {
+      "glyph": "ٱ",
+      "alt": "",
+      "name": "alef wasla",
+      "display_glyph": null,
+      "section": "Classical marks",
+      "romanization": null,
+      "ipa": [
+        "ː"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "An alef that is not pronounced when a word runs on from the one before. Written mostly in the Quran."
     }
   ]
 }

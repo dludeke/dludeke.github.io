@@ -13,7 +13,11 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
-  "sections": null,
+  "sections": [
+    "Letters",
+    "Hamza and variant forms",
+    "Vowel marks"
+  ],
   "section_cols": null,
   "links": [
     {
@@ -879,6 +883,297 @@
       "signwriting_image": null,
       "aliases": [],
       "notes": ""
+    },
+    {
+      "glyph": "آ",
+      "alt": "",
+      "name": "alef-e madd",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ɒː"
+      ],
+      "handshape": null,
+      "example_word": "آینه",
+      "example_gloss": "mirror",
+      "example_image": null,
+      "example_emoji": "🪞",
+      "example_ipa": "ɒːj.ne",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Alef carrying madda: a long a at the start of a word."
+    },
+    {
+      "glyph": "ء",
+      "alt": "",
+      "name": "hamze",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔ"
+      ],
+      "handshape": null,
+      "example_word": "جزء",
+      "example_gloss": "part",
+      "example_image": null,
+      "example_emoji": "🧩",
+      "example_ipa": "dʒozʔ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "أ",
+      "alt": "",
+      "name": "alef with hamze above",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔa"
+      ],
+      "handshape": null,
+      "example_word": "تأثیر",
+      "example_gloss": "effect",
+      "example_image": null,
+      "example_emoji": "✨",
+      "example_ipa": "tæʔ.siːر",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Mostly in words taken from Arabic."
+    },
+    {
+      "glyph": "إ",
+      "alt": "",
+      "name": "alef with hamze below",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ؤ",
+      "alt": "",
+      "name": "vav-e hamze",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔ"
+      ],
+      "handshape": null,
+      "example_word": "سؤال",
+      "example_gloss": "question",
+      "example_image": null,
+      "example_emoji": "❓",
+      "example_ipa": "soʔɒːl",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ئ",
+      "alt": "",
+      "name": "ye-ye hamze",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔ"
+      ],
+      "handshape": null,
+      "example_word": "مسئله",
+      "example_gloss": "problem",
+      "example_image": null,
+      "example_emoji": "❗",
+      "example_ipa": "mæsʔæ.le",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ة",
+      "alt": "",
+      "name": "te-ye gerd",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "t",
+        "e"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Only in words taken from Arabic; Persian usually writes ه instead."
+    },
+    {
+      "glyph": "ۀ",
+      "alt": "",
+      "name": "he-ye havvaz",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "je"
+      ],
+      "handshape": null,
+      "example_word": "خانۀ",
+      "example_gloss": "house of",
+      "example_image": null,
+      "example_emoji": "🏠",
+      "example_ipa": "xɒː.ne.je",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Marks the ezafe, the linker that joins a noun to what follows it."
+    },
+    {
+      "glyph": "َ",
+      "alt": "",
+      "name": "zebar",
+      "display_glyph": "ـَ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "æ"
+      ],
+      "handshape": null,
+      "example_word": "سَگ",
+      "example_gloss": "dog",
+      "example_image": null,
+      "example_emoji": "🐕",
+      "example_ipa": "sæg",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Persian leaves the three short vowels out of everyday writing, as Arabic does."
+    },
+    {
+      "glyph": "ِ",
+      "alt": "",
+      "name": "zir",
+      "display_glyph": "ـِ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "e"
+      ],
+      "handshape": null,
+      "example_word": "دِل",
+      "example_gloss": "heart",
+      "example_image": null,
+      "example_emoji": "❤️",
+      "example_ipa": "del",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ُ",
+      "alt": "",
+      "name": "pish",
+      "display_glyph": "ـُ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "o"
+      ],
+      "handshape": null,
+      "example_word": "گُل",
+      "example_gloss": "flower",
+      "example_image": null,
+      "example_emoji": "🌷",
+      "example_ipa": "gol",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ّ",
+      "alt": "",
+      "name": "tashdid",
+      "display_glyph": "ـّ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "اَوّل",
+      "example_gloss": "first",
+      "example_image": null,
+      "example_emoji": "🥇",
+      "example_ipa": "æv.væl",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Doubles the letter it sits on."
+    },
+    {
+      "glyph": "ْ",
+      "alt": "",
+      "name": "sokun",
+      "display_glyph": "ـْ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "مِنْ",
+      "example_gloss": "from",
+      "example_image": null,
+      "example_emoji": "➡️",
+      "example_ipa": "men",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Marks a consonant with no vowel after it."
+    },
+    {
+      "glyph": "ً",
+      "alt": "",
+      "name": "tanvin",
+      "display_glyph": "ـً",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "æn"
+      ],
+      "handshape": null,
+      "example_word": "لطفاً",
+      "example_gloss": "please",
+      "example_image": null,
+      "example_emoji": "🙏",
+      "example_ipa": "lot.fæn",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Only on adverbs borrowed from Arabic."
     }
   ]
 }

@@ -13,7 +13,10 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
-  "sections": null,
+  "sections": [
+    "Letters",
+    "Tones and ü"
+  ],
   "section_cols": null,
   "links": [
     {
@@ -835,6 +838,120 @@
       "signwriting_image": "images/signwriting/pinyin/S19202.png",
       "aliases": [],
       "notes": "Only ever closes a syllable, never begins one."
+    },
+    {
+      "glyph": "ü",
+      "alt": "Ü",
+      "name": "u umlaut",
+      "display_glyph": null,
+      "section": "Tones and ü",
+      "romanization": null,
+      "ipa": [
+        "y"
+      ],
+      "handshape": null,
+      "example_word": "绿 (lǜ)",
+      "example_gloss": "green",
+      "example_image": null,
+      "example_emoji": "💚",
+      "example_ipa": "ly˥˩",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [
+        "ǖ",
+        "ǘ",
+        "ǚ",
+        "ǜ",
+        "Ǖ",
+        "Ǘ",
+        "Ǚ",
+        "Ǜ"
+      ],
+      "notes": "A separate vowel, not u. It is written plain after j, q, x and y, where no u can follow anyway."
+    },
+    {
+      "glyph": "̄",
+      "alt": "",
+      "name": "first tone",
+      "display_glyph": "◌̄",
+      "section": "Tones and ü",
+      "romanization": null,
+      "ipa": [
+        "˥˥"
+      ],
+      "handshape": null,
+      "example_word": "妈 (mā)",
+      "example_gloss": "mother",
+      "example_image": null,
+      "example_emoji": "👩",
+      "example_ipa": "ma˥˥",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "The four marks sit over the main vowel and are part of the spelling, not an optional accent: mā, má, mǎ and mà are four words."
+    },
+    {
+      "glyph": "́",
+      "alt": "",
+      "name": "second tone",
+      "display_glyph": "◌́",
+      "section": "Tones and ü",
+      "romanization": null,
+      "ipa": [
+        "˧˥"
+      ],
+      "handshape": null,
+      "example_word": "麻 (má)",
+      "example_gloss": "hemp",
+      "example_image": null,
+      "example_emoji": "🪴",
+      "example_ipa": "ma˧˥",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "̌",
+      "alt": "",
+      "name": "third tone",
+      "display_glyph": "◌̌",
+      "section": "Tones and ü",
+      "romanization": null,
+      "ipa": [
+        "˨˩˧"
+      ],
+      "handshape": null,
+      "example_word": "马 (mǎ)",
+      "example_gloss": "horse",
+      "example_image": null,
+      "example_emoji": "🐎",
+      "example_ipa": "ma˨˩˧",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "̀",
+      "alt": "",
+      "name": "fourth tone",
+      "display_glyph": "◌̀",
+      "section": "Tones and ü",
+      "romanization": null,
+      "ipa": [
+        "˥˩"
+      ],
+      "handshape": null,
+      "example_word": "骂 (mà)",
+      "example_gloss": "to scold",
+      "example_image": null,
+      "example_emoji": "🗣️",
+      "example_ipa": "ma˥˩",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
     }
   ]
 }

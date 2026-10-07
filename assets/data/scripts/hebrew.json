@@ -15,7 +15,10 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
-  "sections": null,
+  "sections": [
+    "Letters",
+    "Vowel points"
+  ],
   "section_cols": null,
   "links": [
     {
@@ -672,6 +675,299 @@
       "example_ipa": "taˈpuaχ",
       "signwriting": "M508x507S1fb20493x488",
       "signwriting_image": "images/signwriting/hebrew/S1fb20.png",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ַ",
+      "alt": "",
+      "name": "patach",
+      "display_glyph": "◌ַ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "a"
+      ],
+      "handshape": null,
+      "example_word": "בַיִת",
+      "example_gloss": "house",
+      "example_image": null,
+      "example_emoji": "🏠",
+      "example_ipa": "ba.jit",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Ordinary Hebrew is written with consonants alone and leaves the points out. They are taught first, then dropped, and kept in dictionaries, poetry, children's books and the Bible."
+    },
+    {
+      "glyph": "ָ",
+      "alt": "",
+      "name": "kamatz",
+      "display_glyph": "◌ָ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "a",
+        "o"
+      ],
+      "handshape": null,
+      "example_word": "יָד",
+      "example_gloss": "hand",
+      "example_image": null,
+      "example_emoji": "✋",
+      "example_ipa": "jad",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Usually a, but o in a closed unstressed syllable."
+    },
+    {
+      "glyph": "ֵ",
+      "alt": "",
+      "name": "tzere",
+      "display_glyph": "◌ֵ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "e"
+      ],
+      "handshape": null,
+      "example_word": "סֵפֶר",
+      "example_gloss": "book",
+      "example_image": null,
+      "example_emoji": "📖",
+      "example_ipa": "se.feʁ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ֶ",
+      "alt": "",
+      "name": "segol",
+      "display_glyph": "◌ֶ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "e"
+      ],
+      "handshape": null,
+      "example_word": "אֶרֶץ",
+      "example_gloss": "land",
+      "example_image": null,
+      "example_emoji": "🌍",
+      "example_ipa": "e.ʁets",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ִ",
+      "alt": "",
+      "name": "hiriq",
+      "display_glyph": "◌ִ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "i"
+      ],
+      "handshape": null,
+      "example_word": "עִיר",
+      "example_gloss": "city",
+      "example_image": null,
+      "example_emoji": "🏙️",
+      "example_ipa": "iʁ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ֹ",
+      "alt": "",
+      "name": "holam",
+      "display_glyph": "◌ֹ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "o"
+      ],
+      "handshape": null,
+      "example_word": "יוֹם",
+      "example_gloss": "day",
+      "example_image": null,
+      "example_emoji": "📅",
+      "example_ipa": "jom",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ֻ",
+      "alt": "",
+      "name": "kubutz",
+      "display_glyph": "◌ֻ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "u"
+      ],
+      "handshape": null,
+      "example_word": "שֻׁלְחָן",
+      "example_gloss": "table",
+      "example_image": null,
+      "example_emoji": "🪑",
+      "example_ipa": "ʃul.ħan",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ְ",
+      "alt": "",
+      "name": "sheva",
+      "display_glyph": "◌ְ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "ə"
+      ],
+      "handshape": null,
+      "example_word": "בְרָכָה",
+      "example_gloss": "blessing",
+      "example_image": null,
+      "example_emoji": "🙏",
+      "example_ipa": "bə.ʁa.хa",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A very short e, or no vowel at all, depending on where it falls."
+    },
+    {
+      "glyph": "ֱ",
+      "alt": "",
+      "name": "hataf segol",
+      "display_glyph": "◌ֱ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "e"
+      ],
+      "handshape": null,
+      "example_word": "אֱמֶת",
+      "example_gloss": "truth",
+      "example_image": null,
+      "example_emoji": "✔️",
+      "example_ipa": "e.met",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "The three hataf vowels are shortened forms, used under the guttural letters."
+    },
+    {
+      "glyph": "ֲ",
+      "alt": "",
+      "name": "hataf patach",
+      "display_glyph": "◌ֲ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "a"
+      ],
+      "handshape": null,
+      "example_word": "אֲנִי",
+      "example_gloss": "I",
+      "example_image": null,
+      "example_emoji": "🙋",
+      "example_ipa": "a.ni",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ֳ",
+      "alt": "",
+      "name": "hataf kamatz",
+      "display_glyph": "◌ֳ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "o"
+      ],
+      "handshape": null,
+      "example_word": "צָהֳרַיִם",
+      "example_gloss": "noon",
+      "example_image": null,
+      "example_emoji": "🕛",
+      "example_ipa": "tso.ho.ʁa.jim",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ּ",
+      "alt": "",
+      "name": "dagesh",
+      "display_glyph": "◌ּ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "דָּג",
+      "example_gloss": "fish",
+      "example_image": null,
+      "example_emoji": "🐟",
+      "example_ipa": "dag",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Hardens ב כ פ to b, k and p, and doubles the other letters."
+    },
+    {
+      "glyph": "ׁ",
+      "alt": "",
+      "name": "shin dot",
+      "display_glyph": "◌ׁ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "ʃ"
+      ],
+      "handshape": null,
+      "example_word": "שֶׁמֶשׁ",
+      "example_gloss": "sun",
+      "example_image": null,
+      "example_emoji": "☀️",
+      "example_ipa": "ʃe.meʃ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "The dot tells ש apart: to the right for sh, to the left for s."
+    },
+    {
+      "glyph": "ׂ",
+      "alt": "",
+      "name": "sin dot",
+      "display_glyph": "◌ׂ",
+      "section": "Vowel points",
+      "romanization": null,
+      "ipa": [
+        "s"
+      ],
+      "handshape": null,
+      "example_word": "שָׂדֶה",
+      "example_gloss": "field",
+      "example_image": null,
+      "example_emoji": "🌾",
+      "example_ipa": "sa.de",
+      "signwriting": null,
+      "signwriting_image": null,
       "aliases": [],
       "notes": ""
     }

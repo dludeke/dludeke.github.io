@@ -16,7 +16,8 @@
   "sections": [
     "Basic jamo",
     "Double consonants",
-    "Compound vowels"
+    "Compound vowels",
+    "Final clusters"
   ],
   "section_cols": null,
   "links": [
@@ -1058,6 +1059,237 @@
       "example_image": null,
       "example_emoji": "👨‍⚕️",
       "example_ipa": "ɰi.sa",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄳ",
+      "alt": "",
+      "name": "gieok-siot",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "k̚"
+      ],
+      "handshape": null,
+      "example_word": "몫",
+      "example_gloss": "share",
+      "example_image": null,
+      "example_emoji": "🧾",
+      "example_ipa": "mok̚",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A final cluster. Only one of the two letters is pronounced when the syllable ends there; the other is heard again when a vowel follows."
+    },
+    {
+      "glyph": "ㄵ",
+      "alt": "",
+      "name": "nieun-jieut",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "n"
+      ],
+      "handshape": null,
+      "example_word": "앉다",
+      "example_gloss": "to sit",
+      "example_image": null,
+      "example_emoji": "🪑",
+      "example_ipa": "an.t͈a",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄶ",
+      "alt": "",
+      "name": "nieun-hieuh",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "n"
+      ],
+      "handshape": null,
+      "example_word": "많다",
+      "example_gloss": "to be many",
+      "example_image": null,
+      "example_emoji": "➕",
+      "example_ipa": "man.tʰa",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄺ",
+      "alt": "",
+      "name": "rieul-gieok",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "k̚"
+      ],
+      "handshape": null,
+      "example_word": "닭",
+      "example_gloss": "chicken",
+      "example_image": null,
+      "example_emoji": "🐔",
+      "example_ipa": "tak̚",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄻ",
+      "alt": "",
+      "name": "rieul-mieum",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "m"
+      ],
+      "handshape": null,
+      "example_word": "삶",
+      "example_gloss": "life",
+      "example_image": null,
+      "example_emoji": "🌱",
+      "example_ipa": "sam",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄼ",
+      "alt": "",
+      "name": "rieul-bieup",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "l"
+      ],
+      "handshape": null,
+      "example_word": "넓다",
+      "example_gloss": "to be wide",
+      "example_image": null,
+      "example_emoji": "↔️",
+      "example_ipa": "nʌl.t͈a",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄽ",
+      "alt": "",
+      "name": "rieul-siot",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "l"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Rare: it reaches only a couple of words."
+    },
+    {
+      "glyph": "ㄾ",
+      "alt": "",
+      "name": "rieul-tieut",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "l"
+      ],
+      "handshape": null,
+      "example_word": "핥다",
+      "example_gloss": "to lick",
+      "example_image": null,
+      "example_emoji": "👅",
+      "example_ipa": "hal.t͈a",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄿ",
+      "alt": "",
+      "name": "rieul-pieup",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "p̚"
+      ],
+      "handshape": null,
+      "example_word": "읊다",
+      "example_gloss": "to recite",
+      "example_image": null,
+      "example_emoji": "📜",
+      "example_ipa": "ɯp̚.t͈a",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅀ",
+      "alt": "",
+      "name": "rieul-hieuh",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "l"
+      ],
+      "handshape": null,
+      "example_word": "싫다",
+      "example_gloss": "to dislike",
+      "example_image": null,
+      "example_emoji": "🙅",
+      "example_ipa": "sil.tʰa",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅄ",
+      "alt": "",
+      "name": "bieup-siot",
+      "display_glyph": null,
+      "section": "Final clusters",
+      "romanization": null,
+      "ipa": [
+        "p̚"
+      ],
+      "handshape": null,
+      "example_word": "값",
+      "example_gloss": "price",
+      "example_image": null,
+      "example_emoji": "💰",
+      "example_ipa": "kap̚",
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],

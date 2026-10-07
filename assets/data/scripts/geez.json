@@ -336,7 +336,8 @@
   },
   "sections": [
     "Syllabary",
-    "Labiovelars"
+    "Labiovelars",
+    "Labialised consonants"
   ],
   "section_cols": {
     "Labiovelars": 5
@@ -6143,6 +6144,531 @@
       "romanization": "gʷə",
       "ipa": [
         "ɡʷɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሏ",
+      "alt": "",
+      "name": "lʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "lʷä",
+      "ipa": [
+        "lʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A consonant said with rounded lips. Unlike the labiovelars these have one form only, not a series of five."
+    },
+    {
+      "glyph": "ሗ",
+      "alt": "",
+      "name": "ḥʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ḥʷä",
+      "ipa": [
+        "hʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሟ",
+      "alt": "",
+      "name": "mʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "mʷä",
+      "ipa": [
+        "mʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሧ",
+      "alt": "",
+      "name": "śʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "śʷä",
+      "ipa": [
+        "sʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሯ",
+      "alt": "",
+      "name": "rʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "rʷä",
+      "ipa": [
+        "rʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሷ",
+      "alt": "",
+      "name": "sʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "sʷä",
+      "ipa": [
+        "sʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሿ",
+      "alt": "",
+      "name": "šʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "šʷä",
+      "ipa": [
+        "ʃʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቧ",
+      "alt": "",
+      "name": "bʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "bʷä",
+      "ipa": [
+        "bʷə"
+      ],
+      "handshape": null,
+      "example_word": "ቧንቧ",
+      "example_gloss": "pipe",
+      "example_image": null,
+      "example_emoji": "🚰",
+      "example_ipa": "bʷan.bʷa",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቯ",
+      "alt": "",
+      "name": "vʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "vʷä",
+      "ipa": [
+        "vʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቷ",
+      "alt": "",
+      "name": "tʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "tʷä",
+      "ipa": [
+        "tʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቿ",
+      "alt": "",
+      "name": "čʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "čʷä",
+      "ipa": [
+        "t͡ʃʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኗ",
+      "alt": "",
+      "name": "nʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "nʷä",
+      "ipa": [
+        "nʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኟ",
+      "alt": "",
+      "name": "ñʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ñʷä",
+      "ipa": [
+        "ɲʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዟ",
+      "alt": "",
+      "name": "zʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "zʷä",
+      "ipa": [
+        "zʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዧ",
+      "alt": "",
+      "name": "žʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "žʷä",
+      "ipa": [
+        "ʒʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዷ",
+      "alt": "",
+      "name": "dʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "dʷä",
+      "ipa": [
+        "dʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዿ",
+      "alt": "",
+      "name": "ḍʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ḍʷä",
+      "ipa": [
+        "dʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጇ",
+      "alt": "",
+      "name": "ǵʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ǵʷä",
+      "ipa": [
+        "d͡ʒʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ⶓ",
+      "alt": "",
+      "name": "ġʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ġʷä",
+      "ipa": [
+        "ɡʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጧ",
+      "alt": "",
+      "name": "ṭʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ṭʷä",
+      "ipa": [
+        "tʼʷə"
+      ],
+      "handshape": null,
+      "example_word": "ጧት",
+      "example_gloss": "morning",
+      "example_image": null,
+      "example_emoji": "🌅",
+      "example_ipa": "tʼʷat",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጯ",
+      "alt": "",
+      "name": "čʼʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "čʼʷä",
+      "ipa": [
+        "t͡ʃʼʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጷ",
+      "alt": "",
+      "name": "ṗʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ṗʷä",
+      "ipa": [
+        "pʼʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጿ",
+      "alt": "",
+      "name": "ṣʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "ṣʷä",
+      "ipa": [
+        "t͡sʼʷə"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፏ",
+      "alt": "",
+      "name": "fʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "fʷä",
+      "ipa": [
+        "fʷə"
+      ],
+      "handshape": null,
+      "example_word": "ፏፏቴ",
+      "example_gloss": "waterfall",
+      "example_image": null,
+      "example_emoji": "🌊",
+      "example_ipa": "fʷa.fʷa.te",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፗ",
+      "alt": "",
+      "name": "pʷä",
+      "display_glyph": null,
+      "section": "Labialised consonants",
+      "romanization": "pʷä",
+      "ipa": [
+        "pʷə"
       ],
       "handshape": null,
       "example_word": null,
