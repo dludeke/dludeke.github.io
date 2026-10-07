@@ -150,7 +150,7 @@ WORDS["devanagari"] = {
  "ढ": ("ढक्कन", "lid", "\U0001fad9"),
  "ण": ("ण", "retroflex nasal (no initial word)", "\U0001f4ac"),
  "त": ("तरबूज", "watermelon", "\U0001f349"),
- "थ": ("थरमस", "thermos", "\U0001f376"),
+ "थ": ("थैला", "bag", "\U0001f45c"),
  "द": ("दवाई", "medicine", "\U0001f48a"),
  "ध": ("धनुष", "bow", "\U0001f3f9"),
  "न": ("नल", "tap", "\U0001f6b0"),
@@ -510,7 +510,7 @@ WORD_IPA["devanagari"] = {
  "औ": "ɔːzaːr", "क": "kəməl", "ख": "kʰəɾɡoːʃ", "ग": "ɡaːj", "घ": "ɡʱəɽiː",
  "ङ": "ŋə", "च": "tʃəmmətʃ", "छ": "tʃʰətɾiː", "ज": "dʒəhaːz", "झ": "dʒʱəɳɖaː",
  "ञ": "ɲə", "ट": "ʈəmaːʈəɾ", "ठ": "ʈʰəʈʰeːɾaː", "ड": "ɖəmɾuː", "ढ": "ɖʱəkkən",
- "ण": "ɳə", "त": "təɾbuːdʒ", "थ": "tʰəɾməs", "द": "dəʋaːiː", "ध": "dʱənʊʃ",
+ "ण": "ɳə", "त": "təɾbuːdʒ", "थ": "tʰɛːlaː", "द": "dəʋaːiː", "ध": "dʱənʊʃ",
  "न": "nəl", "प": "pətəŋɡ", "फ": "pʰəl", "ब": "bəkɾiː", "भ": "bʱaːluː",
  "म": "mətʃʰliː", "य": "jəɡjə", "र": "rətʰ", "ल": "ləʈʈuː", "व": "ʋən",
  "श": "ʃeːɾ", "ष": "ʂəʈkoːɳ", "स": "seːb", "ह": "haːtʰiː",
@@ -547,7 +547,7 @@ WORD_IPA["kana"] = {
  "は": "hana", "ひ": "çikoːki", "ふ": "ɸɯne", "へ": "hebi", "ほ": "hoʃi",
  "ま": "mado", "み": "mizɯ", "む": "mɯʃi", "め": "me", "も": "momo",
  "や": "jama", "ゆ": "jɯki", "よ": "joɾɯ", "ら": "ɾakɯda", "り": "ɾiŋɡo",
- "る": "ɾɯsɯban", "れ": "ɾeːzoːko", "ろ": "ɾoːsokɯ", "わ": "wani",
+ "る": "ɾɯsɯbaɴ", "れ": "ɾeːzoːko", "ろ": "ɾoːsokɯ", "わ": "wani",
  "を": "o", "ん": "mikaɴ",
 }
 
@@ -753,4 +753,87 @@ GLOSSARY = {
  "jamo": W+"Hangul#Letters",
  "schwa": W+"Schwa_deletion_in_Indo-Aryan_languages",
  "topic": W+"Topic_marker",
+}
+
+# ---------------------------------------------------------------------------
+# Each IPA symbol to its Wikipedia article. Longest match wins, so affricates
+# and the digraphs written with a tie bar resolve before their parts.
+# ---------------------------------------------------------------------------
+
+IPA_LINKS = {
+ # affricates and clusters first
+ "t͡ɕʰ": W+"Voiceless_alveolo-palatal_affricate", "t͡ɕ": W+"Voiceless_alveolo-palatal_affricate",
+ "d͡ʑ": W+"Voiced_alveolo-palatal_affricate",
+ "ʈ͡ʂʰ": W+"Voiceless_retroflex_affricate", "ʈ͡ʂ": W+"Voiceless_retroflex_affricate",
+ "t͡ʃʰ": W+"Voiceless_postalveolar_affricate", "t͡ʃʼ": W+"Ejective_consonant",
+ "t͡ʃ": W+"Voiceless_postalveolar_affricate", "d͡ʒʱ": W+"Breathy_voice",
+ "d͡ʒ": W+"Voiced_postalveolar_affricate", "t͡sʼ": W+"Ejective_consonant",
+ "t͡s": W+"Voiceless_alveolar_affricate", "ks": W+"Consonant_cluster",
+ "ps": W+"Consonant_cluster",
+ # aspirated and ejective stops
+ "kʰ": W+"Aspirated_consonant", "pʰ": W+"Aspirated_consonant", "tʰ": W+"Aspirated_consonant",
+ "ʈʰ": W+"Voiceless_retroflex_plosive", "t̪ʰ": W+"Voiceless_dental_and_alveolar_plosives",
+ "kʼ": W+"Ejective_consonant", "pʼ": W+"Ejective_consonant", "tʼ": W+"Ejective_consonant",
+ "ɡʱ": W+"Breathy_voice", "bʱ": W+"Breathy_voice", "d̪ʱ": W+"Breathy_voice",
+ "ɖʱ": W+"Breathy_voice", "ɖ": W+"Voiced_retroflex_plosive", "ʈ": W+"Voiceless_retroflex_plosive",
+ "t̪": W+"Voiceless_dental_and_alveolar_plosives", "d̪": W+"Voiced_dental_and_alveolar_plosives",
+ # emphatics
+ "sˤ": W+"Pharyngealization", "dˤ": W+"Pharyngealization",
+ "tˤ": W+"Pharyngealization", "ðˤ": W+"Pharyngealization",
+ # unreleased
+ "k̚": W+"Unreleased_stop", "t̚": W+"Unreleased_stop", "p̚": W+"Unreleased_stop",
+ # palatalised
+ "bʲ": W+"Palatalization_(phonetics)", "vʲ": W+"Palatalization_(phonetics)",
+ "ɡʲ": W+"Palatalization_(phonetics)", "dʲ": W+"Palatalization_(phonetics)",
+ "zʲ": W+"Palatalization_(phonetics)", "kʲ": W+"Palatalization_(phonetics)",
+ "lʲ": W+"Palatalization_(phonetics)", "mʲ": W+"Palatalization_(phonetics)",
+ "nʲ": W+"Palatalization_(phonetics)", "pʲ": W+"Palatalization_(phonetics)",
+ "rʲ": W+"Palatalization_(phonetics)", "sʲ": W+"Palatalization_(phonetics)",
+ "tʲ": W+"Palatalization_(phonetics)", "fʲ": W+"Palatalization_(phonetics)",
+ "ʲ": W+"Palatalization_(phonetics)",
+ # long vowels and diphthongs
+ "aː": W+"Open_front_unrounded_vowel", "iː": W+"Close_front_unrounded_vowel",
+ "uː": W+"Close_back_rounded_vowel", "eː": W+"Close-mid_front_unrounded_vowel",
+ "oː": W+"Close-mid_back_rounded_vowel", "ɔː": W+"Open-mid_back_rounded_vowel",
+ "ɛː": W+"Open-mid_front_unrounded_vowel", "ɒː": W+"Open_back_rounded_vowel",
+ "ɑː": W+"Open_back_unrounded_vowel", "juː": W+"Palatal_approximant",
+ "eɪ": W+"Diphthong", "aɪ": W+"Diphthong", "oʊ": W+"Diphthong", "əʊ": W+"Diphthong",
+ "aʊ": W+"Diphthong", "ja": W+"Palatal_approximant", "je": W+"Palatal_approximant",
+ "jo": W+"Palatal_approximant", "ju": W+"Palatal_approximant",
+ "ɹ̩": W+"Syllabic_consonant", "ɕː": W+"Gemination",
+ # single consonants
+ "p": W+"Voiceless_bilabial_plosive", "b": W+"Voiced_bilabial_plosive",
+ "t": W+"Voiceless_dental_and_alveolar_plosives", "d": W+"Voiced_dental_and_alveolar_plosives",
+ "k": W+"Voiceless_velar_plosive", "ɡ": W+"Voiced_velar_plosive",
+ "q": W+"Voiceless_uvular_plosive", "ʔ": W+"Glottal_stop",
+ "c": W+"Voiceless_palatal_plosive", "f": W+"Voiceless_labiodental_fricative",
+ "v": W+"Voiced_labiodental_fricative", "θ": W+"Voiceless_dental_fricative",
+ "ð": W+"Voiced_dental_fricative", "s": W+"Voiceless_alveolar_fricative",
+ "z": W+"Voiced_alveolar_fricative", "ʃ": W+"Voiceless_postalveolar_fricative",
+ "ʒ": W+"Voiced_postalveolar_fricative", "ʂ": W+"Voiceless_retroflex_fricative",
+ "ʐ": W+"Voiced_retroflex_fricative", "ɕ": W+"Voiceless_alveolo-palatal_fricative",
+ "ç": W+"Voiceless_palatal_fricative", "x": W+"Voiceless_velar_fricative",
+ "ɣ": W+"Voiced_velar_fricative", "χ": W+"Voiceless_uvular_fricative",
+ "ʁ": W+"Voiced_uvular_fricative", "ħ": W+"Voiceless_pharyngeal_fricative",
+ "ʕ": W+"Voiced_pharyngeal_fricative", "h": W+"Voiceless_glottal_fricative",
+ "ɦ": W+"Voiced_glottal_fricative", "ɸ": W+"Voiceless_bilabial_fricative",
+ "m": W+"Bilabial_nasal", "n": W+"Alveolar_nasal", "ɲ": W+"Palatal_nasal",
+ "ŋ": W+"Velar_nasal", "ɴ": W+"Uvular_nasal", "ɳ": W+"Retroflex_nasal",
+ "l": W+"Voiced_alveolar_lateral_approximant", "ɫ": W+"Velarization",
+ "ʎ": W+"Palatal_lateral_approximant", "r": W+"Alveolar_trill",
+ "ɾ": W+"Alveolar_flap", "ɹ": W+"Alveolar_approximant", "ɻ": W+"Retroflex_approximant",
+ "j": W+"Palatal_approximant", "w": W+"Voiced_labial–velar_approximant",
+ "ʋ": W+"Labiodental_approximant", "ɢ": W+"Voiced_uvular_plosive",
+ # single vowels
+ "a": W+"Open_front_unrounded_vowel", "e": W+"Close-mid_front_unrounded_vowel",
+ "i": W+"Close_front_unrounded_vowel", "o": W+"Close-mid_back_rounded_vowel",
+ "u": W+"Close_back_rounded_vowel", "y": W+"Close_front_rounded_vowel",
+ "ə": W+"Mid_central_vowel", "ɛ": W+"Open-mid_front_unrounded_vowel",
+ "ɔ": W+"Open-mid_back_rounded_vowel", "æ": W+"Near-open_front_unrounded_vowel",
+ "ʌ": W+"Open-mid_back_unrounded_vowel", "ɒ": W+"Open_back_rounded_vowel",
+ "ɑ": W+"Open_back_unrounded_vowel", "ɪ": W+"Near-close_front_unrounded_vowel",
+ "ʊ": W+"Near-close_back_rounded_vowel", "ɤ": W+"Close-mid_back_unrounded_vowel",
+ "ɯ": W+"Close_back_unrounded_vowel", "ɨ": W+"Close_central_unrounded_vowel",
+ "ɐ": W+"Near-open_central_vowel", "ä": W+"Open_central_unrounded_vowel",
+ "—": None,
 }

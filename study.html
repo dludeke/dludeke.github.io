@@ -207,8 +207,9 @@
     }
 
     function lookup(ch) {
+      const plainKana = ch.normalize('NFD').replace(/[\u3099\u309a]/g, '');
       const tries = [ch, bare(ch), ch.toLowerCase(), bare(ch).toLowerCase(),
-                     MATRA[ch], geezBase(ch)];
+                     MATRA[ch], geezBase(ch), plainKana];
       for (const t of tries) if (t && data.index[t]) return data.index[t];
       return null;
     }

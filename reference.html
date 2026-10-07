@@ -13,9 +13,23 @@
       margin-bottom: 2rem;
     }
 
-    .script-grid {
+    .script-grid { display: block; }
+
+    .family {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #96a0a8;
+      font-weight: bold;
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #eceff1;
+    }
+
+    .family:first-child { margin-top: 0; }
+
+    .family-row {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 1.25rem;
     }
 
@@ -73,12 +87,12 @@
     }
 
     @media (max-width: 760px) {
-      .script-grid { grid-template-columns: repeat(2, 1fr); }
+      .family-row { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
       .tile-glyph { font-size: 3rem; }
     }
 
     @media (max-width: 460px) {
-      .script-grid { grid-template-columns: 1fr; }
+      .family-row { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -127,7 +141,8 @@
       .then(data => {
         const grid = document.getElementById('grid');
         grid.innerHTML = '';
-        data.scripts.forEach(s => {
+
+        const tile = s => {
           const a = document.createElement('a');
           a.className = 'script-tile';
           a.href = `script.html?s=${encodeURIComponent(s.slug)}`;
@@ -149,7 +164,23 @@
           sl.textContent = s.sign_language;
 
           a.append(count, glyph, name, sl);
-          grid.appendChild(a);
+          return a;
+        };
+
+        // One row per writing-system family, each row as wide as it needs to
+        // be, so the grouping is visible rather than implied by order.
+        (data.families || []).forEach(fam => {
+          const members = data.scripts.filter(s => s.family === fam);
+          if (!members.length) return;
+          const h = document.createElement('h2');
+          h.className = 'family';
+          h.textContent = fam;
+          grid.appendChild(h);
+          const row = document.createElement('div');
+          row.className = 'family-row';
+          row.style.gridTemplateColumns = `repeat(${members.length}, minmax(0, 1fr))`;
+          members.forEach(s => row.appendChild(tile(s)));
+          grid.appendChild(row);
         });
       })
       .catch(() => {

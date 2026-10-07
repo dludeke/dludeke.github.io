@@ -16,7 +16,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
-                            LINKS, GLOSSARY)
+                            LINKS, GLOSSARY, IPA_LINKS)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -201,6 +201,20 @@ ALIASES = {
 }
 
 
+# How the reference grid is grouped. Pinyin is a romanisation rather than an
+# alphabet, but it behaves like one here: one letter, one sound, no inherent
+# vowel. Kana is a syllabary rather than an abugida; they share a row because
+# both write a consonant and vowel as a single unit.
+FAMILY = {
+    "greek": "Alphabet", "latin": "Alphabet", "cyrillic": "Alphabet",
+    "pinyin": "Alphabet", "hangul": "Alphabet",
+    "geez": "Abugida and syllabary", "devanagari": "Abugida and syllabary",
+    "thai": "Abugida and syllabary", "kana": "Abugida and syllabary",
+    "arabic": "Abjad", "hebrew": "Abjad", "farsi": "Abjad",
+}
+
+FAMILY_ORDER = ["Alphabet", "Abugida and syllabary", "Abjad"]
+
 LAYOUTS = {
     "kana": {
         "cols": 5,
@@ -369,6 +383,7 @@ def main():
             "layout": LAYOUTS.get(slug),
             "links": [{"label": l, "url": u} for l, u in LINKS.get(slug, [])],
             "glossary": GLOSSARY,
+            "ipa_links": {k: v for k, v in IPA_LINKS.items() if v},
             "letters": letters,
         }
         with open(path, "w", encoding="utf-8") as fh:
@@ -377,13 +392,15 @@ def main():
 
         index.append({
             "slug": slug, "name": name, "representative": rep,
+            "family": FAMILY.get(slug, "Other"),
             "sign_language": sl_abbr, "languages": languages,
             "letter_count": len(letters),
         })
         print(f"{name:<12} {len(letters):>3} letters -> {slug}.json")
 
     with open(os.path.join(OUT_DIR, "index.json"), "w", encoding="utf-8") as fh:
-        json.dump({"scripts": index}, fh, ensure_ascii=False, indent=2)
+        json.dump({"families": FAMILY_ORDER, "scripts": index},
+                  fh, ensure_ascii=False, indent=2)
         fh.write("\n")
 
     print(f"\n{len(index)} scripts, {sum(s['letter_count'] for s in index)} letters total")

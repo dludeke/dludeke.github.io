@@ -1,9 +1,15 @@
 {
+  "families": [
+    "Alphabet",
+    "Abugida and syllabary",
+    "Abjad"
+  ],
   "scripts": [
     {
       "slug": "greek",
       "name": "Greek",
       "representative": "α",
+      "family": "Alphabet",
       "sign_language": "GSL",
       "languages": [
         "Greek"
@@ -14,6 +20,7 @@
       "slug": "latin",
       "name": "Latin",
       "representative": "A",
+      "family": "Alphabet",
       "sign_language": "ASL, BSL",
       "languages": [
         "English",
@@ -25,6 +32,7 @@
       "slug": "hebrew",
       "name": "Hebrew",
       "representative": "א",
+      "family": "Abjad",
       "sign_language": "ISL",
       "languages": [
         "Hebrew",
@@ -37,6 +45,7 @@
       "slug": "geez",
       "name": "Ge'ez",
       "representative": "ሀ",
+      "family": "Abugida and syllabary",
       "sign_language": "EthSL",
       "languages": [
         "Amharic",
@@ -49,6 +58,7 @@
       "slug": "arabic",
       "name": "Arabic",
       "representative": "ا",
+      "family": "Abjad",
       "sign_language": "ArSL",
       "languages": [
         "Arabic"
@@ -59,6 +69,7 @@
       "slug": "devanagari",
       "name": "Devanagari",
       "representative": "अ",
+      "family": "Abugida and syllabary",
       "sign_language": "NSL",
       "languages": [
         "Hindi",
@@ -71,6 +82,7 @@
       "slug": "farsi",
       "name": "Farsi",
       "representative": "پ",
+      "family": "Abjad",
       "sign_language": "ZEI",
       "languages": [
         "Persian / Farsi"
@@ -81,6 +93,7 @@
       "slug": "kana",
       "name": "Kana",
       "representative": "あ",
+      "family": "Abugida and syllabary",
       "sign_language": "JSL",
       "languages": [
         "Japanese"
@@ -91,6 +104,7 @@
       "slug": "cyrillic",
       "name": "Cyrillic",
       "representative": "Б",
+      "family": "Alphabet",
       "sign_language": "RSL",
       "languages": [
         "Russian",
@@ -104,6 +118,7 @@
       "slug": "thai",
       "name": "Thai",
       "representative": "ก",
+      "family": "Abugida and syllabary",
       "sign_language": "ThSL",
       "languages": [
         "Thai"
@@ -114,6 +129,7 @@
       "slug": "hangul",
       "name": "Hangul",
       "representative": "ㄱ",
+      "family": "Alphabet",
       "sign_language": "KSL",
       "languages": [
         "Korean"
@@ -124,6 +140,7 @@
       "slug": "pinyin",
       "name": "Pinyin",
       "representative": "ā",
+      "family": "Alphabet",
       "sign_language": "CSL",
       "languages": [
         "Mandarin Chinese"
