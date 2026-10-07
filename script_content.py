@@ -517,7 +517,7 @@ WORD_IPA["devanagari"] = {
 }
 
 WORD_IPA["geez"] = {
- "ሀ": "hаɡər", "ለ": "lewz", "ሐ": "hajk", "መ": "mekina", "ሠ": "sərɡ",
+ "ሀ": "haɡər", "ለ": "lewz", "ሐ": "hajk", "መ": "mekina", "ሠ": "sərɡ",
  "ረ": "rehab", "ሰ": "səw", "ሸ": "ʃema", "ቀ": "kʼen", "በ": "ber",
  "ተ": "terara", "ቸ": "tʃokolet", "ኀ": "hajl", "ነ": "nebr", "ኘ": "ɲä",
  "አ": "anbesa", "ከ": "ketema", "ኸ": "xä", "ወ": "wetet", "ዐ": "ajn",
@@ -901,3 +901,109 @@ GEEZ_EXTRA_WORDS = {
  "ፋ": ("ፋብሪካ", "factory", "🏭"),    "ፖ": ("ፖሊስ", "police", "👮"),
  "ሰው": ("ሰው", "person", "🧍"),
 }
+
+# Second pass on the fidel. Amharic has no word-per-cell tradition, so these
+# are ordinary nouns. Where a syllable does not begin words, a word that
+# contains it is used instead and the card bolds it in place.
+GEEZ_EXTRA_WORDS.update({
+ # ሀ h
+ "ሄ": ("ሄሊኮፕተር", "helicopter", "🚁"), "ህ": ("ህይወት", "life", "🌱"),
+ # ለ l
+ "ሉ": ("ሉል", "pearl", "🦪"), "ሌ": ("ሌሊት", "night", "🌙"),
+ "ል": ("ልብስ", "clothes", "👕"), "ሎ": ("ሎሚ", "lemon", "🍋"),
+ # ሐ ḥ — merged with ሀ in speech, so mostly historical spellings
+ "ሕ": ("ሕግ", "law", "⚖️"), "ሓ": ("ሓምሌ", "July", "📅"),
+ # መ m
+ "ሜ": ("ሜዳ", "field", "🌾"), "ም": ("ምግብ", "food", "🍲"),
+ # ረ r
+ "ሪ": ("ሪፖርት", "report", "📄"), "ሬ": ("ሬድዮ", "radio", "📻"),
+ "ር": ("ርግብ", "dove", "🕊️"), "ሮ": ("ሮማን", "pomegranate", "🫒"),
+ # ሰ s
+ "ሲ": ("ሲኒ", "coffee cup", "☕"), "ሴ": ("ሴት", "woman", "👩"),
+ "ስ": ("ስም", "name", "🏷️"), "ሶ": ("ሶፋ", "sofa", "🛋️"),
+ # ሸ š
+ "ሹ": ("ሹካ", "fork", "🍴"), "ሻ": ("ሻይ", "tea", "🍵"),
+ "ሼ": ("ሼፍ", "chef", "👨‍🍳"), "ሽ": ("ሽንኩርት", "onion", "🧅"),
+ "ሾ": ("ሾርባ", "soup", "🍜"),
+ # ቀ q
+ "ቁ": ("ቁልፍ", "key", "🔑"), "ቂ": ("ቂጣ", "flatbread", "🫓"),
+ "ቃ": ("ቃል", "word", "💬"), "ቄ": ("ቄስ", "priest", "⛪"),
+ "ቅ": ("ቅቤ", "butter", "🧈"), "ቆ": ("ቆዳ", "hide", "🧳"),
+ # በ b
+ "ብ": ("ብርሃን", "light", "💡"), "ቦ": ("ቦርሳ", "bag", "👜"),
+ # ተ t
+ "ቱ": ("ቱታ", "tracksuit", "🩳"), "ቴ": ("ቴሌቪዥን", "television", "📺"),
+ "ት": ("ትምህርት", "education", "📚"),
+ # ቸ č
+ "ቻ": ("ቻርጀር", "charger", "🔌"), "ች": ("ችግር", "problem", "⚠️"),
+ # ነ n
+ "ኒ": ("ኒሻን", "medal", "🏅"), "ኔ": ("ኔትወርክ", "network", "🌐"),
+ "ን": ("ንብ", "bee", "🐝"), "ኖ": ("ኖራ", "chalk", "🧱"),
+ # አ ʾ
+ "ኤ": ("ኤሌክትሪክ", "electricity", "⚡"), "እ": ("እንቁላል", "egg", "🥚"),
+ "ኦ": ("ኦክስጅን", "oxygen", "🫁"),
+ # ከ k
+ "ኬ": ("ኬክ", "cake", "🍰"), "ክ": ("ክንድ", "arm", "💪"),
+ # ወ w
+ "ዊ": ("ዊስኪ", "whisky", "🥃"), "ዌ": ("ዌብሳይት", "website", "🌐"),
+ "ው": ("ውሻ", "dog", "🐕"), "ዎ": ("ዎርክሾፕ", "workshop", "🔧"),
+ # ዐ ʿ — merged with አ in speech
+ "ዓ": ("ዓመት", "year", "📅"), "ዕ": ("ዕቃ", "goods", "📦"),
+ # ዘ z
+ "ዚ": ("ዚሮ", "zero", "0️⃣"), "ዜ": ("ዜና", "news", "📰"),
+ "ዝ": ("ዝናብ", "rain", "🌧️"), "ዞ": ("ዞን", "zone", "🗺️"),
+ # የ y
+ "ይ": ("ይቅርታ", "apology", "🙏"), "ዮ": ("ዮጋ", "yoga", "🧘"),
+ # ደ d
+ "ዱ": ("ዱቄት", "flour", "🌾"), "ዴ": ("ዴሞክራሲ", "democracy", "🗳️"),
+ "ድ": ("ድመት", "cat", "🐈"),
+ # ጀ ǵ
+ "ጁ": ("ጁስ", "juice", "🧃"), "ጂ": ("ጂፕ", "jeep", "🚙"),
+ "ጃ": ("ጃንጥላ", "umbrella", "☂️"), "ጄ": ("ጄኔራል", "general", "🎖️"),
+ "ጅ": ("ጅብ", "hyena", "🐺"), "ጆ": ("ጆሮ", "ear", "👂"),
+ # ገ g
+ "ጊ": ("ጊዜ", "time", "⏰"), "ጌ": ("ጌጥ", "ornament", "💍"),
+ "ግ": ("ግድግዳ", "wall", "🧱"),
+ # ጠ ṭ
+ "ጡ": ("ጡብ", "brick", "🧱"), "ጢ": ("ጢስ", "smoke", "💨"),
+ "ጥ": ("ጥርስ", "tooth", "🦷"), "ጦ": ("ጦር", "spear", "🗡️"),
+ # ጨ čʼ
+ "ጩ": ("ጩኸት", "shout", "📢"), "ጫ": ("ጫማ", "shoe", "👟"),
+ "ጭ": ("ጭራ", "tail", "🐈"),
+ # ጸ ṣ
+ "ጻ": ("ጻፊ", "writer", "✍️"), "ጽ": ("ጽዋ", "goblet", "🏆"),
+ # ፈ f
+ "ፉ": ("ፉጨት", "whistle", "📯"), "ፌ": ("ፌስታል", "plastic bag", "🛍️"),
+ "ፍ": ("ፍቅር", "love", "❤️"), "ፎ": ("ፎቶ", "photo", "📷"),
+ # ፐ p — loanwords almost entirely
+ "ፒ": ("ፒያሳ", "piazza", "🏙️"), "ፓ": ("ፓርክ", "park", "🏞️"),
+ "ፕ": ("ፕሮግራም", "programme", "💻"),
+})
+
+# Rows where Amharic simply does not supply words for most cells. These are
+# consonants that merged with another in pronunciation and survive only in
+# historical spellings, or that appear almost entirely in loanwords.
+GEEZ_RARE_ROWS = {
+ "ሐ": "Pronounced the same as ሀ in modern Amharic. It survives in historical spellings, so few cells begin words.",
+ "ሠ": "Pronounced the same as ሰ. Kept for etymological spelling, so most cells do not begin words.",
+ "ኀ": "Pronounced the same as ሀ. Historical spelling only.",
+ "ኘ": "A genuine Amharic sound, but one that rarely begins a word.",
+ "ኸ": "Mostly an allophone of ከ; rare word-initially.",
+ "ዐ": "Pronounced the same as አ. Historical spelling only.",
+ "ዠ": "Rare, and mostly in loanwords.",
+ "ጰ": "Almost entirely in words borrowed through Greek, such as ጳውሎስ.",
+ "ፀ": "Pronounced the same as ጸ. Historical spelling only.",
+}
+
+# Third pass: cells in the merged rows that do have well-established spellings,
+# plus a few mid-word syllables. ሆድ/🫃 replaced — no stomach emoji exists.
+GEEZ_EXTRA_WORDS.update({
+ "ሆ": ("ሆቴል", "hotel", "🏨"),
+ "ሣ": ("ሣር", "grass", "🌿"), "ሥ": ("ሥራ", "work", "💼"),
+ "ቺ": ("ቺፕስ", "chips", "🍟"), "ቼ": ("ቼክ", "cheque", "🧾"),
+ "ኃ": ("ኃይል", "power", "⚡"),
+ "ኛ": ("አማርኛ", "Amharic", "🇪🇹"),
+ "ዑ": ("ዑደት", "cycle", "🔄"),
+ "ጳ": ("ጳጳስ", "bishop", "⛪"),
+ "ጺ": ("ጺም", "beard", "🧔"), "ጾ": ("ጾም", "fast", "🍽️"),
+})

@@ -17,7 +17,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             LINKS, GLOSSARY, IPA_LINKS,
-                            GEEZ_ORDERS, GEEZ_CONSONANTS, GEEZ_EXTRA_WORDS)
+                            GEEZ_ORDERS, GEEZ_CONSONANTS, GEEZ_EXTRA_WORDS,
+                            GEEZ_RARE_ROWS)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -371,6 +372,11 @@ def main():
             # the loop header and was being clobbered by this
             letter_note = NOTES.get(slug, {}).get(glyph)
             if letter_note:
+                entry["notes"] = letter_note
+            # Say so on the row header where a consonant barely supplies
+            # words, rather than leaving six blank cells unexplained.
+            if slug == "geez" and not letter_note and glyph in GEEZ_RARE_ROWS:
+                letter_note = GEEZ_RARE_ROWS[glyph]
                 entry["notes"] = letter_note
             wi = WORD_IPA.get(slug, {}).get(glyph)
             if wi:
