@@ -15,6 +15,7 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
+  "sections": null,
   "links": [
     {
       "label": "Devanagari",
@@ -189,16 +190,22 @@
     "ɪ": "https://en.wikipedia.org/wiki/Near-close_front_unrounded_vowel",
     "ʊ": "https://en.wikipedia.org/wiki/Near-close_back_rounded_vowel",
     "ɤ": "https://en.wikipedia.org/wiki/Close-mid_back_unrounded_vowel",
-    "ɯ": "https://en.wikipedia.org/wiki/Close_back_unrounded_vowel",
-    "ɨ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
+    "ɯ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
     "ɐ": "https://en.wikipedia.org/wiki/Near-open_central_vowel",
-    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel"
+    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel",
+    "˩": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˨": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˧": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˦": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
   },
   "letters": [
     {
       "glyph": "अ",
       "alt": "",
       "name": "a",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ə"
@@ -218,6 +225,8 @@
       "glyph": "आ",
       "alt": "",
       "name": "ā",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "aː"
@@ -237,6 +246,8 @@
       "glyph": "इ",
       "alt": "",
       "name": "i",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɪ"
@@ -256,6 +267,8 @@
       "glyph": "ई",
       "alt": "",
       "name": "ī",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "iː"
@@ -275,6 +288,8 @@
       "glyph": "उ",
       "alt": "",
       "name": "u",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʊ"
@@ -294,6 +309,8 @@
       "glyph": "ऊ",
       "alt": "",
       "name": "ū",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "uː"
@@ -313,6 +330,8 @@
       "glyph": "ऋ",
       "alt": "",
       "name": "ṛ",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾɪ"
@@ -332,6 +351,8 @@
       "glyph": "ए",
       "alt": "",
       "name": "e",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "eː"
@@ -351,6 +372,8 @@
       "glyph": "ऐ",
       "alt": "",
       "name": "ai",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɛː"
@@ -370,6 +393,8 @@
       "glyph": "ओ",
       "alt": "",
       "name": "o",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "oː"
@@ -389,6 +414,8 @@
       "glyph": "औ",
       "alt": "",
       "name": "au",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɔː"
@@ -408,6 +435,8 @@
       "glyph": "क",
       "alt": "",
       "name": "ka",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "k"
@@ -427,6 +456,8 @@
       "glyph": "ख",
       "alt": "",
       "name": "kha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kʰ"
@@ -446,6 +477,8 @@
       "glyph": "ग",
       "alt": "",
       "name": "ga",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɡ"
@@ -465,6 +498,8 @@
       "glyph": "घ",
       "alt": "",
       "name": "gha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɡʱ"
@@ -484,6 +519,8 @@
       "glyph": "ङ",
       "alt": "",
       "name": "ṅa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ŋ"
@@ -503,6 +540,8 @@
       "glyph": "च",
       "alt": "",
       "name": "ca",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ʃ"
@@ -522,6 +561,8 @@
       "glyph": "छ",
       "alt": "",
       "name": "cha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ʃʰ"
@@ -541,6 +582,8 @@
       "glyph": "ज",
       "alt": "",
       "name": "ja",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d͡ʒ"
@@ -560,6 +603,8 @@
       "glyph": "झ",
       "alt": "",
       "name": "jha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d͡ʒʱ"
@@ -579,6 +624,8 @@
       "glyph": "ञ",
       "alt": "",
       "name": "ña",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɲ"
@@ -598,6 +645,8 @@
       "glyph": "ट",
       "alt": "",
       "name": "ṭa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʈ"
@@ -617,6 +666,8 @@
       "glyph": "ठ",
       "alt": "",
       "name": "ṭha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʈʰ"
@@ -636,6 +687,8 @@
       "glyph": "ड",
       "alt": "",
       "name": "ḍa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɖ"
@@ -655,6 +708,8 @@
       "glyph": "ढ",
       "alt": "",
       "name": "ḍha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɖʱ"
@@ -674,6 +729,8 @@
       "glyph": "ण",
       "alt": "",
       "name": "ṇa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɳ"
@@ -693,6 +750,8 @@
       "glyph": "त",
       "alt": "",
       "name": "ta",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t̪"
@@ -712,6 +771,8 @@
       "glyph": "थ",
       "alt": "",
       "name": "tha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t̪ʰ"
@@ -731,6 +792,8 @@
       "glyph": "द",
       "alt": "",
       "name": "da",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d̪"
@@ -750,6 +813,8 @@
       "glyph": "ध",
       "alt": "",
       "name": "dha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d̪ʱ"
@@ -769,6 +834,8 @@
       "glyph": "न",
       "alt": "",
       "name": "na",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "n"
@@ -788,6 +855,8 @@
       "glyph": "प",
       "alt": "",
       "name": "pa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "p"
@@ -807,6 +876,8 @@
       "glyph": "फ",
       "alt": "",
       "name": "pha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "pʰ",
@@ -827,6 +898,8 @@
       "glyph": "ब",
       "alt": "",
       "name": "ba",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "b"
@@ -846,6 +919,8 @@
       "glyph": "भ",
       "alt": "",
       "name": "bha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "bʱ"
@@ -865,6 +940,8 @@
       "glyph": "म",
       "alt": "",
       "name": "ma",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "m"
@@ -884,6 +961,8 @@
       "glyph": "य",
       "alt": "",
       "name": "ya",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "j"
@@ -903,6 +982,8 @@
       "glyph": "र",
       "alt": "",
       "name": "ra",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾ"
@@ -922,6 +1003,8 @@
       "glyph": "ल",
       "alt": "",
       "name": "la",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "l"
@@ -941,6 +1024,8 @@
       "glyph": "व",
       "alt": "",
       "name": "va",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʋ"
@@ -960,6 +1045,8 @@
       "glyph": "श",
       "alt": "",
       "name": "śa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʃ"
@@ -979,6 +1066,8 @@
       "glyph": "ष",
       "alt": "",
       "name": "ṣa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʂ",
@@ -999,6 +1088,8 @@
       "glyph": "स",
       "alt": "",
       "name": "sa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s"
@@ -1018,6 +1109,8 @@
       "glyph": "ह",
       "alt": "",
       "name": "ha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɦ"

@@ -13,6 +13,12 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
+  "sections": [
+    "Consonants",
+    "Vowel signs",
+    "Tone marks",
+    "Modifiers"
+  ],
   "links": [
     {
       "label": "Thai script",
@@ -187,16 +193,22 @@
     "ɪ": "https://en.wikipedia.org/wiki/Near-close_front_unrounded_vowel",
     "ʊ": "https://en.wikipedia.org/wiki/Near-close_back_rounded_vowel",
     "ɤ": "https://en.wikipedia.org/wiki/Close-mid_back_unrounded_vowel",
-    "ɯ": "https://en.wikipedia.org/wiki/Close_back_unrounded_vowel",
-    "ɨ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
+    "ɯ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
     "ɐ": "https://en.wikipedia.org/wiki/Near-open_central_vowel",
-    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel"
+    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel",
+    "˩": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˨": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˧": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˦": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
   },
   "letters": [
     {
       "glyph": "ก",
       "alt": "",
       "name": "ko kai",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "k",
@@ -217,6 +229,8 @@
       "glyph": "ข",
       "alt": "",
       "name": "kho khai",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kʰ",
@@ -237,6 +251,8 @@
       "glyph": "ฃ",
       "alt": "",
       "name": "kho khuat",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kʰ",
@@ -257,6 +273,8 @@
       "glyph": "ค",
       "alt": "",
       "name": "kho khwai",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kʰ",
@@ -277,6 +295,8 @@
       "glyph": "ฅ",
       "alt": "",
       "name": "kho khon",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kʰ",
@@ -297,6 +317,8 @@
       "glyph": "ฆ",
       "alt": "",
       "name": "kho rakhang",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kʰ",
@@ -317,6 +339,8 @@
       "glyph": "ง",
       "alt": "",
       "name": "ngo ngu",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ŋ"
@@ -336,6 +360,8 @@
       "glyph": "จ",
       "alt": "",
       "name": "cho chan",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ɕ",
@@ -356,6 +382,8 @@
       "glyph": "ฉ",
       "alt": "",
       "name": "cho ching",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ɕʰ"
@@ -375,6 +403,8 @@
       "glyph": "ช",
       "alt": "",
       "name": "cho chang",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ɕʰ",
@@ -395,6 +425,8 @@
       "glyph": "ซ",
       "alt": "",
       "name": "so so",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s",
@@ -415,6 +447,8 @@
       "glyph": "ฌ",
       "alt": "",
       "name": "cho choe",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ɕʰ"
@@ -434,6 +468,8 @@
       "glyph": "ญ",
       "alt": "",
       "name": "yo ying",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "j",
@@ -454,6 +490,8 @@
       "glyph": "ฎ",
       "alt": "",
       "name": "do chada",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d",
@@ -474,6 +512,8 @@
       "glyph": "ฏ",
       "alt": "",
       "name": "to patak",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t",
@@ -494,6 +534,8 @@
       "glyph": "ฐ",
       "alt": "",
       "name": "tho than",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "tʰ",
@@ -514,6 +556,8 @@
       "glyph": "ฑ",
       "alt": "",
       "name": "tho nangmontho",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "tʰ",
@@ -535,6 +579,8 @@
       "glyph": "ฒ",
       "alt": "",
       "name": "tho phuthao",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "tʰ",
@@ -555,6 +601,8 @@
       "glyph": "ณ",
       "alt": "",
       "name": "no nen",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "n"
@@ -574,6 +622,8 @@
       "glyph": "ด",
       "alt": "",
       "name": "do dek",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d",
@@ -594,6 +644,8 @@
       "glyph": "ต",
       "alt": "",
       "name": "to tao",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t",
@@ -614,6 +666,8 @@
       "glyph": "ถ",
       "alt": "",
       "name": "tho thung",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "tʰ",
@@ -634,6 +688,8 @@
       "glyph": "ท",
       "alt": "",
       "name": "tho thahan",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "tʰ",
@@ -654,6 +710,8 @@
       "glyph": "ธ",
       "alt": "",
       "name": "tho thong",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "tʰ",
@@ -674,6 +732,8 @@
       "glyph": "น",
       "alt": "",
       "name": "no nu",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "n"
@@ -693,6 +753,8 @@
       "glyph": "บ",
       "alt": "",
       "name": "bo baimai",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "b",
@@ -713,6 +775,8 @@
       "glyph": "ป",
       "alt": "",
       "name": "po pla",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "p",
@@ -733,6 +797,8 @@
       "glyph": "ผ",
       "alt": "",
       "name": "pho phueng",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "pʰ"
@@ -752,6 +818,8 @@
       "glyph": "ฝ",
       "alt": "",
       "name": "fo fa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "f"
@@ -771,6 +839,8 @@
       "glyph": "พ",
       "alt": "",
       "name": "pho phan",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "pʰ",
@@ -791,6 +861,8 @@
       "glyph": "ฟ",
       "alt": "",
       "name": "fo fan",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "f",
@@ -811,6 +883,8 @@
       "glyph": "ภ",
       "alt": "",
       "name": "pho samphao",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "pʰ",
@@ -831,6 +905,8 @@
       "glyph": "ม",
       "alt": "",
       "name": "mo ma",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "m"
@@ -850,6 +926,8 @@
       "glyph": "ย",
       "alt": "",
       "name": "yo yak",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "j"
@@ -869,6 +947,8 @@
       "glyph": "ร",
       "alt": "",
       "name": "ro ruea",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "r",
@@ -889,6 +969,8 @@
       "glyph": "ล",
       "alt": "",
       "name": "lo ling",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "l",
@@ -909,6 +991,8 @@
       "glyph": "ว",
       "alt": "",
       "name": "wo waen",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "w"
@@ -928,6 +1012,8 @@
       "glyph": "ศ",
       "alt": "",
       "name": "so sala",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s",
@@ -948,6 +1034,8 @@
       "glyph": "ษ",
       "alt": "",
       "name": "so ruesi",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s",
@@ -968,6 +1056,8 @@
       "glyph": "ส",
       "alt": "",
       "name": "so suea",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s",
@@ -988,6 +1078,8 @@
       "glyph": "ห",
       "alt": "",
       "name": "ho hip",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "h"
@@ -1007,6 +1099,8 @@
       "glyph": "ฬ",
       "alt": "",
       "name": "lo chula",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "l",
@@ -1027,6 +1121,8 @@
       "glyph": "อ",
       "alt": "",
       "name": "o ang",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʔ"
@@ -1046,6 +1142,8 @@
       "glyph": "ฮ",
       "alt": "",
       "name": "ho nokhuk",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "h"
@@ -1060,6 +1158,443 @@
       "signwriting_image": "images/signwriting/thai/S11502.png",
       "aliases": [],
       "notes": ""
+    },
+    {
+      "glyph": "ะ",
+      "alt": "",
+      "name": "sara a",
+      "display_glyph": "◌ะ",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "a"
+      ],
+      "handshape": null,
+      "example_word": "กะทิ",
+      "example_gloss": "coconut milk",
+      "example_image": null,
+      "example_emoji": "🥥",
+      "example_ipa": "kàː.tí",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ั",
+      "alt": "",
+      "name": "mai han akat",
+      "display_glyph": "◌ั",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "a"
+      ],
+      "handshape": null,
+      "example_word": "วัน",
+      "example_gloss": "day",
+      "example_image": null,
+      "example_emoji": "📅",
+      "example_ipa": "wan",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "า",
+      "alt": "",
+      "name": "sara aa",
+      "display_glyph": "◌า",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "aː"
+      ],
+      "handshape": null,
+      "example_word": "ปลา",
+      "example_gloss": "fish",
+      "example_image": null,
+      "example_emoji": "🐟",
+      "example_ipa": "plaː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ำ",
+      "alt": "",
+      "name": "sara am",
+      "display_glyph": "◌ำ",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "am"
+      ],
+      "handshape": null,
+      "example_word": "น้ำ",
+      "example_gloss": "water",
+      "example_image": null,
+      "example_emoji": "💧",
+      "example_ipa": "náːm",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Stands for a vowel plus a final m, which is why it takes a space of its own rather than sitting above the consonant."
+    },
+    {
+      "glyph": "ิ",
+      "alt": "",
+      "name": "sara i",
+      "display_glyph": "◌ิ",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "i"
+      ],
+      "handshape": null,
+      "example_word": "ดิน",
+      "example_gloss": "soil",
+      "example_image": null,
+      "example_emoji": "🪨",
+      "example_ipa": "din",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ี",
+      "alt": "",
+      "name": "sara ii",
+      "display_glyph": "◌ี",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "iː"
+      ],
+      "handshape": null,
+      "example_word": "สี",
+      "example_gloss": "colour",
+      "example_image": null,
+      "example_emoji": "🎨",
+      "example_ipa": "sǐː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ึ",
+      "alt": "",
+      "name": "sara ue",
+      "display_glyph": "◌ึ",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "ɯ"
+      ],
+      "handshape": null,
+      "example_word": "หนึ่ง",
+      "example_gloss": "one",
+      "example_image": null,
+      "example_emoji": "1️⃣",
+      "example_ipa": "nɯ̀ŋ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ื",
+      "alt": "",
+      "name": "sara uee",
+      "display_glyph": "◌ื",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "ɯː"
+      ],
+      "handshape": null,
+      "example_word": "มือ",
+      "example_gloss": "hand",
+      "example_image": null,
+      "example_emoji": "✋",
+      "example_ipa": "mɯː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ุ",
+      "alt": "",
+      "name": "sara u",
+      "display_glyph": "◌ุ",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "u"
+      ],
+      "handshape": null,
+      "example_word": "ลุง",
+      "example_gloss": "uncle",
+      "example_image": null,
+      "example_emoji": "👨",
+      "example_ipa": "luŋ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ู",
+      "alt": "",
+      "name": "sara uu",
+      "display_glyph": "◌ู",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "uː"
+      ],
+      "handshape": null,
+      "example_word": "หมู",
+      "example_gloss": "pig",
+      "example_image": null,
+      "example_emoji": "🐷",
+      "example_ipa": "mǔː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "เ",
+      "alt": "",
+      "name": "sara e",
+      "display_glyph": "เ◌",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "eː"
+      ],
+      "handshape": null,
+      "example_word": "เสือ",
+      "example_gloss": "tiger",
+      "example_image": null,
+      "example_emoji": "🐅",
+      "example_ipa": "sɯːa",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Written before the consonant it follows in speech."
+    },
+    {
+      "glyph": "แ",
+      "alt": "",
+      "name": "sara ae",
+      "display_glyph": "แ◌",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "ɛː"
+      ],
+      "handshape": null,
+      "example_word": "แมว",
+      "example_gloss": "cat",
+      "example_image": null,
+      "example_emoji": "🐈",
+      "example_ipa": "mɛːw",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Written before the consonant it follows in speech."
+    },
+    {
+      "glyph": "โ",
+      "alt": "",
+      "name": "sara o",
+      "display_glyph": "โ◌",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "oː"
+      ],
+      "handshape": null,
+      "example_word": "โต๊ะ",
+      "example_gloss": "table",
+      "example_image": null,
+      "example_emoji": "🪑",
+      "example_ipa": "toːʔ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Written before the consonant it follows in speech."
+    },
+    {
+      "glyph": "ใ",
+      "alt": "",
+      "name": "sara ai maimuan",
+      "display_glyph": "ใ◌",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "aj"
+      ],
+      "handshape": null,
+      "example_word": "ใจ",
+      "example_gloss": "heart",
+      "example_image": null,
+      "example_emoji": "❤️",
+      "example_ipa": "tɕaj",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "One of only twenty words use this form; everything else takes ไ."
+    },
+    {
+      "glyph": "ไ",
+      "alt": "",
+      "name": "sara ai maimalai",
+      "display_glyph": "ไ◌",
+      "section": "Vowel signs",
+      "romanization": null,
+      "ipa": [
+        "aj"
+      ],
+      "handshape": null,
+      "example_word": "ไฟ",
+      "example_gloss": "fire",
+      "example_image": null,
+      "example_emoji": "🔥",
+      "example_ipa": "faj",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Written before the consonant it follows in speech."
+    },
+    {
+      "glyph": "่",
+      "alt": "",
+      "name": "mai ek",
+      "display_glyph": "◌่",
+      "section": "Tone marks",
+      "romanization": null,
+      "ipa": [
+        "˨˩"
+      ],
+      "handshape": null,
+      "example_word": "พ่อ",
+      "example_gloss": "father",
+      "example_image": null,
+      "example_emoji": "👨",
+      "example_ipa": "phôː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Low tone on a mid or high class consonant, falling on a low class one."
+    },
+    {
+      "glyph": "้",
+      "alt": "",
+      "name": "mai tho",
+      "display_glyph": "◌้",
+      "section": "Tone marks",
+      "romanization": null,
+      "ipa": [
+        "˥˩"
+      ],
+      "handshape": null,
+      "example_word": "บ้าน",
+      "example_gloss": "house",
+      "example_image": null,
+      "example_emoji": "🏠",
+      "example_ipa": "bâːn",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Falling on a mid or high class consonant, high on a low class one."
+    },
+    {
+      "glyph": "๊",
+      "alt": "",
+      "name": "mai tri",
+      "display_glyph": "◌๊",
+      "section": "Tone marks",
+      "romanization": null,
+      "ipa": [
+        "˦˥"
+      ],
+      "handshape": null,
+      "example_word": "ตุ๊กตา",
+      "example_gloss": "doll",
+      "example_image": null,
+      "example_emoji": "🧸",
+      "example_ipa": "túk.ka.taː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Used almost only with mid class consonants."
+    },
+    {
+      "glyph": "๋",
+      "alt": "",
+      "name": "mai chattawa",
+      "display_glyph": "◌๋",
+      "section": "Tone marks",
+      "romanization": null,
+      "ipa": [
+        "˩˩˦"
+      ],
+      "handshape": null,
+      "example_word": "ก๋วยเตี๋ยว",
+      "example_gloss": "noodle soup",
+      "example_image": null,
+      "example_emoji": "🍜",
+      "example_ipa": "kǔaj.tǐaw",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Used almost only with mid class consonants."
+    },
+    {
+      "glyph": "็",
+      "alt": "",
+      "name": "mai taikhu",
+      "display_glyph": "◌็",
+      "section": "Modifiers",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "เป็ด",
+      "example_gloss": "duck",
+      "example_image": null,
+      "example_emoji": "🦆",
+      "example_ipa": "pèt",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Shortens the vowel it sits over."
+    },
+    {
+      "glyph": "์",
+      "alt": "",
+      "name": "thanthakhat",
+      "display_glyph": "◌์",
+      "section": "Modifiers",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "จันทร์",
+      "example_gloss": "moon",
+      "example_image": null,
+      "example_emoji": "🌙",
+      "example_ipa": "tɕan",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Silences the letter beneath it, usually in a word borrowed from Sanskrit or English."
     }
   ]
 }

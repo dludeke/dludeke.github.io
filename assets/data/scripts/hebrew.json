@@ -15,6 +15,7 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
+  "sections": null,
   "links": [
     {
       "label": "Hebrew alphabet",
@@ -189,16 +190,22 @@
     "ɪ": "https://en.wikipedia.org/wiki/Near-close_front_unrounded_vowel",
     "ʊ": "https://en.wikipedia.org/wiki/Near-close_back_rounded_vowel",
     "ɤ": "https://en.wikipedia.org/wiki/Close-mid_back_unrounded_vowel",
-    "ɯ": "https://en.wikipedia.org/wiki/Close_back_unrounded_vowel",
-    "ɨ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
+    "ɯ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
     "ɐ": "https://en.wikipedia.org/wiki/Near-open_central_vowel",
-    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel"
+    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel",
+    "˩": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˨": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˧": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˦": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
   },
   "letters": [
     {
       "glyph": "א",
       "alt": "",
       "name": "Alef",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʔ",
@@ -219,6 +226,8 @@
       "glyph": "ב",
       "alt": "",
       "name": "Bet",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "b",
@@ -239,6 +248,8 @@
       "glyph": "ג",
       "alt": "",
       "name": "Gimel",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɡ"
@@ -258,6 +269,8 @@
       "glyph": "ד",
       "alt": "",
       "name": "Dalet",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d"
@@ -277,6 +290,8 @@
       "glyph": "ה",
       "alt": "",
       "name": "He",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "h",
@@ -297,6 +312,8 @@
       "glyph": "ו",
       "alt": "",
       "name": "Vav",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "v",
@@ -318,6 +335,8 @@
       "glyph": "ז",
       "alt": "",
       "name": "Zayin",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "z"
@@ -337,6 +356,8 @@
       "glyph": "ח",
       "alt": "",
       "name": "Het",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "χ"
@@ -356,6 +377,8 @@
       "glyph": "ט",
       "alt": "",
       "name": "Tet",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t"
@@ -375,6 +398,8 @@
       "glyph": "י",
       "alt": "",
       "name": "Yod",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "j",
@@ -395,6 +420,8 @@
       "glyph": "כ",
       "alt": "ך",
       "name": "Kaf",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "k",
@@ -415,6 +442,8 @@
       "glyph": "ל",
       "alt": "",
       "name": "Lamed",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "l"
@@ -434,6 +463,8 @@
       "glyph": "מ",
       "alt": "ם",
       "name": "Mem",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "m"
@@ -453,6 +484,8 @@
       "glyph": "נ",
       "alt": "ן",
       "name": "Nun",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "n"
@@ -472,6 +505,8 @@
       "glyph": "ס",
       "alt": "",
       "name": "Samekh",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s"
@@ -491,6 +526,8 @@
       "glyph": "ע",
       "alt": "",
       "name": "Ayin",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʔ",
@@ -511,6 +548,8 @@
       "glyph": "פ",
       "alt": "ף",
       "name": "Pe",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "p",
@@ -531,6 +570,8 @@
       "glyph": "צ",
       "alt": "ץ",
       "name": "Tsadi",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ts"
@@ -550,6 +591,8 @@
       "glyph": "ק",
       "alt": "",
       "name": "Qof",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "k"
@@ -569,6 +612,8 @@
       "glyph": "ר",
       "alt": "",
       "name": "Resh",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʁ"
@@ -588,6 +633,8 @@
       "glyph": "ש",
       "alt": "",
       "name": "Shin",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʃ",
@@ -608,6 +655,8 @@
       "glyph": "ת",
       "alt": "",
       "name": "Tav",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t"

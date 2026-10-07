@@ -13,6 +13,7 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
+  "sections": null,
   "links": [
     {
       "label": "Pinyin",
@@ -187,16 +188,22 @@
     "ɪ": "https://en.wikipedia.org/wiki/Near-close_front_unrounded_vowel",
     "ʊ": "https://en.wikipedia.org/wiki/Near-close_back_rounded_vowel",
     "ɤ": "https://en.wikipedia.org/wiki/Close-mid_back_unrounded_vowel",
-    "ɯ": "https://en.wikipedia.org/wiki/Close_back_unrounded_vowel",
-    "ɨ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
+    "ɯ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
     "ɐ": "https://en.wikipedia.org/wiki/Near-open_central_vowel",
-    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel"
+    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel",
+    "˩": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˨": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˧": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˦": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
   },
   "letters": [
     {
       "glyph": "A",
       "alt": "a",
       "name": "A",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "a"
@@ -216,6 +223,8 @@
       "glyph": "B",
       "alt": "b",
       "name": "B",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "p"
@@ -235,6 +244,8 @@
       "glyph": "C",
       "alt": "c",
       "name": "C",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡sʰ"
@@ -254,6 +265,8 @@
       "glyph": "D",
       "alt": "d",
       "name": "D",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t"
@@ -273,6 +286,8 @@
       "glyph": "E",
       "alt": "e",
       "name": "E",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɤ",
@@ -293,6 +308,8 @@
       "glyph": "F",
       "alt": "f",
       "name": "F",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "f"
@@ -312,6 +329,8 @@
       "glyph": "G",
       "alt": "g",
       "name": "G",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "k"
@@ -331,6 +350,8 @@
       "glyph": "H",
       "alt": "h",
       "name": "H",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "x"
@@ -350,6 +371,8 @@
       "glyph": "I",
       "alt": "i",
       "name": "I",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "i",
@@ -370,6 +393,8 @@
       "glyph": "J",
       "alt": "j",
       "name": "J",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ɕ"
@@ -389,6 +414,8 @@
       "glyph": "K",
       "alt": "k",
       "name": "K",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kʰ"
@@ -408,6 +435,8 @@
       "glyph": "L",
       "alt": "l",
       "name": "L",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "l"
@@ -427,6 +456,8 @@
       "glyph": "M",
       "alt": "m",
       "name": "M",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "m"
@@ -446,6 +477,8 @@
       "glyph": "N",
       "alt": "n",
       "name": "N",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "n",
@@ -466,6 +499,8 @@
       "glyph": "O",
       "alt": "o",
       "name": "O",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "o",
@@ -486,6 +521,8 @@
       "glyph": "P",
       "alt": "p",
       "name": "P",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "pʰ"
@@ -505,6 +542,8 @@
       "glyph": "Q",
       "alt": "q",
       "name": "Q",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ɕʰ"
@@ -524,6 +563,8 @@
       "glyph": "R",
       "alt": "r",
       "name": "R",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʐ",
@@ -544,6 +585,8 @@
       "glyph": "S",
       "alt": "s",
       "name": "S",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s"
@@ -563,6 +606,8 @@
       "glyph": "T",
       "alt": "t",
       "name": "T",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "tʰ"
@@ -572,7 +617,7 @@
       "example_gloss": "rabbit",
       "example_image": null,
       "example_emoji": "🐰",
-      "example_ipa": "tʰu˥˩ t͡sɨ",
+      "example_ipa": "tʰu˥˩ t͡sɯ",
       "signwriting": "M511x515S1a120490x486",
       "signwriting_image": "images/signwriting/pinyin/S1a120.png",
       "aliases": [],
@@ -582,6 +627,8 @@
       "glyph": "U",
       "alt": "u",
       "name": "U",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "u"
@@ -601,6 +648,8 @@
       "glyph": "V",
       "alt": "v",
       "name": "V",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "y"
@@ -620,6 +669,8 @@
       "glyph": "W",
       "alt": "w",
       "name": "W",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "w"
@@ -639,6 +690,8 @@
       "glyph": "X",
       "alt": "x",
       "name": "X",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɕ"
@@ -658,6 +711,8 @@
       "glyph": "Y",
       "alt": "y",
       "name": "Y",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "j"
@@ -677,6 +732,8 @@
       "glyph": "Z",
       "alt": "z",
       "name": "Z",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡s"
@@ -686,7 +743,7 @@
       "example_gloss": "character",
       "example_image": null,
       "example_emoji": "🔤",
-      "example_ipa": "t͡sɨ˥˩",
+      "example_ipa": "t͡sɯ˥˩",
       "signwriting": "M515x510S1a002486x490",
       "signwriting_image": "images/signwriting/pinyin/S1a002.png",
       "aliases": [],
@@ -696,6 +753,8 @@
       "glyph": "ZH",
       "alt": "zh",
       "name": "ZH",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʈ͡ʂ"
@@ -715,6 +774,8 @@
       "glyph": "CH",
       "alt": "ch",
       "name": "CH",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʈ͡ʂʰ"
@@ -734,6 +795,8 @@
       "glyph": "SH",
       "alt": "sh",
       "name": "SH",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʂ"
@@ -753,6 +816,8 @@
       "glyph": "NG",
       "alt": "ng",
       "name": "NG",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ŋ"

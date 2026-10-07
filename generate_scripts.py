@@ -18,7 +18,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             LINKS, GLOSSARY, IPA_LINKS,
                             GEEZ_ORDERS, GEEZ_CONSONANTS, GEEZ_EXTRA_WORDS,
-                            GEEZ_RARE_ROWS)
+                            GEEZ_RARE_ROWS, THAI_VOWELS, THAI_TONES,
+                            THAI_MODIFIERS, thai_display)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -58,6 +59,25 @@ SCRIPTS = [
 ]
 
 # letters: (glyph, lowercase_or_alt, name)  -- alt is "" when there is no pair
+# The Thai marks carry their content in one table rather than five, since
+# they were added together; spread it into the per-field tables.
+for _g, _n, _i, _w, _wi, _no in THAI_VOWELS + THAI_TONES + THAI_MODIFIERS:
+    if _i:
+        IPA_TABLE.setdefault("thai", {})[_g] = _i
+    WORDS.setdefault("thai", {})[_g] = _w
+    WORD_IPA.setdefault("thai", {})[_g] = _wi
+    if _no:
+        NOTES.setdefault("thai", {})[_g] = _no
+
+SECTIONS = {"thai": ([("Consonants", None)]
+                     + [("Vowel signs", g) for g, *_ in THAI_VOWELS]
+                     + [("Tone marks", g) for g, *_ in THAI_TONES]
+                     + [("Modifiers", g) for g, *_ in THAI_MODIFIERS])}
+SECTION_OF = {slug: {g: name for name, g in rows if g}
+              for slug, rows in SECTIONS.items()}
+SECTION_ORDER = {slug: list(dict.fromkeys(n for n, _ in rows))
+                 for slug, rows in SECTIONS.items()}
+
 def geez_syllabary():
     """All 231 Ethiopic syllables as (glyph, alt, name) triples, row by row.
 
@@ -145,7 +165,8 @@ LETTERS = {
  ("ฝ","","fo fa"),("พ","","pho phan"),("ฟ","","fo fan"),("ภ","","pho samphao"),
  ("ม","","mo ma"),("ย","","yo yak"),("ร","","ro ruea"),("ล","","lo ling"),
  ("ว","","wo waen"),("ศ","","so sala"),("ษ","","so ruesi"),("ส","","so suea"),
- ("ห","","ho hip"),("ฬ","","lo chula"),("อ","","o ang"),("ฮ","","ho nokhuk")],
+ ("ห","","ho hip"),("ฬ","","lo chula"),("อ","","o ang"),("ฮ","","ho nokhuk")]
+ + [(g, "", n) for g, n, _i, _w, _wi, _no in THAI_VOWELS + THAI_TONES + THAI_MODIFIERS],
 
 "hangul": [("ㄱ","","giyeok"),("ㄴ","","nieun"),("ㄷ","","digeut"),("ㄹ","","rieul"),
  ("ㅁ","","mieum"),("ㅂ","","bieup"),("ㅅ","","siot"),("ㅇ","","ieung"),
@@ -324,6 +345,11 @@ def main():
                 "glyph": glyph,
                 "alt": alt,            # lowercase, katakana, or final form
                 "name": label,
+                # a combining mark drawn on a dotted circle, so the card shows
+                # where it sits rather than floating it on nothing
+                "display_glyph": thai_display(glyph) if slug == "thai" and
+                                 glyph in SECTION_OF.get("thai", {}) else None,
+                "section": SECTION_OF.get(slug, {}).get(glyph),
                 "romanization": None,
                 "ipa": [],             # possible IPA values, filled in later
                 "handshape": None,     # path to the manual-alphabet image
@@ -434,6 +460,7 @@ def main():
             "status": "skeleton",
             "attribution": ATTRIBUTION.get(slug),
             "layout": LAYOUTS.get(slug),
+            "sections": SECTION_ORDER.get(slug),
             "links": [{"label": l, "url": u} for l, u in LINKS.get(slug, [])],
             "glossary": GLOSSARY,
             "ipa_links": {k: v for k, v in IPA_LINKS.items() if v},

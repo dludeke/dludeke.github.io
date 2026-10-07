@@ -374,7 +374,7 @@ IPA["cyrillic"] = {
  "М": ["m", "mʲ"], "Н": ["n", "nʲ"], "О": ["o", "ɐ"], "П": ["p", "pʲ"],
  "Р": ["r", "rʲ"], "С": ["s", "sʲ"], "Т": ["t", "tʲ"], "У": ["u"],
  "Ф": ["f", "fʲ"], "Х": ["x"], "Ц": ["t͡s"], "Ч": ["t͡ɕ"], "Ш": ["ʂ"],
- "Щ": ["ɕː"], "Ъ": ["—"], "Ы": ["ɨ"], "Ь": ["ʲ"], "Э": ["e"],
+ "Щ": ["ɕː"], "Ъ": ["—"], "Ы": ["ɯ"], "Ь": ["ʲ"], "Э": ["e"],
  "Ю": ["ju", "ʲu"], "Я": ["ja", "ʲa"],
 }
 
@@ -495,12 +495,12 @@ WORD_IPA["farsi"] = {
 
 WORD_IPA["cyrillic"] = {
  "А": "ɐrˈbus", "Б": "bərɐˈban", "В": "volk", "Г": "ˈɡruʂə", "Д": "ˈdʲerʲɪvə",
- "Е": "jelʲ", "Ё": "joʂ", "Ж": "ʐɨˈraf", "З": "zont", "И": "ɪˈɡolkə",
- "Й": "ˈjoɡurt", "К": "kərɐnˈdaʂ", "Л": "ˈloʂətʲ", "М": "mɨʂ",
- "Н": "ˈnoʐnʲɪtsɨ", "О": "ɐbʲɪˈzʲjanə", "П": "pəmʲɪˈdor", "Р": "ˈrɨbə",
+ "Е": "jelʲ", "Ё": "joʂ", "Ж": "ʐɯˈraf", "З": "zont", "И": "ɪˈɡolkə",
+ "Й": "ˈjoɡurt", "К": "kərɐnˈdaʂ", "Л": "ˈloʂətʲ", "М": "mɯʂ",
+ "Н": "ˈnoʐnʲɪtsɯ", "О": "ɐbʲɪˈzʲjanə", "П": "pəmʲɪˈdor", "Р": "ˈrɯbə",
  "С": "slon", "Т": "tʲɪlʲɪˈfon", "У": "ʊˈlʲitkə", "Ф": "fɐˈnarʲ", "Х": "xlʲep",
  "Ц": "tsvʲɪˈtok", "Ч": "ˈtɕajnʲɪk", "Ш": "ʂarf", "Щ": "ˈɕːɵtkə",
- "Ъ": "pɐdˈjest", "Ы": "sɨr", "Ь": "solʲ", "Э": "ɛkskɐˈvatər", "Ю": "jʊˈla",
+ "Ъ": "pɐdˈjest", "Ы": "sɯr", "Ь": "solʲ", "Э": "ɛkskɐˈvatər", "Ю": "jʊˈla",
  "Я": "ˈjablələkə",
 }
 
@@ -564,8 +564,8 @@ WORD_IPA["pinyin"] = {
  "F": "feɪ̯˥ tɕi˥", "G": "koʊ̯˨˩˦", "H": "xwa˥", "I": "i˥", "J": "tɕi˥",
  "K": "kʰa˥ feɪ̯˥", "L": "lʊŋ˧˥", "M": "maʊ̯˥", "N": "njoʊ̯˧˥", "O": "oʊ̯˨˩˦",
  "P": "pʰiŋ˧˥ kwo˨˩˦", "Q": "tɕʰjoʊ̯˧˥", "R": "ʐən˧˥", "S": "san˨˩˦",
- "T": "tʰu˥˩ t͡sɨ", "U": "u˥", "V": "ly˥˩", "W": "wan˨˩˦",
- "X": "ɕjʊŋ˧˥ maʊ̯˥", "Y": "y˧˥", "Z": "t͡sɨ˥˩", "ZH": "ʈʂu˥",
+ "T": "tʰu˥˩ t͡sɯ", "U": "u˥", "V": "ly˥˩", "W": "wan˨˩˦",
+ "X": "ɕjʊŋ˧˥ maʊ̯˥", "Y": "y˧˥", "Z": "t͡sɯ˥˩", "ZH": "ʈʂu˥",
  "CH": "ʈʂʰɤ˥", "SH": "ʂu˥", "NG": "jaŋ˧˥",
 }
 
@@ -833,7 +833,7 @@ IPA_LINKS = {
  "ʌ": W+"Open-mid_back_unrounded_vowel", "ɒ": W+"Open_back_rounded_vowel",
  "ɑ": W+"Open_back_unrounded_vowel", "ɪ": W+"Near-close_front_unrounded_vowel",
  "ʊ": W+"Near-close_back_rounded_vowel", "ɤ": W+"Close-mid_back_unrounded_vowel",
- "ɯ": W+"Close_back_unrounded_vowel", "ɨ": W+"Close_central_unrounded_vowel",
+ "ɯ": W+"Close_back_unrounded_vowel", "ɯ": W+"Close_central_unrounded_vowel",
  "ɐ": W+"Near-open_central_vowel", "ä": W+"Open_central_unrounded_vowel",
  "—": None,
 }
@@ -851,7 +851,7 @@ GEEZ_ORDERS = [
     ("i", "i"),             # 3rd
     ("a", "a"),             # 4th
     ("e", "e"),             # 5th
-    ("ə", "ɨ"),   # 6th  often silent
+    ("ə", "ɯ"),   # 6th  often silent
     ("o", "o"),             # 7th
 ]
 
@@ -1006,4 +1006,65 @@ GEEZ_EXTRA_WORDS.update({
  "ዑ": ("ዑደት", "cycle", "🔄"),
  "ጳ": ("ጳጳስ", "bishop", "⛪"),
  "ጺ": ("ጺም", "beard", "🧔"), "ጾ": ("ጾም", "fast", "🍽️"),
+})
+
+# Thai writes its vowels as marks around the consonant rather than as letters
+# in the alphabet, so the 44 consonants alone cannot spell a word. These are
+# the vowel signs, the four tone marks and the two modifiers that complete it.
+# (glyph, name, [ipa], (word, gloss, emoji), word_ipa, note)
+THAI_VOWELS = [
+ ("ะ", "sara a", ["a"], ("กะทิ", "coconut milk", "\U0001f965"), "kàː.tí", None),
+ ("ั", "mai han akat", ["a"], ("วัน", "day", "\U0001f4c5"), "wan", None),
+ ("า", "sara aa", ["aː"], ("ปลา", "fish", "\U0001f41f"), "plaː", None),
+ ("ำ", "sara am", ["am"], ("น้ำ", "water", "\U0001f4a7"), "náːm", "Stands for a vowel plus a final m, which is why it takes a space of its own rather than sitting above the consonant."),
+ ("ิ", "sara i", ["i"], ("ดิน", "soil", "\U0001faa8"), "din", None),
+ ("ี", "sara ii", ["iː"], ("สี", "colour", "\U0001f3a8"), "sǐː", None),
+ ("ึ", "sara ue", ["ɯ"], ("หนึ่ง", "one", "1️⃣"), "nɯ̀ŋ", None),
+ ("ื", "sara uee", ["ɯː"], ("มือ", "hand", "✋"), "mɯː", None),
+ ("ุ", "sara u", ["u"], ("ลุง", "uncle", "\U0001f468"), "luŋ", None),
+ ("ู", "sara uu", ["uː"], ("หมู", "pig", "\U0001f437"), "mǔː", None),
+ ("เ", "sara e", ["eː"], ("เสือ", "tiger", "\U0001f405"), "sɯːa", "Written before the consonant it follows in speech."),
+ ("แ", "sara ae", ["ɛː"], ("แมว", "cat", "\U0001f408"), "mɛːw", "Written before the consonant it follows in speech."),
+ ("โ", "sara o", ["oː"], ("โต๊ะ", "table", "\U0001fa91"), "toːʔ", "Written before the consonant it follows in speech."),
+ ("ใ", "sara ai maimuan", ["aj"], ("ใจ", "heart", "❤️"), "tɕaj", "One of only twenty words use this form; everything else takes ไ."),
+ ("ไ", "sara ai maimalai", ["aj"], ("ไฟ", "fire", "\U0001f525"), "faj", "Written before the consonant it follows in speech."),
+]
+
+THAI_TONES = [
+ ("่", "mai ek", ["˨˩"], ("พ่อ", "father", "\U0001f468"), "phôː", "Low tone on a mid or high class consonant, falling on a low class one."),
+ ("้", "mai tho", ["˥˩"], ("บ้าน", "house", "\U0001f3e0"), "bâːn", "Falling on a mid or high class consonant, high on a low class one."),
+ ("๊", "mai tri", ["˦˥"], ("ตุ๊กตา", "doll", "\U0001f9f8"), "túk.ka.taː", "Used almost only with mid class consonants."),
+ ("๋", "mai chattawa", ["˩˩˦"], ("ก๋วยเตี๋ยว", "noodle soup", "\U0001f35c"), "kǔaj.tǐaw", "Used almost only with mid class consonants."),
+]
+
+THAI_MODIFIERS = [
+ ("็", "mai taikhu", [], ("เป็ด", "duck", "\U0001f986"), "pèt", "Shortens the vowel it sits over."),
+ ("์", "thanthakhat", [], ("จันทร์", "moon", "\U0001f319"), "tɕan", "Silences the letter beneath it, usually in a word borrowed from Sanskrit or English."),
+]
+
+THAI_SECTIONS = ([("Consonants", None)] +
+                 [("Vowel signs", g) for g, *_ in THAI_VOWELS] +
+                 [("Tone marks", g) for g, *_ in THAI_TONES] +
+                 [("Modifiers", g) for g, *_ in THAI_MODIFIERS])
+
+# Where each mark sits relative to its consonant. The reference shows it on a
+# dotted circle so the position is visible rather than described: เ◌ is written
+# to the left of the consonant, ◌ั above it, ◌ุ below.
+THAI_PREFIX = "\u0e40\u0e41\u0e42\u0e43\u0e44"
+
+
+def thai_display(glyph):
+    import unicodedata
+    if glyph in THAI_PREFIX:
+        return glyph + "\u25cc"
+    if unicodedata.combining(glyph) or unicodedata.category(glyph) == "Mn":
+        return "\u25cc" + glyph
+    return "\u25cc" + glyph
+
+# The tone letters the Thai tone marks use. They are a scale, not segments,
+# so they all point at the one article that explains the staff.
+IPA_LINKS.update({
+ "˩": W + "Tone_letter", "˨": W + "Tone_letter",
+ "˧": W + "Tone_letter", "˦": W + "Tone_letter",
+ "˥": W + "Tone_letter",
 })

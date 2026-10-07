@@ -101,6 +101,7 @@
       ]
     ]
   },
+  "sections": null,
   "links": [
     {
       "label": "Kana",
@@ -275,16 +276,22 @@
     "ɪ": "https://en.wikipedia.org/wiki/Near-close_front_unrounded_vowel",
     "ʊ": "https://en.wikipedia.org/wiki/Near-close_back_rounded_vowel",
     "ɤ": "https://en.wikipedia.org/wiki/Close-mid_back_unrounded_vowel",
-    "ɯ": "https://en.wikipedia.org/wiki/Close_back_unrounded_vowel",
-    "ɨ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
+    "ɯ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
     "ɐ": "https://en.wikipedia.org/wiki/Near-open_central_vowel",
-    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel"
+    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel",
+    "˩": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˨": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˧": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˦": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
   },
   "letters": [
     {
       "glyph": "あ",
       "alt": "ア",
       "name": "a",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "a"
@@ -304,6 +311,8 @@
       "glyph": "い",
       "alt": "イ",
       "name": "i",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "i"
@@ -323,6 +332,8 @@
       "glyph": "う",
       "alt": "ウ",
       "name": "u",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɯ"
@@ -342,6 +353,8 @@
       "glyph": "え",
       "alt": "エ",
       "name": "e",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "e"
@@ -361,6 +374,8 @@
       "glyph": "お",
       "alt": "オ",
       "name": "o",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "o"
@@ -380,6 +395,8 @@
       "glyph": "か",
       "alt": "カ",
       "name": "ka",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ka"
@@ -399,6 +416,8 @@
       "glyph": "き",
       "alt": "キ",
       "name": "ki",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ki"
@@ -418,6 +437,8 @@
       "glyph": "く",
       "alt": "ク",
       "name": "ku",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "kɯ"
@@ -437,6 +458,8 @@
       "glyph": "け",
       "alt": "ケ",
       "name": "ke",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ke"
@@ -456,6 +479,8 @@
       "glyph": "こ",
       "alt": "コ",
       "name": "ko",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ko"
@@ -475,6 +500,8 @@
       "glyph": "さ",
       "alt": "サ",
       "name": "sa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "sa"
@@ -494,6 +521,8 @@
       "glyph": "し",
       "alt": "シ",
       "name": "shi",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɕi"
@@ -513,6 +542,8 @@
       "glyph": "す",
       "alt": "ス",
       "name": "su",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "sɯ"
@@ -532,6 +563,8 @@
       "glyph": "せ",
       "alt": "セ",
       "name": "se",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "se"
@@ -551,6 +584,8 @@
       "glyph": "そ",
       "alt": "ソ",
       "name": "so",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "so"
@@ -570,6 +605,8 @@
       "glyph": "た",
       "alt": "タ",
       "name": "ta",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ta"
@@ -589,6 +626,8 @@
       "glyph": "ち",
       "alt": "チ",
       "name": "chi",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ɕi"
@@ -608,6 +647,8 @@
       "glyph": "つ",
       "alt": "ツ",
       "name": "tsu",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡sɯ"
@@ -627,6 +668,8 @@
       "glyph": "て",
       "alt": "テ",
       "name": "te",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "te"
@@ -646,6 +689,8 @@
       "glyph": "と",
       "alt": "ト",
       "name": "to",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "to"
@@ -665,6 +710,8 @@
       "glyph": "な",
       "alt": "ナ",
       "name": "na",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "na"
@@ -684,6 +731,8 @@
       "glyph": "に",
       "alt": "ニ",
       "name": "ni",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɲi"
@@ -703,6 +752,8 @@
       "glyph": "ぬ",
       "alt": "ヌ",
       "name": "nu",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "nɯ"
@@ -722,6 +773,8 @@
       "glyph": "ね",
       "alt": "ネ",
       "name": "ne",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ne"
@@ -741,6 +794,8 @@
       "glyph": "の",
       "alt": "ノ",
       "name": "no",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "no"
@@ -760,6 +815,8 @@
       "glyph": "は",
       "alt": "ハ",
       "name": "ha",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ha",
@@ -780,6 +837,8 @@
       "glyph": "ひ",
       "alt": "ヒ",
       "name": "hi",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "çi"
@@ -799,6 +858,8 @@
       "glyph": "ふ",
       "alt": "フ",
       "name": "fu",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɸɯ"
@@ -818,6 +879,8 @@
       "glyph": "へ",
       "alt": "ヘ",
       "name": "he",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "he",
@@ -838,6 +901,8 @@
       "glyph": "ほ",
       "alt": "ホ",
       "name": "ho",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ho"
@@ -857,6 +922,8 @@
       "glyph": "ま",
       "alt": "マ",
       "name": "ma",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ma"
@@ -876,6 +943,8 @@
       "glyph": "み",
       "alt": "ミ",
       "name": "mi",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "mi"
@@ -895,6 +964,8 @@
       "glyph": "む",
       "alt": "ム",
       "name": "mu",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "mɯ"
@@ -914,6 +985,8 @@
       "glyph": "め",
       "alt": "メ",
       "name": "me",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "me"
@@ -933,6 +1006,8 @@
       "glyph": "も",
       "alt": "モ",
       "name": "mo",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "mo"
@@ -952,6 +1027,8 @@
       "glyph": "や",
       "alt": "ヤ",
       "name": "ya",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ja"
@@ -971,6 +1048,8 @@
       "glyph": "ゆ",
       "alt": "ユ",
       "name": "yu",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "jɯ"
@@ -990,6 +1069,8 @@
       "glyph": "よ",
       "alt": "ヨ",
       "name": "yo",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "jo"
@@ -1009,6 +1090,8 @@
       "glyph": "ら",
       "alt": "ラ",
       "name": "ra",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾa"
@@ -1028,6 +1111,8 @@
       "glyph": "り",
       "alt": "リ",
       "name": "ri",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾi"
@@ -1047,6 +1132,8 @@
       "glyph": "る",
       "alt": "ル",
       "name": "ru",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾɯ"
@@ -1066,6 +1153,8 @@
       "glyph": "れ",
       "alt": "レ",
       "name": "re",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾe"
@@ -1085,6 +1174,8 @@
       "glyph": "ろ",
       "alt": "ロ",
       "name": "ro",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾo"
@@ -1104,6 +1195,8 @@
       "glyph": "わ",
       "alt": "ワ",
       "name": "wa",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "wa"
@@ -1123,6 +1216,8 @@
       "glyph": "を",
       "alt": "ヲ",
       "name": "wo",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "o"
@@ -1142,6 +1237,8 @@
       "glyph": "ん",
       "alt": "ン",
       "name": "n",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "n",

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap" />
+        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Noto+Sans+Thai:wght@400;700&display=swap" />
   <style>
     .bar {
       display: flex; gap: 0.6rem; align-items: center;
@@ -28,6 +28,7 @@
     }
 
     .word {
+      font-family: "Noto Sans Thai", "Noto Sans", system-ui, -apple-system, sans-serif;
       font-size: 3.2rem; line-height: 1.15; margin-bottom: 0.4rem;
       word-break: break-word;
     }
@@ -47,7 +48,7 @@
       background: #f8f9fa;
     }
     .lt.unknown { background: #fff; border: 1px dashed #e3e8ec; }
-    .lt .ch { font-size: 2rem; line-height: 1.1; }
+    .lt .ch { font-size: 2rem; line-height: 1.1; font-family: "Noto Sans Thai", "Noto Sans", system-ui, -apple-system, sans-serif; }
     .lt .nm { font-size: 0.68rem; color: #9aa3ab; margin-top: 0.1rem; }
     .lt .ip {
       font-family: "Charis SIL", "Doulos SIL", serif;
@@ -592,7 +593,7 @@
         const hand = m && (m.handshape || (m.handshape_variants && Object.values(m.handshape_variants)[0]));
         return `
           <div class="lt${m ? '' : ' unknown'}">
-            <div class="ch">${ch}</div>
+            <div class="ch">${m && m.display_glyph ? m.display_glyph : ch}</div>
             <div class="nm">${m ? (m.name || '') : ''}</div>
             <div class="ip">${step >= 2 && m && (m.ipa || []).length ? '/' + m.ipa.join(', ') + '/' : ''}</div>
             <div class="pics">

@@ -13,6 +13,7 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
+  "sections": null,
   "links": [
     {
       "label": "Greek alphabet",
@@ -187,16 +188,22 @@
     "ɪ": "https://en.wikipedia.org/wiki/Near-close_front_unrounded_vowel",
     "ʊ": "https://en.wikipedia.org/wiki/Near-close_back_rounded_vowel",
     "ɤ": "https://en.wikipedia.org/wiki/Close-mid_back_unrounded_vowel",
-    "ɯ": "https://en.wikipedia.org/wiki/Close_back_unrounded_vowel",
-    "ɨ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
+    "ɯ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
     "ɐ": "https://en.wikipedia.org/wiki/Near-open_central_vowel",
-    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel"
+    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel",
+    "˩": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˨": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˧": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˦": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
   },
   "letters": [
     {
       "glyph": "Α",
       "alt": "α",
       "name": "Alpha",
+      "display_glyph": null,
+      "section": null,
       "romanization": "a",
       "ipa": [
         "a"
@@ -216,6 +223,8 @@
       "glyph": "Β",
       "alt": "β",
       "name": "Beta",
+      "display_glyph": null,
+      "section": null,
       "romanization": "v",
       "ipa": [
         "v"
@@ -235,6 +244,8 @@
       "glyph": "Γ",
       "alt": "γ",
       "name": "Gamma",
+      "display_glyph": null,
+      "section": null,
       "romanization": "g",
       "ipa": [
         "ɣ",
@@ -255,6 +266,8 @@
       "glyph": "Δ",
       "alt": "δ",
       "name": "Delta",
+      "display_glyph": null,
+      "section": null,
       "romanization": "d",
       "ipa": [
         "ð"
@@ -274,6 +287,8 @@
       "glyph": "Ε",
       "alt": "ε",
       "name": "Epsilon",
+      "display_glyph": null,
+      "section": null,
       "romanization": "e",
       "ipa": [
         "e"
@@ -293,6 +308,8 @@
       "glyph": "Ζ",
       "alt": "ζ",
       "name": "Zeta",
+      "display_glyph": null,
+      "section": null,
       "romanization": "z",
       "ipa": [
         "z"
@@ -312,6 +329,8 @@
       "glyph": "Η",
       "alt": "η",
       "name": "Eta",
+      "display_glyph": null,
+      "section": null,
       "romanization": "i",
       "ipa": [
         "i"
@@ -331,6 +350,8 @@
       "glyph": "Θ",
       "alt": "θ",
       "name": "Theta",
+      "display_glyph": null,
+      "section": null,
       "romanization": "th",
       "ipa": [
         "θ"
@@ -350,6 +371,8 @@
       "glyph": "Ι",
       "alt": "ι",
       "name": "Iota",
+      "display_glyph": null,
+      "section": null,
       "romanization": "i",
       "ipa": [
         "i"
@@ -369,6 +392,8 @@
       "glyph": "Κ",
       "alt": "κ",
       "name": "Kappa",
+      "display_glyph": null,
+      "section": null,
       "romanization": "k",
       "ipa": [
         "k",
@@ -389,6 +414,8 @@
       "glyph": "Λ",
       "alt": "λ",
       "name": "Lambda",
+      "display_glyph": null,
+      "section": null,
       "romanization": "l",
       "ipa": [
         "l",
@@ -409,6 +436,8 @@
       "glyph": "Μ",
       "alt": "μ",
       "name": "Mu",
+      "display_glyph": null,
+      "section": null,
       "romanization": "m",
       "ipa": [
         "m"
@@ -428,6 +457,8 @@
       "glyph": "Ν",
       "alt": "ν",
       "name": "Nu",
+      "display_glyph": null,
+      "section": null,
       "romanization": "n",
       "ipa": [
         "n",
@@ -448,6 +479,8 @@
       "glyph": "Ξ",
       "alt": "ξ",
       "name": "Xi",
+      "display_glyph": null,
+      "section": null,
       "romanization": "x",
       "ipa": [
         "ks"
@@ -467,6 +500,8 @@
       "glyph": "Ο",
       "alt": "ο",
       "name": "Omicron",
+      "display_glyph": null,
+      "section": null,
       "romanization": "o",
       "ipa": [
         "o"
@@ -486,6 +521,8 @@
       "glyph": "Π",
       "alt": "π",
       "name": "Pi",
+      "display_glyph": null,
+      "section": null,
       "romanization": "p",
       "ipa": [
         "p"
@@ -505,6 +542,8 @@
       "glyph": "Ρ",
       "alt": "ρ",
       "name": "Rho",
+      "display_glyph": null,
+      "section": null,
       "romanization": "r",
       "ipa": [
         "r"
@@ -524,6 +563,8 @@
       "glyph": "Σ",
       "alt": "σ",
       "name": "Sigma",
+      "display_glyph": null,
+      "section": null,
       "romanization": "s",
       "ipa": [
         "s",
@@ -546,6 +587,8 @@
       "glyph": "Τ",
       "alt": "τ",
       "name": "Tau",
+      "display_glyph": null,
+      "section": null,
       "romanization": "t",
       "ipa": [
         "t"
@@ -565,6 +608,8 @@
       "glyph": "Υ",
       "alt": "υ",
       "name": "Upsilon",
+      "display_glyph": null,
+      "section": null,
       "romanization": "y",
       "ipa": [
         "i"
@@ -584,6 +629,8 @@
       "glyph": "Φ",
       "alt": "φ",
       "name": "Phi",
+      "display_glyph": null,
+      "section": null,
       "romanization": "f",
       "ipa": [
         "f"
@@ -603,6 +650,8 @@
       "glyph": "Χ",
       "alt": "χ",
       "name": "Chi",
+      "display_glyph": null,
+      "section": null,
       "romanization": "ch",
       "ipa": [
         "x",
@@ -623,6 +672,8 @@
       "glyph": "Ψ",
       "alt": "ψ",
       "name": "Psi",
+      "display_glyph": null,
+      "section": null,
       "romanization": "ps",
       "ipa": [
         "ps"
@@ -642,6 +693,8 @@
       "glyph": "Ω",
       "alt": "ω",
       "name": "Omega",
+      "display_glyph": null,
+      "section": null,
       "romanization": "o",
       "ipa": [
         "o"

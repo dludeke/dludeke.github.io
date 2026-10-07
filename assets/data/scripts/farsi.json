@@ -13,6 +13,7 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
+  "sections": null,
   "links": [
     {
       "label": "Persian alphabet",
@@ -187,16 +188,22 @@
     "ɪ": "https://en.wikipedia.org/wiki/Near-close_front_unrounded_vowel",
     "ʊ": "https://en.wikipedia.org/wiki/Near-close_back_rounded_vowel",
     "ɤ": "https://en.wikipedia.org/wiki/Close-mid_back_unrounded_vowel",
-    "ɯ": "https://en.wikipedia.org/wiki/Close_back_unrounded_vowel",
-    "ɨ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
+    "ɯ": "https://en.wikipedia.org/wiki/Close_central_unrounded_vowel",
     "ɐ": "https://en.wikipedia.org/wiki/Near-open_central_vowel",
-    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel"
+    "ä": "https://en.wikipedia.org/wiki/Open_central_unrounded_vowel",
+    "˩": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˨": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˧": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˦": "https://en.wikipedia.org/wiki/Tone_letter",
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
   },
   "letters": [
     {
       "glyph": "ا",
       "alt": "",
       "name": "Alef",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɒː",
@@ -217,6 +224,8 @@
       "glyph": "ب",
       "alt": "",
       "name": "Be",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "b"
@@ -236,6 +245,8 @@
       "glyph": "پ",
       "alt": "",
       "name": "Pe",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "p"
@@ -255,6 +266,8 @@
       "glyph": "ت",
       "alt": "",
       "name": "Te",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t"
@@ -274,6 +287,8 @@
       "glyph": "ث",
       "alt": "",
       "name": "Se",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s"
@@ -293,6 +308,8 @@
       "glyph": "ج",
       "alt": "",
       "name": "Jim",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d͡ʒ"
@@ -312,6 +329,8 @@
       "glyph": "چ",
       "alt": "",
       "name": "Che",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t͡ʃ"
@@ -331,6 +350,8 @@
       "glyph": "ح",
       "alt": "",
       "name": "He",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "h"
@@ -350,6 +371,8 @@
       "glyph": "خ",
       "alt": "",
       "name": "Khe",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "x"
@@ -369,6 +392,8 @@
       "glyph": "د",
       "alt": "",
       "name": "Dal",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "d"
@@ -388,6 +413,8 @@
       "glyph": "ذ",
       "alt": "",
       "name": "Zal",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "z"
@@ -407,6 +434,8 @@
       "glyph": "ر",
       "alt": "",
       "name": "Re",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɾ"
@@ -426,6 +455,8 @@
       "glyph": "ز",
       "alt": "",
       "name": "Ze",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "z"
@@ -445,6 +476,8 @@
       "glyph": "ژ",
       "alt": "",
       "name": "Zhe",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʒ"
@@ -464,6 +497,8 @@
       "glyph": "س",
       "alt": "",
       "name": "Sin",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s"
@@ -483,6 +518,8 @@
       "glyph": "ش",
       "alt": "",
       "name": "Shin",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʃ"
@@ -502,6 +539,8 @@
       "glyph": "ص",
       "alt": "",
       "name": "Sad",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "s"
@@ -521,6 +560,8 @@
       "glyph": "ض",
       "alt": "",
       "name": "Zad",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "z"
@@ -540,6 +581,8 @@
       "glyph": "ط",
       "alt": "",
       "name": "Ta",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "t"
@@ -559,6 +602,8 @@
       "glyph": "ظ",
       "alt": "",
       "name": "Za",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "z"
@@ -578,6 +623,8 @@
       "glyph": "ع",
       "alt": "",
       "name": "Eyn",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ʔ"
@@ -597,6 +644,8 @@
       "glyph": "غ",
       "alt": "",
       "name": "Gheyn",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɣ",
@@ -617,6 +666,8 @@
       "glyph": "ف",
       "alt": "",
       "name": "Fe",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "f"
@@ -636,6 +687,8 @@
       "glyph": "ق",
       "alt": "",
       "name": "Ghaf",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɣ",
@@ -656,6 +709,8 @@
       "glyph": "ک",
       "alt": "",
       "name": "Kaf",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "k"
@@ -675,6 +730,8 @@
       "glyph": "گ",
       "alt": "",
       "name": "Gaf",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "ɡ"
@@ -694,6 +751,8 @@
       "glyph": "ل",
       "alt": "",
       "name": "Lam",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "l"
@@ -713,6 +772,8 @@
       "glyph": "م",
       "alt": "",
       "name": "Mim",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "m"
@@ -732,6 +793,8 @@
       "glyph": "ن",
       "alt": "",
       "name": "Nun",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "n"
@@ -751,6 +814,8 @@
       "glyph": "و",
       "alt": "",
       "name": "Vav",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "v",
@@ -772,6 +837,8 @@
       "glyph": "ه",
       "alt": "",
       "name": "He",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "h",
@@ -792,6 +859,8 @@
       "glyph": "ی",
       "alt": "",
       "name": "Ye",
+      "display_glyph": null,
+      "section": null,
       "romanization": null,
       "ipa": [
         "j",
