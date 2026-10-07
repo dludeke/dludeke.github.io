@@ -63,7 +63,7 @@
       "languages": [
         "Arabic"
       ],
-      "letter_count": 28
+      "letter_count": 44
     },
     {
       "slug": "devanagari",
@@ -76,7 +76,7 @@
         "Sanskrit",
         "Nepali"
       ],
-      "letter_count": 44
+      "letter_count": 59
     },
     {
       "slug": "farsi",
@@ -98,7 +98,7 @@
       "languages": [
         "Japanese"
       ],
-      "letter_count": 46
+      "letter_count": 58
     },
     {
       "slug": "cyrillic",
@@ -134,7 +134,7 @@
       "languages": [
         "Korean"
       ],
-      "letter_count": 24
+      "letter_count": 40
     },
     {
       "slug": "pinyin",

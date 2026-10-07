@@ -15,7 +15,11 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
-  "sections": null,
+  "sections": [
+    "Letters",
+    "Vowel signs (matras)",
+    "Marks"
+  ],
   "links": [
     {
       "label": "Devanagari",
@@ -197,7 +201,8 @@
     "˨": "https://en.wikipedia.org/wiki/Tone_letter",
     "˧": "https://en.wikipedia.org/wiki/Tone_letter",
     "˦": "https://en.wikipedia.org/wiki/Tone_letter",
-    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter",
+    "ˀ": "https://en.wikipedia.org/wiki/Glottalization"
   },
   "letters": [
     {
@@ -1125,6 +1130,317 @@
       "signwriting_image": null,
       "aliases": [],
       "notes": ""
+    },
+    {
+      "glyph": "ा",
+      "alt": "",
+      "name": "aa matra",
+      "display_glyph": "◌ा",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "aː"
+      ],
+      "handshape": null,
+      "example_word": "काम",
+      "example_gloss": "work",
+      "example_image": null,
+      "example_emoji": "💼",
+      "example_ipa": "kaːm",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ि",
+      "alt": "",
+      "name": "i matra",
+      "display_glyph": "◌ि",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "i"
+      ],
+      "handshape": null,
+      "example_word": "दिन",
+      "example_gloss": "day",
+      "example_image": null,
+      "example_emoji": "📅",
+      "example_ipa": "dɪn",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Written to the left of its consonant although it is pronounced after it."
+    },
+    {
+      "glyph": "ी",
+      "alt": "",
+      "name": "ii matra",
+      "display_glyph": "◌ी",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "iː"
+      ],
+      "handshape": null,
+      "example_word": "नदी",
+      "example_gloss": "river",
+      "example_image": null,
+      "example_emoji": "🏞️",
+      "example_ipa": "nədiː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ु",
+      "alt": "",
+      "name": "u matra",
+      "display_glyph": "◌ु",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "u"
+      ],
+      "handshape": null,
+      "example_word": "सुबह",
+      "example_gloss": "morning",
+      "example_image": null,
+      "example_emoji": "🌅",
+      "example_ipa": "sʊbah",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ू",
+      "alt": "",
+      "name": "uu matra",
+      "display_glyph": "◌ू",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "uː"
+      ],
+      "handshape": null,
+      "example_word": "फूल",
+      "example_gloss": "flower",
+      "example_image": null,
+      "example_emoji": "🌸",
+      "example_ipa": "pʰuːl",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ृ",
+      "alt": "",
+      "name": "ri matra",
+      "display_glyph": "◌ृ",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "r̩i"
+      ],
+      "handshape": null,
+      "example_word": "कृषि",
+      "example_gloss": "agriculture",
+      "example_image": null,
+      "example_emoji": "🌾",
+      "example_ipa": "kɹ̩ʂi",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A Sanskrit vowel, now said as a consonant plus i."
+    },
+    {
+      "glyph": "े",
+      "alt": "",
+      "name": "e matra",
+      "display_glyph": "◌े",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "eː"
+      ],
+      "handshape": null,
+      "example_word": "मेज़",
+      "example_gloss": "table",
+      "example_image": null,
+      "example_emoji": "🪑",
+      "example_ipa": "meːz",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ै",
+      "alt": "",
+      "name": "ai matra",
+      "display_glyph": "◌ै",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "ɛː"
+      ],
+      "handshape": null,
+      "example_word": "पैसा",
+      "example_gloss": "money",
+      "example_image": null,
+      "example_emoji": "💰",
+      "example_ipa": "pɛːsaː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ो",
+      "alt": "",
+      "name": "o matra",
+      "display_glyph": "◌ो",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "oː"
+      ],
+      "handshape": null,
+      "example_word": "मोर",
+      "example_gloss": "peacock",
+      "example_image": null,
+      "example_emoji": "🦚",
+      "example_ipa": "moːɾ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ौ",
+      "alt": "",
+      "name": "au matra",
+      "display_glyph": "◌ौ",
+      "section": "Vowel signs (matras)",
+      "romanization": null,
+      "ipa": [
+        "ɔː"
+      ],
+      "handshape": null,
+      "example_word": "मौसम",
+      "example_gloss": "weather",
+      "example_image": null,
+      "example_emoji": "🌦️",
+      "example_ipa": "mɔːsəm",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ं",
+      "alt": "",
+      "name": "anusvara",
+      "display_glyph": "◌ं",
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [
+        "ⁿ"
+      ],
+      "handshape": null,
+      "example_word": "हिंदी",
+      "example_gloss": "Hindi",
+      "example_image": null,
+      "example_emoji": "🇮🇳",
+      "example_ipa": "hɪndːiː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Nasalises the vowel, or stands for the nasal that matches the following consonant."
+    },
+    {
+      "glyph": "ँ",
+      "alt": "",
+      "name": "candrabindu",
+      "display_glyph": "◌ँ",
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [
+        "̃"
+      ],
+      "handshape": null,
+      "example_word": "चाँद",
+      "example_gloss": "moon",
+      "example_image": null,
+      "example_emoji": "🌙",
+      "example_ipa": "tɕãːd",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Nasalises the vowel without adding a consonant."
+    },
+    {
+      "glyph": "ः",
+      "alt": "",
+      "name": "visarga",
+      "display_glyph": "◌ः",
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [
+        "h"
+      ],
+      "handshape": null,
+      "example_word": "दुःख",
+      "example_gloss": "sorrow",
+      "example_image": null,
+      "example_emoji": "😢",
+      "example_ipa": "dʊkʰ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A breath after the vowel, almost only in words taken from Sanskrit."
+    },
+    {
+      "glyph": "्",
+      "alt": "",
+      "name": "virama",
+      "display_glyph": "◌्",
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "नमस्ते",
+      "example_gloss": "greeting",
+      "example_image": null,
+      "example_emoji": "🙏",
+      "example_ipa": "nəməsteː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Cancels the a that every consonant otherwise carries, so two consonants can meet."
+    },
+    {
+      "glyph": "़",
+      "alt": "",
+      "name": "nukta",
+      "display_glyph": "◌़",
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "ज़मीन",
+      "example_gloss": "land",
+      "example_image": null,
+      "example_emoji": "🌍",
+      "example_ipa": "zəmiːn",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Adapts a letter to a sound borrowed from Persian, Arabic or English."
     }
   ]
 }

@@ -13,7 +13,11 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
-  "sections": null,
+  "sections": [
+    "Letters",
+    "Hamza and variant forms",
+    "Vowel marks"
+  ],
   "links": [
     {
       "label": "Arabic alphabet",
@@ -195,7 +199,8 @@
     "˨": "https://en.wikipedia.org/wiki/Tone_letter",
     "˧": "https://en.wikipedia.org/wiki/Tone_letter",
     "˦": "https://en.wikipedia.org/wiki/Tone_letter",
-    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter",
+    "ˀ": "https://en.wikipedia.org/wiki/Glottalization"
   },
   "letters": [
     {
@@ -790,6 +795,339 @@
       "signwriting_image": null,
       "aliases": [],
       "notes": "Consonant /j/, or a long /iː/."
+    },
+    {
+      "glyph": "ء",
+      "alt": "",
+      "name": "hamza",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔ"
+      ],
+      "handshape": null,
+      "example_word": "ماء",
+      "example_gloss": "water",
+      "example_image": null,
+      "example_emoji": "💧",
+      "example_ipa": "maːʔ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "The glottal stop, written on its own or carried by alef, waw or yeh."
+    },
+    {
+      "glyph": "آ",
+      "alt": "",
+      "name": "alef madda",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔaː"
+      ],
+      "handshape": null,
+      "example_word": "القرآن",
+      "example_gloss": "the Quran",
+      "example_image": null,
+      "example_emoji": "📖",
+      "example_ipa": "al.qur.ʔaːn",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "أ",
+      "alt": "",
+      "name": "alef with hamza above",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔa"
+      ],
+      "handshape": null,
+      "example_word": "أم",
+      "example_gloss": "mother",
+      "example_image": null,
+      "example_emoji": "👩",
+      "example_ipa": "ʔumm",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "إ",
+      "alt": "",
+      "name": "alef with hamza below",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔi"
+      ],
+      "handshape": null,
+      "example_word": "إسلام",
+      "example_gloss": "Islam",
+      "example_image": null,
+      "example_emoji": "☪️",
+      "example_ipa": "ʔis.laːm",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ؤ",
+      "alt": "",
+      "name": "waw with hamza",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔ"
+      ],
+      "handshape": null,
+      "example_word": "سؤال",
+      "example_gloss": "question",
+      "example_image": null,
+      "example_emoji": "❓",
+      "example_ipa": "su.ʔaːl",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ئ",
+      "alt": "",
+      "name": "yeh with hamza",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "ʔ"
+      ],
+      "handshape": null,
+      "example_word": "رئيس",
+      "example_gloss": "president",
+      "example_image": null,
+      "example_emoji": "👔",
+      "example_ipa": "ra.ʔiːs",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ة",
+      "alt": "",
+      "name": "teh marbuta",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "a",
+        "at"
+      ],
+      "handshape": null,
+      "example_word": "مدرسة",
+      "example_gloss": "school",
+      "example_image": null,
+      "example_emoji": "🏫",
+      "example_ipa": "mad.ra.sa",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Ends most feminine nouns. Said as a at the end of a phrase, as t before a following word."
+    },
+    {
+      "glyph": "ى",
+      "alt": "",
+      "name": "alef maqsura",
+      "display_glyph": null,
+      "section": "Hamza and variant forms",
+      "romanization": null,
+      "ipa": [
+        "aː"
+      ],
+      "handshape": null,
+      "example_word": "مستشفى",
+      "example_gloss": "hospital",
+      "example_image": null,
+      "example_emoji": "🏥",
+      "example_ipa": "mus.taʃ.faː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "A long a written with the shape of yeh."
+    },
+    {
+      "glyph": "َ",
+      "alt": "",
+      "name": "fatha",
+      "display_glyph": "ـَ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "a"
+      ],
+      "handshape": null,
+      "example_word": "كَتَب",
+      "example_gloss": "he wrote",
+      "example_image": null,
+      "example_emoji": "✍️",
+      "example_ipa": "ka.ta.ba",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ُ",
+      "alt": "",
+      "name": "damma",
+      "display_glyph": "ـُ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "u"
+      ],
+      "handshape": null,
+      "example_word": "كُتُب",
+      "example_gloss": "books",
+      "example_image": null,
+      "example_emoji": "📚",
+      "example_ipa": "ku.tub",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ِ",
+      "alt": "",
+      "name": "kasra",
+      "display_glyph": "ـِ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "i"
+      ],
+      "handshape": null,
+      "example_word": "بِنت",
+      "example_gloss": "girl",
+      "example_image": null,
+      "example_emoji": "👧",
+      "example_ipa": "bint",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ً",
+      "alt": "",
+      "name": "tanwin fath",
+      "display_glyph": "ـً",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "an"
+      ],
+      "handshape": null,
+      "example_word": "شكراً",
+      "example_gloss": "thank you",
+      "example_image": null,
+      "example_emoji": "🙏",
+      "example_ipa": "ʃuk.ran",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "The three tanwin marks add a final n, which marks a noun as indefinite."
+    },
+    {
+      "glyph": "ٌ",
+      "alt": "",
+      "name": "tanwin damm",
+      "display_glyph": "ـٌ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "un"
+      ],
+      "handshape": null,
+      "example_word": "كتابٌ",
+      "example_gloss": "a book",
+      "example_image": null,
+      "example_emoji": "📕",
+      "example_ipa": "ki.taː.bun",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ٍ",
+      "alt": "",
+      "name": "tanwin kasr",
+      "display_glyph": "ـٍ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [
+        "in"
+      ],
+      "handshape": null,
+      "example_word": "بيتٍ",
+      "example_gloss": "of a house",
+      "example_image": null,
+      "example_emoji": "🏠",
+      "example_ipa": "baj.tin",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ْ",
+      "alt": "",
+      "name": "sukun",
+      "display_glyph": "ـْ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "مِنْ",
+      "example_gloss": "from",
+      "example_image": null,
+      "example_emoji": "➡️",
+      "example_ipa": "min",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Marks a consonant with no vowel after it."
+    },
+    {
+      "glyph": "ّ",
+      "alt": "",
+      "name": "shadda",
+      "display_glyph": "ـّ",
+      "section": "Vowel marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "مدرّس",
+      "example_gloss": "teacher",
+      "example_image": null,
+      "example_emoji": "👨‍🏫",
+      "example_ipa": "mu.dar.ris",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Doubles the consonant it sits on."
     }
   ]
 }

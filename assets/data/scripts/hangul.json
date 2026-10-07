@@ -13,7 +13,11 @@
   "status": "skeleton",
   "attribution": null,
   "layout": null,
-  "sections": null,
+  "sections": [
+    "Basic jamo",
+    "Double consonants",
+    "Compound vowels"
+  ],
   "links": [
     {
       "label": "Hangul",
@@ -195,7 +199,8 @@
     "˨": "https://en.wikipedia.org/wiki/Tone_letter",
     "˧": "https://en.wikipedia.org/wiki/Tone_letter",
     "˦": "https://en.wikipedia.org/wiki/Tone_letter",
-    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter",
+    "ˀ": "https://en.wikipedia.org/wiki/Glottalization"
   },
   "letters": [
     {
@@ -716,6 +721,343 @@
       "example_ipa": "i",
       "signwriting": "M538x538S1ae20492x462",
       "signwriting_image": "images/signwriting/hangul/S1ae20.png",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㄲ",
+      "alt": "",
+      "name": "ssang-giyeok",
+      "display_glyph": null,
+      "section": "Double consonants",
+      "romanization": null,
+      "ipa": [
+        "ˀk"
+      ],
+      "handshape": null,
+      "example_word": "꽃",
+      "example_gloss": "flower",
+      "example_image": null,
+      "example_emoji": "🌸",
+      "example_ipa": "ˀkot",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "The tense series, said with a tightened glottis: neither voiced like the plain letters nor breathy like the aspirated ones."
+    },
+    {
+      "glyph": "ㄸ",
+      "alt": "",
+      "name": "ssang-digeut",
+      "display_glyph": null,
+      "section": "Double consonants",
+      "romanization": null,
+      "ipa": [
+        "ˀt"
+      ],
+      "handshape": null,
+      "example_word": "딸",
+      "example_gloss": "daughter",
+      "example_image": null,
+      "example_emoji": "👧",
+      "example_ipa": "ˀtal",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅃ",
+      "alt": "",
+      "name": "ssang-bieup",
+      "display_glyph": null,
+      "section": "Double consonants",
+      "romanization": null,
+      "ipa": [
+        "ˀp"
+      ],
+      "handshape": null,
+      "example_word": "빵",
+      "example_gloss": "bread",
+      "example_image": null,
+      "example_emoji": "🍞",
+      "example_ipa": "ˀpaŋ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅆ",
+      "alt": "",
+      "name": "ssang-siot",
+      "display_glyph": null,
+      "section": "Double consonants",
+      "romanization": null,
+      "ipa": [
+        "ˀs"
+      ],
+      "handshape": null,
+      "example_word": "쌀",
+      "example_gloss": "uncooked rice",
+      "example_image": null,
+      "example_emoji": "🌾",
+      "example_ipa": "ˀsal",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅉ",
+      "alt": "",
+      "name": "ssang-jieut",
+      "display_glyph": null,
+      "section": "Double consonants",
+      "romanization": null,
+      "ipa": [
+        "ˀt͡ɕ"
+      ],
+      "handshape": null,
+      "example_word": "찌개",
+      "example_gloss": "stew",
+      "example_image": null,
+      "example_emoji": "🍲",
+      "example_ipa": "ˀt͡ɕi.ɡɛ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅐ",
+      "alt": "",
+      "name": "ae",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "ɛ"
+      ],
+      "handshape": null,
+      "example_word": "개",
+      "example_gloss": "dog",
+      "example_image": null,
+      "example_emoji": "🐕",
+      "example_ipa": "kɛ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅒ",
+      "alt": "",
+      "name": "yae",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "jɛ"
+      ],
+      "handshape": null,
+      "example_word": "얘기",
+      "example_gloss": "talk",
+      "example_image": null,
+      "example_emoji": "💬",
+      "example_ipa": "jɛ.ɡi",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅔ",
+      "alt": "",
+      "name": "e",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "e"
+      ],
+      "handshape": null,
+      "example_word": "네",
+      "example_gloss": "yes",
+      "example_image": null,
+      "example_emoji": "✅",
+      "example_ipa": "ne",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Merged with ㅐ in most speech today, which is why spelling them apart has to be learnt."
+    },
+    {
+      "glyph": "ㅖ",
+      "alt": "",
+      "name": "ye",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "je"
+      ],
+      "handshape": null,
+      "example_word": "예술",
+      "example_gloss": "art",
+      "example_image": null,
+      "example_emoji": "🎨",
+      "example_ipa": "je.sul",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅘ",
+      "alt": "",
+      "name": "wa",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "wa"
+      ],
+      "handshape": null,
+      "example_word": "과일",
+      "example_gloss": "fruit",
+      "example_image": null,
+      "example_emoji": "🍎",
+      "example_ipa": "kwa.il",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅙ",
+      "alt": "",
+      "name": "wae",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "wɛ"
+      ],
+      "handshape": null,
+      "example_word": "왜",
+      "example_gloss": "why",
+      "example_image": null,
+      "example_emoji": "❓",
+      "example_ipa": "wɛ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅚ",
+      "alt": "",
+      "name": "oe",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "ø",
+        "we"
+      ],
+      "handshape": null,
+      "example_word": "외국",
+      "example_gloss": "foreign country",
+      "example_image": null,
+      "example_emoji": "🌍",
+      "example_ipa": "we.ɡuk",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅝ",
+      "alt": "",
+      "name": "wo",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "wʌ"
+      ],
+      "handshape": null,
+      "example_word": "원",
+      "example_gloss": "won",
+      "example_image": null,
+      "example_emoji": "💱",
+      "example_ipa": "wʌn",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅞ",
+      "alt": "",
+      "name": "we",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "we"
+      ],
+      "handshape": null,
+      "example_word": "궤도",
+      "example_gloss": "orbit",
+      "example_image": null,
+      "example_emoji": "🛰️",
+      "example_ipa": "kwe.do",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅟ",
+      "alt": "",
+      "name": "wi",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "wi"
+      ],
+      "handshape": null,
+      "example_word": "귀",
+      "example_gloss": "ear",
+      "example_image": null,
+      "example_emoji": "👂",
+      "example_ipa": "kwi",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ㅢ",
+      "alt": "",
+      "name": "ui",
+      "display_glyph": null,
+      "section": "Compound vowels",
+      "romanization": null,
+      "ipa": [
+        "ɰi"
+      ],
+      "handshape": null,
+      "example_word": "의사",
+      "example_gloss": "doctor",
+      "example_image": null,
+      "example_emoji": "👨‍⚕️",
+      "example_ipa": "ɰi.sa",
+      "signwriting": null,
+      "signwriting_image": null,
       "aliases": [],
       "notes": ""
     }

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Noto+Sans+Thai:wght@400;700&display=swap" />
+        href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" />
   <style>
     .script-head {
       display: flex;
@@ -126,7 +126,7 @@
     /* A Thai combining mark only attaches to the dotted circle when both
        come from the same font; with the system fallback the mark lands on
        nothing and renders as tofu. */
-    .letter-glyphs { font-family: "Noto Sans Thai", "Noto Sans", system-ui, -apple-system, sans-serif; }
+    .letter-glyphs { font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic", "Noto Sans", system-ui, -apple-system, sans-serif; }
 
     .letter-glyphs {
       font-size: 2.2rem;
@@ -565,20 +565,37 @@
       const gridOpen = `<div class="letter-grid${d.layout ? ' fixed' : ''}"` +
         (d.layout ? ` style="grid-template-columns: repeat(${d.layout.cols}, minmax(0, 1fr))"` : '') + '>';
 
+      const colHeads = d.layout
+        ? `<div class="col-heads" style="grid-template-columns: repeat(${d.layout.cols}, minmax(0, 1fr))">
+             ${(d.layout.col_labels || []).map(c => `<span>${c}</span>`).join('')}
+           </div>`
+        : '';
+      const head = (name, n) => `<h3 class="section-head">${name} <span>${n}</span></h3>`;
+      // everything the sections do not claim belongs to the first one
+      const inSection = sec => d.letters.filter(L =>
+        (L.section || (d.sections || [])[0]) === sec);
+
       let cards;
       if (d.layout) {
-        cards = gridOpen + d.layout.rows.map(row => row.map(g =>
+        // kana keeps its gojuon table and hangs the extra signs below it
+        const laid = d.layout.rows.map(row => row.map(g =>
           g && byGlyph[g] ? cardFor(byGlyph[g]) : '<div class="letter-blank"></div>'
-        ).join('')).join('') + '</div>';
+        ).join('')).join('');
+        const rest = (d.sections || []).slice(1);
+        cards = (rest.length ? head(d.sections[0], inSection(d.sections[0]).length) : '') +
+                colHeads + gridOpen + laid + '</div>' +
+                rest.map(sec => {
+                  const m = inSection(sec);
+                  return m.length ? head(sec, m.length) +
+                    `<div class="letter-grid">${m.map(cardFor).join('')}</div>` : '';
+                }).join('');
       } else if ((d.sections || []).length > 1) {
         // Thai keeps its vowel signs and tone marks apart from the 44
         // consonants, since they are a different kind of thing and the
         // alphabet is conventionally counted without them.
         cards = d.sections.map(sec => {
-          const members = d.letters.filter(L => (L.section || d.sections[0]) === sec);
-          if (!members.length) return '';
-          return `<h3 class="section-head">${sec} <span>${members.length}</span></h3>` +
-                 gridOpen + members.map(cardFor).join('') + '</div>';
+          const m = inSection(sec);
+          return m.length ? head(sec, m.length) + gridOpen + m.map(cardFor).join('') + '</div>' : '';
         }).join('');
       } else {
         cards = gridOpen + d.letters.map(cardFor).join('') + '</div>';
@@ -608,9 +625,6 @@
               <span class="fill-bar"><span style="width:${Math.round(got / n * 100)}%"></span></span>
             </span>`).join('')}
         </p>
-        ${d.layout ? `<div class="col-heads" style="grid-template-columns: repeat(${d.layout.cols}, minmax(0, 1fr))">
-             ${(d.layout.col_labels || []).map(c => `<span>${c}</span>`).join('')}
-           </div>` : ''}
         ${cards}
         ${(d.attribution || []).length ? `
         <div class="credits">

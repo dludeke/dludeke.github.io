@@ -19,7 +19,11 @@ from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             LINKS, GLOSSARY, IPA_LINKS,
                             GEEZ_ORDERS, GEEZ_CONSONANTS, GEEZ_EXTRA_WORDS,
                             GEEZ_RARE_ROWS, THAI_VOWELS, THAI_TONES,
-                            THAI_MODIFIERS, thai_display)
+                            THAI_MODIFIERS, display_for,
+                            DEVANAGARI_MATRAS, DEVANAGARI_MARKS,
+                            KANA_SMALL, KANA_MARKS,
+                            ARABIC_FORMS, ARABIC_HARAKAT,
+                            HANGUL_DOUBLE, HANGUL_COMPOUND)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -59,24 +63,48 @@ SCRIPTS = [
 ]
 
 # letters: (glyph, lowercase_or_alt, name)  -- alt is "" when there is no pair
-# The Thai marks carry their content in one table rather than five, since
-# they were added together; spread it into the per-field tables.
-for _g, _n, _i, _w, _wi, _no in THAI_VOWELS + THAI_TONES + THAI_MODIFIERS:
-    if _i:
-        IPA_TABLE.setdefault("thai", {})[_g] = _i
-    WORDS.setdefault("thai", {})[_g] = _w
-    WORD_IPA.setdefault("thai", {})[_g] = _wi
-    if _no:
-        NOTES.setdefault("thai", {})[_g] = _no
+# The extra signs for the scripts whose letter list cannot spell a word on
+# its own. Same shape as the Thai tables: everything in one row, spread into
+# the per-field tables below.
+EXTRA = {
+    "thai": [("Vowel signs", THAI_VOWELS), ("Tone marks", THAI_TONES),
+             ("Modifiers", THAI_MODIFIERS)],
+    "devanagari": [("Vowel signs (matras)", DEVANAGARI_MATRAS),
+                   ("Marks", DEVANAGARI_MARKS)],
+    "kana": [("Small kana", KANA_SMALL), ("Marks", KANA_MARKS)],
+    "arabic": [("Hamza and variant forms", ARABIC_FORMS),
+               ("Vowel marks", ARABIC_HARAKAT)],
+    "hangul": [("Double consonants", HANGUL_DOUBLE),
+               ("Compound vowels", HANGUL_COMPOUND)],
+}
+# Thai's rows carry no alt column; normalise them to the six-field shape.
+EXTRA["thai"] = [(n, [(g, "", nm, i, w, wi, no) for g, nm, i, w, wi, no in rows])
+                 for n, rows in EXTRA["thai"]]
 
-SECTIONS = {"thai": ([("Consonants", None)]
-                     + [("Vowel signs", g) for g, *_ in THAI_VOWELS]
-                     + [("Tone marks", g) for g, *_ in THAI_TONES]
-                     + [("Modifiers", g) for g, *_ in THAI_MODIFIERS])}
-SECTION_OF = {slug: {g: name for name, g in rows if g}
-              for slug, rows in SECTIONS.items()}
-SECTION_ORDER = {slug: list(dict.fromkeys(n for n, _ in rows))
-                 for slug, rows in SECTIONS.items()}
+# what the letters already in the list are collectively called
+BASE_SECTION = {"thai": "Consonants", "devanagari": "Letters", "kana": "Goj\u016bon",
+                "arabic": "Letters", "hangul": "Basic jamo"}
+
+SECTIONS, SECTION_OF, SECTION_ORDER = {}, {}, {}
+for _slug, _groups in EXTRA.items():
+    SECTION_ORDER[_slug] = [BASE_SECTION[_slug]] + [n for n, _ in _groups]
+    SECTION_OF[_slug] = {}
+    for _name, _rows in _groups:
+        for _g, _alt, _nm, _i, _w, _wi, _no in _rows:
+            SECTION_OF[_slug][_g] = _name
+            if _i:
+                IPA_TABLE.setdefault(_slug, {})[_g] = _i
+            WORDS.setdefault(_slug, {})[_g] = _w
+            WORD_IPA.setdefault(_slug, {})[_g] = _wi
+            if _no:
+                NOTES.setdefault(_slug, {})[_g] = _no
+
+
+def with_extras(slug, rows):
+    """The alphabet plus whatever signs it needs to actually spell with."""
+    return rows + [(g, alt, nm) for _n, rs in EXTRA.get(slug, [])
+                   for g, alt, nm, _i, _w, _wi, _no in rs]
+
 
 def geez_syllabary():
     """All 231 Ethiopic syllables as (glyph, alt, name) triples, row by row.
@@ -165,8 +193,7 @@ LETTERS = {
  ("ฝ","","fo fa"),("พ","","pho phan"),("ฟ","","fo fan"),("ภ","","pho samphao"),
  ("ม","","mo ma"),("ย","","yo yak"),("ร","","ro ruea"),("ล","","lo ling"),
  ("ว","","wo waen"),("ศ","","so sala"),("ษ","","so ruesi"),("ส","","so suea"),
- ("ห","","ho hip"),("ฬ","","lo chula"),("อ","","o ang"),("ฮ","","ho nokhuk")]
- + [(g, "", n) for g, n, _i, _w, _wi, _no in THAI_VOWELS + THAI_TONES + THAI_MODIFIERS],
+ ("ห","","ho hip"),("ฬ","","lo chula"),("อ","","o ang"),("ฮ","","ho nokhuk")],
 
 "hangul": [("ㄱ","","giyeok"),("ㄴ","","nieun"),("ㄷ","","digeut"),("ㄹ","","rieul"),
  ("ㅁ","","mieum"),("ㅂ","","bieup"),("ㅅ","","siot"),("ㅇ","","ieung"),
@@ -340,15 +367,15 @@ def main():
         shapes = existing_handshapes(slug)
 
         letters = []
-        for glyph, alt, label in LETTERS[slug]:
+        for glyph, alt, label in with_extras(slug, LETTERS[slug]):
             entry = {
                 "glyph": glyph,
                 "alt": alt,            # lowercase, katakana, or final form
                 "name": label,
                 # a combining mark drawn on a dotted circle, so the card shows
                 # where it sits rather than floating it on nothing
-                "display_glyph": thai_display(glyph) if slug == "thai" and
-                                 glyph in SECTION_OF.get("thai", {}) else None,
+                "display_glyph": display_for(slug, glyph)
+                                 if glyph in SECTION_OF.get(slug, {}) else None,
                 "section": SECTION_OF.get(slug, {}).get(glyph),
                 "romanization": None,
                 "ipa": [],             # possible IPA values, filled in later

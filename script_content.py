@@ -1068,3 +1068,137 @@ IPA_LINKS.update({
  "˧": W + "Tone_letter", "˦": W + "Tone_letter",
  "˥": W + "Tone_letter",
 })
+
+# --- Signs the four alphabets leave out --------------------------------
+# Same problem as Thai: the letter list alone cannot spell a word. Each
+# entry is (glyph, alt, name, [ipa], (word, gloss, emoji), word_ipa, note).
+
+DEVANAGARI_MATRAS = [
+ ("ा","","aa matra",["aː"],("काम","work","\U0001f4bc"),"kaːm",None),
+ ("ि","","i matra",["i"],("दिन","day","\U0001f4c5"),"dɪn",
+  "Written to the left of its consonant although it is pronounced after it."),
+ ("ी","","ii matra",["iː"],("नदी","river","\U0001f3de️"),"nədiː",None),
+ ("ु","","u matra",["u"],("सुबह","morning","\U0001f305"),"sʊbah",None),
+ ("ू","","uu matra",["uː"],("फूल","flower","\U0001f338"),"pʰuːl",None),
+ ("ृ","","ri matra",["r̩i"],("कृषि","agriculture","\U0001f33e"),"kɹ̩ʂi",
+  "A Sanskrit vowel, now said as a consonant plus i."),
+ ("े","","e matra",["eː"],("मेज़","table","\U0001fa91"),"meːz",None),
+ ("ै","","ai matra",["ɛː"],("पैसा","money","\U0001f4b0"),"pɛːsaː",None),
+ ("ो","","o matra",["oː"],("मोर","peacock","\U0001f99a"),"moːɾ",None),
+ ("ौ","","au matra",["ɔː"],("मौसम","weather","\U0001f326️"),"mɔːsəm",None),
+]
+
+DEVANAGARI_MARKS = [
+ ("ं","","anusvara",["ⁿ"],("हिंदी","Hindi","\U0001f1ee\U0001f1f3"),"hɪndːiː",
+  "Nasalises the vowel, or stands for the nasal that matches the following consonant."),
+ ("ँ","","candrabindu",["̃"],("चाँद","moon","\U0001f319"),"tɕãːd",
+  "Nasalises the vowel without adding a consonant."),
+ ("ः","","visarga",["h"],("दुःख","sorrow","\U0001f622"),"dʊkʰ",
+  "A breath after the vowel, almost only in words taken from Sanskrit."),
+ ("्","","virama",[],("नमस्ते","greeting","\U0001f64f"),"nəməsteː",
+  "Cancels the a that every consonant otherwise carries, so two consonants can meet."),
+ ("़","","nukta",[],("ज़मीन","land","\U0001f30d"),"zəmiːn",
+  "Adapts a letter to a sound borrowed from Persian, Arabic or English."),
+]
+
+KANA_SMALL = [
+ ("ぁ","ァ","small a",["a"],("ファイル","file","\U0001f4c1"),"ɟairu",None),
+ ("ぃ","ィ","small i",["i"],("ティー","tea","\U0001f375"),"tiː",None),
+ ("ぅ","ゥ","small u",["u"],("タトゥー","tattoo","✒️"),"tatuː",None),
+ ("ぇ","ェ","small e",["e"],("シェフ","chef","\U0001f468‍\U0001f373"),"ɕeɟu",None),
+ ("ぉ","ォ","small o",["o"],("フォーク","fork","\U0001f374"),"ɟoːku",None),
+ ("ゃ","ャ","small ya",["ja"],("シャツ","shirt","\U0001f455"),"ɕat͡su",None),
+ ("ゅ","ュ","small yu",["ju"],("ジュース","juice","\U0001f9c3"),"dʑuːsu",None),
+ ("ょ","ョ","small yo",["jo"],("きょうと","Kyoto","\U0001f3ef"),"kʲoːto",None),
+ ("っ","ッ","sokuon",[],("きって","stamp","\U0001f4ee"),"kitte",
+  "Doubles the consonant that follows; it is never read on its own."),
+]
+
+KANA_MARKS = [
+ ("ー","","chouonpu",["ː"],("ラーメン","ramen","\U0001f35c"),"ɾaːmeɴ",
+  "Lengthens the vowel before it, in katakana."),
+ ("゙","","dakuten",[],("ぞう","elephant","\U0001f418"),"zoː",
+  "Voices the kana it sits on: ka becomes ga, sa becomes za."),
+ ("゚","","handakuten",[],("パン","bread","\U0001f35e"),"paɴ",
+  "Turns the ha row into pa."),
+]
+
+ARABIC_FORMS = [
+ ("ء","","hamza",["ʔ"],("ماء","water","\U0001f4a7"),"maːʔ",
+  "The glottal stop, written on its own or carried by alef, waw or yeh."),
+ ("آ","","alef madda",["ʔaː"],("القرآن","the Quran","\U0001f4d6"),"al.qur.ʔaːn",None),
+ ("أ","","alef with hamza above",["ʔa"],("أم","mother","\U0001f469"),"ʔumm",None),
+ ("إ","","alef with hamza below",["ʔi"],("إسلام","Islam","☪️"),"ʔis.laːm",None),
+ ("ؤ","","waw with hamza",["ʔ"],("سؤال","question","❓"),"su.ʔaːl",None),
+ ("ئ","","yeh with hamza",["ʔ"],("رئيس","president","\U0001f454"),"ra.ʔiːs",None),
+ ("ة","","teh marbuta",["a","at"],("مدرسة","school","\U0001f3eb"),"mad.ra.sa",
+  "Ends most feminine nouns. Said as a at the end of a phrase, as t before a following word."),
+ ("ى","","alef maqsura",["aː"],("مستشفى","hospital","\U0001f3e5"),"mus.taʃ.faː",
+  "A long a written with the shape of yeh."),
+]
+
+ARABIC_HARAKAT = [
+ ("َ","","fatha",["a"],("كَتَب","he wrote","✍️"),"ka.ta.ba",None),
+ ("ُ","","damma",["u"],("كُتُب","books","\U0001f4da"),"ku.tub",None),
+ ("ِ","","kasra",["i"],("بِنت","girl","\U0001f467"),"bint",None),
+ ("ً","","tanwin fath",["an"],("شكراً","thank you","\U0001f64f"),"ʃuk.ran",
+  "The three tanwin marks add a final n, which marks a noun as indefinite."),
+ ("ٌ","","tanwin damm",["un"],("كتابٌ","a book","\U0001f4d5"),"ki.taː.bun",None),
+ ("ٍ","","tanwin kasr",["in"],("بيتٍ","of a house","\U0001f3e0"),"baj.tin",None),
+ ("ْ","","sukun",[],("مِنْ","from","➡️"),"min",
+  "Marks a consonant with no vowel after it."),
+ ("ّ","","shadda",[],("مدرّس","teacher","\U0001f468‍\U0001f3eb"),"mu.dar.ris",
+  "Doubles the consonant it sits on."),
+]
+
+HANGUL_DOUBLE = [
+ ("ㄲ","","ssang-giyeok",["ˀk"],("꽃","flower","\U0001f338"),"ˀkot","The tense series, said with a tightened glottis: neither voiced like the plain letters nor breathy like the aspirated ones."),
+ ("ㄸ","","ssang-digeut",["ˀt"],("딸","daughter","\U0001f467"),"ˀtal",None),
+ ("ㅃ","","ssang-bieup",["ˀp"],("빵","bread","\U0001f35e"),"ˀpaŋ",None),
+ ("ㅆ","","ssang-siot",["ˀs"],("쌀","uncooked rice","\U0001f33e"),"ˀsal",None),
+ ("ㅉ","","ssang-jieut",["ˀt͡ɕ"],("찌개","stew","\U0001f372"),"ˀt͡ɕi.ɡɛ",None),
+]
+
+HANGUL_COMPOUND = [
+ ("ㅐ","","ae",["ɛ"],("개","dog","\U0001f415"),"kɛ",None),
+ ("ㅒ","","yae",["jɛ"],("얘기","talk","\U0001f4ac"),"jɛ.ɡi",None),
+ ("ㅔ","","e",["e"],("네","yes","✅"),"ne",
+  "Merged with ㅐ in most speech today, which is why spelling them apart has to be learnt."),
+ ("ㅖ","","ye",["je"],("예술","art","\U0001f3a8"),"je.sul",None),
+ ("ㅘ","","wa",["wa"],("과일","fruit","\U0001f34e"),"kwa.il",None),
+ ("ㅙ","","wae",["wɛ"],("왜","why","❓"),"wɛ",None),
+ ("ㅚ","","oe",["ø","we"],("외국","foreign country","\U0001f30d"),"we.ɡuk",None),
+ ("ㅝ","","wo",["wʌ"],("원","won","\U0001f4b1"),"wʌn",None),
+ ("ㅞ","","we",["we"],("\uada4도","orbit","\U0001f6f0️"),"kwe.do",None),
+ ("ㅟ","","wi",["wi"],("귀","ear","\U0001f442"),"kwi",None),
+ ("ㅢ","","ui",["ɰi"],("의사","doctor","\U0001f468‍⚕️"),"ɰi.sa",None),
+]
+
+
+def display_for(slug, glyph):
+    """How a sign is shown when it is standing on its own.
+
+    A mark that normally sits on a letter has nothing to sit on in a list,
+    so it is given a base and its position becomes visible: ◌ि to the left,
+    ◌ा after, ◌ु below. Letters that stand alone are left as they are.
+    """
+    import unicodedata
+    # kana has real spacing forms of its two marks, so no base is needed
+    if slug == "kana":
+        return {"\u3099": "\u309b", "\u309a": "\u309c"}.get(glyph)
+    # Thai's pre-posed vowels are spacing characters, not combining marks,
+    # and showing them to the left of the circle is the whole point
+    if slug == "thai" and glyph in THAI_PREFIX:
+        return glyph + "\u25cc"
+    if slug == "thai" and glyph in "\u0e30\u0e32\u0e33":
+        return "\u25cc" + glyph
+    if unicodedata.category(glyph) not in ("Mn", "Mc"):
+        return None
+    # Arabic shows a mark on a tatweel, the connecting stroke. Its fonts
+    # carry no dotted circle, so a circle would come from elsewhere and the
+    # mark, unable to attach to it, would render as tofu beside it.
+    if slug in ("arabic", "farsi"):
+        return "\u0640" + glyph
+    return "\u25cc" + glyph
+
+IPA_LINKS.update({"ˀ": W + "Glottalization"})

@@ -101,7 +101,11 @@
       ]
     ]
   },
-  "sections": null,
+  "sections": [
+    "Gojūon",
+    "Small kana",
+    "Marks"
+  ],
   "links": [
     {
       "label": "Kana",
@@ -283,7 +287,8 @@
     "˨": "https://en.wikipedia.org/wiki/Tone_letter",
     "˧": "https://en.wikipedia.org/wiki/Tone_letter",
     "˦": "https://en.wikipedia.org/wiki/Tone_letter",
-    "˥": "https://en.wikipedia.org/wiki/Tone_letter"
+    "˥": "https://en.wikipedia.org/wiki/Tone_letter",
+    "ˀ": "https://en.wikipedia.org/wiki/Glottalization"
   },
   "letters": [
     {
@@ -1256,6 +1261,252 @@
       "signwriting_image": "images/signwriting/kana/S10040.png",
       "aliases": [],
       "notes": "Takes its place from what follows: /m/ before p b m, /ŋ/ before k g, /n/ elsewhere."
+    },
+    {
+      "glyph": "ぁ",
+      "alt": "ァ",
+      "name": "small a",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "a"
+      ],
+      "handshape": null,
+      "example_word": "ファイル",
+      "example_gloss": "file",
+      "example_image": null,
+      "example_emoji": "📁",
+      "example_ipa": "ɟairu",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ぃ",
+      "alt": "ィ",
+      "name": "small i",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "i"
+      ],
+      "handshape": null,
+      "example_word": "ティー",
+      "example_gloss": "tea",
+      "example_image": null,
+      "example_emoji": "🍵",
+      "example_ipa": "tiː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ぅ",
+      "alt": "ゥ",
+      "name": "small u",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "u"
+      ],
+      "handshape": null,
+      "example_word": "タトゥー",
+      "example_gloss": "tattoo",
+      "example_image": null,
+      "example_emoji": "✒️",
+      "example_ipa": "tatuː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ぇ",
+      "alt": "ェ",
+      "name": "small e",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "e"
+      ],
+      "handshape": null,
+      "example_word": "シェフ",
+      "example_gloss": "chef",
+      "example_image": null,
+      "example_emoji": "👨‍🍳",
+      "example_ipa": "ɕeɟu",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ぉ",
+      "alt": "ォ",
+      "name": "small o",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "o"
+      ],
+      "handshape": null,
+      "example_word": "フォーク",
+      "example_gloss": "fork",
+      "example_image": null,
+      "example_emoji": "🍴",
+      "example_ipa": "ɟoːku",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ゃ",
+      "alt": "ャ",
+      "name": "small ya",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "ja"
+      ],
+      "handshape": null,
+      "example_word": "シャツ",
+      "example_gloss": "shirt",
+      "example_image": null,
+      "example_emoji": "👕",
+      "example_ipa": "ɕat͡su",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ゅ",
+      "alt": "ュ",
+      "name": "small yu",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "ju"
+      ],
+      "handshape": null,
+      "example_word": "ジュース",
+      "example_gloss": "juice",
+      "example_image": null,
+      "example_emoji": "🧃",
+      "example_ipa": "dʑuːsu",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ょ",
+      "alt": "ョ",
+      "name": "small yo",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [
+        "jo"
+      ],
+      "handshape": null,
+      "example_word": "きょうと",
+      "example_gloss": "Kyoto",
+      "example_image": null,
+      "example_emoji": "🏯",
+      "example_ipa": "kʲoːto",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "っ",
+      "alt": "ッ",
+      "name": "sokuon",
+      "display_glyph": null,
+      "section": "Small kana",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "きって",
+      "example_gloss": "stamp",
+      "example_image": null,
+      "example_emoji": "📮",
+      "example_ipa": "kitte",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Doubles the consonant that follows; it is never read on its own."
+    },
+    {
+      "glyph": "ー",
+      "alt": "",
+      "name": "chouonpu",
+      "display_glyph": null,
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [
+        "ː"
+      ],
+      "handshape": null,
+      "example_word": "ラーメン",
+      "example_gloss": "ramen",
+      "example_image": null,
+      "example_emoji": "🍜",
+      "example_ipa": "ɾaːmeɴ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Lengthens the vowel before it, in katakana."
+    },
+    {
+      "glyph": "゙",
+      "alt": "",
+      "name": "dakuten",
+      "display_glyph": "゛",
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "ぞう",
+      "example_gloss": "elephant",
+      "example_image": null,
+      "example_emoji": "🐘",
+      "example_ipa": "zoː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Voices the kana it sits on: ka becomes ga, sa becomes za."
+    },
+    {
+      "glyph": "゚",
+      "alt": "",
+      "name": "handakuten",
+      "display_glyph": "゜",
+      "section": "Marks",
+      "romanization": null,
+      "ipa": [],
+      "handshape": null,
+      "example_word": "パン",
+      "example_gloss": "bread",
+      "example_image": null,
+      "example_emoji": "🍞",
+      "example_ipa": "paɴ",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Turns the ha row into pa."
     }
   ]
 }
