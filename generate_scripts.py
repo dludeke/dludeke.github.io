@@ -16,7 +16,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
-                            LINKS, GLOSSARY, IPA_LINKS)
+                            LINKS, GLOSSARY, IPA_LINKS,
+                            GEEZ_ORDERS, GEEZ_CONSONANTS, GEEZ_EXTRA_WORDS)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "assets", "data", "scripts")
@@ -35,8 +36,8 @@ SCRIPTS = [
      ["English", "and most of Europe"], "Alphabet: 26 letters. ASL and BSL are different manual alphabets, not variants of one: ASL fingerspells with one hand, BSL with two. Use the toggle to switch."),
     ("hebrew", "Hebrew", "א", "ISL", "שפת סימנים ישראלית",
      ["Hebrew", "Ladino", "Yiddish"], "Abjad: 22 consonants, written right to left. Five have final forms."),
-    ("geez", "Ge'ez", "ሀ", "EthSL", "የኢትዮጵያ ምልክት ቅይቅ",
-     ["Amharic", "Tigrinya", "Ge'ez"], "Abugida: 26 base consonants, each inflected through seven vowel orders. Only the first order is listed here."),
+    ("geez", "Ge'ez", "ሀ", "EthSL", "የኢትዮጵያ ምልክት ቋንቋ",
+     ["Amharic", "Tigrinya", "Ge'ez"], "Abugida: 33 consonants, each written in seven vowel orders, giving 231 syllables. Rows are consonants, columns are vowels; the shape of the base changes slightly in each order rather than taking a separate vowel sign."),
     ("arabic", "Arabic", "ا", "ArSL", "لغة الإشارة العربية",
      ["Arabic"], "Abjad: 28 letters, written right to left, each with initial, medial, final and isolated forms."),
     ("devanagari", "Devanagari", "अ", "NSL", "नेपाली सांकेतिक भाषा",
@@ -56,6 +57,19 @@ SCRIPTS = [
 ]
 
 # letters: (glyph, lowercase_or_alt, name)  -- alt is "" when there is no pair
+def geez_syllabary():
+    """All 231 Ethiopic syllables as (glyph, alt, name) triples, row by row.
+
+    Each consonant occupies eight consecutive codepoints, the first seven
+    being the vowel orders, so every cell is derivable from its base.
+    """
+    out = []
+    for base, rom, _ipa in GEEZ_CONSONANTS:
+        for i, (vrom, _v) in enumerate(GEEZ_ORDERS):
+            out.append((chr(ord(base) + i), "", f"{rom}{vrom}"))
+    return out
+
+
 LETTERS = {
 "greek": [("Α","α","Alpha"),("Β","β","Beta"),("Γ","γ","Gamma"),("Δ","δ","Delta"),
  ("Ε","ε","Epsilon"),("Ζ","ζ","Zeta"),("Η","η","Eta"),("Θ","θ","Theta"),
@@ -72,15 +86,7 @@ LETTERS = {
  ("ס","","Samekh"),("ע","","Ayin"),("פ","ף","Pe"),("צ","ץ","Tsadi"),
  ("ק","","Qof"),("ר","","Resh"),("ש","","Shin"),("ת","","Tav")],
 
-"geez": [("ሀ","","hä"),("ለ","","lä"),("ሐ","","ḥä"),("መ","","mä"),
- ("ሠ","","śä"),("ረ","","rä"),("ሰ","","sä"),("ሸ","","šä"),
- ("ቀ","","qä"),("በ","","bä"),("ተ","","tä"),("ቸ","","čä"),
- ("ኀ","","ḫä"),("ነ","","nä"),("ኘ","","ñä"),
- ("አ","","'ä"),("ከ","","kä"),("ኸ","","ḵä"),("ወ","","wä"),
- ("ዐ","","ʿä"),("ዘ","","zä"),("ዠ","","žä"),("የ","","yä"),
- ("ደ","","dä"),("ጀ","","ǵä"),("ገ","","gä"),("ጠ","","ṭä"),
- ("ጨ","","čʼä"),("ጰ","","ṗä"),("ጸ","","ṣä"),
- ("ፀ","","ḍä"),("ፈ","","fä"),("ፐ","","pä")],
+"geez": geez_syllabary(),
 
 "arabic": [("ا","","Alif"),("ب","","Ba"),("ت","","Ta"),("ث","","Tha"),("ج","","Jim"),
  ("ح","","Ha"),("خ","","Kha"),("د","","Dal"),("ذ","","Dhal"),("ر","","Ra"),
@@ -215,7 +221,17 @@ FAMILY = {
 
 FAMILY_ORDER = ["Alphabet", "Abugida and syllabary", "Abjad"]
 
+def geez_layout():
+    rows, cells = [], geez_syllabary()
+    for r in range(0, len(cells), 7):
+        rows.append([c[0] for c in cells[r:r + 7]])
+    return {"cols": 7,
+            "col_labels": [f"{i+1}  {v[0]}" for i, v in enumerate(GEEZ_ORDERS)],
+            "rows": rows}
+
+
 LAYOUTS = {
+    "geez": None,   # filled in below, since it is generated
     "kana": {
         "cols": 5,
         "col_labels": ["a", "i", "u", "e", "o"],
@@ -235,6 +251,8 @@ LAYOUTS = {
     },
 }
 
+
+LAYOUTS["geez"] = geez_layout()
 
 ATTRIBUTION = {
     "latin": [
@@ -324,7 +342,29 @@ def main():
                 "aliases": ALIASES.get(slug, {}).get(glyph, []),
                 "notes": "",
             }
-            ipa_vals = IPA_TABLE.get(slug, {}).get(glyph)
+            if slug == "geez":
+                # The Ethiopic block has consonants this reference does not
+                # list sitting between the ones it does, so the base cannot be
+                # found by dividing the codepoint: look it up.
+                cp = ord(glyph)
+                found = None
+                for b, rom_c, ipa_c in GEEZ_CONSONANTS:
+                    off = cp - ord(b)
+                    if 0 <= off < len(GEEZ_ORDERS):
+                        found = (ipa_c, off)
+                        break
+                if found:
+                    cons_ipa, oi = found
+                    entry["ipa"] = [cons_ipa + GEEZ_ORDERS[oi][1]]
+                    entry["romanization"] = label
+                w = GEEZ_EXTRA_WORDS.get(glyph) or WORDS.get(slug, {}).get(glyph)
+                if w:
+                    word, gloss, emoji = w
+                    entry.update({"example_word": word, "example_gloss": gloss,
+                                  "example_emoji": emoji})
+            # geez derives its own IPA per syllable; the old per-consonant
+            # table wrote the transliteration ä where the vowel is really /ə/.
+            ipa_vals = None if slug == "geez" else IPA_TABLE.get(slug, {}).get(glyph)
             if ipa_vals:
                 entry["ipa"] = list(ipa_vals)
             # named letter_note, not note: the script's own note comes from
@@ -353,6 +393,13 @@ def main():
             # next run and win over the tables, so editing script_content.py
             # would silently do nothing.
             from_tables = set()
+            # Values the geez block derives are table output, not hand edits;
+            # without this a bad earlier run would be preserved over the fix.
+            if slug == "geez":
+                from_tables.update(("ipa", "romanization"))
+                if GEEZ_EXTRA_WORDS.get(glyph):
+                    from_tables.update(("example_word", "example_gloss",
+                                        "example_emoji"))
             if ipa_vals:
                 from_tables.add("ipa")
             if w:

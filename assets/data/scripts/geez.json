@@ -4,17 +4,327 @@
   "representative": "ሀ",
   "sign_language": {
     "abbr": "EthSL",
-    "name": "የኢትዮጵያ ምልክት ቅይቅ"
+    "name": "የኢትዮጵያ ምልክት ቋንቋ"
   },
   "languages": [
     "Amharic",
     "Tigrinya",
     "Ge'ez"
   ],
-  "note": "Abugida: 26 base consonants, each inflected through seven vowel orders. Only the first order is listed here.",
+  "note": "Abugida: 33 consonants, each written in seven vowel orders, giving 231 syllables. Rows are consonants, columns are vowels; the shape of the base changes slightly in each order rather than taking a separate vowel sign.",
   "status": "skeleton",
   "attribution": null,
-  "layout": null,
+  "layout": {
+    "cols": 7,
+    "col_labels": [
+      "1  ä",
+      "2  u",
+      "3  i",
+      "4  a",
+      "5  e",
+      "6  ə",
+      "7  o"
+    ],
+    "rows": [
+      [
+        "ሀ",
+        "ሁ",
+        "ሂ",
+        "ሃ",
+        "ሄ",
+        "ህ",
+        "ሆ"
+      ],
+      [
+        "ለ",
+        "ሉ",
+        "ሊ",
+        "ላ",
+        "ሌ",
+        "ል",
+        "ሎ"
+      ],
+      [
+        "ሐ",
+        "ሑ",
+        "ሒ",
+        "ሓ",
+        "ሔ",
+        "ሕ",
+        "ሖ"
+      ],
+      [
+        "መ",
+        "ሙ",
+        "ሚ",
+        "ማ",
+        "ሜ",
+        "ም",
+        "ሞ"
+      ],
+      [
+        "ሠ",
+        "ሡ",
+        "ሢ",
+        "ሣ",
+        "ሤ",
+        "ሥ",
+        "ሦ"
+      ],
+      [
+        "ረ",
+        "ሩ",
+        "ሪ",
+        "ራ",
+        "ሬ",
+        "ር",
+        "ሮ"
+      ],
+      [
+        "ሰ",
+        "ሱ",
+        "ሲ",
+        "ሳ",
+        "ሴ",
+        "ስ",
+        "ሶ"
+      ],
+      [
+        "ሸ",
+        "ሹ",
+        "ሺ",
+        "ሻ",
+        "ሼ",
+        "ሽ",
+        "ሾ"
+      ],
+      [
+        "ቀ",
+        "ቁ",
+        "ቂ",
+        "ቃ",
+        "ቄ",
+        "ቅ",
+        "ቆ"
+      ],
+      [
+        "በ",
+        "ቡ",
+        "ቢ",
+        "ባ",
+        "ቤ",
+        "ብ",
+        "ቦ"
+      ],
+      [
+        "ተ",
+        "ቱ",
+        "ቲ",
+        "ታ",
+        "ቴ",
+        "ት",
+        "ቶ"
+      ],
+      [
+        "ቸ",
+        "ቹ",
+        "ቺ",
+        "ቻ",
+        "ቼ",
+        "ች",
+        "ቾ"
+      ],
+      [
+        "ኀ",
+        "ኁ",
+        "ኂ",
+        "ኃ",
+        "ኄ",
+        "ኅ",
+        "ኆ"
+      ],
+      [
+        "ነ",
+        "ኑ",
+        "ኒ",
+        "ና",
+        "ኔ",
+        "ን",
+        "ኖ"
+      ],
+      [
+        "ኘ",
+        "ኙ",
+        "ኚ",
+        "ኛ",
+        "ኜ",
+        "ኝ",
+        "ኞ"
+      ],
+      [
+        "አ",
+        "ኡ",
+        "ኢ",
+        "ኣ",
+        "ኤ",
+        "እ",
+        "ኦ"
+      ],
+      [
+        "ከ",
+        "ኩ",
+        "ኪ",
+        "ካ",
+        "ኬ",
+        "ክ",
+        "ኮ"
+      ],
+      [
+        "ኸ",
+        "ኹ",
+        "ኺ",
+        "ኻ",
+        "ኼ",
+        "ኽ",
+        "ኾ"
+      ],
+      [
+        "ወ",
+        "ዉ",
+        "ዊ",
+        "ዋ",
+        "ዌ",
+        "ው",
+        "ዎ"
+      ],
+      [
+        "ዐ",
+        "ዑ",
+        "ዒ",
+        "ዓ",
+        "ዔ",
+        "ዕ",
+        "ዖ"
+      ],
+      [
+        "ዘ",
+        "ዙ",
+        "ዚ",
+        "ዛ",
+        "ዜ",
+        "ዝ",
+        "ዞ"
+      ],
+      [
+        "ዠ",
+        "ዡ",
+        "ዢ",
+        "ዣ",
+        "ዤ",
+        "ዥ",
+        "ዦ"
+      ],
+      [
+        "የ",
+        "ዩ",
+        "ዪ",
+        "ያ",
+        "ዬ",
+        "ይ",
+        "ዮ"
+      ],
+      [
+        "ደ",
+        "ዱ",
+        "ዲ",
+        "ዳ",
+        "ዴ",
+        "ድ",
+        "ዶ"
+      ],
+      [
+        "ጀ",
+        "ጁ",
+        "ጂ",
+        "ጃ",
+        "ጄ",
+        "ጅ",
+        "ጆ"
+      ],
+      [
+        "ገ",
+        "ጉ",
+        "ጊ",
+        "ጋ",
+        "ጌ",
+        "ግ",
+        "ጎ"
+      ],
+      [
+        "ጠ",
+        "ጡ",
+        "ጢ",
+        "ጣ",
+        "ጤ",
+        "ጥ",
+        "ጦ"
+      ],
+      [
+        "ጨ",
+        "ጩ",
+        "ጪ",
+        "ጫ",
+        "ጬ",
+        "ጭ",
+        "ጮ"
+      ],
+      [
+        "ጰ",
+        "ጱ",
+        "ጲ",
+        "ጳ",
+        "ጴ",
+        "ጵ",
+        "ጶ"
+      ],
+      [
+        "ጸ",
+        "ጹ",
+        "ጺ",
+        "ጻ",
+        "ጼ",
+        "ጽ",
+        "ጾ"
+      ],
+      [
+        "ፀ",
+        "ፁ",
+        "ፂ",
+        "ፃ",
+        "ፄ",
+        "ፅ",
+        "ፆ"
+      ],
+      [
+        "ፈ",
+        "ፉ",
+        "ፊ",
+        "ፋ",
+        "ፌ",
+        "ፍ",
+        "ፎ"
+      ],
+      [
+        "ፐ",
+        "ፑ",
+        "ፒ",
+        "ፓ",
+        "ፔ",
+        "ፕ",
+        "ፖ"
+      ]
+    ]
+  },
   "links": [
     {
       "label": "Ge'ez script",
@@ -199,9 +509,9 @@
       "glyph": "ሀ",
       "alt": "",
       "name": "hä",
-      "romanization": null,
+      "romanization": "hä",
       "ipa": [
-        "hä"
+        "hə"
       ],
       "handshape": "images/handshapes/geez/1200.png",
       "example_word": "ሀገር",
@@ -215,12 +525,126 @@
       "notes": "Listed in first order, carrying the vowel ä. Each consonant has seven orders, one per vowel, written as changes to the same base shape."
     },
     {
+      "glyph": "ሁ",
+      "alt": "",
+      "name": "hu",
+      "romanization": "hu",
+      "ipa": [
+        "hu"
+      ],
+      "handshape": null,
+      "example_word": "ሁለት",
+      "example_gloss": "two",
+      "example_image": null,
+      "example_emoji": "✌️",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሂ",
+      "alt": "",
+      "name": "hi",
+      "romanization": "hi",
+      "ipa": [
+        "hi"
+      ],
+      "handshape": null,
+      "example_word": "ሂሳብ",
+      "example_gloss": "arithmetic",
+      "example_image": null,
+      "example_emoji": "🧮",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሃ",
+      "alt": "",
+      "name": "ha",
+      "romanization": "ha",
+      "ipa": [
+        "ha"
+      ],
+      "handshape": null,
+      "example_word": "ሃሳብ",
+      "example_gloss": "idea",
+      "example_image": null,
+      "example_emoji": "💡",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሄ",
+      "alt": "",
+      "name": "he",
+      "romanization": "he",
+      "ipa": [
+        "he"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ህ",
+      "alt": "",
+      "name": "hə",
+      "romanization": "hə",
+      "ipa": [
+        "hɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሆ",
+      "alt": "",
+      "name": "ho",
+      "romanization": "ho",
+      "ipa": [
+        "ho"
+      ],
+      "handshape": null,
+      "example_word": "ሆድ",
+      "example_gloss": "stomach",
+      "example_image": null,
+      "example_emoji": "🫃",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ለ",
       "alt": "",
       "name": "lä",
-      "romanization": null,
+      "romanization": "lä",
       "ipa": [
-        "lä"
+        "lə"
       ],
       "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ለውዝ",
@@ -234,12 +658,126 @@
       "notes": ""
     },
     {
+      "glyph": "ሉ",
+      "alt": "",
+      "name": "lu",
+      "romanization": "lu",
+      "ipa": [
+        "lu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሊ",
+      "alt": "",
+      "name": "li",
+      "romanization": "li",
+      "ipa": [
+        "li"
+      ],
+      "handshape": null,
+      "example_word": "ሊጥ",
+      "example_gloss": "dough",
+      "example_image": null,
+      "example_emoji": "🥟",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ላ",
+      "alt": "",
+      "name": "la",
+      "romanization": "la",
+      "ipa": [
+        "la"
+      ],
+      "handshape": null,
+      "example_word": "ላም",
+      "example_gloss": "cow",
+      "example_image": null,
+      "example_emoji": "🐄",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሌ",
+      "alt": "",
+      "name": "le",
+      "romanization": "le",
+      "ipa": [
+        "le"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ል",
+      "alt": "",
+      "name": "lə",
+      "romanization": "lə",
+      "ipa": [
+        "lɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሎ",
+      "alt": "",
+      "name": "lo",
+      "romanization": "lo",
+      "ipa": [
+        "lo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ሐ",
       "alt": "",
       "name": "ḥä",
-      "romanization": null,
+      "romanization": "ḥä",
       "ipa": [
-        "hä"
+        "hə"
       ],
       "handshape": "images/handshapes/geez/1210.png",
       "example_word": "ሐይቅ",
@@ -253,12 +791,126 @@
       "notes": ""
     },
     {
+      "glyph": "ሑ",
+      "alt": "",
+      "name": "ḥu",
+      "romanization": "ḥu",
+      "ipa": [
+        "hu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሒ",
+      "alt": "",
+      "name": "ḥi",
+      "romanization": "ḥi",
+      "ipa": [
+        "hi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሓ",
+      "alt": "",
+      "name": "ḥa",
+      "romanization": "ḥa",
+      "ipa": [
+        "ha"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሔ",
+      "alt": "",
+      "name": "ḥe",
+      "romanization": "ḥe",
+      "ipa": [
+        "he"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሕ",
+      "alt": "",
+      "name": "ḥə",
+      "romanization": "ḥə",
+      "ipa": [
+        "hɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሖ",
+      "alt": "",
+      "name": "ḥo",
+      "romanization": "ḥo",
+      "ipa": [
+        "ho"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "መ",
       "alt": "",
       "name": "mä",
-      "romanization": null,
+      "romanization": "mä",
       "ipa": [
-        "mä"
+        "mə"
       ],
       "handshape": "images/handshapes/geez/1218.png",
       "example_word": "መኪና",
@@ -272,12 +924,126 @@
       "notes": ""
     },
     {
+      "glyph": "ሙ",
+      "alt": "",
+      "name": "mu",
+      "romanization": "mu",
+      "ipa": [
+        "mu"
+      ],
+      "handshape": null,
+      "example_word": "ሙዝ",
+      "example_gloss": "banana",
+      "example_image": null,
+      "example_emoji": "🍌",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሚ",
+      "alt": "",
+      "name": "mi",
+      "romanization": "mi",
+      "ipa": [
+        "mi"
+      ],
+      "handshape": null,
+      "example_word": "ሚስት",
+      "example_gloss": "wife",
+      "example_image": null,
+      "example_emoji": "👰",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ማ",
+      "alt": "",
+      "name": "ma",
+      "romanization": "ma",
+      "ipa": [
+        "ma"
+      ],
+      "handshape": null,
+      "example_word": "ማር",
+      "example_gloss": "honey",
+      "example_image": null,
+      "example_emoji": "🍯",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሜ",
+      "alt": "",
+      "name": "me",
+      "romanization": "me",
+      "ipa": [
+        "me"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ም",
+      "alt": "",
+      "name": "mə",
+      "romanization": "mə",
+      "ipa": [
+        "mɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሞ",
+      "alt": "",
+      "name": "mo",
+      "romanization": "mo",
+      "ipa": [
+        "mo"
+      ],
+      "handshape": null,
+      "example_word": "ሞተር",
+      "example_gloss": "engine",
+      "example_image": null,
+      "example_emoji": "⚙️",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ሠ",
       "alt": "",
       "name": "śä",
-      "romanization": null,
+      "romanization": "śä",
       "ipa": [
-        "sä"
+        "sə"
       ],
       "handshape": "images/handshapes/geez/1220.png",
       "example_word": "ሠርግ",
@@ -291,12 +1057,126 @@
       "notes": ""
     },
     {
+      "glyph": "ሡ",
+      "alt": "",
+      "name": "śu",
+      "romanization": "śu",
+      "ipa": [
+        "su"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሢ",
+      "alt": "",
+      "name": "śi",
+      "romanization": "śi",
+      "ipa": [
+        "si"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሣ",
+      "alt": "",
+      "name": "śa",
+      "romanization": "śa",
+      "ipa": [
+        "sa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሤ",
+      "alt": "",
+      "name": "śe",
+      "romanization": "śe",
+      "ipa": [
+        "se"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሥ",
+      "alt": "",
+      "name": "śə",
+      "romanization": "śə",
+      "ipa": [
+        "sɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሦ",
+      "alt": "",
+      "name": "śo",
+      "romanization": "śo",
+      "ipa": [
+        "so"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ረ",
       "alt": "",
       "name": "rä",
-      "romanization": null,
+      "romanization": "rä",
       "ipa": [
-        "rä"
+        "rə"
       ],
       "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ረሃብ",
@@ -310,12 +1190,126 @@
       "notes": ""
     },
     {
+      "glyph": "ሩ",
+      "alt": "",
+      "name": "ru",
+      "romanization": "ru",
+      "ipa": [
+        "ru"
+      ],
+      "handshape": null,
+      "example_word": "ሩዝ",
+      "example_gloss": "rice",
+      "example_image": null,
+      "example_emoji": "🍚",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሪ",
+      "alt": "",
+      "name": "ri",
+      "romanization": "ri",
+      "ipa": [
+        "ri"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ራ",
+      "alt": "",
+      "name": "ra",
+      "romanization": "ra",
+      "ipa": [
+        "ra"
+      ],
+      "handshape": null,
+      "example_word": "ራስ",
+      "example_gloss": "head",
+      "example_image": null,
+      "example_emoji": "🗣️",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሬ",
+      "alt": "",
+      "name": "re",
+      "romanization": "re",
+      "ipa": [
+        "re"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ር",
+      "alt": "",
+      "name": "rə",
+      "romanization": "rə",
+      "ipa": [
+        "rɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሮ",
+      "alt": "",
+      "name": "ro",
+      "romanization": "ro",
+      "ipa": [
+        "ro"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ሰ",
       "alt": "",
       "name": "sä",
-      "romanization": null,
+      "romanization": "sä",
       "ipa": [
-        "sä"
+        "sə"
       ],
       "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ሰው",
@@ -329,12 +1323,126 @@
       "notes": ""
     },
     {
+      "glyph": "ሱ",
+      "alt": "",
+      "name": "su",
+      "romanization": "su",
+      "ipa": [
+        "su"
+      ],
+      "handshape": null,
+      "example_word": "ሱሪ",
+      "example_gloss": "trousers",
+      "example_image": null,
+      "example_emoji": "👖",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሲ",
+      "alt": "",
+      "name": "si",
+      "romanization": "si",
+      "ipa": [
+        "si"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሳ",
+      "alt": "",
+      "name": "sa",
+      "romanization": "sa",
+      "ipa": [
+        "sa"
+      ],
+      "handshape": null,
+      "example_word": "ሳር",
+      "example_gloss": "grass",
+      "example_image": null,
+      "example_emoji": "🌿",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሴ",
+      "alt": "",
+      "name": "se",
+      "romanization": "se",
+      "ipa": [
+        "se"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ስ",
+      "alt": "",
+      "name": "sə",
+      "romanization": "sə",
+      "ipa": [
+        "sɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሶ",
+      "alt": "",
+      "name": "so",
+      "romanization": "so",
+      "ipa": [
+        "so"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ሸ",
       "alt": "",
       "name": "šä",
-      "romanization": null,
+      "romanization": "šä",
       "ipa": [
-        "ʃä"
+        "ʃə"
       ],
       "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሸማ",
@@ -348,12 +1456,126 @@
       "notes": ""
     },
     {
+      "glyph": "ሹ",
+      "alt": "",
+      "name": "šu",
+      "romanization": "šu",
+      "ipa": [
+        "ʃu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሺ",
+      "alt": "",
+      "name": "ši",
+      "romanization": "ši",
+      "ipa": [
+        "ʃi"
+      ],
+      "handshape": null,
+      "example_word": "ሺህ",
+      "example_gloss": "thousand",
+      "example_image": null,
+      "example_emoji": "🔢",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሻ",
+      "alt": "",
+      "name": "ša",
+      "romanization": "ša",
+      "ipa": [
+        "ʃa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሼ",
+      "alt": "",
+      "name": "še",
+      "romanization": "še",
+      "ipa": [
+        "ʃe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሽ",
+      "alt": "",
+      "name": "šə",
+      "romanization": "šə",
+      "ipa": [
+        "ʃɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ሾ",
+      "alt": "",
+      "name": "šo",
+      "romanization": "šo",
+      "ipa": [
+        "ʃo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ቀ",
       "alt": "",
       "name": "qä",
-      "romanization": null,
+      "romanization": "qä",
       "ipa": [
-        "kʼä"
+        "kʼə"
       ],
       "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቀን",
@@ -367,12 +1589,126 @@
       "notes": ""
     },
     {
+      "glyph": "ቁ",
+      "alt": "",
+      "name": "qu",
+      "romanization": "qu",
+      "ipa": [
+        "kʼu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቂ",
+      "alt": "",
+      "name": "qi",
+      "romanization": "qi",
+      "ipa": [
+        "kʼi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቃ",
+      "alt": "",
+      "name": "qa",
+      "romanization": "qa",
+      "ipa": [
+        "kʼa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቄ",
+      "alt": "",
+      "name": "qe",
+      "romanization": "qe",
+      "ipa": [
+        "kʼe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቅ",
+      "alt": "",
+      "name": "qə",
+      "romanization": "qə",
+      "ipa": [
+        "kʼɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቆ",
+      "alt": "",
+      "name": "qo",
+      "romanization": "qo",
+      "ipa": [
+        "kʼo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "በ",
       "alt": "",
       "name": "bä",
-      "romanization": null,
+      "romanization": "bä",
       "ipa": [
-        "bä"
+        "bə"
       ],
       "handshape": "images/handshapes/geez/1260.png",
       "example_word": "በር",
@@ -386,12 +1722,126 @@
       "notes": ""
     },
     {
+      "glyph": "ቡ",
+      "alt": "",
+      "name": "bu",
+      "romanization": "bu",
+      "ipa": [
+        "bu"
+      ],
+      "handshape": null,
+      "example_word": "ቡና",
+      "example_gloss": "coffee",
+      "example_image": null,
+      "example_emoji": "☕",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቢ",
+      "alt": "",
+      "name": "bi",
+      "romanization": "bi",
+      "ipa": [
+        "bi"
+      ],
+      "handshape": null,
+      "example_word": "ቢላ",
+      "example_gloss": "knife",
+      "example_image": null,
+      "example_emoji": "🔪",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ባ",
+      "alt": "",
+      "name": "ba",
+      "romanization": "ba",
+      "ipa": [
+        "ba"
+      ],
+      "handshape": null,
+      "example_word": "ባቡር",
+      "example_gloss": "train",
+      "example_image": null,
+      "example_emoji": "🚆",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቤ",
+      "alt": "",
+      "name": "be",
+      "romanization": "be",
+      "ipa": [
+        "be"
+      ],
+      "handshape": null,
+      "example_word": "ቤት",
+      "example_gloss": "house",
+      "example_image": null,
+      "example_emoji": "🏠",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ብ",
+      "alt": "",
+      "name": "bə",
+      "romanization": "bə",
+      "ipa": [
+        "bɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቦ",
+      "alt": "",
+      "name": "bo",
+      "romanization": "bo",
+      "ipa": [
+        "bo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ተ",
       "alt": "",
       "name": "tä",
-      "romanization": null,
+      "romanization": "tä",
       "ipa": [
-        "tä"
+        "tə"
       ],
       "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ተራራ",
@@ -405,12 +1855,126 @@
       "notes": ""
     },
     {
+      "glyph": "ቱ",
+      "alt": "",
+      "name": "tu",
+      "romanization": "tu",
+      "ipa": [
+        "tu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቲ",
+      "alt": "",
+      "name": "ti",
+      "romanization": "ti",
+      "ipa": [
+        "ti"
+      ],
+      "handshape": null,
+      "example_word": "ቲማቲም",
+      "example_gloss": "tomato",
+      "example_image": null,
+      "example_emoji": "🍅",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ታ",
+      "alt": "",
+      "name": "ta",
+      "romanization": "ta",
+      "ipa": [
+        "ta"
+      ],
+      "handshape": null,
+      "example_word": "ታሪክ",
+      "example_gloss": "history",
+      "example_image": null,
+      "example_emoji": "📜",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቴ",
+      "alt": "",
+      "name": "te",
+      "romanization": "te",
+      "ipa": [
+        "te"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ት",
+      "alt": "",
+      "name": "tə",
+      "romanization": "tə",
+      "ipa": [
+        "tɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቶ",
+      "alt": "",
+      "name": "to",
+      "romanization": "to",
+      "ipa": [
+        "to"
+      ],
+      "handshape": null,
+      "example_word": "ቶሎ",
+      "example_gloss": "quickly",
+      "example_image": null,
+      "example_emoji": "🏃",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ቸ",
       "alt": "",
       "name": "čä",
-      "romanization": null,
+      "romanization": "čä",
       "ipa": [
-        "t͡ʃä"
+        "t͡ʃə"
       ],
       "handshape": "images/handshapes/geez/1278.png",
       "example_word": "ቸኮሌት",
@@ -424,12 +1988,126 @@
       "notes": ""
     },
     {
+      "glyph": "ቹ",
+      "alt": "",
+      "name": "ču",
+      "romanization": "ču",
+      "ipa": [
+        "t͡ʃu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቺ",
+      "alt": "",
+      "name": "či",
+      "romanization": "či",
+      "ipa": [
+        "t͡ʃi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቻ",
+      "alt": "",
+      "name": "ča",
+      "romanization": "ča",
+      "ipa": [
+        "t͡ʃa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቼ",
+      "alt": "",
+      "name": "če",
+      "romanization": "če",
+      "ipa": [
+        "t͡ʃe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ች",
+      "alt": "",
+      "name": "čə",
+      "romanization": "čə",
+      "ipa": [
+        "t͡ʃɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ቾ",
+      "alt": "",
+      "name": "čo",
+      "romanization": "čo",
+      "ipa": [
+        "t͡ʃo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ኀ",
       "alt": "",
       "name": "ḫä",
-      "romanization": null,
+      "romanization": "ḫä",
       "ipa": [
-        "hä"
+        "hə"
       ],
       "handshape": "images/handshapes/geez/1280.png",
       "example_word": "ኀይል",
@@ -443,12 +2121,126 @@
       "notes": ""
     },
     {
+      "glyph": "ኁ",
+      "alt": "",
+      "name": "ḫu",
+      "romanization": "ḫu",
+      "ipa": [
+        "hu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኂ",
+      "alt": "",
+      "name": "ḫi",
+      "romanization": "ḫi",
+      "ipa": [
+        "hi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኃ",
+      "alt": "",
+      "name": "ḫa",
+      "romanization": "ḫa",
+      "ipa": [
+        "ha"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኄ",
+      "alt": "",
+      "name": "ḫe",
+      "romanization": "ḫe",
+      "ipa": [
+        "he"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኅ",
+      "alt": "",
+      "name": "ḫə",
+      "romanization": "ḫə",
+      "ipa": [
+        "hɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኆ",
+      "alt": "",
+      "name": "ḫo",
+      "romanization": "ḫo",
+      "ipa": [
+        "ho"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ነ",
       "alt": "",
       "name": "nä",
-      "romanization": null,
+      "romanization": "nä",
       "ipa": [
-        "nä"
+        "nə"
       ],
       "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ነብር",
@@ -462,12 +2254,126 @@
       "notes": ""
     },
     {
+      "glyph": "ኑ",
+      "alt": "",
+      "name": "nu",
+      "romanization": "nu",
+      "ipa": [
+        "nu"
+      ],
+      "handshape": null,
+      "example_word": "ኑሮ",
+      "example_gloss": "living",
+      "example_image": null,
+      "example_emoji": "🏡",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኒ",
+      "alt": "",
+      "name": "ni",
+      "romanization": "ni",
+      "ipa": [
+        "ni"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ና",
+      "alt": "",
+      "name": "na",
+      "romanization": "na",
+      "ipa": [
+        "na"
+      ],
+      "handshape": null,
+      "example_word": "ናት",
+      "example_gloss": "she is",
+      "example_image": null,
+      "example_emoji": "💬",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኔ",
+      "alt": "",
+      "name": "ne",
+      "romanization": "ne",
+      "ipa": [
+        "ne"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ን",
+      "alt": "",
+      "name": "nə",
+      "romanization": "nə",
+      "ipa": [
+        "nɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኖ",
+      "alt": "",
+      "name": "no",
+      "romanization": "no",
+      "ipa": [
+        "no"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ኘ",
       "alt": "",
       "name": "ñä",
-      "romanization": null,
+      "romanization": "ñä",
       "ipa": [
-        "ɲä"
+        "ɲə"
       ],
       "handshape": "images/handshapes/geez/1298.png",
       "example_word": "ኘ",
@@ -481,12 +2387,126 @@
       "notes": ""
     },
     {
+      "glyph": "ኙ",
+      "alt": "",
+      "name": "ñu",
+      "romanization": "ñu",
+      "ipa": [
+        "ɲu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኚ",
+      "alt": "",
+      "name": "ñi",
+      "romanization": "ñi",
+      "ipa": [
+        "ɲi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኛ",
+      "alt": "",
+      "name": "ña",
+      "romanization": "ña",
+      "ipa": [
+        "ɲa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኜ",
+      "alt": "",
+      "name": "ñe",
+      "romanization": "ñe",
+      "ipa": [
+        "ɲe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኝ",
+      "alt": "",
+      "name": "ñə",
+      "romanization": "ñə",
+      "ipa": [
+        "ɲɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኞ",
+      "alt": "",
+      "name": "ño",
+      "romanization": "ño",
+      "ipa": [
+        "ɲo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "አ",
       "alt": "",
-      "name": "'ä",
-      "romanization": null,
+      "name": "ʾä",
+      "romanization": "ʾä",
       "ipa": [
-        "ʔä"
+        "ʔə"
       ],
       "handshape": "images/handshapes/geez/12a0.png",
       "example_word": "አንበሳ",
@@ -500,12 +2520,126 @@
       "notes": ""
     },
     {
+      "glyph": "ኡ",
+      "alt": "",
+      "name": "ʾu",
+      "romanization": "ʾu",
+      "ipa": [
+        "ʔu"
+      ],
+      "handshape": null,
+      "example_word": "ኡደት",
+      "example_gloss": "cycle",
+      "example_image": null,
+      "example_emoji": "🔄",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኢ",
+      "alt": "",
+      "name": "ʾi",
+      "romanization": "ʾi",
+      "ipa": [
+        "ʔi"
+      ],
+      "handshape": null,
+      "example_word": "ኢትዮጵያ",
+      "example_gloss": "Ethiopia",
+      "example_image": null,
+      "example_emoji": "🇪🇹",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኣ",
+      "alt": "",
+      "name": "ʾa",
+      "romanization": "ʾa",
+      "ipa": [
+        "ʔa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኤ",
+      "alt": "",
+      "name": "ʾe",
+      "romanization": "ʾe",
+      "ipa": [
+        "ʔe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "እ",
+      "alt": "",
+      "name": "ʾə",
+      "romanization": "ʾə",
+      "ipa": [
+        "ʔɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኦ",
+      "alt": "",
+      "name": "ʾo",
+      "romanization": "ʾo",
+      "ipa": [
+        "ʔo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ከ",
       "alt": "",
       "name": "kä",
-      "romanization": null,
+      "romanization": "kä",
       "ipa": [
-        "kä"
+        "kə"
       ],
       "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ከተማ",
@@ -519,12 +2653,126 @@
       "notes": ""
     },
     {
+      "glyph": "ኩ",
+      "alt": "",
+      "name": "ku",
+      "romanization": "ku",
+      "ipa": [
+        "ku"
+      ],
+      "handshape": null,
+      "example_word": "ኩባያ",
+      "example_gloss": "cup",
+      "example_image": null,
+      "example_emoji": "🍵",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኪ",
+      "alt": "",
+      "name": "ki",
+      "romanization": "ki",
+      "ipa": [
+        "ki"
+      ],
+      "handshape": null,
+      "example_word": "ኪስ",
+      "example_gloss": "pocket",
+      "example_image": null,
+      "example_emoji": "👖",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ካ",
+      "alt": "",
+      "name": "ka",
+      "romanization": "ka",
+      "ipa": [
+        "ka"
+      ],
+      "handshape": null,
+      "example_word": "ካርታ",
+      "example_gloss": "map",
+      "example_image": null,
+      "example_emoji": "🗺️",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኬ",
+      "alt": "",
+      "name": "ke",
+      "romanization": "ke",
+      "ipa": [
+        "ke"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ክ",
+      "alt": "",
+      "name": "kə",
+      "romanization": "kə",
+      "ipa": [
+        "kɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኮ",
+      "alt": "",
+      "name": "ko",
+      "romanization": "ko",
+      "ipa": [
+        "ko"
+      ],
+      "handshape": null,
+      "example_word": "ኮከብ",
+      "example_gloss": "star",
+      "example_image": null,
+      "example_emoji": "⭐",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ኸ",
       "alt": "",
       "name": "ḵä",
-      "romanization": null,
+      "romanization": "ḵä",
       "ipa": [
-        "xä"
+        "xə"
       ],
       "handshape": "images/handshapes/geez/12b8.png",
       "example_word": "ኸ",
@@ -538,12 +2786,126 @@
       "notes": ""
     },
     {
+      "glyph": "ኹ",
+      "alt": "",
+      "name": "ḵu",
+      "romanization": "ḵu",
+      "ipa": [
+        "xu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኺ",
+      "alt": "",
+      "name": "ḵi",
+      "romanization": "ḵi",
+      "ipa": [
+        "xi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኻ",
+      "alt": "",
+      "name": "ḵa",
+      "romanization": "ḵa",
+      "ipa": [
+        "xa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኼ",
+      "alt": "",
+      "name": "ḵe",
+      "romanization": "ḵe",
+      "ipa": [
+        "xe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኽ",
+      "alt": "",
+      "name": "ḵə",
+      "romanization": "ḵə",
+      "ipa": [
+        "xɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ኾ",
+      "alt": "",
+      "name": "ḵo",
+      "romanization": "ḵo",
+      "ipa": [
+        "xo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ወ",
       "alt": "",
       "name": "wä",
-      "romanization": null,
+      "romanization": "wä",
       "ipa": [
-        "wä"
+        "wə"
       ],
       "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ወተት",
@@ -557,12 +2919,126 @@
       "notes": ""
     },
     {
+      "glyph": "ዉ",
+      "alt": "",
+      "name": "wu",
+      "romanization": "wu",
+      "ipa": [
+        "wu"
+      ],
+      "handshape": null,
+      "example_word": "ዉሃ",
+      "example_gloss": "water",
+      "example_image": null,
+      "example_emoji": "💧",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዊ",
+      "alt": "",
+      "name": "wi",
+      "romanization": "wi",
+      "ipa": [
+        "wi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዋ",
+      "alt": "",
+      "name": "wa",
+      "romanization": "wa",
+      "ipa": [
+        "wa"
+      ],
+      "handshape": null,
+      "example_word": "ዋና",
+      "example_gloss": "swimming",
+      "example_image": null,
+      "example_emoji": "🏊",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዌ",
+      "alt": "",
+      "name": "we",
+      "romanization": "we",
+      "ipa": [
+        "we"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ው",
+      "alt": "",
+      "name": "wə",
+      "romanization": "wə",
+      "ipa": [
+        "wɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዎ",
+      "alt": "",
+      "name": "wo",
+      "romanization": "wo",
+      "ipa": [
+        "wo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ዐ",
       "alt": "",
       "name": "ʿä",
-      "romanization": null,
+      "romanization": "ʿä",
       "ipa": [
-        "ʔä"
+        "ʔə"
       ],
       "handshape": "images/handshapes/geez/12d0.png",
       "example_word": "ዐይን",
@@ -576,12 +3052,126 @@
       "notes": ""
     },
     {
+      "glyph": "ዑ",
+      "alt": "",
+      "name": "ʿu",
+      "romanization": "ʿu",
+      "ipa": [
+        "ʔu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዒ",
+      "alt": "",
+      "name": "ʿi",
+      "romanization": "ʿi",
+      "ipa": [
+        "ʔi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዓ",
+      "alt": "",
+      "name": "ʿa",
+      "romanization": "ʿa",
+      "ipa": [
+        "ʔa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዔ",
+      "alt": "",
+      "name": "ʿe",
+      "romanization": "ʿe",
+      "ipa": [
+        "ʔe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዕ",
+      "alt": "",
+      "name": "ʿə",
+      "romanization": "ʿə",
+      "ipa": [
+        "ʔɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዖ",
+      "alt": "",
+      "name": "ʿo",
+      "romanization": "ʿo",
+      "ipa": [
+        "ʔo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ዘ",
       "alt": "",
       "name": "zä",
-      "romanization": null,
+      "romanization": "zä",
       "ipa": [
-        "zä"
+        "zə"
       ],
       "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዘይት",
@@ -595,12 +3185,126 @@
       "notes": ""
     },
     {
+      "glyph": "ዙ",
+      "alt": "",
+      "name": "zu",
+      "romanization": "zu",
+      "ipa": [
+        "zu"
+      ],
+      "handshape": null,
+      "example_word": "ዙሪያ",
+      "example_gloss": "surroundings",
+      "example_image": null,
+      "example_emoji": "🔄",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዚ",
+      "alt": "",
+      "name": "zi",
+      "romanization": "zi",
+      "ipa": [
+        "zi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዛ",
+      "alt": "",
+      "name": "za",
+      "romanization": "za",
+      "ipa": [
+        "za"
+      ],
+      "handshape": null,
+      "example_word": "ዛፍ",
+      "example_gloss": "tree",
+      "example_image": null,
+      "example_emoji": "🌳",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዜ",
+      "alt": "",
+      "name": "ze",
+      "romanization": "ze",
+      "ipa": [
+        "ze"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዝ",
+      "alt": "",
+      "name": "zə",
+      "romanization": "zə",
+      "ipa": [
+        "zɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዞ",
+      "alt": "",
+      "name": "zo",
+      "romanization": "zo",
+      "ipa": [
+        "zo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ዠ",
       "alt": "",
       "name": "žä",
-      "romanization": null,
+      "romanization": "žä",
       "ipa": [
-        "ʒä"
+        "ʒə"
       ],
       "handshape": "images/handshapes/geez/12e0.png",
       "example_word": "ዠ",
@@ -614,12 +3318,126 @@
       "notes": ""
     },
     {
+      "glyph": "ዡ",
+      "alt": "",
+      "name": "žu",
+      "romanization": "žu",
+      "ipa": [
+        "ʒu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዢ",
+      "alt": "",
+      "name": "ži",
+      "romanization": "ži",
+      "ipa": [
+        "ʒi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዣ",
+      "alt": "",
+      "name": "ža",
+      "romanization": "ža",
+      "ipa": [
+        "ʒa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዤ",
+      "alt": "",
+      "name": "že",
+      "romanization": "že",
+      "ipa": [
+        "ʒe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዥ",
+      "alt": "",
+      "name": "žə",
+      "romanization": "žə",
+      "ipa": [
+        "ʒɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዦ",
+      "alt": "",
+      "name": "žo",
+      "romanization": "žo",
+      "ipa": [
+        "ʒo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "የ",
       "alt": "",
       "name": "yä",
-      "romanization": null,
+      "romanization": "yä",
       "ipa": [
-        "jä"
+        "jə"
       ],
       "handshape": "images/handshapes/geez/12e8.png",
       "example_word": "የበግ",
@@ -633,12 +3451,126 @@
       "notes": ""
     },
     {
+      "glyph": "ዩ",
+      "alt": "",
+      "name": "yu",
+      "romanization": "yu",
+      "ipa": [
+        "ju"
+      ],
+      "handshape": null,
+      "example_word": "ዩኒቨርሲቲ",
+      "example_gloss": "university",
+      "example_image": null,
+      "example_emoji": "🎓",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዪ",
+      "alt": "",
+      "name": "yi",
+      "romanization": "yi",
+      "ipa": [
+        "ji"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ያ",
+      "alt": "",
+      "name": "ya",
+      "romanization": "ya",
+      "ipa": [
+        "ja"
+      ],
+      "handshape": null,
+      "example_word": "ያዝ",
+      "example_gloss": "hold",
+      "example_image": null,
+      "example_emoji": "✊",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዬ",
+      "alt": "",
+      "name": "ye",
+      "romanization": "ye",
+      "ipa": [
+        "je"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ይ",
+      "alt": "",
+      "name": "yə",
+      "romanization": "yə",
+      "ipa": [
+        "jɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዮ",
+      "alt": "",
+      "name": "yo",
+      "romanization": "yo",
+      "ipa": [
+        "jo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ደ",
       "alt": "",
       "name": "dä",
-      "romanization": null,
+      "romanization": "dä",
       "ipa": [
-        "dä"
+        "də"
       ],
       "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ደብተር",
@@ -652,12 +3584,126 @@
       "notes": ""
     },
     {
+      "glyph": "ዱ",
+      "alt": "",
+      "name": "du",
+      "romanization": "du",
+      "ipa": [
+        "du"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዲ",
+      "alt": "",
+      "name": "di",
+      "romanization": "di",
+      "ipa": [
+        "di"
+      ],
+      "handshape": null,
+      "example_word": "ዲሽ",
+      "example_gloss": "dish",
+      "example_image": null,
+      "example_emoji": "🍽️",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዳ",
+      "alt": "",
+      "name": "da",
+      "romanization": "da",
+      "ipa": [
+        "da"
+      ],
+      "handshape": null,
+      "example_word": "ዳቦ",
+      "example_gloss": "bread",
+      "example_image": null,
+      "example_emoji": "🍞",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዴ",
+      "alt": "",
+      "name": "de",
+      "romanization": "de",
+      "ipa": [
+        "de"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ድ",
+      "alt": "",
+      "name": "də",
+      "romanization": "də",
+      "ipa": [
+        "dɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ዶ",
+      "alt": "",
+      "name": "do",
+      "romanization": "do",
+      "ipa": [
+        "do"
+      ],
+      "handshape": null,
+      "example_word": "ዶሮ",
+      "example_gloss": "chicken",
+      "example_image": null,
+      "example_emoji": "🐔",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ጀ",
       "alt": "",
       "name": "ǵä",
-      "romanization": null,
+      "romanization": "ǵä",
       "ipa": [
-        "d͡ʒä"
+        "d͡ʒə"
       ],
       "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጀልባ",
@@ -671,12 +3717,126 @@
       "notes": ""
     },
     {
+      "glyph": "ጁ",
+      "alt": "",
+      "name": "ǵu",
+      "romanization": "ǵu",
+      "ipa": [
+        "d͡ʒu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጂ",
+      "alt": "",
+      "name": "ǵi",
+      "romanization": "ǵi",
+      "ipa": [
+        "d͡ʒi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጃ",
+      "alt": "",
+      "name": "ǵa",
+      "romanization": "ǵa",
+      "ipa": [
+        "d͡ʒa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጄ",
+      "alt": "",
+      "name": "ǵe",
+      "romanization": "ǵe",
+      "ipa": [
+        "d͡ʒe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጅ",
+      "alt": "",
+      "name": "ǵə",
+      "romanization": "ǵə",
+      "ipa": [
+        "d͡ʒɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጆ",
+      "alt": "",
+      "name": "ǵo",
+      "romanization": "ǵo",
+      "ipa": [
+        "d͡ʒo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ገ",
       "alt": "",
       "name": "gä",
-      "romanization": null,
+      "romanization": "gä",
       "ipa": [
-        "ɡä"
+        "ɡə"
       ],
       "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ገበያ",
@@ -690,12 +3850,126 @@
       "notes": ""
     },
     {
+      "glyph": "ጉ",
+      "alt": "",
+      "name": "gu",
+      "romanization": "gu",
+      "ipa": [
+        "ɡu"
+      ],
+      "handshape": null,
+      "example_word": "ጉዞ",
+      "example_gloss": "journey",
+      "example_image": null,
+      "example_emoji": "🧳",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጊ",
+      "alt": "",
+      "name": "gi",
+      "romanization": "gi",
+      "ipa": [
+        "ɡi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጋ",
+      "alt": "",
+      "name": "ga",
+      "romanization": "ga",
+      "ipa": [
+        "ɡa"
+      ],
+      "handshape": null,
+      "example_word": "ጋዜጣ",
+      "example_gloss": "newspaper",
+      "example_image": null,
+      "example_emoji": "📰",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጌ",
+      "alt": "",
+      "name": "ge",
+      "romanization": "ge",
+      "ipa": [
+        "ɡe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ግ",
+      "alt": "",
+      "name": "gə",
+      "romanization": "gə",
+      "ipa": [
+        "ɡɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጎ",
+      "alt": "",
+      "name": "go",
+      "romanization": "go",
+      "ipa": [
+        "ɡo"
+      ],
+      "handshape": null,
+      "example_word": "ጎመን",
+      "example_gloss": "cabbage",
+      "example_image": null,
+      "example_emoji": "🥬",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ጠ",
       "alt": "",
       "name": "ṭä",
-      "romanization": null,
+      "romanization": "ṭä",
       "ipa": [
-        "tʼä"
+        "tʼə"
       ],
       "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጠረጴዛ",
@@ -709,12 +3983,126 @@
       "notes": ""
     },
     {
+      "glyph": "ጡ",
+      "alt": "",
+      "name": "ṭu",
+      "romanization": "ṭu",
+      "ipa": [
+        "tʼu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጢ",
+      "alt": "",
+      "name": "ṭi",
+      "romanization": "ṭi",
+      "ipa": [
+        "tʼi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጣ",
+      "alt": "",
+      "name": "ṭa",
+      "romanization": "ṭa",
+      "ipa": [
+        "tʼa"
+      ],
+      "handshape": null,
+      "example_word": "ጣፋጭ",
+      "example_gloss": "sweet",
+      "example_image": null,
+      "example_emoji": "🍬",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጤ",
+      "alt": "",
+      "name": "ṭe",
+      "romanization": "ṭe",
+      "ipa": [
+        "tʼe"
+      ],
+      "handshape": null,
+      "example_word": "ጤና",
+      "example_gloss": "health",
+      "example_image": null,
+      "example_emoji": "💚",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጥ",
+      "alt": "",
+      "name": "ṭə",
+      "romanization": "ṭə",
+      "ipa": [
+        "tʼɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጦ",
+      "alt": "",
+      "name": "ṭo",
+      "romanization": "ṭo",
+      "ipa": [
+        "tʼo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ጨ",
       "alt": "",
       "name": "čʼä",
-      "romanization": null,
+      "romanization": "čʼä",
       "ipa": [
-        "t͡ʃʼä"
+        "t͡ʃʼə"
       ],
       "handshape": "images/handshapes/geez/1328.png",
       "example_word": "ጨረቃ",
@@ -728,12 +4116,126 @@
       "notes": ""
     },
     {
+      "glyph": "ጩ",
+      "alt": "",
+      "name": "čʼu",
+      "romanization": "čʼu",
+      "ipa": [
+        "t͡ʃʼu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጪ",
+      "alt": "",
+      "name": "čʼi",
+      "romanization": "čʼi",
+      "ipa": [
+        "t͡ʃʼi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጫ",
+      "alt": "",
+      "name": "čʼa",
+      "romanization": "čʼa",
+      "ipa": [
+        "t͡ʃʼa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጬ",
+      "alt": "",
+      "name": "čʼe",
+      "romanization": "čʼe",
+      "ipa": [
+        "t͡ʃʼe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጭ",
+      "alt": "",
+      "name": "čʼə",
+      "romanization": "čʼə",
+      "ipa": [
+        "t͡ʃʼɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጮ",
+      "alt": "",
+      "name": "čʼo",
+      "romanization": "čʼo",
+      "ipa": [
+        "t͡ʃʼo"
+      ],
+      "handshape": null,
+      "example_word": "ጮማ",
+      "example_gloss": "fatty meat",
+      "example_image": null,
+      "example_emoji": "🥩",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ጰ",
       "alt": "",
       "name": "ṗä",
-      "romanization": null,
+      "romanization": "ṗä",
       "ipa": [
-        "pʼä"
+        "pʼə"
       ],
       "handshape": "images/handshapes/geez/1330.png",
       "example_word": "ጰ",
@@ -747,12 +4249,126 @@
       "notes": ""
     },
     {
+      "glyph": "ጱ",
+      "alt": "",
+      "name": "ṗu",
+      "romanization": "ṗu",
+      "ipa": [
+        "pʼu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጲ",
+      "alt": "",
+      "name": "ṗi",
+      "romanization": "ṗi",
+      "ipa": [
+        "pʼi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጳ",
+      "alt": "",
+      "name": "ṗa",
+      "romanization": "ṗa",
+      "ipa": [
+        "pʼa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጴ",
+      "alt": "",
+      "name": "ṗe",
+      "romanization": "ṗe",
+      "ipa": [
+        "pʼe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጵ",
+      "alt": "",
+      "name": "ṗə",
+      "romanization": "ṗə",
+      "ipa": [
+        "pʼɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጶ",
+      "alt": "",
+      "name": "ṗo",
+      "romanization": "ṗo",
+      "ipa": [
+        "pʼo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ጸ",
       "alt": "",
       "name": "ṣä",
-      "romanization": null,
+      "romanization": "ṣä",
       "ipa": [
-        "t͡sʼä"
+        "t͡sʼə"
       ],
       "handshape": "images/handshapes/geez/1338.png",
       "example_word": "ጸሐይ",
@@ -766,12 +4382,126 @@
       "notes": ""
     },
     {
+      "glyph": "ጹ",
+      "alt": "",
+      "name": "ṣu",
+      "romanization": "ṣu",
+      "ipa": [
+        "t͡sʼu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጺ",
+      "alt": "",
+      "name": "ṣi",
+      "romanization": "ṣi",
+      "ipa": [
+        "t͡sʼi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጻ",
+      "alt": "",
+      "name": "ṣa",
+      "romanization": "ṣa",
+      "ipa": [
+        "t͡sʼa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጼ",
+      "alt": "",
+      "name": "ṣe",
+      "romanization": "ṣe",
+      "ipa": [
+        "t͡sʼe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጽ",
+      "alt": "",
+      "name": "ṣə",
+      "romanization": "ṣə",
+      "ipa": [
+        "t͡sʼɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ጾ",
+      "alt": "",
+      "name": "ṣo",
+      "romanization": "ṣo",
+      "ipa": [
+        "t͡sʼo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ፀ",
       "alt": "",
       "name": "ḍä",
-      "romanization": null,
+      "romanization": "ḍä",
       "ipa": [
-        "t͡sʼä"
+        "t͡sʼə"
       ],
       "handshape": "images/handshapes/geez/1340.png",
       "example_word": "ፀጉር",
@@ -785,12 +4515,126 @@
       "notes": ""
     },
     {
+      "glyph": "ፁ",
+      "alt": "",
+      "name": "ḍu",
+      "romanization": "ḍu",
+      "ipa": [
+        "t͡sʼu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፂ",
+      "alt": "",
+      "name": "ḍi",
+      "romanization": "ḍi",
+      "ipa": [
+        "t͡sʼi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፃ",
+      "alt": "",
+      "name": "ḍa",
+      "romanization": "ḍa",
+      "ipa": [
+        "t͡sʼa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፄ",
+      "alt": "",
+      "name": "ḍe",
+      "romanization": "ḍe",
+      "ipa": [
+        "t͡sʼe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፅ",
+      "alt": "",
+      "name": "ḍə",
+      "romanization": "ḍə",
+      "ipa": [
+        "t͡sʼɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፆ",
+      "alt": "",
+      "name": "ḍo",
+      "romanization": "ḍo",
+      "ipa": [
+        "t͡sʼo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ፈ",
       "alt": "",
       "name": "fä",
-      "romanization": null,
+      "romanization": "fä",
       "ipa": [
-        "fä"
+        "fə"
       ],
       "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፈረስ",
@@ -804,12 +4648,126 @@
       "notes": ""
     },
     {
+      "glyph": "ፉ",
+      "alt": "",
+      "name": "fu",
+      "romanization": "fu",
+      "ipa": [
+        "fu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፊ",
+      "alt": "",
+      "name": "fi",
+      "romanization": "fi",
+      "ipa": [
+        "fi"
+      ],
+      "handshape": null,
+      "example_word": "ፊት",
+      "example_gloss": "face",
+      "example_image": null,
+      "example_emoji": "😊",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፋ",
+      "alt": "",
+      "name": "fa",
+      "romanization": "fa",
+      "ipa": [
+        "fa"
+      ],
+      "handshape": null,
+      "example_word": "ፋብሪካ",
+      "example_gloss": "factory",
+      "example_image": null,
+      "example_emoji": "🏭",
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፌ",
+      "alt": "",
+      "name": "fe",
+      "romanization": "fe",
+      "ipa": [
+        "fe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፍ",
+      "alt": "",
+      "name": "fə",
+      "romanization": "fə",
+      "ipa": [
+        "fɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፎ",
+      "alt": "",
+      "name": "fo",
+      "romanization": "fo",
+      "ipa": [
+        "fo"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
       "glyph": "ፐ",
       "alt": "",
       "name": "pä",
-      "romanization": null,
+      "romanization": "pä",
       "ipa": [
-        "pä"
+        "pə"
       ],
       "handshape": "images/handshapes/geez/1350.png",
       "example_word": "ፐርሙዝ",
@@ -817,6 +4775,120 @@
       "example_image": null,
       "example_emoji": "🫗",
       "example_ipa": "permuz",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፑ",
+      "alt": "",
+      "name": "pu",
+      "romanization": "pu",
+      "ipa": [
+        "pu"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፒ",
+      "alt": "",
+      "name": "pi",
+      "romanization": "pi",
+      "ipa": [
+        "pi"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፓ",
+      "alt": "",
+      "name": "pa",
+      "romanization": "pa",
+      "ipa": [
+        "pa"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፔ",
+      "alt": "",
+      "name": "pe",
+      "romanization": "pe",
+      "ipa": [
+        "pe"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፕ",
+      "alt": "",
+      "name": "pə",
+      "romanization": "pə",
+      "ipa": [
+        "pɨ"
+      ],
+      "handshape": null,
+      "example_word": null,
+      "example_gloss": null,
+      "example_image": null,
+      "example_emoji": null,
+      "example_ipa": null,
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "glyph": "ፖ",
+      "alt": "",
+      "name": "po",
+      "romanization": "po",
+      "ipa": [
+        "po"
+      ],
+      "handshape": null,
+      "example_word": "ፖሊስ",
+      "example_gloss": "police",
+      "example_image": null,
+      "example_emoji": "👮",
+      "example_ipa": null,
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],

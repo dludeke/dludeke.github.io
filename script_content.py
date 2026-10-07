@@ -837,3 +837,67 @@ IPA_LINKS = {
  "ɐ": W+"Near-open_central_vowel", "ä": W+"Open_central_unrounded_vowel",
  "—": None,
 }
+
+# ---------------------------------------------------------------------------
+# Ge'ez full syllabary. Ethiopic is laid out in blocks of eight codepoints:
+# seven vowel orders then a labialised form. Each row is one consonant, each
+# column one vowel, so a syllable's glyph, romanisation and IPA all follow
+# from its base consonant and its order.
+# ---------------------------------------------------------------------------
+
+GEEZ_ORDERS = [
+    ("ä", "ə"),   # 1st  ä
+    ("u", "u"),             # 2nd
+    ("i", "i"),             # 3rd
+    ("a", "a"),             # 4th
+    ("e", "e"),             # 5th
+    ("ə", "ɨ"),   # 6th  often silent
+    ("o", "o"),             # 7th
+]
+
+# base consonant -> (romanisation, IPA). The order vowel is appended.
+GEEZ_CONSONANTS = [
+    ("ሀ", "h", "h"),   ("ለ", "l", "l"),   ("ሐ", "ḥ", "h"),
+    ("መ", "m", "m"),   ("ሠ", "ś", "s"), ("ረ", "r", "r"),
+    ("ሰ", "s", "s"),   ("ሸ", "š", "ʃ"), ("ቀ", "q", "kʼ"),
+    ("በ", "b", "b"),   ("ተ", "t", "t"),   ("ቸ", "č", "t͡ʃ"),
+    ("ኀ", "ḫ", "h"), ("ነ", "n", "n"), ("ኘ", "ñ", "ɲ"),
+    ("አ", "ʾ", "ʔ"), ("ከ", "k", "k"), ("ኸ", "ḵ", "x"),
+    ("ወ", "w", "w"),   ("ዐ", "ʿ", "ʔ"), ("ዘ", "z", "z"),
+    ("ዠ", "ž", "ʒ"), ("የ", "y", "j"), ("ደ", "d", "d"),
+    ("ጀ", "ǵ", "d͡ʒ"), ("ገ", "g", "ɡ"),
+    ("ጠ", "ṭ", "tʼ"), ("ጨ", "čʼ", "t͡ʃʼ"),
+    ("ጰ", "ṗ", "pʼ"), ("ጸ", "ṣ", "t͡sʼ"),
+    ("ፀ", "ḍ", "t͡sʼ"), ("ፈ", "f", "f"), ("ፐ", "p", "p"),
+]
+
+# Words for syllables beyond the first order. Amharic does not teach the fidel
+# with a word per cell the way an alphabet primer does, so these are ordinary
+# common nouns chosen where one begins with that syllable, not a standard set.
+GEEZ_EXTRA_WORDS = {
+ "ሁ": ("ሁለት", "two", "✌️"),       "ሂ": ("ሂሳብ", "arithmetic", "🧮"),
+ "ሃ": ("ሃሳብ", "idea", "💡"),       "ሆ": ("ሆድ", "stomach", "🫃"),
+ "ላ": ("ላም", "cow", "🐄"),         "ሊ": ("ሊጥ", "dough", "🥟"),
+ "ሙ": ("ሙዝ", "banana", "🍌"),      "ማ": ("ማር", "honey", "🍯"),
+ "ሚ": ("ሚስት", "wife", "👰"),       "ሞ": ("ሞተር", "engine", "⚙️"),
+ "ሩ": ("ሩዝ", "rice", "🍚"),        "ራ": ("ራስ", "head", "🗣️"),
+ "ሱ": ("ሱሪ", "trousers", "👖"),     "ሳ": ("ሳር", "grass", "🌿"),
+ "ሺ": ("ሺህ", "thousand", "🔢"),     "ቡ": ("ቡና", "coffee", "☕"),
+ "ባ": ("ባቡር", "train", "🚆"),       "ቤ": ("ቤት", "house", "🏠"),
+ "ቢ": ("ቢላ", "knife", "🔪"),        "ቶ": ("ቶሎ", "quickly", "🏃"),
+ "ታ": ("ታሪክ", "history", "📜"),     "ቲ": ("ቲማቲም", "tomato", "🍅"),
+ "ኑ": ("ኑሮ", "living", "🏡"),       "ና": ("ናት", "she is", "💬"),
+ "ኢ": ("ኢትዮጵያ", "Ethiopia", "🇪🇹"), "ኡ": ("ኡደት", "cycle", "🔄"),
+ "ኩ": ("ኩባያ", "cup", "🍵"),         "ካ": ("ካርታ", "map", "🗺️"),
+ "ኮ": ("ኮከብ", "star", "⭐"),        "ኪ": ("ኪስ", "pocket", "👖"),
+ "ዋ": ("ዋና", "swimming", "🏊"),     "ዉ": ("ዉሃ", "water", "💧"),
+ "ዛ": ("ዛፍ", "tree", "🌳"),         "ዙ": ("ዙሪያ", "surroundings", "🔄"),
+ "ያ": ("ያዝ", "hold", "✊"),          "ዩ": ("ዩኒቨርሲቲ", "university", "🎓"),
+ "ዳ": ("ዳቦ", "bread", "🍞"),        "ዶ": ("ዶሮ", "chicken", "🐔"),
+ "ዲ": ("ዲሽ", "dish", "🍽️"),        "ጋ": ("ጋዜጣ", "newspaper", "📰"),
+ "ጉ": ("ጉዞ", "journey", "🧳"),      "ጎ": ("ጎመን", "cabbage", "🥬"),
+ "ጤ": ("ጤና", "health", "💚"),       "ጣ": ("ጣፋጭ", "sweet", "🍬"),
+ "ጮ": ("ጮማ", "fatty meat", "🥩"),   "ፊ": ("ፊት", "face", "😊"),
+ "ፋ": ("ፋብሪካ", "factory", "🏭"),    "ፖ": ("ፖሊስ", "police", "👮"),
+ "ሰው": ("ሰው", "person", "🧍"),
+}
