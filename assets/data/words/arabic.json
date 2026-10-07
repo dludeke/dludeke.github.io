@@ -1,0 +1,230 @@
+{
+ "script": "arabic",
+ "language": "Arabic",
+ "words": [
+  {
+   "word": "خبز",
+   "romaji": "khubz",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ماء",
+   "romaji": "maa",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "قهوة",
+   "romaji": "qahwa",
+   "english": "coffee",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "شاي",
+   "romaji": "shay",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "تمر",
+   "romaji": "tamr",
+   "english": "dates",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "لحم",
+   "romaji": "lahm",
+   "english": "meat",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "سمك",
+   "romaji": "samak",
+   "english": "fish",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "أرز",
+   "romaji": "aruzz",
+   "english": "rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "حليب",
+   "romaji": "halib",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "مصر",
+   "romaji": "misr",
+   "english": "Egypt",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "بحر",
+   "romaji": "bahr",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "جبل",
+   "romaji": "jabal",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "صحراء",
+   "romaji": "sahraa",
+   "english": "desert",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "نهر",
+   "romaji": "nahr",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "القاهرة",
+   "romaji": "al-qahira",
+   "english": "Cairo",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "دمشق",
+   "romaji": "dimashq",
+   "english": "Damascus",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "بغداد",
+   "romaji": "baghdad",
+   "english": "Baghdad, the capital of Iraq",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "الرباط",
+   "romaji": "ar-ribat",
+   "english": "Rabat",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "كتاب",
+   "romaji": "kitab",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "مدرسة",
+   "romaji": "madrasa",
+   "english": "school",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "موسيقى",
+   "romaji": "musiqa",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "سلام",
+   "romaji": "salam",
+   "english": "peace",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "شمس",
+   "romaji": "shams",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "قمر",
+   "romaji": "qamar",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "شجرة",
+   "romaji": "shajara",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "وردة",
+   "romaji": "warda",
+   "english": "rose",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "قط",
+   "romaji": "qitt",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "حصان",
+   "romaji": "hisan",
+   "english": "horse",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

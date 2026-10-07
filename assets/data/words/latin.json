@@ -1,0 +1,230 @@
+{
+ "script": "latin",
+ "language": "English",
+ "words": [
+  {
+   "word": "bread",
+   "romaji": "",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "water",
+   "romaji": "",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "coffee",
+   "romaji": "",
+   "english": "coffee",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "apple",
+   "romaji": "",
+   "english": "apple",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "cheese",
+   "romaji": "",
+   "english": "cheese",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "fish",
+   "romaji": "",
+   "english": "fish",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "rice",
+   "romaji": "",
+   "english": "rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "egg",
+   "romaji": "",
+   "english": "egg",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "England",
+   "romaji": "",
+   "english": "England",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "sea",
+   "romaji": "",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "mountain",
+   "romaji": "",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "river",
+   "romaji": "",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "forest",
+   "romaji": "",
+   "english": "forest",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "London",
+   "romaji": "",
+   "english": "London",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "Dublin",
+   "romaji": "",
+   "english": "Dublin",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "Boston",
+   "romaji": "",
+   "english": "Boston",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "Sydney",
+   "romaji": "",
+   "english": "Sydney",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "book",
+   "romaji": "",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "school",
+   "romaji": "",
+   "english": "school",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "music",
+   "romaji": "",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "friend",
+   "romaji": "",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "theatre",
+   "romaji": "",
+   "english": "theatre",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "sun",
+   "romaji": "",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "moon",
+   "romaji": "",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "tree",
+   "romaji": "",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "flower",
+   "romaji": "",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "dog",
+   "romaji": "",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "cat",
+   "romaji": "",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

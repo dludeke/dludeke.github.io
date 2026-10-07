@@ -1,0 +1,230 @@
+{
+ "script": "thai",
+ "language": "Thai",
+ "words": [
+  {
+   "word": "ข้าว",
+   "romaji": "khao",
+   "english": "rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "น้ำ",
+   "romaji": "nam",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ชา",
+   "romaji": "cha",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "นม",
+   "romaji": "nom",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ปลา",
+   "romaji": "pla",
+   "english": "fish",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ไข่",
+   "romaji": "khai",
+   "english": "egg",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ผลไม้",
+   "romaji": "phonlamai",
+   "english": "fruit",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "กาแฟ",
+   "romaji": "kafae",
+   "english": "coffee",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ไทย",
+   "romaji": "thai",
+   "english": "Thailand",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ทะเล",
+   "romaji": "thale",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ภูเขา",
+   "romaji": "phukhao",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "แม่น้ำ",
+   "romaji": "maenam",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ป่า",
+   "romaji": "pa",
+   "english": "forest",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "กรุงเทพ",
+   "romaji": "krungthep",
+   "english": "Bangkok",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "เชียงใหม่",
+   "romaji": "chiangmai",
+   "english": "Chiang Mai",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "ภูเก็ต",
+   "romaji": "phuket",
+   "english": "Phuket, the island province",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "อยุธยา",
+   "romaji": "ayutthaya",
+   "english": "Ayutthaya, the old capital",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "หนังสือ",
+   "romaji": "nangsue",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "โรงเรียน",
+   "romaji": "rongrian",
+   "english": "school",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ดนตรี",
+   "romaji": "dontri",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "เพื่อน",
+   "romaji": "phuean",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "วัด",
+   "romaji": "wat",
+   "english": "temple",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ดวงอาทิตย์",
+   "romaji": "duang athit",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ดวงจันทร์",
+   "romaji": "duang chan",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ต้นไม้",
+   "romaji": "tonmai",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ดอกไม้",
+   "romaji": "dokmai",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "หมา",
+   "romaji": "ma",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "แมว",
+   "romaji": "maeo",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

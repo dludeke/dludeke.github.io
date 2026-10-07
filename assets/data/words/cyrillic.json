@@ -1,0 +1,230 @@
+{
+ "script": "cyrillic",
+ "language": "Russian",
+ "words": [
+  {
+   "word": "хлеб",
+   "romaji": "khleb",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "вода",
+   "romaji": "voda",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "чай",
+   "romaji": "chay",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "молоко",
+   "romaji": "moloko",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "суп",
+   "romaji": "sup",
+   "english": "soup",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "яблоко",
+   "romaji": "yabloko",
+   "english": "apple",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "сыр",
+   "romaji": "syr",
+   "english": "cheese",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "мясо",
+   "romaji": "myaso",
+   "english": "meat",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "Россия",
+   "romaji": "rossiya",
+   "english": "Russia",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "море",
+   "romaji": "more",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "гора",
+   "romaji": "gora",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "река",
+   "romaji": "reka",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "лес",
+   "romaji": "les",
+   "english": "forest",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "Москва",
+   "romaji": "moskva",
+   "english": "Moscow",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "Киев",
+   "romaji": "kiev",
+   "english": "Kyiv",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "Минск",
+   "romaji": "minsk",
+   "english": "Minsk, the capital of Belarus",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "София",
+   "romaji": "sofiya",
+   "english": "Sofia",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "книга",
+   "romaji": "kniga",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "школа",
+   "romaji": "shkola",
+   "english": "school",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "музыка",
+   "romaji": "muzyka",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "театр",
+   "romaji": "teatr",
+   "english": "theatre",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "друг",
+   "romaji": "drug",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "солнце",
+   "romaji": "solntse",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "луна",
+   "romaji": "luna",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "дерево",
+   "romaji": "derevo",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "цветок",
+   "romaji": "tsvetok",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "собака",
+   "romaji": "sobaka",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "кошка",
+   "romaji": "koshka",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

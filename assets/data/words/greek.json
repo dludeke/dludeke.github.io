@@ -1,0 +1,496 @@
+{
+ "script": "greek",
+ "language": "Greek",
+ "words": [
+  {
+   "word": "αλφα",
+   "romaji": "alpha",
+   "english": "the letter Α",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "βητα",
+   "romaji": "beta",
+   "english": "the letter Β",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "γαμμα",
+   "romaji": "gamma",
+   "english": "the letter Γ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "δελτα",
+   "romaji": "delta",
+   "english": "the letter Δ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "επσιλον",
+   "romaji": "epsilon",
+   "english": "the letter Ε",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ζητα",
+   "romaji": "zeta",
+   "english": "the letter Ζ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ητα",
+   "romaji": "eta",
+   "english": "the letter Η",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "θητα",
+   "romaji": "theta",
+   "english": "the letter Θ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ιωτα",
+   "romaji": "iota",
+   "english": "the letter Ι",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "καππα",
+   "romaji": "kappa",
+   "english": "the letter Κ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "λαμβδα",
+   "romaji": "lambda",
+   "english": "the letter Λ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "μυ",
+   "romaji": "mu",
+   "english": "the letter Μ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "νυ",
+   "romaji": "nu",
+   "english": "the letter Ν",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ξι",
+   "romaji": "xi",
+   "english": "the letter Ξ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ομικρον",
+   "romaji": "omicron",
+   "english": "the letter Ο",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "πι",
+   "romaji": "pi",
+   "english": "the letter Π",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ρο",
+   "romaji": "rho",
+   "english": "the letter Ρ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "σιγμα",
+   "romaji": "sigma",
+   "english": "the letter Σ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ταυ",
+   "romaji": "tau",
+   "english": "the letter Τ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "υψιλον",
+   "romaji": "upsilon",
+   "english": "the letter Υ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "φι",
+   "romaji": "phi",
+   "english": "the letter Φ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "χι",
+   "romaji": "chi",
+   "english": "the letter Χ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ψι",
+   "romaji": "psi",
+   "english": "the letter Ψ",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "ωμεγα",
+   "romaji": "omega",
+   "english": "the letter Ω",
+   "categories": [
+    "Letter Names"
+   ]
+  },
+  {
+   "word": "Αθηνα",
+   "romaji": "Athena",
+   "english": "Athens",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Σπαρτη",
+   "romaji": "Sparta",
+   "english": "Sparta, the warrior city-state",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Θεσσαλονικη",
+   "romaji": "Thessalonike",
+   "english": "Thessaloniki",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Κορινθος",
+   "romaji": "Korinthos",
+   "english": "Corinth",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Δελφοι",
+   "romaji": "Delphoi",
+   "english": "Delphi",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Ολυμπια",
+   "romaji": "Olympia",
+   "english": "Olympia, home of the games",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Κρητη",
+   "romaji": "Krete",
+   "english": "Crete",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "Ροδος",
+   "romaji": "Rhodos",
+   "english": "Rhodes",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "Μυκηναι",
+   "romaji": "Mykenai",
+   "english": "Mycenae",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Ολυμπος",
+   "romaji": "Olympos",
+   "english": "Olympus",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "Μαραθων",
+   "romaji": "Marathon",
+   "english": "Marathon, site of the battle",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "Σωκρατης",
+   "romaji": "Sokrates",
+   "english": "Socrates",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Πλατων",
+   "romaji": "Platon",
+   "english": "Plato",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Αριστοτελης",
+   "romaji": "Aristoteles",
+   "english": "Aristotle",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Αλεξανδρος",
+   "romaji": "Alexandros",
+   "english": "Alexander",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Περικλης",
+   "romaji": "Perikles",
+   "english": "Pericles",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Ομηρος",
+   "romaji": "Homeros",
+   "english": "Homer",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Ηροδοτος",
+   "romaji": "Herodotos",
+   "english": "Herodotus",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Πυθαγορας",
+   "romaji": "Pythagoras",
+   "english": "Pythagoras, mathematician",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Ευκλειδης",
+   "romaji": "Eukleides",
+   "english": "Euclid",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Αρχιμηδης",
+   "romaji": "Archimedes",
+   "english": "Archimedes, inventor",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Ιπποκρατης",
+   "romaji": "Hippokrates",
+   "english": "Hippocrates",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "Λεωνιδας",
+   "romaji": "Leonidas",
+   "english": "Leonidas, king of Sparta",
+   "categories": [
+    "Historical Figures"
+   ]
+  },
+  {
+   "word": "μουσακας",
+   "romaji": "mousakas",
+   "english": "moussaka",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "σουβλακι",
+   "romaji": "souvlaki",
+   "english": "grilled meat skewer",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "τζατζικι",
+   "romaji": "tzatziki",
+   "english": "yoghurt and cucumber dip",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ταραμοσαλατα",
+   "romaji": "taramosalata",
+   "english": "fish roe dip",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "φετα",
+   "romaji": "pheta",
+   "english": "feta",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "γυρος",
+   "romaji": "gyros",
+   "english": "meat roasted on a spit",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "σπανακοπιτα",
+   "romaji": "spanakopita",
+   "english": "spinach pie",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ντολμαδες",
+   "romaji": "dolmades",
+   "english": "stuffed vine leaves",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "μπακλαβας",
+   "romaji": "baklavas",
+   "english": "baklava",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ουζο",
+   "romaji": "ouzo",
+   "english": "anise spirit",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ελια",
+   "romaji": "elia",
+   "english": "olive",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "δημοκρατια",
+   "romaji": "demokratia",
+   "english": "democracy",
+   "categories": [
+    "Culture",
+    "Concepts"
+   ]
+  },
+  {
+   "word": "φιλοσοφια",
+   "romaji": "philosophia",
+   "english": "philosophy",
+   "categories": [
+    "Culture",
+    "Concepts"
+   ]
+  }
+ ]
+}

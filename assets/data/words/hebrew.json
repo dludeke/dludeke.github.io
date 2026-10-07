@@ -1,0 +1,238 @@
+{
+ "script": "hebrew",
+ "language": "Hebrew",
+ "words": [
+  {
+   "word": "לחם",
+   "romaji": "lehem",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "חלב",
+   "romaji": "halav",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "גבינה",
+   "romaji": "gvina",
+   "english": "cheese",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "תפוח",
+   "romaji": "tapuah",
+   "english": "apple",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "יין",
+   "romaji": "yayin",
+   "english": "wine",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "מים",
+   "romaji": "mayim",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "דג",
+   "romaji": "dag",
+   "english": "fish",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "עוגה",
+   "romaji": "uga",
+   "english": "cake",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "קפה",
+   "romaji": "kafe",
+   "english": "coffee",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ישראל",
+   "romaji": "yisrael",
+   "english": "Israel",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ים",
+   "romaji": "yam",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "הר",
+   "romaji": "har",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "מדבר",
+   "romaji": "midbar",
+   "english": "desert",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "נהר",
+   "romaji": "nahar",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ירושלים",
+   "romaji": "yerushalayim",
+   "english": "Jerusalem",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "תל אביב",
+   "romaji": "tel aviv",
+   "english": "Tel Aviv, the coastal city",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "חיפה",
+   "romaji": "haifa",
+   "english": "Haifa, the northern port",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "אילת",
+   "romaji": "eilat",
+   "english": "Eilat, the Red Sea resort",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "שבת",
+   "romaji": "shabat",
+   "english": "Sabbath",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ספר",
+   "romaji": "sefer",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "שלום",
+   "romaji": "shalom",
+   "english": "peace",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "מוזיקה",
+   "romaji": "muzika",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "תורה",
+   "romaji": "tora",
+   "english": "Torah",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "שמש",
+   "romaji": "shemesh",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ירח",
+   "romaji": "yareah",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "עץ",
+   "romaji": "etz",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "פרח",
+   "romaji": "perah",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "כלב",
+   "romaji": "kelev",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "חתול",
+   "romaji": "hatul",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

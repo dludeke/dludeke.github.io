@@ -1,0 +1,230 @@
+{
+ "script": "hangul",
+ "language": "Korean",
+ "words": [
+  {
+   "word": "밥",
+   "romaji": "bap",
+   "english": "cooked rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "물",
+   "romaji": "mul",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "김치",
+   "romaji": "gimchi",
+   "english": "kimchi",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "차",
+   "romaji": "cha",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "우유",
+   "romaji": "uyu",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "빵",
+   "romaji": "ppang",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "고기",
+   "romaji": "gogi",
+   "english": "meat",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "사과",
+   "romaji": "sagwa",
+   "english": "apple",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "한국",
+   "romaji": "hanguk",
+   "english": "Korea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "바다",
+   "romaji": "bada",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "산",
+   "romaji": "san",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "강",
+   "romaji": "gang",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "숲",
+   "romaji": "sup",
+   "english": "forest",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "서울",
+   "romaji": "seoul",
+   "english": "Seoul, the capital",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "부산",
+   "romaji": "busan",
+   "english": "Busan, the southern port",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "인천",
+   "romaji": "incheon",
+   "english": "Incheon, the harbour city",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "제주",
+   "romaji": "jeju",
+   "english": "Jeju, the volcanic island",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "책",
+   "romaji": "chaek",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "학교",
+   "romaji": "hakgyo",
+   "english": "school",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "음악",
+   "romaji": "eumak",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "친구",
+   "romaji": "chingu",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "한글",
+   "romaji": "hangeul",
+   "english": "Hangul",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "해",
+   "romaji": "hae",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "달",
+   "romaji": "dal",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "나무",
+   "romaji": "namu",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "꽃",
+   "romaji": "kkot",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "개",
+   "romaji": "gae",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "고양이",
+   "romaji": "goyangi",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "script": "kana",
+ "language": "Japanese",
+ "words": [
+  {
+   "word": "すし",
+   "romaji": "sushi",
+   "english": "sushi, vinegared rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "さけ",
+   "romaji": "sake",
+   "english": "rice wine",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "おおさか",
+   "romaji": "oosaka",
+   "english": "Osaka",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "とうきょう",
+   "romaji": "toukyou",
+   "english": "Tokyo",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "きょうと",
+   "romaji": "kyouto",
+   "english": "Kyoto",
+   "categories": [
+    "Geography",
+    "Cities"
+   ]
+  },
+  {
+   "word": "コーヒー",
+   "romaji": "koohii",
+   "english": "coffee",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ケーキ",
+   "romaji": "keeki",
+   "english": "cake",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ラーメン",
+   "romaji": "raamen",
+   "english": "ramen",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "てんぷら",
+   "romaji": "tenpura",
+   "english": "tempura",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "みそ",
+   "romaji": "miso",
+   "english": "fermented soybean paste",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "とうふ",
+   "romaji": "toufu",
+   "english": "tofu",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "そば",
+   "romaji": "soba",
+   "english": "buckwheat noodles",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "うどん",
+   "romaji": "udon",
+   "english": "thick wheat noodles",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "おちゃ",
+   "romaji": "ocha",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "みず",
+   "romaji": "mizu",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "さかな",
+   "romaji": "sakana",
+   "english": "fish",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "やさい",
+   "romaji": "yasai",
+   "english": "vegetables",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "にく",
+   "romaji": "niku",
+   "english": "meat",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "たまご",
+   "romaji": "tamago",
+   "english": "egg",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "パン",
+   "romaji": "pan",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ごはん",
+   "romaji": "gohan",
+   "english": "rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "アニメ",
+   "romaji": "anime",
+   "english": "animation",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "マンガ",
+   "romaji": "manga",
+   "english": "comics",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "カラオケ",
+   "romaji": "karaoke",
+   "english": "karaoke, “empty orchestra”",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "すもう",
+   "romaji": "sumou",
+   "english": "sumo",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "からて",
+   "romaji": "karate",
+   "english": "karate, “empty hand”",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ふじさん",
+   "romaji": "fujisan",
+   "english": "Mt. Fuji",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "さくら",
+   "romaji": "sakura",
+   "english": "cherry blossom",
+   "categories": [
+    "Culture",
+    "Nature"
+   ]
+  },
+  {
+   "word": "ひらがな",
+   "romaji": "hiragana",
+   "english": "hiragana, the cursive syllabary",
+   "categories": [
+    "Language"
+   ]
+  },
+  {
+   "word": "カタカナ",
+   "romaji": "katakana",
+   "english": "katakana, the angular syllabary",
+   "categories": [
+    "Language"
+   ]
+  }
+ ]
+}

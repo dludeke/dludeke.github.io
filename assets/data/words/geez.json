@@ -1,0 +1,230 @@
+{
+ "script": "geez",
+ "language": "Amharic",
+ "words": [
+  {
+   "word": "እንጀራ",
+   "romaji": "injera",
+   "english": "injera, the sourdough flatbread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ውሃ",
+   "romaji": "wiha",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ቡና",
+   "romaji": "buna",
+   "english": "coffee",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ወተት",
+   "romaji": "wetet",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ዳቦ",
+   "romaji": "dabo",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ሥጋ",
+   "romaji": "sga",
+   "english": "meat",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "እንቁላል",
+   "romaji": "inkulal",
+   "english": "egg",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ጨው",
+   "romaji": "chew",
+   "english": "salt",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ኢትዮጵያ",
+   "romaji": "ityopya",
+   "english": "Ethiopia",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ባሕር",
+   "romaji": "bahr",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ተራራ",
+   "romaji": "terara",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ወንዝ",
+   "romaji": "wenz",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "ጫካ",
+   "romaji": "chaka",
+   "english": "forest",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "አዲስ አበባ",
+   "romaji": "addis abeba",
+   "english": "Addis Ababa",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "ጎንደር",
+   "romaji": "gonder",
+   "english": "Gondar",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "አክሱም",
+   "romaji": "aksum",
+   "english": "Axum",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "ላሊበላ",
+   "romaji": "lalibela",
+   "english": "Lalibela, the rock-hewn churches",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "መጽሐፍ",
+   "romaji": "metshaf",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ትምህርት",
+   "romaji": "timhrt",
+   "english": "education",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ሙዚቃ",
+   "romaji": "muziqa",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ጓደኛ",
+   "romaji": "gwadegna",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "በዓል",
+   "romaji": "beal",
+   "english": "holiday",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "ፀሐይ",
+   "romaji": "tsehay",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ጨረቃ",
+   "romaji": "chereqa",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ዛፍ",
+   "romaji": "zaf",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "አበባ",
+   "romaji": "abeba",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ውሻ",
+   "romaji": "wisha",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ድመት",
+   "romaji": "dmet",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

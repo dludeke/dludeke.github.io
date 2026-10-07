@@ -1,0 +1,230 @@
+{
+ "script": "devanagari",
+ "language": "Hindi",
+ "words": [
+  {
+   "word": "रोटी",
+   "romaji": "roti",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "पानी",
+   "romaji": "pani",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "चाय",
+   "romaji": "chai",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "दूध",
+   "romaji": "dudh",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "चावल",
+   "romaji": "chaval",
+   "english": "rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "आम",
+   "romaji": "aam",
+   "english": "mango",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "दाल",
+   "romaji": "dal",
+   "english": "lentils",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "नमक",
+   "romaji": "namak",
+   "english": "salt",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "भारत",
+   "romaji": "bharat",
+   "english": "India",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "समुद्र",
+   "romaji": "samudra",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "पहाड़",
+   "romaji": "pahar",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "नदी",
+   "romaji": "nadi",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "जंगल",
+   "romaji": "jangal",
+   "english": "forest",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "दिल्ली",
+   "romaji": "dilli",
+   "english": "Delhi",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "मुंबई",
+   "romaji": "mumbai",
+   "english": "Mumbai, the film capital",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "जयपुर",
+   "romaji": "jaypur",
+   "english": "Jaipur",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "कोलकाता",
+   "romaji": "kolkata",
+   "english": "Kolkata, the eastern city",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "किताब",
+   "romaji": "kitab",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "स्कूल",
+   "romaji": "skul",
+   "english": "school",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "संगीत",
+   "romaji": "sangit",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "दोस्त",
+   "romaji": "dost",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "त्योहार",
+   "romaji": "tyohar",
+   "english": "festival",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "सूरज",
+   "romaji": "suraj",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "चाँद",
+   "romaji": "chand",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "पेड़",
+   "romaji": "ped",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "फूल",
+   "romaji": "phul",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "कुत्ता",
+   "romaji": "kutta",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "बिल्ली",
+   "romaji": "billi",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

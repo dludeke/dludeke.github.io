@@ -133,9 +133,11 @@
     }
     #panel-quiz .language-selector {
       display: flex;
-      gap: 0.75rem;
+      gap: 0.5rem;
       justify-content: center;
+      flex-wrap: wrap;
     }
+    #panel-quiz .language-btn { padding: 0.5rem 0.9rem; font-size: 0.9rem; }
     #panel-quiz .language-btn {
       padding: 0.75rem 1.5rem;
       background: #e0e0e0;
@@ -376,8 +378,7 @@
 
         <div class="practice-container">
           <div class="language-selector" style="text-align: center; margin-bottom: 1.5rem;">
-            <button class="language-btn active" data-language="japanese">Japanese</button>
-            <button class="language-btn" data-language="greek">Greek</button>
+            <!-- filled from LANGS, one button per script -->
           </div>
 
         <div class="tabs">
@@ -520,19 +521,15 @@
 
     // The practice word lists are the "extra" words: whole vocabulary rather
     // than one word per letter. Only two scripts have one.
-    const PRACTICE_LISTS = {
-      kana:  { file: 'japanese-word-list.json', key: 'kana',  label: 'Japanese' },
-      greek: { file: 'greek-word-list.json',    key: 'greek', label: 'Greek' }
-    };
     const extraCache = {};
 
     async function extraWords(s) {
-      const cfg = PRACTICE_LISTS[s];
-      if (!cfg) return null;
       if (!extraCache[s]) {
-        const j = await (await fetch(cfg.file, { cache: 'no-cache' })).json();
-        extraCache[s] = (j.words || j).map(w => ({
-          example_word: w[cfg.key],
+        const r = await fetch(`assets/data/words/${s}.json`, { cache: 'no-cache' });
+        if (!r.ok) return null;
+        const j = await r.json();
+        extraCache[s] = j.words.map(w => ({
+          example_word: w.word,
           example_gloss: w.english,
           romanisation: w.romaji,
           categories: w.categories || []
@@ -547,8 +544,7 @@
         const extra = await extraWords(slug);
         if (!extra) {
           deck = [];
-          deckNote = `There is no practice word list for ${data.name} yet \u2014 ` +
-                     `only ${Object.values(PRACTICE_LISTS).map(c => c.label).join(' and ')} have one.`;
+          deckNote = `There is no practice word list for ${data.name} yet.`;
         } else {
           deck = shuffle(extra);
         }
@@ -675,7 +671,7 @@
     let allWords = [];
     let scriptMapping = {};
     let signLanguageMapping = {};
-    let currentLanguage = 'japanese';
+    let currentLanguage = 'kana';
     let currentMode = 'script-to-romaji';
     let currentCard = null;
     let reviewQueue = [];
@@ -683,26 +679,46 @@
     let selectedCategories = new Set();
 
     // Language-specific configurations
-    const languageConfig = {
-      japanese: {
-        scripts: ['hiragana', 'katakana'],
-        wordFile: 'japanese-word-list.json',
-        mappingFile: 'kana-mapping.json',
-        signLanguageFile: null, // TODO: Add JSL when ready
-        wordKey: 'kana',
-        modeLabels: ['Kana → Latin', 'Latin → Kana', 'JSL → Kana', 'Kana → JSL'],
+    // Every script now has a word list. The two drills that only compare the
+    // word with its romanisation need nothing but that list, so they work for
+    // eleven of the twelve; English is left out because transliterating Latin
+    // into Latin is not a drill, and its list is used by the flashcards, where
+    // the BSL and ASL handshapes are the point. The on-screen keyboard needs a glyph-to-romanisation map and
+    // the sign drills need a handshape map; where those are missing the
+    // keyboard stays hidden and the sign tabs stay greyed out.
+    const LANGS = [
+      ['kana',       'Japanese',   'JSL', ['hiragana','katakana'],   'kana-mapping.json',  null],
+      ['greek',      'Greek',      'GSL', ['lowercase','uppercase'], 'greek-mapping.json', 'gsl-handshapes-mapping.json'],
+      ['hebrew',     'Hebrew',     'ISL', ['letters'], null, null],
+      ['arabic',     'Arabic',     'ArSL',['letters'], null, null],
+      ['farsi',      'Persian',    'PSL', ['letters'], null, null],
+      ['cyrillic',   'Russian',    'RSL', ['letters'], null, null],
+      ['devanagari', 'Hindi',      'ISL', ['letters'], null, null],
+      ['hangul',     'Korean',     'KSL', ['letters'], null, null],
+      ['thai',       'Thai',       'TSL', ['letters'], null, null],
+      ['geez',       'Amharic',    'EthSL',['letters'], null, null],
+      ['pinyin',     'Mandarin',   'CSL', ['letters'], null, null]
+    ];
+
+    const languageConfig = {};
+    const langBar = document.querySelector('#panel-quiz .language-selector');
+    LANGS.forEach(([slug, name, sl, scripts, mapping, signs]) => {
+      const b = document.createElement('button');
+      b.className = 'language-btn' + (slug === 'kana' ? ' active' : '');
+      b.dataset.language = slug;
+      b.textContent = name;
+      langBar.appendChild(b);
+      languageConfig[slug] = {
+        name, scripts,
+        wordFile: `assets/data/words/${slug}.json`,
+        mappingFile: mapping,
+        signLanguageFile: signs,
+        wordKey: 'word',
+        modeLabels: [`${name} \u2192 Latin`, `Latin \u2192 ${name}`,
+                     `${sl} \u2192 ${name}`, `${name} \u2192 ${sl}`],
         modes: ['script-to-romaji', 'romaji-to-script', 'sign-to-script', 'script-to-sign']
-      },
-      greek: {
-        scripts: ['lowercase', 'uppercase'],
-        wordFile: 'greek-word-list.json',
-        mappingFile: 'greek-mapping.json',
-        signLanguageFile: 'gsl-handshapes-mapping.json',
-        wordKey: 'greek',
-        modeLabels: ['Greek → Latin', 'Latin → Greek', 'GSL → Greek', 'Greek → GSL'],
-        modes: ['script-to-romaji', 'romaji-to-script', 'sign-to-script', 'script-to-sign']
-      }
-    };
+      };
+    });
 
     // Spaced repetition intervals (in number of cards)
     const intervals = {
@@ -717,7 +733,7 @@
       try {
         const fetchPromises = [
           fetch(config.wordFile),
-          fetch(config.mappingFile)
+          config.mappingFile ? fetch(config.mappingFile) : Promise.resolve(null)
         ];
 
         // Add sign language fetch if available
@@ -731,13 +747,13 @@
         if (!wordsResponse.ok) {
           throw new Error(`Failed to fetch ${config.wordFile}: ${wordsResponse.status}`);
         }
-        if (!mappingResponse.ok) {
+        if (config.mappingFile && !mappingResponse.ok) {
           throw new Error(`Failed to fetch ${config.mappingFile}: ${mappingResponse.status}`);
         }
 
         const wordsData = await wordsResponse.json();
         allWords = wordsData.words;
-        scriptMapping = await mappingResponse.json();
+        scriptMapping = mappingResponse ? await mappingResponse.json() : {};
 
         // Load sign language mapping if available
         if (signLanguageResponse && signLanguageResponse.ok) {
@@ -1037,8 +1053,13 @@
     }
 
     function buildScriptKeyboard() {
+      const hasKeyboard = !!languageConfig[currentLanguage].mappingFile;
+      document.getElementById('kanaKeyboard').style.display = hasKeyboard ? '' : 'none';
       const kanaGrid = document.getElementById('kanaGrid');
+      // clear first, so switching to a script without a keyboard does not
+      // leave the previous script's keys sitting in the hidden grid
       kanaGrid.innerHTML = '';
+      if (!hasKeyboard) return;
 
       const scriptChars = scriptMapping[currentKeyboardScript];
 

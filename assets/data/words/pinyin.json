@@ -1,0 +1,230 @@
+{
+ "script": "pinyin",
+ "language": "Mandarin",
+ "words": [
+  {
+   "word": "米饭 (mǐfàn)",
+   "romaji": "mifan",
+   "english": "cooked rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "水 (shuǐ)",
+   "romaji": "shui",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "茶 (chá)",
+   "romaji": "cha",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "牛奶 (niúnǎi)",
+   "romaji": "niunai",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "面条 (miàntiáo)",
+   "romaji": "miantiao",
+   "english": "noodles",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "鱼 (yú)",
+   "romaji": "yu",
+   "english": "fish",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "鸡蛋 (jīdàn)",
+   "romaji": "jidan",
+   "english": "egg",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "苹果 (píngguǒ)",
+   "romaji": "pingguo",
+   "english": "apple",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "中国 (zhōngguó)",
+   "romaji": "zhongguo",
+   "english": "China",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "海 (hǎi)",
+   "romaji": "hai",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "山 (shān)",
+   "romaji": "shan",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "河 (hé)",
+   "romaji": "he",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "森林 (sēnlín)",
+   "romaji": "senlin",
+   "english": "forest",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "北京 (běijīng)",
+   "romaji": "beijing",
+   "english": "Beijing, the capital",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "上海 (shànghǎi)",
+   "romaji": "shanghai",
+   "english": "Shanghai, the port city",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "广州 (guǎngzhōu)",
+   "romaji": "guangzhou",
+   "english": "Guangzhou, the southern hub",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "成都 (chéngdū)",
+   "romaji": "chengdu",
+   "english": "Chengdu, the Sichuan capital",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "书 (shū)",
+   "romaji": "shu",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "学校 (xuéxiào)",
+   "romaji": "xuexiao",
+   "english": "school",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "音乐 (yīnyuè)",
+   "romaji": "yinyue",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "朋友 (péngyǒu)",
+   "romaji": "pengyou",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "春节 (chūnjié)",
+   "romaji": "chunjie",
+   "english": "Spring Festival",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "太阳 (tàiyáng)",
+   "romaji": "taiyang",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "月亮 (yuèliàng)",
+   "romaji": "yueliang",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "树 (shù)",
+   "romaji": "shu",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "花 (huā)",
+   "romaji": "hua",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "狗 (gǒu)",
+   "romaji": "gou",
+   "english": "dog",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "猫 (māo)",
+   "romaji": "mao",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}

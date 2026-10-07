@@ -1,0 +1,230 @@
+{
+ "script": "farsi",
+ "language": "Persian",
+ "words": [
+  {
+   "word": "نان",
+   "romaji": "nan",
+   "english": "bread",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "آب",
+   "romaji": "ab",
+   "english": "water",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "چای",
+   "romaji": "chay",
+   "english": "tea",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "برنج",
+   "romaji": "berenj",
+   "english": "rice",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "انار",
+   "romaji": "anar",
+   "english": "pomegranate",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "پنیر",
+   "romaji": "panir",
+   "english": "cheese",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "شیر",
+   "romaji": "shir",
+   "english": "milk",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "کباب",
+   "romaji": "kabab",
+   "english": "kebab",
+   "categories": [
+    "Food & Drinks"
+   ]
+  },
+  {
+   "word": "ایران",
+   "romaji": "iran",
+   "english": "Iran, the country",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "دریا",
+   "romaji": "darya",
+   "english": "sea",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "کوه",
+   "romaji": "kuh",
+   "english": "mountain",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "بیابان",
+   "romaji": "biyaban",
+   "english": "desert",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "رود",
+   "romaji": "rud",
+   "english": "river",
+   "categories": [
+    "Geography"
+   ]
+  },
+  {
+   "word": "تهران",
+   "romaji": "tehran",
+   "english": "Tehran, the capital",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "اصفهان",
+   "romaji": "esfahan",
+   "english": "Isfahan",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "شیراز",
+   "romaji": "shiraz",
+   "english": "Shiraz, city of poets",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "مشهد",
+   "romaji": "mashhad",
+   "english": "Mashhad, pilgrimage city",
+   "categories": [
+    "Cities"
+   ]
+  },
+  {
+   "word": "کتاب",
+   "romaji": "ketab",
+   "english": "book",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "شعر",
+   "romaji": "sher",
+   "english": "poetry",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "نوروز",
+   "romaji": "nowruz",
+   "english": "Nowruz, the new year",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "موسیقی",
+   "romaji": "musiqi",
+   "english": "music",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "دوست",
+   "romaji": "dust",
+   "english": "friend",
+   "categories": [
+    "Culture"
+   ]
+  },
+  {
+   "word": "خورشید",
+   "romaji": "khorshid",
+   "english": "sun",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "ماه",
+   "romaji": "mah",
+   "english": "moon",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "درخت",
+   "romaji": "derakht",
+   "english": "tree",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "گل",
+   "romaji": "gol",
+   "english": "flower",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "گربه",
+   "romaji": "gorbeh",
+   "english": "cat",
+   "categories": [
+    "Nature"
+   ]
+  },
+  {
+   "word": "اسب",
+   "romaji": "asb",
+   "english": "horse",
+   "categories": [
+    "Nature"
+   ]
+  }
+ ]
+}
