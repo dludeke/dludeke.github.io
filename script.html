@@ -139,6 +139,13 @@
       color: #7b848c;
     }
 
+    /* How the name is said, under the name. Knowing a letter's sound does
+       not tell you this: ㄱ sounds /k/ and is called 기역. */
+    .name-ipa {
+      display: block; font-size: 0.72rem; color: #9aa3ab;
+      font-weight: normal; margin-top: 0.05rem;
+    }
+
     .letter-name {
       font-size: 0.9rem;
       color: #555;
@@ -191,6 +198,15 @@
       text-align: center;
       padding: 0.4rem;
     }
+
+    /* EthSL spells a syllable as the consonant's hand plus a movement, so
+       the arrow belongs beside the hand rather than in a row of its own. */
+    .move {
+      display: inline-flex; flex-direction: column; align-items: center;
+      gap: 0.1rem; margin-left: 0.3rem;
+    }
+    .move img { max-height: 22px; max-width: 34px; opacity: 0.75; }
+    .move em { font-style: normal; font-size: 0.62rem; color: #9aa3ab; }
 
     .slot img {
       max-width: 100%;
@@ -487,7 +503,8 @@
             <div class="letter-top">
               <span class="letter-glyphs">${L.display_glyph || L.glyph}</span>
               ${L.alt ? `<span class="letter-alt">${L.alt}</span>` : ''}
-              <span class="letter-name">${L.name || ''}</span>
+              <span class="letter-name">${L.name || ''}${L.name_ipa
+                ? `<span class="name-ipa ipa">/${linkIpa(L.name_ipa)}/</span>` : ''}</span>
             </div>
             ${row('Romanisation', L.romanization)}
             ${(L.ipa || []).length
@@ -497,7 +514,11 @@
             <div class="slot-pair">
               <div class="slot">${shapeOf(L)
                 ? `<img src="${shapeOf(L)}" alt="Handshape for ${L.name}" />`
-                : 'handshape'}</div>
+                : 'handshape'}${L.movement
+                ? `<span class="move" title="${L.movement.amharic} ${L.movement.name} \u2014 ${L.movement.description}">
+                     <img src="${L.movement.image}" alt="${L.movement.description}" />
+                     <em>${L.movement.amharic}</em></span>`
+                : ''}</div>
               <div class="slot">${L.example_image
                 ? `<img src="${L.example_image}" alt="${L.example_gloss || ''}" />`
                 : (L.example_emoji

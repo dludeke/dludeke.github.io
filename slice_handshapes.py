@@ -272,6 +272,63 @@ def slice_nsl(verbose=True):
     return mapping
 
 
+# The EthSL chart does not stop at the 33 base shapes. Under them sit a
+# legend of six arrows, one per vowel order, and a worked row showing ሀ
+# taking each of them. That is how the alphabet reaches all 231 cells:
+# a consonant's handshape plus the movement for its order. Slicing only
+# the grid left 198 syllables with nothing.
+ETHSL_COLS = [93, 181, 273, 356, 437, 523, 608]
+ETHSL_ARROWS = (706, 752)     # the arrow alone, below the rule and above the captions
+ETHSL_EXAMPLES = (805, 892)   # ሀ in the 2nd to 7th orders
+ETHSL_ORDER_ROWS = [
+    (1, "kaʽeb",  "ካዕብ", "an arc to the left"),
+    (2, "salis",       "ሣልስ", "straight to the right"),
+    (3, "rabʽe",  "ራብዕ", "straight down"),
+    (4, "hames",       "ኃምስ", "up and hooking over"),
+    (5, "sadis",       "ሳድስ", "down, with a shake"),
+    (6, "sabʽe",  "ሳብዕ", "a loop"),
+]
+
+
+def slice_ethsl_movements(verbose=True):
+    """The six movement arrows, and ሀ shown taking each of them."""
+    path = os.path.join(SRC, "EthSL.PNG")
+    if not os.path.exists(path):
+        print("  geez: missing EthSL.PNG")
+        return {}, {}
+    im = Image.open(path).convert("RGB")
+    out_dir = os.path.join(OUT_ROOT, "geez")
+    raw_dir = os.path.join(out_dir, "raw")
+    os.makedirs(raw_dir, exist_ok=True)
+
+    moves, examples = {}, {}
+    for i, (order, rom, amh, desc) in enumerate(ETHSL_ORDER_ROWS):
+        x0, x1 = ETHSL_COLS[i], ETHSL_COLS[i + 1]
+        for label, (y0, y1), store in (("move", ETHSL_ARROWS, moves),
+                                       ("form", ETHSL_EXAMPLES, examples)):
+            cell = im.crop((x0 + 3, y0, x1 - 2, y1))
+            name = "%s-%d" % (label, order + 1)
+            cell.save(os.path.join(raw_dir, name + ".png"))
+            rel = "images/handshapes/geez/%s.png" % name
+            trim_edges(cell).save(os.path.join(HERE, rel))
+            store[order] = rel
+    if verbose:
+        print("  geez: %d movement arrows, %d worked forms" % (len(moves), len(examples)))
+    return moves, examples
+
+
+def trim_edges(cell):
+    """Trim the blank margin around a sliced cell.
+
+    No rule-detection here. The bands are cut inside the printed rules
+    instead, because the 3rd form's arrow is a horizontal line and any
+    test that spots a rule spots that too, and ate it.
+    """
+    a = cell.convert("L").point(lambda v: 255 if v < 170 else 0)
+    bb = a.getbbox()
+    return cell.crop(bb) if bb and bb[3] - bb[1] > 4 else cell
+
+
 def tighten(cell, cfg):
     """Trim the printed label, then shrink to the drawing itself.
 

@@ -532,6 +532,7 @@
       "glyph": "ሀ",
       "alt": "",
       "name": "hä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "hä",
@@ -553,13 +554,14 @@
       "glyph": "ሁ",
       "alt": "",
       "name": "hu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "hu",
       "ipa": [
         "hu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/form-2.png",
       "example_word": "ሁለት",
       "example_gloss": "two",
       "example_image": null,
@@ -568,19 +570,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሂ",
       "alt": "",
       "name": "hi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "hi",
       "ipa": [
         "hi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/form-3.png",
       "example_word": "ሂሳብ",
       "example_gloss": "arithmetic",
       "example_image": null,
@@ -589,19 +599,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ሃ",
       "alt": "",
       "name": "ha",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ha",
       "ipa": [
         "ha"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/form-4.png",
       "example_word": "ሃሳብ",
       "example_gloss": "idea",
       "example_image": null,
@@ -610,19 +628,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሄ",
       "alt": "",
       "name": "he",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "he",
       "ipa": [
         "he"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/form-5.png",
       "example_word": "ሄሊኮፕተር",
       "example_gloss": "helicopter",
       "example_image": null,
@@ -631,19 +657,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ህ",
       "alt": "",
       "name": "hə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "hə",
       "ipa": [
         "hɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/form-6.png",
       "example_word": "ህይወት",
       "example_gloss": "life",
       "example_image": null,
@@ -652,19 +686,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሆ",
       "alt": "",
       "name": "ho",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ho",
       "ipa": [
         "ho"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/form-7.png",
       "example_word": "ሆቴል",
       "example_gloss": "hotel",
       "example_image": null,
@@ -673,12 +715,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ለ",
       "alt": "",
       "name": "lä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "lä",
@@ -700,13 +750,14 @@
       "glyph": "ሉ",
       "alt": "",
       "name": "lu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "lu",
       "ipa": [
         "lu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ሉል",
       "example_gloss": "pearl",
       "example_image": null,
@@ -715,19 +766,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሊ",
       "alt": "",
       "name": "li",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "li",
       "ipa": [
         "li"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ሊጥ",
       "example_gloss": "dough",
       "example_image": null,
@@ -736,19 +795,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ላ",
       "alt": "",
       "name": "la",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "la",
       "ipa": [
         "la"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ላም",
       "example_gloss": "cow",
       "example_image": null,
@@ -757,19 +824,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሌ",
       "alt": "",
       "name": "le",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "le",
       "ipa": [
         "le"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ሌሊት",
       "example_gloss": "night",
       "example_image": null,
@@ -778,19 +853,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ል",
       "alt": "",
       "name": "lə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "lə",
       "ipa": [
         "lɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ልብስ",
       "example_gloss": "clothes",
       "example_image": null,
@@ -799,19 +882,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሎ",
       "alt": "",
       "name": "lo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "lo",
       "ipa": [
         "lo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1208.png",
       "example_word": "ሎሚ",
       "example_gloss": "lemon",
       "example_image": null,
@@ -820,12 +911,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ሐ",
       "alt": "",
       "name": "ḥä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḥä",
@@ -847,13 +946,14 @@
       "glyph": "ሑ",
       "alt": "",
       "name": "ḥu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḥu",
       "ipa": [
         "hu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1210.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -862,19 +962,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሒ",
       "alt": "",
       "name": "ḥi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḥi",
       "ipa": [
         "hi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1210.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -883,19 +991,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ሓ",
       "alt": "",
       "name": "ḥa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḥa",
       "ipa": [
         "ha"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1210.png",
       "example_word": "ሓምሌ",
       "example_gloss": "July",
       "example_image": null,
@@ -904,19 +1020,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሔ",
       "alt": "",
       "name": "ḥe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḥe",
       "ipa": [
         "he"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1210.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -925,19 +1049,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ሕ",
       "alt": "",
       "name": "ḥə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḥə",
       "ipa": [
         "hɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1210.png",
       "example_word": "ሕግ",
       "example_gloss": "law",
       "example_image": null,
@@ -946,19 +1078,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሖ",
       "alt": "",
       "name": "ḥo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḥo",
       "ipa": [
         "ho"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1210.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -967,12 +1107,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "መ",
       "alt": "",
       "name": "mä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "mä",
@@ -994,13 +1142,14 @@
       "glyph": "ሙ",
       "alt": "",
       "name": "mu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "mu",
       "ipa": [
         "mu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1218.png",
       "example_word": "ሙዝ",
       "example_gloss": "banana",
       "example_image": null,
@@ -1009,19 +1158,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሚ",
       "alt": "",
       "name": "mi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "mi",
       "ipa": [
         "mi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1218.png",
       "example_word": "ሚስት",
       "example_gloss": "wife",
       "example_image": null,
@@ -1030,19 +1187,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ማ",
       "alt": "",
       "name": "ma",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ma",
       "ipa": [
         "ma"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1218.png",
       "example_word": "ማር",
       "example_gloss": "honey",
       "example_image": null,
@@ -1051,19 +1216,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሜ",
       "alt": "",
       "name": "me",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "me",
       "ipa": [
         "me"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1218.png",
       "example_word": "ሜዳ",
       "example_gloss": "field",
       "example_image": null,
@@ -1072,19 +1245,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ም",
       "alt": "",
       "name": "mə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "mə",
       "ipa": [
         "mɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1218.png",
       "example_word": "ምግብ",
       "example_gloss": "food",
       "example_image": null,
@@ -1093,19 +1274,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሞ",
       "alt": "",
       "name": "mo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "mo",
       "ipa": [
         "mo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1218.png",
       "example_word": "ሞተር",
       "example_gloss": "engine",
       "example_image": null,
@@ -1114,12 +1303,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ሠ",
       "alt": "",
       "name": "śä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "śä",
@@ -1141,13 +1338,14 @@
       "glyph": "ሡ",
       "alt": "",
       "name": "śu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "śu",
       "ipa": [
         "su"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1220.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -1156,19 +1354,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሢ",
       "alt": "",
       "name": "śi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "śi",
       "ipa": [
         "si"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1220.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -1177,19 +1383,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ሣ",
       "alt": "",
       "name": "śa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "śa",
       "ipa": [
         "sa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1220.png",
       "example_word": "ሣር",
       "example_gloss": "grass",
       "example_image": null,
@@ -1198,19 +1412,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሤ",
       "alt": "",
       "name": "śe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "śe",
       "ipa": [
         "se"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1220.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -1219,19 +1441,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ሥ",
       "alt": "",
       "name": "śə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "śə",
       "ipa": [
         "sɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1220.png",
       "example_word": "ሥራ",
       "example_gloss": "work",
       "example_image": null,
@@ -1240,19 +1470,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሦ",
       "alt": "",
       "name": "śo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "śo",
       "ipa": [
         "so"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1220.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -1261,12 +1499,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ረ",
       "alt": "",
       "name": "rä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "rä",
@@ -1288,13 +1534,14 @@
       "glyph": "ሩ",
       "alt": "",
       "name": "ru",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ru",
       "ipa": [
         "ru"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ሩዝ",
       "example_gloss": "rice",
       "example_image": null,
@@ -1303,19 +1550,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሪ",
       "alt": "",
       "name": "ri",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ri",
       "ipa": [
         "ri"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ሪፖርት",
       "example_gloss": "report",
       "example_image": null,
@@ -1324,19 +1579,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ራ",
       "alt": "",
       "name": "ra",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ra",
       "ipa": [
         "ra"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ራስ",
       "example_gloss": "head",
       "example_image": null,
@@ -1345,19 +1608,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሬ",
       "alt": "",
       "name": "re",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "re",
       "ipa": [
         "re"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ሬድዮ",
       "example_gloss": "radio",
       "example_image": null,
@@ -1366,19 +1637,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ር",
       "alt": "",
       "name": "rə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "rə",
       "ipa": [
         "rɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ርግብ",
       "example_gloss": "dove",
       "example_image": null,
@@ -1387,19 +1666,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሮ",
       "alt": "",
       "name": "ro",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ro",
       "ipa": [
         "ro"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1228.png",
       "example_word": "ሮማን",
       "example_gloss": "pomegranate",
       "example_image": null,
@@ -1408,12 +1695,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ሰ",
       "alt": "",
       "name": "sä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "sä",
@@ -1435,13 +1730,14 @@
       "glyph": "ሱ",
       "alt": "",
       "name": "su",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "su",
       "ipa": [
         "su"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ሱሪ",
       "example_gloss": "trousers",
       "example_image": null,
@@ -1450,19 +1746,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሲ",
       "alt": "",
       "name": "si",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "si",
       "ipa": [
         "si"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ሲኒ",
       "example_gloss": "coffee cup",
       "example_image": null,
@@ -1471,19 +1775,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ሳ",
       "alt": "",
       "name": "sa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "sa",
       "ipa": [
         "sa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ሳር",
       "example_gloss": "grass",
       "example_image": null,
@@ -1492,19 +1804,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሴ",
       "alt": "",
       "name": "se",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "se",
       "ipa": [
         "se"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ሴት",
       "example_gloss": "woman",
       "example_image": null,
@@ -1513,19 +1833,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ስ",
       "alt": "",
       "name": "sə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "sə",
       "ipa": [
         "sɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ስም",
       "example_gloss": "name",
       "example_image": null,
@@ -1534,19 +1862,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሶ",
       "alt": "",
       "name": "so",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "so",
       "ipa": [
         "so"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1230.png",
       "example_word": "ሶፋ",
       "example_gloss": "sofa",
       "example_image": null,
@@ -1555,12 +1891,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ሸ",
       "alt": "",
       "name": "šä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "šä",
@@ -1582,13 +1926,14 @@
       "glyph": "ሹ",
       "alt": "",
       "name": "šu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "šu",
       "ipa": [
         "ʃu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሹካ",
       "example_gloss": "fork",
       "example_image": null,
@@ -1597,19 +1942,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ሺ",
       "alt": "",
       "name": "ši",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ši",
       "ipa": [
         "ʃi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሺህ",
       "example_gloss": "thousand",
       "example_image": null,
@@ -1618,19 +1971,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ሻ",
       "alt": "",
       "name": "ša",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ša",
       "ipa": [
         "ʃa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሻይ",
       "example_gloss": "tea",
       "example_image": null,
@@ -1639,19 +2000,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ሼ",
       "alt": "",
       "name": "še",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "še",
       "ipa": [
         "ʃe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሼፍ",
       "example_gloss": "chef",
       "example_image": null,
@@ -1660,19 +2029,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ሽ",
       "alt": "",
       "name": "šə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "šə",
       "ipa": [
         "ʃɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሽንኩርት",
       "example_gloss": "onion",
       "example_image": null,
@@ -1681,19 +2058,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ሾ",
       "alt": "",
       "name": "šo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "šo",
       "ipa": [
         "ʃo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1238.png",
       "example_word": "ሾርባ",
       "example_gloss": "soup",
       "example_image": null,
@@ -1702,12 +2087,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ቀ",
       "alt": "",
       "name": "qä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "qä",
@@ -1729,13 +2122,14 @@
       "glyph": "ቁ",
       "alt": "",
       "name": "qu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "qu",
       "ipa": [
         "kʼu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቁልፍ",
       "example_gloss": "key",
       "example_image": null,
@@ -1744,19 +2138,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ቂ",
       "alt": "",
       "name": "qi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "qi",
       "ipa": [
         "kʼi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቂጣ",
       "example_gloss": "flatbread",
       "example_image": null,
@@ -1765,19 +2167,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ቃ",
       "alt": "",
       "name": "qa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "qa",
       "ipa": [
         "kʼa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቃል",
       "example_gloss": "word",
       "example_image": null,
@@ -1786,19 +2196,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ቄ",
       "alt": "",
       "name": "qe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "qe",
       "ipa": [
         "kʼe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቄስ",
       "example_gloss": "priest",
       "example_image": null,
@@ -1807,19 +2225,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ቅ",
       "alt": "",
       "name": "qə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "qə",
       "ipa": [
         "kʼɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቅቤ",
       "example_gloss": "butter",
       "example_image": null,
@@ -1828,19 +2254,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ቆ",
       "alt": "",
       "name": "qo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "qo",
       "ipa": [
         "kʼo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1240.png",
       "example_word": "ቆዳ",
       "example_gloss": "hide",
       "example_image": null,
@@ -1849,12 +2283,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "በ",
       "alt": "",
       "name": "bä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "bä",
@@ -1876,13 +2318,14 @@
       "glyph": "ቡ",
       "alt": "",
       "name": "bu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "bu",
       "ipa": [
         "bu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1260.png",
       "example_word": "ቡና",
       "example_gloss": "coffee",
       "example_image": null,
@@ -1891,19 +2334,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ቢ",
       "alt": "",
       "name": "bi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "bi",
       "ipa": [
         "bi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1260.png",
       "example_word": "ቢላ",
       "example_gloss": "knife",
       "example_image": null,
@@ -1912,19 +2363,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ባ",
       "alt": "",
       "name": "ba",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ba",
       "ipa": [
         "ba"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1260.png",
       "example_word": "ባቡር",
       "example_gloss": "train",
       "example_image": null,
@@ -1933,19 +2392,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ቤ",
       "alt": "",
       "name": "be",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "be",
       "ipa": [
         "be"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1260.png",
       "example_word": "ቤት",
       "example_gloss": "house",
       "example_image": null,
@@ -1954,19 +2421,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ብ",
       "alt": "",
       "name": "bə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "bə",
       "ipa": [
         "bɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1260.png",
       "example_word": "ብርሃን",
       "example_gloss": "light",
       "example_image": null,
@@ -1975,19 +2450,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ቦ",
       "alt": "",
       "name": "bo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "bo",
       "ipa": [
         "bo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1260.png",
       "example_word": "ቦርሳ",
       "example_gloss": "bag",
       "example_image": null,
@@ -1996,12 +2479,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ቨ",
       "alt": "",
       "name": "vä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "vä",
@@ -2023,6 +2514,7 @@
       "glyph": "ቩ",
       "alt": "",
       "name": "vu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "vu",
@@ -2044,6 +2536,7 @@
       "glyph": "ቪ",
       "alt": "",
       "name": "vi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "vi",
@@ -2065,6 +2558,7 @@
       "glyph": "ቫ",
       "alt": "",
       "name": "va",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "va",
@@ -2086,6 +2580,7 @@
       "glyph": "ቬ",
       "alt": "",
       "name": "ve",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ve",
@@ -2107,6 +2602,7 @@
       "glyph": "ቭ",
       "alt": "",
       "name": "və",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "və",
@@ -2128,6 +2624,7 @@
       "glyph": "ቮ",
       "alt": "",
       "name": "vo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "vo",
@@ -2149,6 +2646,7 @@
       "glyph": "ተ",
       "alt": "",
       "name": "tä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "tä",
@@ -2170,13 +2668,14 @@
       "glyph": "ቱ",
       "alt": "",
       "name": "tu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "tu",
       "ipa": [
         "tu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ቱታ",
       "example_gloss": "tracksuit",
       "example_image": null,
@@ -2185,19 +2684,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ቲ",
       "alt": "",
       "name": "ti",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ti",
       "ipa": [
         "ti"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ቲማቲም",
       "example_gloss": "tomato",
       "example_image": null,
@@ -2206,19 +2713,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ታ",
       "alt": "",
       "name": "ta",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ta",
       "ipa": [
         "ta"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ታሪክ",
       "example_gloss": "history",
       "example_image": null,
@@ -2227,19 +2742,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ቴ",
       "alt": "",
       "name": "te",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "te",
       "ipa": [
         "te"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ቴሌቪዥን",
       "example_gloss": "television",
       "example_image": null,
@@ -2248,19 +2771,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ት",
       "alt": "",
       "name": "tə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "tə",
       "ipa": [
         "tɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ትምህርት",
       "example_gloss": "education",
       "example_image": null,
@@ -2269,19 +2800,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ቶ",
       "alt": "",
       "name": "to",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "to",
       "ipa": [
         "to"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1270.png",
       "example_word": "ቶሎ",
       "example_gloss": "quickly",
       "example_image": null,
@@ -2290,12 +2829,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ቸ",
       "alt": "",
       "name": "čä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čä",
@@ -2317,13 +2864,14 @@
       "glyph": "ቹ",
       "alt": "",
       "name": "ču",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ču",
       "ipa": [
         "t͡ʃu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1278.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2332,19 +2880,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ቺ",
       "alt": "",
       "name": "či",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "či",
       "ipa": [
         "t͡ʃi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1278.png",
       "example_word": "ቺፕስ",
       "example_gloss": "chips",
       "example_image": null,
@@ -2353,19 +2909,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ቻ",
       "alt": "",
       "name": "ča",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ča",
       "ipa": [
         "t͡ʃa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1278.png",
       "example_word": "ቻርጀር",
       "example_gloss": "charger",
       "example_image": null,
@@ -2374,19 +2938,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ቼ",
       "alt": "",
       "name": "če",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "če",
       "ipa": [
         "t͡ʃe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1278.png",
       "example_word": "ቼክ",
       "example_gloss": "cheque",
       "example_image": null,
@@ -2395,19 +2967,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ች",
       "alt": "",
       "name": "čə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čə",
       "ipa": [
         "t͡ʃɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1278.png",
       "example_word": "ችግር",
       "example_gloss": "problem",
       "example_image": null,
@@ -2416,19 +2996,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ቾ",
       "alt": "",
       "name": "čo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čo",
       "ipa": [
         "t͡ʃo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1278.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2437,12 +3025,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ኀ",
       "alt": "",
       "name": "ḫä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḫä",
@@ -2464,13 +3060,14 @@
       "glyph": "ኁ",
       "alt": "",
       "name": "ḫu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḫu",
       "ipa": [
         "hu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1280.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2479,19 +3076,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ኂ",
       "alt": "",
       "name": "ḫi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḫi",
       "ipa": [
         "hi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1280.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2500,19 +3105,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ኃ",
       "alt": "",
       "name": "ḫa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḫa",
       "ipa": [
         "ha"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1280.png",
       "example_word": "ኃይል",
       "example_gloss": "power",
       "example_image": null,
@@ -2521,19 +3134,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ኄ",
       "alt": "",
       "name": "ḫe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḫe",
       "ipa": [
         "he"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1280.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2542,19 +3163,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ኅ",
       "alt": "",
       "name": "ḫə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḫə",
       "ipa": [
         "hɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1280.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2563,19 +3192,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ኆ",
       "alt": "",
       "name": "ḫo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḫo",
       "ipa": [
         "ho"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1280.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2584,12 +3221,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ነ",
       "alt": "",
       "name": "nä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "nä",
@@ -2611,13 +3256,14 @@
       "glyph": "ኑ",
       "alt": "",
       "name": "nu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "nu",
       "ipa": [
         "nu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ኑሮ",
       "example_gloss": "living",
       "example_image": null,
@@ -2626,19 +3272,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ኒ",
       "alt": "",
       "name": "ni",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ni",
       "ipa": [
         "ni"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ኒሻን",
       "example_gloss": "medal",
       "example_image": null,
@@ -2647,19 +3301,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ና",
       "alt": "",
       "name": "na",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "na",
       "ipa": [
         "na"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ናት",
       "example_gloss": "she is",
       "example_image": null,
@@ -2668,19 +3330,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ኔ",
       "alt": "",
       "name": "ne",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ne",
       "ipa": [
         "ne"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ኔትወርክ",
       "example_gloss": "network",
       "example_image": null,
@@ -2689,19 +3359,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ን",
       "alt": "",
       "name": "nə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "nə",
       "ipa": [
         "nɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ንብ",
       "example_gloss": "bee",
       "example_image": null,
@@ -2710,19 +3388,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ኖ",
       "alt": "",
       "name": "no",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "no",
       "ipa": [
         "no"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1290.png",
       "example_word": "ኖራ",
       "example_gloss": "chalk",
       "example_image": null,
@@ -2731,12 +3417,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ኘ",
       "alt": "",
       "name": "ñä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ñä",
@@ -2758,13 +3452,14 @@
       "glyph": "ኙ",
       "alt": "",
       "name": "ñu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ñu",
       "ipa": [
         "ɲu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1298.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2773,19 +3468,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ኚ",
       "alt": "",
       "name": "ñi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ñi",
       "ipa": [
         "ɲi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1298.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2794,19 +3497,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ኛ",
       "alt": "",
       "name": "ña",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ña",
       "ipa": [
         "ɲa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1298.png",
       "example_word": "አማርኛ",
       "example_gloss": "Amharic",
       "example_image": null,
@@ -2815,19 +3526,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ኜ",
       "alt": "",
       "name": "ñe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ñe",
       "ipa": [
         "ɲe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1298.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2836,19 +3555,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ኝ",
       "alt": "",
       "name": "ñə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ñə",
       "ipa": [
         "ɲɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1298.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2857,19 +3584,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ኞ",
       "alt": "",
       "name": "ño",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ño",
       "ipa": [
         "ɲo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1298.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2878,12 +3613,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "አ",
       "alt": "",
       "name": "ʾä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʾä",
@@ -2905,13 +3648,14 @@
       "glyph": "ኡ",
       "alt": "",
       "name": "ʾu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʾu",
       "ipa": [
         "ʔu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a0.png",
       "example_word": "ኡደት",
       "example_gloss": "cycle",
       "example_image": null,
@@ -2920,19 +3664,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ኢ",
       "alt": "",
       "name": "ʾi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʾi",
       "ipa": [
         "ʔi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a0.png",
       "example_word": "ኢትዮጵያ",
       "example_gloss": "Ethiopia",
       "example_image": null,
@@ -2941,19 +3693,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ኣ",
       "alt": "",
       "name": "ʾa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʾa",
       "ipa": [
         "ʔa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -2962,19 +3722,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ኤ",
       "alt": "",
       "name": "ʾe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʾe",
       "ipa": [
         "ʔe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a0.png",
       "example_word": "ኤሌክትሪክ",
       "example_gloss": "electricity",
       "example_image": null,
@@ -2983,19 +3751,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "እ",
       "alt": "",
       "name": "ʾə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʾə",
       "ipa": [
         "ʔɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a0.png",
       "example_word": "እንቁላል",
       "example_gloss": "egg",
       "example_image": null,
@@ -3004,19 +3780,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ኦ",
       "alt": "",
       "name": "ʾo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʾo",
       "ipa": [
         "ʔo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a0.png",
       "example_word": "ኦክስጅን",
       "example_gloss": "oxygen",
       "example_image": null,
@@ -3025,12 +3809,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ከ",
       "alt": "",
       "name": "kä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "kä",
@@ -3052,13 +3844,14 @@
       "glyph": "ኩ",
       "alt": "",
       "name": "ku",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ku",
       "ipa": [
         "ku"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ኩባያ",
       "example_gloss": "cup",
       "example_image": null,
@@ -3067,19 +3860,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ኪ",
       "alt": "",
       "name": "ki",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ki",
       "ipa": [
         "ki"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ኪስ",
       "example_gloss": "pocket",
       "example_image": null,
@@ -3088,19 +3889,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ካ",
       "alt": "",
       "name": "ka",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ka",
       "ipa": [
         "ka"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ካርታ",
       "example_gloss": "map",
       "example_image": null,
@@ -3109,19 +3918,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ኬ",
       "alt": "",
       "name": "ke",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ke",
       "ipa": [
         "ke"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ኬክ",
       "example_gloss": "cake",
       "example_image": null,
@@ -3130,19 +3947,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ክ",
       "alt": "",
       "name": "kə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "kə",
       "ipa": [
         "kɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ክንድ",
       "example_gloss": "arm",
       "example_image": null,
@@ -3151,19 +3976,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ኮ",
       "alt": "",
       "name": "ko",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ko",
       "ipa": [
         "ko"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12a8.png",
       "example_word": "ኮከብ",
       "example_gloss": "star",
       "example_image": null,
@@ -3172,12 +4005,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ኸ",
       "alt": "",
       "name": "ḵä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḵä",
@@ -3199,13 +4040,14 @@
       "glyph": "ኹ",
       "alt": "",
       "name": "ḵu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḵu",
       "ipa": [
         "xu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12b8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3214,19 +4056,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ኺ",
       "alt": "",
       "name": "ḵi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḵi",
       "ipa": [
         "xi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12b8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3235,19 +4085,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ኻ",
       "alt": "",
       "name": "ḵa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḵa",
       "ipa": [
         "xa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12b8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3256,19 +4114,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ኼ",
       "alt": "",
       "name": "ḵe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḵe",
       "ipa": [
         "xe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12b8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3277,19 +4143,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ኽ",
       "alt": "",
       "name": "ḵə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḵə",
       "ipa": [
         "xɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12b8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3298,19 +4172,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ኾ",
       "alt": "",
       "name": "ḵo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḵo",
       "ipa": [
         "xo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12b8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3319,12 +4201,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ወ",
       "alt": "",
       "name": "wä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "wä",
@@ -3346,13 +4236,14 @@
       "glyph": "ዉ",
       "alt": "",
       "name": "wu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "wu",
       "ipa": [
         "wu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ዉሃ",
       "example_gloss": "water",
       "example_image": null,
@@ -3361,19 +4252,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ዊ",
       "alt": "",
       "name": "wi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "wi",
       "ipa": [
         "wi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ዊስኪ",
       "example_gloss": "whisky",
       "example_image": null,
@@ -3382,19 +4281,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ዋ",
       "alt": "",
       "name": "wa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "wa",
       "ipa": [
         "wa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ዋና",
       "example_gloss": "swimming",
       "example_image": null,
@@ -3403,19 +4310,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ዌ",
       "alt": "",
       "name": "we",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "we",
       "ipa": [
         "we"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ዌብሳይት",
       "example_gloss": "website",
       "example_image": null,
@@ -3424,19 +4339,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ው",
       "alt": "",
       "name": "wə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "wə",
       "ipa": [
         "wɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ውሻ",
       "example_gloss": "dog",
       "example_image": null,
@@ -3445,19 +4368,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ዎ",
       "alt": "",
       "name": "wo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "wo",
       "ipa": [
         "wo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12c8.png",
       "example_word": "ዎርክሾፕ",
       "example_gloss": "workshop",
       "example_image": null,
@@ -3466,12 +4397,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ዐ",
       "alt": "",
       "name": "ʿä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʿä",
@@ -3493,13 +4432,14 @@
       "glyph": "ዑ",
       "alt": "",
       "name": "ʿu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʿu",
       "ipa": [
         "ʔu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d0.png",
       "example_word": "ዑደት",
       "example_gloss": "cycle",
       "example_image": null,
@@ -3508,19 +4448,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ዒ",
       "alt": "",
       "name": "ʿi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʿi",
       "ipa": [
         "ʔi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3529,19 +4477,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ዓ",
       "alt": "",
       "name": "ʿa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʿa",
       "ipa": [
         "ʔa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d0.png",
       "example_word": "ዓመት",
       "example_gloss": "year",
       "example_image": null,
@@ -3550,19 +4506,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ዔ",
       "alt": "",
       "name": "ʿe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʿe",
       "ipa": [
         "ʔe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3571,19 +4535,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ዕ",
       "alt": "",
       "name": "ʿə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʿə",
       "ipa": [
         "ʔɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d0.png",
       "example_word": "ዕቃ",
       "example_gloss": "goods",
       "example_image": null,
@@ -3592,19 +4564,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ዖ",
       "alt": "",
       "name": "ʿo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ʿo",
       "ipa": [
         "ʔo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3613,12 +4593,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ዘ",
       "alt": "",
       "name": "zä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "zä",
@@ -3640,13 +4628,14 @@
       "glyph": "ዙ",
       "alt": "",
       "name": "zu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "zu",
       "ipa": [
         "zu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዙሪያ",
       "example_gloss": "surroundings",
       "example_image": null,
@@ -3655,19 +4644,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ዚ",
       "alt": "",
       "name": "zi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "zi",
       "ipa": [
         "zi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዚሮ",
       "example_gloss": "zero",
       "example_image": null,
@@ -3676,19 +4673,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ዛ",
       "alt": "",
       "name": "za",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "za",
       "ipa": [
         "za"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዛፍ",
       "example_gloss": "tree",
       "example_image": null,
@@ -3697,19 +4702,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ዜ",
       "alt": "",
       "name": "ze",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ze",
       "ipa": [
         "ze"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዜና",
       "example_gloss": "news",
       "example_image": null,
@@ -3718,19 +4731,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ዝ",
       "alt": "",
       "name": "zə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "zə",
       "ipa": [
         "zɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዝናብ",
       "example_gloss": "rain",
       "example_image": null,
@@ -3739,19 +4760,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ዞ",
       "alt": "",
       "name": "zo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "zo",
       "ipa": [
         "zo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12d8.png",
       "example_word": "ዞን",
       "example_gloss": "zone",
       "example_image": null,
@@ -3760,12 +4789,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ዠ",
       "alt": "",
       "name": "žä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "žä",
@@ -3787,13 +4824,14 @@
       "glyph": "ዡ",
       "alt": "",
       "name": "žu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "žu",
       "ipa": [
         "ʒu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3802,19 +4840,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ዢ",
       "alt": "",
       "name": "ži",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ži",
       "ipa": [
         "ʒi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3823,19 +4869,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ዣ",
       "alt": "",
       "name": "ža",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ža",
       "ipa": [
         "ʒa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3844,19 +4898,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ዤ",
       "alt": "",
       "name": "že",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "že",
       "ipa": [
         "ʒe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3865,19 +4927,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ዥ",
       "alt": "",
       "name": "žə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "žə",
       "ipa": [
         "ʒɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3886,19 +4956,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ዦ",
       "alt": "",
       "name": "žo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "žo",
       "ipa": [
         "ʒo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e0.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3907,12 +4985,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "የ",
       "alt": "",
       "name": "yä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "yä",
@@ -3934,13 +5020,14 @@
       "glyph": "ዩ",
       "alt": "",
       "name": "yu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "yu",
       "ipa": [
         "ju"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e8.png",
       "example_word": "ዩኒቨርሲቲ",
       "example_gloss": "university",
       "example_image": null,
@@ -3949,19 +5036,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ዪ",
       "alt": "",
       "name": "yi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "yi",
       "ipa": [
         "ji"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -3970,19 +5065,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ያ",
       "alt": "",
       "name": "ya",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ya",
       "ipa": [
         "ja"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e8.png",
       "example_word": "ያዝ",
       "example_gloss": "hold",
       "example_image": null,
@@ -3991,19 +5094,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ዬ",
       "alt": "",
       "name": "ye",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ye",
       "ipa": [
         "je"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e8.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4012,19 +5123,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ይ",
       "alt": "",
       "name": "yə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "yə",
       "ipa": [
         "jɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e8.png",
       "example_word": "ይቅርታ",
       "example_gloss": "apology",
       "example_image": null,
@@ -4033,19 +5152,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ዮ",
       "alt": "",
       "name": "yo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "yo",
       "ipa": [
         "jo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12e8.png",
       "example_word": "ዮጋ",
       "example_gloss": "yoga",
       "example_image": null,
@@ -4054,12 +5181,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ደ",
       "alt": "",
       "name": "dä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "dä",
@@ -4081,13 +5216,14 @@
       "glyph": "ዱ",
       "alt": "",
       "name": "du",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "du",
       "ipa": [
         "du"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ዱቄት",
       "example_gloss": "flour",
       "example_image": null,
@@ -4096,19 +5232,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ዲ",
       "alt": "",
       "name": "di",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "di",
       "ipa": [
         "di"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ዲሽ",
       "example_gloss": "dish",
       "example_image": null,
@@ -4117,19 +5261,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ዳ",
       "alt": "",
       "name": "da",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "da",
       "ipa": [
         "da"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ዳቦ",
       "example_gloss": "bread",
       "example_image": null,
@@ -4138,19 +5290,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ዴ",
       "alt": "",
       "name": "de",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "de",
       "ipa": [
         "de"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ዴሞክራሲ",
       "example_gloss": "democracy",
       "example_image": null,
@@ -4159,19 +5319,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ድ",
       "alt": "",
       "name": "də",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "də",
       "ipa": [
         "dɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ድመት",
       "example_gloss": "cat",
       "example_image": null,
@@ -4180,19 +5348,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ዶ",
       "alt": "",
       "name": "do",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "do",
       "ipa": [
         "do"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/12f0.png",
       "example_word": "ዶሮ",
       "example_gloss": "chicken",
       "example_image": null,
@@ -4201,12 +5377,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ጀ",
       "alt": "",
       "name": "ǵä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ǵä",
@@ -4228,13 +5412,14 @@
       "glyph": "ጁ",
       "alt": "",
       "name": "ǵu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ǵu",
       "ipa": [
         "d͡ʒu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጁስ",
       "example_gloss": "juice",
       "example_image": null,
@@ -4243,19 +5428,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ጂ",
       "alt": "",
       "name": "ǵi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ǵi",
       "ipa": [
         "d͡ʒi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጂፕ",
       "example_gloss": "jeep",
       "example_image": null,
@@ -4264,19 +5457,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ጃ",
       "alt": "",
       "name": "ǵa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ǵa",
       "ipa": [
         "d͡ʒa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጃንጥላ",
       "example_gloss": "umbrella",
       "example_image": null,
@@ -4285,19 +5486,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ጄ",
       "alt": "",
       "name": "ǵe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ǵe",
       "ipa": [
         "d͡ʒe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጄኔራል",
       "example_gloss": "general",
       "example_image": null,
@@ -4306,19 +5515,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ጅ",
       "alt": "",
       "name": "ǵə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ǵə",
       "ipa": [
         "d͡ʒɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጅብ",
       "example_gloss": "hyena",
       "example_image": null,
@@ -4327,19 +5544,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ጆ",
       "alt": "",
       "name": "ǵo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ǵo",
       "ipa": [
         "d͡ʒo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1300.png",
       "example_word": "ጆሮ",
       "example_gloss": "ear",
       "example_image": null,
@@ -4348,12 +5573,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ገ",
       "alt": "",
       "name": "gä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "gä",
@@ -4375,13 +5608,14 @@
       "glyph": "ጉ",
       "alt": "",
       "name": "gu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "gu",
       "ipa": [
         "ɡu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ጉዞ",
       "example_gloss": "journey",
       "example_image": null,
@@ -4390,19 +5624,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ጊ",
       "alt": "",
       "name": "gi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "gi",
       "ipa": [
         "ɡi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ጊዜ",
       "example_gloss": "time",
       "example_image": null,
@@ -4411,19 +5653,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ጋ",
       "alt": "",
       "name": "ga",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ga",
       "ipa": [
         "ɡa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ጋዜጣ",
       "example_gloss": "newspaper",
       "example_image": null,
@@ -4432,19 +5682,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ጌ",
       "alt": "",
       "name": "ge",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ge",
       "ipa": [
         "ɡe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ጌጥ",
       "example_gloss": "ornament",
       "example_image": null,
@@ -4453,19 +5711,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ግ",
       "alt": "",
       "name": "gə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "gə",
       "ipa": [
         "ɡɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ግድግዳ",
       "example_gloss": "wall",
       "example_image": null,
@@ -4474,19 +5740,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ጎ",
       "alt": "",
       "name": "go",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "go",
       "ipa": [
         "ɡo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1308.png",
       "example_word": "ጎመን",
       "example_gloss": "cabbage",
       "example_image": null,
@@ -4495,12 +5769,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ጠ",
       "alt": "",
       "name": "ṭä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṭä",
@@ -4522,13 +5804,14 @@
       "glyph": "ጡ",
       "alt": "",
       "name": "ṭu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṭu",
       "ipa": [
         "tʼu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጡብ",
       "example_gloss": "brick",
       "example_image": null,
@@ -4537,19 +5820,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ጢ",
       "alt": "",
       "name": "ṭi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṭi",
       "ipa": [
         "tʼi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጢስ",
       "example_gloss": "smoke",
       "example_image": null,
@@ -4558,19 +5849,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ጣ",
       "alt": "",
       "name": "ṭa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṭa",
       "ipa": [
         "tʼa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጣፋጭ",
       "example_gloss": "sweet",
       "example_image": null,
@@ -4579,19 +5878,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ጤ",
       "alt": "",
       "name": "ṭe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṭe",
       "ipa": [
         "tʼe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጤና",
       "example_gloss": "health",
       "example_image": null,
@@ -4600,19 +5907,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ጥ",
       "alt": "",
       "name": "ṭə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṭə",
       "ipa": [
         "tʼɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጥርስ",
       "example_gloss": "tooth",
       "example_image": null,
@@ -4621,19 +5936,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ጦ",
       "alt": "",
       "name": "ṭo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṭo",
       "ipa": [
         "tʼo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1320.png",
       "example_word": "ጦር",
       "example_gloss": "spear",
       "example_image": null,
@@ -4642,12 +5965,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ጨ",
       "alt": "",
       "name": "čʼä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čʼä",
@@ -4669,13 +6000,14 @@
       "glyph": "ጩ",
       "alt": "",
       "name": "čʼu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čʼu",
       "ipa": [
         "t͡ʃʼu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1328.png",
       "example_word": "ጩኸት",
       "example_gloss": "shout",
       "example_image": null,
@@ -4684,19 +6016,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ጪ",
       "alt": "",
       "name": "čʼi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čʼi",
       "ipa": [
         "t͡ʃʼi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1328.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4705,19 +6045,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ጫ",
       "alt": "",
       "name": "čʼa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čʼa",
       "ipa": [
         "t͡ʃʼa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1328.png",
       "example_word": "ጫማ",
       "example_gloss": "shoe",
       "example_image": null,
@@ -4726,19 +6074,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ጬ",
       "alt": "",
       "name": "čʼe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čʼe",
       "ipa": [
         "t͡ʃʼe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1328.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4747,19 +6103,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ጭ",
       "alt": "",
       "name": "čʼə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čʼə",
       "ipa": [
         "t͡ʃʼɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1328.png",
       "example_word": "ጭራ",
       "example_gloss": "tail",
       "example_image": null,
@@ -4768,19 +6132,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ጮ",
       "alt": "",
       "name": "čʼo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "čʼo",
       "ipa": [
         "t͡ʃʼo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1328.png",
       "example_word": "ጮማ",
       "example_gloss": "fatty meat",
       "example_image": null,
@@ -4789,12 +6161,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ጰ",
       "alt": "",
       "name": "ṗä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṗä",
@@ -4816,13 +6196,14 @@
       "glyph": "ጱ",
       "alt": "",
       "name": "ṗu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṗu",
       "ipa": [
         "pʼu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1330.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4831,19 +6212,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ጲ",
       "alt": "",
       "name": "ṗi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṗi",
       "ipa": [
         "pʼi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1330.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4852,19 +6241,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ጳ",
       "alt": "",
       "name": "ṗa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṗa",
       "ipa": [
         "pʼa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1330.png",
       "example_word": "ጳጳስ",
       "example_gloss": "bishop",
       "example_image": null,
@@ -4873,19 +6270,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ጴ",
       "alt": "",
       "name": "ṗe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṗe",
       "ipa": [
         "pʼe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1330.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4894,19 +6299,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ጵ",
       "alt": "",
       "name": "ṗə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṗə",
       "ipa": [
         "pʼɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1330.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4915,19 +6328,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ጶ",
       "alt": "",
       "name": "ṗo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṗo",
       "ipa": [
         "pʼo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1330.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4936,12 +6357,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ጸ",
       "alt": "",
       "name": "ṣä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṣä",
@@ -4963,13 +6392,14 @@
       "glyph": "ጹ",
       "alt": "",
       "name": "ṣu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṣu",
       "ipa": [
         "t͡sʼu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1338.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -4978,19 +6408,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ጺ",
       "alt": "",
       "name": "ṣi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṣi",
       "ipa": [
         "t͡sʼi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1338.png",
       "example_word": "ጺም",
       "example_gloss": "beard",
       "example_image": null,
@@ -4999,19 +6437,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ጻ",
       "alt": "",
       "name": "ṣa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṣa",
       "ipa": [
         "t͡sʼa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1338.png",
       "example_word": "ጻፊ",
       "example_gloss": "writer",
       "example_image": null,
@@ -5020,19 +6466,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ጼ",
       "alt": "",
       "name": "ṣe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṣe",
       "ipa": [
         "t͡sʼe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1338.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5041,19 +6495,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ጽ",
       "alt": "",
       "name": "ṣə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṣə",
       "ipa": [
         "t͡sʼɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1338.png",
       "example_word": "ጽዋ",
       "example_gloss": "goblet",
       "example_image": null,
@@ -5062,19 +6524,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ጾ",
       "alt": "",
       "name": "ṣo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ṣo",
       "ipa": [
         "t͡sʼo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1338.png",
       "example_word": "ጾም",
       "example_gloss": "fast",
       "example_image": null,
@@ -5083,12 +6553,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ፀ",
       "alt": "",
       "name": "ḍä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḍä",
@@ -5110,13 +6588,14 @@
       "glyph": "ፁ",
       "alt": "",
       "name": "ḍu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḍu",
       "ipa": [
         "t͡sʼu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1340.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5125,19 +6604,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ፂ",
       "alt": "",
       "name": "ḍi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḍi",
       "ipa": [
         "t͡sʼi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1340.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5146,19 +6633,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ፃ",
       "alt": "",
       "name": "ḍa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḍa",
       "ipa": [
         "t͡sʼa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1340.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5167,19 +6662,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ፄ",
       "alt": "",
       "name": "ḍe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḍe",
       "ipa": [
         "t͡sʼe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1340.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5188,19 +6691,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ፅ",
       "alt": "",
       "name": "ḍə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḍə",
       "ipa": [
         "t͡sʼɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1340.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5209,19 +6720,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ፆ",
       "alt": "",
       "name": "ḍo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "ḍo",
       "ipa": [
         "t͡sʼo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1340.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5230,12 +6749,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ፈ",
       "alt": "",
       "name": "fä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "fä",
@@ -5257,13 +6784,14 @@
       "glyph": "ፉ",
       "alt": "",
       "name": "fu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "fu",
       "ipa": [
         "fu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፉጨት",
       "example_gloss": "whistle",
       "example_image": null,
@@ -5272,19 +6800,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ፊ",
       "alt": "",
       "name": "fi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "fi",
       "ipa": [
         "fi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፊት",
       "example_gloss": "face",
       "example_image": null,
@@ -5293,19 +6829,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ፋ",
       "alt": "",
       "name": "fa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "fa",
       "ipa": [
         "fa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፋብሪካ",
       "example_gloss": "factory",
       "example_image": null,
@@ -5314,19 +6858,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ፌ",
       "alt": "",
       "name": "fe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "fe",
       "ipa": [
         "fe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፌስታል",
       "example_gloss": "plastic bag",
       "example_image": null,
@@ -5335,19 +6887,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ፍ",
       "alt": "",
       "name": "fə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "fə",
       "ipa": [
         "fɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፍቅር",
       "example_gloss": "love",
       "example_image": null,
@@ -5356,19 +6916,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ፎ",
       "alt": "",
       "name": "fo",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "fo",
       "ipa": [
         "fo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1348.png",
       "example_word": "ፎቶ",
       "example_gloss": "photo",
       "example_image": null,
@@ -5377,12 +6945,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ፐ",
       "alt": "",
       "name": "pä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "pä",
@@ -5404,13 +6980,14 @@
       "glyph": "ፑ",
       "alt": "",
       "name": "pu",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "pu",
       "ipa": [
         "pu"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1350.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5419,19 +6996,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 2,
+        "name": "kaʽeb",
+        "amharic": "ካዕብ",
+        "description": "an arc to the left",
+        "image": "images/handshapes/geez/move-2.png"
+      }
     },
     {
       "glyph": "ፒ",
       "alt": "",
       "name": "pi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "pi",
       "ipa": [
         "pi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1350.png",
       "example_word": "ፒያሳ",
       "example_gloss": "piazza",
       "example_image": null,
@@ -5440,19 +7025,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 3,
+        "name": "salis",
+        "amharic": "ሣልስ",
+        "description": "straight to the right",
+        "image": "images/handshapes/geez/move-3.png"
+      }
     },
     {
       "glyph": "ፓ",
       "alt": "",
       "name": "pa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "pa",
       "ipa": [
         "pa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1350.png",
       "example_word": "ፓርክ",
       "example_gloss": "park",
       "example_image": null,
@@ -5461,19 +7054,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 4,
+        "name": "rabʽe",
+        "amharic": "ራብዕ",
+        "description": "straight down",
+        "image": "images/handshapes/geez/move-4.png"
+      }
     },
     {
       "glyph": "ፔ",
       "alt": "",
       "name": "pe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "pe",
       "ipa": [
         "pe"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1350.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -5482,19 +7083,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 5,
+        "name": "hames",
+        "amharic": "ኃምስ",
+        "description": "up and hooking over",
+        "image": "images/handshapes/geez/move-5.png"
+      }
     },
     {
       "glyph": "ፕ",
       "alt": "",
       "name": "pə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "pə",
       "ipa": [
         "pɨ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1350.png",
       "example_word": "ፕሮግራም",
       "example_gloss": "programme",
       "example_image": null,
@@ -5503,19 +7112,27 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 6,
+        "name": "sadis",
+        "amharic": "ሳድስ",
+        "description": "down, with a shake",
+        "image": "images/handshapes/geez/move-6.png"
+      }
     },
     {
       "glyph": "ፖ",
       "alt": "",
       "name": "po",
+      "name_ipa": null,
       "display_glyph": null,
       "section": null,
       "romanization": "po",
       "ipa": [
         "po"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/geez/1350.png",
       "example_word": "ፖሊስ",
       "example_gloss": "police",
       "example_image": null,
@@ -5524,12 +7141,20 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "order": 7,
+        "name": "sabʽe",
+        "amharic": "ሳብዕ",
+        "description": "a loop",
+        "image": "images/handshapes/geez/move-7.png"
+      }
     },
     {
       "glyph": "ቈ",
       "alt": "",
       "name": "qʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qʷä",
@@ -5551,6 +7176,7 @@
       "glyph": "ቊ",
       "alt": "",
       "name": "qʷi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qʷi",
@@ -5572,6 +7198,7 @@
       "glyph": "ቋ",
       "alt": "",
       "name": "qʷa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qʷa",
@@ -5593,6 +7220,7 @@
       "glyph": "ቌ",
       "alt": "",
       "name": "qʷe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qʷe",
@@ -5614,6 +7242,7 @@
       "glyph": "ቍ",
       "alt": "",
       "name": "qʷə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qʷə",
@@ -5635,6 +7264,7 @@
       "glyph": "ቘ",
       "alt": "",
       "name": "qhʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qhʷä",
@@ -5656,6 +7286,7 @@
       "glyph": "ቚ",
       "alt": "",
       "name": "qhʷi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qhʷi",
@@ -5677,6 +7308,7 @@
       "glyph": "ቛ",
       "alt": "",
       "name": "qhʷa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qhʷa",
@@ -5698,6 +7330,7 @@
       "glyph": "ቜ",
       "alt": "",
       "name": "qhʷe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qhʷe",
@@ -5719,6 +7352,7 @@
       "glyph": "ቝ",
       "alt": "",
       "name": "qhʷə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "qhʷə",
@@ -5740,6 +7374,7 @@
       "glyph": "ኈ",
       "alt": "",
       "name": "ḫʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḫʷä",
@@ -5761,6 +7396,7 @@
       "glyph": "ኊ",
       "alt": "",
       "name": "ḫʷi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḫʷi",
@@ -5782,6 +7418,7 @@
       "glyph": "ኋ",
       "alt": "",
       "name": "ḫʷa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḫʷa",
@@ -5803,6 +7440,7 @@
       "glyph": "ኌ",
       "alt": "",
       "name": "ḫʷe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḫʷe",
@@ -5824,6 +7462,7 @@
       "glyph": "ኍ",
       "alt": "",
       "name": "ḫʷə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḫʷə",
@@ -5845,6 +7484,7 @@
       "glyph": "ኰ",
       "alt": "",
       "name": "kʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "kʷä",
@@ -5866,6 +7506,7 @@
       "glyph": "ኲ",
       "alt": "",
       "name": "kʷi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "kʷi",
@@ -5887,6 +7528,7 @@
       "glyph": "ኳ",
       "alt": "",
       "name": "kʷa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "kʷa",
@@ -5908,6 +7550,7 @@
       "glyph": "ኴ",
       "alt": "",
       "name": "kʷe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "kʷe",
@@ -5929,6 +7572,7 @@
       "glyph": "ኵ",
       "alt": "",
       "name": "kʷə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "kʷə",
@@ -5950,6 +7594,7 @@
       "glyph": "ዀ",
       "alt": "",
       "name": "ḵʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḵʷä",
@@ -5971,6 +7616,7 @@
       "glyph": "ዂ",
       "alt": "",
       "name": "ḵʷi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḵʷi",
@@ -5992,6 +7638,7 @@
       "glyph": "ዃ",
       "alt": "",
       "name": "ḵʷa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḵʷa",
@@ -6013,6 +7660,7 @@
       "glyph": "ዄ",
       "alt": "",
       "name": "ḵʷe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḵʷe",
@@ -6034,6 +7682,7 @@
       "glyph": "ዅ",
       "alt": "",
       "name": "ḵʷə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "ḵʷə",
@@ -6055,6 +7704,7 @@
       "glyph": "ጐ",
       "alt": "",
       "name": "gʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "gʷä",
@@ -6076,6 +7726,7 @@
       "glyph": "ጒ",
       "alt": "",
       "name": "gʷi",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "gʷi",
@@ -6097,6 +7748,7 @@
       "glyph": "ጓ",
       "alt": "",
       "name": "gʷa",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "gʷa",
@@ -6118,6 +7770,7 @@
       "glyph": "ጔ",
       "alt": "",
       "name": "gʷe",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "gʷe",
@@ -6139,6 +7792,7 @@
       "glyph": "ጕ",
       "alt": "",
       "name": "gʷə",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labiovelars",
       "romanization": "gʷə",
@@ -6160,6 +7814,7 @@
       "glyph": "ሏ",
       "alt": "",
       "name": "lʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "lʷä",
@@ -6181,6 +7836,7 @@
       "glyph": "ሗ",
       "alt": "",
       "name": "ḥʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ḥʷä",
@@ -6202,6 +7858,7 @@
       "glyph": "ሟ",
       "alt": "",
       "name": "mʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "mʷä",
@@ -6223,6 +7880,7 @@
       "glyph": "ሧ",
       "alt": "",
       "name": "śʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "śʷä",
@@ -6244,6 +7902,7 @@
       "glyph": "ሯ",
       "alt": "",
       "name": "rʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "rʷä",
@@ -6265,6 +7924,7 @@
       "glyph": "ሷ",
       "alt": "",
       "name": "sʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "sʷä",
@@ -6286,6 +7946,7 @@
       "glyph": "ሿ",
       "alt": "",
       "name": "šʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "šʷä",
@@ -6307,6 +7968,7 @@
       "glyph": "ቧ",
       "alt": "",
       "name": "bʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "bʷä",
@@ -6328,6 +7990,7 @@
       "glyph": "ቯ",
       "alt": "",
       "name": "vʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "vʷä",
@@ -6349,6 +8012,7 @@
       "glyph": "ቷ",
       "alt": "",
       "name": "tʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "tʷä",
@@ -6370,6 +8034,7 @@
       "glyph": "ቿ",
       "alt": "",
       "name": "čʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "čʷä",
@@ -6391,6 +8056,7 @@
       "glyph": "ኗ",
       "alt": "",
       "name": "nʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "nʷä",
@@ -6412,6 +8078,7 @@
       "glyph": "ኟ",
       "alt": "",
       "name": "ñʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ñʷä",
@@ -6433,6 +8100,7 @@
       "glyph": "ዟ",
       "alt": "",
       "name": "zʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "zʷä",
@@ -6454,6 +8122,7 @@
       "glyph": "ዧ",
       "alt": "",
       "name": "žʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "žʷä",
@@ -6475,6 +8144,7 @@
       "glyph": "ዷ",
       "alt": "",
       "name": "dʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "dʷä",
@@ -6496,6 +8166,7 @@
       "glyph": "ዿ",
       "alt": "",
       "name": "ḍʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ḍʷä",
@@ -6517,6 +8188,7 @@
       "glyph": "ጇ",
       "alt": "",
       "name": "ǵʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ǵʷä",
@@ -6538,6 +8210,7 @@
       "glyph": "ⶓ",
       "alt": "",
       "name": "ġʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ġʷä",
@@ -6559,6 +8232,7 @@
       "glyph": "ጧ",
       "alt": "",
       "name": "ṭʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ṭʷä",
@@ -6580,6 +8254,7 @@
       "glyph": "ጯ",
       "alt": "",
       "name": "čʼʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "čʼʷä",
@@ -6601,6 +8276,7 @@
       "glyph": "ጷ",
       "alt": "",
       "name": "ṗʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ṗʷä",
@@ -6622,6 +8298,7 @@
       "glyph": "ጿ",
       "alt": "",
       "name": "ṣʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "ṣʷä",
@@ -6643,6 +8320,7 @@
       "glyph": "ፏ",
       "alt": "",
       "name": "fʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "fʷä",
@@ -6664,6 +8342,7 @@
       "glyph": "ፗ",
       "alt": "",
       "name": "pʷä",
+      "name_ipa": null,
       "display_glyph": null,
       "section": "Labialised consonants",
       "romanization": "pʷä",

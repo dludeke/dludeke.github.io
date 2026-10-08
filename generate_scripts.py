@@ -26,6 +26,8 @@ from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             ARABIC_FORMS, ARABIC_HARAKAT,
                             HANGUL_DOUBLE, HANGUL_COMPOUND,
                             geez_labiovelars)
+from slice_handshapes import ETHSL_ORDER_ROWS
+from script_name_ipa import name_ipa
 from script_signs import (HANGUL_FINALS, HEBREW_NIQQUD, FARSI_FORMS,
                           FARSI_HARAKAT, DEVANAGARI_CANDRA, THAI_SIGNS,
                           PINYIN_TONES, ARABIC_CLASSICAL, geez_labialised)
@@ -118,6 +120,44 @@ for _slug, _groups in EXTRA.items():
             WORD_IPA.setdefault(_slug, {})[_g] = _wi
             if _no:
                 NOTES.setdefault(_slug, {})[_g] = _no
+
+
+# EthSL spells a syllable as the consonant's handshape plus a movement for
+# the vowel order, and the chart prints the six arrows under the grid. With
+# only the grid sliced, 198 of the 231 cells had no handshape at all.
+ETHSL_MOVES = {o + 1: {"order": o + 1, "name": rom, "amharic": amh,
+                       "description": desc,
+                       "image": "images/handshapes/geez/move-%d.png" % (o + 1)}
+               for o, rom, amh, desc in ETHSL_ORDER_ROWS}
+# the chart also works ሀ through all six, so those cells get the real drawing
+ETHSL_WORKED = {chr(0x1200 + o): "images/handshapes/geez/form-%d.png" % (o + 1)
+                for o in range(1, 7)}
+
+
+def geez_order(glyph):
+    """(base consonant, order index) for a syllable, or (None, None)."""
+    cp = ord(glyph)
+    for b, _rom, _ipa in GEEZ_CONSONANTS:
+        off = cp - ord(b)
+        if 0 <= off < len(GEEZ_ORDERS):
+            return b, off
+    return None, None
+
+
+def geez_derived(glyph):
+    """True for the six orders whose handshape this file works out."""
+    base, off = geez_order(glyph)
+    return base is not None and off > 0
+
+
+def geez_handshape(glyph, bases):
+    """(handshape, movement) for a syllable, from its consonant and order."""
+    base, off = geez_order(glyph)
+    if base is None or not bases.get(base) or off == 0:
+        return None, None
+    # off counts orders from zero; the arrows are keyed by the order's
+    # ordinary name, where the plain consonant is the 1st
+    return ETHSL_WORKED.get(glyph, bases[base]), ETHSL_MOVES.get(off + 1)
 
 
 def with_extras(slug, rows):
@@ -387,6 +427,9 @@ def main():
         path = os.path.join(OUT_DIR, f"{slug}.json")
         preserved = load_hand_edits(path)
         shapes = existing_handshapes(slug)
+        # the chart's 33 first-order images live in the file as hand edits
+        geez_bases = {g: v.get("handshape") for g, v in preserved.items()
+                      if v.get("handshape")} if slug == "geez" else {}
 
         letters = []
         for glyph, alt, label in with_extras(slug, LETTERS[slug]):
@@ -394,6 +437,9 @@ def main():
                 "glyph": glyph,
                 "alt": alt,            # lowercase, katakana, or final form
                 "name": label,
+                # how the name is said. A letter's sound does not tell you
+                # this: ㄱ sounds /k/ and is called 기역.
+                "name_ipa": name_ipa(slug, glyph, label),
                 # a combining mark drawn on a dotted circle, so the card shows
                 # where it sits rather than floating it on nothing
                 "display_glyph": display_for(slug, glyph)
@@ -476,6 +522,12 @@ def main():
                               "example_emoji": emoji})
             if shapes.get(glyph):
                 entry["handshape"] = shapes[glyph]
+            if slug == "geez":
+                hs, mv = geez_handshape(glyph, geez_bases)
+                if hs:
+                    entry["handshape"] = hs
+                if mv:
+                    entry["movement"] = mv
             # Preserve only what the tables do not supply. Without this the
             # values just written would be read back as "hand edits" on the
             # next run and win over the tables, so editing script_content.py
@@ -485,11 +537,17 @@ def main():
             # without this a bad earlier run would be preserved over the fix.
             if slug == "geez":
                 from_tables.update(("ipa", "romanization"))
+                # the first-order images come from the chart and are hand
+                # edits; the other six orders are derived from them here
+                if geez_derived(glyph):
+                    from_tables.update(("handshape", "movement"))
                 if GEEZ_EXTRA_WORDS.get(glyph):
                     from_tables.update(("example_word", "example_gloss",
                                         "example_emoji"))
             if ipa_vals:
                 from_tables.add("ipa")
+            if name_ipa(slug, glyph, label):
+                from_tables.add("name_ipa")
             if w:
                 from_tables.update(("example_word", "example_gloss", "example_emoji"))
             if wi:

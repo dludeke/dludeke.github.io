@@ -50,6 +50,10 @@
     .lt.unknown { background: #fff; border: 1px dashed #e3e8ec; }
     .lt .ch { font-size: 2rem; line-height: 1.1; font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic", "Noto Sans Hebrew", "Noto Sans", system-ui, -apple-system, sans-serif; }
     .lt .nm { font-size: 0.68rem; color: #9aa3ab; margin-top: 0.1rem; }
+    .lt .nm-ipa {
+      font-family: "Charis SIL", "Doulos SIL", serif;
+      font-size: 0.64rem; color: #b4bcc4; min-height: 0.9rem;
+    }
     .lt .ip {
       font-family: "Charis SIL", "Doulos SIL", serif;
       font-size: 0.9rem; color: #46525e; margin-top: 0.35rem; min-height: 1.1rem;
@@ -60,6 +64,7 @@
     }
     .lt .pics img { max-height: 52px; max-width: 46px; }
     .lt .pics .sw { max-height: 34px; }
+    .lt .pics .mv { max-height: 18px; max-width: 28px; opacity: 0.75; }
 
     .hint {
       margin-top: 1.5rem; font-size: 0.85rem; color: #98a1a9;
@@ -602,9 +607,13 @@
           <div class="lt${m ? '' : ' unknown'}">
             <div class="ch">${m && m.display_glyph ? m.display_glyph : ch}</div>
             <div class="nm">${m ? (m.name || '') : ''}</div>
+            <div class="nm-ipa">${step >= 2 && m && m.name_ipa ? '/' + m.name_ipa + '/' : ''}</div>
             <div class="ip">${step >= 2 && m && (m.ipa || []).length ? '/' + m.ipa.join(', ') + '/' : ''}</div>
             <div class="pics">
               ${step >= 3 && hand ? `<img src="${hand}" alt="handshape" />` : ''}
+              ${step >= 3 && m && m.movement
+                ? `<img class="mv" src="${m.movement.image}" title="${m.movement.amharic} ${m.movement.name}" alt="${m.movement.description}" />`
+                : ''}
               ${step >= 3 && sw ? `<img class="sw" src="${sw}" alt="SignWriting" />` : ''}
             </div>
           </div>`;
@@ -689,9 +698,10 @@
     // Language-specific configurations
     // Every script now has a word list. The two drills that only compare the
     // word with its romanisation need nothing but that list, so they work for
-    // eleven of the twelve; English is left out because transliterating Latin
-    // into Latin is not a drill, and its list is used by the flashcards, where
-    // the BSL and ASL handshapes are the point. The on-screen keyboard needs a glyph-to-romanisation map and
+    // ten of the twelve. English is left out because transliterating Latin
+    // into Latin is not a drill, and Mandarin because pinyin already is the
+    // romanisation, so both directions ask for what is on the card. Their
+    // word lists are still used by the flashcards. The on-screen keyboard needs a glyph-to-romanisation map and
     // the sign drills need a handshape map; where those are missing the
     // keyboard stays hidden and the sign tabs stay greyed out.
     const LANGS = [
@@ -704,8 +714,7 @@
       ['devanagari', 'Hindi',      'ISL', ['letters'], null, null],
       ['hangul',     'Korean',     'KSL', ['letters'], null, null],
       ['thai',       'Thai',       'TSL', ['letters'], null, null],
-      ['geez',       'Amharic',    'EthSL',['letters'], null, null],
-      ['pinyin',     'Mandarin',   'CSL', ['letters'], null, null]
+      ['geez',       'Amharic',    'EthSL',['letters'], null, null]
     ];
 
     const languageConfig = {};
