@@ -451,7 +451,14 @@
         for (const hay of [word, flat]) {
           const i = hay.indexOf(gb) !== -1 ? hay.indexOf(gb) : hay.toLowerCase().indexOf(gb.toLowerCase());
           if (i !== -1 && flat.length === word.length) {
-            return word.slice(0, i) + '<b>' + word.slice(i, i + g.length) + '</b>' + word.slice(i + g.length);
+            // A combining mark cannot be bolded on its own: putting a tag
+            // between it and the letter it sits on orphans it, and the
+            // browser then draws it on a dotted circle. Reach back to the
+            // base so the pair is bolded together.
+            let from = i;
+            while (from > 0 && /\p{Mn}|\p{Mc}/u.test(word[from])) from--;
+            const to = i + g.length;
+            return word.slice(0, from) + '<b>' + word.slice(from, to) + '</b>' + word.slice(to);
           }
         }
       }
