@@ -1,0 +1,192 @@
+{
+ "pangrams": [
+  {
+   "script": "latin",
+   "language": "English",
+   "text": "Sphinx of black quartz, judge my vow",
+   "translation": "Sphinx of black quartz, judge my vow",
+   "ipa": "sfɪŋks əv blæk kwɔːts d͡ʒʌd͡ʒ maɪ vaʊ",
+   "note": "Shorter than the quick brown fox and still all 26 letters.",
+   "characters": 36,
+   "covers": 26,
+   "of": 26,
+   "missing": []
+  },
+  {
+   "script": "greek",
+   "language": "Greek",
+   "text": "Τάχιστη αλχημεία, ψιθυριστός κώδωνας, ξένος φόβος",
+   "translation": "Quick alchemy, whispered bell, foreign fear",
+   "ipa": "ˈtaxisti alçiˈmia psiθiriˈstos ˈkoðonas ˈksenos ˈfovos",
+   "note": "The better known Ξεσκεπάζω την ψυχοφθόρα βλακεία (“I uncover the soul-destroying stupidity”) is missing delta and gamma, so this one is used here instead.",
+   "characters": 49,
+   "covers": 21,
+   "of": 24,
+   "missing": [
+    "Γ",
+    "Ζ",
+    "Π"
+   ]
+  },
+  {
+   "script": "cyrillic",
+   "language": "Russian",
+   "text": "Съешь же ещё этих мягких французских булок, да выпей чаю.",
+   "translation": "Eat some more of these soft French buns, and drink some tea",
+   "ipa": "sjеʂ ʒɨ jɪˈɕːɵ ˈetʲɪx ˈmʲæxkʲɪx frɐnˈt͡suskʲɪx ˈbulək da ˈvɨpʲɪj ˈt͡ɕaju",
+   "note": "The standard Russian keyboard-test sentence, and the one that finally earns ъ and ь their place.",
+   "characters": 57,
+   "covers": 33,
+   "of": 33,
+   "missing": []
+  },
+  {
+   "script": "hebrew",
+   "language": "Hebrew",
+   "text": "דָּג מָהִיר וְקָפִיץ שִׁיר לְלֹא מִלִּים אָז גָּז וְנֶעֱלַם.",
+   "translation": "A fast, springy fish, a song without words, then vanished and disappeared",
+   "ipa": "daɡ maˈhiʁ veˈkafit͡s ʃiʁ leˈlo miˈlim az ɡaz veneʔeˈlam",
+   "note": "Written with the vowel points, which ordinary Hebrew leaves out — so typing this one means typing the niqqud too.",
+   "characters": 60,
+   "covers": 16,
+   "of": 22,
+   "missing": [
+    "ב",
+    "ח",
+    "ט",
+    "כ",
+    "ס",
+    "ת"
+   ]
+  },
+  {
+   "script": "arabic",
+   "language": "Arabic",
+   "text": "صِفْ خَلْقَ خَوْدٍ كَمِثْلَةِ الشَّمْسِ إِذْ بَزَغَتْ يَحْظَى الضَّجِيعُ بِهَا نَجْلًا وَخَرْدَلَا",
+   "translation": "Describe the creation of a beautiful young woman, like the sun when it rises; whoever shares her bed obtains posterity and a grain of mustard seed",
+   "ipa": "sˤif xalqa xawdin kamiθlati ʃːamsi ʔið bazaɣat jaħˤˤaː dˤːad͡ʒiːʕu bihaː nad͡ʒlan waxardalaː",
+   "note": "Fully vocalised, so it exercises the harakat as well as the letters.",
+   "characters": 98,
+   "covers": 27,
+   "of": 28,
+   "missing": [
+    "ط"
+   ]
+  },
+  {
+   "script": "farsi",
+   "language": "Persian",
+   "text": "«بر اثر چنین تلقین و شستشوی مغزی جامعی، سطح و پایهٔ ذهن و فهم و نظر بعضی اشخاص واژگونه و معکوس می‌شود.»",
+   "translation": "As a result of such thorough indoctrination and brainwashing, the level and foundation of the mind, understanding and viewpoint of some people becomes inverted and reversed",
+   "ipa": "bær ʔæsær t͡ʃeniːn tælɣiːn o ʃostoʃuːje mæɣziːje d͡ʒɒːmeːʔiː sætħ o pɒːjeje zehn o fæhm o næzˤære bæʔziː ʔæʃxɒːsː vɒːʒɡuːne o mæʔkuːs miːʃævæd",
+   "note": "It carries ژ and گ, the letters Persian adds to the Arabic alphabet.",
+   "characters": 103,
+   "covers": 32,
+   "of": 32,
+   "missing": []
+  },
+  {
+   "script": "devanagari",
+   "language": "Hindi",
+   "text": "ऋषियों को सताने वाले दुष्ट राक्षसों के राजा रावण का सर्वनाश करने वाले विष्णुवतार भगवान श्रीराम, अयोध्या के महाराज दशरथ के बड़े सपुत्र थे।",
+   "translation": "Lord Rama, the avatar of Vishnu who destroyed Ravana — king of the wicked demons who tormented the sages — was the eldest son of King Dasharatha of Ayodhya",
+   "ipa": "ɾəʂijõ ko sətaːne ʌaːle dʊʂʈ raːkʂəsõ ke raːd͡ʒaː raːʌəɳ kaː sərʌənaːʃ kərne ʌaːle ʌiʂɳuʌtaːr bʱəɡʌaːn ʃriːraːm əjodʱjaː ke məhaːraːd͡ʒ dəʃərətʱ ke bəɾe səputɾ tʱe",
+   "note": "Covers the vowels and consonants of modern Hindi. The old Sanskrit pangram, कः खगौघाङ्चिच्छौजा, runs the consonants in alphabet order instead.",
+   "characters": 137,
+   "covers": 31,
+   "of": 44,
+   "missing": [
+    "ऊ",
+    "ऐ",
+    "औ",
+    "ख",
+    "घ",
+    "ङ",
+    "च",
+    "छ",
+    "झ",
+    "ञ",
+    "ठ",
+    "ढ",
+    "फ"
+   ]
+  },
+  {
+   "script": "thai",
+   "language": "Thai",
+   "text": "นายสังฆภัณฑ์ เฮงพิทักษ์ฝั่ง ผู้เฒ่าซึ่งมีอาชีพเป็นฅนขายฃวด ถูกตำรวจปฏิบัติการจับฟ้องศาล ฐานลักนาฬิกาคุณหญิงฉัตรชฎา ฌานสมาธิ",
+   "translation": "Mr Sangkhaphan Hengphithakfang, an old man whose trade is selling bottles, was arrested by police and taken to court for stealing the watch of Khunying Chatchada Chansamathi",
+   "ipa": "naːj sǊŋ.kʰaː.pʰan heːŋ.pʰi.tʰak.faŋ pʰuː.tʰâw sɨ̂ŋ miː ʔaː.t͡ɕiːp pen kʰon kʰǎːj kʰùat tʰuːk tam.rúat pa­tì.bat.tiː.kan t͡ɕàp f◌́ːŋ sǎːn tʰǎːn lak naː.liː.kaː kʰun.jǐŋ t͡ɕàt.t͡ɕa.daː t͡ɕaːn.sa.maː.tʰí",
+   "note": "Famous for reaching ฅ and ฃ, the two consonants Thai has retired — which is why it is longer and odder than most pangrams.",
+   "characters": 123,
+   "covers": 44,
+   "of": 44,
+   "missing": []
+  },
+  {
+   "script": "kana",
+   "language": "Japanese",
+   "text": "とりなくこゑす ゆめさませ\nみよあけわたる ひんかしを\nそらいろはえて おきつへに\nほふねむれゐぬ もやのうち",
+   "translation": "Birds are calling — wake from your dream! Look, the east is growing light. The sky takes on colour, and out on the open sea the boats crowd together in the morning mist.",
+   "ipa": "to.ɾi na.kɯ ko.e sɯ jɯ.me sa.ma.se\nmi.jo a.ke wa.ta.ɾɯ çiŋ.ɡa.ɕi o\nso.ɾa i.ɾo ha.e.te o.ki tsɯ he ni\nho.ɸɯ.ne mɯ.ɾe i.nɯ mo.ja no ɯ.tɕi",
+   "note": "The Toriuta of 1903: 48 kana, each used exactly once. It includes ゐ and ゑ, which modern Japanese has dropped, and unlike the older Iroha poem it reaches ん as well.",
+   "characters": 55,
+   "covers": 46,
+   "of": 46,
+   "missing": []
+  },
+  {
+   "script": "hangul",
+   "language": "Korean",
+   "text": "키스의 고유 조건은 입술끼리 만나야 하고 특별한 요령은 필요치 않다",
+   "translation": "The essential condition for a kiss is that the lips must meet, and no special technique is required",
+   "ipa": "kʰi.sɯ.ɰi ko.ju t͡ɕo.ˀkʌ.nɯn ip̚.ˀsul.ˀki.ɾi man.na.ja ha.ɡo tʰɯk̚.ˀpjʌ.ɾan jo.ɾjʌŋ.ɯn pʰi.ɾjo.t͡ɕʰi an.tʰa",
+   "note": "The Korean typing-test sentence. The shorter 다람쥐 헌 쳃바퀴에 타고파 (“a squirrel wants to ride an old treadmill”) misses the harder clusters.",
+   "characters": 37,
+   "covers": 24,
+   "of": 24,
+   "missing": []
+  },
+  {
+   "script": "geez",
+   "language": "Amharic",
+   "text": "የቀድሞው የኢፌዲሪ ፕሬዝዳንት ዶክተር ነጋሶ ጊዳዳ በተወለዱ በ76 ዓመታቸው ከዚህ ዓለም በሞት ተለዩ።",
+   "translation": "The former president of Ethiopia, Dr Negaso Gidada, passed away at the age of 76",
+   "ipa": "jə.qʼəd.mow jə.ʔi.fe.di.ri pɨ.rez.dant dok.tər nə.ɡa.so ɡi.da.da bə.tə.wə.lə.du bə.sə.ba sɨ.dɨst ʕa.mə.ta.t͡ʃəw kə.zih ʕa.ləm bə.mot tə.lə.ju",
+   "note": "A news sentence rather than one written to order, which is why it reads plainly. The 76 is said ሰባ ስድስት, not spelled out.",
+   "characters": 64,
+   "covers": 20,
+   "of": 34,
+   "missing": [
+    "ሐ",
+    "ሠ",
+    "ሸ",
+    "ቨ",
+    "ኀ",
+    "ኘ",
+    "ኸ",
+    "ዠ",
+    "ጀ",
+    "ጠ",
+    "ጨ",
+    "ጰ",
+    "ጸ",
+    "ፀ"
+   ]
+  },
+  {
+   "script": "pinyin",
+   "language": "Mandarin",
+   "text": "zuótiān wǒ bāng nǚ'ér qù yī jiā chāoshì mǎi kělè, xīfàn, dòupí, hǎizhé.",
+   "translation": "Yesterday I helped my daughter go to the supermarket to buy cola, congee, bean curd skin and jellyfish",
+   "ipa": "t͡swo˧˥.tʰjɛn˥˥ wo˨˩˧ paŋ˥˥ ny˨˩˧.ɕʱɚ˧˥ t͡ɕʰy˥˩ i˥˥ t͡ɕja˥˥ ʈ͡ʂʰau˥˥.ʂɹ̩˥˩ mai˨˩˧ kʰɤ˨˩˧.lɤ˥˩ ɕi˥˥.fan˥˩ tou˥˩.pʰi˧˥ xai˨˩˧.ʈ͡ʂɤ˧˥",
+   "note": "Written in pinyin with the tone marks, so it drills the diacritics as much as the letters.",
+   "characters": 71,
+   "covers": 29,
+   "of": 30,
+   "missing": [
+    "V"
+   ]
+  }
+ ]
+}

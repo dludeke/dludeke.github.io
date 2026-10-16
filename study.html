@@ -34,7 +34,8 @@
     }
     .gloss { color: #8a939b; font-size: 1rem; margin-bottom: 0.5rem; }
     .word-ipa {
-      font-family: "Charis SIL", "Doulos SIL", serif;
+      font-family: "Charis SIL", "Doulos SIL", "Gentium Plus",
+                   "Lucida Sans Unicode", "Arial Unicode MS", serif;
       color: #5b6b7a; font-size: 1.1rem; min-height: 1.4rem;
     }
 
@@ -51,11 +52,13 @@
     .lt .ch { font-size: 2rem; line-height: 1.1; font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic", "Noto Sans Hebrew", "Noto Sans", system-ui, -apple-system, sans-serif; }
     .lt .nm { font-size: 0.68rem; color: #9aa3ab; margin-top: 0.1rem; }
     .lt .nm-ipa {
-      font-family: "Charis SIL", "Doulos SIL", serif;
+      font-family: "Charis SIL", "Doulos SIL", "Gentium Plus",
+                   "Lucida Sans Unicode", "Arial Unicode MS", serif;
       font-size: 0.64rem; color: #b4bcc4; min-height: 0.9rem;
     }
     .lt .ip {
-      font-family: "Charis SIL", "Doulos SIL", serif;
+      font-family: "Charis SIL", "Doulos SIL", "Gentium Plus",
+                   "Lucida Sans Unicode", "Arial Unicode MS", serif;
       font-size: 0.9rem; color: #46525e; margin-top: 0.35rem; min-height: 1.1rem;
     }
     .lt .pics {
@@ -82,6 +85,68 @@
     .steps i.on { background: #007bff; }
 
     .empty { color: #98a1a9; padding: 3rem 1rem; }
+
+    .pg-modes { display: inline-flex; gap: 0.3rem; }
+    .pg-modes button.on { background: #007bff; color: #fff; border-color: #007bff; }
+    .pg-modes button[disabled] { opacity: 0.45; cursor: not-allowed; }
+    .pg-hint { font-size: 0.85rem; color: #555; }
+    .pg-hint input { margin-right: 0.3rem; }
+
+    .pg-stage {
+      background: #fff; border-radius: 10px;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.09);
+      padding: 2rem; min-height: 320px;
+    }
+    .pg-text {
+      font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic",
+                   "Noto Sans Hebrew", "Noto Sans", system-ui, sans-serif;
+      font-size: 1.9rem; line-height: 1.75; white-space: pre-wrap;
+      word-break: break-word; margin-bottom: 0.8rem;
+    }
+    /* each character is its own span so typing can be marked against it */
+    .pg-text i { font-style: normal; }
+    .pg-text i.ok { color: #28a745; }
+    .pg-text i.bad { color: #dc3545; background: #fdeaec; border-radius: 2px; }
+    .pg-text i.at { border-bottom: 2px solid #007bff; }
+
+    .pg-gloss { color: #8a939b; font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .pg-ipa {
+      font-family: "Charis SIL", "Doulos SIL", "Gentium Plus",
+                   "Lucida Sans Unicode", "Arial Unicode MS", serif;
+      color: #5b6b7a; font-size: 1rem; white-space: pre-wrap; margin-bottom: 0.8rem;
+    }
+    .pg-note { color: #98a1a9; font-size: 0.85rem; margin-top: 1.2rem; }
+    .pg-cover { font-size: 0.8rem; color: #9aa3ab; margin-bottom: 1rem; }
+    .pg-cover b { color: #46525e; font-weight: bold; }
+
+    .pg-input {
+      width: 100%; box-sizing: border-box; font-size: 1.3rem; padding: 0.8rem;
+      border: 2px solid #dde2e7; border-radius: 6px; font-family: inherit;
+      min-height: 5rem; resize: vertical;
+    }
+    .pg-input:focus { outline: none; border-color: #007bff; }
+    .pg-done { color: #28a745; font-weight: bold; margin-top: 0.6rem; }
+
+    /* fingerspelling: one big handshape at a time */
+    .pg-sign { text-align: center; }
+    .pg-sign .big { font-size: 3.4rem; line-height: 1.1; }
+    .pg-sign .nm { color: #9aa3ab; font-size: 0.8rem; margin-top: 0.2rem; }
+    .pg-sign .ip {
+      font-family: "Charis SIL", "Doulos SIL", "Gentium Plus",
+                   "Lucida Sans Unicode", "Arial Unicode MS", serif;
+      color: #5b6b7a; min-height: 1.3rem;
+    }
+    .pg-sign .shot { min-height: 150px; display: flex; justify-content: center;
+                     align-items: center; gap: 0.6rem; margin: 0.8rem 0; }
+    .pg-sign .shot img { max-height: 148px; }
+    .pg-sign .shot img.mv { max-height: 42px; opacity: 0.75; }
+    .pg-strip {
+      display: flex; flex-wrap: wrap; gap: 0.15rem; justify-content: center;
+      margin-top: 1.2rem; font-size: 1.1rem;
+    }
+    .pg-strip i { font-style: normal; color: #c3cad1; padding: 0 0.1rem; }
+    .pg-strip i.seen { color: #46525e; }
+    .pg-strip i.at { color: #007bff; border-bottom: 2px solid #007bff; }
 
     /* top-level switch between the two ways of studying */
     .modes {
@@ -350,6 +415,7 @@
       <div class="modes">
         <button id="tabCards" class="on" data-panel="cards">Flashcards</button>
         <button id="tabQuiz" data-panel="quiz">Quiz</button>
+        <button id="tabPangram" data-panel="pangram">Pangrams</button>
       </div>
 
       <section id="panel-cards">
@@ -373,6 +439,19 @@
           <kbd>&larr;</kbd> previous &middot;
           <kbd>r</kbd> start this word again
         </p>
+      </section>
+
+      <section id="panel-pangram" hidden>
+        <div class="bar">
+          <label>Script <select id="pgScript"></select></label>
+          <span class="pg-modes">
+            <button id="pgTypeBtn" class="on">Type it</button>
+            <button id="pgSignBtn">Fingerspell it</button>
+          </span>
+          <label class="pg-hint"><input type="checkbox" id="pgIpa" /> IPA hint</label>
+          <span class="spacer" id="pgProgress"></span>
+        </div>
+        <div class="pg-stage" id="pgStage"><p class="empty">Loading&hellip;</p></div>
       </section>
 
       <section id="panel-quiz" hidden>
@@ -664,16 +743,183 @@
       render();
     });
 
-    // Two panels, one page. The hash keeps the old Practice Area links working
-    // and makes the quiz something you can link straight to.
+    // ---- Pangrams -----------------------------------------------------
+    // A pangram runs the whole alphabet past you in one sentence, which
+    // makes it the natural thing both to type and to fingerspell.
+    let pgAll = null, pgData = null, pgSlug = 'latin', pgMode = 'type', pgAt = 0;
+
+    function pgIndex(d) {
+      const ix = {};
+      d.letters.forEach(L => {
+        [L.glyph, L.alt, ...(L.aliases || [])].filter(Boolean).forEach(k => {
+          for (const v of [k, bare(k), k.toLowerCase(), bare(k).toLowerCase()])
+            if (!ix[v]) ix[v] = L;
+        });
+      });
+      return ix;
+    }
+
+    function pgLook(ch) {
+      if (!pgData) return null;
+      const plainKana = ch.normalize('NFD').replace(/[゙゚]/g, '');
+      for (const t of [ch, bare(ch), ch.toLowerCase(), bare(ch).toLowerCase(),
+                       MATRA[ch], geezBase(ch), plainKana])
+        if (t && pgData.index[t]) return pgData.index[t];
+      return null;
+    }
+
+    /** The characters worth fingerspelling.
+        By Unicode category, not a list of punctuation: every script brings
+        its own (። ، । 。), plus digits and the zero-width
+        joiners Persian uses, and none of those is spelled out. */
+    function pgLetters(text) {
+      return [...text].flatMap(c => jamoOf(c) || [c])
+        .filter(c => !/[\p{P}\p{N}\p{Z}\p{C}\p{S}]/u.test(c));
+    }
+
+    // Switching script twice quickly starts two loads; without a token the
+    // slower one lands last and the panel shows the script you left.
+    let pgReq = 0;
+
+    async function pgLoad() {
+      const mine = ++pgReq;
+      if (!pgAll) {
+        const j = await (await fetch('assets/data/pangrams.json',
+          { cache: 'no-cache' })).json();
+        pgAll = j.pangrams;
+      }
+      const d = await (await fetch(`assets/data/scripts/${pgSlug}.json`,
+        { cache: 'no-cache' })).json();
+      if (mine !== pgReq) return;
+      d.index = pgIndex(d);
+      pgData = d;
+      pgAt = 0;
+      pgRender();
+    }
+
+    const pgCurrent = () => (pgAll || []).find(p => p.script === pgSlug);
+
+    const pgHasShape = m => !!(m && (m.handshape ||
+      (m.handshape_variants && Object.keys(m.handshape_variants).length)));
+
+    function pgShapeCount(text) {
+      const L = pgLetters(text);
+      return [L.filter(c => pgHasShape(pgLook(c))).length, L.length];
+    }
+
+    function pgRender() {
+      const host = el('pgStage'), p = pgCurrent();
+      if (!p) { host.innerHTML = '<p class="empty">No pangram for this script yet.</p>'; return; }
+      const showIpa = el('pgIpa').checked;
+      const [withShape, totalLetters] = pgShapeCount(p.text);
+      // Cyrillic has no manual alphabet in this reference, so there is
+      // nothing to fingerspell; say so instead of offering 46 blanks.
+      el('pgSignBtn').disabled = withShape === 0;
+      el('pgSignBtn').title = withShape === 0
+        ? 'No manual alphabet for this script yet' : '';
+      if (withShape === 0 && pgMode === 'sign') {
+        pgMode = 'type';
+        el('pgTypeBtn').classList.add('on');
+        el('pgSignBtn').classList.remove('on');
+      }
+      const head = `
+        <div class="pg-gloss">${p.translation}</div>
+        ${showIpa ? `<div class="pg-ipa">/${p.ipa}/</div>` : ''}
+        <div class="pg-cover">Reaches <b>${p.covers} of ${p.of}</b> letters${
+          p.missing.length ? ' &mdash; missing ' + p.missing.join(' ') : ', a complete pangram'}
+          ${withShape === 0
+            ? ' &middot; no manual alphabet for this script yet'
+            : (withShape < totalLetters
+               ? ` &middot; ${withShape} of its ${totalLetters} characters have a handshape`
+               : '')}</div>`;
+
+      if (pgMode === 'type') {
+        const typed = (el('pgInput') || {}).value || '';
+        const chars = [...p.text].map((c, i) => {
+          const t = [...typed][i];
+          const cls = t === undefined ? (i === [...typed].length ? 'at' : '')
+                    : (t === c ? 'ok' : 'bad');
+          return `<i class="${cls}">${c === '\n' ? '\n' : c}</i>`;
+        }).join('');
+        const right = [...typed].filter((t, i) => t === [...p.text][i]).length;
+        host.innerHTML = `<div class="pg-text">${chars}</div>${head}
+          <textarea class="pg-input" id="pgInput" spellcheck="false"
+            placeholder="Type the sentence above">${typed.replace(/</g, '&lt;')}</textarea>
+          ${typed && right === [...p.text].length && typed.length === p.text.length
+            ? '<p class="pg-done">Done &mdash; every character matched.</p>' : ''}
+          <p class="pg-note">${p.note}</p>`;
+        const inp = el('pgInput');
+        inp.addEventListener('input', () => { pgRender(); el('pgInput').focus(); });
+        inp.focus();
+        inp.setSelectionRange(inp.value.length, inp.value.length);
+        el('pgProgress').textContent = `${right} of ${[...p.text].length} characters`;
+      } else {
+        const letters = pgLetters(p.text);
+        if (pgAt >= letters.length) pgAt = letters.length - 1;
+        const ch = letters[pgAt], m = pgLook(ch);
+        const hand = m && (m.handshape ||
+          (m.handshape_variants && Object.values(m.handshape_variants)[0]));
+        host.innerHTML = `${head}
+          <div class="pg-sign">
+            <div class="big">${m && m.display_glyph ? m.display_glyph : ch}</div>
+            <div class="nm">${m ? (m.name || '') : 'not in this alphabet'}</div>
+            <div class="ip">${showIpa && m && (m.ipa || []).length ? '/' + m.ipa.join(', ') + '/' : ''}</div>
+            <div class="shot">
+              ${hand ? `<img src="${hand}" alt="handshape for ${ch}" />` : '<span class="empty">no handshape</span>'}
+              ${m && m.movement ? `<img class="mv" src="${m.movement.image}"
+                 title="${m.movement.amharic} ${m.movement.name}" alt="${m.movement.description}" />` : ''}
+            </div>
+            <div class="pg-strip">${letters.map((c, i) =>
+              `<i class="${i < pgAt ? 'seen' : i === pgAt ? 'at' : ''}">${c}</i>`).join('')}</div>
+          </div>
+          <p class="pg-note">${p.note}</p>`;
+        el('pgProgress').textContent = `${pgAt + 1} of ${letters.length} letters`;
+      }
+    }
+
+    function pgStep(d) {
+      const p = pgCurrent();
+      if (!p) return;
+      const n = pgLetters(p.text).length;
+      pgAt = (pgAt + d + n) % n;
+      pgRender();
+    }
+
+    SCRIPTS.forEach(sl => {
+      const o = document.createElement('option');
+      o.value = sl; o.textContent = sl;
+      el('pgScript').appendChild(o);
+    });
+    el('pgScript').value = pgSlug;
+    el('pgScript').addEventListener('change', () => { pgSlug = el('pgScript').value; pgLoad(); });
+    el('pgIpa').addEventListener('change', pgRender);
+    el('pgTypeBtn').addEventListener('click', () => {
+      pgMode = 'type'; el('pgTypeBtn').classList.add('on');
+      el('pgSignBtn').classList.remove('on'); pgRender();
+    });
+    el('pgSignBtn').addEventListener('click', () => {
+      pgMode = 'sign'; pgAt = 0; el('pgSignBtn').classList.add('on');
+      el('pgTypeBtn').classList.remove('on'); pgRender();
+    });
+    // arrows walk the fingerspelling; typing keeps its own keys
+    document.addEventListener('keydown', e => {
+      if (panel !== 'pangram' || pgMode !== 'sign') return;
+      if (e.key === 'ArrowRight') { e.preventDefault(); pgStep(1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); pgStep(-1); }
+    });
+
+    // Three panels, one page. The hash keeps the old Practice Area links
+    // working and makes each one something you can link straight to.
     function showPanel(p) {
-      panel = (p === 'quiz') ? 'quiz' : 'cards';
-      el('panel-cards').hidden = panel !== 'cards';
-      el('panel-quiz').hidden = panel !== 'quiz';
-      el('tabCards').classList.toggle('on', panel === 'cards');
-      el('tabQuiz').classList.toggle('on', panel === 'quiz');
+      panel = ['quiz', 'pangram'].includes(p) ? p : 'cards';
+      for (const [name, tab] of [['cards', 'tabCards'], ['quiz', 'tabQuiz'],
+                                 ['pangram', 'tabPangram']]) {
+        el('panel-' + name).hidden = panel !== name;
+        el(tab).classList.toggle('on', panel === name);
+      }
       document.querySelector('h1').textContent =
-        panel === 'quiz' ? 'Study \u2014 Quiz' : 'Study';
+        { quiz: 'Study \u2014 Quiz', pangram: 'Study \u2014 Pangrams' }[panel] || 'Study';
+      if (panel === 'pangram' && !pgData) pgLoad();
       if (location.hash.slice(1) !== panel) history.replaceState(null, '', '#' + panel);
     }
     document.querySelectorAll('.modes button').forEach(b =>
