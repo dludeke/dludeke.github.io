@@ -8,7 +8,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "خُبْز"
   },
   {
    "word": "ماء",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "مَاء"
   },
   {
    "word": "قهوة",
@@ -24,7 +26,8 @@
    "english": "coffee",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "قَهْوَة"
   },
   {
    "word": "شاي",
@@ -32,7 +35,8 @@
    "english": "tea",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "شَاي"
   },
   {
    "word": "تمر",
@@ -40,7 +44,8 @@
    "english": "dates",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "تَمْر"
   },
   {
    "word": "لحم",
@@ -48,7 +53,8 @@
    "english": "meat",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "لَحْم"
   },
   {
    "word": "سمك",
@@ -56,7 +62,8 @@
    "english": "fish",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "سَمَك"
   },
   {
    "word": "أرز",
@@ -64,7 +71,8 @@
    "english": "rice",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "أَرُزّ"
   },
   {
    "word": "حليب",
@@ -72,7 +80,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "vocalised": "حَلِيب"
   },
   {
    "word": "مصر",
@@ -80,7 +89,8 @@
    "english": "Egypt",
    "categories": [
     "Geography"
-   ]
+   ],
+   "vocalised": "مِصْر"
   },
   {
    "word": "بحر",
@@ -88,7 +98,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "vocalised": "بَحْر"
   },
   {
    "word": "جبل",
@@ -96,7 +107,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "vocalised": "جَبَل"
   },
   {
    "word": "صحراء",
@@ -104,7 +116,8 @@
    "english": "desert",
    "categories": [
     "Geography"
-   ]
+   ],
+   "vocalised": "صَحْرَاء"
   },
   {
    "word": "نهر",
@@ -112,7 +125,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "vocalised": "نَهْر"
   },
   {
    "word": "القاهرة",
@@ -120,7 +134,8 @@
    "english": "Cairo",
    "categories": [
     "Cities"
-   ]
+   ],
+   "vocalised": "الْقَاهِرَة"
   },
   {
    "word": "دمشق",
@@ -128,7 +143,8 @@
    "english": "Damascus",
    "categories": [
     "Cities"
-   ]
+   ],
+   "vocalised": "دِمَشْق"
   },
   {
    "word": "بغداد",
@@ -136,7 +152,8 @@
    "english": "Baghdad, the capital of Iraq",
    "categories": [
     "Cities"
-   ]
+   ],
+   "vocalised": "بَغْدَاد"
   },
   {
    "word": "الرباط",
@@ -144,7 +161,8 @@
    "english": "Rabat",
    "categories": [
     "Cities"
-   ]
+   ],
+   "vocalised": "الرِّبَاط"
   },
   {
    "word": "كتاب",
@@ -152,7 +170,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "vocalised": "كِتَاب"
   },
   {
    "word": "مدرسة",
@@ -160,7 +179,8 @@
    "english": "school",
    "categories": [
     "Culture"
-   ]
+   ],
+   "vocalised": "مَدْرَسَة"
   },
   {
    "word": "موسيقى",
@@ -168,7 +188,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "vocalised": "مُوسِيقَى"
   },
   {
    "word": "سلام",
@@ -176,7 +197,8 @@
    "english": "peace",
    "categories": [
     "Culture"
-   ]
+   ],
+   "vocalised": "سَلَام"
   },
   {
    "word": "شمس",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "vocalised": "شَمْس"
   },
   {
    "word": "قمر",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "vocalised": "قَمَر"
   },
   {
    "word": "شجرة",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "vocalised": "شَجَرَة"
   },
   {
    "word": "وردة",
@@ -208,7 +233,8 @@
    "english": "rose",
    "categories": [
     "Nature"
-   ]
+   ],
+   "vocalised": "وَرْدَة"
   },
   {
    "word": "قط",
@@ -216,7 +242,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "vocalised": "قِطّ"
   },
   {
    "word": "حصان",
@@ -224,7 +251,8 @@
    "english": "horse",
    "categories": [
     "Nature"
-   ]
+   ],
+   "vocalised": "حِصَان"
   }
  ]
 }

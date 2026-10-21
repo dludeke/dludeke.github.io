@@ -20,6 +20,7 @@
     "Vowel points"
   ],
   "section_cols": null,
+  "movement_in_handshape": false,
   "links": [
     {
       "label": "Hebrew alphabet",
@@ -361,7 +362,7 @@
       "example_emoji": "🦓",
       "example_ipa": "ˈzebʁa",
       "signwriting": "M516x516S10050501x486S2990c484x484",
-      "signwriting_image": "images/signwriting/hebrew/S10050.png",
+      "signwriting_image": "images/signwriting/hebrew/05d6.png",
       "aliases": [],
       "notes": ""
     },

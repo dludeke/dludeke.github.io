@@ -251,7 +251,23 @@
       font-size: 3rem;
       margin-bottom: 2rem;
       font-weight: bold;
+      /* a harakat only sits on its letter when both come from the same
+         font run; with the system fallback the mark lands on nothing */
+      font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic",
+                   "Noto Sans Hebrew", "Noto Sans", system-ui, sans-serif;
     }
+    .vowel-hint {
+      background: #fff;
+      border: 1px solid #ccd3d9;
+      border-radius: 999px;
+      color: #4a5560;
+      cursor: pointer;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.9rem;
+    }
+    .vowel-hint:hover { background: #f2f5f7; }
+    .vowel-hint[disabled] { color: #9aa3ab; cursor: default; }
     #panel-quiz .hint {
       font-size: 1rem;
       color: #666;
@@ -481,6 +497,10 @@
           <div id="answerImageContainer" style="display: none; text-align: center; margin: 1rem 0;">
             <div id="answerImages" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;"></div>
           </div>
+          <!-- Arabic prints no short vowels, so reading a word aloud means
+               knowing it already. This puts them in on request. -->
+          <button type="button" id="vowelHint" class="vowel-hint" style="display: none;">
+            Show vowel marks</button>
           <div class="hint" id="hint"></div>
           <input type="text" class="answer-input" id="answer" placeholder="Type your answer..." autocomplete="off" />
           <div style="text-align: center;">
@@ -520,12 +540,22 @@
   </div>
 
   <script>
-    const SCRIPTS = ['greek','latin','hebrew','arabic','farsi','cyrillic',
-                     'devanagari','kana','hangul','thai','geez','pinyin'];
+    // Same order as the Reference page: alphabets, then abugidas and
+    // syllabaries, then abjads. Keep it in step with SCRIPTS in
+    // generate_scripts.py, which is what index.json is built from.
+    const SCRIPTS = ['greek','latin','cyrillic','hangul','pinyin',
+                     'geez','devanagari','kana','thai',
+                     'arabic','hebrew','farsi'];
     // 0 word · 1 letters · 2 letter IPA · 3 handshapes and SignWriting
     const LAST_STEP = 3;
 
     let slug = 'greek', data = null, deck = [], at = 0, step = 0;
+
+    /* Ge'ez prints the consonant's hand and the arrow separately, so a card
+       shows both. The Japanese pictures have the arrow drawn under the hand
+       already, and showing it twice just reads as two movements. */
+    const showMove = (doc, m, hand) =>
+      !!(m && m.movement) && !(doc && doc.movement_in_handshape && hand);
     let deckMode = 'shuffled', deckNote = '', panel = 'cards';
     const el = id => document.getElementById(id);
 
@@ -690,8 +720,8 @@
             <div class="ip">${step >= 2 && m && (m.ipa || []).length ? '/' + m.ipa.join(', ') + '/' : ''}</div>
             <div class="pics">
               ${step >= 3 && hand ? `<img src="${hand}" alt="handshape" />` : ''}
-              ${step >= 3 && m && m.movement
-                ? `<img class="mv" src="${m.movement.image}" title="${m.movement.amharic} ${m.movement.name}" alt="${m.movement.description}" />`
+              ${step >= 3 && showMove(data, m, hand)
+                ? `<img class="mv" src="${m.movement.image}" title="${m.movement.label} ${m.movement.name}" alt="${m.movement.description}" />`
                 : ''}
               ${step >= 3 && sw ? `<img class="sw" src="${sw}" alt="SignWriting" />` : ''}
             </div>
@@ -866,8 +896,8 @@
             <div class="ip">${showIpa && m && (m.ipa || []).length ? '/' + m.ipa.join(', ') + '/' : ''}</div>
             <div class="shot">
               ${hand ? `<img src="${hand}" alt="handshape for ${ch}" />` : '<span class="empty">no handshape</span>'}
-              ${m && m.movement ? `<img class="mv" src="${m.movement.image}"
-                 title="${m.movement.amharic} ${m.movement.name}" alt="${m.movement.description}" />` : ''}
+              ${showMove(pgData, m, hand) ? `<img class="mv" src="${m.movement.image}"
+                 title="${m.movement.label} ${m.movement.name}" alt="${m.movement.description}" />` : ''}
             </div>
             <div class="pg-strip">${letters.map((c, i) =>
               `<i class="${i < pgAt ? 'seen' : i === pgAt ? 'at' : ''}">${c}</i>`).join('')}</div>
@@ -950,17 +980,18 @@
     // word lists are still used by the flashcards. The on-screen keyboard needs a glyph-to-romanisation map and
     // the sign drills need a handshape map; where those are missing the
     // keyboard stays hidden and the sign tabs stay greyed out.
+    // Reference-page order, minus Latin and pinyin, which have no drill here.
     const LANGS = [
-      ['kana',       'Japanese',   'JSL', ['hiragana','katakana'],   'kana-mapping.json',  null],
       ['greek',      'Greek',      'GSL', ['lowercase','uppercase'], 'greek-mapping.json', 'gsl-handshapes-mapping.json'],
-      ['hebrew',     'Hebrew',     'ISL', ['letters'], null, null],
-      ['arabic',     'Arabic',     'ArSL',['letters'], null, null],
-      ['farsi',      'Persian',    'PSL', ['letters'], null, null],
       ['cyrillic',   'Russian',    'RSL', ['letters'], null, null],
-      ['devanagari', 'Hindi',      'ISL', ['letters'], null, null],
       ['hangul',     'Korean',     'KSL', ['letters'], null, null],
+      ['geez',       'Amharic',    'EthSL',['letters'], null, null],
+      ['devanagari', 'Hindi',      'ISL', ['letters'], null, null],
+      ['kana',       'Japanese',   'JSL', ['hiragana','katakana'],   'kana-mapping.json',  null],
       ['thai',       'Thai',       'TSL', ['letters'], null, null],
-      ['geez',       'Amharic',    'EthSL',['letters'], null, null]
+      ['arabic',     'Arabic',     'ArSL',['letters'], null, null],
+      ['hebrew',     'Hebrew',     'ISL', ['letters'], null, null],
+      ['farsi',      'Persian',    'PSL', ['letters'], null, null]
     ];
 
     const languageConfig = {};
@@ -1205,6 +1236,10 @@
       answerImageContainer.style.display = 'none';
       answerImages.innerHTML = '';
       revealButton.style.display = 'none';
+      const vowelHint = document.getElementById('vowelHint');
+      vowelHint.style.display = 'none';
+      vowelHint.disabled = false;
+      vowelHint.textContent = 'Show vowel marks';
       document.getElementById('difficultyButtons').style.display = 'none';
       document.getElementById('kanaKeyboard').classList.remove('visible');
 
@@ -1216,6 +1251,7 @@
           // Show script, answer with Latin letters
           questionEl.textContent = currentCard[scriptKey];
           questionEl.style.display = 'block';
+          if (currentCard.vocalised) vowelHint.style.display = 'inline-block';
           answerEl.style.display = 'block';
           answerEl.focus();
           break;
@@ -1523,6 +1559,13 @@
     }
 
     document.getElementById('revealButton').addEventListener('click', revealHandshapes);
+    document.getElementById('vowelHint').addEventListener('click', function () {
+      if (!currentCard || !currentCard.vocalised) return;
+      document.getElementById('question').textContent = currentCard.vocalised;
+      this.disabled = true;
+      this.textContent = 'Vowel marks shown';
+      document.getElementById('answer').focus();
+    });
 
     // Global keyboard handler for Enter and Space in script-to-sign mode
     document.addEventListener('keydown', (e) => {

@@ -1101,26 +1101,77 @@ DEVANAGARI_MARKS = [
   "Adapts a letter to a sound borrowed from Persian, Arabic or English."),
 ]
 
+# The u-column words here were written with a plain u and with ɟ, the voiced
+# palatal plosive, where ɸ was meant: ファ is [ɸa], not [ɟa]. Brought into line
+# with the gojūon above, which uses ɯ for the Japanese u throughout.
+#
+# A small kana is not a separate handshape in JSL: the base kana is signed and
+# the hand is drawn back toward the signer, so each of these carries the base
+# it is made from and the backward arrow is added to it.
 KANA_SMALL = [
- ("ぁ","ァ","small a",["a"],("ファイル","file","\U0001f4c1"),"ɟairu",None),
+ ("ぁ","ァ","small a",["a"],("ファイル","file","\U0001f4c1"),"ɸaiɾɯ",None),
  ("ぃ","ィ","small i",["i"],("ティー","tea","\U0001f375"),"tiː",None),
- ("ぅ","ゥ","small u",["u"],("タトゥー","tattoo","✒️"),"tatuː",None),
- ("ぇ","ェ","small e",["e"],("シェフ","chef","\U0001f468‍\U0001f373"),"ɕeɟu",None),
- ("ぉ","ォ","small o",["o"],("フォーク","fork","\U0001f374"),"ɟoːku",None),
- ("ゃ","ャ","small ya",["ja"],("シャツ","shirt","\U0001f455"),"ɕat͡su",None),
- ("ゅ","ュ","small yu",["ju"],("ジュース","juice","\U0001f9c3"),"dʑuːsu",None),
+ ("ぅ","ゥ","small u",["ɯ"],("タトゥー","tattoo","✒️"),"tatoɯː",None),
+ ("ぇ","ェ","small e",["e"],("シェフ","chef","\U0001f468‍\U0001f373"),"ɕeɸɯ",None),
+ ("ぉ","ォ","small o",["o"],("フォーク","fork","\U0001f374"),"ɸoːkɯ",None),
+ ("ゃ","ャ","small ya",["ja"],("シャツ","shirt","\U0001f455"),"ɕat͡sɯ",None),
+ ("ゅ","ュ","small yu",["jɯ"],("ジュース","juice","\U0001f9c3"),"d͡ʑɯːsɯ",None),
  ("ょ","ョ","small yo",["jo"],("きょうと","Kyoto","\U0001f3ef"),"kʲoːto",None),
  ("っ","ッ","sokuon",[],("きって","stamp","\U0001f4ee"),"kitte",
   "Doubles the consonant that follows; it is never read on its own."),
 ]
 
+# The base kana each small kana is signed from.
+KANA_SMALL_BASE = {"ぁ": "あ", "ぃ": "い", "ぅ": "う",
+                   "ぇ": "え", "ぉ": "お", "ゃ": "や",
+                   "ゅ": "ゆ", "ょ": "よ", "っ": "つ"}
+
+# The marks have no sound of their own, so the IPA column holds what they do
+# to the kana under them: the dakuten turns the four voiceless series voiced,
+# the handakuten turns the h-series into p.
 KANA_MARKS = [
  ("ー","","chouonpu",["ː"],("ラーメン","ramen","\U0001f35c"),"ɾaːmeɴ",
   "Lengthens the vowel before it, in katakana."),
- ("゙","","dakuten",[],("ぞう","elephant","\U0001f418"),"zoː",
-  "Voices the kana it sits on: ka becomes ga, sa becomes za."),
- ("゚","","handakuten",[],("パン","bread","\U0001f35e"),"paɴ",
-  "Turns the ha row into pa."),
+ ("゙","","dakuten",["g","z","d","b"],("かぎ","key","\U0001f511"),"kagi",
+  "Voices the kana it sits on: ka becomes ga, sa becomes za, ta becomes da, "
+  "ha becomes ba. In JSL the mark is not spelled: the base kana is signed and "
+  "the hand moves to the side."),
+ ("゚","","handakuten",["p"],("パン","bread","\U0001f35e"),"paɴ",
+  "Turns the ha row into pa. In JSL the base kana is signed and the hand "
+  "moves upward."),
+]
+
+# Every kana that takes one of those two marks, kept as a letter in its own
+# right rather than left for the reader to assemble. パ is something you can
+# sign, quiz and find in a sentence; "ハ plus a circle" is not.
+KANA_VOICED = [
+ ("が","ガ","ga",["ga","ŋa"],("がっこう","school","\U0001f3eb"),"gakkoː",None),
+ ("ぎ","ギ","gi",["gi","ŋi"],("ぎんこう","bank","\U0001f3e6"),"giŋkoː",None),
+ ("ぐ","グ","gu",["gɯ","ŋɯ"],("かぐ","furniture","\U0001fa91"),"kagɯ",None),
+ ("げ","ゲ","ge",["ge","ŋe"],("げんき","healthy","\U0001f4aa"),"geŋki",None),
+ ("ご","ゴ","go",["go","ŋo"],("ごはん","cooked rice","\U0001f35a"),"gohaɴ",None),
+ ("ざ","ザ","za",["za","d͡za"],("ざっし","magazine","\U0001f4d6"),"zaɕɕi",None),
+ ("じ","ジ","ji",["d͡ʑi","ʑi"],("じかん","time","⏰"),"d͡ʑikaɴ",None),
+ ("ず","ズ","zu",["zɯ","d͡zɯ"],("みず","water","\U0001f4a7"),"mizɯ",None),
+ ("ぜ","ゼ","ze",["ze","d͡ze"],("かぜ","wind","\U0001f32c️"),"kaze",None),
+ ("ぞ","ゾ","zo",["zo","d͡zo"],("ぞう","elephant","\U0001f418"),"zoː",None),
+ ("だ","ダ","da",["da"],("だいがく","university","\U0001f393"),"daigakɯ",None),
+ ("ぢ","ヂ","ji (di)",["d͡ʑi"],("はなぢ","nosebleed","\U0001fa78"),"hanad͡ʑi",
+  "Said exactly like じ; it survives only inside compounds."),
+ ("づ","ヅ","zu (du)",["zɯ"],("つづき","continuation","➡️"),"t͡sɯzɯki",
+  "Said exactly like ず; it survives only inside compounds."),
+ ("で","デ","de",["de"],("でんしゃ","train","\U0001f683"),"deɴɕa",None),
+ ("ど","ド","do",["do"],("どうぶつ","animal","\U0001f43e"),"doːbɯt͡sɯ",None),
+ ("ば","バ","ba",["ba"],("ばら","rose","\U0001f339"),"baɾa",None),
+ ("び","ビ","bi",["bi"],("びょういん","hospital","\U0001f3e5"),"bʲoːiɴ",None),
+ ("ぶ","ブ","bu",["bɯ"],("ぶた","pig","\U0001f437"),"bɯta",None),
+ ("べ","ベ","be",["be"],("べんとう","lunch box","\U0001f371"),"bentoː",None),
+ ("ぼ","ボ","bo",["bo"],("ぼうし","hat","\U0001f9e2"),"boːɕi",None),
+ ("ぱ","パ","pa",["pa"],("かんぱい","cheers","\U0001f942"),"kampai",None),
+ ("ぴ","ピ","pi",["pi"],("ぴかぴか","sparkling","✨"),"pikapika",None),
+ ("ぷ","プ","pu",["pɯ"],("てんぷら","tempura","\U0001f364"),"tempɯɾa",None),
+ ("ぺ","ペ","pe",["pe"],("かんぺき","perfect","\U0001f4af"),"kampeki",None),
+ ("ぽ","ポ","po",["po"],("さんぽ","a walk","\U0001f6b6"),"sampo",None),
 ]
 
 ARABIC_FORMS = [

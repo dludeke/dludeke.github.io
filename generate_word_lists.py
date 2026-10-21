@@ -212,6 +212,42 @@ LEGACY = {"greek": ("Greek", "greek-word-list.json", "greek"),
           "kana":  ("Japanese", "japanese-word-list.json", "kana")}
 
 
+# Arabic is written without its short vowels, so the script-to-Latin quiz can
+# be guesswork rather than reading: خبز is khubz only if you already know the
+# word. The quiz's hint button shows the fully pointed form instead. Taking
+# the marks back off has to give the unpointed word exactly, which main()
+# checks rather than trusts.
+VOCALISED = {
+"arabic": {
+ "خبز": "خُبْز", "ماء": "مَاء",
+ "قهوة": "قَهْوَة", "شاي": "شَاي",
+ "تمر": "تَمْر", "لحم": "لَحْم",
+ "سمك": "سَمَك", "أرز": "أَرُزّ",
+ "حليب": "حَلِيب",
+ "مصر": "مِصْر", "بحر": "بَحْر",
+ "جبل": "جَبَل", "صحراء": "صَحْرَاء",
+ "نهر": "نَهْر",
+ "القاهرة": "الْقَاهِرَة",
+ "دمشق": "دِمَشْق",
+ "بغداد": "بَغْدَاد",
+ "الرباط": "الرِّبَاط",
+ "كتاب": "كِتَاب", "مدرسة": "مَدْرَسَة",
+ "موسيقى": "مُوسِيقَى",
+ "سلام": "سَلَام",
+ "شمس": "شَمْس", "قمر": "قَمَر",
+ "شجرة": "شَجَرَة", "وردة": "وَرْدَة",
+ "قط": "قِطّ", "حصان": "حِصَان",
+},
+}
+
+# tanwin, the three short vowels, shadda, sukun and the superscript alef
+HARAKAT = "".join(chr(c) for c in range(0x064B, 0x0653)) + "\u0670"
+
+
+def unpoint(word):
+    return "".join(ch for ch in word if ch not in HARAKAT)
+
+
 def write(slug, language, words):
     path = os.path.join(OUT, slug + ".json")
     io.open(path, "w", encoding="utf-8").write(json.dumps(
@@ -225,8 +261,14 @@ def main():
     total = 0
     for slug, (language, rows) in sorted(LISTS.items()):
         m = MEANINGS.get(slug, {})
+        v = VOCALISED.get(slug, {})
+        for bare, pointed in v.items():
+            assert unpoint(pointed) == bare, (slug, bare, pointed, unpoint(pointed))
         words = [{"word": w, "romaji": r, "english": m.get(w, e), "categories": [c]}
                  for w, r, e, c in rows]
+        for entry in words:
+            if v.get(entry["word"]):
+                entry["vocalised"] = v[entry["word"]]
         write(slug, language, words)
         total += len(words)
         print("%-11s %-9s %3d words" % (slug, language, len(words)))

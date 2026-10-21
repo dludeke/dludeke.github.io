@@ -164,10 +164,10 @@ THAI = {
 
 # Only the signs whose names are words; a kana called "shi" needs nothing.
 KANA = {
- "small a": "ko.ɡakɯ.a", "small i": "ko.ɡakɯ.i",
- "small u": "ko.ɡakɯ.ɯ", "small e": "ko.ɡakɯ.e",
- "small o": "ko.ɡakɯ.o", "small ya": "ko.ɡakɯ.ja",
- "small yu": "ko.ɡakɯ.jɯ", "small yo": "ko.ɡakɯ.jo",
+ "small a": "ko.ɡaki.a", "small i": "ko.ɡaki.i",
+ "small u": "ko.ɡaki.ɯ", "small e": "ko.ɡaki.e",
+ "small o": "ko.ɡaki.o", "small ya": "ko.ɡaki.ja",
+ "small yu": "ko.ɡaki.jɯ", "small yo": "ko.ɡaki.jo",
  "sokuon": "sokɯ.oɴ", "chouonpu": "t͡ɕoːoɴpɯ",
  "dakuten": "dakɯ.teɴ", "handakuten": "haɴ.dakɯ.teɴ",
 }

@@ -35,7 +35,6 @@ RU = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 
 
 GEEZ33 = "ሀለሐመሠረሰሸቀበተቸኀነኘአከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ"
-HANGUL24 = "ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ"
 
 # Hebrew: 4 per row read right to left. The chart also shows the five final
 # forms and a sin/shin variant, which are not separate letters here.
@@ -70,17 +69,6 @@ CHARTS = {
         "rtl": False,
         # the final row of three is centred, not left-aligned
         "cells": list(GEEZ33)[:30] + [None] + list(GEEZ33)[30:] + [None, None],
-        "isolate": "trim",
-        "field": "handshape",
-    },
-    "hangul": {
-        "file": "KSL_2.JPG",
-        "trim_px": (4, 13, 4, 36), 
-        "crop": (6, 6, 566, 536),
-        "rows": 5, "cols": 7,
-        "rtl": False,
-        # 31 numbered cells; 25-31 are extra vowels this reference does not list
-        "cells": list(HANGUL24) + [None] * 11,
         "isolate": "trim",
         "field": "handshape",
     },
@@ -226,13 +214,206 @@ def isolate(cell, cfg):
 
 
 
+# Japanese: the dakuten, the handakuten and the small kana are not shapes of
+# their own. JSL signs the base kana and moves the hand -- sideways for the
+# dakuten, up for the handakuten, back toward the signer for a small kana --
+# so each of those kana is drawn as its base hand with the movement printed
+# under it. The arrows are Sutton SignWriting movement symbols, which is what
+# lets the same three go into the transcriptions as well.
+KANA_ARROWS = {
+    "side": "S26606",   # wall plane, straight, to the right
+    "up":   "S26600",   # wall plane, straight, up
+    "back": "S22b04",   # floor plane, straight, toward the signer
+}
+# the arrow's longest side, as a fraction of the base image's height. Scaling
+# by height alone makes the sideways arrow, which is wider than it is tall,
+# come out twice the size of the other two.
+KANA_ARROW_SCALE = 0.45
+KANA_UPSCALE = 4        # the JSL chart cells are only ~36px; the arrow is not
+
+
+def kana_moves():
+    """glyph -> (base kana, which arrow), for every kana signed with movement."""
+    import unicodedata
+    from script_content import KANA_SMALL_BASE, KANA_VOICED
+    out = {g: (b, "back") for g, b in KANA_SMALL_BASE.items()}
+    for row in KANA_VOICED:
+        g = row[0]
+        d = unicodedata.normalize("NFD", g)
+        out[g] = (d[0], "side" if d[1] == "\u3099" else "up")
+    return out
+
+
+def compose_kana(mapping, verbose=True):
+    """Base hand plus arrow, as a picture and as an FSW string.
+
+    Returns (handshapes, signwriting), both keyed by glyph. The FSW places
+    the arrow under the hand and recomputes the sign box, so the string is a
+    real transcription rather than two keys stuck together.
+    """
+    from render_signwriting import (draw, fsw_symbols, fsw_join, symbol_size,
+                                    render_fsw, FSW_UNIT)
+    out_dir = os.path.join(OUT_ROOT, "kana")
+    os.makedirs(out_dir, exist_ok=True)
+
+    # the three arrows on their own, for the Reference page's movement badge
+    for name, key in KANA_ARROWS.items():
+        img = draw(key, 96, ink=(0, 0, 0))
+        if img:
+            img.save(os.path.join(HERE, f"images/handshapes/kana/move-{name}.png"))
+
+    path = os.path.join(DATA_DIR, "kana.json")
+    with open(path, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    base_fsw = {L["glyph"]: L.get("signwriting") for L in doc["letters"]}
+
+    shapes, fsws = {}, {}
+    for glyph, (base, which) in sorted(kana_moves().items()):
+        key = KANA_ARROWS[which]
+        name = f"{ord(glyph):04x}"
+
+        src = mapping.get(base)
+        if src and os.path.exists(os.path.join(HERE, src)):
+            hand = Image.open(os.path.join(HERE, src)).convert("RGB")
+            w, h = hand.width * KANA_UPSCALE, hand.height * KANA_UPSCALE
+            hand = hand.resize((w, h), Image.Resampling.LANCZOS)
+            arrow = draw(key, 96, ink=(0, 0, 0))
+            k = max(8, round(h * KANA_ARROW_SCALE)) / max(arrow.width, arrow.height)
+            arrow = arrow.resize((max(1, round(arrow.width * k)),
+                                  max(1, round(arrow.height * k))),
+                                 Image.Resampling.LANCZOS)
+            gap = max(2, round(h * 0.06))
+            sheet = Image.new("RGB", (max(w, arrow.width), h + gap + arrow.height),
+                              (255, 255, 255))
+            sheet.paste(hand, ((sheet.width - w) // 2, 0))
+            sheet.paste(arrow, ((sheet.width - arrow.width) // 2, h + gap), arrow)
+            rel = f"images/handshapes/kana/{name}.png"
+            sheet.save(os.path.join(HERE, rel))
+            shapes[glyph] = rel
+
+        bf = base_fsw.get(base)
+        if bf:
+            syms = fsw_symbols(bf)
+            if syms:
+                low = max(y + symbol_size(k)[1] for k, _x, y in syms)
+                aw, _ah = symbol_size(key)
+                syms.append((key, 500 - aw // 2, low + 3))
+                fsws[glyph] = fsw_join(syms)
+                render_fsw(fsws[glyph],
+                           os.path.join(HERE, f"images/signwriting/kana/{name}.png"))
+    if verbose:
+        print(f"  kana: {len(shapes)} hands and {len(fsws)} transcriptions "
+              f"given a movement arrow")
+    return shapes, fsws
+
+
+def apply_kana_moves(shapes, fsws):
+    path = os.path.join(DATA_DIR, "kana.json")
+    with open(path, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    n = 0
+    for L in doc["letters"]:
+        g = L["glyph"]
+        if g in shapes:
+            L["handshape"] = shapes[g]
+        if g in fsws:
+            L["signwriting"] = fsws[g]
+            L["signwriting_image"] = f"images/signwriting/kana/{ord(g):04x}.png"
+        if g in shapes or g in fsws:
+            n += 1
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+    return n
+
+
+# Korean comes from three screenshots rather than the single KSL_2 chart,
+# which is a quarter of the resolution and stops at the ten basic vowels.
+# 1a is the consonants, 1b and 1c the vowels: seventeen of them, including
+# the y- and w-forms. ssang siot is the one cell holding two frames, since
+# it is the only Korean letter signed with a movement; cropping the whole
+# cell keeps both.
+KSL_BLOCKS = [
+    ("KSL_1a.jpg", [(379, 572), (672, 864), (964, 1156)],
+     [(38, 182), (190, 334), (342, 486), (494, 638), (646, 790)],
+     ["\u3131", "\u3134", "\u3137", "\u3139", "\u3141",
+      "\u3142", "\u3145", "\u3146", "\u3147", "\u3148",
+      "\u314a", "\u314b", "\u314c", "\u314d", "\u314e"]),
+    ("KSL_1b.jpg", [(159, 402), (502, 745)],
+     [(38, 220), (228, 410), (418, 600), (608, 790)],
+     ["\u314f", "\u3150", "\u3151", "\u3152",
+      "\u3153", "\u3154", "\u3155", "\u3156"]),
+    ("KSL_1c.jpg", [(29, 272), (372, 615), (715, 958)],
+     [(38, 220), (228, 410), (418, 600)],
+     ["\u3157", "\u315a", "\u315b",
+      "\u315c", "\u315f", "\u3160",
+      "\u3161", "\u3162", "\u3163"]),
+]
+
+# The two ssang siot frames are inset in their cell and its caption is printed
+# inside the band rather than under it, so that one cell is given outright.
+KSL_BOXES = {"\u3146": (342, 714, 486, 822)}
+
+
+def trim_white(cell, limit=238):
+    """Trim a near-white margin, leaving the photograph itself alone.
+
+    The ink-based tighten is wrong for photographs: its threshold sits inside
+    the picture and crops away everything but the darkest part of the hand.
+    This only looks for paper white, so a cell that is all photograph comes
+    back unchanged and the two-frame ssang siot cell loses its surround.
+    """
+    import numpy as np
+    a = np.asarray(cell.convert("L"), dtype=np.int16)
+    mask = a < limit
+    rows = np.where(mask.any(axis=1))[0]
+    cols = np.where(mask.any(axis=0))[0]
+    if not len(rows) or not len(cols):
+        return cell
+    return cell.crop((int(cols[0]), int(rows[0]),
+                      int(cols[-1]) + 1, int(rows[-1]) + 1))
+
+
+def slice_ksl(verbose=True):
+    """Slice the three Korean screenshots into one image per jamo."""
+    mapping = {}
+    out_dir = os.path.join(OUT_ROOT, "hangul")
+    raw_dir = os.path.join(out_dir, "raw")
+    os.makedirs(raw_dir, exist_ok=True)
+    for fname, bands, xs, letters in KSL_BLOCKS:
+        path = os.path.join(SRC, fname)
+        if not os.path.exists(path):
+            print(f"  hangul: missing {fname}")
+            continue
+        im = Image.open(path).convert("RGB")
+        i = 0
+        for (y0, y1) in bands:
+            for (x0, x1) in xs:
+                if i >= len(letters):
+                    break
+                letter = letters[i]; i += 1
+                if letter is None:
+                    continue
+                raw = im.crop(KSL_BOXES.get(letter) or (x0, y0, x1, y1))
+                name = f"{ord(letter):04x}"
+                raw.save(os.path.join(raw_dir, f"{name}.png"))
+                rel = f"images/handshapes/hangul/{name}.png"
+                trim_white(raw).save(os.path.join(HERE, rel))
+                mapping[letter] = rel
+    if verbose:
+        print(f"  hangul: {len(mapping)} cells from the three KSL screenshots")
+    return mapping
+
+
 # Devanagari comes from a table rather than a grid of pictures: the sign images
 # sit in two of eight unequal columns, so the columns are given explicitly.
 NSL_BLOCKS = [
     # file, (x0, x1) of each image column, y0, y1, rows, letters down each column
     ("NSL_part1.jpg", [(296, 392), (660, 756)], 78, 600, 7,
      [["अ", "आ", "इ", "ई", "उ", "ऊ", "ऋ"],
-      ["ए", "ऐ", "ओ", "औ", None, None, None]]),       # last two are अं and अः
+      # rows 12 and 13 are printed as अं and अः, which is the mark on the bare
+      # vowel; the sign is the mark's, so it is filed under the mark
+      ["ए", "ऐ", "ओ", "औ", "ं", "ः", None]]),
     ("NSL_part2.jpg", [(300, 421), (689, 790)], 123, 1035, 12,
      [["क", "ख", "ग", "घ", "ङ", "च", "छ", "ज", "झ", "ञ", "ट", "ठ"],
       ["ड", "ढ", "ण", "त", "थ", "द", "ध", "न", "प", "फ", "ब", "भ"]]),
@@ -240,6 +421,17 @@ NSL_BLOCKS = [
      [["म", "य", "र", "ल", "व", "श"],
       ["ष", "स", "ह", None, None, None]]),            # last three are conjuncts
 ]
+
+
+# A matra is the same vowel as the independent letter, written as a sign on
+# the consonant rather than standing on its own, and NSL signs it the same
+# way. The chart only prints the independent column, so the matras had no
+# handshape at all and words like \u0926\u093e\u0932 came apart with a blank in the middle.
+NSL_MATRA_OF = {
+    "\u093e": "\u0906", "\u093f": "\u0907", "\u0940": "\u0908", "\u0941": "\u0909",
+    "\u0942": "\u090a", "\u0943": "\u090b", "\u0947": "\u090f", "\u0948": "\u0910",
+    "\u094b": "\u0913", "\u094c": "\u0914",
+}
 
 
 def slice_nsl(verbose=True):
@@ -267,8 +459,14 @@ def slice_nsl(verbose=True):
                 w, h = raw.size
                 raw.crop((3, 2, w - 9, round(h * 0.86))).save(os.path.join(HERE, rel))
                 mapping[letter] = rel
+    matras = 0
+    for matra, vowel in NSL_MATRA_OF.items():
+        if vowel in mapping:
+            mapping[matra] = mapping[vowel]
+            matras += 1
     if verbose:
-        print(f"  devanagari: {len(mapping)} cells from NSL tables")
+        print(f"  devanagari: {len(mapping) - matras} cells from NSL tables, "
+              f"{matras} matras taking their vowel's sign")
     return mapping
 
 
@@ -557,8 +755,14 @@ def apply_to_data(slug, cfg, mapping):
 
 
 def main(argv):
-    wanted = argv[1:] or (list(CHARTS) + ["devanagari", "latin"])
+    wanted = argv[1:] or (list(CHARTS) + ["devanagari", "latin", "hangul"])
     total = 0
+    if "hangul" in wanted:
+        m = slice_ksl()
+        if m:
+            total += apply_to_data("hangul", {"field": "handshape"}, m)
+            print("    wrote paths into hangul.json (handshape)")
+        wanted = [w for w in wanted if w != "hangul"]
     if "latin" in wanted:
         v = slice_latin()
         if v:
@@ -579,6 +783,11 @@ def main(argv):
         if mapping:
             n = apply_to_data(slug, cfg, mapping)
             print(f"    wrote {n} paths into {slug}.json ({cfg['field']})")
+            total += n
+        if slug == "kana" and mapping:
+            shapes, fsws = compose_kana(mapping)
+            n = apply_kana_moves(shapes, fsws)
+            print(f"    wrote {n} moved kana into kana.json")
             total += n
     print(f"\n{total} letters given an image")
     return 0

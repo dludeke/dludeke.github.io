@@ -29,78 +29,6 @@
       "letter_count": 26
     },
     {
-      "slug": "hebrew",
-      "name": "Hebrew",
-      "representative": "א",
-      "family": "Abjad",
-      "sign_language": "ISL",
-      "languages": [
-        "Hebrew",
-        "Ladino",
-        "Yiddish"
-      ],
-      "letter_count": 36
-    },
-    {
-      "slug": "geez",
-      "name": "Ge'ez",
-      "representative": "ሀ",
-      "family": "Abugida and syllabary",
-      "sign_language": "EthSL",
-      "languages": [
-        "Amharic",
-        "Tigrinya",
-        "Ge'ez"
-      ],
-      "letter_count": 293
-    },
-    {
-      "slug": "arabic",
-      "name": "Arabic",
-      "representative": "ا",
-      "family": "Abjad",
-      "sign_language": "ArSL",
-      "languages": [
-        "Arabic"
-      ],
-      "letter_count": 46
-    },
-    {
-      "slug": "devanagari",
-      "name": "Devanagari",
-      "representative": "अ",
-      "family": "Abugida and syllabary",
-      "sign_language": "NSL",
-      "languages": [
-        "Hindi",
-        "Sanskrit",
-        "Nepali"
-      ],
-      "letter_count": 64
-    },
-    {
-      "slug": "farsi",
-      "name": "Farsi",
-      "representative": "پ",
-      "family": "Abjad",
-      "sign_language": "ZEI",
-      "languages": [
-        "Persian / Farsi"
-      ],
-      "letter_count": 46
-    },
-    {
-      "slug": "kana",
-      "name": "Kana",
-      "representative": "あ",
-      "family": "Abugida and syllabary",
-      "sign_language": "JSL",
-      "languages": [
-        "Japanese"
-      ],
-      "letter_count": 58
-    },
-    {
       "slug": "cyrillic",
       "name": "Cyrillic",
       "representative": "Б",
@@ -113,17 +41,6 @@
         "and others"
       ],
       "letter_count": 33
-    },
-    {
-      "slug": "thai",
-      "name": "Thai",
-      "representative": "ก",
-      "family": "Abugida and syllabary",
-      "sign_language": "ThSL",
-      "languages": [
-        "Thai"
-      ],
-      "letter_count": 72
     },
     {
       "slug": "hangul",
@@ -146,6 +63,89 @@
         "Mandarin Chinese"
       ],
       "letter_count": 35
+    },
+    {
+      "slug": "geez",
+      "name": "Ge'ez",
+      "representative": "ሀ",
+      "family": "Abugida and syllabary",
+      "sign_language": "EthSL",
+      "languages": [
+        "Amharic",
+        "Tigrinya",
+        "Ge'ez"
+      ],
+      "letter_count": 293
+    },
+    {
+      "slug": "devanagari",
+      "name": "Devanagari",
+      "representative": "अ",
+      "family": "Abugida and syllabary",
+      "sign_language": "NSL",
+      "languages": [
+        "Hindi",
+        "Sanskrit",
+        "Nepali"
+      ],
+      "letter_count": 64
+    },
+    {
+      "slug": "kana",
+      "name": "Kana",
+      "representative": "あ",
+      "family": "Abugida and syllabary",
+      "sign_language": "JSL",
+      "languages": [
+        "Japanese"
+      ],
+      "letter_count": 83
+    },
+    {
+      "slug": "thai",
+      "name": "Thai",
+      "representative": "ก",
+      "family": "Abugida and syllabary",
+      "sign_language": "ThSL",
+      "languages": [
+        "Thai"
+      ],
+      "letter_count": 72
+    },
+    {
+      "slug": "arabic",
+      "name": "Arabic",
+      "representative": "ا",
+      "family": "Abjad",
+      "sign_language": "ArSL",
+      "languages": [
+        "Arabic"
+      ],
+      "letter_count": 46
+    },
+    {
+      "slug": "hebrew",
+      "name": "Hebrew",
+      "representative": "א",
+      "family": "Abjad",
+      "sign_language": "ISL",
+      "languages": [
+        "Hebrew",
+        "Ladino",
+        "Yiddish"
+      ],
+      "letter_count": 36
+    },
+    {
+      "slug": "farsi",
+      "name": "Farsi",
+      "representative": "پ",
+      "family": "Abjad",
+      "sign_language": "ZEI",
+      "languages": [
+        "Persian / Farsi"
+      ],
+      "letter_count": 46
     }
   ]
 }

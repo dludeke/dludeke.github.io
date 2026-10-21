@@ -18,6 +18,7 @@
   "layout": null,
   "sections": null,
   "section_cols": null,
+  "movement_in_handshape": false,
   "links": [
     {
       "label": "Cyrillic script",

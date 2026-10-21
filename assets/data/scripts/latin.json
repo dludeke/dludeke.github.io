@@ -31,6 +31,7 @@
   "layout": null,
   "sections": null,
   "section_cols": null,
+  "movement_in_handshape": false,
   "links": [
     {
       "label": "Latin alphabet",
@@ -516,7 +517,7 @@
       "example_emoji": "🫗",
       "example_ipa": "dʒʌɡ",
       "signwriting": "M513x507S19220492x488S2a20c476x472",
-      "signwriting_image": "images/signwriting/latin/S19220.png",
+      "signwriting_image": "images/signwriting/latin/004a.png",
       "aliases": [],
       "notes": "",
       "signwriting_variants": {
@@ -1004,7 +1005,7 @@
       "example_emoji": "🦓",
       "example_ipa": "ˈzɛbrə",
       "signwriting": "M528x507S10020492x477S2450a497x473",
-      "signwriting_image": "images/signwriting/latin/S10020.png",
+      "signwriting_image": "images/signwriting/latin/005a.png",
       "aliases": [],
       "notes": "",
       "signwriting_variants": {

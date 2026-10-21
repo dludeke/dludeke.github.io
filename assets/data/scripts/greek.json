@@ -15,6 +15,7 @@
   "layout": null,
   "sections": null,
   "section_cols": null,
+  "movement_in_handshape": false,
   "links": [
     {
       "label": "Greek alphabet",
@@ -330,7 +331,7 @@
       "example_emoji": "🦓",
       "example_ipa": "ˈzevra",
       "signwriting": "M529x517S1a002513x487S24602470x483",
-      "signwriting_image": "images/signwriting/greek/S1a002.png",
+      "signwriting_image": "images/signwriting/greek/0396.png",
       "aliases": [],
       "notes": ""
     },
@@ -374,7 +375,7 @@
       "example_emoji": "🎭",
       "example_ipa": "ˈθeatro",
       "signwriting": "M509x525S11502492x476S20700491x510",
-      "signwriting_image": "images/signwriting/greek/S11502.png",
+      "signwriting_image": "images/signwriting/greek/0398.png",
       "aliases": [],
       "notes": ""
     },
@@ -598,7 +599,7 @@
       "example_emoji": "🏠",
       "example_ipa": "ˈspiti",
       "signwriting": "M517x523S20320502x493S2920c483x477",
-      "signwriting_image": "images/signwriting/greek/S20320.png",
+      "signwriting_image": "images/signwriting/greek/03a3.png",
       "aliases": [
         "ς"
       ],

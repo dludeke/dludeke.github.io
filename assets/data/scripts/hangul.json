@@ -20,6 +20,7 @@
     "Final clusters"
   ],
   "section_cols": null,
+  "movement_in_handshape": false,
   "links": [
     {
       "label": "Hangul",
@@ -549,7 +550,7 @@
       "example_emoji": "🍎",
       "example_ipa": "sagwa",
       "signwriting": "M550x544S10020493x462S22a06512x472",
-      "signwriting_image": "images/signwriting/hangul/S10020.png",
+      "signwriting_image": "images/signwriting/hangul/314f.png",
       "aliases": [],
       "notes": ""
     },
@@ -571,7 +572,7 @@
       "example_emoji": "⚾",
       "example_ipa": "jagu",
       "signwriting": "M538x538S11520493x462S22a06512x472",
-      "signwriting_image": "images/signwriting/hangul/S11520.png",
+      "signwriting_image": "images/signwriting/hangul/3151.png",
       "aliases": [],
       "notes": ""
     },
@@ -828,7 +829,7 @@
       "ipa": [
         "ˀs"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3146.png",
       "example_word": "쌀",
       "example_gloss": "uncooked rice",
       "example_image": null,
@@ -872,7 +873,7 @@
       "ipa": [
         "ɛ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3150.png",
       "example_word": "개",
       "example_gloss": "dog",
       "example_image": null,
@@ -894,7 +895,7 @@
       "ipa": [
         "jɛ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3152.png",
       "example_word": "얘기",
       "example_gloss": "talk",
       "example_image": null,
@@ -916,7 +917,7 @@
       "ipa": [
         "e"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3154.png",
       "example_word": "네",
       "example_gloss": "yes",
       "example_image": null,
@@ -938,7 +939,7 @@
       "ipa": [
         "je"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3156.png",
       "example_word": "예술",
       "example_gloss": "art",
       "example_image": null,
@@ -1005,7 +1006,7 @@
         "ø",
         "we"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/315a.png",
       "example_word": "외국",
       "example_gloss": "foreign country",
       "example_image": null,
@@ -1071,7 +1072,7 @@
       "ipa": [
         "wi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/315f.png",
       "example_word": "귀",
       "example_gloss": "ear",
       "example_image": null,
@@ -1093,7 +1094,7 @@
       "ipa": [
         "ɰi"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3162.png",
       "example_word": "의사",
       "example_gloss": "doctor",
       "example_image": null,

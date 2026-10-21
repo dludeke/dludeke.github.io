@@ -22,6 +22,7 @@
     "Loanword vowels"
   ],
   "section_cols": null,
+  "movement_in_handshape": false,
   "links": [
     {
       "label": "Devanagari",
@@ -1189,7 +1190,7 @@
       "ipa": [
         "aː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0906.png",
       "example_word": "काम",
       "example_gloss": "work",
       "example_image": null,
@@ -1211,7 +1212,7 @@
       "ipa": [
         "i"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0907.png",
       "example_word": "दिन",
       "example_gloss": "day",
       "example_image": null,
@@ -1233,7 +1234,7 @@
       "ipa": [
         "iː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0908.png",
       "example_word": "नदी",
       "example_gloss": "river",
       "example_image": null,
@@ -1255,7 +1256,7 @@
       "ipa": [
         "u"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0909.png",
       "example_word": "सुबह",
       "example_gloss": "morning",
       "example_image": null,
@@ -1277,7 +1278,7 @@
       "ipa": [
         "uː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/090a.png",
       "example_word": "फूल",
       "example_gloss": "flower",
       "example_image": null,
@@ -1299,7 +1300,7 @@
       "ipa": [
         "r̩i"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/090b.png",
       "example_word": "कृषि",
       "example_gloss": "agriculture",
       "example_image": null,
@@ -1321,7 +1322,7 @@
       "ipa": [
         "eː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/090f.png",
       "example_word": "मेज़",
       "example_gloss": "table",
       "example_image": null,
@@ -1343,7 +1344,7 @@
       "ipa": [
         "ɛː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0910.png",
       "example_word": "पैसा",
       "example_gloss": "money",
       "example_image": null,
@@ -1365,7 +1366,7 @@
       "ipa": [
         "oː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0913.png",
       "example_word": "मोर",
       "example_gloss": "peacock",
       "example_image": null,
@@ -1387,7 +1388,7 @@
       "ipa": [
         "ɔː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0914.png",
       "example_word": "मौसम",
       "example_gloss": "weather",
       "example_image": null,
@@ -1409,7 +1410,7 @@
       "ipa": [
         "ⁿ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0902.png",
       "example_word": "हिंदी",
       "example_gloss": "Hindi",
       "example_image": null,
@@ -1453,7 +1454,7 @@
       "ipa": [
         "h"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/devanagari/0903.png",
       "example_word": "दुःख",
       "example_gloss": "sorrow",
       "example_image": null,

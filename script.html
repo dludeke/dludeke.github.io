@@ -67,6 +67,12 @@
     .section-head:first-of-type { margin-top: 0; }
     .section-head span { color: #c3cad1; font-weight: normal; }
 
+    /* The syllabary is seven columns of cards, each carrying a handshape
+       and a movement arrow beside it. At the 960px the rest of the site
+       uses, the two overlapped and ran into the next card, so the
+       reference tables get the width of the window instead. */
+    .container { max-width: 1500px; padding: 1.25rem 1.5rem 2rem; }
+
     .letter-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -83,6 +89,9 @@
     .letter-grid.fixed .letter-glyphs { font-size: 1.8rem; }
     .letter-grid.fixed .slot { min-height: 56px; }
     .letter-grid.fixed .slot img { max-height: 74px; }
+    .letter-grid.fixed .slot.stacked > img { max-height: 54px; }
+    .letter-grid.fixed .move img { max-height: 18px; }
+    .letter-grid.fixed .move em { font-size: 0.55rem; }
     .letter-grid.fixed .row .k { min-width: 54px; font-size: 0.6rem; }
     .col-heads { justify-items: center; }
     .col-heads span { text-align: center; }
@@ -199,13 +208,23 @@
       padding: 0.4rem;
     }
 
-    /* EthSL spells a syllable as the consonant's hand plus a movement, so
-       the arrow belongs beside the hand rather than in a row of its own. */
+    /* EthSL spells a syllable as the consonant's hand plus a movement, and
+       JSL marks a dakuten the same way, so the arrow belongs beside the hand
+       rather than in a row of its own. Both have to fit the slot: a replaced
+       element will not shrink below its own width unless min-width is
+       cleared, which is how the arrow ended up over the next card. */
+    .slot { gap: 0.25rem; }
+    .slot > img { min-width: 0; flex: 0 1 auto; }
+    /* An arrow is wider than it is tall, so standing it beside the hand in a
+       seven-column table left it a few pixels across. Stacked, it has the
+       whole slot to be legible in. */
+    .slot.stacked { flex-direction: column; gap: 0.15rem; }
+
     .move {
       display: inline-flex; flex-direction: column; align-items: center;
-      gap: 0.1rem; margin-left: 0.3rem;
+      gap: 0.1rem; flex: 0 1 auto; min-width: 0; max-width: 100%;
     }
-    .move img { max-height: 22px; max-width: 34px; opacity: 0.75; }
+    .move img { max-height: 22px; max-width: 100%; opacity: 0.75; }
     .move em { font-style: normal; font-size: 0.62rem; color: #9aa3ab; }
 
     .slot img {
@@ -469,6 +488,12 @@
       document.title = d.name + ' — Script Reference';
       document.getElementById('pageTitle').textContent = d.name;
 
+      // Letters the data carries so they can be signed, quizzed and found in
+      // a sentence, but which this page would only repeat. The twenty-five
+      // voiced kana are the gojūon again with a mark on it; the two marks
+      // below the table carry the arrow that makes them.
+      d = Object.assign({}, d, { letters: d.letters.filter(L => !L.hidden) });
+
       // Some scripts have more than one manual alphabet worth showing. Latin
       // has both BSL (two-handed) and ASL (one-handed); the choice is
       // remembered per script.
@@ -486,10 +511,15 @@
         const m = (fsw || '').match(/S([0-9a-f]{3})([0-9a-f])([0-9a-f])/g) || [];
         return m.find(k => { const b = parseInt(k.slice(1, 4), 16); return b >= 0x100 && b <= 0x204; }) || null;
       };
+      // signwriting_image is the whole transcription drawn as one picture,
+      // which for a sign with a movement is hand and arrow together. The
+      // per-key path is the fallback, and the only thing the ASL/BSL toggle
+      // can switch to, since a variant has no picture of its own.
       const swImageOf = L => {
-        const k = handKey(fswOf(L));
-        return k ? `images/signwriting/${k}.png`.replace('/images/', '/images/') &&
-                   `images/signwriting/${d.slug}/${k}.png` : L.signwriting_image;
+        const f = fswOf(L);
+        if (f === L.signwriting && L.signwriting_image) return L.signwriting_image;
+        const k = handKey(f);
+        return k ? `images/signwriting/${d.slug}/${k}.png` : L.signwriting_image;
       };
 
       // Counted per column, not "has anything": with the handshapes wired in,
@@ -502,6 +532,11 @@
         ['pictures', d.letters.filter(L => L.example_image).length],
         ['signwriting', d.letters.filter(L => swImageOf(L)).length]
       ];
+
+      // Where the arrow is drawn into the handshape picture there is nothing
+      // to add beside it; the two Japanese marks, which have no hand of their
+      // own, are what the arrows are shown on.
+      const showMove = L => !!L.movement && !(d.movement_in_handshape && shapeOf(L));
 
       const cardFor = L => {
         const word = boldedWord(L.example_word, L.glyph, L.alt);
@@ -519,12 +554,12 @@
                   L.ipa.map(v => '/' + linkIpa(v) + '/').join(', ') + `</span></div>`
                 : row('IPA', null)}
             <div class="slot-pair">
-              <div class="slot">${shapeOf(L)
+              <div class="slot${showMove(L) ? ' stacked' : ''}">${shapeOf(L)
                 ? `<img src="${shapeOf(L)}" alt="Handshape for ${L.name}" />`
-                : 'handshape'}${L.movement
-                ? `<span class="move" title="${L.movement.amharic} ${L.movement.name} \u2014 ${L.movement.description}">
+                : 'handshape'}${showMove(L)
+                ? `<span class="move" title="${L.movement.label} ${L.movement.name} \u2014 ${L.movement.description}">
                      <img src="${L.movement.image}" alt="${L.movement.description}" />
-                     <em>${L.movement.amharic}</em></span>`
+                     <em>${L.movement.label}</em></span>`
                 : ''}</div>
               <div class="slot">${L.example_image
                 ? `<img src="${L.example_image}" alt="${L.example_gloss || ''}" />`

@@ -13,6 +13,7 @@ generate_country_signs.py.
 import json
 import os
 import sys
+import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
@@ -22,7 +23,8 @@ from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             THAI_VOWELS, THAI_TONES,
                             THAI_MODIFIERS, display_for,
                             DEVANAGARI_MATRAS, DEVANAGARI_MARKS,
-                            KANA_SMALL, KANA_MARKS,
+                            KANA_SMALL, KANA_MARKS, KANA_VOICED,
+                            KANA_SMALL_BASE,
                             ARABIC_FORMS, ARABIC_HARAKAT,
                             HANGUL_DOUBLE, HANGUL_COMPOUND,
                             geez_labiovelars)
@@ -47,26 +49,26 @@ SCRIPTS = [
      ["Greek"], "Alphabet: 24 letters, each with an upper and lower case."),
     ("latin", "Latin", "A", "ASL, BSL", "American / British Sign Language",
      ["English", "and most of Europe"], "Alphabet: 26 letters. ASL and BSL are different manual alphabets, not variants of one: ASL fingerspells with one hand, BSL with two. Use the toggle to switch."),
-    ("hebrew", "Hebrew", "א", "ISL", "שפת סימנים ישראלית",
-     ["Hebrew", "Ladino", "Yiddish"], "Abjad: 22 consonants, written right to left. Five have final forms."),
-    ("geez", "Ge'ez", "ሀ", "EthSL", "የኢትዮጵያ ምልክት ቋንቋ",
-     ["Amharic", "Tigrinya", "Ge'ez"], "Abugida: 33 consonants, each written in seven vowel orders, giving 231 syllables. Rows are consonants, columns are vowels; the shape of the base changes slightly in each order rather than taking a separate vowel sign."),
-    ("arabic", "Arabic", "ا", "ArSL", "لغة الإشارة العربية",
-     ["Arabic"], "Abjad: 28 letters, written right to left, each with initial, medial, final and isolated forms."),
-    ("devanagari", "Devanagari", "अ", "NSL", "नेपाली सांकेतिक भाषा",
-     ["Hindi", "Sanskrit", "Nepali"], "Abugida: vowels, then consonants carrying an inherent 'a'."),
-    ("farsi", "Farsi", "پ", "ZEI", "زبان اشاره ایرانی",
-     ["Persian / Farsi"], "Perso-Arabic: the 28 Arabic letters plus four Persian additions. Shown by پ (pe), one of those four, since ا is shared with Arabic."),
-    ("kana", "Kana", "あ", "JSL", "日本手話",
-     ["Japanese"], "Syllabary: 46 basic hiragana, each with a katakana counterpart."),
     ("cyrillic", "Cyrillic", "Б", "RSL", "Русский жестовый язык",
      ["Russian", "Bulgarian", "Serbian", "and others"], "Alphabet: 33 letters in the Russian inventory; other languages add or drop a few."),
-    ("thai", "Thai", "ก", "ThSL", "ภาษามือไทย",
-     ["Thai"], "Abugida: 44 consonants, listed here with their acrophonic names."),
     ("hangul", "Hangul", "ㄱ", "KSL", "한국수어",
      ["Korean"], "Featural alphabet: 14 basic consonants and 10 basic vowels, composed into syllable blocks."),
     ("pinyin", "Pinyin", "ā", "CSL", "中国手语",
      ["Mandarin Chinese"], "Romanisation rather than a script. The CSL fingerspelling scheme of 1963 has 30 handshapes: the 26 Latin letters plus the digraphs ZH, CH, SH and NG."),
+    ("geez", "Ge'ez", "ሀ", "EthSL", "የኢትዮጵያ ምልክት ቋንቋ",
+     ["Amharic", "Tigrinya", "Ge'ez"], "Abugida: 33 consonants, each written in seven vowel orders, giving 231 syllables. Rows are consonants, columns are vowels; the shape of the base changes slightly in each order rather than taking a separate vowel sign."),
+    ("devanagari", "Devanagari", "अ", "NSL", "नेपाली सांकेतिक भाषा",
+     ["Hindi", "Sanskrit", "Nepali"], "Abugida: vowels, then consonants carrying an inherent 'a'."),
+    ("kana", "Kana", "あ", "JSL", "日本手話",
+     ["Japanese"], "Syllabary: 46 basic hiragana, each with a katakana counterpart."),
+    ("thai", "Thai", "ก", "ThSL", "ภาษามือไทย",
+     ["Thai"], "Abugida: 44 consonants, listed here with their acrophonic names."),
+    ("arabic", "Arabic", "ا", "ArSL", "لغة الإشارة العربية",
+     ["Arabic"], "Abjad: 28 letters, written right to left, each with initial, medial, final and isolated forms."),
+    ("hebrew", "Hebrew", "א", "ISL", "שפת סימנים ישראלית",
+     ["Hebrew", "Ladino", "Yiddish"], "Abjad: 22 consonants, written right to left. Five have final forms."),
+    ("farsi", "Farsi", "پ", "ZEI", "زبان اشاره ایرانی",
+     ["Persian / Farsi"], "Perso-Arabic: the 28 Arabic letters plus four Persian additions. Shown by پ (pe), one of those four, since ا is shared with Arabic."),
 ]
 
 # letters: (glyph, lowercase_or_alt, name)  -- alt is "" when there is no pair
@@ -78,7 +80,8 @@ EXTRA = {
              ("Modifiers", THAI_MODIFIERS)],
     "devanagari": [("Vowel signs (matras)", DEVANAGARI_MATRAS),
                    ("Marks", DEVANAGARI_MARKS)],
-    "kana": [("Small kana", KANA_SMALL), ("Marks", KANA_MARKS)],
+    "kana": [("Small kana", KANA_SMALL), ("Marks", KANA_MARKS),
+             ("Voiced kana", KANA_VOICED)],
     "arabic": [("Hamza and variant forms", ARABIC_FORMS),
                ("Vowel marks", ARABIC_HARAKAT),
                ("Classical marks", ARABIC_CLASSICAL)],
@@ -107,9 +110,21 @@ BASE_SECTION = {"thai": "Consonants", "devanagari": "Letters", "kana": "Goj\u016
 # a section whose cells form a table of their own
 SECTION_COLS = {"geez": {"Labiovelars": len(GEEZ_LABIOVELAR_ORDERS)}}
 
+# Sections the Reference page does not lay out. The voiced kana are in the
+# data so they can be signed, quizzed and found in a sentence, but printing
+# twenty-five more cards there would just be the gojūon again with a mark on
+# it; the two marks carry the arrows instead.
+HIDDEN_SECTIONS = {"kana": {"Voiced kana"}}
+
+# EthSL's chart gives the consonant's hand and the arrows separately, so a
+# Ge'ez card shows both. The Japanese composites have the arrow printed under
+# the hand already.
+MOVEMENT_IN_HANDSHAPE = {"kana"}
+
 SECTIONS, SECTION_OF, SECTION_ORDER = {}, {}, {}
 for _slug, _groups in EXTRA.items():
-    SECTION_ORDER[_slug] = [BASE_SECTION[_slug]] + [n for n, _ in _groups]
+    SECTION_ORDER[_slug] = [BASE_SECTION[_slug]] + [
+        n for n, _ in _groups if n not in HIDDEN_SECTIONS.get(_slug, ())]
     SECTION_OF[_slug] = {}
     for _name, _rows in _groups:
         for _g, _alt, _nm, _i, _w, _wi, _no in _rows:
@@ -125,13 +140,45 @@ for _slug, _groups in EXTRA.items():
 # EthSL spells a syllable as the consonant's handshape plus a movement for
 # the vowel order, and the chart prints the six arrows under the grid. With
 # only the grid sliced, 198 of the 231 cells had no handshape at all.
-ETHSL_MOVES = {o + 1: {"order": o + 1, "name": rom, "amharic": amh,
+ETHSL_MOVES = {o + 1: {"order": o + 1, "name": rom, "label": amh,
                        "description": desc,
                        "image": "images/handshapes/geez/move-%d.png" % (o + 1)}
                for o, rom, amh, desc in ETHSL_ORDER_ROWS}
 # the chart also works ሀ through all six, so those cells get the real drawing
 ETHSL_WORKED = {chr(0x1200 + o): "images/handshapes/geez/form-%d.png" % (o + 1)
                 for o in range(1, 7)}
+
+
+# JSL does the same thing for Japanese: a dakuten is the base kana signed
+# with the hand moving to the side, a handakuten with it moving up, and a
+# small kana with it drawn back toward the signer. The arrows are the Sutton
+# SignWriting movement symbols, so the same three appear in the handshape
+# pictures and in the transcriptions.
+JSL_MOVES = {
+    "dakuten":    {"name": "dakuten", "label": "\u309b",
+                   "description": "the hand moves to the side",
+                   "image": "images/handshapes/kana/move-side.png"},
+    "handakuten": {"name": "handakuten", "label": "\u309c",
+                   "description": "the hand moves upward",
+                   "image": "images/handshapes/kana/move-up.png"},
+    "small":      {"name": "small kana", "label": "\u5c0f",
+                   "description": "the hand is drawn back toward the signer",
+                   "image": "images/handshapes/kana/move-back.png"},
+}
+
+
+def kana_move(glyph):
+    """Which of the three JSL movements this kana is signed with, if any."""
+    if glyph in KANA_SMALL_BASE:
+        return JSL_MOVES["small"]
+    if glyph == "\u3099":
+        return JSL_MOVES["dakuten"]
+    if glyph == "\u309a":
+        return JSL_MOVES["handakuten"]
+    d = unicodedata.normalize("NFD", glyph)
+    if len(d) == 2 and d[1] in "\u3099\u309a":
+        return JSL_MOVES["dakuten" if d[1] == "\u3099" else "handakuten"]
+    return None
 
 
 def geez_order(glyph):
@@ -528,6 +575,13 @@ def main():
                     entry["handshape"] = hs
                 if mv:
                     entry["movement"] = mv
+            if slug == "kana":
+                mv = kana_move(glyph)
+                if mv:
+                    entry["movement"] = mv
+                if entry["section"] in HIDDEN_SECTIONS.get(slug, ()):
+                    # in the data, off the Reference page
+                    entry["hidden"] = True
             # Preserve only what the tables do not supply. Without this the
             # values just written would be read back as "hand edits" on the
             # next run and win over the tables, so editing script_content.py
@@ -535,6 +589,8 @@ def main():
             from_tables = set()
             # Values the geez block derives are table output, not hand edits;
             # without this a bad earlier run would be preserved over the fix.
+            if slug == "kana" and kana_move(glyph):
+                from_tables.add("movement")
             if slug == "geez":
                 from_tables.update(("ipa", "romanization"))
                 # the first-order images come from the chart and are hand
@@ -576,6 +632,9 @@ def main():
             "layout": LAYOUTS.get(slug),
             "sections": SECTION_ORDER.get(slug),
             "section_cols": SECTION_COLS.get(slug),
+            # True where the movement arrow is already drawn into the
+            # handshape picture, so the pages do not print it twice.
+            "movement_in_handshape": slug in MOVEMENT_IN_HANDSHAPE,
             "links": [{"label": l, "url": u} for l, u in LINKS.get(slug, [])],
             "glossary": GLOSSARY,
             "ipa_links": {k: v for k, v in IPA_LINKS.items() if v},

@@ -107,6 +107,7 @@
     "Marks"
   ],
   "section_cols": null,
+  "movement_in_handshape": true,
   "links": [
     {
       "label": "Kana",
@@ -839,7 +840,7 @@
       "example_emoji": "🍙",
       "example_ipa": "noɾi",
       "signwriting": "M521x519S10020506x489S2a20c480x481",
-      "signwriting_image": "images/signwriting/kana/S10020.png",
+      "signwriting_image": "images/signwriting/kana/306e.png",
       "aliases": [],
       "notes": ""
     },
@@ -1061,7 +1062,7 @@
       "example_emoji": "🍑",
       "example_ipa": "momo",
       "signwriting": "M508x524S1f436493x495S22a04492x487S21b00494x477",
-      "signwriting_image": "images/signwriting/kana/S1f436.png",
+      "signwriting_image": "images/signwriting/kana/3082.png",
       "aliases": [],
       "notes": ""
     },
@@ -1171,7 +1172,7 @@
       "example_emoji": "🍎",
       "example_ipa": "ɾiŋɡo",
       "signwriting": "M521x519S10e20506x489S2a20c480x481",
-      "signwriting_image": "images/signwriting/kana/S10e20.png",
+      "signwriting_image": "images/signwriting/kana/308a.png",
       "aliases": [],
       "notes": ""
     },
@@ -1281,7 +1282,7 @@
       "example_emoji": "💬",
       "example_ipa": "o",
       "signwriting": "M508x517S17610492x501S26504493x483",
-      "signwriting_image": "images/signwriting/kana/S17610.png",
+      "signwriting_image": "images/signwriting/kana/3092.png",
       "aliases": [],
       "notes": "Only used to mark the object, and pronounced the same as お."
     },
@@ -1306,7 +1307,7 @@
       "example_emoji": "🍊",
       "example_ipa": "mikaɴ",
       "signwriting": "M521x519S10040480x489S2a204498x481",
-      "signwriting_image": "images/signwriting/kana/S10040.png",
+      "signwriting_image": "images/signwriting/kana/3093.png",
       "aliases": [],
       "notes": "Takes its place from what follows: /m/ before p b m, /ŋ/ before k g, /n/ elsewhere."
     },
@@ -1314,177 +1315,225 @@
       "glyph": "ぁ",
       "alt": "ァ",
       "name": "small a",
-      "name_ipa": "ko.ɡakɯ.a",
+      "name_ipa": "ko.ɡaki.a",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
         "a"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3041.png",
       "example_word": "ファイル",
       "example_gloss": "file",
       "example_image": null,
       "example_emoji": "📁",
-      "example_ipa": "ɟairu",
-      "signwriting": null,
-      "signwriting_image": null,
+      "example_ipa": "ɸaiɾɯ",
+      "signwriting": "M510x542S1f750490x493S22b04492x511",
+      "signwriting_image": "images/signwriting/kana/3041.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ぃ",
       "alt": "ィ",
       "name": "small i",
-      "name_ipa": "ko.ɡakɯ.i",
+      "name_ipa": "ko.ɡaki.i",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
         "i"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3043.png",
       "example_word": "ティー",
       "example_gloss": "tea",
       "example_image": null,
       "example_emoji": "🍵",
       "example_ipa": "tiː",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M511x544S19220490x491S22b04492x513",
+      "signwriting_image": "images/signwriting/kana/3043.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ぅ",
       "alt": "ゥ",
       "name": "small u",
-      "name_ipa": "ko.ɡakɯ.ɯ",
+      "name_ipa": "ko.ɡaki.ɯ",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
-        "u"
+        "ɯ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3045.png",
       "example_word": "タトゥー",
       "example_gloss": "tattoo",
       "example_image": null,
       "example_emoji": "✒️",
-      "example_ipa": "tatuː",
-      "signwriting": null,
-      "signwriting_image": null,
+      "example_ipa": "tatoɯː",
+      "signwriting": "M508x549S11520493x485S22b04492x518",
+      "signwriting_image": "images/signwriting/kana/3045.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ぇ",
       "alt": "ェ",
       "name": "small e",
-      "name_ipa": "ko.ɡakɯ.e",
+      "name_ipa": "ko.ɡaki.e",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
         "e"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3047.png",
       "example_word": "シェフ",
       "example_gloss": "chef",
       "example_image": null,
       "example_emoji": "👨‍🍳",
-      "example_ipa": "ɕeɟu",
-      "signwriting": null,
-      "signwriting_image": null,
+      "example_ipa": "ɕeɸɯ",
+      "signwriting": "M508x543S16620492x491S22b04492x512",
+      "signwriting_image": "images/signwriting/kana/3047.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ぉ",
       "alt": "ォ",
       "name": "small o",
-      "name_ipa": "ko.ɡakɯ.o",
+      "name_ipa": "ko.ɡaki.o",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
         "o"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3049.png",
       "example_word": "フォーク",
       "example_gloss": "fork",
       "example_image": null,
       "example_emoji": "🍴",
-      "example_ipa": "ɟoːku",
-      "signwriting": null,
-      "signwriting_image": null,
+      "example_ipa": "ɸoːkɯ",
+      "signwriting": "M508x542S17610492x492S22b04492x511",
+      "signwriting_image": "images/signwriting/kana/3049.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ゃ",
       "alt": "ャ",
       "name": "small ya",
-      "name_ipa": "ko.ɡakɯ.ja",
+      "name_ipa": "ko.ɡaki.ja",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
         "ja"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3083.png",
       "example_word": "シャツ",
       "example_gloss": "shirt",
       "example_image": null,
       "example_emoji": "👕",
-      "example_ipa": "ɕat͡su",
-      "signwriting": null,
-      "signwriting_image": null,
+      "example_ipa": "ɕat͡sɯ",
+      "signwriting": "M515x545S19a20486x490S22b04492x514",
+      "signwriting_image": "images/signwriting/kana/3083.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ゅ",
       "alt": "ュ",
       "name": "small yu",
-      "name_ipa": "ko.ɡakɯ.jɯ",
+      "name_ipa": "ko.ɡaki.jɯ",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
-        "ju"
+        "jɯ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3085.png",
       "example_word": "ジュース",
       "example_gloss": "juice",
       "example_image": null,
       "example_emoji": "🧃",
-      "example_ipa": "dʑuːsu",
-      "signwriting": null,
-      "signwriting_image": null,
+      "example_ipa": "d͡ʑɯːsɯ",
+      "signwriting": "M508x549S18c00493x485S22b04492x518",
+      "signwriting_image": "images/signwriting/kana/3085.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ょ",
       "alt": "ョ",
       "name": "small yo",
-      "name_ipa": "ko.ɡakɯ.jo",
+      "name_ipa": "ko.ɡaki.jo",
       "display_glyph": null,
       "section": "Small kana",
       "romanization": null,
       "ipa": [
         "jo"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3087.png",
       "example_word": "きょうと",
       "example_gloss": "Kyoto",
       "example_image": null,
       "example_emoji": "🏯",
       "example_ipa": "kʲoːto",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M516x544S14402485x489S22b04492x513",
+      "signwriting_image": "images/signwriting/kana/3087.png",
       "aliases": [],
-      "notes": ""
+      "notes": "",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "っ",
@@ -1495,16 +1544,22 @@
       "section": "Small kana",
       "romanization": null,
       "ipa": [],
-      "handshape": null,
+      "handshape": "images/handshapes/kana/3063.png",
       "example_word": "きって",
       "example_gloss": "stamp",
       "example_image": null,
       "example_emoji": "📮",
       "example_ipa": "kitte",
-      "signwriting": null,
-      "signwriting_image": null,
+      "signwriting": "M514x547S1b320486x487S22b04492x516",
+      "signwriting_image": "images/signwriting/kana/3063.png",
       "aliases": [],
-      "notes": "Doubles the consonant that follows; it is never read on its own."
+      "notes": "Doubles the consonant that follows; it is never read on its own.",
+      "movement": {
+        "name": "small kana",
+        "label": "小",
+        "description": "the hand is drawn back toward the signer",
+        "image": "images/handshapes/kana/move-back.png"
+      }
     },
     {
       "glyph": "ー",
@@ -1536,17 +1591,28 @@
       "display_glyph": "゛",
       "section": "Marks",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "g",
+        "z",
+        "d",
+        "b"
+      ],
       "handshape": null,
-      "example_word": "ぞう",
-      "example_gloss": "elephant",
+      "example_word": "かぎ",
+      "example_gloss": "key",
       "example_image": null,
-      "example_emoji": "🐘",
-      "example_ipa": "zoː",
+      "example_emoji": "🔑",
+      "example_ipa": "kagi",
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": "Voices the kana it sits on: ka becomes ga, sa becomes za."
+      "notes": "Voices the kana it sits on: ka becomes ga, sa becomes za, ta becomes da, ha becomes ba. In JSL the mark is not spelled: the base kana is signed and the hand moves to the side.",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      }
     },
     {
       "glyph": "゚",
@@ -1556,7 +1622,9 @@
       "display_glyph": "゜",
       "section": "Marks",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "p"
+      ],
       "handshape": null,
       "example_word": "パン",
       "example_gloss": "bread",
@@ -1566,7 +1634,748 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": "Turns the ha row into pa."
+      "notes": "Turns the ha row into pa. In JSL the base kana is signed and the hand moves upward.",
+      "movement": {
+        "name": "handakuten",
+        "label": "゜",
+        "description": "the hand moves upward",
+        "image": "images/handshapes/kana/move-up.png"
+      }
+    },
+    {
+      "glyph": "が",
+      "alt": "ガ",
+      "name": "ga",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "ga",
+        "ŋa"
+      ],
+      "handshape": "images/handshapes/kana/304c.png",
+      "example_word": "がっこう",
+      "example_gloss": "school",
+      "example_image": null,
+      "example_emoji": "🏫",
+      "example_ipa": "gakkoː",
+      "signwriting": "M515x534S14020486x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/304c.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぎ",
+      "alt": "ギ",
+      "name": "gi",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "gi",
+        "ŋi"
+      ],
+      "handshape": "images/handshapes/kana/304e.png",
+      "example_word": "ぎんこう",
+      "example_gloss": "bank",
+      "example_image": null,
+      "example_emoji": "🏦",
+      "example_ipa": "giŋkoː",
+      "signwriting": "M515x534S1a320487x486S26606485x518",
+      "signwriting_image": "images/signwriting/kana/304e.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぐ",
+      "alt": "グ",
+      "name": "gu",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "gɯ",
+        "ŋɯ"
+      ],
+      "handshape": "images/handshapes/kana/3050.png",
+      "example_word": "かぐ",
+      "example_gloss": "furniture",
+      "example_image": null,
+      "example_emoji": "🪑",
+      "example_ipa": "kagɯ",
+      "signwriting": "M515x529S15d02486x490S26606485x513",
+      "signwriting_image": "images/signwriting/kana/3050.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "げ",
+      "alt": "ゲ",
+      "name": "ge",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "ge",
+        "ŋe"
+      ],
+      "handshape": "images/handshapes/kana/3052.png",
+      "example_word": "げんき",
+      "example_gloss": "healthy",
+      "example_image": null,
+      "example_emoji": "💪",
+      "example_ipa": "geŋki",
+      "signwriting": "M515x530S14720493x489S26606485x514",
+      "signwriting_image": "images/signwriting/kana/3052.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ご",
+      "alt": "ゴ",
+      "name": "go",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "go",
+        "ŋo"
+      ],
+      "handshape": "images/handshapes/kana/3054.png",
+      "example_word": "ごはん",
+      "example_gloss": "cooked rice",
+      "example_image": null,
+      "example_emoji": "🍚",
+      "example_ipa": "gohaɴ",
+      "signwriting": "M516x527S18010485x493S26606485x511",
+      "signwriting_image": "images/signwriting/kana/3054.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ざ",
+      "alt": "ザ",
+      "name": "za",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "za",
+        "d͡za"
+      ],
+      "handshape": "images/handshapes/kana/3056.png",
+      "example_word": "ざっし",
+      "example_gloss": "magazine",
+      "example_image": null,
+      "example_emoji": "📖",
+      "example_ipa": "zaɕɕi",
+      "signwriting": "M515x527S20320493x493S26606485x511",
+      "signwriting_image": "images/signwriting/kana/3056.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "じ",
+      "alt": "ジ",
+      "name": "ji",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "d͡ʑi",
+        "ʑi"
+      ],
+      "handshape": "images/handshapes/kana/3058.png",
+      "example_word": "じかん",
+      "example_gloss": "time",
+      "example_image": null,
+      "example_emoji": "⏰",
+      "example_ipa": "d͡ʑikaɴ",
+      "signwriting": "M515x531S11e02485x489S26606485x515",
+      "signwriting_image": "images/signwriting/kana/3058.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ず",
+      "alt": "ズ",
+      "name": "zu",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "zɯ",
+        "d͡zɯ"
+      ],
+      "handshape": "images/handshapes/kana/305a.png",
+      "example_word": "みず",
+      "example_gloss": "water",
+      "example_image": null,
+      "example_emoji": "💧",
+      "example_ipa": "mizɯ",
+      "signwriting": "M515x534S11e04489x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/305a.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぜ",
+      "alt": "ゼ",
+      "name": "ze",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "ze",
+        "d͡ze"
+      ],
+      "handshape": "images/handshapes/kana/305c.png",
+      "example_word": "かぜ",
+      "example_gloss": "wind",
+      "example_image": null,
+      "example_emoji": "🌬️",
+      "example_ipa": "kaze",
+      "signwriting": "M515x534S1c620493x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/305c.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぞ",
+      "alt": "ゾ",
+      "name": "zo",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "zo",
+        "d͡zo"
+      ],
+      "handshape": "images/handshapes/kana/305e.png",
+      "example_word": "ぞう",
+      "example_gloss": "elephant",
+      "example_image": null,
+      "example_emoji": "🐘",
+      "example_ipa": "zoː",
+      "signwriting": "M515x534S10040493x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/305e.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "だ",
+      "alt": "ダ",
+      "name": "da",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "da"
+      ],
+      "handshape": "images/handshapes/kana/3060.png",
+      "example_word": "だいがく",
+      "example_gloss": "university",
+      "example_image": null,
+      "example_emoji": "🎓",
+      "example_ipa": "daigakɯ",
+      "signwriting": "M515x527S1f740490x493S26606485x511",
+      "signwriting_image": "images/signwriting/kana/3060.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぢ",
+      "alt": "ヂ",
+      "name": "ji (di)",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "d͡ʑi"
+      ],
+      "handshape": "images/handshapes/kana/3062.png",
+      "example_word": "はなぢ",
+      "example_gloss": "nosebleed",
+      "example_image": null,
+      "example_emoji": "🩸",
+      "example_ipa": "hanad͡ʑi",
+      "signwriting": "M515x530S19620486x490S26606485x514",
+      "signwriting_image": "images/signwriting/kana/3062.png",
+      "aliases": [],
+      "notes": "Said exactly like じ; it survives only inside compounds.",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "づ",
+      "alt": "ヅ",
+      "name": "zu (du)",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "zɯ"
+      ],
+      "handshape": "images/handshapes/kana/3065.png",
+      "example_word": "つづき",
+      "example_gloss": "continuation",
+      "example_image": null,
+      "example_emoji": "➡️",
+      "example_ipa": "t͡sɯzɯki",
+      "signwriting": "M515x532S1b320486x487S26606485x516",
+      "signwriting_image": "images/signwriting/kana/3065.png",
+      "aliases": [],
+      "notes": "Said exactly like ず; it survives only inside compounds.",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "で",
+      "alt": "デ",
+      "name": "de",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "de"
+      ],
+      "handshape": "images/handshapes/kana/3067.png",
+      "example_word": "でんしゃ",
+      "example_gloss": "train",
+      "example_image": null,
+      "example_emoji": "🚃",
+      "example_ipa": "deɴɕa",
+      "signwriting": "M515x535S14c20489x485S26606485x519",
+      "signwriting_image": "images/signwriting/kana/3067.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ど",
+      "alt": "ド",
+      "name": "do",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "do"
+      ],
+      "handshape": "images/handshapes/kana/3069.png",
+      "example_word": "どうぶつ",
+      "example_gloss": "animal",
+      "example_image": null,
+      "example_emoji": "🐾",
+      "example_ipa": "doːbɯt͡sɯ",
+      "signwriting": "M515x534S11500493x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/3069.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ば",
+      "alt": "バ",
+      "name": "ba",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "ba"
+      ],
+      "handshape": "images/handshapes/kana/3070.png",
+      "example_word": "ばら",
+      "example_gloss": "rose",
+      "example_image": null,
+      "example_emoji": "🌹",
+      "example_ipa": "baɾa",
+      "signwriting": "M515x534S11540493x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/3070.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "び",
+      "alt": "ビ",
+      "name": "bi",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "bi"
+      ],
+      "handshape": "images/handshapes/kana/3073.png",
+      "example_word": "びょういん",
+      "example_gloss": "hospital",
+      "example_image": null,
+      "example_emoji": "🏥",
+      "example_ipa": "bʲoːiɴ",
+      "signwriting": "M515x534S10020493x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/3073.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぶ",
+      "alt": "ブ",
+      "name": "bu",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "bɯ"
+      ],
+      "handshape": "images/handshapes/kana/3076.png",
+      "example_word": "ぶた",
+      "example_gloss": "pig",
+      "example_image": null,
+      "example_emoji": "🐷",
+      "example_ipa": "bɯta",
+      "signwriting": "M515x534S1dc04488x485S26606485x518",
+      "signwriting_image": "images/signwriting/kana/3076.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "べ",
+      "alt": "ベ",
+      "name": "be",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "be"
+      ],
+      "handshape": "images/handshapes/kana/3079.png",
+      "example_word": "べんとう",
+      "example_gloss": "lunch box",
+      "example_image": null,
+      "example_emoji": "🍱",
+      "example_ipa": "bentoː",
+      "signwriting": "M515x529S19a04486x490S26606485x513",
+      "signwriting_image": "images/signwriting/kana/3079.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぼ",
+      "alt": "ボ",
+      "name": "bo",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "bo"
+      ],
+      "handshape": "images/handshapes/kana/307c.png",
+      "example_word": "ぼうし",
+      "example_gloss": "hat",
+      "example_image": null,
+      "example_emoji": "🧢",
+      "example_ipa": "boːɕi",
+      "signwriting": "M515x534S18100494x486S26606485x518",
+      "signwriting_image": "images/signwriting/kana/307c.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "dakuten",
+        "label": "゛",
+        "description": "the hand moves to the side",
+        "image": "images/handshapes/kana/move-side.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぱ",
+      "alt": "パ",
+      "name": "pa",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "pa"
+      ],
+      "handshape": "images/handshapes/kana/3071.png",
+      "example_word": "かんぱい",
+      "example_gloss": "cheers",
+      "example_image": null,
+      "example_emoji": "🥂",
+      "example_ipa": "kampai",
+      "signwriting": "M508x549S11540493x485S26600492x518",
+      "signwriting_image": "images/signwriting/kana/3071.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "handakuten",
+        "label": "゜",
+        "description": "the hand moves upward",
+        "image": "images/handshapes/kana/move-up.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぴ",
+      "alt": "ピ",
+      "name": "pi",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "pi"
+      ],
+      "handshape": "images/handshapes/kana/3074.png",
+      "example_word": "ぴかぴか",
+      "example_gloss": "sparkling",
+      "example_image": null,
+      "example_emoji": "✨",
+      "example_ipa": "pikapika",
+      "signwriting": "M508x549S10020493x485S26600492x518",
+      "signwriting_image": "images/signwriting/kana/3074.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "handakuten",
+        "label": "゜",
+        "description": "the hand moves upward",
+        "image": "images/handshapes/kana/move-up.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぷ",
+      "alt": "プ",
+      "name": "pu",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "pɯ"
+      ],
+      "handshape": "images/handshapes/kana/3077.png",
+      "example_word": "てんぷら",
+      "example_gloss": "tempura",
+      "example_image": null,
+      "example_emoji": "🍤",
+      "example_ipa": "tempɯɾa",
+      "signwriting": "M512x549S1dc04488x485S26600492x518",
+      "signwriting_image": "images/signwriting/kana/3077.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "handakuten",
+        "label": "゜",
+        "description": "the hand moves upward",
+        "image": "images/handshapes/kana/move-up.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぺ",
+      "alt": "ペ",
+      "name": "pe",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "pe"
+      ],
+      "handshape": "images/handshapes/kana/307a.png",
+      "example_word": "かんぺき",
+      "example_gloss": "perfect",
+      "example_image": null,
+      "example_emoji": "💯",
+      "example_ipa": "kampeki",
+      "signwriting": "M515x544S19a04486x490S26600492x513",
+      "signwriting_image": "images/signwriting/kana/307a.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "handakuten",
+        "label": "゜",
+        "description": "the hand moves upward",
+        "image": "images/handshapes/kana/move-up.png"
+      },
+      "hidden": true
+    },
+    {
+      "glyph": "ぽ",
+      "alt": "ポ",
+      "name": "po",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Voiced kana",
+      "romanization": null,
+      "ipa": [
+        "po"
+      ],
+      "handshape": "images/handshapes/kana/307d.png",
+      "example_word": "さんぽ",
+      "example_gloss": "a walk",
+      "example_image": null,
+      "example_emoji": "🚶",
+      "example_ipa": "sampo",
+      "signwriting": "M508x549S18100494x486S26600492x518",
+      "signwriting_image": "images/signwriting/kana/307d.png",
+      "aliases": [],
+      "notes": "",
+      "movement": {
+        "name": "handakuten",
+        "label": "゜",
+        "description": "the hand moves upward",
+        "image": "images/handshapes/kana/move-up.png"
+      },
+      "hidden": true
     }
   ]
 }

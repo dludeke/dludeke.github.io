@@ -342,6 +342,7 @@
   "section_cols": {
     "Labiovelars": 5
   },
+  "movement_in_handshape": false,
   "links": [
     {
       "label": "Ge'ez script",
@@ -574,7 +575,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -603,7 +604,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -632,7 +633,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -661,7 +662,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -690,7 +691,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -719,7 +720,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -770,7 +771,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -799,7 +800,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -828,7 +829,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -857,7 +858,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -886,7 +887,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -915,7 +916,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -966,7 +967,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -995,7 +996,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -1024,7 +1025,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -1053,7 +1054,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -1082,7 +1083,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -1111,7 +1112,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -1162,7 +1163,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -1191,7 +1192,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -1220,7 +1221,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -1249,7 +1250,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -1278,7 +1279,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -1307,7 +1308,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -1358,7 +1359,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -1387,7 +1388,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -1416,7 +1417,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -1445,7 +1446,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -1474,7 +1475,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -1503,7 +1504,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -1554,7 +1555,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -1583,7 +1584,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -1612,7 +1613,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -1641,7 +1642,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -1670,7 +1671,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -1699,7 +1700,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -1750,7 +1751,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -1779,7 +1780,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -1808,7 +1809,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -1837,7 +1838,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -1866,7 +1867,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -1895,7 +1896,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -1946,7 +1947,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -1975,7 +1976,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -2004,7 +2005,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -2033,7 +2034,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -2062,7 +2063,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -2091,7 +2092,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -2142,7 +2143,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -2171,7 +2172,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -2200,7 +2201,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -2229,7 +2230,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -2258,7 +2259,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -2287,7 +2288,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -2338,7 +2339,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -2367,7 +2368,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -2396,7 +2397,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -2425,7 +2426,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -2454,7 +2455,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -2483,7 +2484,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -2688,7 +2689,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -2717,7 +2718,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -2746,7 +2747,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -2775,7 +2776,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -2804,7 +2805,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -2833,7 +2834,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -2884,7 +2885,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -2913,7 +2914,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -2942,7 +2943,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -2971,7 +2972,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -3000,7 +3001,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -3029,7 +3030,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -3080,7 +3081,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -3109,7 +3110,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -3138,7 +3139,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -3167,7 +3168,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -3196,7 +3197,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -3225,7 +3226,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -3276,7 +3277,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -3305,7 +3306,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -3334,7 +3335,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -3363,7 +3364,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -3392,7 +3393,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -3421,7 +3422,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -3472,7 +3473,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -3501,7 +3502,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -3530,7 +3531,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -3559,7 +3560,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -3588,7 +3589,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -3617,7 +3618,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -3668,7 +3669,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -3697,7 +3698,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -3726,7 +3727,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -3755,7 +3756,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -3784,7 +3785,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -3813,7 +3814,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -3864,7 +3865,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -3893,7 +3894,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -3922,7 +3923,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -3951,7 +3952,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -3980,7 +3981,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -4009,7 +4010,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -4060,7 +4061,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -4089,7 +4090,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -4118,7 +4119,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -4147,7 +4148,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -4176,7 +4177,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -4205,7 +4206,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -4256,7 +4257,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -4285,7 +4286,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -4314,7 +4315,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -4343,7 +4344,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -4372,7 +4373,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -4401,7 +4402,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -4452,7 +4453,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -4481,7 +4482,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -4510,7 +4511,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -4539,7 +4540,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -4568,7 +4569,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -4597,7 +4598,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -4648,7 +4649,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -4677,7 +4678,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -4706,7 +4707,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -4735,7 +4736,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -4764,7 +4765,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -4793,7 +4794,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -4844,7 +4845,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -4873,7 +4874,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -4902,7 +4903,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -4931,7 +4932,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -4960,7 +4961,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -4989,7 +4990,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -5040,7 +5041,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -5069,7 +5070,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -5098,7 +5099,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -5127,7 +5128,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -5156,7 +5157,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -5185,7 +5186,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -5236,7 +5237,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -5265,7 +5266,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -5294,7 +5295,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -5323,7 +5324,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -5352,7 +5353,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -5381,7 +5382,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -5432,7 +5433,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -5461,7 +5462,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -5490,7 +5491,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -5519,7 +5520,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -5548,7 +5549,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -5577,7 +5578,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -5628,7 +5629,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -5657,7 +5658,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -5686,7 +5687,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -5715,7 +5716,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -5744,7 +5745,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -5773,7 +5774,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -5824,7 +5825,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -5853,7 +5854,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -5882,7 +5883,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -5911,7 +5912,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -5940,7 +5941,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -5969,7 +5970,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -6020,7 +6021,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -6049,7 +6050,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -6078,7 +6079,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -6107,7 +6108,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -6136,7 +6137,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -6165,7 +6166,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -6216,7 +6217,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -6245,7 +6246,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -6274,7 +6275,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -6303,7 +6304,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -6332,7 +6333,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -6361,7 +6362,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -6412,7 +6413,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -6441,7 +6442,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -6470,7 +6471,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -6499,7 +6500,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -6528,7 +6529,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -6557,7 +6558,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -6608,7 +6609,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -6637,7 +6638,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -6666,7 +6667,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -6695,7 +6696,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -6724,7 +6725,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -6753,7 +6754,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -6804,7 +6805,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -6833,7 +6834,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -6862,7 +6863,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -6891,7 +6892,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -6920,7 +6921,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -6949,7 +6950,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
@@ -7000,7 +7001,7 @@
       "movement": {
         "order": 2,
         "name": "kaʽeb",
-        "amharic": "ካዕብ",
+        "label": "ካዕብ",
         "description": "an arc to the left",
         "image": "images/handshapes/geez/move-2.png"
       }
@@ -7029,7 +7030,7 @@
       "movement": {
         "order": 3,
         "name": "salis",
-        "amharic": "ሣልስ",
+        "label": "ሣልስ",
         "description": "straight to the right",
         "image": "images/handshapes/geez/move-3.png"
       }
@@ -7058,7 +7059,7 @@
       "movement": {
         "order": 4,
         "name": "rabʽe",
-        "amharic": "ራብዕ",
+        "label": "ራብዕ",
         "description": "straight down",
         "image": "images/handshapes/geez/move-4.png"
       }
@@ -7087,7 +7088,7 @@
       "movement": {
         "order": 5,
         "name": "hames",
-        "amharic": "ኃምስ",
+        "label": "ኃምስ",
         "description": "up and hooking over",
         "image": "images/handshapes/geez/move-5.png"
       }
@@ -7116,7 +7117,7 @@
       "movement": {
         "order": 6,
         "name": "sadis",
-        "amharic": "ሳድስ",
+        "label": "ሳድስ",
         "description": "down, with a shake",
         "image": "images/handshapes/geez/move-6.png"
       }
@@ -7145,7 +7146,7 @@
       "movement": {
         "order": 7,
         "name": "sabʽe",
-        "amharic": "ሳብዕ",
+        "label": "ሳብዕ",
         "description": "a loop",
         "image": "images/handshapes/geez/move-7.png"
       }
