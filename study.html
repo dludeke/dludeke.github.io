@@ -271,6 +271,13 @@
     }
     .answer-shapes .sh img { max-height: 62px; max-width: 80px; border-radius: 4px; }
     .answer-shapes .sh img.sw { max-height: 46px; }
+    /* as the question rather than the answer key, where it is the thing
+       being read, so it wants the room */
+    .answer-shapes.asking { margin: 0 0 1.5rem; }
+    .answer-shapes.asking .strip { gap: 0.7rem; }
+    .answer-shapes.asking .sh img { max-height: 108px; max-width: 108px; }
+    .answer-shapes.asking .sh img.sw { max-height: 96px; }
+    .answer-shapes.asking .sh .mv { max-height: 26px; max-width: 60px; }
     .answer-shapes .sh .mv { max-height: 15px; max-width: 42px; opacity: 0.75; }
     .answer-shapes .sh .ch {
       font-size: 1.1rem;
@@ -518,9 +525,6 @@
 
         <div class="quiz-card">
           <div class="question" id="question"></div>
-          <div id="questionImage" style="display: none; text-align: center; margin: 1rem 0;">
-            <img id="questionImg" src="" alt="Handshape" style="max-width: 300px; height: auto;" />
-          </div>
           <div id="answerImageContainer" style="display: none; text-align: center; margin: 1rem 0;">
             <div id="answerImages" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;"></div>
           </div>
@@ -993,7 +997,6 @@
     let wordList = [];
     let allWords = [];
     let scriptMapping = {};
-    let signLanguageMapping = {};
     // The same per-letter data the Reference page uses. The quiz's own
     // mapping files only ever covered Greek; this covers every script that
     // has handshapes at all, which is now all ten in the drill.
@@ -1016,21 +1019,21 @@
     // keyboard stays hidden and the sign tabs stay greyed out.
     // Reference-page order, minus Latin and pinyin, which have no drill here.
     const LANGS = [
-      ['greek',      'Greek',      'GSL', ['lowercase','uppercase'], 'greek-mapping.json', 'gsl-handshapes-mapping.json'],
-      ['cyrillic',   'Russian',    'RSL', ['letters'], null, null],
-      ['hangul',     'Korean',     'KSL', ['letters'], null, null],
-      ['geez',       'Amharic',    'EthSL',['letters'], null, null],
-      ['devanagari', 'Hindi',      'ISL', ['letters'], null, null],
-      ['kana',       'Japanese',   'JSL', ['hiragana','katakana'],   'kana-mapping.json',  null],
-      ['thai',       'Thai',       'TSL', ['letters'], null, null],
-      ['arabic',     'Arabic',     'ArSL',['letters'], null, null],
-      ['hebrew',     'Hebrew',     'ISL', ['letters'], null, null],
-      ['farsi',      'Persian',    'PSL', ['letters'], null, null]
+      ['greek',      'Greek',      'GSL', ['lowercase','uppercase'], 'greek-mapping.json'],
+      ['cyrillic',   'Russian',    'RSL', ['letters'], null],
+      ['hangul',     'Korean',     'KSL', ['letters'], null],
+      ['geez',       'Amharic',    'EthSL',['letters'], null],
+      ['devanagari', 'Hindi',      'ISL', ['letters'], null],
+      ['kana',       'Japanese',   'JSL', ['hiragana','katakana'],   'kana-mapping.json'],
+      ['thai',       'Thai',       'TSL', ['letters'], null],
+      ['arabic',     'Arabic',     'ArSL',['letters'], null],
+      ['hebrew',     'Hebrew',     'ISL', ['letters'], null],
+      ['farsi',      'Persian',    'PSL', ['letters'], null]
     ];
 
     const languageConfig = {};
     const langBar = document.querySelector('#panel-quiz .language-selector');
-    LANGS.forEach(([slug, name, sl, scripts, mapping, signs]) => {
+    LANGS.forEach(([slug, name, sl, scripts, mapping]) => {
       const b = document.createElement('button');
       b.className = 'language-btn' + (slug === 'kana' ? ' active' : '');
       b.dataset.language = slug;
@@ -1040,7 +1043,6 @@
         name, scripts,
         wordFile: `assets/data/words/${slug}.json`,
         mappingFile: mapping,
-        signLanguageFile: signs,
         wordKey: 'word',
         modeLabels: [`${name} \u2192 Latin`, `Latin \u2192 ${name}`,
                      `${sl} \u2192 ${name}`, `${name} \u2192 ${sl}`],
@@ -1064,13 +1066,7 @@
           config.mappingFile ? fetch(config.mappingFile) : Promise.resolve(null)
         ];
 
-        // Add sign language fetch if available
-        if (config.signLanguageFile) {
-          fetchPromises.push(fetch(config.signLanguageFile));
-        }
-
-        const responses = await Promise.all(fetchPromises);
-        const [wordsResponse, mappingResponse, signLanguageResponse] = responses;
+        const [wordsResponse, mappingResponse] = await Promise.all(fetchPromises);
 
         if (!wordsResponse.ok) {
           throw new Error(`Failed to fetch ${config.wordFile}: ${wordsResponse.status}`);
@@ -1092,13 +1088,6 @@
           // the strip just stays hidden
         }
         scriptMapping = mappingResponse ? await mappingResponse.json() : {};
-
-        // Load sign language mapping if available
-        if (signLanguageResponse && signLanguageResponse.ok) {
-          signLanguageMapping = await signLanguageResponse.json();
-        } else {
-          signLanguageMapping = {};
-        }
 
         currentKeyboardScript = config.scripts[0];
         buildCategoryFilters();
@@ -1125,27 +1114,46 @@
       }
     }
 
+    // Reading a fingerspelled word only works when every letter of it can be
+    // shown, so that drill needs a decent number of words it can ask about.
+    const SIGN_READING_MINIMUM = 5;
+
     function updateModeTabs() {
       const config = languageConfig[currentLanguage];
       const tabs = document.querySelectorAll('.tab');
+      const canSign = !!quizScript &&
+        quizScript.letters.some(L => L.handshape || L.signwriting_image);
+      const readable = canSign ? allWords.filter(signableWord).length : 0;
 
       tabs.forEach((tab, index) => {
-        if (index < config.modes.length) {
-          tab.style.display = 'inline-block';
-          // Disable sign language modes if mapping not available
-          if ((config.modes[index] === 'sign-to-script' || config.modes[index] === 'script-to-sign') && !config.signLanguageFile) {
-            tab.style.opacity = '0.5';
-            tab.style.cursor = 'not-allowed';
-            tab.disabled = true;
-          } else {
-            tab.style.opacity = '1';
-            tab.style.cursor = 'pointer';
-            tab.disabled = false;
-          }
-        } else {
+        const mode = config.modes[index];
+        if (index >= config.modes.length) {
           tab.style.display = 'none';
+          return;
         }
+        tab.style.display = 'inline-block';
+        let why = '';
+        if (mode === 'script-to-sign' && !canSign) {
+          why = `No manual alphabet for ${config.name} here yet.`;
+        } else if (mode === 'sign-to-script' && readable < SIGN_READING_MINIMUM) {
+          why = canSign
+            ? `Only ${readable} of ${allWords.length} words can be spelled in `
+              + `full, so there is not enough here to read from.`
+            : `No manual alphabet for ${config.name} here yet.`;
+        }
+        tab.disabled = !!why;
+        tab.title = why;
+        tab.style.opacity = why ? '0.5' : '1';
+        tab.style.cursor = why ? 'not-allowed' : 'pointer';
       });
+
+      // A mode can stop being available when the language changes
+      const active = document.querySelector('.tab.active');
+      if (active && active.disabled) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tabs[0].classList.add('active');
+        currentMode = config.modes[0];
+      }
     }
 
     function buildCategoryFilters() {
@@ -1213,6 +1221,9 @@
         if (!word.categories || word.categories.length === 0) {
           return false;
         }
+        if (currentMode === 'sign-to-script' && !signableWord(word)) {
+          return false;
+        }
         return word.categories.some(cat => selectedCategories.has(cat));
       });
 
@@ -1263,8 +1274,6 @@
       const answerEl = document.getElementById('answer');
       const feedbackEl = document.getElementById('feedback');
       const correctAnswerEl = document.getElementById('correctAnswer');
-      const questionImageDiv = document.getElementById('questionImage');
-      const questionImg = document.getElementById('questionImg');
       const revealButton = document.getElementById('revealButton');
       const answerImageContainer = document.getElementById('answerImageContainer');
       const answerImages = document.getElementById('answerImages');
@@ -1275,10 +1284,9 @@
       feedbackEl.textContent = '';
       correctAnswerEl.textContent = '';
       hintEl.textContent = '';
-      questionImageDiv.style.display = 'none';
-      questionImg.src = '';
       answerImageContainer.style.display = 'none';
       answerImages.innerHTML = '';
+      answerImages.className = '';
       revealButton.style.display = 'none';
       const shapes = document.getElementById('answerShapes');
       shapes.className = 'answer-shapes';
@@ -1312,34 +1320,22 @@
           answerEl.focus();
           break;
 
-        case 'sign-to-script':
-          // Show handshapes for each letter in word, answer with script
-          if (signLanguageMapping.handshapes) {
+        case 'sign-to-script': {
+          // Read the fingerspelling and type the word. Unlabelled: the letter
+          // under each hand is what is being asked for.
+          const cells = quizCells(currentCard[scriptKey]);
+          if (cells.length) {
             questionEl.style.display = 'none';
-            const greekWord = currentCard[scriptKey];
-            const handshapeImgs = getHandshapesForWord(greekWord);
-
-            if (handshapeImgs.length > 0) {
-              // Create a container for multiple handshapes
-              answerImages.innerHTML = '';
-              handshapeImgs.forEach(imgSrc => {
-                const img = document.createElement('img');
-                img.src = imgSrc;
-                img.alt = 'Handshape';
-                img.style.maxWidth = '150px';
-                img.style.height = 'auto';
-                answerImages.appendChild(img);
-              });
-              answerImageContainer.style.display = 'block';
-              answerEl.style.display = 'block';
-              // Show keyboard for Greek language
-              if (currentLanguage === 'greek') {
-                document.getElementById('kanaKeyboard').classList.add('visible');
-              }
-              answerEl.focus();
-            }
+            answerImages.innerHTML = '';
+            answerImages.className = 'answer-shapes on asking';
+            answerImages.innerHTML = shapeStrip(cells, false);
+            answerImageContainer.style.display = 'block';
+            answerEl.style.display = 'block';
+            document.getElementById('kanaKeyboard').classList.add('visible');
+            answerEl.focus();
           }
           break;
+        }
 
         case 'script-to-sign':
           // Show script, reveal handshapes
@@ -1380,80 +1376,52 @@
       const host = document.getElementById('answerShapes');
       host.className = 'answer-shapes';
       host.innerHTML = '';
-      const letters = quizSpell(word);
-      if (!quizScript || !letters.length) return;
-
-      // Russian has no manual-alphabet photographs at all: the RSL chart is
-      // drawn in SignWriting, so that is what its letters carry. Falling back
-      // to it is the difference between a row of signs and a row of blanks.
-      const shapeOf = L => L && (L.handshape ||
-        (L.handshape_variants && Object.values(L.handshape_variants)[0]));
-      const anyOf = L => shapeOf(L) || (L && L.signwriting_image) || null;
-      const cells = letters.map(ch => {
-        const L = quizLook(ch);
-        const hand = shapeOf(L), pic = anyOf(L);
-        const what = (L && L.name ? L.name : ch) + (hand ? '' : pic ? ' \u2014 SignWriting' : '');
-        const mv = showMove(quizScript, L, hand)
-          ? `<img class="mv" src="${L.movement.image}" alt="${L.movement.description}" />` : '';
-        return `<div class="sh" title="${what}">${pic
-          ? `<img class="${hand ? '' : 'sw'}" src="${pic}" alt="sign for ${ch}" />`
-          : '<span class="none">no<br>handshape</span>'}${mv}
-          <span class="ch">${L && L.display_glyph ? L.display_glyph : ch}</span></div>`;
-      });
-      const missing = letters.filter(ch => !anyOf(quizLook(ch))).length;
-      host.innerHTML =
-        `<span class="k">Fingerspelled</span>
-         <div class="strip">${cells.join('')}</div>` +
-        (missing ? `<p class="miss">${missing} of ${letters.length} ${
+      if (!quizScript) return;
+      const cells = quizCells(word);
+      if (!cells.length) return;
+      const missing = cells.filter(c => !c.pic).length;
+      host.innerHTML = '<span class="k">Fingerspelled</span>' + shapeStrip(cells, true) +
+        (missing ? `<p class="miss">${missing} of ${cells.length} ${
           missing === 1 ? 'letter has' : 'letters have'
         } no sign in this alphabet yet.</p>` : '');
       host.classList.add('on');
     }
 
-    function findHandshapeForLetter(romaji) {
-      if (!signLanguageMapping.handshapes) return null;
-      const letterName = romaji.toLowerCase();
-      return signLanguageMapping.handshapes[letterName] || null;
+    /** One cell per fingerspelled letter: the picture, and the movement
+     *  arrow where the picture does not already contain it. */
+    function quizCells(word) {
+      return quizSpell(word).map(ch => {
+        const L = quizLook(ch);
+        const hand = L && (L.handshape ||
+          (L.handshape_variants && Object.values(L.handshape_variants)[0]));
+        // Russian has no manual-alphabet photographs: the RSL chart is drawn
+        // in SignWriting, so that is what its letters carry.
+        const pic = hand || (L && L.signwriting_image) || null;
+        return { ch, L, hand, pic,
+                 mv: showMove(quizScript, L, hand) ? L.movement : null };
+      });
     }
 
-    function getHandshapesForWord(greekWord) {
-      // Convert Greek word to array of letter names and get handshape images
-      const handshapeImages = [];
-
-      for (let char of greekWord) {
-        // Map Greek letter to its romanized name
-        const letterName = greekLetterToRomanName(char);
-        if (letterName) {
-          const handshape = signLanguageMapping.handshapes[letterName];
-          if (handshape && handshape.image) {
-            handshapeImages.push(handshape.image);
-          }
-        }
-      }
-
-      return handshapeImages;
+    /** @param labelled  false for the drill that asks you to read the
+     *  fingerspelling, where the letter under the hand would be the answer.
+     *  The title and alt text are blanked there for the same reason. */
+    function shapeStrip(cells, labelled) {
+      return `<div class="strip">${cells.map(c => {
+        const name = (c.L && c.L.name) || c.ch;
+        const what = c.hand ? name : c.pic ? name + ' \u2014 SignWriting' : name;
+        return `<div class="sh"${labelled ? ` title="${what}"` : ''}>${c.pic
+          ? `<img class="${c.hand ? '' : 'sw'}" src="${c.pic}" alt="${
+              labelled ? 'sign for ' + c.ch : 'a fingerspelled letter'}" />`
+          : '<span class="none">no<br>handshape</span>'}${c.mv
+          ? `<img class="mv" src="${c.mv.image}" alt="${c.mv.description}" />` : ''}${
+          labelled ? `<span class="ch">${(c.L && c.L.display_glyph) || c.ch}</span>` : ''}</div>`;
+      }).join('')}</div>`;
     }
 
-    function greekLetterToRomanName(greekChar) {
-      // Map Greek letters (uppercase) to their romanized names
-      const greekToRoman = {
-        'Α': 'alpha', 'Β': 'beta', 'Γ': 'gamma', 'Δ': 'delta',
-        'Ε': 'epsilon', 'Ζ': 'zeta', 'Η': 'eta', 'Θ': 'theta',
-        'Ι': 'iota', 'Κ': 'kappa', 'Λ': 'lambda', 'Μ': 'mu',
-        'Ν': 'nu', 'Ξ': 'xi', 'Ο': 'omicron', 'Π': 'pi',
-        'Ρ': 'rho', 'Σ': 'sigma', 'Τ': 'tau', 'Υ': 'upsilon',
-        'Φ': 'phi', 'Χ': 'chi', 'Ψ': 'psi', 'Ω': 'omega',
-        // Lowercase versions
-        'α': 'alpha', 'β': 'beta', 'γ': 'gamma', 'δ': 'delta',
-        'ε': 'epsilon', 'ζ': 'zeta', 'η': 'eta', 'θ': 'theta',
-        'ι': 'iota', 'κ': 'kappa', 'λ': 'lambda', 'μ': 'mu',
-        'ν': 'nu', 'ξ': 'xi', 'ο': 'omicron', 'π': 'pi',
-        'ρ': 'rho', 'σ': 'sigma', 'ς': 'sigma', 'τ': 'tau',
-        'υ': 'upsilon', 'φ': 'phi', 'χ': 'chi', 'ψ': 'psi', 'ω': 'omega'
-      };
-
-      return greekToRoman[greekChar] || null;
-    }
+    const signableWord = w => {
+      const cells = quizCells(w && w.word);
+      return cells.length > 0 && cells.every(c => c.pic);
+    };
 
     function buildScriptKeyboard() {
       const hasKeyboard = !!languageConfig[currentLanguage].mappingFile;
@@ -1585,9 +1553,16 @@
 
         // Only update if mode actually changed
         if (newMode !== currentMode) {
+          const wasReading = currentMode === 'sign-to-script';
           document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
           button.classList.add('active');
           currentMode = newMode;
+          // the reading drill holds a smaller deck, so crossing into or out
+          // of it has to rebuild the queue
+          if (wasReading !== (newMode === 'sign-to-script')) {
+            filterWordsByCategory();
+            initializeQueue();
+          }
           showNextCard();
         }
       });
@@ -1637,31 +1612,11 @@
 
     // Reveal button for sign language mode
     function revealHandshapes() {
-      if (currentMode === 'script-to-sign') {
-        const config = languageConfig[currentLanguage];
-        const scriptKey = config.wordKey;
-        const greekWord = currentCard[scriptKey];
-        const handshapeImgs = getHandshapesForWord(greekWord);
-
-        if (handshapeImgs.length > 0) {
-          const answerImages = document.getElementById('answerImages');
-          const answerImageContainer = document.getElementById('answerImageContainer');
-
-          answerImages.innerHTML = '';
-          handshapeImgs.forEach(imgSrc => {
-            const img = document.createElement('img');
-            img.src = imgSrc;
-            img.alt = 'Handshape';
-            img.style.maxWidth = '150px';
-            img.style.height = 'auto';
-            answerImages.appendChild(img);
-          });
-
-          answerImageContainer.style.display = 'block';
-          document.getElementById('revealButton').style.display = 'none';
-          document.getElementById('difficultyButtons').style.display = 'flex';
-        }
-      }
+      if (currentMode !== 'script-to-sign') return;
+      const config = languageConfig[currentLanguage];
+      showAnswerShapes(currentCard[config.wordKey]);
+      document.getElementById('revealButton').style.display = 'none';
+      document.getElementById('difficultyButtons').style.display = 'flex';
     }
 
     document.getElementById('revealButton').addEventListener('click', revealHandshapes);
