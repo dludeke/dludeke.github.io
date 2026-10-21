@@ -763,7 +763,7 @@
       "ipa": [
         "ˀk"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3132.png",
       "example_word": "꽃",
       "example_gloss": "flower",
       "example_image": null,
@@ -785,7 +785,7 @@
       "ipa": [
         "ˀt"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3138.png",
       "example_word": "딸",
       "example_gloss": "daughter",
       "example_image": null,
@@ -807,7 +807,7 @@
       "ipa": [
         "ˀp"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3143.png",
       "example_word": "빵",
       "example_gloss": "bread",
       "example_image": null,
@@ -851,7 +851,7 @@
       "ipa": [
         "ˀt͡ɕ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3149.png",
       "example_word": "찌개",
       "example_gloss": "stew",
       "example_image": null,
@@ -961,7 +961,7 @@
       "ipa": [
         "wa"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3158.png",
       "example_word": "과일",
       "example_gloss": "fruit",
       "example_image": null,
@@ -983,7 +983,7 @@
       "ipa": [
         "wɛ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3159.png",
       "example_word": "왜",
       "example_gloss": "why",
       "example_image": null,
@@ -1028,7 +1028,7 @@
       "ipa": [
         "wʌ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/315d.png",
       "example_word": "원",
       "example_gloss": "won",
       "example_image": null,
@@ -1050,7 +1050,7 @@
       "ipa": [
         "we"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/315e.png",
       "example_word": "궤도",
       "example_gloss": "orbit",
       "example_image": null,
@@ -1116,7 +1116,7 @@
       "ipa": [
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3133.png",
       "example_word": "몫",
       "example_gloss": "share",
       "example_image": null,
@@ -1138,7 +1138,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3135.png",
       "example_word": "앉다",
       "example_gloss": "to sit",
       "example_image": null,
@@ -1160,7 +1160,7 @@
       "ipa": [
         "n"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3136.png",
       "example_word": "많다",
       "example_gloss": "to be many",
       "example_image": null,
@@ -1182,7 +1182,7 @@
       "ipa": [
         "k̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/313a.png",
       "example_word": "닭",
       "example_gloss": "chicken",
       "example_image": null,
@@ -1204,7 +1204,7 @@
       "ipa": [
         "m"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/313b.png",
       "example_word": "삶",
       "example_gloss": "life",
       "example_image": null,
@@ -1226,7 +1226,7 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/313c.png",
       "example_word": "넓다",
       "example_gloss": "to be wide",
       "example_image": null,
@@ -1248,7 +1248,7 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/313d.png",
       "example_word": null,
       "example_gloss": null,
       "example_image": null,
@@ -1270,7 +1270,7 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/313e.png",
       "example_word": "핥다",
       "example_gloss": "to lick",
       "example_image": null,
@@ -1292,7 +1292,7 @@
       "ipa": [
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/313f.png",
       "example_word": "읊다",
       "example_gloss": "to recite",
       "example_image": null,
@@ -1314,7 +1314,7 @@
       "ipa": [
         "l"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3140.png",
       "example_word": "싫다",
       "example_gloss": "to dislike",
       "example_image": null,
@@ -1336,7 +1336,7 @@
       "ipa": [
         "p̚"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/hangul/3144.png",
       "example_word": "값",
       "example_gloss": "price",
       "example_image": null,

@@ -358,6 +358,46 @@ KSL_BLOCKS = [
 KSL_BOXES = {"\u3146": (342, 714, 486, 822)}
 
 
+# Every Korean jamo written out of two others. The chart has a shape of its
+# own for ㅆ, ㅚ, ㅟ and ㅢ, so those are not here; the rest are spelled by
+# signing their parts in order, and are drawn as the two hands side by side.
+HANGUL_PARTS = {
+    "ㄲ": "ㄱㄱ", "ㄸ": "ㄷㄷ", "ㅃ": "ㅂㅂ", "ㅉ": "ㅈㅈ",
+    "ㅘ": "ㅗㅏ", "ㅙ": "ㅗㅐ", "ㅝ": "ㅜㅓ", "ㅞ": "ㅜㅔ",
+    "ㄳ": "ㄱㅅ", "ㄵ": "ㄴㅈ", "ㄶ": "ㄴㅎ",
+    "ㄺ": "ㄹㄱ", "ㄻ": "ㄹㅁ", "ㄼ": "ㄹㅂ",
+    "ㄽ": "ㄹㅅ", "ㄾ": "ㄹㅌ", "ㄿ": "ㄹㅍ",
+    "ㅀ": "ㄹㅎ", "ㅄ": "ㅂㅅ",
+}
+HANGUL_PART_GAP = 10
+
+
+def compose_hangul(mapping, verbose=True):
+    """Draw a two-part jamo as its two component hands, left to right."""
+    out = {}
+    for glyph, parts in sorted(HANGUL_PARTS.items()):
+        srcs = [mapping.get(p) for p in parts]
+        if not all(srcs):
+            continue
+        ims = [Image.open(os.path.join(HERE, p)).convert("RGB") for p in srcs]
+        h = max(i.height for i in ims)
+        ims = [i if i.height == h else
+               i.resize((round(i.width * h / i.height), h), Image.Resampling.LANCZOS)
+               for i in ims]
+        w = sum(i.width for i in ims) + HANGUL_PART_GAP * (len(ims) - 1)
+        sheet = Image.new("RGB", (w, h), (255, 255, 255))
+        x = 0
+        for i in ims:
+            sheet.paste(i, (x, 0))
+            x += i.width + HANGUL_PART_GAP
+        rel = f"images/handshapes/hangul/{ord(glyph):04x}.png"
+        sheet.save(os.path.join(HERE, rel))
+        out[glyph] = rel
+    if verbose:
+        print(f"  hangul: {len(out)} two-part jamo drawn from their components")
+    return out
+
+
 def trim_white(cell, limit=238):
     """Trim a near-white margin, leaving the photograph itself alone.
 
@@ -763,6 +803,7 @@ def main(argv):
     if "hangul" in wanted:
         m = slice_ksl()
         if m:
+            m.update(compose_hangul(m))
             total += apply_to_data("hangul", {"field": "handshape"}, m)
             print("    wrote paths into hangul.json (handshape)")
         wanted = [w for w in wanted if w != "hangul"]
