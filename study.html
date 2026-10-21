@@ -256,6 +256,33 @@
       font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic",
                    "Noto Sans Hebrew", "Noto Sans", system-ui, sans-serif;
     }
+    .answer-shapes { display: none; margin: 1.25rem 0 0.25rem; }
+    .answer-shapes.on { display: block; }
+    .answer-shapes .k {
+      color: #96a0a8; font-size: 0.7rem; text-transform: uppercase;
+      letter-spacing: 0.09em; display: block; margin-bottom: 0.5rem;
+    }
+    .answer-shapes .strip {
+      display: flex; flex-wrap: wrap; gap: 0.55rem; justify-content: center;
+    }
+    .answer-shapes .sh {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 0.2rem; min-width: 46px;
+    }
+    .answer-shapes .sh img { max-height: 62px; max-width: 80px; border-radius: 4px; }
+    .answer-shapes .sh img.sw { max-height: 46px; }
+    .answer-shapes .sh .mv { max-height: 15px; max-width: 42px; opacity: 0.75; }
+    .answer-shapes .sh .ch {
+      font-size: 1.1rem;
+      font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic",
+                   "Noto Sans Hebrew", "Noto Sans", system-ui, sans-serif;
+    }
+    .answer-shapes .sh .none {
+      color: #c3c9cf; font-size: 0.68rem; border: 1px dashed #d8dde2;
+      border-radius: 4px; padding: 0.9rem 0.4rem;
+    }
+    .answer-shapes .miss { color: #96a0a8; font-size: 0.78rem; margin-top: 0.5rem; }
+
     .vowel-hint {
       background: #fff;
       border: 1px solid #ccd3d9;
@@ -508,6 +535,9 @@
           </div>
           <div class="feedback" id="feedback"></div>
           <div class="correct-answer" id="correctAnswer"></div>
+          <!-- The word fingerspelled, shown once an answer is in, so that
+               typing it and signing it can be checked in the same pass. -->
+          <div class="answer-shapes" id="answerShapes"></div>
           <div class="difficulty-buttons" id="difficultyButtons" style="display: none;">
             <button class="difficulty-btn btn-again" data-difficulty="again">Again</button>
             <button class="difficulty-btn btn-hard" data-difficulty="hard">Hard</button>
@@ -964,6 +994,10 @@
     let allWords = [];
     let scriptMapping = {};
     let signLanguageMapping = {};
+    // The same per-letter data the Reference page uses. The quiz's own
+    // mapping files only ever covered Greek; this covers every script that
+    // has handshapes at all, which is now all ten in the drill.
+    let quizScript = null;
     let currentLanguage = 'kana';
     let currentMode = 'script-to-romaji';
     let currentCard = null;
@@ -1047,6 +1081,16 @@
 
         const wordsData = await wordsResponse.json();
         allWords = wordsData.words;
+
+        quizScript = null;
+        try {
+          const sd = await (await fetch(`assets/data/scripts/${currentLanguage}.json`,
+            { cache: 'no-cache' })).json();
+          sd.index = pgIndex(sd);
+          quizScript = sd;
+        } catch (e) {
+          // the strip just stays hidden
+        }
         scriptMapping = mappingResponse ? await mappingResponse.json() : {};
 
         // Load sign language mapping if available
@@ -1236,6 +1280,9 @@
       answerImageContainer.style.display = 'none';
       answerImages.innerHTML = '';
       revealButton.style.display = 'none';
+      const shapes = document.getElementById('answerShapes');
+      shapes.className = 'answer-shapes';
+      shapes.innerHTML = '';
       const vowelHint = document.getElementById('vowelHint');
       vowelHint.style.display = 'none';
       vowelHint.disabled = false;
@@ -1304,6 +1351,63 @@
       }
 
       updateQueueCount();
+    }
+
+    /** The letters of a word, in the order they are fingerspelled.
+     *
+     * A Hangul syllable is a block of two or three jamo and is spelled as
+     * those, so it is taken apart first. Punctuation, spaces and digits are
+     * not spelled at all.
+     */
+    function quizSpell(word) {
+      return [...(word || '')]
+        .flatMap(c => jamoOf(c) || [c])
+        .filter(c => !/[\p{P}\p{N}\p{Z}\p{C}\p{S}]/u.test(c));
+    }
+
+    function quizLook(ch) {
+      if (!quizScript) return null;
+      const plainKana = ch.normalize('NFD').replace(/[\u3099\u309a]/g, '');
+      for (const t of [ch, bare(ch), ch.toLowerCase(), bare(ch).toLowerCase(),
+                       MATRA[ch], geezBase(ch), plainKana])
+        if (t && quizScript.index[t]) return quizScript.index[t];
+      return null;
+    }
+
+    /** Draw the word's handshapes under the answer, so a fingerspelled
+     *  attempt can be checked against the same card as the typed one. */
+    function showAnswerShapes(word) {
+      const host = document.getElementById('answerShapes');
+      host.className = 'answer-shapes';
+      host.innerHTML = '';
+      const letters = quizSpell(word);
+      if (!quizScript || !letters.length) return;
+
+      // Russian has no manual-alphabet photographs at all: the RSL chart is
+      // drawn in SignWriting, so that is what its letters carry. Falling back
+      // to it is the difference between a row of signs and a row of blanks.
+      const shapeOf = L => L && (L.handshape ||
+        (L.handshape_variants && Object.values(L.handshape_variants)[0]));
+      const anyOf = L => shapeOf(L) || (L && L.signwriting_image) || null;
+      const cells = letters.map(ch => {
+        const L = quizLook(ch);
+        const hand = shapeOf(L), pic = anyOf(L);
+        const what = (L && L.name ? L.name : ch) + (hand ? '' : pic ? ' \u2014 SignWriting' : '');
+        const mv = showMove(quizScript, L, hand)
+          ? `<img class="mv" src="${L.movement.image}" alt="${L.movement.description}" />` : '';
+        return `<div class="sh" title="${what}">${pic
+          ? `<img class="${hand ? '' : 'sw'}" src="${pic}" alt="sign for ${ch}" />`
+          : '<span class="none">no<br>handshape</span>'}${mv}
+          <span class="ch">${L && L.display_glyph ? L.display_glyph : ch}</span></div>`;
+      });
+      const missing = letters.filter(ch => !anyOf(quizLook(ch))).length;
+      host.innerHTML =
+        `<span class="k">Fingerspelled</span>
+         <div class="strip">${cells.join('')}</div>` +
+        (missing ? `<p class="miss">${missing} of ${letters.length} ${
+          missing === 1 ? 'letter has' : 'letters have'
+        } no sign in this alphabet yet.</p>` : '');
+      host.classList.add('on');
     }
 
     function findHandshapeForLetter(romaji) {
@@ -1427,6 +1531,8 @@
         feedbackEl.style.color = '#dc3545';
         correctAnswerEl.textContent = `Correct answer: ${correctAnswerDisplay}`;
       }
+
+      showAnswerShapes(currentCard[config.wordKey]);
 
       document.getElementById('difficultyButtons').style.display = 'flex';
     }
