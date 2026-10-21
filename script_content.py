@@ -1026,7 +1026,7 @@ THAI_VOWELS = [
  ("เ", "sara e", ["eː"], ("เสือ", "tiger", "\U0001f405"), "sɯːa", "Written before the consonant it follows in speech."),
  ("แ", "sara ae", ["ɛː"], ("แมว", "cat", "\U0001f408"), "mɛːw", "Written before the consonant it follows in speech."),
  ("โ", "sara o", ["oː"], ("โต๊ะ", "table", "\U0001fa91"), "toːʔ", "Written before the consonant it follows in speech."),
- ("ใ", "sara ai maimuan", ["aj"], ("ใจ", "heart", "❤️"), "tɕaj", "One of only twenty words use this form; everything else takes ไ."),
+ ("ใ", "sara ai maimuan", ["aj"], ("ใจ", "heart", "❤️"), "tɕaj", "Only twenty words use this form; everything else takes ไ."),
  ("ไ", "sara ai maimalai", ["aj"], ("ไฟ", "fire", "\U0001f525"), "faj", "Written before the consonant it follows in speech."),
 ]
 

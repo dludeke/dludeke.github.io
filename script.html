@@ -65,6 +65,15 @@
       border-bottom: 1px solid #eceff1;
     }
     .section-head:first-of-type { margin-top: 0; }
+    /* Where the handshapes in a section were worked out rather than cut from
+       a chart, say so here instead of on every card in it. */
+    .section-note {
+      max-width: 62ch;
+      margin: -0.4rem 0 1rem;
+      color: #7b858d;
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
     .section-head span { color: #c3cad1; font-weight: normal; }
 
     /* The syllabary is seven columns of cards, each carrying a handshape
@@ -633,7 +642,11 @@
              ${(d.layout.col_labels || []).map(c => `<span>${c}</span>`).join('')}
            </div>`
         : '';
-      const head = (name, n) => `<h3 class="section-head">${name} <span>${n}</span></h3>`;
+      const head = (name, n) => {
+        const note = (d.section_notes || {})[name];
+        return `<h3 class="section-head">${name} <span>${n}</span></h3>` +
+               (note ? `<p class="section-note">${note}</p>` : '');
+      };
       // a section whose cells form a table of their own, like the five
       // orders of the Ge'ez labiovelars
       const secGrid = name => {

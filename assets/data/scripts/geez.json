@@ -342,6 +342,9 @@
   "section_cols": {
     "Labiovelars": 5
   },
+  "section_notes": {
+    "Syllabary": "The chart prints 33 handshapes and, under them, six arrows, one per vowel order, with ሀ worked through all six. Every other cell here is put together the same way — the consonant's hand with its order's arrow — rather than drawn separately. The wording beside each arrow describes the drawing; it is not a caption the chart gives."
+  },
   "movement_in_handshape": false,
   "links": [
     {

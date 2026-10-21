@@ -21,6 +21,7 @@
     "Other signs"
   ],
   "section_cols": null,
+  "section_notes": null,
   "movement_in_handshape": false,
   "links": [
     {
@@ -1514,7 +1515,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": "One of only twenty words use this form; everything else takes ไ."
+      "notes": "Only twenty words use this form; everything else takes ไ."
     },
     {
       "glyph": "ไ",

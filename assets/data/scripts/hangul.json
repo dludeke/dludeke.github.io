@@ -20,6 +20,11 @@
     "Final clusters"
   ],
   "section_cols": null,
+  "section_notes": {
+    "Double consonants": "Only ssang siot is on the chart, and its two frames are there because it is the one Korean letter signed with a movement. The rest are drawn as their component hand twice.",
+    "Compound vowels": "oe, wi and ui have a shape of their own on the chart. The rest are drawn as their two component hands, left to right.",
+    "Final clusters": "None of these is on the chart. Each is drawn as its two component hands, left to right, which is how the cluster is spelled."
+  },
   "movement_in_handshape": false,
   "links": [
     {

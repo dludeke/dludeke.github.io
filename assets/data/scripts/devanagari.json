@@ -22,6 +22,10 @@
     "Loanword vowels"
   ],
   "section_cols": null,
+  "section_notes": {
+    "Vowel signs (matras)": "The chart prints only the independent vowels, so each matra is shown with its vowel's sign. Taking the two to be signed alike is a reading of the chart, not something the chart says.",
+    "Marks": "The anusvara and visarga come from cells the chart prints as अं and अः, the mark on a bare अ. The sign is for the whole syllable; filing it under the mark assumes the अ is only a carrier."
+  },
   "movement_in_handshape": false,
   "links": [
     {

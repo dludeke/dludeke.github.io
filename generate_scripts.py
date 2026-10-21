@@ -121,6 +121,54 @@ HIDDEN_SECTIONS = {"kana": {"Voiced kana"}}
 # the hand already.
 MOVEMENT_IN_HANDSHAPE = {"kana"}
 
+# Where a section's handshapes were worked out here rather than cut from a
+# chart, the page says so under the heading. A picture with nothing beside it
+# reads as a photograph of that letter's sign, and for these it is not one.
+SECTION_NOTES = {
+    "geez": {
+        "Syllabary":
+            "The chart prints 33 handshapes and, under them, six arrows, one "
+            "per vowel order, with \u1200 worked through all six. Every other cell "
+            "here is put together the same way \u2014 the consonant's hand with its "
+            "order's arrow \u2014 rather than drawn separately. The wording beside "
+            "each arrow describes the drawing; it is not a caption the chart "
+            "gives.",
+    },
+    "devanagari": {
+        "Vowel signs (matras)":
+            "The chart prints only the independent vowels, so each matra is "
+            "shown with its vowel's sign. Taking the two to be signed alike is "
+            "a reading of the chart, not something the chart says.",
+        "Marks":
+            "The anusvara and visarga come from cells the chart prints as "
+            "\u0905\u0902 and \u0905\u0903, the mark on a bare \u0905. The sign is for the whole syllable; "
+            "filing it under the mark assumes the \u0905 is only a carrier.",
+    },
+    "hangul": {
+        "Double consonants":
+            "Only ssang siot is on the chart, and its two frames are there "
+            "because it is the one Korean letter signed with a movement. The "
+            "rest are drawn as their component hand twice.",
+        "Compound vowels":
+            "oe, wi and ui have a shape of their own on the chart. The rest "
+            "are drawn as their two component hands, left to right.",
+        "Final clusters":
+            "None of these is on the chart. Each is drawn as its two "
+            "component hands, left to right, which is how the cluster is "
+            "spelled.",
+    },
+    "kana": {
+        "Small kana":
+            "Not shapes of their own. JSL signs the base kana and draws the "
+            "hand back toward the signer, so each is its base hand with that "
+            "arrow under it.",
+        "Voiced kana":
+            "Not shapes of their own. JSL signs the base kana and moves the "
+            "hand, sideways for the dakuten and upward for the handakuten, so "
+            "each is its base hand with that arrow under it.",
+    },
+}
+
 SECTIONS, SECTION_OF, SECTION_ORDER = {}, {}, {}
 for _slug, _groups in EXTRA.items():
     SECTION_ORDER[_slug] = [BASE_SECTION[_slug]] + [
@@ -637,6 +685,7 @@ def main():
             "layout": LAYOUTS.get(slug),
             "sections": SECTION_ORDER.get(slug),
             "section_cols": SECTION_COLS.get(slug),
+            "section_notes": SECTION_NOTES.get(slug),
             # True where the movement arrow is already drawn into the
             # handshape picture, so the pages do not print it twice.
             "movement_in_handshape": slug in MOVEMENT_IN_HANDSHAPE,

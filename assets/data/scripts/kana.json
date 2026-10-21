@@ -107,6 +107,10 @@
     "Marks"
   ],
   "section_cols": null,
+  "section_notes": {
+    "Small kana": "Not shapes of their own. JSL signs the base kana and draws the hand back toward the signer, so each is its base hand with that arrow under it.",
+    "Voiced kana": "Not shapes of their own. JSL signs the base kana and moves the hand, sideways for the dakuten and upward for the handakuten, so each is its base hand with that arrow under it."
+  },
   "movement_in_handshape": true,
   "links": [
     {
