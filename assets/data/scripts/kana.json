@@ -1581,7 +1581,13 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": "Lengthens the vowel before it, in katakana."
+      "notes": "Lengthens the vowel before it, in katakana. In JSL it is not spelled either: the hand that made the kana before it moves downward.",
+      "movement": {
+        "name": "chōonpu",
+        "label": "ー",
+        "description": "the hand already made moves downward",
+        "image": "images/handshapes/kana/move-down.png"
+      }
     },
     {
       "glyph": "゙",

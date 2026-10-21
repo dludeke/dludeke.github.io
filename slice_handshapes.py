@@ -214,15 +214,18 @@ def isolate(cell, cfg):
 
 
 
-# Japanese: the dakuten, the handakuten and the small kana are not shapes of
-# their own. JSL signs the base kana and moves the hand -- sideways for the
-# dakuten, up for the handakuten, back toward the signer for a small kana --
-# so each of those kana is drawn as its base hand with the movement printed
-# under it. The arrows are Sutton SignWriting movement symbols, which is what
-# lets the same three go into the transcriptions as well.
+# Japanese: the dakuten, the handakuten, the small kana and the long-vowel
+# bar are not shapes of their own. JSL signs the base kana and moves the hand
+# -- sideways for the dakuten, up for the handakuten, back toward the signer
+# for a small kana, down for the chōonpu -- so each of those kana is drawn as
+# its base hand with the movement printed under it. The arrows are Sutton
+# SignWriting movement symbols, which is what lets the same ones go into the
+# transcriptions as well. The chōonpu has no base kana of its own: it moves
+# whichever hand came before it, so it gets the arrow and nothing else.
 KANA_ARROWS = {
     "side": "S26606",   # wall plane, straight, to the right
     "up":   "S26600",   # wall plane, straight, up
+    "down": "S26604",   # wall plane, straight, down
     "back": "S22b04",   # floor plane, straight, toward the signer
 }
 # the arrow's longest side, as a fraction of the base image's height. Scaling

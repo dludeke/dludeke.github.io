@@ -164,6 +164,9 @@ JSL_MOVES = {
     "small":      {"name": "small kana", "label": "\u5c0f",
                    "description": "the hand is drawn back toward the signer",
                    "image": "images/handshapes/kana/move-back.png"},
+    "chouonpu":   {"name": "ch\u014donpu", "label": "\u30fc",
+                   "description": "the hand already made moves downward",
+                   "image": "images/handshapes/kana/move-down.png"},
 }
 
 
@@ -171,6 +174,8 @@ def kana_move(glyph):
     """Which of the three JSL movements this kana is signed with, if any."""
     if glyph in KANA_SMALL_BASE:
         return JSL_MOVES["small"]
+    if glyph == "\u30fc":
+        return JSL_MOVES["chouonpu"]
     if glyph == "\u3099":
         return JSL_MOVES["dakuten"]
     if glyph == "\u309a":

@@ -1131,7 +1131,8 @@ KANA_SMALL_BASE = {"ぁ": "あ", "ぃ": "い", "ぅ": "う",
 # the handakuten turns the h-series into p.
 KANA_MARKS = [
  ("ー","","chouonpu",["ː"],("ラーメン","ramen","\U0001f35c"),"ɾaːmeɴ",
-  "Lengthens the vowel before it, in katakana."),
+  "Lengthens the vowel before it, in katakana. In JSL it is not spelled "
+  "either: the hand that made the kana before it moves downward."),
  ("゙","","dakuten",["g","z","d","b"],("かぎ","key","\U0001f511"),"kagi",
   "Voices the kana it sits on: ka becomes ga, sa becomes za, ta becomes da, "
   "ha becomes ba. In JSL the mark is not spelled: the base kana is signed and "
