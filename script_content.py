@@ -629,6 +629,10 @@ NOTES["arabic"] = {
 NOTES["farsi"] = {
  "ث": "One of three letters written differently but all said /s/: ث س ص.",
  "ذ": "One of four letters all said /z/: ذ ز ض ظ. The spellings are inherited from Arabic.",
+ "ر": "The only letter of the alphabet signed with a movement: the ز hand, "
+      "held while the fingertips move. The chart the other signs here come "
+      "from prints the still letters only, so this one is a single frame "
+      "taken from the full chart.",
  "ط": "Said /t/, the same as ت, despite the different letter.",
  "ق": "Merged with غ for most speakers, as /ɣ/ between vowels and /ɢ/ elsewhere.",
  "و": "Consonant /v/, or a long /uː/, or /o/ in a few common words.",

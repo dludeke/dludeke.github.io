@@ -92,16 +92,21 @@ CHARTS = {
         "isolate": "trim",
         "field": "handshape",
     },
+    # ZEI_3 is captioned "Static sign of Persian hand alphabet" and leaves
+    # out the two letters that move. One of them is re, which is in half the
+    # word list, so it is taken from ZEI_1 below instead.
     "farsi": {
         "file": "ZEI_3.PNG",
         "trim_px": (4, 4, 4, 26), 
         "crop": (6, 6, 500, 566),
         "rows": 7, "cols": 5,
         "rtl": True,
-        # Top row holds vowel forms; only the first maps to a letter here.
-        # This chart omits ر entirely, so re has no image.
+        # The top row is alef's forms, read right to left: alef madda, then
+        # alef carrying a, e and o, then alef-vav. Only the first and the
+        # middle one are letters in this list, and the row was read as
+        # starting with bare alef, which gave alef the madda's hand.
         "cells": [
-            "ا", None, None, None, None,
+            "آ", None, "ا", None, None,
             "ب", "پ", "ت", "ث", "ج",
             "چ", "ح", "خ", "د", "ذ",
             "ز", "ژ", "س", "ش", "ص",
@@ -328,6 +333,34 @@ def apply_kana_moves(shapes, fsws):
         json.dump(doc, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
     return n
+
+
+# ZEI_1 is the same photographs as ZEI_3 but is the whole alphabet, not only
+# the still half, so it is where the two moving letters are. Only re is wanted:
+# the other, ای, is a vowel digraph rather than a letter of the alphabet.
+# Measured against ZEI_1's grid: seven columns across, re is the third cell
+# from the right of the third row.
+ZEI_DYNAMIC = {"\u0631": ("ZEI_1.JPG", (343, 218, 420, 282))}
+
+
+def slice_zei_dynamic(verbose=True):
+    out = {}
+    for glyph, (fname, box) in ZEI_DYNAMIC.items():
+        path = os.path.join(SRC, fname)
+        if not os.path.exists(path):
+            print(f"  farsi: missing {fname}")
+            continue
+        raw = Image.open(path).convert("RGB").crop(box)
+        name = f"{ord(glyph):04x}"
+        raw_dir = os.path.join(OUT_ROOT, "farsi", "raw")
+        os.makedirs(raw_dir, exist_ok=True)
+        raw.save(os.path.join(raw_dir, f"{name}.png"))
+        rel = f"images/handshapes/farsi/{name}.png"
+        raw.save(os.path.join(HERE, rel))
+        out[glyph] = rel
+    if verbose:
+        print(f"  farsi: {len(out)} moving letter from ZEI_1")
+    return out
 
 
 # Korean comes from three screenshots rather than the single KSL_2 chart,
@@ -824,6 +857,8 @@ def main(argv):
             print(f"  {slug}: no chart configured")
             continue
         mapping = slice_chart(slug, cfg)
+        if slug == "farsi" and mapping:
+            mapping.update(slice_zei_dynamic())
         if mapping:
             n = apply_to_data(slug, cfg, mapping)
             print(f"    wrote {n} paths into {slug}.json ({cfg['field']})")

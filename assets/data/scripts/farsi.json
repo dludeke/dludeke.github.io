@@ -461,7 +461,7 @@
       "ipa": [
         "ɾ"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0631.png",
       "example_word": "روباه",
       "example_gloss": "fox",
       "example_image": null,
@@ -470,7 +470,7 @@
       "signwriting": null,
       "signwriting_image": null,
       "aliases": [],
-      "notes": ""
+      "notes": "The only letter of the alphabet signed with a movement: the ز hand, held while the fingertips move. The chart the other signs here come from prints the still letters only, so this one is a single frame taken from the full chart."
     },
     {
       "glyph": "ز",
@@ -929,7 +929,7 @@
       "ipa": [
         "ɒː"
       ],
-      "handshape": null,
+      "handshape": "images/handshapes/farsi/0622.png",
       "example_word": "آینه",
       "example_gloss": "mirror",
       "example_image": null,
