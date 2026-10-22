@@ -626,6 +626,35 @@ NOTES["arabic"] = {
  "ق": "/q/ in Modern Standard; often /ʔ/ in city speech and /ɡ/ in Bedouin and Gulf speech.",
 }
 
+# Revised Romanization of Korean, the official scheme. A consonant is
+# romanised one way at the start of a syllable and another at the end —
+# ᄀ is the g of 가 and the k of 막 — so both are given, initial first.
+# A letter with one value is the same in either place; the tense ᄄ ᄈ ᄍ
+# and the aspirate ᄏ ᄐ ᄑ never change, and ᄋ has no sound at the start.
+ROMANIZATION = {}
+
+ROMANIZATION["hangul"] = {
+ "ㄱ": "g, k",  "ㄴ": "n",     "ㄷ": "d, t",  "ㄹ": "r, l",
+ "ㅁ": "m",     "ㅂ": "b, p",  "ㅅ": "s, t",  "ㅇ": "—, ng",
+ "ㅈ": "j, t",  "ㅊ": "ch, t", "ㅋ": "k",     "ㅌ": "t",
+ "ㅍ": "p",     "ㅎ": "h, t",
+ "ㅏ": "a",   "ㅑ": "ya",  "ㅓ": "eo",  "ㅕ": "yeo", "ㅗ": "o",
+ "ㅛ": "yo",  "ㅜ": "u",   "ㅠ": "yu",  "ㅡ": "eu",  "ㅣ": "i",
+ # the tense series
+ "ㄲ": "kk, k", "ㄸ": "tt", "ㅃ": "pp", "ㅆ": "ss, t", "ㅉ": "jj",
+ # the compound vowels
+ "ㅐ": "ae",  "ㅒ": "yae", "ㅔ": "e",   "ㅖ": "ye",  "ㅘ": "wa",
+ "ㅙ": "wae", "ㅚ": "oe",  "ㅝ": "wo",  "ㅞ": "we",  "ㅟ": "wi",
+ "ㅢ": "ui",
+ # Final clusters: only the letter that is actually pronounced at the end of
+ # the syllable is romanised. The other is heard again when a vowel follows,
+ # which is what each of their notes says.
+ "ㄳ": "k", "ㄵ": "n", "ㄶ": "n", "ㄺ": "k", "ㄻ": "m",
+ "ㄼ": "p", "ㄽ": "l", "ㄾ": "l", "ㄿ": "p", "ㅀ": "l",
+ "ㅄ": "p",
+}
+
+
 NOTES["farsi"] = {
  "ث": "One of three letters written differently but all said /s/: ث س ص.",
  "ذ": "One of four letters all said /z/: ذ ز ض ظ. The spellings are inherited from Arabic.",

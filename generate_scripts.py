@@ -24,6 +24,7 @@ from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             THAI_MODIFIERS, display_for,
                             DEVANAGARI_MATRAS, DEVANAGARI_MARKS,
                             KANA_SMALL, KANA_MARKS, KANA_VOICED,
+                            ROMANIZATION,
                             KANA_SMALL_BASE,
                             ARABIC_FORMS, ARABIC_HARAKAT,
                             HANGUL_DOUBLE, HANGUL_COMPOUND,
@@ -614,6 +615,9 @@ def main():
                 word, gloss, emoji = w
                 entry.update({"example_word": word, "example_gloss": gloss,
                               "example_emoji": emoji})
+            rom = ROMANIZATION.get(slug, {}).get(glyph)
+            if rom:
+                entry["romanization"] = rom
             got = CONTENT.get(slug, {}).get(glyph)
             if got:
                 rom, ipa, word, gloss, emoji = got
@@ -663,6 +667,8 @@ def main():
                 from_tables.add("example_ipa")
             if letter_note:
                 from_tables.add("notes")
+            if ROMANIZATION.get(slug, {}).get(glyph):
+                from_tables.add("romanization")
             if got:
                 from_tables.update(("romanization", "ipa", "example_word",
                                     "example_gloss", "example_emoji"))
