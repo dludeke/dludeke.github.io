@@ -8,7 +8,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "roːʈiː"
   },
   {
    "word": "पानी",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "paːniː"
   },
   {
    "word": "चाय",
@@ -24,7 +26,8 @@
    "english": "tea",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tʃaːj"
   },
   {
    "word": "दूध",
@@ -32,7 +35,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "duːdʱ"
   },
   {
    "word": "चावल",
@@ -40,7 +44,8 @@
    "english": "rice",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tʃaːʋəl"
   },
   {
    "word": "आम",
@@ -48,7 +53,8 @@
    "english": "mango",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "aːm"
   },
   {
    "word": "दाल",
@@ -56,7 +62,8 @@
    "english": "lentils",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "daːl"
   },
   {
    "word": "नमक",
@@ -64,7 +71,8 @@
    "english": "salt",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "nəmək"
   },
   {
    "word": "भारत",
@@ -72,7 +80,8 @@
    "english": "India",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "bʱaːɾət"
   },
   {
    "word": "समुद्र",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "səmudrə"
   },
   {
    "word": "पहाड़",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "pəhaːɽ"
   },
   {
    "word": "नदी",
@@ -96,7 +107,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "nədiː"
   },
   {
    "word": "जंगल",
@@ -104,7 +116,8 @@
    "english": "forest",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "dʒəŋgəl"
   },
   {
    "word": "दिल्ली",
@@ -112,7 +125,8 @@
    "english": "Delhi",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "dɪlliː"
   },
   {
    "word": "मुंबई",
@@ -120,7 +134,8 @@
    "english": "Mumbai, the film capital",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "mumbəiː"
   },
   {
    "word": "जयपुर",
@@ -128,7 +143,8 @@
    "english": "Jaipur",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "dʒəjpur"
   },
   {
    "word": "कोलकाता",
@@ -136,7 +152,8 @@
    "english": "Kolkata, the eastern city",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "koːlkaːtaː"
   },
   {
    "word": "किताब",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "kɪtaːb"
   },
   {
    "word": "स्कूल",
@@ -152,7 +170,8 @@
    "english": "school",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "skuːl"
   },
   {
    "word": "संगीत",
@@ -160,7 +179,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "səŋgiːt"
   },
   {
    "word": "दोस्त",
@@ -168,7 +188,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "doːst"
   },
   {
    "word": "त्योहार",
@@ -176,7 +197,8 @@
    "english": "festival",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "tjoːhaːɾ"
   },
   {
    "word": "सूरज",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "suːɾədʒ"
   },
   {
    "word": "चाँद",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "tʃãːd"
   },
   {
    "word": "पेड़",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "peːɽ"
   },
   {
    "word": "फूल",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "pʰuːl"
   },
   {
    "word": "कुत्ता",
@@ -216,7 +242,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "kʊttaː"
   },
   {
    "word": "बिल्ली",
@@ -224,7 +251,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "bɪlliː"
   }
  ]
 }

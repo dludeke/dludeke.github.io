@@ -256,6 +256,13 @@
       font-family: "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Arabic",
                    "Noto Sans Hebrew", "Noto Sans", system-ui, sans-serif;
     }
+    #panel-quiz .word-ipa {
+      color: #4a5560;
+      font-size: 1.15rem;
+      margin: -1.25rem 0 0.75rem;
+      min-height: 1em;
+    }
+
     .answer-shapes { display: none; margin: 1.25rem 0 0.25rem; }
     .answer-shapes.on { display: block; }
     .answer-shapes .k {
@@ -532,6 +539,10 @@
                knowing it already. This puts them in on request. -->
           <button type="button" id="vowelHint" class="vowel-hint" style="display: none;">
             Show vowel marks</button>
+          <!-- How the word is said, shown with the answer. It sits between
+               the word and its meaning because that is the order you read
+               a dictionary entry in. -->
+          <div class="word-ipa" id="wordIpa"></div>
           <div class="hint" id="hint"></div>
           <input type="text" class="answer-input" id="answer" placeholder="Type your answer..." autocomplete="off" />
           <div style="text-align: center;">
@@ -1288,6 +1299,7 @@
       answerImages.innerHTML = '';
       answerImages.className = '';
       revealButton.style.display = 'none';
+      document.getElementById('wordIpa').textContent = '';
       const shapes = document.getElementById('answerShapes');
       shapes.className = 'answer-shapes';
       shapes.innerHTML = '';
@@ -1486,7 +1498,9 @@
 
       const isCorrect = userAnswer === correctAnswer;
 
-      // Show the English meaning after submission
+      // Show how it is said, then what it means
+      document.getElementById('wordIpa').textContent =
+        currentCard.ipa ? `/${currentCard.ipa}/` : '';
       hintEl.textContent = `(${currentCard.english})`;
 
       if (isCorrect) {
@@ -1614,6 +1628,9 @@
     function revealHandshapes() {
       if (currentMode !== 'script-to-sign') return;
       const config = languageConfig[currentLanguage];
+      document.getElementById('wordIpa').textContent =
+        currentCard.ipa ? `/${currentCard.ipa}/` : '';
+      document.getElementById('hint').textContent = `(${currentCard.english})`;
       showAnswerShapes(currentCard[config.wordKey]);
       document.getElementById('revealButton').style.display = 'none';
       document.getElementById('difficultyButtons').style.display = 'flex';

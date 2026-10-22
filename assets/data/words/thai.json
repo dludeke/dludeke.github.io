@@ -8,7 +8,8 @@
    "english": "rice",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "kʰâːw"
   },
   {
    "word": "น้ำ",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "náːm"
   },
   {
    "word": "ชา",
@@ -24,7 +26,8 @@
    "english": "tea",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tɕʰaː"
   },
   {
    "word": "นม",
@@ -32,7 +35,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "nom"
   },
   {
    "word": "ปลา",
@@ -40,7 +44,8 @@
    "english": "fish",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "plaː"
   },
   {
    "word": "ไข่",
@@ -48,7 +53,8 @@
    "english": "egg",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "kʰàj"
   },
   {
    "word": "ผลไม้",
@@ -56,7 +62,8 @@
    "english": "fruit",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "pʰǒnlamáj"
   },
   {
    "word": "กาแฟ",
@@ -64,7 +71,8 @@
    "english": "coffee",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "kaːfɛː"
   },
   {
    "word": "ไทย",
@@ -72,7 +80,8 @@
    "english": "Thailand",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "tʰaj"
   },
   {
    "word": "ทะเล",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "tʰáleː"
   },
   {
    "word": "ภูเขา",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "pʰuːkʰǎw"
   },
   {
    "word": "แม่น้ำ",
@@ -96,7 +107,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "mɛ̂ːnáːm"
   },
   {
    "word": "ป่า",
@@ -104,7 +116,8 @@
    "english": "forest",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "pàː"
   },
   {
    "word": "กรุงเทพ",
@@ -112,7 +125,8 @@
    "english": "Bangkok",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "kruŋtʰêːp"
   },
   {
    "word": "เชียงใหม่",
@@ -120,7 +134,8 @@
    "english": "Chiang Mai",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "tɕʰiaŋmàj"
   },
   {
    "word": "ภูเก็ต",
@@ -128,7 +143,8 @@
    "english": "Phuket, the island province",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "pʰuːkèt"
   },
   {
    "word": "อยุธยา",
@@ -136,7 +152,8 @@
    "english": "Ayutthaya, the old capital",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ʔajútʰajaː"
   },
   {
    "word": "หนังสือ",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "nǎŋsɯ̌ː"
   },
   {
    "word": "โรงเรียน",
@@ -152,7 +170,8 @@
    "english": "school",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "roːŋriːan"
   },
   {
    "word": "ดนตรี",
@@ -160,7 +179,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "dontriː"
   },
   {
    "word": "เพื่อน",
@@ -168,7 +188,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "pʰɯ̂an"
   },
   {
    "word": "วัด",
@@ -176,7 +197,8 @@
    "english": "temple",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "wát"
   },
   {
    "word": "ดวงอาทิตย์",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "duaŋʔaːtʰít"
   },
   {
    "word": "ดวงจันทร์",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "duaŋtɕan"
   },
   {
    "word": "ต้นไม้",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "tônmáj"
   },
   {
    "word": "ดอกไม้",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "dɔ̀ːkmáj"
   },
   {
    "word": "หมา",
@@ -216,7 +242,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "mǎː"
   },
   {
    "word": "แมว",
@@ -224,7 +251,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "mɛːw"
   }
  ]
 }

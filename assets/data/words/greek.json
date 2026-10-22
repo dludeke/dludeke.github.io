@@ -6,6 +6,7 @@
    "word": "αλφα",
    "romaji": "alpha",
    "english": "the letter Α",
+   "ipa": "ˈalfa",
    "categories": [
     "Letter Names"
    ]
@@ -14,6 +15,7 @@
    "word": "βητα",
    "romaji": "beta",
    "english": "the letter Β",
+   "ipa": "ˈvita",
    "categories": [
     "Letter Names"
    ]
@@ -22,6 +24,7 @@
    "word": "γαμμα",
    "romaji": "gamma",
    "english": "the letter Γ",
+   "ipa": "ˈɣama",
    "categories": [
     "Letter Names"
    ]
@@ -30,6 +33,7 @@
    "word": "δελτα",
    "romaji": "delta",
    "english": "the letter Δ",
+   "ipa": "ˈðelta",
    "categories": [
     "Letter Names"
    ]
@@ -38,6 +42,7 @@
    "word": "επσιλον",
    "romaji": "epsilon",
    "english": "the letter Ε",
+   "ipa": "ˈepsilon",
    "categories": [
     "Letter Names"
    ]
@@ -46,6 +51,7 @@
    "word": "ζητα",
    "romaji": "zeta",
    "english": "the letter Ζ",
+   "ipa": "ˈzita",
    "categories": [
     "Letter Names"
    ]
@@ -54,6 +60,7 @@
    "word": "ητα",
    "romaji": "eta",
    "english": "the letter Η",
+   "ipa": "ˈita",
    "categories": [
     "Letter Names"
    ]
@@ -62,6 +69,7 @@
    "word": "θητα",
    "romaji": "theta",
    "english": "the letter Θ",
+   "ipa": "ˈθita",
    "categories": [
     "Letter Names"
    ]
@@ -70,6 +78,7 @@
    "word": "ιωτα",
    "romaji": "iota",
    "english": "the letter Ι",
+   "ipa": "ˈjota",
    "categories": [
     "Letter Names"
    ]
@@ -78,6 +87,7 @@
    "word": "καππα",
    "romaji": "kappa",
    "english": "the letter Κ",
+   "ipa": "ˈkapa",
    "categories": [
     "Letter Names"
    ]
@@ -86,6 +96,7 @@
    "word": "λαμβδα",
    "romaji": "lambda",
    "english": "the letter Λ",
+   "ipa": "ˈlamvða",
    "categories": [
     "Letter Names"
    ]
@@ -94,6 +105,7 @@
    "word": "μυ",
    "romaji": "mu",
    "english": "the letter Μ",
+   "ipa": "mi",
    "categories": [
     "Letter Names"
    ]
@@ -102,6 +114,7 @@
    "word": "νυ",
    "romaji": "nu",
    "english": "the letter Ν",
+   "ipa": "ni",
    "categories": [
     "Letter Names"
    ]
@@ -110,6 +123,7 @@
    "word": "ξι",
    "romaji": "xi",
    "english": "the letter Ξ",
+   "ipa": "ksi",
    "categories": [
     "Letter Names"
    ]
@@ -118,6 +132,7 @@
    "word": "ομικρον",
    "romaji": "omicron",
    "english": "the letter Ο",
+   "ipa": "ˈomikron",
    "categories": [
     "Letter Names"
    ]
@@ -126,6 +141,7 @@
    "word": "πι",
    "romaji": "pi",
    "english": "the letter Π",
+   "ipa": "pi",
    "categories": [
     "Letter Names"
    ]
@@ -134,6 +150,7 @@
    "word": "ρο",
    "romaji": "rho",
    "english": "the letter Ρ",
+   "ipa": "ro",
    "categories": [
     "Letter Names"
    ]
@@ -142,6 +159,7 @@
    "word": "σιγμα",
    "romaji": "sigma",
    "english": "the letter Σ",
+   "ipa": "ˈsiɣma",
    "categories": [
     "Letter Names"
    ]
@@ -150,6 +168,7 @@
    "word": "ταυ",
    "romaji": "tau",
    "english": "the letter Τ",
+   "ipa": "taf",
    "categories": [
     "Letter Names"
    ]
@@ -158,6 +177,7 @@
    "word": "υψιλον",
    "romaji": "upsilon",
    "english": "the letter Υ",
+   "ipa": "ˈipsilon",
    "categories": [
     "Letter Names"
    ]
@@ -166,6 +186,7 @@
    "word": "φι",
    "romaji": "phi",
    "english": "the letter Φ",
+   "ipa": "fi",
    "categories": [
     "Letter Names"
    ]
@@ -174,6 +195,7 @@
    "word": "χι",
    "romaji": "chi",
    "english": "the letter Χ",
+   "ipa": "çi",
    "categories": [
     "Letter Names"
    ]
@@ -182,6 +204,7 @@
    "word": "ψι",
    "romaji": "psi",
    "english": "the letter Ψ",
+   "ipa": "psi",
    "categories": [
     "Letter Names"
    ]
@@ -190,6 +213,7 @@
    "word": "ωμεγα",
    "romaji": "omega",
    "english": "the letter Ω",
+   "ipa": "oˈmeɣa",
    "categories": [
     "Letter Names"
    ]
@@ -198,6 +222,7 @@
    "word": "Αθηνα",
    "romaji": "Athena",
    "english": "Athens",
+   "ipa": "aˈθina",
    "categories": [
     "Geography",
     "Cities"
@@ -207,6 +232,7 @@
    "word": "Σπαρτη",
    "romaji": "Sparta",
    "english": "Sparta, the warrior city-state",
+   "ipa": "ˈsparti",
    "categories": [
     "Geography",
     "Cities"
@@ -216,6 +242,7 @@
    "word": "Θεσσαλονικη",
    "romaji": "Thessalonike",
    "english": "Thessaloniki",
+   "ipa": "θesaloˈnici",
    "categories": [
     "Geography",
     "Cities"
@@ -225,6 +252,7 @@
    "word": "Κορινθος",
    "romaji": "Korinthos",
    "english": "Corinth",
+   "ipa": "ˈkorinθos",
    "categories": [
     "Geography",
     "Cities"
@@ -234,6 +262,7 @@
    "word": "Δελφοι",
    "romaji": "Delphoi",
    "english": "Delphi",
+   "ipa": "ðelˈfi",
    "categories": [
     "Geography",
     "Cities"
@@ -243,6 +272,7 @@
    "word": "Ολυμπια",
    "romaji": "Olympia",
    "english": "Olympia, home of the games",
+   "ipa": "oliˈbia",
    "categories": [
     "Geography",
     "Cities"
@@ -252,6 +282,7 @@
    "word": "Κρητη",
    "romaji": "Krete",
    "english": "Crete",
+   "ipa": "ˈkriti",
    "categories": [
     "Geography"
    ]
@@ -260,6 +291,7 @@
    "word": "Ροδος",
    "romaji": "Rhodos",
    "english": "Rhodes",
+   "ipa": "ˈroðos",
    "categories": [
     "Geography"
    ]
@@ -268,6 +300,7 @@
    "word": "Μυκηναι",
    "romaji": "Mykenai",
    "english": "Mycenae",
+   "ipa": "miˈcine",
    "categories": [
     "Geography",
     "Cities"
@@ -277,6 +310,7 @@
    "word": "Ολυμπος",
    "romaji": "Olympos",
    "english": "Olympus",
+   "ipa": "ˈolimbos",
    "categories": [
     "Geography"
    ]
@@ -285,6 +319,7 @@
    "word": "Μαραθων",
    "romaji": "Marathon",
    "english": "Marathon, site of the battle",
+   "ipa": "maraˈθon",
    "categories": [
     "Geography",
     "Cities"
@@ -294,6 +329,7 @@
    "word": "Σωκρατης",
    "romaji": "Sokrates",
    "english": "Socrates",
+   "ipa": "soˈkratis",
    "categories": [
     "Historical Figures"
    ]
@@ -302,6 +338,7 @@
    "word": "Πλατων",
    "romaji": "Platon",
    "english": "Plato",
+   "ipa": "ˈplaton",
    "categories": [
     "Historical Figures"
    ]
@@ -310,6 +347,7 @@
    "word": "Αριστοτελης",
    "romaji": "Aristoteles",
    "english": "Aristotle",
+   "ipa": "aristoˈtelis",
    "categories": [
     "Historical Figures"
    ]
@@ -318,6 +356,7 @@
    "word": "Αλεξανδρος",
    "romaji": "Alexandros",
    "english": "Alexander",
+   "ipa": "aˈleksanðros",
    "categories": [
     "Historical Figures"
    ]
@@ -326,6 +365,7 @@
    "word": "Περικλης",
    "romaji": "Perikles",
    "english": "Pericles",
+   "ipa": "periˈklis",
    "categories": [
     "Historical Figures"
    ]
@@ -334,6 +374,7 @@
    "word": "Ομηρος",
    "romaji": "Homeros",
    "english": "Homer",
+   "ipa": "ˈomiros",
    "categories": [
     "Historical Figures"
    ]
@@ -342,6 +383,7 @@
    "word": "Ηροδοτος",
    "romaji": "Herodotos",
    "english": "Herodotus",
+   "ipa": "iˈroðotos",
    "categories": [
     "Historical Figures"
    ]
@@ -350,6 +392,7 @@
    "word": "Πυθαγορας",
    "romaji": "Pythagoras",
    "english": "Pythagoras, mathematician",
+   "ipa": "piθaˈɣoras",
    "categories": [
     "Historical Figures"
    ]
@@ -358,6 +401,7 @@
    "word": "Ευκλειδης",
    "romaji": "Eukleides",
    "english": "Euclid",
+   "ipa": "efˈkliðis",
    "categories": [
     "Historical Figures"
    ]
@@ -366,6 +410,7 @@
    "word": "Αρχιμηδης",
    "romaji": "Archimedes",
    "english": "Archimedes, inventor",
+   "ipa": "arçiˈmiðis",
    "categories": [
     "Historical Figures"
    ]
@@ -374,6 +419,7 @@
    "word": "Ιπποκρατης",
    "romaji": "Hippokrates",
    "english": "Hippocrates",
+   "ipa": "ipoˈkratis",
    "categories": [
     "Historical Figures"
    ]
@@ -382,6 +428,7 @@
    "word": "Λεωνιδας",
    "romaji": "Leonidas",
    "english": "Leonidas, king of Sparta",
+   "ipa": "leoˈniðas",
    "categories": [
     "Historical Figures"
    ]
@@ -390,6 +437,7 @@
    "word": "μουσακας",
    "romaji": "mousakas",
    "english": "moussaka",
+   "ipa": "musaˈkas",
    "categories": [
     "Food & Drinks"
    ]
@@ -398,6 +446,7 @@
    "word": "σουβλακι",
    "romaji": "souvlaki",
    "english": "grilled meat skewer",
+   "ipa": "suˈvlaci",
    "categories": [
     "Food & Drinks"
    ]
@@ -406,6 +455,7 @@
    "word": "τζατζικι",
    "romaji": "tzatziki",
    "english": "yoghurt and cucumber dip",
+   "ipa": "d͡zaˈd͡zici",
    "categories": [
     "Food & Drinks"
    ]
@@ -414,6 +464,7 @@
    "word": "ταραμοσαλατα",
    "romaji": "taramosalata",
    "english": "fish roe dip",
+   "ipa": "taramosaˈlata",
    "categories": [
     "Food & Drinks"
    ]
@@ -422,6 +473,7 @@
    "word": "φετα",
    "romaji": "pheta",
    "english": "feta",
+   "ipa": "ˈfeta",
    "categories": [
     "Food & Drinks"
    ]
@@ -430,6 +482,7 @@
    "word": "γυρος",
    "romaji": "gyros",
    "english": "meat roasted on a spit",
+   "ipa": "ˈʝiros",
    "categories": [
     "Food & Drinks"
    ]
@@ -438,6 +491,7 @@
    "word": "σπανακοπιτα",
    "romaji": "spanakopita",
    "english": "spinach pie",
+   "ipa": "spanaˈkopita",
    "categories": [
     "Food & Drinks"
    ]
@@ -446,6 +500,7 @@
    "word": "ντολμαδες",
    "romaji": "dolmades",
    "english": "stuffed vine leaves",
+   "ipa": "dolˈmaðes",
    "categories": [
     "Food & Drinks"
    ]
@@ -454,6 +509,7 @@
    "word": "μπακλαβας",
    "romaji": "baklavas",
    "english": "baklava",
+   "ipa": "baklaˈvas",
    "categories": [
     "Food & Drinks"
    ]
@@ -462,6 +518,7 @@
    "word": "ουζο",
    "romaji": "ouzo",
    "english": "anise spirit",
+   "ipa": "ˈuzo",
    "categories": [
     "Food & Drinks"
    ]
@@ -470,6 +527,7 @@
    "word": "ελια",
    "romaji": "elia",
    "english": "olive",
+   "ipa": "eˈʎa",
    "categories": [
     "Food & Drinks"
    ]
@@ -478,6 +536,7 @@
    "word": "δημοκρατια",
    "romaji": "demokratia",
    "english": "democracy",
+   "ipa": "ðimokraˈtia",
    "categories": [
     "Culture",
     "Concepts"
@@ -487,6 +546,7 @@
    "word": "φιλοσοφια",
    "romaji": "philosophia",
    "english": "philosophy",
+   "ipa": "filosoˈfia",
    "categories": [
     "Culture",
     "Concepts"

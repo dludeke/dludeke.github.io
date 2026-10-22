@@ -8,7 +8,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "bred"
   },
   {
    "word": "water",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈwɔːtə"
   },
   {
    "word": "coffee",
@@ -24,7 +26,8 @@
    "english": "coffee",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈkɒfi"
   },
   {
    "word": "apple",
@@ -32,7 +35,8 @@
    "english": "apple",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈæpl̩"
   },
   {
    "word": "cheese",
@@ -40,7 +44,8 @@
    "english": "cheese",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tʃiːz"
   },
   {
    "word": "fish",
@@ -48,7 +53,8 @@
    "english": "fish",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "fɪʃ"
   },
   {
    "word": "rice",
@@ -56,7 +62,8 @@
    "english": "rice",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "raɪs"
   },
   {
    "word": "egg",
@@ -64,7 +71,8 @@
    "english": "egg",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "eg"
   },
   {
    "word": "England",
@@ -72,7 +80,8 @@
    "english": "England",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ˈɪŋglənd"
   },
   {
    "word": "sea",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "siː"
   },
   {
    "word": "mountain",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ˈmaʊntɪn"
   },
   {
    "word": "river",
@@ -96,7 +107,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ˈrɪvə"
   },
   {
    "word": "forest",
@@ -104,7 +116,8 @@
    "english": "forest",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ˈfɒrɪst"
   },
   {
    "word": "London",
@@ -112,7 +125,8 @@
    "english": "London",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ˈlʌndən"
   },
   {
    "word": "Dublin",
@@ -120,7 +134,8 @@
    "english": "Dublin",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ˈdʌblɪn"
   },
   {
    "word": "Boston",
@@ -128,7 +143,8 @@
    "english": "Boston",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ˈbɒstən"
   },
   {
    "word": "Sydney",
@@ -136,7 +152,8 @@
    "english": "Sydney",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ˈsɪdni"
   },
   {
    "word": "book",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "bʊk"
   },
   {
    "word": "school",
@@ -152,7 +170,8 @@
    "english": "school",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "skuːl"
   },
   {
    "word": "music",
@@ -160,7 +179,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ˈmjuːzɪk"
   },
   {
    "word": "friend",
@@ -168,7 +188,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "frend"
   },
   {
    "word": "theatre",
@@ -176,7 +197,8 @@
    "english": "theatre",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ˈθɪətə"
   },
   {
    "word": "sun",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "sʌn"
   },
   {
    "word": "moon",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "muːn"
   },
   {
    "word": "tree",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "triː"
   },
   {
    "word": "flower",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈflaʊə"
   },
   {
    "word": "dog",
@@ -216,7 +242,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "dɒg"
   },
   {
    "word": "cat",
@@ -224,7 +251,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "kæt"
   }
  ]
 }

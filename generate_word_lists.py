@@ -10,6 +10,7 @@ Greek and Japanese were written by hand before this script existed and
 are carried over unchanged, only reshaped and moved alongside the rest.
 """
 import io, json, os
+from word_ipa import IPA as IPA_WORDS
 
 OUT = "assets/data/words"
 
@@ -248,6 +249,25 @@ def unpoint(word):
     return "".join(ch for ch in word if ch not in HARAKAT)
 
 
+def ipa_check(slug, words):
+    """The same word must read the same here and on its letter's card.
+
+    Both files are hand-written, so without this they drift: ten of the
+    sixty-two shared words had already disagreed.
+    """
+    from script_content import WORDS, WORD_IPA
+    table = IPA_WORDS.get(slug, {})
+    for glyph, w in WORDS.get(slug, {}).items():
+        word, said = w[0], WORD_IPA.get(slug, {}).get(glyph)
+        if said and table.get(word) and table[word] != said:
+            raise AssertionError(
+                "%s %r: word_ipa.py has %r, script_content.py has %r"
+                % (slug, word, table[word], said))
+    missing = [w["word"] for w in words if not table.get(w["word"])]
+    if missing:
+        raise AssertionError("%s: no IPA for %s" % (slug, missing))
+
+
 def write(slug, language, words):
     path = os.path.join(OUT, slug + ".json")
     io.open(path, "w", encoding="utf-8").write(json.dumps(
@@ -267,8 +287,10 @@ def main():
         words = [{"word": w, "romaji": r, "english": m.get(w, e), "categories": [c]}
                  for w, r, e, c in rows]
         for entry in words:
+            entry["ipa"] = IPA_WORDS.get(slug, {}).get(entry["word"])
             if v.get(entry["word"]):
                 entry["vocalised"] = v[entry["word"]]
+        ipa_check(slug, words)
         write(slug, language, words)
         total += len(words)
         print("%-11s %-9s %3d words" % (slug, language, len(words)))
@@ -277,7 +299,9 @@ def main():
         m = MEANINGS.get(slug, {})
         words = [{"word": w[key], "romaji": w.get("romaji", ""),
                   "english": m.get(w[key], w.get("english", "")),
+                  "ipa": IPA_WORDS.get(slug, {}).get(w[key]),
                   "categories": w.get("categories", [])} for w in old]
+        ipa_check(slug, words)
         write(slug, language, words)
         total += len(words)
         print("%-11s %-9s %3d words (carried over from %s)" % (slug, language, len(words), src))

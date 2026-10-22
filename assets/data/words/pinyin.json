@@ -8,7 +8,8 @@
    "english": "cooked rice",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "mi˨˩˦ fan˥˩"
   },
   {
    "word": "水 (shuǐ)",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ʂwei˨˩˦"
   },
   {
    "word": "茶 (chá)",
@@ -24,7 +26,8 @@
    "english": "tea",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ʈʂʰa˧˥"
   },
   {
    "word": "牛奶 (niúnǎi)",
@@ -32,7 +35,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "njoʊ̯˧˥ naɪ̯˨˩˦"
   },
   {
    "word": "面条 (miàntiáo)",
@@ -40,7 +44,8 @@
    "english": "noodles",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "mjɛn˥˩ tʰjaʊ̯˧˥"
   },
   {
    "word": "鱼 (yú)",
@@ -48,7 +53,8 @@
    "english": "fish",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "y˧˥"
   },
   {
    "word": "鸡蛋 (jīdàn)",
@@ -56,7 +62,8 @@
    "english": "egg",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tɕi˥ tan˥˩"
   },
   {
    "word": "苹果 (píngguǒ)",
@@ -64,7 +71,8 @@
    "english": "apple",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "pʰiŋ˧˥ kwo˨˩˦"
   },
   {
    "word": "中国 (zhōngguó)",
@@ -72,7 +80,8 @@
    "english": "China",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ʈʂʊŋ˥ kwo˧˥"
   },
   {
    "word": "海 (hǎi)",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "xaɪ̯˨˩˦"
   },
   {
    "word": "山 (shān)",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ʂan˥"
   },
   {
    "word": "河 (hé)",
@@ -96,7 +107,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "xɤ˧˥"
   },
   {
    "word": "森林 (sēnlín)",
@@ -104,7 +116,8 @@
    "english": "forest",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "sən˥ lin˧˥"
   },
   {
    "word": "北京 (běijīng)",
@@ -112,7 +125,8 @@
    "english": "Beijing, the capital",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "peɪ̯˨˩˦ tɕiŋ˥"
   },
   {
    "word": "上海 (shànghǎi)",
@@ -120,7 +134,8 @@
    "english": "Shanghai, the port city",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ʂaŋ˥˩ xaɪ̯˨˩˦"
   },
   {
    "word": "广州 (guǎngzhōu)",
@@ -128,7 +143,8 @@
    "english": "Guangzhou, the southern hub",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "kwaŋ˨˩˦ ʈʂoʊ̯˥"
   },
   {
    "word": "成都 (chéngdū)",
@@ -136,7 +152,8 @@
    "english": "Chengdu, the Sichuan capital",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ʈʂʰɤŋ˧˥ tu˥"
   },
   {
    "word": "书 (shū)",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ʂu˥"
   },
   {
    "word": "学校 (xuéxiào)",
@@ -152,7 +170,8 @@
    "english": "school",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ɕɥe˧˥ ɕjaʊ̯˥˩"
   },
   {
    "word": "音乐 (yīnyuè)",
@@ -160,7 +179,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "in˥ ɥe˥˩"
   },
   {
    "word": "朋友 (péngyǒu)",
@@ -168,7 +188,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "pʰɤŋ˧˥ joʊ̯˨˩˦"
   },
   {
    "word": "春节 (chūnjié)",
@@ -176,7 +197,8 @@
    "english": "Spring Festival",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ʈʂʰwən˥ tɕje˧˥"
   },
   {
    "word": "太阳 (tàiyáng)",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "tʰaɪ̯˥˩ jaŋ˧˥"
   },
   {
    "word": "月亮 (yuèliàng)",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ɥe˥˩ ljaŋ˥˩"
   },
   {
    "word": "树 (shù)",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ʂu˥˩"
   },
   {
    "word": "花 (huā)",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "xwa˥"
   },
   {
    "word": "狗 (gǒu)",
@@ -216,7 +242,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "koʊ̯˨˩˦"
   },
   {
    "word": "猫 (māo)",
@@ -224,7 +251,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "maʊ̯˥"
   }
  ]
 }

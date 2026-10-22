@@ -8,7 +8,8 @@
    "english": "injera, the sourdough flatbread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ɨndʒəra"
   },
   {
    "word": "ውሃ",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "wɨha"
   },
   {
    "word": "ቡና",
@@ -24,7 +26,8 @@
    "english": "coffee",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "buna"
   },
   {
    "word": "ወተት",
@@ -32,7 +35,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "wətət"
   },
   {
    "word": "ዳቦ",
@@ -40,7 +44,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "dabo"
   },
   {
    "word": "ሥጋ",
@@ -48,7 +53,8 @@
    "english": "meat",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "sɨga"
   },
   {
    "word": "እንቁላል",
@@ -56,7 +62,8 @@
    "english": "egg",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ɨnkʼulal"
   },
   {
    "word": "ጨው",
@@ -64,7 +71,8 @@
    "english": "salt",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tʃʼəw"
   },
   {
    "word": "ኢትዮጵያ",
@@ -72,7 +80,8 @@
    "english": "Ethiopia",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "itjopʼɨja"
   },
   {
    "word": "ባሕር",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "bahɨr"
   },
   {
    "word": "ተራራ",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "tərara"
   },
   {
    "word": "ወንዝ",
@@ -96,7 +107,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "wənz"
   },
   {
    "word": "ጫካ",
@@ -104,7 +116,8 @@
    "english": "forest",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "tʃʼaka"
   },
   {
    "word": "አዲስ አበባ",
@@ -112,7 +125,8 @@
    "english": "Addis Ababa",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "addis abəba"
   },
   {
    "word": "ጎንደር",
@@ -120,7 +134,8 @@
    "english": "Gondar",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "gondər"
   },
   {
    "word": "አክሱም",
@@ -128,7 +143,8 @@
    "english": "Axum",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "aksum"
   },
   {
    "word": "ላሊበላ",
@@ -136,7 +152,8 @@
    "english": "Lalibela, the rock-hewn churches",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "lalibəla"
   },
   {
    "word": "መጽሐፍ",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "mətsʼɨhaf"
   },
   {
    "word": "ትምህርት",
@@ -152,7 +170,8 @@
    "english": "education",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "tɨmhɨrt"
   },
   {
    "word": "ሙዚቃ",
@@ -160,7 +179,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "muzikʼa"
   },
   {
    "word": "ጓደኛ",
@@ -168,7 +188,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "gwadəɲa"
   },
   {
    "word": "በዓል",
@@ -176,7 +197,8 @@
    "english": "holiday",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "bəal"
   },
   {
    "word": "ፀሐይ",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "tsʼəhaj"
   },
   {
    "word": "ጨረቃ",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "tʃʼərəkʼa"
   },
   {
    "word": "ዛፍ",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "zaf"
   },
   {
    "word": "አበባ",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "abəba"
   },
   {
    "word": "ውሻ",
@@ -216,7 +242,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "wɨʃa"
   },
   {
    "word": "ድመት",
@@ -224,7 +251,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "dɨmət"
   }
  ]
 }

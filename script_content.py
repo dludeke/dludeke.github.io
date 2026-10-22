@@ -466,7 +466,7 @@ WORD_IPA["greek"] = {
 }
 
 WORD_IPA["hebrew"] = {
- "א": "aʁˈje", "ב": "ˈbajit", "ג": "ɡaˈmal", "ד": "daɡ", "ה": "haʁ",
+ "א": "aʁˈje", "ב": "ˈbajit", "ג": "ɡaˈmal", "ד": "dag", "ה": "haʁ",
  "ו": "ˈveʁed", "ז": "ˈzebʁa", "ח": "χaˈtul", "ט": "ˈtelefon", "י": "ˈjeled",
  "כ": "ˈkelev", "ל": "liˈmon", "מ": "ˈmajim", "נ": "neʁ", "ס": "sus",
  "ע": "ʕets", "פ": "ˈpeʁaχ", "צ": "tsiˈpoʁ", "ק": "kof", "ר": "raˈkevet",
@@ -489,7 +489,7 @@ WORD_IPA["farsi"] = {
  "ذ": "zoˈɾæt", "ر": "ɾuːˈbɒːh", "ز": "zænˈbuːɾ", "ژ": "ʒɒːˈle", "س": "siːb",
  "ش": "ʃiːɾ", "ص": "sæˈdæf", "ض": "ˈzæbte sowt", "ط": "tæˈnɒːb", "ظ": "zæɾf",
  "ع": "æˈsæl", "غ": "ɣɒːz", "ف": "fiːl", "ق": "ɢɒːˈʃoɢ", "ک": "keˈtɒːb",
- "گ": "ɡol", "ل": "liːˈmuː", "م": "mɒːˈhiː", "ن": "nɒːn", "و": "vɒːn",
+ "گ": "gol", "ل": "liːˈmuː", "م": "mɒːˈhiː", "ن": "nɒːn", "و": "vɒːn",
  "ه": "hæˈviːdʒ", "ی": "jæx",
 }
 
@@ -501,7 +501,7 @@ WORD_IPA["cyrillic"] = {
  "С": "slon", "Т": "tʲɪlʲɪˈfon", "У": "ʊˈlʲitkə", "Ф": "fɐˈnarʲ", "Х": "xlʲep",
  "Ц": "tsvʲɪˈtok", "Ч": "ˈtɕajnʲɪk", "Ш": "ʂarf", "Щ": "ˈɕːɵtkə",
  "Ъ": "pɐdˈjest", "Ы": "sɨr", "Ь": "solʲ", "Э": "ɛkskɐˈvatər", "Ю": "jʊˈla",
- "Я": "ˈjablələkə",
+ "Я": "ˈjabləkə",
 }
 
 WORD_IPA["devanagari"] = {
@@ -519,10 +519,10 @@ WORD_IPA["devanagari"] = {
 WORD_IPA["geez"] = {
  "ሀ": "haɡər", "ለ": "lewz", "ሐ": "hajk", "መ": "mekina", "ሠ": "sərɡ",
  "ረ": "rehab", "ሰ": "səw", "ሸ": "ʃema", "ቀ": "kʼen", "በ": "ber",
- "ተ": "terara", "ቸ": "tʃokolet", "ኀ": "hajl", "ነ": "nebr", "ኘ": "ɲä",
- "አ": "anbesa", "ከ": "ketema", "ኸ": "xä", "ወ": "wetet", "ዐ": "ajn",
+ "ተ": "tərara", "ቸ": "tʃokolet", "ኀ": "hajl", "ነ": "nebr", "ኘ": "ɲä",
+ "አ": "anbesa", "ከ": "ketema", "ኸ": "xä", "ወ": "wətət", "ዐ": "ajn",
  "ዘ": "zejt", "ዠ": "ʒä", "የ": "jebeɡ", "ደ": "debter", "ጀ": "dʒelba",
- "ገ": "ɡebeja", "ጠ": "tʼerepʼeza", "ጨ": "tʃʼereka", "ጰ": "pʼä",
+ "ገ": "ɡebeja", "ጠ": "tʼerepʼeza", "ጨ": "tʃʼərəkʼa", "ጰ": "pʼä",
  "ጸ": "tsʼehaj", "ፀ": "tsʼeɡur", "ፈ": "feres", "ፐ": "permuz",
 }
 
@@ -553,7 +553,7 @@ WORD_IPA["kana"] = {
 
 WORD_IPA["hangul"] = {
  "ㄱ": "kabaŋ", "ㄴ": "namu", "ㄷ": "tal", "ㄹ": "ɾamjʌn", "ㅁ": "mul",
- "ㅂ": "pada", "ㅅ": "sagwa", "ㅇ": "agi", "ㅈ": "tɕadoŋtɕʰa", "ㅊ": "tɕʰɛk",
+ "ㅂ": "pada", "ㅅ": "sagwa", "ㅇ": "agi", "ㅈ": "tɕadoŋtɕʰa", "ㅊ": "tɕʰɛk̚",
  "ㅋ": "kʰo", "ㅌ": "tʰokki", "ㅍ": "pʰodo", "ㅎ": "hɛ",
  "ㅏ": "sagwa", "ㅑ": "jagu", "ㅓ": "ʌmʌni", "ㅕ": "jʌu", "ㅗ": "oɾi",
  "ㅛ": "joɾi", "ㅜ": "usan", "ㅠ": "juɾi", "ㅡ": "kɯɾim", "ㅣ": "i",
@@ -1095,7 +1095,7 @@ DEVANAGARI_MATRAS = [
 DEVANAGARI_MARKS = [
  ("ं","","anusvara",["ⁿ"],("हिंदी","Hindi","\U0001f1ee\U0001f1f3"),"hɪndːiː",
   "Nasalises the vowel, or stands for the nasal that matches the following consonant."),
- ("ँ","","candrabindu",["̃"],("चाँद","moon","\U0001f319"),"tɕãːd",
+ ("ँ","","candrabindu",["̃"],("चाँद","moon","\U0001f319"),"tʃãːd",
   "Nasalises the vowel without adding a consonant."),
  ("ः","","visarga",["h"],("दुःख","sorrow","\U0001f622"),"dʊkʰ",
   "A breath after the vowel, almost only in words taken from Sanskrit."),
@@ -1190,7 +1190,7 @@ ARABIC_FORMS = [
  ("إ","","alef with hamza below",["ʔi"],("إسلام","Islam","☪️"),"ʔis.laːm",None),
  ("ؤ","","waw with hamza",["ʔ"],("سؤال","question","❓"),"su.ʔaːl",None),
  ("ئ","","yeh with hamza",["ʔ"],("رئيس","president","\U0001f454"),"ra.ʔiːs",None),
- ("ة","","teh marbuta",["a","at"],("مدرسة","school","\U0001f3eb"),"mad.ra.sa",
+ ("ة","","teh marbuta",["a","at"],("مدرسة","school","\U0001f3eb"),"ˈmadrasa",
   "Ends most feminine nouns. Said as a at the end of a phrase, as t before a following word."),
  ("ى","","alef maqsura",["aː"],("مستشفى","hospital","\U0001f3e5"),"mus.taʃ.faː",
   "A long a written with the shape of yeh."),
@@ -1211,7 +1211,7 @@ ARABIC_HARAKAT = [
 ]
 
 HANGUL_DOUBLE = [
- ("ㄲ","","ssang-giyeok",["ˀk"],("꽃","flower","\U0001f338"),"ˀkot","The tense series, said with a tightened glottis: neither voiced like the plain letters nor breathy like the aspirated ones."),
+ ("ㄲ","","ssang-giyeok",["ˀk"],("꽃","flower","\U0001f338"),"ˀkot̚","The tense series, said with a tightened glottis: neither voiced like the plain letters nor breathy like the aspirated ones."),
  ("ㄸ","","ssang-digeut",["ˀt"],("딸","daughter","\U0001f467"),"ˀtal",None),
  ("ㅃ","","ssang-bieup",["ˀp"],("빵","bread","\U0001f35e"),"ˀpaŋ",None),
  ("ㅆ","","ssang-siot",["ˀs"],("쌀","uncooked rice","\U0001f33e"),"ˀsal",None),

@@ -8,7 +8,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈleχem"
   },
   {
    "word": "חלב",
@@ -16,7 +17,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "χaˈlav"
   },
   {
    "word": "גבינה",
@@ -24,7 +26,8 @@
    "english": "cheese",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "gviˈna"
   },
   {
    "word": "תפוח",
@@ -32,7 +35,8 @@
    "english": "apple",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "taˈpuaχ"
   },
   {
    "word": "יין",
@@ -40,7 +44,8 @@
    "english": "wine",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈjajin"
   },
   {
    "word": "מים",
@@ -48,7 +53,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈmajim"
   },
   {
    "word": "דג",
@@ -56,7 +62,8 @@
    "english": "fish",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "dag"
   },
   {
    "word": "עוגה",
@@ -64,7 +71,8 @@
    "english": "cake",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "uˈga"
   },
   {
    "word": "קפה",
@@ -72,7 +80,8 @@
    "english": "coffee",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "kaˈfe"
   },
   {
    "word": "ישראל",
@@ -80,7 +89,8 @@
    "english": "Israel",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "jisraˈʔel"
   },
   {
    "word": "ים",
@@ -88,7 +98,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "jam"
   },
   {
    "word": "הר",
@@ -96,7 +107,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "haʁ"
   },
   {
    "word": "מדבר",
@@ -104,7 +116,8 @@
    "english": "desert",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "midˈbaʁ"
   },
   {
    "word": "נהר",
@@ -112,7 +125,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "naˈhaʁ"
   },
   {
    "word": "ירושלים",
@@ -120,7 +134,8 @@
    "english": "Jerusalem",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "jeʁuʃaˈlajim"
   },
   {
    "word": "תל אביב",
@@ -128,7 +143,8 @@
    "english": "Tel Aviv, the coastal city",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "tel aˈviv"
   },
   {
    "word": "חיפה",
@@ -136,7 +152,8 @@
    "english": "Haifa, the northern port",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ˈχeifa"
   },
   {
    "word": "אילת",
@@ -144,7 +161,8 @@
    "english": "Eilat, the Red Sea resort",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "eiˈlat"
   },
   {
    "word": "שבת",
@@ -152,7 +170,8 @@
    "english": "Sabbath",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ʃaˈbat"
   },
   {
    "word": "ספר",
@@ -160,7 +179,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ˈsefeʁ"
   },
   {
    "word": "שלום",
@@ -168,7 +188,8 @@
    "english": "peace",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ʃaˈlom"
   },
   {
    "word": "מוזיקה",
@@ -176,7 +197,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ˈmuzika"
   },
   {
    "word": "תורה",
@@ -184,7 +206,8 @@
    "english": "Torah",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "toˈʁa"
   },
   {
    "word": "שמש",
@@ -192,7 +215,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈʃemeʃ"
   },
   {
    "word": "ירח",
@@ -200,7 +224,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "jaˈʁeaχ"
   },
   {
    "word": "עץ",
@@ -208,7 +233,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ʕets"
   },
   {
    "word": "פרח",
@@ -216,7 +242,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈpeʁaχ"
   },
   {
    "word": "כלב",
@@ -224,7 +251,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈkelev"
   },
   {
    "word": "חתול",
@@ -232,7 +260,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "χaˈtul"
   }
  ]
 }

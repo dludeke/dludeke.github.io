@@ -8,7 +8,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "xlʲep"
   },
   {
    "word": "вода",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "vɐˈda"
   },
   {
    "word": "чай",
@@ -24,7 +26,8 @@
    "english": "tea",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tɕaj"
   },
   {
    "word": "молоко",
@@ -32,7 +35,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "məlɐˈko"
   },
   {
    "word": "суп",
@@ -40,7 +44,8 @@
    "english": "soup",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "sup"
   },
   {
    "word": "яблоко",
@@ -48,7 +53,8 @@
    "english": "apple",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈjabləkə"
   },
   {
    "word": "сыр",
@@ -56,7 +62,8 @@
    "english": "cheese",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "sɨr"
   },
   {
    "word": "мясо",
@@ -64,7 +71,8 @@
    "english": "meat",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˈmʲasə"
   },
   {
    "word": "Россия",
@@ -72,7 +80,8 @@
    "english": "Russia",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "rɐˈsʲijə"
   },
   {
    "word": "море",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ˈmorʲe"
   },
   {
    "word": "гора",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "gɐˈra"
   },
   {
    "word": "река",
@@ -96,7 +107,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "rʲɪˈka"
   },
   {
    "word": "лес",
@@ -104,7 +116,8 @@
    "english": "forest",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "lʲes"
   },
   {
    "word": "Москва",
@@ -112,7 +125,8 @@
    "english": "Moscow",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "mɐskˈva"
   },
   {
    "word": "Киев",
@@ -120,7 +134,8 @@
    "english": "Kyiv",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ˈkʲijɪf"
   },
   {
    "word": "Минск",
@@ -128,7 +143,8 @@
    "english": "Minsk, the capital of Belarus",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "mʲinsk"
   },
   {
    "word": "София",
@@ -136,7 +152,8 @@
    "english": "Sofia",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "sɐˈfʲijə"
   },
   {
    "word": "книга",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ˈknʲigə"
   },
   {
    "word": "школа",
@@ -152,7 +170,8 @@
    "english": "school",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ˈʂkolə"
   },
   {
    "word": "музыка",
@@ -160,7 +179,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ˈmuzɨkə"
   },
   {
    "word": "театр",
@@ -168,7 +188,8 @@
    "english": "theatre",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "tʲɪˈatr"
   },
   {
    "word": "друг",
@@ -176,7 +197,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "druk"
   },
   {
    "word": "солнце",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈsont͡sə"
   },
   {
    "word": "луна",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "lʊˈna"
   },
   {
    "word": "дерево",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈdʲerʲɪvə"
   },
   {
    "word": "цветок",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "tsvʲɪˈtok"
   },
   {
    "word": "собака",
@@ -216,7 +242,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "sɐˈbakə"
   },
   {
    "word": "кошка",
@@ -224,7 +251,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈkoʂkə"
   }
  ]
 }

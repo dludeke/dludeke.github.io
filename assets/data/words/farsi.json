@@ -8,7 +8,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "nɒːn"
   },
   {
    "word": "آب",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ɒːb"
   },
   {
    "word": "چای",
@@ -24,7 +26,8 @@
    "english": "tea",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tʃɒːj"
   },
   {
    "word": "برنج",
@@ -32,7 +35,8 @@
    "english": "rice",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "beˈrendʒ"
   },
   {
    "word": "انار",
@@ -40,7 +44,8 @@
    "english": "pomegranate",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "æˈnɒːɾ"
   },
   {
    "word": "پنیر",
@@ -48,7 +53,8 @@
    "english": "cheese",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "pæˈniːɾ"
   },
   {
    "word": "شیر",
@@ -56,7 +62,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ʃiːɾ"
   },
   {
    "word": "کباب",
@@ -64,7 +71,8 @@
    "english": "kebab",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "kæˈbɒːb"
   },
   {
    "word": "ایران",
@@ -72,7 +80,8 @@
    "english": "Iran, the country",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "iːˈɾɒːn"
   },
   {
    "word": "دریا",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "dæɾˈjɒː"
   },
   {
    "word": "کوه",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "kuːh"
   },
   {
    "word": "بیابان",
@@ -96,7 +107,8 @@
    "english": "desert",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "bijɒːˈbɒːn"
   },
   {
    "word": "رود",
@@ -104,7 +116,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "ɾuːd"
   },
   {
    "word": "تهران",
@@ -112,7 +125,8 @@
    "english": "Tehran, the capital",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "tehˈɾɒːn"
   },
   {
    "word": "اصفهان",
@@ -120,7 +134,8 @@
    "english": "Isfahan",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "esfæˈhɒːn"
   },
   {
    "word": "شیراز",
@@ -128,7 +143,8 @@
    "english": "Shiraz, city of poets",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "ʃiːˈɾɒːz"
   },
   {
    "word": "مشهد",
@@ -136,7 +152,8 @@
    "english": "Mashhad, pilgrimage city",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "mæʃˈhæd"
   },
   {
    "word": "کتاب",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "keˈtɒːb"
   },
   {
    "word": "شعر",
@@ -152,7 +170,8 @@
    "english": "poetry",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ʃeʔɾ"
   },
   {
    "word": "نوروز",
@@ -160,7 +179,8 @@
    "english": "Nowruz, the new year",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "nowˈɾuːz"
   },
   {
    "word": "موسیقی",
@@ -168,7 +188,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "muːsiːˈɢiː"
   },
   {
    "word": "دوست",
@@ -176,7 +197,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "duːst"
   },
   {
    "word": "خورشید",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "xoɾˈʃiːd"
   },
   {
    "word": "ماه",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "mɒːh"
   },
   {
    "word": "درخت",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "deˈɾæxt"
   },
   {
    "word": "گل",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "gol"
   },
   {
    "word": "گربه",
@@ -216,7 +242,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˈgoɾbe"
   },
   {
    "word": "اسب",
@@ -224,7 +251,8 @@
    "english": "horse",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "æsb"
   }
  ]
 }

@@ -6,6 +6,7 @@
    "word": "すし",
    "romaji": "sushi",
    "english": "sushi, vinegared rice",
+   "ipa": "sɯɕi",
    "categories": [
     "Food & Drinks"
    ]
@@ -14,6 +15,7 @@
    "word": "さけ",
    "romaji": "sake",
    "english": "rice wine",
+   "ipa": "sake",
    "categories": [
     "Food & Drinks"
    ]
@@ -22,6 +24,7 @@
    "word": "おおさか",
    "romaji": "oosaka",
    "english": "Osaka",
+   "ipa": "oːsaka",
    "categories": [
     "Geography",
     "Cities"
@@ -31,6 +34,7 @@
    "word": "とうきょう",
    "romaji": "toukyou",
    "english": "Tokyo",
+   "ipa": "toːkʲoː",
    "categories": [
     "Geography",
     "Cities"
@@ -40,6 +44,7 @@
    "word": "きょうと",
    "romaji": "kyouto",
    "english": "Kyoto",
+   "ipa": "kʲoːto",
    "categories": [
     "Geography",
     "Cities"
@@ -49,6 +54,7 @@
    "word": "コーヒー",
    "romaji": "koohii",
    "english": "coffee",
+   "ipa": "koːhiː",
    "categories": [
     "Food & Drinks"
    ]
@@ -57,6 +63,7 @@
    "word": "ケーキ",
    "romaji": "keeki",
    "english": "cake",
+   "ipa": "keːki",
    "categories": [
     "Food & Drinks"
    ]
@@ -65,6 +72,7 @@
    "word": "ラーメン",
    "romaji": "raamen",
    "english": "ramen",
+   "ipa": "ɾaːmeɴ",
    "categories": [
     "Food & Drinks"
    ]
@@ -73,6 +81,7 @@
    "word": "てんぷら",
    "romaji": "tenpura",
    "english": "tempura",
+   "ipa": "tempɯɾa",
    "categories": [
     "Food & Drinks"
    ]
@@ -81,6 +90,7 @@
    "word": "みそ",
    "romaji": "miso",
    "english": "fermented soybean paste",
+   "ipa": "miso",
    "categories": [
     "Food & Drinks"
    ]
@@ -89,6 +99,7 @@
    "word": "とうふ",
    "romaji": "toufu",
    "english": "tofu",
+   "ipa": "toːɸɯ",
    "categories": [
     "Food & Drinks"
    ]
@@ -97,6 +108,7 @@
    "word": "そば",
    "romaji": "soba",
    "english": "buckwheat noodles",
+   "ipa": "soba",
    "categories": [
     "Food & Drinks"
    ]
@@ -105,6 +117,7 @@
    "word": "うどん",
    "romaji": "udon",
    "english": "thick wheat noodles",
+   "ipa": "ɯdoɴ",
    "categories": [
     "Food & Drinks"
    ]
@@ -113,6 +126,7 @@
    "word": "おちゃ",
    "romaji": "ocha",
    "english": "tea",
+   "ipa": "ot͡ɕa",
    "categories": [
     "Food & Drinks"
    ]
@@ -121,6 +135,7 @@
    "word": "みず",
    "romaji": "mizu",
    "english": "water",
+   "ipa": "mizɯ",
    "categories": [
     "Food & Drinks"
    ]
@@ -129,6 +144,7 @@
    "word": "さかな",
    "romaji": "sakana",
    "english": "fish",
+   "ipa": "sakana",
    "categories": [
     "Food & Drinks"
    ]
@@ -137,6 +153,7 @@
    "word": "やさい",
    "romaji": "yasai",
    "english": "vegetables",
+   "ipa": "jasai",
    "categories": [
     "Food & Drinks"
    ]
@@ -145,6 +162,7 @@
    "word": "にく",
    "romaji": "niku",
    "english": "meat",
+   "ipa": "nikɯ",
    "categories": [
     "Food & Drinks"
    ]
@@ -153,6 +171,7 @@
    "word": "たまご",
    "romaji": "tamago",
    "english": "egg",
+   "ipa": "tamago",
    "categories": [
     "Food & Drinks"
    ]
@@ -161,6 +180,7 @@
    "word": "パン",
    "romaji": "pan",
    "english": "bread",
+   "ipa": "paɴ",
    "categories": [
     "Food & Drinks"
    ]
@@ -169,6 +189,7 @@
    "word": "ごはん",
    "romaji": "gohan",
    "english": "rice",
+   "ipa": "gohaɴ",
    "categories": [
     "Food & Drinks"
    ]
@@ -177,6 +198,7 @@
    "word": "アニメ",
    "romaji": "anime",
    "english": "animation",
+   "ipa": "anime",
    "categories": [
     "Culture"
    ]
@@ -185,6 +207,7 @@
    "word": "マンガ",
    "romaji": "manga",
    "english": "comics",
+   "ipa": "maŋga",
    "categories": [
     "Culture"
    ]
@@ -193,6 +216,7 @@
    "word": "カラオケ",
    "romaji": "karaoke",
    "english": "karaoke, “empty orchestra”",
+   "ipa": "kaɾaoke",
    "categories": [
     "Culture"
    ]
@@ -201,6 +225,7 @@
    "word": "すもう",
    "romaji": "sumou",
    "english": "sumo",
+   "ipa": "sɯmoː",
    "categories": [
     "Culture"
    ]
@@ -209,6 +234,7 @@
    "word": "からて",
    "romaji": "karate",
    "english": "karate, “empty hand”",
+   "ipa": "kaɾate",
    "categories": [
     "Culture"
    ]
@@ -217,6 +243,7 @@
    "word": "ふじさん",
    "romaji": "fujisan",
    "english": "Mt. Fuji",
+   "ipa": "ɸɯd͡ʑisaɴ",
    "categories": [
     "Geography"
    ]
@@ -225,6 +252,7 @@
    "word": "さくら",
    "romaji": "sakura",
    "english": "cherry blossom",
+   "ipa": "sakɯɾa",
    "categories": [
     "Culture",
     "Nature"
@@ -234,6 +262,7 @@
    "word": "ひらがな",
    "romaji": "hiragana",
    "english": "hiragana, the cursive syllabary",
+   "ipa": "hiɾagana",
    "categories": [
     "Language"
    ]
@@ -242,6 +271,7 @@
    "word": "カタカナ",
    "romaji": "katakana",
    "english": "katakana, the angular syllabary",
+   "ipa": "katakana",
    "categories": [
     "Language"
    ]

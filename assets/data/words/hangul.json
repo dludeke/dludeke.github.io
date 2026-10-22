@@ -8,7 +8,8 @@
    "english": "cooked rice",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "pap̚"
   },
   {
    "word": "물",
@@ -16,7 +17,8 @@
    "english": "water",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "mul"
   },
   {
    "word": "김치",
@@ -24,7 +26,8 @@
    "english": "kimchi",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "kimtɕʰi"
   },
   {
    "word": "차",
@@ -32,7 +35,8 @@
    "english": "tea",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "tɕʰa"
   },
   {
    "word": "우유",
@@ -40,7 +44,8 @@
    "english": "milk",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "uju"
   },
   {
    "word": "빵",
@@ -48,7 +53,8 @@
    "english": "bread",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "ˀpaŋ"
   },
   {
    "word": "고기",
@@ -56,7 +62,8 @@
    "english": "meat",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "kogi"
   },
   {
    "word": "사과",
@@ -64,7 +71,8 @@
    "english": "apple",
    "categories": [
     "Food & Drinks"
-   ]
+   ],
+   "ipa": "sagwa"
   },
   {
    "word": "한국",
@@ -72,7 +80,8 @@
    "english": "Korea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "hanguk̚"
   },
   {
    "word": "바다",
@@ -80,7 +89,8 @@
    "english": "sea",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "pada"
   },
   {
    "word": "산",
@@ -88,7 +98,8 @@
    "english": "mountain",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "san"
   },
   {
    "word": "강",
@@ -96,7 +107,8 @@
    "english": "river",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "kaŋ"
   },
   {
    "word": "숲",
@@ -104,7 +116,8 @@
    "english": "forest",
    "categories": [
     "Geography"
-   ]
+   ],
+   "ipa": "sup̚"
   },
   {
    "word": "서울",
@@ -112,7 +125,8 @@
    "english": "Seoul, the capital",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "sʌul"
   },
   {
    "word": "부산",
@@ -120,7 +134,8 @@
    "english": "Busan, the southern port",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "pusan"
   },
   {
    "word": "인천",
@@ -128,7 +143,8 @@
    "english": "Incheon, the harbour city",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "intɕʰʌn"
   },
   {
    "word": "제주",
@@ -136,7 +152,8 @@
    "english": "Jeju, the volcanic island",
    "categories": [
     "Cities"
-   ]
+   ],
+   "ipa": "tɕedʑu"
   },
   {
    "word": "책",
@@ -144,7 +161,8 @@
    "english": "book",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "tɕʰɛk̚"
   },
   {
    "word": "학교",
@@ -152,7 +170,8 @@
    "english": "school",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "hak̚ˀkʲo"
   },
   {
    "word": "음악",
@@ -160,7 +179,8 @@
    "english": "music",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "ɯmak̚"
   },
   {
    "word": "친구",
@@ -168,7 +188,8 @@
    "english": "friend",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "tɕʰingu"
   },
   {
    "word": "한글",
@@ -176,7 +197,8 @@
    "english": "Hangul",
    "categories": [
     "Culture"
-   ]
+   ],
+   "ipa": "hangɯl"
   },
   {
    "word": "해",
@@ -184,7 +206,8 @@
    "english": "sun",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "hɛ"
   },
   {
    "word": "달",
@@ -192,7 +215,8 @@
    "english": "moon",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "tal"
   },
   {
    "word": "나무",
@@ -200,7 +224,8 @@
    "english": "tree",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "namu"
   },
   {
    "word": "꽃",
@@ -208,7 +233,8 @@
    "english": "flower",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "ˀkot̚"
   },
   {
    "word": "개",
@@ -216,7 +242,8 @@
    "english": "dog",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "kɛ"
   },
   {
    "word": "고양이",
@@ -224,7 +251,8 @@
    "english": "cat",
    "categories": [
     "Nature"
-   ]
+   ],
+   "ipa": "kojaŋi"
   }
  ]
 }
