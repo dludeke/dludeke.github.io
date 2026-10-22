@@ -1171,7 +1171,9 @@
       "display_glyph": "ـّ",
       "section": "Vowel marks",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "اَوّل",
       "example_gloss": "first",
@@ -1191,7 +1193,9 @@
       "display_glyph": "ـْ",
       "section": "Vowel marks",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "مِنْ",
       "example_gloss": "from",

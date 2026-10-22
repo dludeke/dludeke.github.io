@@ -1146,7 +1146,9 @@
       "display_glyph": "ـْ",
       "section": "Vowel marks",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "مِنْ",
       "example_gloss": "from",
@@ -1166,7 +1168,9 @@
       "display_glyph": "ـّ",
       "section": "Vowel marks",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "مدرّس",
       "example_gloss": "teacher",

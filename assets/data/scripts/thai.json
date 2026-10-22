@@ -1569,7 +1569,9 @@
       "display_glyph": null,
       "section": "Vowel signs",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "ฤๅษี",
       "example_gloss": "hermit",
@@ -1677,7 +1679,9 @@
       "display_glyph": "◌็",
       "section": "Modifiers",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "เป็ด",
       "example_gloss": "duck",
@@ -1697,7 +1701,9 @@
       "display_glyph": "◌์",
       "section": "Modifiers",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "จันทร์",
       "example_gloss": "moon",
@@ -1717,7 +1723,9 @@
       "display_glyph": null,
       "section": "Other signs",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "เด็กๆ",
       "example_gloss": "children",
@@ -1737,7 +1745,9 @@
       "display_glyph": null,
       "section": "Other signs",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "กรุงเทพฯ",
       "example_gloss": "Bangkok",
@@ -1779,7 +1789,9 @@
       "display_glyph": "◌ฺ",
       "section": "Other signs",
       "romanization": null,
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": null,
       "example_gloss": null,

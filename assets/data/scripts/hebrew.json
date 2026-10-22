@@ -953,7 +953,9 @@
       "display_glyph": "◌ּ",
       "section": "Vowel points",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "דָּג",
       "example_gloss": "fish",

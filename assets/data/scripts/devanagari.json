@@ -1477,7 +1477,9 @@
       "display_glyph": "◌्",
       "section": "Marks",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "नमस्ते",
       "example_gloss": "greeting",
@@ -1497,7 +1499,9 @@
       "display_glyph": "◌़",
       "section": "Marks",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": "ज़मीन",
       "example_gloss": "land",
@@ -1605,7 +1609,9 @@
       "display_glyph": null,
       "section": "Loanword vowels",
       "romanization": "—",
-      "ipa": [],
+      "ipa": [
+        "—"
+      ],
       "handshape": null,
       "example_word": null,
       "example_gloss": null,

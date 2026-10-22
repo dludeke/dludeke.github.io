@@ -1207,8 +1207,8 @@ THAI_TONES = [
 ]
 
 THAI_MODIFIERS = [
- ("็", "mai taikhu", [], ("เป็ด", "duck", "\U0001f986"), "pèt", "Shortens the vowel it sits over."),
- ("์", "thanthakhat", [], ("จันทร์", "moon", "\U0001f319"), "tɕan", "Silences the letter beneath it, usually in a word borrowed from Sanskrit or English."),
+ ("็", "mai taikhu", ["—"], ("เป็ด", "duck", "\U0001f986"), "pèt", "Shortens the vowel it sits over."),
+ ("์", "thanthakhat", ["—"], ("จันทร์", "moon", "\U0001f319"), "tɕan", "Silences the letter beneath it, usually in a word borrowed from Sanskrit or English."),
 ]
 
 THAI_SECTIONS = ([("Consonants", None)] +
@@ -1264,9 +1264,9 @@ DEVANAGARI_MARKS = [
   "Nasalises the vowel without adding a consonant."),
  ("ः","","visarga",["h"],("दुःख","sorrow","\U0001f622"),"dʊkʰ",
   "A breath after the vowel, almost only in words taken from Sanskrit."),
- ("्","","virama",[],("नमस्ते","greeting","\U0001f64f"),"nəməsteː",
+ ("्","","virama",["—"],("नमस्ते","greeting","\U0001f64f"),"nəməsteː",
   "Cancels the a that every consonant otherwise carries, so two consonants can meet."),
- ("़","","nukta",[],("ज़मीन","land","\U0001f30d"),"zəmiːn",
+ ("़","","nukta",["—"],("ज़मीन","land","\U0001f30d"),"zəmiːn",
   "Adapts a letter to a sound borrowed from Persian, Arabic or English."),
 ]
 
@@ -1286,7 +1286,7 @@ KANA_SMALL = [
  ("ゃ","ャ","small ya",["ja"],("シャツ","shirt","\U0001f455"),"ɕat͡sɯ",None),
  ("ゅ","ュ","small yu",["jɯ"],("ジュース","juice","\U0001f9c3"),"d͡ʑɯːsɯ",None),
  ("ょ","ョ","small yo",["jo"],("きょうと","Kyoto","\U0001f3ef"),"kʲoːto",None),
- ("っ","ッ","sokuon",[],("きって","stamp","\U0001f4ee"),"kitte",
+ ("っ","ッ","sokuon",["—"],("きって","stamp","\U0001f4ee"),"kitte",
   "Doubles the consonant that follows; it is never read on its own."),
 ]
 
@@ -1381,9 +1381,9 @@ ARABIC_HARAKAT = [
   "The three tanwin marks add a final n, which marks a noun as indefinite."),
  ("ٌ","","tanwin damm",["un"],("كتابٌ","a book","\U0001f4d5"),"ki.taː.bun",None),
  ("ٍ","","tanwin kasr",["in"],("بيتٍ","of a house","\U0001f3e0"),"baj.tin",None),
- ("ْ","","sukun",[],("مِنْ","from","➡️"),"min",
+ ("ْ","","sukun",["—"],("مِنْ","from","➡️"),"min",
   "Marks a consonant with no vowel after it."),
- ("ّ","","shadda",[],("مدرّس","teacher","\U0001f468‍\U0001f3eb"),"mu.dar.ris",
+ ("ّ","","shadda",["—"],("مدرّس","teacher","\U0001f468‍\U0001f3eb"),"mu.dar.ris",
   "Doubles the consonant it sits on."),
 ]
 
@@ -1514,6 +1514,6 @@ GEEZ_EXTRA_WORDS.update({
 THAI_VOWELS += [
  ("ฤ", "ru", ["rɯ"], ("ฤดู", "season", "\U0001f342"), "rɯ́.duː",
   "A vowel written as a letter, taken from Sanskrit. Read ru, ri or roe depending on the word."),
- ("ๅ", "lakkhangyao", [], ("ฤๅษี", "hermit", "\U0001f9d8"), "ruː.siː",
+ ("ๅ", "lakkhangyao", ["—"], ("ฤๅษี", "hermit", "\U0001f9d8"), "ruː.siː",
   "Lengthens ฤ or ฦ and never appears anywhere else."),
 ]
