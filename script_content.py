@@ -704,6 +704,7 @@ ROMANIZATION["kana"] = {
  "わ": "wa", "を": "wo", "ん": "n",
  "ぁ": "a",  "ぃ": "i",  "ぅ": "u",  "ぇ": "e",  "ぉ": "o",
  "ゃ": "ya", "ゅ": "yu", "ょ": "yo", "っ": "\u2014",
+ "ゐ": "i",  "ゑ": "e",
  "ー": "\u2014", "゙": "\u2014", "゚": "\u2014",
  "が": "ga", "ぎ": "gi", "ぐ": "gu", "げ": "ge", "ご": "go",
  "ざ": "za", "じ": "ji", "ず": "zu", "ぜ": "ze", "ぞ": "zo",
@@ -1311,6 +1312,18 @@ KANA_MARKS = [
  ("゚","","handakuten",["p"],("パン","bread","\U0001f35e"),"paɴ",
   "Turns the ha row into pa. In JSL the base kana is signed and the hand "
   "moves upward."),
+]
+
+# Two kana dropped from the alphabet in 1946. They are not on the chart and
+# cannot be fingerspelled, but the Toriuta spells こゑ and むれゐぬ with them,
+# so a reader meeting one still needs to be told what it sounds like.
+KANA_OBSOLETE = [
+ ("ゐ","ヰ","wi",["i"],("ウヰスキー","whisky","\U0001f943"),"ɯisɯkiː",
+  "Once /wi/; today it is said exactly like い. Dropped from the alphabet in "
+  "1946 and kept only in old spellings such as ウヰスキー. JSL has no sign for it."),
+ ("ゑ","ヱ","we",["e"],("こゑ","voice","\U0001f5e3️"),"koe",
+  "Once /we/; today it is said exactly like え. Dropped in 1946, which is why "
+  "the Toriuta spells こゑ where modern Japanese writes こえ. JSL has no sign for it."),
 ]
 
 # Every kana that takes one of those two marks, kept as a letter in its own

@@ -104,7 +104,8 @@
   "sections": [
     "Gojūon",
     "Small kana",
-    "Marks"
+    "Marks",
+    "Obsolete kana"
   ],
   "section_cols": null,
   "section_notes": {
@@ -1651,6 +1652,50 @@
         "description": "the hand moves upward",
         "image": "images/handshapes/kana/move-up.png"
       }
+    },
+    {
+      "glyph": "ゐ",
+      "alt": "ヰ",
+      "name": "wi",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Obsolete kana",
+      "romanization": "i",
+      "ipa": [
+        "i"
+      ],
+      "handshape": null,
+      "example_word": "ウヰスキー",
+      "example_gloss": "whisky",
+      "example_image": null,
+      "example_emoji": "🥃",
+      "example_ipa": "ɯisɯkiː",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Once /wi/; today it is said exactly like い. Dropped from the alphabet in 1946 and kept only in old spellings such as ウヰスキー. JSL has no sign for it."
+    },
+    {
+      "glyph": "ゑ",
+      "alt": "ヱ",
+      "name": "we",
+      "name_ipa": null,
+      "display_glyph": null,
+      "section": "Obsolete kana",
+      "romanization": "e",
+      "ipa": [
+        "e"
+      ],
+      "handshape": null,
+      "example_word": "こゑ",
+      "example_gloss": "voice",
+      "example_image": null,
+      "example_emoji": "🗣️",
+      "example_ipa": "koe",
+      "signwriting": null,
+      "signwriting_image": null,
+      "aliases": [],
+      "notes": "Once /we/; today it is said exactly like え. Dropped in 1946, which is why the Toriuta spells こゑ where modern Japanese writes こえ. JSL has no sign for it."
     },
     {
       "glyph": "が",

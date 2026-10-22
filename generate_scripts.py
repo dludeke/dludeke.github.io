@@ -24,6 +24,7 @@ from script_content import (WORDS, IPA as IPA_TABLE, WORD_IPA, NOTES,
                             THAI_MODIFIERS, display_for,
                             DEVANAGARI_MATRAS, DEVANAGARI_MARKS,
                             KANA_SMALL, KANA_MARKS, KANA_VOICED,
+                            KANA_OBSOLETE,
                             ROMANIZATION,
                             KANA_SMALL_BASE,
                             ARABIC_FORMS, ARABIC_HARAKAT,
@@ -82,7 +83,7 @@ EXTRA = {
     "devanagari": [("Vowel signs (matras)", DEVANAGARI_MATRAS),
                    ("Marks", DEVANAGARI_MARKS)],
     "kana": [("Small kana", KANA_SMALL), ("Marks", KANA_MARKS),
-             ("Voiced kana", KANA_VOICED)],
+             ("Obsolete kana", KANA_OBSOLETE), ("Voiced kana", KANA_VOICED)],
     "arabic": [("Hamza and variant forms", ARABIC_FORMS),
                ("Vowel marks", ARABIC_HARAKAT),
                ("Classical marks", ARABIC_CLASSICAL)],
@@ -414,6 +415,9 @@ CONTENT = {
 # carries the Hebrew ones, so only the extras go here.
 ALIASES = {
     "greek": {"Σ": ["ς"]},
+    # ۀ is one codepoint, but the ezafe is normally typed as he followed by
+    # a combining hamza, which is how the pangram spells پایهٔ.
+    "farsi": {"ۀ": ["ٔ"]},
     "pinyin": {"ü": ["ǖ", "ǘ", "ǚ", "ǜ",
                           "Ǖ", "Ǘ", "Ǚ", "Ǜ"]},
 }
