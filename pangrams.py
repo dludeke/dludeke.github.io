@@ -56,7 +56,7 @@ PANGRAMS = [
  "мягких французских "
  "булок, да выпей чаю.",
  "Eat some more of these soft French buns, and drink some tea",
- "sjеʂ ʒɨ jɪˈɕːɵ ˈetʲɪx ˈmʲæxkʲɪx "
+ "sjeʂ ʒɨ jɪˈɕːɵ ˈetʲɪx ˈmʲæxkʲɪx "
  "frɐnˈt͡suskʲɪx ˈbulək da ˈvɨpʲɪj ˈt͡ɕaju",
  "The standard Russian keyboard-test sentence, and the one that finally "
  "earns ъ and ь their place."),
@@ -131,10 +131,10 @@ PANGRAMS = [
  "Mr Sangkhaphan Hengphithakfang, an old man whose trade is selling bottles, was "
  "arrested by police and taken to court for stealing the watch of Khunying "
  "Chatchada Chansamathi",
- "naːj sǊŋ.kʰaː.pʰan heːŋ.pʰi.tʰak.faŋ "
+ "naːj sǎŋ.kʰaː.pʰan heːŋ.pʰi.tʰak.faŋ "
  "pʰuː.tʰâw sɨ̂ŋ miː ʔaː.t͡ɕiːp pen "
- "kʰon kʰǎːj kʰùat tʰuːk tam.rúat pa­tì.bat.tiː.kan "
- "t͡ɕàp f◌́ːŋ sǎːn tʰǎːn lak naː.liː.kaː "
+ "kʰon kʰǎːj kʰùat tʰuːk tam.rúat pa.tì.bat.tiː.kan "
+ "t͡ɕàp fɔ́ːŋ sǎːn tʰǎːn lak naː.liː.kaː "
  "kʰun.jǐŋ t͡ɕàt.t͡ɕa.daː t͡ɕaːn.sa.maː.tʰí",
  "Famous for reaching ฅ and ฃ, the two consonants Thai has retired — "
  "which is why it is longer and odder than most pangrams."),
