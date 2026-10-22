@@ -633,6 +633,18 @@ NOTES["arabic"] = {
 # and the aspirate ᄏ ᄐ ᄑ never change, and ᄋ has no sound at the start.
 ROMANIZATION = {}
 
+# Each script gets the scheme its readers actually use, not the most precise
+# one: RTGS for Thai, Hepburn for kana, BGN/PCGN for Russian, Hunterian for
+# Hindi, and for Hebrew and Arabic the plain newspaper transcription. That
+# means letters really do collide — three Thai letters romanise "s", four
+# Arabic ones "z" — which is the truth about these alphabets and is what each
+# of their notes says.
+#
+# Where a letter has two values, the first is the one at the start of a
+# syllable or word and the second the one at the end, except in Hebrew and
+# Arabic, where the pair is the two readings a single letter has.
+# An em dash means the scheme writes nothing for it.
+
 ROMANIZATION["hangul"] = {
  "ㄱ": "g, k",  "ㄴ": "n",     "ㄷ": "d, t",  "ㄹ": "r, l",
  "ㅁ": "m",     "ㅂ": "b, p",  "ㅅ": "s, t",  "ㅇ": "—, ng",
@@ -652,6 +664,129 @@ ROMANIZATION["hangul"] = {
  "ㄳ": "k", "ㄵ": "n", "ㄶ": "n", "ㄺ": "k", "ㄻ": "m",
  "ㄼ": "p", "ㄽ": "l", "ㄾ": "l", "ㄿ": "p", "ㅀ": "l",
  "ㅄ": "p",
+}
+
+
+ROMANIZATION["thai"] = {
+ # RTGS: the scheme on Thai road signs. It ignores tone and vowel length,
+ # so several letters land on the same spelling.
+ "ก": "k",      "ข": "kh, k", "ฃ": "kh, k", "ค": "kh, k",
+ "ฅ": "kh, k",  "ฆ": "kh, k", "ง": "ng",    "จ": "ch, t",
+ "ฉ": "ch",     "ช": "ch, t", "ซ": "s, t",  "ฌ": "ch",
+ "ญ": "y, n",   "ฎ": "d, t",  "ฏ": "t",     "ฐ": "th, t",
+ "ฑ": "th, t",  "ฒ": "th, t", "ณ": "n",     "ด": "d, t",
+ "ต": "t",      "ถ": "th, t", "ท": "th, t", "ธ": "th, t",
+ "น": "n",      "บ": "b, p",  "ป": "p",     "ผ": "ph",
+ "ฝ": "f",      "พ": "ph, p", "ฟ": "f, p",  "ภ": "ph, p",
+ "ม": "m",      "ย": "y",     "ร": "r, n",  "ล": "l, n",
+ "ว": "w",      "ศ": "s, t",  "ษ": "s, t",  "ส": "s, t",
+ "ห": "h",      "ฬ": "l, n",  "อ": "\u2014",    "ฮ": "h",
+ # vowels
+ "ะ": "a",  "ั": "a",  "า": "a",  "ำ": "am", "ิ": "i",
+ "ี": "i",  "ึ": "ue", "ื": "ue", "ุ": "u",  "ู": "u",
+ "เ": "e",  "แ": "ae", "โ": "o",  "ใ": "ai", "ไ": "ai",
+ "ฤ": "rue", "ฦ": "lue", "ํ": "ng",
+ # RTGS writes nothing for the tone marks or the purely orthographic signs,
+ # so those are left as they are rather than given an invented spelling.
+}
+
+ROMANIZATION["kana"] = {
+ # Hepburn, which for a plain kana is simply its name.
+ "あ": "a",  "い": "i",  "う": "u",  "え": "e",  "お": "o",
+ "か": "ka", "き": "ki", "く": "ku", "け": "ke", "こ": "ko",
+ "さ": "sa", "し": "shi","す": "su", "せ": "se", "そ": "so",
+ "た": "ta", "ち": "chi","つ": "tsu","て": "te", "と": "to",
+ "な": "na", "に": "ni", "ぬ": "nu", "ね": "ne", "の": "no",
+ "は": "ha", "ひ": "hi", "ふ": "fu", "へ": "he", "ほ": "ho",
+ "ま": "ma", "み": "mi", "む": "mu", "め": "me", "も": "mo",
+ "や": "ya", "ゆ": "yu", "よ": "yo",
+ "ら": "ra", "り": "ri", "る": "ru", "れ": "re", "ろ": "ro",
+ "わ": "wa", "を": "wo", "ん": "n",
+ "ぁ": "a",  "ぃ": "i",  "ぅ": "u",  "ぇ": "e",  "ぉ": "o",
+ "ゃ": "ya", "ゅ": "yu", "ょ": "yo", "っ": "\u2014",
+ "ー": "\u2014", "゙": "\u2014", "゚": "\u2014",
+ "が": "ga", "ぎ": "gi", "ぐ": "gu", "げ": "ge", "ご": "go",
+ "ざ": "za", "じ": "ji", "ず": "zu", "ぜ": "ze", "ぞ": "zo",
+ "だ": "da", "ぢ": "ji", "づ": "zu", "で": "de", "ど": "do",
+ "ば": "ba", "び": "bi", "ぶ": "bu", "べ": "be", "ぼ": "bo",
+ "ぱ": "pa", "ぴ": "pi", "ぷ": "pu", "ぺ": "pe", "ぽ": "po",
+}
+
+ROMANIZATION["cyrillic"] = {
+ # BGN/PCGN, which is where Gorbachev, Khrushchev and Yeltsin come from.
+ "А": "a",  "Б": "b",  "В": "v",  "Г": "g",  "Д": "d",
+ "Е": "e, ye", "Ё": "yo", "Ж": "zh", "З": "z", "И": "i",
+ "Й": "y",  "К": "k",  "Л": "l",  "М": "m",  "Н": "n",
+ "О": "o",  "П": "p",  "Р": "r",  "С": "s",  "Т": "t",
+ "У": "u",  "Ф": "f",  "Х": "kh", "Ц": "ts", "Ч": "ch",
+ "Ш": "sh", "Щ": "shch", "Ъ": "\u2014", "Ы": "y",
+ "Ь": "’", "Э": "e", "Ю": "yu", "Я": "ya",
+}
+
+ROMANIZATION["devanagari"] = {
+ # Hunterian without its diacritics, which is how Indian place names are
+ # spelled in English and how the word list here already spells them.
+ "अ": "a",  "आ": "aa", "इ": "i",  "ई": "ee", "उ": "u",
+ "ऊ": "oo", "ऋ": "ri", "ए": "e",  "ऐ": "ai", "ओ": "o",
+ "औ": "au",
+ "क": "k",  "ख": "kh", "ग": "g",  "घ": "gh", "ङ": "ng",
+ "च": "ch", "छ": "chh","ज": "j",  "झ": "jh", "ञ": "ny",
+ "ट": "t",  "ठ": "th", "ड": "d",  "ढ": "dh", "ण": "n",
+ "त": "t",  "थ": "th", "द": "d",  "ध": "dh", "न": "n",
+ "प": "p",  "फ": "ph", "ब": "b",  "भ": "bh", "म": "m",
+ "य": "y",  "र": "r",  "ल": "l",  "व": "v",  "श": "sh",
+ "ष": "sh", "स": "s",  "ह": "h",
+ "ा": "aa", "ि": "i",  "ी": "ee", "ु": "u",  "ू": "oo",
+ "ृ": "ri", "े": "e",  "ै": "ai", "ो": "o",  "ौ": "au",
+ "ं": "n",  "ँ": "n",  "ः": "h",  "्": "\u2014", "़": "\u2014",
+ "ॉ": "o",  "ऑ": "o",  "ॅ": "a",  "ऍ": "a",  "ऽ": "\u2014",
+}
+
+ROMANIZATION["hebrew"] = {
+ # The plain transcription Israeli signage and English writing use. Letters
+ # with two readings are given both: the stop first, then the fricative.
+ "א": "\u2014",    "ב": "b, v", "ג": "g",  "ד": "d",
+ "ה": "h",      "ו": "v",    "ז": "z",  "ח": "ch",
+ "ט": "t",      "י": "y",    "כ": "k, kh", "ל": "l",
+ "מ": "m",      "נ": "n",    "ס": "s",  "ע": "\u2014",
+ "פ": "p, f",   "צ": "tz",   "ק": "k",  "ר": "r",
+ "ש": "sh, s",  "ת": "t",
+ "ַ": "a", "ָ": "a, o", "ֵ": "e", "ֶ": "e", "ִ": "i",
+ "ֹ": "o", "ֻ": "u", "ְ": "e, \u2014",
+ "ֱ": "e", "ֲ": "a", "ֳ": "o",
+ "ּ": "\u2014", "ׁ": "sh", "ׂ": "s",
+}
+
+ROMANIZATION["farsi"] = {
+ # Persian readings, not Arabic ones: ث س ص are all "s" here and ذ ز ض ظ
+ # all "z", which is what the notes on those letters say.
+ "ا": "a",  "ب": "b",  "پ": "p",  "ت": "t",  "ث": "s",
+ "ج": "j",  "چ": "ch", "ح": "h",  "خ": "kh", "د": "d",
+ "ذ": "z",  "ر": "r",  "ز": "z",  "ژ": "zh", "س": "s",
+ "ش": "sh", "ص": "s",  "ض": "z",  "ط": "t",  "ظ": "z",
+ "ع": "‘", "غ": "gh", "ف": "f",  "ق": "q",  "ک": "k",
+ "گ": "g",  "ل": "l",  "م": "m",  "ن": "n",  "و": "v, u",
+ "ه": "h, e", "ی": "y, i",
+ "آ": "aa", "ء": "’", "أ": "a", "إ": "e",
+ "ؤ": "’", "ئ": "’", "ة": "t, e", "ۀ": "ye",
+ "َ": "a", "ِ": "e", "ُ": "o",
+ "ّ": "\u2014", "ْ": "\u2014", "ً": "an",
+}
+
+ROMANIZATION["arabic"] = {
+ # The newspaper transcription, which is why Sad and Sin are both "s" and
+ # four separate letters are all "z".
+ "ا": "a",  "ب": "b",  "ت": "t",  "ث": "th", "ج": "j",
+ "ح": "h",  "خ": "kh", "د": "d",  "ذ": "dh", "ر": "r",
+ "ز": "z",  "س": "s",  "ش": "sh", "ص": "s",  "ض": "d",
+ "ط": "t",  "ظ": "z",  "ع": "‘", "غ": "gh", "ف": "f",
+ "ق": "q",  "ك": "k",  "ل": "l",  "م": "m",  "ن": "n",
+ "ه": "h",  "و": "w, u", "ي": "y, i",
+ "ء": "’", "آ": "aa", "أ": "a", "إ": "i",
+ "ؤ": "’", "ئ": "’", "ة": "a, at", "ى": "a",
+ "َ": "a", "ُ": "u", "ِ": "i",
+ "ً": "an", "ٌ": "un", "ٍ": "in",
+ "ْ": "\u2014", "ّ": "\u2014", "ٰ": "a", "ٱ": "\u2014",
 }
 
 

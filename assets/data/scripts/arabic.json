@@ -215,7 +215,7 @@
       "name_ipa": "ʔalif",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "a",
       "ipa": [
         "aː",
         "ʔ"
@@ -238,7 +238,7 @@
       "name_ipa": "baːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "b",
       "ipa": [
         "b"
       ],
@@ -260,7 +260,7 @@
       "name_ipa": "taːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "t",
       "ipa": [
         "t"
       ],
@@ -282,7 +282,7 @@
       "name_ipa": "θaːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "th",
       "ipa": [
         "θ"
       ],
@@ -304,7 +304,7 @@
       "name_ipa": "d͡ʒiːm",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "j",
       "ipa": [
         "d͡ʒ",
         "ʒ",
@@ -328,7 +328,7 @@
       "name_ipa": "ħaːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "h",
       "ipa": [
         "ħ"
       ],
@@ -350,7 +350,7 @@
       "name_ipa": "xaːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "kh",
       "ipa": [
         "x"
       ],
@@ -372,7 +372,7 @@
       "name_ipa": "daːl",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "d",
       "ipa": [
         "d"
       ],
@@ -394,7 +394,7 @@
       "name_ipa": "ðaːl",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "dh",
       "ipa": [
         "ð"
       ],
@@ -416,7 +416,7 @@
       "name_ipa": "raːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "r",
       "ipa": [
         "r"
       ],
@@ -438,7 +438,7 @@
       "name_ipa": "zaːj",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "z",
       "ipa": [
         "z"
       ],
@@ -460,7 +460,7 @@
       "name_ipa": "siːn",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "s",
       "ipa": [
         "s"
       ],
@@ -482,7 +482,7 @@
       "name_ipa": "ʃiːn",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "sh",
       "ipa": [
         "ʃ"
       ],
@@ -504,7 +504,7 @@
       "name_ipa": "sˤaːd",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "s",
       "ipa": [
         "sˤ"
       ],
@@ -526,7 +526,7 @@
       "name_ipa": "dˤaːd",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "d",
       "ipa": [
         "dˤ"
       ],
@@ -548,7 +548,7 @@
       "name_ipa": "tˤaːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "t",
       "ipa": [
         "tˤ"
       ],
@@ -570,7 +570,7 @@
       "name_ipa": "ðˤaːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "z",
       "ipa": [
         "ðˤ"
       ],
@@ -592,7 +592,7 @@
       "name_ipa": "ʕajn",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "‘",
       "ipa": [
         "ʕ"
       ],
@@ -614,7 +614,7 @@
       "name_ipa": "ɣajn",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "gh",
       "ipa": [
         "ɣ"
       ],
@@ -636,7 +636,7 @@
       "name_ipa": "faːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "f",
       "ipa": [
         "f"
       ],
@@ -658,7 +658,7 @@
       "name_ipa": "qaːf",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "q",
       "ipa": [
         "q"
       ],
@@ -680,7 +680,7 @@
       "name_ipa": "kaːf",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "k",
       "ipa": [
         "k"
       ],
@@ -702,7 +702,7 @@
       "name_ipa": "laːm",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "l",
       "ipa": [
         "l"
       ],
@@ -724,7 +724,7 @@
       "name_ipa": "miːm",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "m",
       "ipa": [
         "m"
       ],
@@ -746,7 +746,7 @@
       "name_ipa": "nuːn",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "n",
       "ipa": [
         "n"
       ],
@@ -768,7 +768,7 @@
       "name_ipa": "haːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "h",
       "ipa": [
         "h"
       ],
@@ -790,7 +790,7 @@
       "name_ipa": "waːw",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "w, u",
       "ipa": [
         "w",
         "uː"
@@ -813,7 +813,7 @@
       "name_ipa": "jaːʔ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "y, i",
       "ipa": [
         "j",
         "iː"
@@ -836,7 +836,7 @@
       "name_ipa": "ˈhamza",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "’",
       "ipa": [
         "ʔ"
       ],
@@ -858,7 +858,7 @@
       "name_ipa": "ˈʔalif ˈmadːa",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "aa",
       "ipa": [
         "ʔaː"
       ],
@@ -880,7 +880,7 @@
       "name_ipa": "ˈʔalif",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "a",
       "ipa": [
         "ʔa"
       ],
@@ -902,7 +902,7 @@
       "name_ipa": "ˈʔalif",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "i",
       "ipa": [
         "ʔi"
       ],
@@ -924,7 +924,7 @@
       "name_ipa": "ˈwaːw",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "’",
       "ipa": [
         "ʔ"
       ],
@@ -946,7 +946,7 @@
       "name_ipa": "ˈjaːʔ",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "’",
       "ipa": [
         "ʔ"
       ],
@@ -968,7 +968,7 @@
       "name_ipa": "taːʔ marˈbuːtˤa",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "a, at",
       "ipa": [
         "a",
         "at"
@@ -991,7 +991,7 @@
       "name_ipa": "ˈʔalif makˈsˤuːra",
       "display_glyph": null,
       "section": "Hamza and variant forms",
-      "romanization": null,
+      "romanization": "a",
       "ipa": [
         "aː"
       ],
@@ -1013,7 +1013,7 @@
       "name_ipa": "ˈfatħa",
       "display_glyph": "ـَ",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "a",
       "ipa": [
         "a"
       ],
@@ -1035,7 +1035,7 @@
       "name_ipa": "ˈdˤamːa",
       "display_glyph": "ـُ",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "u",
       "ipa": [
         "u"
       ],
@@ -1057,7 +1057,7 @@
       "name_ipa": "ˈkasra",
       "display_glyph": "ـِ",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "i",
       "ipa": [
         "i"
       ],
@@ -1079,7 +1079,7 @@
       "name_ipa": "tanˈwiːn fatħ",
       "display_glyph": "ـً",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "an",
       "ipa": [
         "an"
       ],
@@ -1101,7 +1101,7 @@
       "name_ipa": "tanˈwiːn dˤamː",
       "display_glyph": "ـٌ",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "un",
       "ipa": [
         "un"
       ],
@@ -1123,7 +1123,7 @@
       "name_ipa": "tanˈwiːn kasr",
       "display_glyph": "ـٍ",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "in",
       "ipa": [
         "in"
       ],
@@ -1145,7 +1145,7 @@
       "name_ipa": "suˈkuːn",
       "display_glyph": "ـْ",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "—",
       "ipa": [],
       "handshape": null,
       "example_word": "مِنْ",
@@ -1165,7 +1165,7 @@
       "name_ipa": "ˈʃadːa",
       "display_glyph": "ـّ",
       "section": "Vowel marks",
-      "romanization": null,
+      "romanization": "—",
       "ipa": [],
       "handshape": null,
       "example_word": "مدرّس",
@@ -1185,7 +1185,7 @@
       "name_ipa": "ˈʔalif",
       "display_glyph": "ـٰ",
       "section": "Classical marks",
-      "romanization": null,
+      "romanization": "a",
       "ipa": [
         "aː"
       ],
@@ -1207,7 +1207,7 @@
       "name_ipa": "ˈʔalif ˈwasˤla",
       "display_glyph": null,
       "section": "Classical marks",
-      "romanization": null,
+      "romanization": "—",
       "ipa": [
         "ː"
       ],

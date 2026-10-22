@@ -213,7 +213,7 @@
       "name_ipa": "a",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "a",
       "ipa": [
         "a",
         "ɐ"
@@ -236,7 +236,7 @@
       "name_ipa": "bɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "b",
       "ipa": [
         "b",
         "bʲ"
@@ -259,7 +259,7 @@
       "name_ipa": "vɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "v",
       "ipa": [
         "v",
         "vʲ"
@@ -282,7 +282,7 @@
       "name_ipa": "ɡɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "g",
       "ipa": [
         "ɡ",
         "ɡʲ"
@@ -305,7 +305,7 @@
       "name_ipa": "dɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "d",
       "ipa": [
         "d",
         "dʲ"
@@ -328,7 +328,7 @@
       "name_ipa": "je",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "e, ye",
       "ipa": [
         "je",
         "ʲe"
@@ -351,7 +351,7 @@
       "name_ipa": "jo",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "yo",
       "ipa": [
         "jo",
         "ʲo"
@@ -374,7 +374,7 @@
       "name_ipa": "ʒɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "zh",
       "ipa": [
         "ʐ"
       ],
@@ -396,7 +396,7 @@
       "name_ipa": "zɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "z",
       "ipa": [
         "z",
         "zʲ"
@@ -419,7 +419,7 @@
       "name_ipa": "i",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "i",
       "ipa": [
         "i"
       ],
@@ -441,7 +441,7 @@
       "name_ipa": "i ˈkratəkəjə",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "y",
       "ipa": [
         "j"
       ],
@@ -463,7 +463,7 @@
       "name_ipa": "ka",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "k",
       "ipa": [
         "k",
         "kʲ"
@@ -486,7 +486,7 @@
       "name_ipa": "ɛl",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "l",
       "ipa": [
         "ɫ",
         "lʲ"
@@ -509,7 +509,7 @@
       "name_ipa": "ɛm",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "m",
       "ipa": [
         "m",
         "mʲ"
@@ -532,7 +532,7 @@
       "name_ipa": "ɛn",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "n",
       "ipa": [
         "n",
         "nʲ"
@@ -555,7 +555,7 @@
       "name_ipa": "o",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "o",
       "ipa": [
         "o",
         "ɐ"
@@ -578,7 +578,7 @@
       "name_ipa": "pɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "p",
       "ipa": [
         "p",
         "pʲ"
@@ -601,7 +601,7 @@
       "name_ipa": "ɛr",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "r",
       "ipa": [
         "r",
         "rʲ"
@@ -624,7 +624,7 @@
       "name_ipa": "ɛs",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "s",
       "ipa": [
         "s",
         "sʲ"
@@ -647,7 +647,7 @@
       "name_ipa": "tɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "t",
       "ipa": [
         "t",
         "tʲ"
@@ -670,7 +670,7 @@
       "name_ipa": "u",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "u",
       "ipa": [
         "u"
       ],
@@ -692,7 +692,7 @@
       "name_ipa": "ɛf",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "f",
       "ipa": [
         "f",
         "fʲ"
@@ -715,7 +715,7 @@
       "name_ipa": "xa",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "kh",
       "ipa": [
         "x"
       ],
@@ -737,7 +737,7 @@
       "name_ipa": "t͡sɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "ts",
       "ipa": [
         "t͡s"
       ],
@@ -759,7 +759,7 @@
       "name_ipa": "t͡ɕɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "ch",
       "ipa": [
         "t͡ɕ"
       ],
@@ -781,7 +781,7 @@
       "name_ipa": "ʂa",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "sh",
       "ipa": [
         "ʂ"
       ],
@@ -803,7 +803,7 @@
       "name_ipa": "ɕːa",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "shch",
       "ipa": [
         "ɕː"
       ],
@@ -825,7 +825,7 @@
       "name_ipa": "ˈtvʲɵrdɨj znak",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "—",
       "ipa": [
         "—"
       ],
@@ -847,7 +847,7 @@
       "name_ipa": "ɨːrɨ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "y",
       "ipa": [
         "ɨ"
       ],
@@ -869,7 +869,7 @@
       "name_ipa": "ˈmʲæxkʲɪj znak",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "’",
       "ipa": [
         "ʲ"
       ],
@@ -891,7 +891,7 @@
       "name_ipa": "ɛ",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "e",
       "ipa": [
         "e"
       ],
@@ -913,7 +913,7 @@
       "name_ipa": "ju",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "yu",
       "ipa": [
         "ju",
         "ʲu"
@@ -936,7 +936,7 @@
       "name_ipa": "ja",
       "display_glyph": null,
       "section": null,
-      "romanization": null,
+      "romanization": "ya",
       "ipa": [
         "ja",
         "ʲa"
